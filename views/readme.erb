@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Chassis</title>
+	<style>
+	  body {
+	    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	    margin: 10% auto;
+	    text-align: center;
+	  }
+	  a, a:visited {
+	    color: #27b1f5;
+	  }
+	</style>
+</head>
+
+<body>
+
+  <%= Kramdown::Document.new(@readme).to_html %>
+
+</body>
+</html>
