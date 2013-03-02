@@ -1,0 +1,76 @@
+
+	<div class="container">
+		  
+	 <ul class="breadcrumb">
+		 <li><a href="educator">Career Direction 2</a> <span class="divider"> </span> </li>
+		 <li><a href="steps">Steps to Success</a> <span class="divider"> </span> </li>
+		 <li class="active"><a href="/resume">Resume Tool</a> <span class="divider"> </span> </li>
+		 <li><a href="feedback">Educator Feedback</a> <span class="divider"> </span> </li>
+		 <li><a href="resources">Helpful Links</a> <span class="divider"> </span> </li>
+	 </ul>
+		 
+      </div>
+
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+	  <div class="span8">
+
+
+		<h1>Resume Tool</h1>
+
+		<p><strong>Career Direction 2</strong> <em>Job Getting Tools</em> can help your students create 
+		resumes and cover letters that will help them "get that job!" Students will need to enter the school's 
+		password to access this valuable tool. By completing the online form, they can automatically 
+		generate a resume, a cover letter, and even a thank you note for after the interview.</p><br />
+		<form name="verify_school" method="post" action="/resume_service/verify_school.cfm"><input type="hidden" name="StudentType" value="educator">
+		<p>Enter your school's password:</p>
+		<p><input type="password" name="password" />
+		<input type="submit" name="submit" value="Send &rarr;" align="right" /></p><br /><br /></form>
+
+		<form name="Find_School" method="post" action="mailpass_cd_password.cfm" onSubmit = "return(handleSubmit(this));">
+		<div id="blueBox2">
+			<h5>Need Your Password?</h5>
+			<p>
+				If your students have participated in a <strong>Career Direction 2</strong> class and you do not know 
+				your school's password:
+			</p>
+			<p>
+				<table BORDER="0" CELLPADDING="3" CELLSPACING="0">
+					<tr>
+						<td align="right">
+							School Name:
+						</td>
+						<td>	
+							<input class="textBox1" type="text" name="schoolName" />
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							State:
+						</td>
+						<td>
+							<input class="textBox3" type="text" name="state" maxlength="2" /> ZIP: <input type="text" name="zip" />
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							Email Address:
+						</td>
+						<td>									
+							<input type="text" class="textBox1" name="email">
+						</td>
+					</tr>
+				</table>
+				<input align="right" type="submit" name="submit" value="Submit &rarr;" /></form><br />
+			</p>
+				
+	  		  </div>
+	  		  <div class="span3 offset1">
+	  			  <br /><br /><br /><br />
+	  			  <p>Image here</p>
+	  		  </div>
+	  	   </div>
+	     </div> <!-- /container -->
+	  </div> <!-- /container-white -->
+		
