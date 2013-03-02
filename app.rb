@@ -11,10 +11,9 @@ enable :sessions
 set :session_secret, 'secret123'
 
 get '/?' do
-  @readme = ''  
-  File.open('./README.md') do |file|
-  	file.each_line { |line| @readme << line }
-  end
-  
-	erb :readme, layout: false
+	erb :index, layout: false
+end
+
+get '/index/?' do
+	erb :index, layout: false
 end
