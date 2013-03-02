@@ -185,7 +185,7 @@ blockquote small	{
 	text-decoration: none;
 	padding-bottom: 1px;
 	border: none;
-	border-bottom: 1px dotted #348fc3;
+	border-bottom: 1px dotted gray;
 	line-height: 1.8em;
     -webkit-transition: all 0.15s ease-in-out;
        -moz-transition: all 0.15s ease-in-out;
