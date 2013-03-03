@@ -25,30 +25,12 @@ body {
   color: #000000;
 }
 
-
-
-
-
-
-
-.navbar-inverse .navbar-inner {
-  background-color: #000000;
-  background-image: -moz-linear-gradient(top, #000000, #000000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000000), to(#000000));
-  background-image: -webkit-linear-gradient(top, #000000, #000000);
-  background-image: -o-linear-gradient(top, #000000, #000000);
-  background-image: linear-gradient(to bottom, #000000, #000000);
-  background-repeat: repeat-x;
-  border-color: #000000;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009ed8', endColorstr='#009ed8', GradientType=0);
-  padding: 12px 0px 3px 0px;
-}
-
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
   color: #f9f9f9;
+  font-size: 1.15em;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  padding: 24px 24px;
+  padding: 36px 12px 32px 12px;
 }
 
 .navbar-inverse .brand:hover,
@@ -61,6 +43,7 @@ body {
 }
 
 .navbar-inverse .brand {
+	margin-top: 14px;
   color: #f9f9f9;
 }
 
@@ -80,7 +63,7 @@ body {
 .navbar-inverse .nav .active > a:focus,
 .navbar-inverse .nav .active > a:active {
   color: #009ed8;
-  background-color: black;
+  background-color: transparent;
 }
 
 .navbar-inverse .navbar-link {
@@ -93,10 +76,19 @@ body {
   color: #009ed8;
 }
 
+.nav-grad .navbar-inner	{
+   background-image: url('../img/ground-big.png');
+   background-position: center;
+   background-repeat: repeat-x;
+}
 
-
-
-
+.nav-grad-sm .navbar-inner	{
+   background-image: url('../img/ground-top.png');
+   background-position: center;
+   background-repeat: repeat-x;
+	border: none;
+	border-bottom: 1px solid black;
+}
 
 
 .alert	{
@@ -283,7 +275,7 @@ p.answer	{
 }
 
 .breadcrumb > li a {
-	color: black;
+	color: #2b3e4a;
 	font-weight: 600;
     padding: 3px;
 	
@@ -294,7 +286,7 @@ p.answer	{
 }
 
 .breadcrumb > li a:hover {
-	color: #009ed8;
+	color: #007dbc;
 	font-weight: 600;
 	text-decoration: none;
 }
@@ -304,8 +296,8 @@ p.answer	{
   color: none;
 }
 
-.breadcrumb > .active {
-  color: red;
+.breadcrumb > li a.active {
+  color: #007dbc;
 }
 
 .pic-border 	{
