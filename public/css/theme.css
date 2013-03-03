@@ -136,8 +136,10 @@ h5	{
 	margin: 26px 0 12px 0;
 }
 h6	{
-	padding: 0;
-	margin: 12px 0 0 0;
+	font-weight: 400;
+	font-size: 1.8em;
+	padding: 0 0 18px 0;
+	margin: 0;
 }
 h3	{
 	font-size: 1.8em;
@@ -153,6 +155,7 @@ blockquote	{
 }
 blockquote small	{
 	padding-top: 6px;
+	font-size: 1em;
 }
 
 .container-white a	{
@@ -237,8 +240,16 @@ dl dd	{
 }
 
 .well	{
-	margin: 24px 0;
-	padding: 9px 18px;
+	margin: 32px 0;
+	padding: 18px 18px 6px 24px;
+}
+
+.sign	{
+	padding: 32px 24px 2px 36px;
+}
+
+label	{
+	font-size: .85em;
 }
 
 p.question	{
@@ -296,7 +307,7 @@ p.answer	{
   color: none;
 }
 
-.breadcrumb > li a.active {
+.breadcrumb > li a:active {
   color: #007dbc;
 }
 
@@ -306,4 +317,8 @@ p.answer	{
  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.semi-bold	{
+	font-weight: 600;
 }
