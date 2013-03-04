@@ -76,20 +76,6 @@ body {
   color: #009ed8;
 }
 
-.nav-grad .navbar-inner	{
-   background-image: url('../img/ground-big.png');
-   background-position: top left;
-   background-repeat: repeat-x;
-}
-
-.nav-grad-sm .navbar-inner	{
-   background-image: url('../img/ground-top.png');
-   background-position: center;
-   background-repeat: repeat-x;
-	border: none;
-	border-bottom: 1px solid black;
-}
-
 
 .alert	{
 	font-weight: 600;
@@ -323,3 +309,18 @@ p.answer	{
 .semi-bold	{
 	font-weight: 600;
 }
+
+.nav-grad .navbar-inner	{
+   background-image: url('../img/ground-big.png');
+   background-position: top left;
+   background-repeat: repeat-x;
+}
+
+.nav-grad-sm .navbar-inner	{
+   background-image: url('../img/ground-top.png');
+   background-position: center;
+   background-repeat: repeat-x;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
