@@ -159,7 +159,7 @@ blockquote small	{
 	font-size: 1em;
 }
 
-.container-white a	{
+.under-link a	{
 	color: #007dbc;
 	font-weight: 600;
 	text-decoration: none;
@@ -173,13 +173,13 @@ blockquote small	{
             transition: all 0.15s ease-in-out;
 }
 
-.container-white a:hover	{
+.under-link a:hover	{
 	text-decoration: none;
 	color: black;
 	border-bottom: 1px solid black;
 }
 
-.container-white a:active	{
+.under-link a:active	{
 	text-decoration: none;
 	color: gray;
 	border-bottom: 1px solid gray;
