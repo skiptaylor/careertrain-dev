@@ -1,0 +1,30 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span8">
+				<h1>RRC Edit</h1>
+		
+				<form method="post">
+					
+					<p>
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" class="textfield" value="<%= @rrc.email %>" />
+					</p>
+					<p>
+						<label for="state">State</label>
+						<input type="text" name="state" id="state" class="textfield" value="<%= @rrc.state %>" />
+					</p>
+					
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/rrcs">Cancel</a>
+					
+					</form>	
+			</div>
+			<div class="span3 offset1">
+				<br /><br /><br /><br />
+
+				<a href="../admin/admin" class="btn btn-success">Admin</a></p>
+			</div>
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->
+

@@ -25,31 +25,28 @@
 					<h6>Access to the Career Direction 2 ARNG Section is restricted to National Guard Representatives.</h6>
 					<p>Please provide your authorization code:</p>
 					
-				<form name="login_form" method="post" action="arng/index.cfm">
+				<form name="login_form" method="post" action="../arng/leads">
 					
-					<p>
-						<input name="AuthCode" id="AuthCode" type="password" maxlength="35"  size="35"  /> 
-						<input type="Submit" class="btn btn-small" value="Enter"><br />
-					</p>
+						<input name="AuthCode" id="AuthCode" type="password" /> 
+						<input type="Submit" class="btn btn-success" value="Enter"><br />
 				
 				</form>
-				
+				<hr />
 				<form name="password_lookup" method="post" action="arng/password_lookup.cfm" onSubmit = "return(handleSubmit(this));">
 					
 					<h5>Forgotten your authorization code?</h5>
 					<p>Are you an ARNG Representative?</p>
-					<p>In what state do you serve? <input name="State" id="State" type="text" maxlength="2"  size="2"  />									
-					<table cellpadding="0" cellspacing="0" border="0"></p>
-						<tr>
-							<td align="left" width="200">Name:</td>
-							<td align="left">Email:</td>
-						</tr>
-						<tr>
-							<td><input type="text" name="name" class="textBox1" width="200" /></td>
-							<td><input type="text" name="email" maxlength="35"  size="35"   /></td>
-						</tr>
-					</table>
-					
+					<p>In what state do you serve? &nbsp; <input name="State" id="State" type="text" class="span1"  />	
+						
+		 			  <label for="email">Name</label>
+		 				<input type="text" class="textfield span4" name="email" id="email" value="<%= params[:email] %>" />
+		 					
+		 				<label for="password">Email</label>
+		 				<input type="password" class="textfield span4" name="password" id="password" value="<%= params[:password] %>" />
+		 					<br />
+		 		    <input type="submit" class="btn btn-success" value="Enter" />
+						
+
 				</div>
 			</div>
 			

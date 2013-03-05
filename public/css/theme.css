@@ -150,6 +150,7 @@ blockquote small	{
 	font-weight: 600;
 	text-decoration: none;
 	padding-bottom: 1px;
+	margin-bottom: -2px;
 	border: none;
 	border-bottom: 1px dotted #007dbc;
 	line-height: 1.8em;
