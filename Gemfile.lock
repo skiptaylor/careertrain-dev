@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     addressable (2.2.8)
     backports (3.0.3)
@@ -31,6 +31,9 @@ GEM
       dm-core (~> 1.2.0)
     dm-migrations (1.2.0)
       dm-core (~> 1.2.0)
+    dm-postgres-adapter (1.2.0)
+      dm-do-adapter (~> 1.2.0)
+      do_postgres (~> 0.10.6)
     dm-serializer (1.2.2)
       dm-core (~> 1.2.0)
       fastercsv (~> 1.5)
@@ -54,6 +57,8 @@ GEM
       uuidtools (~> 2.1)
     dm-validations (1.2.0)
       dm-core (~> 1.2.0)
+    do_postgres (0.10.12)
+      data_objects (= 0.10.12)
     do_sqlite3 (0.10.12)
       data_objects (= 0.10.12)
     eventmachine (1.0.1)
@@ -102,6 +107,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-script (>= 2.2.0)
   data_mapper (~> 1.2.0)
+  dm-postgres-adapter (~> 1.2.0)
   dm-sqlite-adapter (~> 1.2.0)
   kramdown (>= 0.14.2)
   sass (>= 3.2.5)
