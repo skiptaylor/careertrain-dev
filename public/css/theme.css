@@ -102,11 +102,16 @@ p, h2, h3, h4, h5, h6 	{
 
 h1	{
 	font-family: 'Open Sans', sans-serif;
-	margin: 18px 0 32px 0;
+	margin: 0px 0 18px 0;
 	font-size: 2.7em;
 	line-height: 1.2em;
 	font-weight: 400;
 	letter-spacing: -1px;
+}
+
+.page-header	{
+	margin: 18px 0 32px 0;
+	border: none;
 }
 
 h4	{
@@ -119,7 +124,7 @@ h5	{
 	font-weight: 400;
 	font-size: 1.4em;
 	padding: 0;
-	margin: 26px 0 12px 0;
+	margin: 0px 0 14px 0;
 }
 h6	{
 	font-weight: 400;
@@ -137,7 +142,7 @@ h3	{
 }
 
 blockquote	{
-	margin: 30px 0px;
+	margin: 9px 0px 30px 0;
 	border-left-color: silver;
 }
 blockquote small	{
@@ -146,7 +151,7 @@ blockquote small	{
 }
 
 .under-link a	{
-	color: #007dbc;
+	color: #0088cc;
 	font-weight: 600;
 	text-decoration: none;
 	padding-bottom: 1px;
@@ -325,3 +330,6 @@ p.answer	{
 	border-bottom: 1px solid black;
 }
 
+.half-space p	{
+	margin-bottom: 32px;
+}
