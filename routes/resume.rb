@@ -1,10 +1,10 @@
 get '/resumes/?' do
-	@resumes = Resume.all
+	@resume = Resume.all
 	erb :resumes
 end
 
 get '/resumes/new/?' do
-  @resumes = Resume.new
+  @resume = Resume.new
   erb :edit_resume
 end
 
@@ -17,12 +17,12 @@ post '/resumes/new/?' do
 end
 
 get '/resumes/:id/?' do
-  @resumes = Resume.get(params[:id])
+  @resume = Resume.get(params[:id])
   erb :resume
 end
 
 get '/resumes/:id/edit/?' do
-  @resumes = Resume.get(params[:id])
+  @resume = Resume.get(params[:id])
   erb :edit_resume
 end
 
