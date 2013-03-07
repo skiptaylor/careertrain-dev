@@ -1,0 +1,2 @@
+<center><strong>CHARACTERISTICS OF THE "E" CATEGORY<br /><br />PROTECTIVE/MILITARY SERVICE</strong></center>
+<p>If you have a high score in the "E" category, you are an adventurous person and take chances and risks. You like working as part of a team. Being physically and mentally strong is important to you. You respect strength in others. You like being with people, but need a reason to be around them. There must be some reason for a party or social event for you to feel comfortable. You probably have strong friendships with a few people rather than with many people.</p>
