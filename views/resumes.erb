@@ -12,11 +12,11 @@
 						<th>Email</th>
 						<th style="text-align: center;">Edit</th>
 					</tr>
-					<% @rrcs.each do |rrc| %>
+					<% @resumes.each do |resume| %>
 					<tr>
 						<td style="text-align: center;"><%= resume.email %></td>
-						<td class="semi-bold"><a href="mailto:<%= rrc.email %>"><%= resume.password %></a></td>
-						<td style="text-align: center;"><a href="rrcs/<%= rrc.id %>/edit"> &nbsp; <i class="icon-pencil"></i> &nbsp; </a></td>
+						<td class="semi-bold"><a href="mailto:<%= resume.email %>"><%= resume.password %></a></td>
+						<td style="text-align: center;"><a href="resumes/<%= resume.id %>/edit"> &nbsp; <i class="icon-pencil"></i> &nbsp; </a></td>
 					</tr>
 					<% end %>
 				</table>
@@ -28,7 +28,7 @@
 	         <input type="password" class="input-block-level" placeholder="melvin123">
 				<a href="#" class="btn btn-small">Update Account</a>
 				<br /><br /><br />
-				<a href="../student/resume" class="btn btn-success"><i class="icon-signout"></i> &nbsp;Sign out</a></p>
+				<a href="/student/resume" class="btn btn-success"><i class="icon-signout"></i> &nbsp;Sign out</a></p>
 			</div>
 		</div> <!-- /row -->
 	</div> <!-- /container -->
