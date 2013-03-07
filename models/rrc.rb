@@ -5,7 +5,8 @@ class Rrc
 	property   :deleted_at, ParanoidDateTime
 	property 	 :id, 				Serial
 
-  property :email, String
-  property :state, String
+  property :email,  String
+  property :state,  String
+  property :status, String
   
 end
