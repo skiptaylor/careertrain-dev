@@ -1,29 +1,25 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span8">
+			<div class="span4 offset3">
 				<h1>RRC</h1>
 		
 				<form method="post">
 					
 					<p>
 						<label for="email">Email</label>
-						<input type="text" name="email" id="email" class="textfield" value="<%= @rrc.email %>" />
+						<input type="text" name="email" id="email" class="textfield span4" value="<%= @rrc.email %>" />
 					</p>
 					<p>
 						<label for="state">State</label>
-						<input type="text" name="state" id="state" class="textfield" value="<%= @rrc.state %>" />
+						<input type="text" name="state" id="state" class="textfield span1" value="<%= @rrc.state %>" />
 					</p>
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/rrcs">Cancel</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/rrcs">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/rrcs/<%= @rrc.id %>/delete">Delete</a>
 					
 					</form>	
 			</div>
-			<div class="span3 offset1">
-				<br /><br /><br /><br />
-
-				<a href="../admin/admin" class="btn btn-success">Admin</a></p>
-			</div>
+			
 		</div> <!-- /row -->
 	</div> <!-- /container -->
 </div> <!-- /container-white -->
