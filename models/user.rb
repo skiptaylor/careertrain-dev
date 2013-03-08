@@ -10,4 +10,6 @@ class User
   property :last_activity, String
   property :create_date, String
   
+  has n, :contacts, :constraint => :destroy
+  
 end
