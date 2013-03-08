@@ -4,19 +4,19 @@
 			<div class="span8 offset2">
 				
 				<p><a href="/student/resume" class="btn btn-success pull-right"><i class="icon-signout"></i> &nbsp;Sign out</a></p>
-			<h1 class="page-header">Online Resume Tool</h1>
+			<h1 class="page-header">Contacts</h1>
 		
 				<table class="table table-striped table-condensed table-hover">
 					<tr>
+						<th>Name</th>
 						<th>Email</th>
-						<th>Password</th>
 						<th style="text-align: center;">Edit</th>
 					</tr>
-					<% @resume.each do |resume| %>
+					<% @contact.each do |contact| %>
 					<tr>
-						<td ><%= resume.email %></td>
-						<td class="semi-bold"><a href="mailto:<%= resume.email %>"><%= resume.password %></a></td>
-						<td style="text-align: center;"><a href="resumes/<%= resume.id %>/edit"> <i class="icon-pencil"></i> </a></td>
+						<td ><%= contact.name %></td>
+						<td class="semi-bold"><a href="mailto:<%= resume.email %>"><%= contact.email %></a></td>
+						<td style="text-align: center;"><a href="contacts/<%= contact.id %>/edit"> <i class="icon-pencil"></i> </a></td>
 					</tr>
 					<% end %>
 				</table>
