@@ -15,7 +15,7 @@ class Contact
   property :email, String
   property :last_activity, String
   
-  belongs_to :resume
+  belongs_to :resume, required: false
 
 end
 
