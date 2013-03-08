@@ -4,19 +4,21 @@
 			<div class="span8 offset2">
 				
 				<p><a href="/student/resume" class="btn btn-success pull-right"><i class="icon-signout"></i> &nbsp;Sign out</a></p>
-			<h1 class="page-header">Contacts</h1>
+			<h1 class="page-header">Awards</h1>
 		
 				<table class="table table-striped table-condensed table-hover">
 					<tr>
-						<th>Name</th>
-						<th>Email</th>
+						<th>Award</th>
+						<th>Date</th>
+						<th>Change Date</th>
 						<th style="text-align: center;">Edit</th>
 					</tr>
-					<% @contact.each do |contact| %>
+					<% @award.each do |award| %>
 					<tr>
-						<td ><%= contact.name %></td>
-						<td class="semi-bold"><a href="mailto:<%= contact.email %>"><%= contact.email %></a></td>
-						<td style="text-align: center;"><a href="contacts/<%= contact.id %>/edit"> <i class="icon-pencil"></i> </a></td>
+						<td><%= award.award %></td>
+						<td><%= award.award_date %></td>
+						<td><%= award.award_date_change %></td>
+						<td style="text-align: center;"><a href="awards/<%= award.id %>/edit"> <i class="icon-pencil"></i> </a></td>
 					</tr>
 					<% end %>
 				</table>

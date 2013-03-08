@@ -1,0 +1,37 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span12">
+				<h1 class="page-header">Online Resume Tool</h1>
+			</div>
+			<div class="span8">
+		
+				<form method="post">
+					
+					<p>
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" class="textfield span4" value="<%= @user.email %>" />
+					</p>
+					<p>
+						<label for="password">Password</label>
+						<input type="text" name="password" id="password" class="textfield span1" value="<%= @user.password %>" />
+					</p>
+					
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/users">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/users/<%= @user.id %>/delete">Delete</a>
+					
+				</form>
+				
+			</div>
+			<div class="span3 offset1">
+				<br /><br /><br /><br />
+				<h6>Profile</h6>
+	         <input type="text" class="input-block-level" placeholder="melvin@suggins.com">
+	         <input type="password" class="input-block-level" placeholder="melvin123">
+				<a href="#" class="btn btn-small">Update Account</a>
+				<br /><br /><br />
+				<a href="/student/resume" class="btn btn-success"><i class="icon-signout"></i> &nbsp;Sign out</a></p>
+			</div>
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->
+

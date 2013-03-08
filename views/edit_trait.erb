@@ -1,0 +1,28 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span4 offset3">
+				<h1>RRC</h1>
+		
+				<form method="post">
+					
+					<p>
+						<label for="trait_1">Trait 1</label>
+						<input type="text" name="trait_1" id="trait_1" class="textfield span4" value="<%= @trait.trait_1 %>" />
+					</p>
+
+					
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/rrcs">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/rrcs/<%= @rrc.id %>/delete">Delete</a>
+					
+					</form>	
+			</div>
+			
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->
+
+:id_user,  String
+  property :trait_1,  String
+  property :trait_2, String
+  property :trait_3, String
+  property :opening_sentence,

@@ -1,0 +1,29 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span8">
+				<h1>RRC Display</h1>
+		
+				<p>Position<br />
+					<%= @activity.position %></p>
+				<p>Organization<br />
+					<%= @activity.organization %></p>
+				<p>Start Date<br />
+					<%= @activity.date_start %></p>
+				<p>End Date<br />
+					<%= @activity.date_end %></p>
+				<p>Change Start Date<br />
+					<%= @activity.date_start_change %></p>
+				<p>Change End Date<br />
+					<%= @activity.date_end_change %></p>
+					
+				<a href="<%= @activity.id %>/edit">Edit</a>
+			</div>
+			<div class="span3 offset1">
+				<br /><br /><br /><br />
+
+				<a href="/admin/admin" class="btn btn-success">Admin</a></p>
+			</div>
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->

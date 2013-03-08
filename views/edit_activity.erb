@@ -1,0 +1,41 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span4 offset3">
+				<h1>RRC</h1>
+		
+				<form method="post">
+					
+					<p>
+						<label for="position">Position</label>
+						<input type="text" name="position" id="position" class="textfield span4" value="<%= @activity.position %>" />
+					</p>
+					<p>
+						<label for="organization">Organization</label>
+						<input type="text" name="organization" id="organization" class="textfield span4" value="<%= @activity.organization %>" />
+					</p>
+					<p>
+						<label for="date_start">Start Date</label>
+						<input type="text" name="date_start" id="date_start" class="textfield span4" value="<%= @activity.date_start %>" />
+					</p>
+					<p>
+						<label for="date_end">End Date</label>
+						<input type="text" name="date_end" id="date_end" class="textfield span4" value="<%= @activity.date_end %>" />
+					</p>
+					<p>
+						<label for="date_start_change">Change Start Date</label>
+						<input type="text" name="date_start_change" id="date_start_change" class="textfield span4" value="<%= @activity.date_start_change %>" />
+					</p>
+					<p>
+						<label for="date_end_change">Change End Date</label>
+						<input type="text" name="date_end_change" id="date_end_change" class="textfield span4" value="<%= @activity.date_end_change %>" />
+					</p>
+					
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/activities">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/activities/<%= @activity.id %>/delete">Delete</a>
+					
+					</form>	
+			</div>
+			
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->

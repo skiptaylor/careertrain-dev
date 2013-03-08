@@ -1,4 +1,4 @@
-class Contact
+class Experience
 	include DataMapper::Resource
 
 	timestamps :at, :on
@@ -6,16 +6,15 @@ class Contact
 	property 	 :id, 				Serial
 
   property :id_user,  String
-  property :name,  String
-  property :address, String
+  property :company,  String
   property :city, String
   property :state, String
-  property :zip, String
-  property :phone, String
-  property :email, String
-  property :last_activity, String
+  property :start, String
+  property :end, String
+  property :position, String
+  property :start_change, String
+  property :end_change, String
   
   belongs_to :user, required: false
-
+  
 end
-

@@ -1,21 +1,23 @@
-class Contact
+class Letter
 	include DataMapper::Resource
 
 	timestamps :at, :on
 	property   :deleted_at, ParanoidDateTime
 	property 	 :id, 				Serial
 
-  property :id_user,  String
-  property :name,  String
+  property :title,  String
+  property :first,  String
+  property :last, String
+  property :position, String
+  property :id_user, String
+  property :company, String
   property :address, String
   property :city, String
   property :state, String
   property :zip, String
-  property :phone, String
-  property :email, String
-  property :last_activity, String
+  property :apply, String
+  property :opening, String
   
   belongs_to :user, required: false
-
+  
 end
-
