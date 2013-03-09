@@ -10,9 +10,21 @@
 						<label for="trait_1">Trait 1</label>
 						<input type="text" name="trait_1" id="trait_1" class="textfield span4" value="<%= @trait.trait_1 %>" />
 					</p>
+					<p>
+						<label for="trait_2">Trait 2</label>
+						<input type="text" name="trait_2" id="trait_2" class="textfield span4" value="<%= @trait.trait_2 %>" />
+					</p>
+					<p>
+						<label for="trait_3">Trait 3</label>
+						<input type="text" name="trait_3" id="trait_3" class="textfield span4" value="<%= @trait.trait_3 %>" />
+					</p>
+					<p>
+						<label for="opening_sentence">Opening Sentence</label>
+						<input type="text" name="opening_sentence" id="opening_sentence" class="textfield span4" value="<%= @trait.opening_sentence %>" />
+					</p>
 
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/rrcs">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/rrcs/<%= @rrc.id %>/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/traits">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/traits/<%= @trait.id %>/delete">Delete</a>
 					
 					</form>	
 			</div>
@@ -20,9 +32,3 @@
 		</div> <!-- /row -->
 	</div> <!-- /container -->
 </div> <!-- /container-white -->
-
-:id_user,  String
-  property :trait_1,  String
-  property :trait_2, String
-  property :trait_3, String
-  property :opening_sentence,
