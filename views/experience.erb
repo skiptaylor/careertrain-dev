@@ -1,0 +1,38 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span8">
+				<h1>Cover Letter</h1>
+		
+					<p>Title<br /><%= @letter.title %></p>
+					
+					<p>First Name<br /><%= @letter.first %></p>
+						
+					<p>Last Name<br /><%= @letter.last %></p>
+							
+					<p>Position<br /><%= @letter.position %></p>
+
+					<p>Company<br /><%= @letter.company %></p>
+					
+					<p>Company Address<br /><%= @letter.address %></p>
+					
+					<p>Company City<br /><%= @letter.city %></p>
+					
+					<p>Company State<br /><%= @letter.state %></p>
+					
+					<p>Company Zip<br /><%= @letter.zip %></p>
+					
+					<p>Job Apply<br /><%= @letter.apply %></p>
+					
+					<p>Opening Sentence<br /><%= @letter.opening %></p>
+					
+				<a href="<%= @letter.id %>/edit">Edit</a>
+			</div>
+			<div class="span3 offset1">
+				<br /><br /><br /><br />
+
+				<a href="../admin/admin" class="btn btn-success">Admin</a></p>
+			</div>
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->

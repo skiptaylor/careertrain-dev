@@ -1,0 +1,53 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span4 offset3">
+				<h1>Experience</h1>
+		
+				<form method="post">
+					
+					<p>
+						<label for="id_user">id_user</label>
+						<input type="text" name="id_user" id="id_user" class="textfield span4" value="<%= @experience.id_user %>" />
+					</p>
+					<p>
+						<label for="company">company</label>
+						<input type="text" name="company" id="company" class="textfield span4" value="<%= @experience.company %>" />
+					</p>
+					<p>
+						<label for="city">city</label>
+						<input type="text" name="city" id="city" class="textfield span4" value="<%= @experience.city %>" />
+					</p>
+					<p>
+						<label for="state">state</label>
+						<input type="text" name="state" id="state" class="textfield span4" value="<%= @experience.state %>" />
+					</p>
+					<p>
+						<label for="start">start</label>
+						<input type="text" name="start" id="start" class="textfield span4" value="<%= @experience.start %>" />
+					</p>
+					<p>
+						<label for="end">end</label>
+						<input type="text" name="end" id="end" class="textfield span4" value="<%= @experience.end %>" />
+					</p>
+					<p>
+						<label for="position">position</label>
+						<input type="text" name="position" id="position" class="textfield span4" value="<%= @experience.position %>" />
+					</p>
+					<p>
+						<label for="start_change">start_change</label>
+						<input type="text" name="start_change" id="start_change" class="textfield span4" value="<%= @experience.start_change %>" />
+					</p>
+					<p>
+						<label for="end_change">end_change</label>
+						<input type="text" name="end_change" id="end_change" class="textfield span4" value="<%= @experience.end_change %>" />
+					</p>
+					
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/experiences">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/experiences/<%= @experience.id %>/delete">Delete</a>
+					
+					</form>	
+			</div>
+			
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->

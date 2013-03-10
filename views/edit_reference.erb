@@ -1,0 +1,53 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span4 offset3">
+				<h1>Reference</h1>
+		
+				<form method="post">
+					
+					<p>
+						<label for="id_user">id_user</label>
+						<input type="text" name="id_user" id="id_user" class="textfield span4" value="<%= @reference.id_user %>" />
+					</p>
+					<p>
+						<label for="name">name</label>
+						<input type="text" name="name" id="name" class="textfield span4" value="<%= @reference.name %>" />
+					</p>
+					<p>
+						<label for="relationship">relationship</label>
+						<input type="text" name="relationship" id="relationship" class="textfield span4" value="<%= @reference.relationship %>" />
+					</p>
+					<p>
+						<label for="address">address</label>
+						<input type="text" name="address" id="address" class="textfield span4" value="<%= @reference.address %>" />
+					</p>
+					<p>
+						<label for="city">city</label>
+						<input type="text" name="city" id="city" class="textfield span4" value="<%= @reference.city %>" />
+					</p>
+					<p>
+						<label for="state">state</label>
+						<input type="text" name="state" id="state" class="textfield span4" value="<%= @reference.state %>" />
+					</p>
+					<p>
+						<label for="zip">zip</label>
+						<input type="text" name="zip" id="zip" class="textfield span4" value="<%= @reference.zip %>" />
+					</p>
+					<p>
+						<label for="phone">phone</label>
+						<input type="text" name="phone" id="phone" class="textfield span4" value="<%= @reference.phone %>" />
+					</p>
+					<p>
+						<label for="email">email</label>
+						<input type="text" name="email" id="email" class="textfield span4" value="<%= @reference.email %>" />
+					</p>
+					
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/@references">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/@references/<%= @reference.id %>/delete">Delete</a>
+					
+					</form>	
+			</div>
+			
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->
