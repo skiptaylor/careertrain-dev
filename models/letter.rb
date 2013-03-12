@@ -9,7 +9,7 @@ class Letter
   property :first,  String
   property :last, String
   property :position, String
-  property :id_user, String
+  property :user_id, Integer
   property :company, String
   property :address, String
   property :city, String

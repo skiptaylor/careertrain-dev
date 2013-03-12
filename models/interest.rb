@@ -5,7 +5,7 @@ class Interest
 	property   :deleted_at, ParanoidDateTime
 	property 	 :id, 				Serial
 
-  property :id_user,  String
+  property :user_id,  Integer
   property :interest,  String
   
   belongs_to :user, required: false

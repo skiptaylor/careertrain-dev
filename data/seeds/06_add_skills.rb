@@ -4,7 +4,7 @@ Skill.destroy
 CSV.open('./data/ct_resume_databases/career_skills.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
     Skill.create(
-      id_user:    line['ID'].to_i,
+      user_id:    line['ID'].to_i,
       skill:      line['Skill'],
       applied_1:  line['Applied_Skill_1'],
       applied_2:  line['Applied_Skill_2'],

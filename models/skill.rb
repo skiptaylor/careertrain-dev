@@ -10,7 +10,7 @@ class Skill
   property :applied_2, String
   property :applied_3, String
   property :applied_4, String
-  property :id_user,   String
+  property :user_id,   Integer
   
   belongs_to :user, required: false
   

@@ -4,7 +4,7 @@ Activity.destroy
 CSV.open('./data/ct_resume_databases/activities.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
     Activity.create(
-      id_user:            line['ID'].to_i,
+      user_id:            line['ID'].to_i,
       position:           line['Position'],
       organization:       line['Name_of_Org'],
       date_start:         line['Date_Start'],

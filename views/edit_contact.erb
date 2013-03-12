@@ -7,10 +7,6 @@
 				<form method="post">
 					
 					<p>
-						<label for="user_id">user_id</label>
-						<input type="text" name="user_id" id="user_id" class="textfield span4" value="<%= @contact.user_id %>" />
-					</p>
-					<p>
 						<label for="name">Name</label>
 						<input type="text" name="name" id="name" class="textfield span4" value="<%= @contact.name %>" />
 					</p>
@@ -39,7 +35,7 @@
 						<input type="text" name="email" id="email" class="textfield span1" value="<%= @contact.email %>" />
 					</p>
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/contacts">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/contacts/<%= @contact.id_user %>/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/contacts">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="">Delete</a>
 					
 					</form>	
 			</div>

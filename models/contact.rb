@@ -5,7 +5,7 @@ class Contact
 	property   :deleted_at, ParanoidDateTime
 	property 	 :id, 				Serial
 
-  property :user_id,  String
+  property :user_id,  Integer
   property :name,  String
   property :address, String
   property :city, String

@@ -4,7 +4,7 @@ Letter.destroy
 CSV.open('./data/ct_resume_databases/cover_letters.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
     Letter.create(
-      id_user:  line['ID'].to_i,
+      user_id:  line['ID'].to_i,
       title:    line['Title'],
       first:    line['First_Name'],
       last:     line['Last_Name'],

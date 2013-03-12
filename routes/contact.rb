@@ -3,12 +3,12 @@ get '/contacts/?' do
 	erb :contacts
 end
 
-get '/contacts/new/?' do
+get '/users/:user_id/contacts/new/?' do
   @contact = Contact.new
   erb :edit_contact
 end
 
-post '/contacts/new/?' do
+post '/users/:user_id/contacts/new/?' do
   contact = Contact.create(
     :email      => params[:email],
     :password   => params[:password]
@@ -16,17 +16,17 @@ post '/contacts/new/?' do
   redirect '/contacts'
 end
 
-get '/contacts/:id/?' do
+get '/users/:user_id/contacts/:id/?' do
   @contact = Contact.get(params[:id])
   erb :contact
 end
 
-get '/users/:user_id/contacts/:user_id/edit/?' do
+get '/users/:user_id/contacts/:id/edit/?' do
   @contact = Contact.get(params[:id])
   erb :edit_contact
 end
 
-post '/contacts/:id/edit/?' do
+post '/users/:user_id/contacts/:id/edit/?' do
   contact = Contact.get(params[:id])
   contact.update(
     :email  => params[:email],
@@ -35,7 +35,7 @@ post '/contacts/:id/edit/?' do
   redirect '/contacts'
 end
 
-get '/contacts/:id/delete/?' do
+get '/users/:user_id/contacts/:id/delete/?' do
   contact = Contact.get(params[:id])
   contact.destroy
   redirect '/contacts'

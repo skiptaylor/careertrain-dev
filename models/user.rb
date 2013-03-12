@@ -5,12 +5,12 @@ class User
   property   :deleted_at, ParanoidDateTime
   property   :id,         Serial
 
-  property :email,    String
+  property :email,  String
   property :password, String
   property :last_activity, String
   property :create_date, String
   
-  has n, :contacts
+  has 1, :contact
   has n, :awards
   has n, :activities
   has n, :educations

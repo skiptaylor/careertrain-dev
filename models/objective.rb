@@ -8,7 +8,7 @@ class Objective
   property :goal,  String
   property :learn,  String
   property :long_goal, String
-  property :id_user, String
+  property :user_id, Integer
   
   belongs_to :user, required: false
   
