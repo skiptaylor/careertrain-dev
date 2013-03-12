@@ -4,8 +4,8 @@ Education.destroy
 CSV.open('./data/ct_resume_databases/education.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
     Education.create(
-      id_user:                line['ID'],
-      id:                     line['ID_PK'],
+      id_user:                line['ID'].to_i,
+      id:                     line['ID_PK'].to_i,
       attending:              line['Attending'],
       graduate_on:            line['Graduate_On'],
       plan_attend:            line['Plan_attend'],

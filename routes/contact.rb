@@ -21,7 +21,7 @@ get '/contacts/:id/?' do
   erb :contact
 end
 
-get '/contacts/:id/edit/?' do
+get '/users/:user_id/contacts/:user_id/edit/?' do
   @contact = Contact.get(params[:id])
   erb :edit_contact
 end

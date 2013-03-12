@@ -32,11 +32,21 @@ post '/users/:id/edit/?' do
     :email  => params[:email],
     :password  => params[:password]
   )
-  redirect '/users'
+  redirect "/users/#{params[:id]}/resume_tool"
 end
 
 get '/users/:id/delete/?' do
   user = User.get(params[:id])
   user.destroy
   redirect '/users'
+end
+
+get '/users/:id/resume_tool/?' do
+  @user = User.get(params[:id])
+  erb :resume_tool
+end
+
+get '/users/:id/contacts/:id/edit_contact/?' do
+  @user = User.get(params[:id])
+  erb :edit_contact
 end

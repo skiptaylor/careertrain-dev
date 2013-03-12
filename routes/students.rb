@@ -37,7 +37,7 @@ namespace '/student' do
     if @errors.count == 0
       session[:student] = @user.id
       flash[:alert] = 'You are now signed in.'
-      redirect '/student/student'
+      redirect '/resume_tool/'
     else
       flash[:alert] = 'There was an error signing in. Please try again.'
       erb :'student/sign-in'

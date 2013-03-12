@@ -4,7 +4,7 @@ Contact.destroy
 CSV.open('./data/ct_resume_databases/contact_info.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
     Contact.create(
-      id_user:        line['ID'],
+      user_id:        line['ID'].to_i,
       name:           line['Name'],
       address:        line['Address'],
       city:           line['City'],
@@ -13,7 +13,7 @@ CSV.open('./data/ct_resume_databases/contact_info.csv', { headers: true }) do |c
       phone:          line['Phone_Number'],
       email:          line['email'],
       last_activity:  line['Last_Activity'],
-      id:             line['PK_ID']
+      id:             line['PK_ID'].to_i
     )
   end
 end
