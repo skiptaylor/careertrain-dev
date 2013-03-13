@@ -16,7 +16,7 @@ post '/users/:user_id/contacts/new/?' do
   redirect '/contacts'
 end
 
-get '/users/:user_id/contacts/:id/?' do
+get '/users/:user_id/contacts/:user_id/?' do
   @contact = Contact.get(params[:id])
   erb :contact
 end
@@ -35,8 +35,8 @@ post '/users/:user_id/contacts/:id/edit/?' do
   redirect '/contacts'
 end
 
-get '/users/:user_id/contacts/:id/delete/?' do
-  contact = Contact.get(params[:id])
+get '/users/:user_id/contacts/:user_id/delete/?' do
+  contact = Contact.get(params[:user_id])
   contact.destroy
   redirect '/contacts'
 end

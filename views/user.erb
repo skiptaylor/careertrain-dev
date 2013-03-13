@@ -8,6 +8,15 @@
 						
 				<p><strong>Email</strong><br /><%= @user.email %></p>
 				<p><strong>Password</strong><br /><%= @user.password %></p>
+				
+				<p><%= @user.name %><br />
+					<%= @user.address %><br />
+					<%= @user.city %><br />
+					<%= @user.state %><br />
+					<%= @user.zip %><br />
+					<%= @user.phone %><br />
+				</p>
+				
 				<a href="/users/<%= @user.id %>/edit" class="btn btn-success"><i class="icon-pencil"></i> &nbsp;Edit</a>
 
 			</div>
