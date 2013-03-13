@@ -9,8 +9,17 @@ class User
   property :password, String
   property :last_activity, String
   property :create_date, String
+
+ # From Contact
+  property :name,  String
+  property :address, String
+  property :city, String
+  property :state, String
+  property :zip, String
+  property :phone, String
+  property :email, String
+
   
-  has 1, :contact
   has n, :awards
   has n, :activities
   has n, :educations
