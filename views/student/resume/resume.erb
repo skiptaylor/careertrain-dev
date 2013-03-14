@@ -1,0 +1,83 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span12">
+				<h1 class="page-header">Online Resume Tool</h1>
+			</div>
+			<div class="span6">
+		
+				<table class="table table-striped table-hover">
+					<tr>
+						<td><input type="checkbox"></td>
+						<th>Cover Letters</th>
+						<td>Edit</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<th>Carer Objectives</th>
+						<td>Edit</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<th>Education</th>
+						<td>Edit</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<th>Work Experience</th>
+						<td>Edit</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<th>Activities</th>
+						<td>Edit</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<th>Awards</th>
+						<td>Edit</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<th>References</th>
+						<td>Edit</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<th>Character Traits</th>
+						<td>Edit</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<th>Interests and Hobbies</th>
+						<td>Edit</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<th>Personal Information</th>
+						<td>Edit</td>
+					</tr>
+				</table>
+				<p><a href="#" class="btn btn-small">View Cover Letters</a> &nbsp; <a href="#" class="btn btn-small">View Resume</a> &nbsp; <a href="#" class="btn btn-small">View References</a></p>
+				<p>Copy and paste the contents of your cover letter, resume, thank you letter, and references sheet to a Microsoft Word or similar document so you can edit and save it. You will need to double check for grammar and spelling.</p>
+			</div>
+			<div class="span5 offset1">
+				<div class="well">
+				<h6>Profile</h6>
+	         <p><small>Email</small><br /><span class="semi-bold"><%= @user.email %></span></p>
+	         <p><small>Password</small><br /><span class="semi-bold">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span></p>
+				<p><strong><%= @user.name %></strong><br />
+					<%= @user.address %><br />
+					<%= @user.city %>, <%= @user.state %> &nbsp;<%= @user.zip %>
+				</p>
+				<p>
+					<span class="semi-bold"><%= @user.phone %></span>
+				</p>
+				<a href="/users/<%= @user.id %>/edit" class="btn btn-success btn-small"><i class="icon-pencil"></i> &nbsp;Edit Profile</a>
+				<br /><br /><br />
+				<a href="/student/resume" class="btn"><i class="icon-signout"></i> &nbsp;Sign out</a></p>
+			</div>
+			</div>
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->
