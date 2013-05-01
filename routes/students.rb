@@ -1,6 +1,6 @@
 namespace '/student' do
 
-  ['/resume/?', '/resources/?'].each do |path|
+  ['/resume/sign-in/?'].each do |path|
     before(path) { authenticate :student }
   end
 
