@@ -4,21 +4,18 @@
 			<div class="span5 offset3">
 				<div class="well">
 		      <form class="form-signin">
-		        <h2 class="form-signin-heading">New account</h2>
-				  <input type="school_password" class="input-block-level" placeholder="School's password">
-				  <p><small>If you do not know your schoo's password, please contact your guidance counselor or teacher.</small></p>
-		        <input type="text" class="input-block-level" placeholder="Email address">
-		        <input type="password" class="input-block-level" placeholder="Personal password">
+		        <h2 class="form-signin-heading">Create New Account</h2>
+				  <input type="school_password" class="input-block-level" placeholder="School's password" name="school_password" id="school_password" value="<%= params[:school_password] %>">
+				  <p><small>If you do not know your school's password, please contact your guidance counselor or teacher.</small></p>
+		        <input type="text" class="input-block-level" placeholder="Email address" name="email" id="email" value="<%= params[:email] %>">
+		        <input type="password" class="input-block-level" placeholder="Personal password" name="password" id="password" value="<%= params[:password] %>">
 		        <label class="checkbox">
 		          <input type="checkbox" value="remember-me"> I am 13 or older
 		        </label>
-				  
-		        <button class="btn btn-primary" type="submit">Create</button>
+		        <button class="btn btn-primary pull-right" type="submit">Create</button><br />
 		      </form>
 				</div>
-				<a href="../resume/resume_admin">Create will go here when finished</a>
 			</div>
 		</div> <!-- /row -->
 	</div> <!-- /container -->
 </div> <!-- /container-white -->
-

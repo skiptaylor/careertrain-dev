@@ -1,19 +1,44 @@
+<div class="container">
+	<ul class="breadcrumb">
+		<li class="active"><a href="student">Career Direction 2</a> <span class="divider"> </span> </li>
+		<li><a href="report">Student Report</a> <span class="divider"> </span> </li>
+		<li><a href="resume">Resume Tool</a> <span class="divider"> </span> </li>
+		<li><a href="feedback">Student Feedback</a> <span class="divider"> </span> </li>
+		<li><a href="resources">Helpful Links</a> <span class="divider"> </span> </li>
+	</ul>
+</div>
+
 <div class="container-white">
 	<div class="container">	
-		<div class="row">  
-			<div class="span5 offset3">
-				<div class="well">
-		      <form class="form-signin">
-		        <h2 class="form-signin-heading">Sign in</h2>
-		        <input type="text" class="input-block-level" placeholder="Email address">
-		        <input type="password" class="input-block-level" placeholder="Personal password">
-				  <br /><br />
-		        <button class="btn btn-primary" type="submit">Sign in</button>
-		      </form>
-				</div>
-				<a href="../resume/resume_admin">Sign in will go here when finished</a>
-			</div>
+		<div class="row"> 
+			<div class="span12">
+				<form method="post">
+	  			 <fieldset>
+			    	<legend>Sign In</legend>
+
+			    	<p>
+				      <label>Email address</label>
+				      <input type="text" name="email" id="email" value="<%= params[:email] %>" />
+				      <% if @errors.include? :email_not_found %>
+				        <span class="help-inline">That email address isn't in our system. Maybe you need to <a href="/student/resume/create">create an account</a>.</span>
+				      <% end %>
+				    </p>
+
+				    <p>
+				      <label>Password</label>
+				      <input type="password" name="password" id="password" value="<%= params[:password] %>" />
+				      <% if @errors.include?(:password_not_matched) && !@errors.include?(:email_not_found) %>
+				        <span class="help-inline">Wrong password.</span>
+				      <% end %>
+
+				    </p>
+
+				    <p>
+				      <button type="submit" class="btn btn-primary">Sign In</button>
+				    </p>
+				  </fieldset>
+				</form>
+			</div>	
 		</div> <!-- /row -->
 	</div> <!-- /container -->
 </div> <!-- /container-white -->
-

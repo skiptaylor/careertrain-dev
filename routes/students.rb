@@ -1,10 +1,10 @@
 namespace '/student' do
 
-  ['/resume/sign-in/?'].each do |path|
-    before(path) { authenticate :student }
+  get '/student/resume/create/?' do 
+    erb :'student/resume/create'
   end
 
-  post '/create-account/?' do
+  post '/student/resume/create/?' do
     params[:email].strip!
     params[:email].downcase!
     params[:password].strip!
@@ -18,14 +18,18 @@ namespace '/student' do
       student = User.create(email: params[:email], password: params[:password])
       session[:student] = student.id
       flash[:alert] = 'You are now signed in.'
-      redirect '/student/student'
+      redirect '/student/resume/index'
     else
       flash[:alert] = 'There was an error creating your account. Please try again.'
-      erb :'student/create-account'
+      erb :'student/resume_tool'
     end
   end
+  
+  get '/student/resume/signin/?' do 
+    erb :'student/resume/signin'
+  end
 
-  post '/sign-in/?' do
+  post '/student/resume/signin/?' do
     params[:email].strip!
     params[:email].downcase!
     params[:password].strip!
@@ -44,7 +48,7 @@ namespace '/student' do
     end
   end
 
-  get '/sign-out/?' do
+  get '/student/resume/sign-out/?' do
     session[:student] = nil
     flash[:alert] = 'Thank you, come again!'
     redirect 'student/sign-in'
