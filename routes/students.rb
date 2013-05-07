@@ -1,10 +1,10 @@
 namespace '/student' do
 
-  get '/student/resume/create/?' do 
+  get '/resume/create/?' do 
     erb :'student/resume/create'
   end
 
-  post '/student/resume/create/?' do
+  post '/resume/create/?' do
     params[:email].strip!
     params[:email].downcase!
     params[:password].strip!
@@ -25,11 +25,11 @@ namespace '/student' do
     end
   end
   
-  get '/student/resume/signin/?' do 
+  get '/resume/signin/?' do 
     erb :'student/resume/signin'
   end
 
-  post '/student/resume/signin/?' do
+  post '/resume/signin/?' do
     params[:email].strip!
     params[:email].downcase!
     params[:password].strip!
@@ -48,7 +48,7 @@ namespace '/student' do
     end
   end
 
-  get '/student/resume/sign-out/?' do
+  get '/resume/sign-out/?' do
     session[:student] = nil
     flash[:alert] = 'Thank you, come again!'
     redirect 'student/sign-in'
