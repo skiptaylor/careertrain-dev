@@ -1,15 +1,15 @@
-get '/arng/register_form/?' do
-	@school = School.all
-	erb :'/arng/register_form'
+get '/arng/schools/?' do
+	@client = Client.all
+	erb :'/arng/schools/edit_school'
 end
 
-get '/arng/new/?' do
-  @rrc = Rrc.new
-  erb :'/arng/register_form'
+get '/arng/schools/new/?' do
+  @client = Client.new
+  erb :'/arng/schools/edit_school'
 end
 
-post '/arng/new/?' do
-  school = School.create(
+post '/arng/schools/new/?' do
+  client = Client.create(
     :school_id              => params[:school_id],
     :date_modified          => params[:date_modified],
     :first_name             => params[:first_name],
@@ -33,27 +33,27 @@ post '/arng/new/?' do
     :email                  => params[:email],
     :number_seniors         => params[:number_seniors]
   )
-  params[:active] 					? school.update(:active => true)    : school.update(:active => false)
-  params[:cd] 					    ? school.update(:cd => true)        : school.update(:cd => false)
-  params[:ff] 					    ? school.update(:ff => true)        : school.update(:ff => false)
-  params[:cd_before] 				? school.update(:cd_before => true) : school.update(:cd_before => false)
+  params[:active] 					? client.update(:active => true)    : client.update(:active => false)
+  params[:cd] 					    ? client.update(:cd => true)        : client.update(:cd => false)
+  params[:ff] 					    ? client.update(:ff => true)        : client.update(:ff => false)
+  params[:cd_before] 				? client.update(:cd_before => true) : client.update(:cd_before => false)
   
-  redirect '/arng/register_form'
+  redirect '/arng/schools/edit_school'
 end
 
-get '/arng/:id/?' do
-  @school = School.get(params[:id])
-  erb :'/arng/register_form'
+get '/arng/school/:id/?' do
+  @client = Client.get(params[:id])
+  erb :'/arng/schools/edit_school'
 end
 
-get '/arng/:id/edit/?' do
-  @school = School.get(params[:id])
-  erb :'/arng/register_form'
+get '/arng/school/:id/edit/?' do
+  @client = Client.get(params[:id])
+  erb :'/arng/schools/edit_school'
 end
 
-post '/arng/:id/edit/?' do
-  school = School.get(params[:id])
-  school.update(
+post '/arng/school/:id/edit/?' do
+  client = Client.get(params[:id])
+  client.update(
     :school_id              => params[:school_id],
     :date_modified          => params[:date_modified],
     :first_name             => params[:first_name],
@@ -77,16 +77,16 @@ post '/arng/:id/edit/?' do
     :email                  => params[:email],
     :number_seniors         => params[:number_seniors]
   )
-  params[:active] 					? school.update(:active => true)    : school.update(:active => false)
-  params[:cd] 					    ? school.update(:cd => true)        : school.update(:cd => false)
-  params[:ff] 					    ? school.update(:ff => true)        : school.update(:ff => false)
-  params[:cd_before] 				? school.update(:cd_before => true) : school.update(:cd_before => false)
+  params[:active] 					? client.update(:active => true)    : client.update(:active => false)
+  params[:cd] 					    ? client.update(:cd => true)        : client.update(:cd => false)
+  params[:ff] 					    ? client.update(:ff => true)        : client.update(:ff => false)
+  params[:cd_before] 				? client.update(:cd_before => true) : client.update(:cd_before => false)
   
-  redirect '/arng/register_form'
+  redirect '/arng/schools/edit_school'
 end
 
-get '/arng/:id/delete/?' do
-  school = School.get(params[:id])
-  school.destroy
+get '/arng/schools/:id/delete/?' do
+  client = Client.get(params[:id])
+  client.destroy
   redirect '/arng/arng'
 end

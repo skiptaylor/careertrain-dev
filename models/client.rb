@@ -7,30 +7,30 @@ class Client
 
   property :school_id,          Integer
   property :date_modified,      String
-  property :first_name,         String
-  property :middle_initial,     String
-  property :last_name,          String
-  property :school_name,        String
-  property :school_address1,    String
-  property :school_address2,    String
-  property :school_city,        String
-  property :school_state,       String
-  property :school_zip,         String
-  property :school_zip_unique,  String
-  property :mail_address1,      String
-  property :mail_address2,      String
-  property :mail_city,          String
-  property :mail_state,         String
-  property :mail_zip,           String
-  property :phone,              String
-  property :fax,                String
-  property :ng_rep,             String
-  property :email,              String
-  property :number_seniors,     Integer
+  property :first_name,         String, default: ""
+  property :middle_initial,     String, default: ""
+  property :last_name,          String, default: ""
+  property :school_name,        String, default: ""
+  property :school_address1,    String, default: ""
+  property :school_address2,    String, default: ""
+  property :school_city,        String, default: ""
+  property :school_state,       String, default: ""
+  property :school_zip,         String, default: ""
+  property :school_zip_unique,  String, default: ""
+  property :mail_address1,      String, default: ""
+  property :mail_address2,      String, default: ""
+  property :mail_city,          String, default: ""
+  property :mail_state,         String, default: ""
+  property :mail_zip,           String, default: ""
+  property :phone,              String, default: ""
+  property :fax,                String, default: ""
+  property :ng_rep,             String, default: ""
+  property :email,              String, default: ""
+  property :number_seniors,     Integer, default: 0
   
   property :active,             Boolean, :default => true
-  property :cd,                 Boolean, :default => true
-  property :ff,                 Boolean, :default => true
+  property :cd,                 Boolean, :default => false
+  property :ff,                 Boolean, :default => false
   property :cd_before,          Boolean, :default => true
   
 end
