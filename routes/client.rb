@@ -1,6 +1,6 @@
 get '/arng/schools/?' do
 	@client = Client.all
-	erb :'/arng/schools/edit_school'
+	erb :'/arng/schools/schools'
 end
 
 get '/arng/schools/new/?' do
@@ -38,20 +38,20 @@ post '/arng/schools/new/?' do
   params[:ff] 					    ? client.update(:ff => true)        : client.update(:ff => false)
   params[:cd_before] 				? client.update(:cd_before => true) : client.update(:cd_before => false)
   
-  redirect '/arng/schools/edit_school'
+  redirect "/arng/schools/#{params[:id]}/edit_school"
 end
 
-get '/arng/school/:id/?' do
+get '/arng/schools/:id/?' do
   @client = Client.get(params[:id])
   erb :'/arng/schools/edit_school'
 end
 
-get '/arng/school/:id/edit/?' do
+get '/arng/schools/:id/edit/?' do
   @client = Client.get(params[:id])
   erb :'/arng/schools/edit_school'
 end
 
-post '/arng/school/:id/edit/?' do
+post '/arng/schools/:id/edit/?' do
   client = Client.get(params[:id])
   client.update(
     :school_id              => params[:school_id],
@@ -82,11 +82,11 @@ post '/arng/school/:id/edit/?' do
   params[:ff] 					    ? client.update(:ff => true)        : client.update(:ff => false)
   params[:cd_before] 				? client.update(:cd_before => true) : client.update(:cd_before => false)
   
-  redirect '/arng/schools/edit_school'
+  redirect "/arng/schools/#{params[:id]}/edit_school"
 end
 
 get '/arng/schools/:id/delete/?' do
   client = Client.get(params[:id])
   client.destroy
-  redirect '/arng/arng'
+  redirect "/arng/arng"
 end
