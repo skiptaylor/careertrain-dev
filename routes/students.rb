@@ -9,8 +9,8 @@ namespace '/student' do
     params[:email].downcase!
     params[:password].strip!
     params[:password].downcase!
-    params[:school_password].strip!
-    params[:school_password].downcase!
+    # params[:school_password].strip!
+#     params[:school_password].downcase!
 
     @errors << :email_in_use if User.all(email: params[:email]).count > 0
 
@@ -21,7 +21,7 @@ namespace '/student' do
       redirect '/student/resume/index'
     else
       flash[:alert] = 'There was an error creating your account. Please try again.'
-      erb :'student/resume_tool'
+      erb :'/student/resume_tool'
     end
   end
   
@@ -41,10 +41,10 @@ namespace '/student' do
     if @errors.count == 0
       session[:student] = @user.id
       flash[:alert] = 'You are now signed in.'
-      redirect '/resume_tool/'
+      redirect '/student/resume/index'
     else
       flash[:alert] = 'There was an error signing in. Please try again.'
-      erb :'student/sign-in'
+      erb :'student/resume/sign-in'
     end
   end
 
@@ -53,5 +53,12 @@ namespace '/student' do
     flash[:alert] = 'Thank you, come again!'
     redirect 'student/sign-in'
   end
+  
+  get '/resume/index/?' do
+     @user = User.get(params[:id])
+    erb :'/student/resume/index'
+  end
 
 end
+
+
