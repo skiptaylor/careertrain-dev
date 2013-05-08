@@ -3,7 +3,7 @@ Rrc.destroy
 
 CSV.open('./data/ct_databases/clients.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
-    School.create(
+    Client.create(
       school_id:          line['ClientID'].to_i,
       date_modified:      line['DateModified'],
       active:             line['Active'],

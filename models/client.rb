@@ -1,4 +1,4 @@
-class School
+class Client
 	include DataMapper::Resource
 
 	timestamps :at, :on
