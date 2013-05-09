@@ -1,6 +1,6 @@
-get '/arng/schools/?' do
+get '/client/?' do
 	@client = Client.all
-	erb :'/arng/schools/schools'
+	erb :'/clients'
 end
 
 get '/arng/schools/new/?' do
@@ -43,12 +43,12 @@ end
 
 get '/arng/schools/:id/?' do
   @client = Client.get(params[:id])
-  erb :'/arng/schools/edit_school'
+  erb :'/arng/schools/#{params[:id]}/edit_school'
 end
 
 get '/arng/schools/:id/edit/?' do
   @client = Client.get(params[:id])
-  erb :'/arng/schools/edit_school'
+  erb :'/arng/schools/#{params[:id]}/edit_school'
 end
 
 post '/arng/schools/:id/edit/?' do
@@ -85,8 +85,18 @@ post '/arng/schools/:id/edit/?' do
   redirect "/arng/schools/#{params[:id]}/edit_school"
 end
 
+get '/arng/schools/:id/school/?' do
+  @client = Client.get(params[:id])
+  erb :'/arng/schools/#{params[:id]}/school'
+end
+
 get '/arng/schools/:id/delete/?' do
   client = Client.get(params[:id])
   client.destroy
   redirect "/arng/arng"
+end
+
+get '/arng/schools/schools/?' do
+	@client = Client.all
+	erb :'/arng/schools/schools'
 end

@@ -16,22 +16,34 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span12">
-				<h1 class="page-header">Careers and Occupations Guide</h1>
+				<h1 class="page-header">Careers and Occupations Guide <br />Registered Schools</h1>
 			</div>
 			<div class="span8">
 				
-				<p>This organization is already registered. Use the password below to gain access to the Career and Occupations Guide. A confirmation of this information has also been generated and e-mailed to your organization's primary contact.</p> 
+				<table class="table table-striped table-condensed table-hover">
+					<tr>
+						<th>School</th>
+						<th>City</th>
+						<th>State</th>
+						<th>Zip</th>
+						<th style="text-align: center;">Edit</th>
+					</tr>
+					<% @client.each do |client| %>
+					<tr>
+						<td><%= @client.school_name %></td>
+						<td><%= @client.school_city %></td>
+						<td><%= @client.school_state %></td>
+						<td><%= @client.school_zip %></td>
+						<td style="text-align: center;"><a href="arng/schools/<%= client.id %>/edit"> <i class="icon-pencil"></i> </a></td>
+					</tr>
+					<% end %>
+				</table>
+			</div>
 
-				<div class="well">
-					<h5>Your password is: <strong>CD3004301</strong></h5>
-				</div>
-
-		</div>
-
-		<div class="span4">
-		  <p> </p>
-	  	</div>
-				  
+			<div class="span4">
+				 <p><img src="../img/" class="pic-border" /></p>
+			</div>
+		
 		</div>
 	</div> <!-- /container -->
 </div> <!-- /container-white -->
