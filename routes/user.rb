@@ -50,3 +50,32 @@ get '/users/:id/contacts/:id/edit_contact/?' do
   @user = User.get(params[:id])
   erb :edit_contact
 end
+
+post '/arng/arng/?' do
+  if (params[:password].strip.downcase == 'cdgaurd') || (params[:email].strip.downcase.include?('mil'))
+    session[:cdgaurd] = true
+    redirect '/arng/schools/340/edit'
+  else
+    flash[:alert] = 'Bad Login. Try Again.'
+    redirect '/arng/arng'
+  end
+end
+
+helpers do
+
+  # Using auth_cdgaurd:
+  #
+  # get 'your/route/here/?' do
+  #   auth_cdgaurd
+  #   ...do stuff...
+  #   erb :'your/route/view'
+  # end
+
+  def auth_cdgaurd
+    unless session[:cdgaurd] == true
+      flash[:alert] = 'You must login to see that page.'
+      redirect '/arng/arng'
+    end
+  end
+  
+end

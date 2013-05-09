@@ -28,7 +28,7 @@
 					
 				<form method="post">
 					
-						<input type="password" /> 
+						<input type="password" name="password" id="password" value="<%= params[:password] %>" /> 
 						<input type="Submit" class="btn btn-success" value="Enter"><br />
 				
 				<hr />
@@ -37,11 +37,11 @@
 					<p>Are you an ARNG Representative?</p>
 					<p>In what state do you serve? &nbsp; <input name="State" id="State" type="text" class="span1"  />	
 						
-		 			  <label for="email">Name</label>
-		 				<input type="text" class="textfield span4" name="email" id="email" value="<%= params[:email] %>" />
+		 			  <label for="name">Name</label>
+		 				<input type="text" class="textfield span4" name="name" id="name" value="<%= params[:name] %>" />
 		 					
-		 				<label for="password">Email</label>
-		 				<input type="password" class="textfield span4" name="password" id="password" value="<%= params[:password] %>" />
+		 				<label for="email">Email</label>
+		 				<input type="email" class="textfield span4" name="email" id="email" value="<%= params[:email] %>" />
 		 					<br />
 		 		    <input type="submit" class="btn btn-success" value="Enter" />
 
