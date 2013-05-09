@@ -40,14 +40,6 @@
 					presentation.
 				</p>
 				
-				<div class="well">
-
-				<form method="post">
-				To register a school or to retrieve a school's password for <strong>Career Direction 2</strong> enter the school's zip code:  <input name="Zip" id="Zip" type="text" maxlength="5"  size="6"  />
-				<input type="submit" value="Enter" class="btn btn-success btn-small" /></p>
-				</form>
-				
-				</div>
 				<p>After the class, be sure to return CD2 exercise scanforms to CTC:</p>
 				
 				<p>	<address class="padleft"><strong>Career Training Concepts, Inc.</strong><br />
@@ -60,15 +52,7 @@
 				<h3>Student Planning Report</h3>
 				
 					<p>Educators receive an electronic one-page Student Planning Report that is helpful for curriculum advisement.</p>
-
-			</div>
-
-			<div class="span4">
-				 <p><img src="../img/cog-pic.png" class="pic-border" /></p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span8">		
+		
 					
 				<h3>RRNCO Report</h3>
 				
@@ -91,12 +75,44 @@
 					</ul>
 
 				
-		</div>
+			</div>
 
-		<div class="span4">
-		  <p><img src="../img/CD2_FeedbackSheet.jpg" class="pic-border" /></p>
-	  	</div>
-				  
+			<div class="span4">
+				<div class="sign-in">
+
+					<h3>Register a school or <br />retrieve a password</h3>
+					
+
+					
+					
+					<form action="/arng/search" method="post">
+					  <input type="text" name="query"/>    
+					  <input type="submit" />
+					</form>
+
+					<% if @results %>
+					    <table>
+					        <% @results.each do |c| %>
+					        <tr>
+					            <td><%= c.school_zip %></td>
+					        </tr>
+					        <%end%>
+					    </table>
+					<% end %>
+					
+						<hr />	
+					<%= @results.inspect %>
+	
+			
+					<p><small>If the school you want to register is listed above as <strong>Not Activated</strong>, this means the school has made an online request. Click that option, correct any of the POC information that is incorrect, and click "Finish Registration" to generate the school's password.</small></p>
+					<p><small>If your school is listed more than once, you may call 888-326-9229 to delete duplications.</small></p>
+			
+					
+			
+			
+				</div>
+		
+			</div>  
 		</div>
 	</div> <!-- /container -->
 </div> <!-- /container-white -->

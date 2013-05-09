@@ -25,7 +25,7 @@
 						<th>School</th>
 						<th>City</th>
 						<th>State</th>
-						<th>Zip</th>
+						<th>Password</th>
 						<th style="text-align: center;">Edit</th>
 					</tr>
 					<% @client.each do |client| %>
@@ -33,7 +33,7 @@
 						<td><%= client.school_name %></td>
 						<td><%= client.school_city %></td>
 						<td><%= client.school_state %></td>
-						<td><%= client.school_zip %>-0<%= client.school_zip_unique %></td>
+						<td>CD<%= client.school_zip %>-0<%= client.school_zip_unique %></td>
 						<td style="text-align: center;"><a href="/arng/schools/<%= client.id %>/edit"> <i class="icon-pencil"></i> </a></td>
 					</tr>
 					<% end %>
