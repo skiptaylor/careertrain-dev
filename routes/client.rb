@@ -1,14 +1,17 @@
-get '/client/?' do
+get '/arng/schools/schools/?' do
+  auth_cdguard
 	@client = Client.all
-	erb :'/clients'
+	erb :'/arng/schools/schools'
 end
 
 get '/arng/schools/new/?' do
+  auth_cdguard
   @client = Client.new
   erb :'/arng/schools/edit_school'
 end
 
 post '/arng/schools/new/?' do
+  auth_cdguard
   client = Client.create(
     :school_id              => params[:school_id],
     :date_modified          => params[:date_modified],
@@ -38,20 +41,23 @@ post '/arng/schools/new/?' do
   params[:ff] 					    ? client.update(:ff => true)        : client.update(:ff => false)
   params[:cd_before] 				? client.update(:cd_before => true) : client.update(:cd_before => false)
   
-  redirect "/arng/schools/#{params[:id]}/edit_school"
+  redirect "/arng/schools/#{client.id}/edit"
 end
 
 get '/arng/schools/:id/?' do
+  auth_cdguard
   @client = Client.get(params[:id])
-  erb :'/arng/schools/#{params[:id]}/edit_school'
+  erb :"/arng/schools/edit_school"
 end
 
 get '/arng/schools/:id/edit/?' do
+  auth_cdguard
   @client = Client.get(params[:id])
-  erb :'/arng/schools/#{params[:id]}/edit_school'
+  erb :"/arng/schools/edit_school"
 end
 
 post '/arng/schools/:id/edit/?' do
+  auth_cdguard
   client = Client.get(params[:id])
   client.update(
     :school_id              => params[:school_id],
@@ -82,21 +88,83 @@ post '/arng/schools/:id/edit/?' do
   params[:ff] 					    ? client.update(:ff => true)        : client.update(:ff => false)
   params[:cd_before] 				? client.update(:cd_before => true) : client.update(:cd_before => false)
   
-  redirect "/arng/schools/#{params[:id]}/edit_school"
+  redirect "/arng/schools/#{params[:id]}/edit"
 end
 
 get '/arng/schools/:id/school/?' do
+  auth_cdguard
   @client = Client.get(params[:id])
-  erb :'/arng/schools/#{params[:id]}/school'
+  erb :"/arng/schools/school"
 end
 
 get '/arng/schools/:id/delete/?' do
+  auth_cdguard
   client = Client.get(params[:id])
   client.destroy
-  redirect "/arng/arng"
+  redirect "/arng/schools/schools"
 end
 
 get '/arng/schools/schools/?' do
+  auth_cdguard
 	@client = Client.all
 	erb :'/arng/schools/schools'
+end
+
+post '/arng/arng/?' do
+  if (params[:password].strip.downcase == 'cdguard') || (params[:email].strip.downcase.include?('.mil'))
+    session[:cdguard] = true
+    redirect '/arng/leads'
+  else
+    flash[:alert] = 'Bad Login. Try Again.'
+    redirect '/arng/arng'
+  end
+end
+
+get '/arng/faq/?' do
+  auth_cdguard
+  erb :"/arng/faq"
+end
+
+get '/arng/leads/?' do
+  auth_cdguard
+  erb :"/arng/leads"
+end
+
+get '/arng/downloads/?' do
+  auth_cdguard
+  erb :"/arng/downloads"
+end
+
+get '/arng/feedback/?' do
+  auth_cdguard
+  erb :"/arng/feedback"
+end
+
+get '/arng/practices/?' do
+  auth_cdguard
+  erb :"/arng/practices"
+end
+
+get '/arng/register/?' do
+  auth_cdguard
+  erb :"/arng/register"
+end
+
+helpers do
+
+  # Using auth_cdguard:
+  #
+  # get 'your/route/here/?' do
+  #   auth_cdguard
+  #   ...do stuff...
+  #   erb :'your/route/view'
+  # end
+
+  def auth_cdguard
+    unless session[:cdguard] == true
+      flash[:alert] = 'You must login to see that page.'
+      redirect '/arng/arng'
+    end
+  end
+  
 end

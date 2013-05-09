@@ -3,12 +3,14 @@
 		  
 		<ul class="breadcrumb">
 			 <li><a href="arng">Career Direction 2</a> <span class="divider"> </span> </li>
+			 <% if session[:cdguard] == true %>
 			 <li><a href="leads">Generate Leads</a> <span class="divider"> </span> </li>
 			 <li class="active"><a href="register">Register Your School</a> <span class="divider"> </span> </li>
 			 <li><a href="feedback">Recruiter Feedback</a> <span class="divider"> </span> </li>
-			 <li><a href="apractices">Best Practices</a> <span class="divider"> </span> </li>
+			 <li><a href="practices">Best Practices</a> <span class="divider"> </span> </li>
 			 <li><a href="downloads">Downloads</a> <span class="divider"> </span> </li>
 			 <li><a href="faq">FAQ</a> <span class="divider"> </span> </li>
+			 <% end %>
 		 </ul>
       </div>
 
@@ -40,9 +42,9 @@
 				
 				<div class="well">
 
-				<form name="enter_zip" method="post" action="reg.cfm" onSubmit = "return(handleSubmit(this));">
+				<form method="post">
 				To register a school or to retrieve a school's password for <strong>Career Direction 2</strong> enter the school's zip code:  <input name="Zip" id="Zip" type="text" maxlength="5"  size="6"  />
-				<input type="submit" name="submit" value="Enter" class="btn btn-success btn-small" /></p><a href="/arng/school/edit_school"> It will go here</a>
+				<input type="submit" value="Enter" class="btn btn-success btn-small" /></p>
 				</form>
 				
 				</div>

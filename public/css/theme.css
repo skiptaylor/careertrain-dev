@@ -338,3 +338,35 @@ p.answer	{
 .half-space p	{
 	margin-bottom: 32px;
 }
+
+.horz	{
+	float: left;
+	text-align: right;
+	width: 180px;
+	margin-right: 12px;
+	margin-top: 4px;
+}
+
+select.month {
+	width: 70px;
+	margin-right: 3px;
+	margin-bottom: 0;
+}
+select.day {
+	width: 70px;
+	margin-right: 3px;
+	margin-bottom: 0;
+}
+select.year {
+	width: 90px;
+	margin-right: 3px;
+	margin-bottom: 0;
+}
+
+blockquote {
+  border-left: 5px solid #d6d8cf;
+}
+
+.flash	{
+	color: red;
+}

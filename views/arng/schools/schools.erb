@@ -30,18 +30,18 @@
 					</tr>
 					<% @client.each do |client| %>
 					<tr>
-						<td><%= @client.school_name %></td>
-						<td><%= @client.school_city %></td>
-						<td><%= @client.school_state %></td>
-						<td><%= @client.school_zip %></td>
-						<td style="text-align: center;"><a href="arng/schools/<%= client.id %>/edit"> <i class="icon-pencil"></i> </a></td>
+						<td><%= client.school_name %></td>
+						<td><%= client.school_city %></td>
+						<td><%= client.school_state %></td>
+						<td><%= client.school_zip %>-0<%= client.school_zip_unique %></td>
+						<td style="text-align: center;"><a href="/arng/schools/<%= client.id %>/edit"> <i class="icon-pencil"></i> </a></td>
 					</tr>
 					<% end %>
 				</table>
 			</div>
 
 			<div class="span4">
-				 <p><img src="../img/" class="pic-border" /></p>
+				 <p> </p>
 			</div>
 		
 		</div>
