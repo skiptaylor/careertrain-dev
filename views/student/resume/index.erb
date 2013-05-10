@@ -58,25 +58,12 @@
 						<td>Edit</td>
 					</tr>
 				</table>
+				
+				<%= @results.inspect %>
 				<p><a href="#" class="btn btn-small">View Cover Letters</a> &nbsp; <a href="#" class="btn btn-small">View Resume</a> &nbsp; <a href="#" class="btn btn-small">View References</a></p>
-				<p>Copy and paste the contents of your cover letter, resume, thank you letter, and references sheet to a Microsoft Word or similar document so you can edit and save it. You will need to double check for grammar and spelling.</p>
+				<p>Copy and paste the contents of your cover letter, resume, thank you letter, and references sheet into a Microsoft Word or similar document so you can edit and save it. You will need to double check for grammar and spelling.</p>
 			</div>
-			<div class="span5 offset1">
-				<div class="well">
-				<h6>Profile</h6>
-	         <p><small>Email</small><br /><span class="semi-bold"><%= @user.email %></span></p>
-	         <p><small>Password</small><br /><span class="semi-bold">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span></p>
-				<p><strong><%= @user.name %></strong><br />
-					<%= @user.address %><br />
-					<%= @user.city %>, <%= @user.state %> &nbsp;<%= @user.zip %>
-				</p>
-				<p>
-					<span class="semi-bold"><%= @user.phone %></span>
-				</p>
-				<a href="/users/<%= @user.id %>/edit" class="btn btn-success btn-small"><i class="icon-pencil"></i> &nbsp;Edit Profile</a>
-				<br /><br /><br />
-				<a href="/student/resume" class="btn"><i class="icon-signout"></i> &nbsp;Sign out</a></p>
-			</div>
+
 			</div>
 		</div> <!-- /row -->
 	</div> <!-- /container -->

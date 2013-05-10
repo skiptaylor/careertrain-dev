@@ -1,6 +1,6 @@
 namespace '/student' do
 
-  get '/resume/create/?' do 
+  get "/resume/create/?" do 
     erb :'student/resume/create'
   end
 
@@ -25,8 +25,8 @@ namespace '/student' do
     end
   end
   
-  get '/resume/signin/?' do 
-    erb :'student/resume/signin'
+  get "/resume/signin/?" do 
+    erb :"student/resume/signin"
   end
 
   post '/resume/signin/?' do
@@ -39,24 +39,24 @@ namespace '/student' do
     @errors << :password_not_matched unless @user && @user.password == params[:password]
 
     if @errors.count == 0
-      session[:student] = @user.id
+      session[:user] = @user.id
       flash[:alert] = 'You are now signed in.'
-      redirect '/student/resume/index'
+      redirect "/student/resume/#{params[:user_id]}/index"
     else
       flash[:alert] = 'There was an error signing in. Please try again.'
-      erb :'student/resume/sign-in'
+      erb :"student/resume/signin"
     end
   end
 
-  get '/resume/sign-out/?' do
-    session[:student] = nil
+  get "/resume/sign-out/?" do
+    session[:user] = nil
     flash[:alert] = 'Thank you, come again!'
-    redirect 'student/sign-in'
+    redirect "/student/student"
   end
   
-  get '/resume/index/?' do
+  get "/resume/:user_id/index/?" do
      @user = User.get(params[:id])
-    erb :'/student/resume/index'
+    erb :"/student/resume/index"
   end
 
 end
