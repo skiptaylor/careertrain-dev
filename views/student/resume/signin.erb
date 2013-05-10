@@ -11,14 +11,15 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row"> 
-			<div class="span12">
+			<div class="span5 offset3">
+				<div class="sign-in" style="padding: 32px; margin: 48px 0;">
 				<form method="post">
 	  			 <fieldset>
-			    	<legend>Sign In</legend>
+			    	<h1>Sign In</h1>
 
 			    	<p>
 				      <label>Email address</label>
-				      <input type="text" name="email" id="email" value="<%= params[:email] %>" />
+				      <input type="text" name="email" id="email" class="input-xlarge" value="<%= params[:email] %>" />
 				      <% if @errors.include? :email_not_found %>
 				        <span class="help-inline">That email address isn't in our system. Maybe you need to <a href="/student/resume/create">create an account</a>.</span>
 				      <% end %>
@@ -26,11 +27,10 @@
 
 				    <p>
 				      <label>Password</label>
-				      <input type="password" name="password" id="password" value="<%= params[:password] %>" />
+				      <input type="password" name="password" id="password" class="input-xlarge" value="<%= params[:password] %>" />
 				      <% if @errors.include?(:password_not_matched) && !@errors.include?(:email_not_found) %>
 				        <span class="help-inline">Wrong password.</span>
 				      <% end %>
-
 				    </p>
 
 				    <p>
@@ -38,6 +38,7 @@
 				    </p>
 				  </fieldset>
 				</form>
+			</div>
 			</div>	
 		</div> <!-- /row -->
 	</div> <!-- /container -->

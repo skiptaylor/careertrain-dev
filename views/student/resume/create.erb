@@ -2,17 +2,17 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span5 offset3">
-				<div class="well">
+				<div class="sign-in" style="padding:24px 32px; margin: 48px 0;">
 		      <form class="form-signin" method="post">
-		        <h2 class="form-signin-heading">Create New Account</h2>
+		        <h1 class="form-signin-heading">Create New Account</h1>
 				  <input type="school_password" class="input-block-level" placeholder="School's password" name="school_password" id="school_password" value="<%= params[:school_password] %>">
-				  <p><small>If you do not know your school's password, please contact your guidance counselor or teacher.</small></p>
+				  <p style="line-height: 1em;"><small>If you do not know your school's password, please contact your guidance counselor or teacher.</small></p>
 		        <input type="text" class="input-block-level" placeholder="Email address" name="email" id="email" value="<%= params[:email] %>">
 		        <input type="password" class="input-block-level" placeholder="Personal password" name="password" id="password" value="<%= params[:password] %>">
-		        <label class="checkbox">
+		        <p><label class="checkbox">
 		          <input type="checkbox" value="remember-me"> I am 13 or older
-		        </label>
-		        <button class="btn btn-primary pull-right" type="submit">Create</button><br />
+		        </label></p>
+		        <p><button class="btn btn-primary" type="submit">Create</button></p>
 		      </form>
 				</div>
 			</div>
