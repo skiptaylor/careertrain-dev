@@ -85,24 +85,18 @@
 
 					
 					
-					<form action="/arng/search" method="post">
-					  <input type="text" name="query" placeholder="School Zip"/>  &nbsp;  
+					<form method="get">
+					  <input type="text" name="zip" placeholder="School Zip"/>  &nbsp;  
 					  <input type="submit" class="btn btn-success btn-small" />
 					</form>
 
-					<% if @results %>
-					    <table>
-					        <% @results.each do |c| %>
-					        <tr>
-					            <td><%= c.school_zip %></td>
-					        </tr>
-					        <%end%>
-					    </table>
+					<% @results.each do |c| %>
+  					<p>
+  					  <a href=""><%= c.school_name %> <%= "(inactive)" unless c.active %></a>
+  					</p>
 					<% end %>
 					
-						<hr />	
-					<%= @results.inspect %>
-	
+					<hr />	
 			
 					<p><small>If the school you want to register is listed above as <strong>Not Activated</strong>, this means the school has made an online request. Click that option, correct any of the POC information that is incorrect, and click "Finish Registration" to generate the school's password.</small></p>
 					<p><small>If your school is listed more than once, you may call 888-326-9229 to delete duplications.</small></p>

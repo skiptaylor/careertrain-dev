@@ -148,6 +148,11 @@ end
 get '/arng/register/?' do
   auth_cdguard
   @client = Client.all
+  unless params[:zip]
+    @results = []
+  else
+    @results = Client.all(school_zip: params[:zip].strip.downcase)
+  end
   erb :"/arng/register"
 end
 
