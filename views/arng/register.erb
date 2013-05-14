@@ -80,14 +80,14 @@
 			<div class="span4">
 				<div class="sign-in">
 
-					<h3>Register a school or <br />retrieve a password</h3>
+					<h3>Register school or <br />retrieve password</h3>
 					
 
 					
 					
 					<form action="/arng/search" method="post">
-					  <input type="text" name="query"/>    
-					  <input type="submit" />
+					  <input type="text" name="query" placeholder="School Zip"/>  &nbsp;  
+					  <input type="submit" class="btn btn-success btn-small" />
 					</form>
 
 					<% if @results %>
