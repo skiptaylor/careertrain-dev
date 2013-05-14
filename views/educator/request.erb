@@ -5,7 +5,7 @@
 			<li><a href="index">Career Direction 2</a> <span class="divider"> </span> </li>
 			<li><a href="steps">Steps to Success</a> <span class="divider"> </span> </li>
 			<li><a href="resume">Resume Tool</a> <span class="divider"> </span> </li>
-			<li class="active"><a href="request">Request CD2</a> <span class="divider"> </span> </li>
+			<li><a href="request" style="color: #9a0000;">Request CD2</a> <span class="divider"> </span> </li>
 			<li><a href="feedback">Educator Feedback</a> <span class="divider"> </span> </li>
 			<li><a href="resources">Helpful Links</a> <span class="divider"> </span> </li>
 		 </ul>
@@ -18,75 +18,65 @@
 				<h1 class="page-header">Request the Career Direction 2 Program</h1>
 			</div>
 			<div class="span8">
-				<p class="lead">Would like to have a member of the <strong>Army National Guard</strong> to provide a free presentation of the <strong>Career Direction 2</strong> program to you students? Submit this request.</p>
+				<p class="lead">Would you like a member of the <strong>Army National Guard</strong> to provide a free presentation of the <strong>Career Direction 2</strong> program to your students?</p>
 				
+				<div class="sign-in" style="padding: 24px; margin: 42px 0;">
+					<h5>Give us a little information and someone will contact you soon.</h5>
 				<form method="post" class="client">
-
+					<br />
 				<p class="hidden">
 				  <label class="checkbox">
 				    <input type="checkbox" name="cd" id="cd" checked <%= 'checked="checked"' if @client.cd  %> />
 				    <strong>Career Direction (High School)</strong>
 				  </label>
 				</p>
-
 				
 				<p>
 					<label class="horz" for="school_name">School name</label>
-					<input type="text" class="textfield input-small dec" name="school_name" id="school_name" value="<%= @client.school_name %>" /> 
+					<input type="text" class="textfield span4 dec" placeholder="School name" name="school_name" id="school_name" value="<%= @client.school_name %>" /> 
 				</p>
 				<p>
 					<label class="horz" for="school_address1">School Address</label>
-					<input type="text" class="textfield input-small dec" name="school_address1" id="school_address1" value="<%= @client.school_address1 %>" /> 
-				</p>
-				<p>
+					<input type="text" class="textfield span4 dec" placeholder="Street Address" name="school_address1" id="school_address1" value="<%= @client.school_address1 %>" /> 
+					<br />
 					<label class="horz" for="school_address2"> </label>
-					<input type="text" class="textfield input-small dec" name="school_address2" id="school_address2" value="<%= @client.school_address2 %>" /> 
+					<input type="text" class="textfield span4 dec" placeholder="Street Address" name="school_address2" id="school_address2" value="<%= @client.school_address2 %>" /> 
+				</p>
+				<p class="form-inline">
+					<label class="horz" for="school_city"> </label>
+					<input type="text" class="textfield span3 dec" placeholder="City" name="school_city" id="school_city" value="<%= @client.school_city %>" /> 
+					<input type="text" class="textfield span1 dec" placeholder="State" name="school_state" id="school_state" value="<%= @client.school_state %>" /> 
+					<input type="text" class="textfield span1 dec" placeholder="Zip" name="school_zip" id="school_zip" value="<%= @client.school_zip %>" /> 
+				</p>
+				<p class="form-inline">
+					<label class="horz" for="first_name">Contact</label>
+					<input type="text" class="textfield span2 dec" placeholder="First" name="first_name" id="first_name" value="<%= @client.first_name %>" /> 
+					<input type="text" class="textfield span1 dec" placeholder="MI" name="middle_initial" id="middle_initial" value="<%= @client.middle_initial %>" /> 
+					<input type="text" class="textfield span2 dec" placeholder="Last" name="last_name" id="last_name" value="<%= @client.last_name %>" /> 
 				</p>
 				<p>
-					<label class="horz" for="school_city">City</label>
-					<input type="text" class="textfield input-small dec" name="school_city" id="school_city" value="<%= @client.school_city %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="school_state">State</label>
-					<input type="text" class="textfield input-small dec" name="school_state" id="school_state" value="<%= @client.school_state %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="school_zip">Zip</label>
-					<input type="text" class="textfield input-small dec" name="school_zip" id="school_zip" value="<%= @client.school_zip %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="first_name">First name</label>
-					<input type="text" class="textfield input-small dec" name="first_name" id="first_name" value="<%= @client.first_name %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="middle_initial">Initial</label>
-					<input type="text" class="textfield input-small dec" name="middle_initial" id="middle_initial" value="<%= @client.middle_initial %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="last_name">Last name</label>
-					<input type="text" class="textfield input-small dec" name="last_name" id="last_name" value="<%= @client.last_name %>" /> 
+					<label class="horz" for="email">Email</label>
+					<input type="text" class="textfield span4 dec" placeholder="Email" name="email" id="email" value="<%= @client.email %>" /> 
 				</p>
 				<p>
 					<label class="horz" for="mail_zip">Phone</label>
-					<input type="text" class="textfield input-small dec" name="mail_zip" id="mail_zip" value="<%= @client.mail_zip %>" /> 
+					<input type="text" class="textfield span4 dec" placeholder="Phone" name="mail_zip" id="mail_zip" value="<%= @client.mail_zip %>" /> 
 				</p>
 				<p>
 					<label class="horz" for="mail_zip">Fax</label>
-					<input type="text" class="textfield input-small dec" name="mail_zip" id="mail_zip" value="<%= @client.mail_zip %>" /> 
+					<input type="text" class="textfield span4 dec" placeholder="Fax" name="mail_zip" id="mail_zip" value="<%= @client.mail_zip %>" /> 
 				</p>
-				<p>
-					<label class="horz" for="email">Counselor/teacher email</label>
-					<input type="text" class="textfield input-small dec" name="email" id="email" value="<%= @client.email %>" /> 
-				</p>
+				
 				<p>
 					<label class="horz" for="number_seniors">Number of students</label>
 					<input type="text" class="textfield input-small dec" name="number_seniors" id="number_seniors" value="<%= @client.number_seniors %>" /> 
 				</p>
+				<p style="padding-left: 192px;">
 			  <label class="checkbox">
 			    <input type="checkbox" name="cd_before" id="cd_before" <%= 'checked="checked"' if @client.cd_before  %> />
-			    <strong>Used Career Direction Before?</strong>
+			    <strong>Used Career Direction Before</strong>
 			  </label>
-
+		  </p>
 				
 				<p class="hidden">
  				  <label class="checkbox">
@@ -94,15 +84,18 @@
  				    <strong>Active</strong>
  				  </label>
 			  </p>
-				
+			  <p style="padding-left: 192px;">
 				<input class="btn btn-small btn-primary" type="submit" value="Submit" />
+			</p>
 		</form>
 				
 			</div>
+		</div>
 
-			<div class="span4">
-				 <p><img src="../img/" class="pic-border" /></p>
-			</div>
+		<div class="span4">
+			<p><img src="../img/instructor.jpg" class="pic-border" /></p>
+		</div>
+			
 		</div>
 		
 		</div>

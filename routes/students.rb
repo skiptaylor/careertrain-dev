@@ -39,9 +39,9 @@ namespace '/student' do
     @errors << :password_not_matched unless @user && @user.password == params[:password]
 
     if @errors.count == 0
-      session[:user] = @user.id
+      session[:student] = @user.id
       flash[:alert] = 'You are now signed in.'
-      redirect "/student/resume/#{params[:user_id]}/index"
+      redirect "/student/resume/index"
     else
       flash[:alert] = 'There was an error signing in. Please try again.'
       erb :"student/resume/signin"
@@ -49,12 +49,12 @@ namespace '/student' do
   end
 
   get "/resume/sign-out/?" do
-    session[:user] = nil
+    session[:student] = nil
     flash[:alert] = 'Thank you, come again!'
     redirect "/student/student"
   end
   
-  get "/resume/:user_id/index/?" do
+  get "/resume/index/?" do
      @user = User.get(params[:id])
     erb :"/student/resume/index"
   end

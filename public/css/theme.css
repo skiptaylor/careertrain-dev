@@ -114,6 +114,10 @@ h1	{
 	border: none;
 }
 
+.textfield	{
+	font-family: 'Open Sans', helvetica, sans-serif;
+}
+
 h4	{
 	font-family: 'Open Sans', helvetica, sans-serif;
 	font-weight: 600;
@@ -288,7 +292,6 @@ p.answer	{
 	color: #2b3e4a;
 	font-weight: 600;
     padding: 3px;
-	
 }
 
 .muted	{
@@ -307,7 +310,7 @@ p.answer	{
 }
 
 .breadcrumb > li a:active {
-  color: #007dbc;
+  color: #9a0000;
 }
 
 .pic-border 	{
@@ -399,4 +402,14 @@ blockquote {
    -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
            border-radius: 6px;
+}
+
+.rotated	{
+	background-color: white;
+   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+           box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+	transform: rotate(-4deg);
+	-ms-transform: rotate(-4deg); /* IE 9 */
+	-webkit-transform: rotate(-4deg); /* Safari and Chrome */
 }
