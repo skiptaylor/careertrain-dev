@@ -1,5 +1,5 @@
 # Clear out all the current data
-Rrc.destroy
+Client.destroy
 
 CSV.open('./data/ct_databases/clients.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
