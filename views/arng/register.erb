@@ -80,29 +80,25 @@
 			<div class="span4">
 				<div class="sign-in">
 
-					<h3>Register school or <br />retrieve password</h3>
-					
-
-					
-					
-					<form method="get">
-					  <input type="text" name="zip" placeholder="School Zip"/>  &nbsp;  
+					<h3>Retrieve a password or<br />Register a school</h3>
+					<p>
+					<form method="get" class="form-search">
+					  <input type="text" name="zip" class="input-small search-query" placeholder="School Zip"/>  &nbsp;  
 					  <input type="submit" class="btn btn-success btn-small" />
+				  </p>
 					</form>
 
 					<% @results.each do |c| %>
   					<p>
-  					  <a href=""><%= c.school_name %> <%= "(inactive)" unless c.active %></a>
+  					  <strong><%= c.school_name %></strong> <small><%= "(Not Activated)" unless c.active %></small><br />
+					  <small><%= c.school_city %> <%= c.school_state %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= c.school_id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><small>Password</small> <span class="badge badge-inverse">cd<%= c.school_zip %>0<%= c.school_zip_unique %></span><% end %>
   					</p>
 					<% end %>
 					
 					<hr />	
-			
-					<p><small>If the school you want to register is listed above as <strong>Not Activated</strong>, this means the school has made an online request. Click that option, correct any of the POC information that is incorrect, and click "Finish Registration" to generate the school's password.</small></p>
-					<p><small>If your school is listed more than once, you may call 888-326-9229 to delete duplications.</small></p>
-			
-					
-			
+					<p style="line-height: 1.3em;" class="semi-bold"><a href="/arng/schools/new" style="margin: 9px 0 12px 6px;" class="btn btn-mini pull-right">Register</a><small>After submitting your school's zip, if your school is not listed above, you can register it now.
+					<p style="line-height: 1.3em;"><small>If the school you want to register is listed above as <strong>Not Activated</strong>, that school has made an online request. Finish registration and correct any incorrect POC information, then "Activate" to generate the school's password.</small></p>
+					<p style="line-height: 1.3em;"><small>If your school is listed more than once, please call 888-326-9229 to delete duplications.</small></p>
 			
 				</div>
 		

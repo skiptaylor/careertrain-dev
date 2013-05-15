@@ -156,11 +156,6 @@ get '/arng/register/?' do
   erb :"/arng/register"
 end
 
-post '/arng/search'  do
-   @client = Client.all
-   @results = Client.find(school_zip: params[:school_zip])
-   erb :"/arng/register"
-end
 
 get '/arng/show_password/?' do
   auth_cdguard
