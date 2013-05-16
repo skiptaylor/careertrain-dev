@@ -80,7 +80,7 @@
 			<div class="span4">
 				<div class="sign-in">
 
-					<h3>Retrieve a password or<br />Register a school</h3>
+					<h3>Find a password or register a school</h3>
 					<p>
 					<form method="get" class="form-search">
 					  <input type="text" name="zip" class="input-small search-query" placeholder="School Zip"/>  &nbsp;  
@@ -90,13 +90,15 @@
 
 					<% @results.each do |c| %>
   					<p>
+						<hr />
   					  <strong><%= c.school_name %></strong> <small><%= "(Not Activated)" unless c.active %></small><br />
-					  <small><%= c.school_city %> <%= c.school_state %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= c.school_id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><small>Password</small> <span class="password-show">cd<%= c.school_zip %>0<%= c.school_zip_unique %></span><% end %>
+					  <small><%= c.school_city %> <%= c.school_state %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= c.school_id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><span class="pull-right"><small>Password</small> <span class="password-show">cd<%= c.school_zip %>0<%= c.school_zip_unique %></span></span><% end %>
   					</p>
 					<% end %>
 					
 					<hr />	
-					<p style="line-height: 1.3em;" class="semi-bold"><a href="/arng/schools/new" style="margin: 9px 0 12px 6px;" class="btn btn-mini pull-right">Register</a><small>After submitting your school's zip, if your school is not listed above, you can register it now.
+					<p style="line-height: 1.3em;" class="semi-bold"><a href="/arng/schools/new" style="margin: 9px 0 12px 12px;" class="btn btn-mini pull-right">Register</a><small>After submitting your school's zip, your school is not listed above, you can register it now.
+					<hr />
 					<p style="line-height: 1.3em;"><small>If the school you want to register is listed above as <strong>Not Activated</strong>, that school has made an online request. Finish registration and correct any incorrect POC information, then "Activate" to generate the school's password.</small></p>
 					<p style="line-height: 1.3em;"><small>If your school is listed more than once, please call 888-326-9229 to delete duplications.</small></p>
 			
