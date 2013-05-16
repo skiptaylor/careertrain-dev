@@ -3,7 +3,7 @@ Client.destroy
 
 CSV.open('./data/ct_databases/Clients.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
-    Client.create(
+    c = Client.create(
       school_id:          line['ClientID'].to_i,
       date_modified:      line['DateModified'],
       active:             line['Active'],
@@ -16,7 +16,6 @@ CSV.open('./data/ct_databases/Clients.csv', { headers: true }) do |csv_lines|
       school_city:        line['SCity'],
       school_state:       line['SState'],
       school_zip:         line['SZip'],
-      school_zip_unique:  line['SZipUnique'],
       mail_address1:      line['MAddress1'],
       mail_address2:      line['MAddress2'],
       mail_city:          line['MCity'],
@@ -31,5 +30,6 @@ CSV.open('./data/ct_databases/Clients.csv', { headers: true }) do |csv_lines|
       cd_before:          line['CDBefore'],
       number_seniors:     line['NumSeniors']
     )
+    c.update(school_password: "cd#{c.school_zip}#{line['SZipUnique']}") if c.school_zip
   end
 end

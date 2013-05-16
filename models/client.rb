@@ -16,7 +16,7 @@ class Client
   property :school_city,        String, default: ""
   property :school_state,       String, default: ""
   property :school_zip,         String, default: ""
-  property :school_zip_unique,  String, default: ""
+  property :school_password,    String, default: ""
   property :mail_address1,      String, default: ""
   property :mail_address2,      String, default: ""
   property :mail_city,          String, default: ""
