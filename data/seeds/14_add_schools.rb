@@ -1,7 +1,7 @@
 # Clear out all the current data
 Client.destroy
 
-CSV.open('./data/ct_databases/clients.csv', { headers: true }) do |csv_lines|
+CSV.open('./data/ct_databases/Clients.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
     Client.create(
       school_id:          line['ClientID'].to_i,
