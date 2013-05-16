@@ -88,7 +88,7 @@ post '/arng/schools/:id/edit/?' do
   params[:ff] 					    ? client.update(:ff => true)        : client.update(:ff => false)
   params[:cd_before] 				? client.update(:cd_before => true) : client.update(:cd_before => false)
   
-  redirect "/arng/schools/#{params[:id]}/edit"
+  redirect "/arng/schools/#{params[:id]}/school"
 end
 
 get '/arng/schools/:id/school/?' do

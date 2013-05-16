@@ -1,15 +1,7 @@
 	
 	<div class="container">
 		  
-		<ul class="breadcrumb">
-			 <li><a href="arng">Career Direction 2</a> <span class="divider"> </span> </li>
-			 <li><a href="leads">Generate Leads</a> <span class="divider"> </span> </li>
-			 <li class="active"><a href="register">Register Your School</a> <span class="divider"> </span> </li>
-			 <li><a href="feedback">Recruiter Feedback</a> <span class="divider"> </span> </li>
-			 <li><a href="apractices">Best Practices</a> <span class="divider"> </span> </li>
-			 <li><a href="downloads">Downloads</a> <span class="divider"> </span> </li>
-			 <li><a href="faq">FAQ</a> <span class="divider"> </span> </li>
-		 </ul>
+
       </div>
 
 <div class="container-white">
@@ -18,105 +10,37 @@
 			<div class="span12">
 				<h1 class="page-header">Careers and Occupations Guide <br />School Registration</h1>
 			</div>
-			<div class="span8">
+				<div class=" span8 sign-in" style="padding: 42px 12px; margin-bottom: 60px;">
+					
+					<div class="span3">
+						<strong><%= @client.school_name %></strong><br />
+						<%= @client.school_city %>, <%= @client.school_state %>
+					</div>
 				
-	
+					<div class="span2 offset1">
+						<small>Password</small> &nbsp; <span class="password-show">cd<%= @client.school_zip %>0<%= @client.school_zip_unique %></span>
+					</div>
+					
+					<div class="span7">
+						<br />
+						<hr />
+						<p>
+							You should give the password to your students during your <strong>Career Direction 2</strong> 
+							presentation.
+						</p>
 				
-				<p style="padding-left: 192px;">
-				  <label class="checkbox">
-				    <input type="checkbox" name="cd" id="cd" <%= 'checked="checked"' if @client.cd  %> />
-				    <strong>Career Direction (High School)</strong>
-				  </label>
-				  <label class="checkbox">
-				    <input type="checkbox" name="ff" id="ff" <%= 'checked="checked"' if @client.ff  %> />
-				    <strong>FutureFocus (Middle School)</strong>
-				  </label>
-				</p>
-
-				<p>
-					<label class="horz" for="first_name">First name</label>
-					<%= @client.first_name %> 
-				</p>
-				<p>
-					<label class="horz" for="middle_initial">Initial</label>
-					<%= @client.middle_initial %> 
-				</p>
-				<p>
-					<label class="horz" for="last_name">Last name</label>
-					<%= @client.last_name %> 
-				</p>
-				<p>
-					<label class="horz" for="school_name">School name</label>
-					<%= @client.school_name %> 
-				</p>
-				<p>
-					<label class="horz" for="school_address1">School Address</label>
-					<%= @client.school_address1 %> 
-				</p>
-				<p>
-					<label class="horz" for="school_address2"> </label>
-					<%= @client.school_address2 %> 
-				</p>
-				<p>
-					<label class="horz" for="school_city">City</label>
-					<%= @client.school_city %>
-				</p>
-				<p>
-					<label class="horz" for="school_state">State</label>
-					<%= @client.school_state %>
-				</p>
-				<p>
-					<label class="horz" for="school_zip">Zip</label>
-					<%= @client.school_zip %> 
-				</p>
-				<p>
-					<label class="horz" for="mail_address1">Mailing address</label>
-					<%= @client.mail_address1 %> 
-				</p>
-				<p>
-					<label class="horz" for="mail_address2"> </label>
-					<%= @client.mail_address2 %> 
-				</p>
-				<p>
-					<label class="horz" for="mail_city">City</label>
-					<%= @client.mail_city %> 
-				</p>
-				<p>
-					<label class="horz" for="mail_state">State</label>
-					<%= @client.mail_state %> 
-				</p>
-				<p>
-					<label class="horz" for="mail_zip">Zip</label>
-					<%= @client.mail_zip %>
-				</p>
-				<p>
-					<label class="horz" for="mail_zip">Phone</label>
-					<%= @client.mail_zip %> 
-				</p>
-				<p>
-					<label class="horz" for="mail_zip">Fax</label>
-					<%= @client.mail_zip %> 
-				</p>
-				<p>
-					<label class="horz" for="email">Counselor/teacher email</label>
-					<%= @client.email %> 
-				</p>
-				<p>
-					<label class="horz" for="number_seniors">Number of students</label>
-					<%= @client.number_seniors %> 
-				</p>
-				<p>
-					<label class="horz" for="ng_rep">National Guard Representative</label>
-					<%= @client.ng_rep %> 
-				</p>
+						<p>After the class, be sure to return CD2 exercise scanforms to CTC:</p>
 				
-		
-				
+						<p>	<address class="padleft"><strong>Career Training Concepts, Inc.</strong><br />
+								ATTN: Scantron Forms<br />
+								3640 Hewatt Court<br />
+								Snellville, GA 30039</address>
+						</p>
+					</div>
+				</div>
+			
 			</div>
 
-			<div class="span4">
-				 <p><img src="../img/" class="pic-border" /></p>
-			</div>
 		</div>
 		
 		</div>

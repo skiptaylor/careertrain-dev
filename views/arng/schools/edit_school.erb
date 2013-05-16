@@ -13,12 +13,12 @@
 				
 				<form method="post" class="client">
 
-					<h5>Need Your Password?</h5>
+					<h5>Register your school to get a password.</h5>
 					<p>What program are you currently using:</p>
 				
-				<p style="padding-left: 192px;">
+				<p class="hidden" style="padding-left: 192px;">
 				  <label class="checkbox">
-				    <input type="checkbox" name="cd" id="cd" <%= 'checked="checked"' if @client.cd  %> />
+				    <input type="checkbox" name="cd" id="cd" checked <%= 'checked="checked"' if @client.cd  %> />
 				    <strong>Career Direction (High School)</strong>
 				  </label>
 				  <label class="checkbox">
@@ -85,11 +85,11 @@
 				</p>
 				<p>
 					<label class="horz" for="mail_zip">Phone</label>
-					<input type="text" class="textfield input-small dec" name="mail_zip" id="mail_zip" value="<%= @client.mail_zip %>" /> 
+					<input type="text" class="textfield input-small dec" name="mail_zip" id="mail_zip" value="<%= @client.phone %>" /> 
 				</p>
 				<p>
 					<label class="horz" for="mail_zip">Fax</label>
-					<input type="text" class="textfield input-small dec" name="mail_zip" id="mail_zip" value="<%= @client.mail_zip %>" /> 
+					<input type="text" class="textfield input-small dec" name="mail_zip" id="mail_zip" value="<%= @client.fax %>" /> 
 				</p>
 				<p>
 					<label class="horz" for="email">Counselor/teacher email</label>
@@ -107,6 +107,13 @@
 					<label class="horz" for="ng_rep">National Guard Representative</label>
 					<input type="text" class="textfield input-small dec" name="ng_rep" id="ng_rep" value="<%= @client.ng_rep %>" /> 
 				</p>
+				
+				<p class="hidden">
+ 				  <label class="checkbox">
+ 				    <input type="checkbox" name="active" id="active" checked <%= 'checked="checked"' if @client.active  %> />
+ 				    <strong>Active</strong>
+ 				  </label>
+			  </p>
 				
 				<input class="btn btn-small btn-primary" type="submit" value="Activate" />
 		</form>
