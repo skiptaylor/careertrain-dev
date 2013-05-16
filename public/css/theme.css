@@ -413,3 +413,17 @@ blockquote {
 	-ms-transform: rotate(-4deg); /* IE 9 */
 	-webkit-transform: rotate(-4deg); /* Safari and Chrome */
 }
+
+.password-show	{
+	color: #a72600;
+	font-weight: 700;
+	font-size: 1.1em;
+	padding: 1px 7px 2px 7px;
+	border: 1px solid #b2b5bc;
+   -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+           border-radius: 12px;
+		     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+		        -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+		             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
