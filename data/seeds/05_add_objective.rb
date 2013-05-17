@@ -1,5 +1,5 @@
 # Clear out all the current data
-Objective.destroy
+DataMapper.repository(:default).adapter.execute("delete from objectives")
 
 CSV.open('./data/ct_resume_databases/career_objective.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|

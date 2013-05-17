@@ -1,5 +1,5 @@
 # Clear out all the current data
-Experience.destroy
+DataMapper.repository(:default).adapter.execute("delete from experiences")
 
 CSV.open('./data/ct_resume_databases/work_experience.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|

@@ -1,5 +1,5 @@
 # Clear out all the current data
-Rrc.destroy
+DataMapper.repository(:default).adapter.execute("delete from rrcs")
 
 CSV.open('./data/ct_databases/Rrm.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|

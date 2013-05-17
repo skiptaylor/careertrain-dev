@@ -1,5 +1,5 @@
 # Clear out all the current data
-Trait.destroy
+DataMapper.repository(:default).adapter.execute("delete from traits")
 
 CSV.open('./data/ct_resume_databases/character_traits.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|

@@ -1,5 +1,5 @@
 # Clear out all the current data
-Client.destroy
+DataMapper.repository(:default).adapter.execute("delete from clients")
 
 CSV.open('./data/ct_databases/Clients.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|

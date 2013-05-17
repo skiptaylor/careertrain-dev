@@ -1,5 +1,7 @@
 class Reference
 	include DataMapper::Resource
+	
+	storage_names[:default] = "refs"
 
 	timestamps :at, :on
 	property   :deleted_at, ParanoidDateTime

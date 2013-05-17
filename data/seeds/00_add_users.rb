@@ -1,5 +1,5 @@
 # Clear out all the current data
-User.destroy
+DataMapper.repository(:default).adapter.execute("delete from users")
 
 CSV.open('./data/ct_resume_databases/login_table.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|

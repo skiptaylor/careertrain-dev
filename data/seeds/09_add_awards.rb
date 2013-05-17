@@ -1,5 +1,5 @@
 # Clear out all the current data
-Award.destroy
+DataMapper.repository(:default).adapter.execute("delete from awards")
 
 CSV.open('./data/ct_resume_databases/awards.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|

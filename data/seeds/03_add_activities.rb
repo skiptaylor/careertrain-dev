@@ -1,5 +1,5 @@
 # Clear out all the current data
-Activity.destroy
+DataMapper.repository(:default).adapter.execute("delete from activities")
 
 CSV.open('./data/ct_resume_databases/activities.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|

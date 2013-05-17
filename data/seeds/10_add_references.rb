@@ -1,5 +1,5 @@
 # Clear out all the current data
-Reference.destroy
+DataMapper.repository(:default).adapter.execute("delete from refs")
 
 CSV.open('./data/ct_resume_databases/references.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|

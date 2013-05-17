@@ -1,5 +1,5 @@
 # Clear out all the current data
-Letter.destroy
+DataMapper.repository(:default).adapter.execute("delete from letters")
 
 CSV.open('./data/ct_resume_databases/cover_letters.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
