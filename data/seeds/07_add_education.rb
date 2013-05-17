@@ -1,5 +1,5 @@
 # Clear out all the current data
-Education.destroy
+DataMapper.repository(:default).adapter.execute("delete from educations")
 
 CSV.open('./data/ct_resume_databases/education.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|

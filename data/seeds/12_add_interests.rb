@@ -1,5 +1,5 @@
 # Clear out all the current data
-Interest.destroy
+DataMapper.repository(:default).adapter.execute("delete from interests")
 
 CSV.open('./data/ct_resume_databases/Interests.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
