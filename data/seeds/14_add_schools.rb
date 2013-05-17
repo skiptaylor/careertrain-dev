@@ -15,12 +15,12 @@ CSV.open('./data/ct_databases/Clients.csv', { headers: true }) do |csv_lines|
       school_address2:    line['SAddress2'],
       school_city:        line['SCity'],
       school_state:       line['SState'],
-      school_zip:         line['SZip'],
+      school_zip:         line['SZip'].to_i,
       mail_address1:      line['MAddress1'],
       mail_address2:      line['MAddress2'],
       mail_city:          line['MCity'],
       mail_state:         line['MState'],
-      mail_zip:           line['MZip'],
+      mail_zip:           line['MZip'].to_i,
       phone:              line['Phone'],
       fax:                line['Fax'],
       ng_rep:             line['NGRep'],
@@ -28,7 +28,7 @@ CSV.open('./data/ct_databases/Clients.csv', { headers: true }) do |csv_lines|
       cd:                 line['CD'],
       ff:                 line['FF'],
       cd_before:          line['CDBefore'],
-      number_seniors:     line['NumSeniors']
+      number_seniors:     line['NumSeniors'].to_i
     )
     c.update(school_password: "cd#{c.school_zip}#{line['SZipUnique']}") if c.school_zip
   end

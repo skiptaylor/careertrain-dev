@@ -15,13 +15,13 @@ class Client
   property :school_address2,    String, default: ""
   property :school_city,        String, default: ""
   property :school_state,       String, default: ""
-  property :school_zip,         Integer, default: ""
-  property :school_zip_unique,  Integer, default: ""
+  property :school_zip,         Integer
+  property :school_password,    String, default: ""
   property :mail_address1,      String, default: ""
   property :mail_address2,      String, default: ""
   property :mail_city,          String, default: ""
-  property :mail_state,         Integer, default: ""
-  property :mail_zip,           Integer, default: ""
+  property :mail_state,         String, default: ""
+  property :mail_zip,           Integer
   property :phone,              String, default: ""
   property :fax,                String, default: ""
   property :ng_rep,             String, default: ""
@@ -33,15 +33,4 @@ class Client
   property :ff,                 Boolean, :default => false
   property :cd_before,          Boolean, :default => false
   
-  def generate_unique_password
-    last_zip = Client.all(school_zip: self.school_zip, :school_zip_unique.not => nil, order: :school_zip_unique.asc).last.school_zip_unique
-    last_zip = last_zip.to_i + 1
-    last_zip = ("%02d" % last_zip).to_i if last_zip > 9
-    self.update(school_zip_unique: last_zip)
-  end
-
-  after :save do
-    self.generate_unique_password if self.school_zip_unique.nil? && !self.school_zip.nil?
-  end
-
 end
