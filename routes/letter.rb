@@ -5,7 +5,7 @@ end
 
 get '/letters/new/?' do
   @letter = Letter.new
-  erb :edit_letter
+  erb :edit
 end
 
 post '/letters/new/?' do
@@ -28,12 +28,12 @@ end
 
 get '/letters/:id/?' do
   @letter = Letter.get(params[:id])
-  erb :letters
+  erb :letter
 end
 
 get '/letters/:id/edit/?' do
   @letter = Letter.get(params[:id])
-  erb :edit_letter
+  erb :edit
 end
 
 post '/letters/:id/edit/?' do
@@ -52,7 +52,7 @@ post '/letters/:id/edit/?' do
     :apply      => params[:apply],
     :opening    => params[:opening]
   )
-  redirect '/letters'
+  redirect '/letter'
 end
 
 get '/letters/:id/delete/?' do

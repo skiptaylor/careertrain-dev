@@ -10,8 +10,15 @@ end
 
 post '/users/new/?' do
   user = User.create(
-    :email      => params[:email],
-    :password   => params[:password]
+    :email     => params[:email],
+    :password  => params[:password],
+    :name      => params[:name],
+    :address   => params[:address],
+    :city      => params[:city],
+    :state     => params[:state],
+    :zip       => params[:zip],
+    :phone     => params[:phone],
+    :email     => params[:email]
   )
   redirect '/users'
 end
@@ -29,8 +36,15 @@ end
 post '/users/:id/edit/?' do
   user = User.get(params[:id])
   user.update(
-    :email  => params[:email],
-    :password  => params[:password]
+    :email     => params[:email],
+    :password  => params[:password],
+    :name      => params[:name],
+    :address   => params[:address],
+    :city      => params[:city],
+    :state     => params[:state],
+    :zip       => params[:zip],
+    :phone     => params[:phone],
+    :email     => params[:email]
   )
   redirect "/users/#{params[:id]}"
 end
@@ -46,7 +60,7 @@ get '/users/:id/resume/index/?' do
   erb :"/resume/index"
 end
 
-get '/users/:id/contacts/:id/edit_contact/?' do
+get '/users/student/resume/signin/?' do
   @user = User.get(params[:id])
-  erb :edit_contact
+  erb :index
 end
