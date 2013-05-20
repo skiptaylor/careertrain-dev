@@ -30,7 +30,7 @@ namespace '/student' do
         @report1 = File.read("./views/reports/#{params[:score1]}#{params[:score2]}.inc")
         @report2 = File.read("./views/reports/#{params[:score1]}#{params[:score3]}.inc")
         @report3 = File.read("./views/reports/#{params[:score2]}#{params[:score3]}.inc")
-        erb :'student/scores'
+        erb :'student/scores', layout: false
       else
         flash[:alert] = "Invalid scores. Try again."
         erb :'student/enter_scores'
