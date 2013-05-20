@@ -1,5 +1,45 @@
 namespace '/student' do
 
+  get "/report/?" do
+    erb :'student/report'
+  end
+
+  post "/report/?" do
+    if school = Client.first(school_password: params[:password].downcase.strip)
+      redirect("student/report/#{school.school_password}")
+    else
+      flash[:alert] = "School could not be found."
+      erb :'student/report'
+    end
+  end
+  
+  get "/report/:school_password/?" do
+    @school = Client.first(school_password: params[:school_password])
+    
+    if params[:score1] && params[:score2] && params[:score3]
+      params[:score1].strip!
+      params[:score1].downcase!
+      params[:score2].strip!
+      params[:score2].downcase!
+      params[:score3].strip!
+      params[:score3].downcase!
+      
+      if File.exists?("./views/reports/#{params[:score1]}#{params[:score2]}.inc") &&
+         File.exists?("./views/reports/#{params[:score1]}#{params[:score3]}.inc") &&
+         File.exists?("./views/reports/#{params[:score2]}#{params[:score3]}.inc")
+        @report1 = File.read("./views/reports/#{params[:score1]}#{params[:score2]}.inc")
+        @report2 = File.read("./views/reports/#{params[:score1]}#{params[:score3]}.inc")
+        @report3 = File.read("./views/reports/#{params[:score2]}#{params[:score3]}.inc")
+        erb :'student/scores'
+      else
+        flash[:alert] = "Invalid scores. Try again."
+        erb :'student/enter_scores'
+      end
+    else
+      erb :'student/enter_scores'
+    end
+  end
+
   get "/resume/create/?" do 
     erb :'student/resume/create'
   end
