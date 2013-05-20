@@ -30,6 +30,8 @@ CSV.open('./data/ct_databases/Clients.csv', { headers: true }) do |csv_lines|
       cd_before:          line['CDBefore'],
       number_seniors:     line['NumSeniors'].to_i
     )
-    c.update(school_password: "cd#{c.school_zip}#{line['SZipUnique']}") if c.school_zip
+    unique_scool_code = line['SZipUnique']
+    unique_scool_code = ("%02d" % unique_scool_code.to_i).to_s if unique_scool_code.to_i < 10
+    c.update(school_password: "cd#{c.school_zip}#{unique_scool_code}") if c.school_zip
   end
 end
