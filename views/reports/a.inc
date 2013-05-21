@@ -1,5 +1,5 @@
-<center><strong>CHARACTERISTICS OF THE "A" 
-CATEGORY<br /><br />OUTDOOR</strong></center>
+<p class="lead">CHARACTERISTICS OF THE <strong>"A"</strong> CATEGORY</p>
+<p class="header2">OUTDOOR</p>
 <p>If you have a high score in category "A," you will probably 
 prefer outdoor-related jobs. "Outdoor" has to do with work that 
 involves tending and managing the environment. You are likely to be 

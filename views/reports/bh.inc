@@ -336,7 +336,7 @@ be available to individuals with a bachelor's degree.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of museum directors was 
 $42,310 in May 2010. </blockquote>
-">Education</span>
+
 		<hr size="1" />
 
 	<span class="header2">Archeologist</span><br /><br />

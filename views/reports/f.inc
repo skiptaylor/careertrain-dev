@@ -1,5 +1,5 @@
-<center><strong>CHARACTERISTICS OF THE "F" 
-CATEGORY<br /><br />TECHNOLOGY</strong></center>
+<p class="lead">CHARACTERISTICS OF THE <strong>"F"</strong> CATEGORY</p>
+<p class="header2">TECHNOLOGY</p>
 <p>If you have a high score in category "F," your results show that 
 you are interested in new technology.  You are good at solving 
 problems because you are inquisitive by nature. You are proficient 
