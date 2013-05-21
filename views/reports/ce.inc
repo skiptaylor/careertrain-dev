@@ -217,7 +217,7 @@ Specialist</em>
 						<span 
 class="header2">Law & Civil Service</span><br /><br />
 					
-	<em>Attaché<br /><br />
+	<em>Attach&eacute;<br /><br />
 						Foreign Service 
 Officer<br /><br />
 						Environmental 
@@ -417,9 +417,9 @@ the occupations in this field.</p>
 
 <hr size="1" />
 
-	<span class="header2">Military Attaché</span><br /><br />
+	<span class="header2">Military Attach&eacute;</span><br /><br />
 	<span class="header3">Job Description</span>
-	<blockquote>A military attaché works for the military. In 
+	<blockquote>A military attach&eacute; works for the military. In 
 this job, you would collect information about the military forces of 
 other countries. To be able to do this, you would meet with 
 government officials and other people who have information.  You 
@@ -431,13 +431,13 @@ they plan possible military movements.</blockquote>
 	<blockquote>You need at least a bachelor's degree for this 
 position.  You also need to understand one or more foreign 
 languages.  Knowledge of other countries is a must. To be chosen as 
-an attaché, you would need to have many years' experience in the 
+an attach&eacute;, you would need to have many years' experience in the 
 military. The person who fills this position has to be very 
 educated.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The yearly salary you recieve in the Military is 
 based on your rank, years of service, and occupational 
-specialty.<blockquote>
+specialty.</blockquote>
 
 <hr size="1" />
 
