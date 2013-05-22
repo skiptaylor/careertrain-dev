@@ -451,7 +451,7 @@ want to work in this occupation.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>According to the job-search website, Indeed.com, 
 the median annual wage of emergency management specialists was 
-$76,000 in Spetember 2012. <blockquote>
+$76,000 in Spetember 2012. </blockquote>
 
 <hr size="1" />
 

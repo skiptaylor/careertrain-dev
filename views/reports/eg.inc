@@ -428,7 +428,7 @@ training would be provided by the military.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>According to the job-search website indeed.com, 
 the median annual wage of military trainers was $122,000 in 
-September 2012. <blockquote>
+September 2012. </blockquote>
 
 <hr size="1" />
 
@@ -451,12 +451,11 @@ Edition, </i> visited 8/27/2012. </blockquote>
 
 
 
-Additional average salary information acquired from job search 
+<p>Additional average salary information acquired from job search 
 website indeed.com in September 2012. The Indeed Salary Search data 
 is based on an index of salary information extracted from over 50 
 million job postings from thousands of unique sources over the 
-previous year.
-
+previous year.</p>
 
 
 

@@ -255,7 +255,7 @@ as schools or colleges.</p>
 
 <span class="header2">Social Studies Teacher</span><br /><br />
 		<span class="header3">Job Description</span>
-	<blockquote><blockquote>A teacher shares information with 
+	<blockquote>A teacher shares information with 
 others.  As a social studies teacher, you would use your knowledge 
 of government, history, and geography to help students better 
 understand the issues that affect them in the world today. You would 

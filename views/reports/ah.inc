@@ -308,12 +308,12 @@ width="100" height="100" border="0" alt="Recreational Therapist" />
 coordinate recreation programs for people with disabilities or 
 illnesses. They use a variety of techniques, including arts and 
 crafts, drama, music, dance, sports, games, and field trips. These 
-programs help maintain or improve a client?s physical and emotional 
+programs help maintain or improve a client's physical and emotional 
 well-being.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Most recreational therapists need a bachelor?s 
+	<blockquote>Most recreational therapists need a bachelor's 
 degree in therapeutic recreation or a related field. Though less 
-common, associate?s, master?s, or doctoral degrees are also 
+common, associate's, master's, or doctoral degrees are also 
 available.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of recreational 

@@ -92,7 +92,7 @@
   					<p>
 						<hr />
   					  <strong><%= c.school_name %></strong> <small><%= "(Not Activated)" unless c.active %></small><br />
-					  <small><%= c.school_city %> <%= c.school_state %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= c.id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><span class="pull-right"><small>Password</small> <span class="password-show">cd<%= c.school_zip %>0<%= c.school_zip_unique %></span></span><% end %>
+					  <small><%= c.school_city %> <%= c.school_state %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= c.id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><span class="pull-right"><small>Password</small> <span class="password-show"><%= c.school_password %></span></span><% end %>
   					</p>
 					<% end %>
 					

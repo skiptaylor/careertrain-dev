@@ -330,7 +330,7 @@ you would help these scientists to increase plant production.  You
 would also help to see that farm animals were well fed.  You would 
 spend time in the laboratory and at local farms.</blockquote>
 	<span class="header3">Education</span>
-	<span class="header3">Most science technicians need an 
+	<blockquote>Most science technicians need an 
 associate degree or a certificate in applied science or science-
 related technology.</blockquote>
 	<span class="header3">Salary</span>

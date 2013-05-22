@@ -309,7 +309,7 @@ in the future.</blockquote>
 	<blockquote>The median annual wage of agricultural managers 
 was $60,750 in May 2010. </blockquote>
 
-><hr size="1">
+<hr size="1">
 
 <span class="header1">OUTDOOR MANAGEMENT</span>
 <p>In this field, you would work more with people than with nature 

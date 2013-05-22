@@ -375,7 +375,7 @@ this occupation.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>According to the job-search website indeed.com, 
 the median annual wage of clery was $44,000 in September 
-2012.blockquote>
+2012.</blockquote>
 
 <hr size="1" />
 
