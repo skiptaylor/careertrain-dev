@@ -128,24 +128,19 @@ career.</p>
 	</tr>
 </table>
 
-<p><strong>Here are some career possibilities for you to 
-explore:</strong></p>
+<p><strong>Here are some career possibilities for you to explore:</strong></p>
 
 <table width="100%" cellpadding="20" cellspacing="0" border="0">
 	<tr>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
-			<span class="header1">AB Career 
-Possibilities</span><br /><br />
+			<span class="header1">AB Career Possibilities</span><br /><br />
 			<table bgcolor="0" cellpadding="0" 
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
-					<td width="33%" 
-align="left"><strong>More People Oriented</strong></td>
-					<td width="33%" 
-align="center"><strong><----------></strong></td>
-					<td width="33%" 
-align="right"><strong>More Technical Oriented</strong></td>
+					<td width="33%" align="left"><strong>More People Oriented</strong></td>
+					<td width="33%" align="center"><strong><----------></strong></td>
+					<td width="33%" align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
 			</table>
 		</td>

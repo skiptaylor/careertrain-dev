@@ -30,6 +30,12 @@
 				border-bottom: 1px solid #808080;
 				margin: 18px 0;
 			}
+			
+			p {
+				margin: 0;
+				padding: 6px 0 6px 0;
+				text-align: left;
+			}
 		
 			.lead	{
 				font-weight: 300;
@@ -44,7 +50,6 @@
 			table  {
 				margin: 0px;
 				padding: 0px;
-				margin-top: -12px;
 			}
 	
 			tr	{
@@ -57,10 +62,16 @@
 				line-height: 21px;
 				font-size: 14px;
 				margin: 0;
+				padding: 6px 12px;
 			}
 							
 			ul, ol	{
 				margin: 0 0 12px 12px;
+			}
+			
+			ul li, ol li	{
+				margin: 0;
+				padding: 0;
 			}
 			
 			h1 	{
@@ -72,7 +83,7 @@
 				font-weight: 700;
 				font-size: 1.7em;
 				line-height: 1.2em;
-				margin-bottom: 12px;
+				margin: 6px 0;
 			}
 			
 			.header2	{
@@ -99,12 +110,6 @@
 				text-decoration: none;
 				color: #ff6c00;
 			}
-
-			p {
-				margin: 0;
-				padding: 0 0 12px 0;
-				text-align: left;
-			}
 			
 			.job_pic	{
 				float: right;
@@ -123,7 +128,7 @@
 		</p>
 		<hr />
 		
-		<p class="lead">Report for Student Name Here</p><%= @first_name %>
+		<p class="lead">Report for <%= params[:first_name] %> <%= params[:last_name] %></p>
 		
 		<h1>Careers and Occupations Guide</h1>
 		<p><small>Support Manual for</small><br />
