@@ -100,10 +100,10 @@ get "/student/resume/index/?" do
   erb :"student/resume/index"
 end
 
-get '/student/:id/?' do
-  @student = Student.get(session[:student])
-  erb :'/student/student'
-end
+# get '/student/:id/?' do
+#   @student = Student.get(session[:student])
+#   erb :'/student/student'
+# end
 
 get '/student/resume/edit/?' do
   @student = Student.get(session[:student])
@@ -124,8 +124,20 @@ post '/student/resume/edit/?' do
   redirect "/student/resume/index"
 end
 
-get '/student/:id/delete/?' do
-  @student = Student.get(params[:id])
-  student.destroy
-  redirect '/student'
+# get '/student/:id/delete/?' do
+#   @student = Student.get(params[:id])
+#   student.destroy
+#   redirect '/student'
+# end
+
+get '/student/resources/?'  do
+  erb :'/student/resources'
+end
+
+get '/student/feedback/?'  do
+  erb :'/student/feedback'
+end
+
+get '/student/resume_tool/?'  do
+  erb :'/student/resume_tool'
 end
