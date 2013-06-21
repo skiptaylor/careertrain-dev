@@ -5,17 +5,23 @@
 				<h1 class="page-header">Online Resume Tool</h1>
 			</div>
 			<div class="span6">
+				
 		
 				<table class="table table-striped table-hover">
 					<tr>
 						<td><input type="checkbox"></td>
+						<th>Personal Information</th>
+						<td><a href="/student/resume/edit">Edit</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
 						<th>Cover Letters</th>
-						<td><a href="letters/letters">Edit</td>
+						<td><a href="/student/resume/letters/letters">Edit</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox"></td>
 						<th>Carer Objectives</th>
-						<td><a href="objectives/edit">Edit</td>
+						<td><a href="/objectives/edit">Edit</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox"></td>
@@ -52,18 +58,23 @@
 						<th>Interests and Hobbies</th>
 						<td><a href="interests/interests">Edit</td>
 					</tr>
-					<tr>
-						<td><input type="checkbox"></td>
-						<th>Personal Information</th>
-						<td><a href="/users/#{params[:id]}">Edit</a></td>
-					</tr>
+
 				</table>
 				
-				<%= @results.inspect %>
+				
 				<p><a href="#" class="btn btn-small">View Cover Letters</a> &nbsp; <a href="#" class="btn btn-small">View Resume</a> &nbsp; <a href="#" class="btn btn-small">View References</a></p>
 				<p>Copy and paste the contents of your cover letter, resume, thank you letter, and references sheet into a Microsoft Word or similar document so you can edit and save it. You will need to double check for grammar and spelling.</p>
 			</div>
-
+			<div class="span5 offset1">
+				<h6>Account Info</h6>
+				<p><%= @student.email %></p>
+				<p><strong><%= @student.name %></strong><br />
+				<%= @student.address %><br />
+				<%= @student.city %> <%= @student.state %> <%= @student.zip %><br />
+				<%= @student.phone %>
+			</p>
+				<a class="btn btn-small" href="/student/resume/sign-out">Sign out</a>
+			</div>
 			</div>
 		</div> <!-- /row -->
 	</div> <!-- /container -->

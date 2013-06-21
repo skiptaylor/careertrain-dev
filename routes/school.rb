@@ -1,18 +1,18 @@
 get '/arng/schools/schools/?' do
   auth_cdguard
-	@client = Client.all
+	@school = School.all
 	erb :'/arng/schools/schools'
 end
 
 get '/arng/schools/new/?' do
   auth_cdguard
-  @client = Client.new
+  @school = School.new
   erb :'/arng/schools/edit_school'
 end
 
 post '/arng/schools/new/?' do
   auth_cdguard
-  client = Client.create(
+  @school = School.create(
     :school_id              => params[:school_id],
     :date_modified          => params[:date_modified],
     :first_name             => params[:first_name],
@@ -36,30 +36,30 @@ post '/arng/schools/new/?' do
     :email                  => params[:email],
     :number_seniors         => params[:number_seniors]
   )
-  params[:active] 					? client.update(:active => true)    : client.update(:active => false)
-  params[:cd] 					    ? client.update(:cd => true)        : client.update(:cd => false)
-  params[:ff] 					    ? client.update(:ff => true)        : client.update(:ff => false)
-  params[:cd_before] 				? client.update(:cd_before => true) : client.update(:cd_before => false)
+  params[:active] 					? school.update(:active => true)    : school.update(:active => false)
+  params[:cd] 					    ? school.update(:cd => true)        : school.update(:cd => false)
+  params[:ff] 					    ? school.update(:ff => true)        : school.update(:ff => false)
+  params[:cd_before] 				? school.update(:cd_before => true) : school.update(:cd_before => false)
   
-  redirect "/arng/schools/#{client.id}/edit"
+  redirect "/arng/schools/#{school.id}/edit"
 end
 
 get '/arng/schools/:id/?' do
   auth_cdguard
-  @client = Client.get(params[:id])
+  @school = School.get(params[:id])
   erb :"/arng/schools/edit_school"
 end
 
 get '/arng/schools/:id/edit/?' do
   auth_cdguard
-  @client = Client.get(params[:id])
+  @school = School.get(params[:id])
   erb :"/arng/schools/edit_school"
 end
 
 post '/arng/schools/:id/edit/?' do
   auth_cdguard
-  client = Client.get(params[:id])
-  client.update(
+  @school = School.get(params[:id])
+  school.update(
     :school_id              => params[:school_id],
     :date_modified          => params[:date_modified],
     :first_name             => params[:first_name],
@@ -83,30 +83,30 @@ post '/arng/schools/:id/edit/?' do
     :email                  => params[:email],
     :number_seniors         => params[:number_seniors]
   )
-  params[:active] 					? client.update(:active => true)    : client.update(:active => false)
-  params[:cd] 					    ? client.update(:cd => true)        : client.update(:cd => false)
-  params[:ff] 					    ? client.update(:ff => true)        : client.update(:ff => false)
-  params[:cd_before] 				? client.update(:cd_before => true) : client.update(:cd_before => false)
+  params[:active] 					? school.update(:active => true)    : school.update(:active => false)
+  params[:cd] 					    ? school.update(:cd => true)        : school.update(:cd => false)
+  params[:ff] 					    ? school.update(:ff => true)        : school.update(:ff => false)
+  params[:cd_before] 				? school.update(:cd_before => true) : school.update(:cd_before => false)
   
   redirect "/arng/schools/#{params[:id]}/school"
 end
 
 get '/arng/schools/:id/school/?' do
   auth_cdguard
-  @client = Client.get(params[:id])
+  @school = School.get(params[:id])
   erb :"/arng/schools/school"
 end
 
 get '/arng/schools/:id/delete/?' do
   auth_cdguard
-  client = Client.get(params[:id])
-  client.destroy
+  school = School.get(params[:id])
+  school.destroy
   redirect "/arng/schools/schools"
 end
 
 get '/arng/schools/schools/?' do
   auth_cdguard
-	@client = Client.all
+	@school = School.all
 	erb :'/arng/schools/schools'
 end
 
@@ -147,11 +147,11 @@ end
 
 get '/arng/register/?' do
   auth_cdguard
-  @client = Client.all
+  @school = School.all
   unless params[:zip]
     @results = []
   else
-    @results = Client.all(school_zip: params[:zip].strip.downcase)
+    @school = School.all(school_zip: params[:zip].strip.downcase)
   end
   erb :"/arng/register"
 end
@@ -159,7 +159,7 @@ end
 
 get '/arng/show_password/?' do
   auth_cdguard
-  @client = Client.all
+  @school = School.all
   erb :"/arng/show_password"
 end
 

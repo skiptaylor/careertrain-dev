@@ -13,6 +13,6 @@ class Activity
   property :date_start_change, String
   property :date_end_change, String
   
-  belongs_to :user, required: false
+  belongs_to :student, required: false
   
 end

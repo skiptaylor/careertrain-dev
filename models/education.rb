@@ -19,6 +19,6 @@ class Education
   property :graduation_date_change, String
   property :degree, String
   
-  belongs_to :user, required: false
+  belongs_to :student, required: false
   
 end

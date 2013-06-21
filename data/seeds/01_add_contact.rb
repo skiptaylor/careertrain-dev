@@ -1,7 +1,7 @@
 CSV.open('./data/ct_resume_databases/contact_info.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
-    if user = User.get(line['ID'])
-      user.update(
+    if student = Student.get(line['ID'])
+      student.update(
         name:           line['Name'],
         address:        line['Address'],
         city:           line['City'],

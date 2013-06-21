@@ -28,13 +28,13 @@
 						<th>Password</th>
 						<th style="text-align: center;">Edit</th>
 					</tr>
-					<% @client.each do |client| %>
+					<% @school.each do |school| %>
 					<tr>
-						<td><%= client.school_name %></td>
-						<td><%= client.school_city %></td>
-						<td><%= client.school_state %></td>
-						<td><%= client.school_password %></td>
-						<td style="text-align: center;"><a href="/arng/schools/<%= client.id %>/edit"> <i class="icon-pencil"></i> </a></td>
+						<td><%= school.school_name %></td>
+						<td><%= school.school_city %></td>
+						<td><%= school.school_state %></td>
+						<td><%= school.school_password %></td>
+						<td style="text-align: center;"><a href="/arng/schools/<%= school.id %>/edit"> <i class="icon-pencil"></i> </a></td>
 					</tr>
 					<% end %>
 				</table>

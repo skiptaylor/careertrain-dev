@@ -10,6 +10,6 @@ class Award
   property :award_date, String
   property :award_date_change, String
   
-  belongs_to :user, required: false
+  belongs_to :student, required: false
   
 end

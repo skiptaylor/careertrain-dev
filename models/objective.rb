@@ -10,6 +10,6 @@ class Objective
   property :long_goal, String
   property :user_id, Integer
   
-  belongs_to :user, required: false
+  belongs_to :student, required: false
   
 end

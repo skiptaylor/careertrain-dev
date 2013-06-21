@@ -12,7 +12,7 @@ helpers do
     when :student
       unless session[role]
         flash[:alert] = 'You must sign in to see that page.'
-        redirect 'student/sign-in'
+        redirect 'student/resume/signin'
       end
     end
 

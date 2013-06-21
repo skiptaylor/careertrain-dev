@@ -15,6 +15,6 @@ class Experience
   property :start_change, String
   property :end_change, String
   
-  belongs_to :user, required: false
+  belongs_to :student, required: false
   
 end

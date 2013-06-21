@@ -1,0 +1,28 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span9 offset3">
+				<h1 class="page-header">Profile</h1>
+			</div>
+			<div class="span4 offset3">
+						
+				<p><strong>Email</strong><br /><%= @student.email %></p>
+				<p><strong>Password</strong><br /><%= @student.password %></p>
+				
+				<p><strong><%= @student.name %></strong><br />
+					<%= @student.address %><br />
+					<%= @student.city %>, <%= @student.state %> <%= @student.zip %><br />
+					<%= @student.phone %><br />
+				</p>
+				<br />
+				<a href="/students/<%= @student.id %>/edit" class="btn btn-success"><i class="icon-pencil"></i> &nbsp;Edit</a>
+
+			</div>
+			<div class="span3">
+				<a href="/students/<%= @student.id %>/student/resume/index" class="btn btn-primary">Online Resume Tool</a></p>
+				<a href="/admin/admin" class="btn btn-success"><i class="icon-signout"></i> &nbsp;Sign out</a></p>
+			</div>
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->
+

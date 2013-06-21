@@ -88,11 +88,11 @@
 				  </p>
 					</form>
 
-					<% @results.each do |c| %>
+					<% @results.each do |school| %>
   					<p>
 						<hr />
-  					  <strong><%= c.school_name %></strong> <small><%= "(Not Activated)" unless c.active %></small><br />
-					  <small><%= c.school_city %> <%= c.school_state %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= c.id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><span class="pull-right"><small>Password</small> <span class="password-show"><%= c.school_password %></span></span><% end %>
+  					  <strong><%= school.school_name %></strong> <small><%= "(Not Activated)" unless school.active %></small><br />
+					  <small><%= school.school_city %> <%= school.school_state %></small> &nbsp; &nbsp; &nbsp; <% unless school.active %><a href="/arng/schools/<%= school.id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><span class="pull-right"><small>Password</small> <span class="password-show"><%= school.school_password %></span></span><% end %>
   					</p>
 					<% end %>
 					

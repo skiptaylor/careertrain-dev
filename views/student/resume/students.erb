@@ -13,12 +13,12 @@
 						<th>Password</th>
 						<th style="text-align: center;" width="30px">Edit</th>
 					</tr>
-					<% @user.each do |user| %>
+					<% @student.each do |student| %>
 					<tr>
-						<td><%= user.name %></td>
-						<td><%= user.email %></td>
-						<td><%= user.password %></td>
-						<td style="text-align: center;" width="30px"><a href="/users/<%= user.id %>/edit"> <i class="icon-pencil"></i> </a></td>
+						<td><%= student.name %></td>
+						<td><%= student.email %></td>
+						<td><%= student.password %></td>
+						<td style="text-align: center;" width="30px"><a href="/students/<%= student.id %>/edit"> <i class="icon-pencil"></i> </a></td>
 					</tr>
 					<% end %>
 				</table>

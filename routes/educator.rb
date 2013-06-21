@@ -5,12 +5,12 @@ namespace '/educator' do
   end
   
   get '/request/?' do
-    @client = Client.new
+    @school = School.new
     erb :"/educator/request"
   end
 
   post '/request/?' do
-    client = Client.create(
+    school = School.create(
       :school_id              => params[:school_id],
       :date_modified          => params[:date_modified],
       :first_name             => params[:first_name],
@@ -28,10 +28,10 @@ namespace '/educator' do
       :email                  => params[:email],
       :number_seniors         => params[:number_seniors]
     )
-    params[:active] 					? client.update(:active => true)    : client.update(:active => false)
-    params[:cd] 					    ? client.update(:cd => true)        : client.update(:cd => false)
-    params[:ff] 					    ? client.update(:ff => true)        : client.update(:ff => false)
-    params[:cd_before] 				? client.update(:cd_before => true) : client.update(:cd_before => false)
+    params[:active] 					? achool.update(:active => true)    : school.update(:active => false)
+    params[:cd] 					    ? achool.update(:cd => true)        : school.update(:cd => false)
+    params[:ff] 					    ? achool.update(:ff => true)        : school.update(:ff => false)
+    params[:cd_before] 				? achool.update(:cd_before => true) : school.update(:cd_before => false)
   
     redirect "/educator/thanks"
   end

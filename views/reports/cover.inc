@@ -32,7 +32,7 @@ Training Concepts, Inc.
 <B>Career Training Concepts, Inc.</B><BR>
 Toll Free: 888-326-9229   Web: www.careertrain.com 
 <BR>
-© 2012 Career Training Concepts, Inc. All Rights Reserved.
+© 2013 Career Training Concepts, Inc. All Rights Reserved.
 </FONT>
 
 </TD>

@@ -12,6 +12,6 @@ class Skill
   property :applied_4, String
   property :user_id,   Integer
   
-  belongs_to :user, required: false
+  belongs_to :student, required: false
   
 end

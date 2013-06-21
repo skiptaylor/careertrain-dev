@@ -1,4 +1,4 @@
-class User
+class Student
   include DataMapper::Resource
 
   timestamps :at, :on
@@ -17,8 +17,6 @@ class User
   property :state, String
   property :zip, String
   property :phone, String
-  property :email, String
-
   
   has n, :awards
   has n, :activities

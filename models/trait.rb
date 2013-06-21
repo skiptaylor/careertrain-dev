@@ -11,6 +11,6 @@ class Trait
   property :trait_3, String
   property :opening_sentence,  String
   
-  belongs_to :user, required: false
+  belongs_to :student, required: false
   
 end

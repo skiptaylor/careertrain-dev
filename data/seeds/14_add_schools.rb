@@ -1,9 +1,9 @@
 # Clear out all the current data
-DataMapper.repository(:default).adapter.execute("delete from clients")
+DataMapper.repository(:default).adapter.execute("delete from schools")
 
 CSV.open('./data/ct_databases/Clients.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
-    c = Client.create(
+    c = School.create(
       school_id:          line['ClientID'].to_i,
       date_modified:      line['DateModified'],
       active:             line['Active'],
