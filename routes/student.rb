@@ -56,8 +56,8 @@ post '/student/resume/create/?' do
   @errors << :email_in_use if Student.all(email: params[:email]).count > 0
 
   if @errors.count == 0
-    student = Student.create(email: params[:email], password: params[:password])
-    session[:student] = student.id
+    @student = Student.create(email: params[:email], password: params[:password])
+    session[:student] = @student.id
     flash[:alert] = 'You are now signed in.'
     redirect '/student/resume/index'
   else
@@ -111,7 +111,7 @@ get '/student/resume/edit/?' do
 end
 
 post '/student/resume/edit/?' do
-  @student = Student.update(
+  @student = Student.get(session[:student]).update(
     :email     => params[:email],
     :password  => params[:password],
     :name      => params[:name],
@@ -125,7 +125,7 @@ post '/student/resume/edit/?' do
 end
 
 get '/student/:id/delete/?' do
-  student = Student.get(params[:id])
+  @student = Student.get(params[:id])
   student.destroy
   redirect '/student'
 end
