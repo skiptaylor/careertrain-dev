@@ -1,62 +1,73 @@
-get '/letters/?' do
+get '/student/resume/letters/?' do
+  @student = Student.get(session[:student])
 	@letter = Letter.all
-	erb :letters
+	erb :'/student/resume/letters'
 end
 
-get '/letters/new/?' do
+get '/student/resume/letters/new/?' do
+  @student = Student.get(session[:student])
   @letter = Letter.new
-  erb :edit
+  erb :'/student/resume/letters/edit'
 end
 
-post '/letters/new/?' do
+post '/student/resume/letters/new/?' do
   letter = Letter.create(
-    :id_user    => params[:id_user],
-    :title      => params[:title],
-    :first      => params[:first],
-    :last       => params[:last],
-    :position   => params[:position],
-    :company    => params[:company],
-    :address    => params[:address],
-    :city       => params[:city],
-    :state      => params[:state],
-    :zip        => params[:zip],
-    :apply      => params[:apply],
-    :opening    => params[:opening]
+    :student_id   => params[:student_id],
+    :title        => params[:title],
+    :first        => params[:first],
+    :last         => params[:last],
+    :position     => params[:position],
+    :company      => params[:company],
+    :address      => params[:address],
+    :city         => params[:city],
+    :state        => params[:state],
+    :zip          => params[:zip],
+    :apply        => params[:apply],
+    :opening      => params[:opening]
   )
-  redirect '/letters'
+  redirect '/student/resume/letters/view'
 end
 
-get '/letters/:id/?' do
+get '/student/resume/letters/letter?' do
+  @student = Student.get(session[:student])
+	@letter = Letter.all
+	erb :'letters'
+end
+
+get '/student/resume//letters/view/?' do
+  @student = Student.get(session[:student])
   @letter = Letter.get(params[:id])
-  erb :letter
+  erb :view
 end
 
-get '/letters/:id/edit/?' do
+get '/student/resume//letters/:id/edit/?' do
+  @student = Student.get(session[:student])
   @letter = Letter.get(params[:id])
-  erb :edit
+  erb :'/student/resume/letters/edit'
 end
 
-post '/letters/:id/edit/?' do
+post '/student/resume//letters/:id/edit/?' do
   letter = Letter.get(params[:id])
   letter.update(
-    :id_user    => params[:id_user],
-    :title      => params[:title],
-    :first      => params[:first],
-    :last       => params[:last],
-    :position   => params[:position],
-    :company    => params[:company],
-    :address    => params[:address],
-    :city       => params[:city],
-    :state      => params[:state],
-    :zip        => params[:zip],
-    :apply      => params[:apply],
-    :opening    => params[:opening]
+    :student_id   => params[:student_id],
+    :title        => params[:title],
+    :first        => params[:first],
+    :last         => params[:last],
+    :position     => params[:position],
+    :company      => params[:company],
+    :address      => params[:address],
+    :city         => params[:city],
+    :state        => params[:state],
+    :zip          => params[:zip],
+    :apply        => params[:apply],
+    :opening      => params[:opening]
   )
-  redirect '/letter'
+  redirect '/student/resume//letters/view'
 end
 
-get '/letters/:id/delete/?' do
+get '/student/resume//letters/:id/delete/?' do
+  @student = Student.get(session[:student])
   letter = Letter.get(params[:id])
   letter.destroy
-  redirect '/letters'
+  redirect '/student/resume//letters'
 end

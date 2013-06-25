@@ -100,11 +100,6 @@ get "/student/resume/index/?" do
   erb :"student/resume/index"
 end
 
-# get '/student/:id/?' do
-#   @student = Student.get(session[:student])
-#   erb :'/student/student'
-# end
-
 get '/student/resume/edit/?' do
   @student = Student.get(session[:student])
   erb :'/student/resume/edit_student'

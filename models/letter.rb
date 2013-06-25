@@ -5,11 +5,11 @@ class Letter
 	property   :deleted_at, ParanoidDateTime
 	property 	 :id, 				Serial
 
-  property :title,  String
-  property :first,  String
+  property :title, String
+  property :first, String
   property :last, String
   property :position, String
-  property :user_id, Integer
+  property :student_id, Integer
   property :company, String
   property :address, String
   property :city, String

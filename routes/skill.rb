@@ -11,6 +11,7 @@ end
 post '/skills/new/?' do
   user = User.get(session[:student])
   user.skill.create(
+    :student_id => params[:student_id],
     :skill      => params[:skill],
     :applied_1  => params[:applied_1],
     :applied_2  => params[:applied_2],
@@ -33,6 +34,7 @@ end
 post '/skills/:id/edit/?' do
   skill = Skill.get(params[:id])
   skill.update(
+    :student_id => params[:student_id],
     :skill      => params[:skill],
     :applied_1  => params[:applied_1],
     :applied_2  => params[:applied_2],

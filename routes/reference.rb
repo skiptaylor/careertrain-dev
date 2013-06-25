@@ -10,7 +10,7 @@ end
 
 post '/references/new/?' do
   reference = Reference.create(
-    :id_user        => params[:id_user],
+    :student_id     => params[:student_id],
     :name           => params[:name],
     :relationship   => params[:relationship],
     :address        => params[:address],
@@ -36,7 +36,7 @@ end
 post '/references/:id/edit/?' do
   reference = Reference.get(params[:id])
   reference.update(
-    :id_user        => params[:id_user],
+    :student_id     => params[:student_id],
     :name           => params[:name],
     :relationship   => params[:relationship],
     :address        => params[:address],

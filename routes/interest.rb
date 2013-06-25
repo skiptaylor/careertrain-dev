@@ -10,7 +10,8 @@ end
 
 post '/interests/new/?' do
   interest = Interest.create(
-    :interest  => params[:interest]
+    :interest  => params[:interest],
+    :student_id   => params[:student_id]
   )
   redirect '/interests'
 end
@@ -28,7 +29,8 @@ end
 post '/interests/:id/edit/?' do
   interest = Interest.get(params[:id])
   interest.update(
-    :interest  => params[:interest]
+    :interest  => params[:interest],
+    :student_id   => params[:student_id]
   )
   redirect '/interests'
 end

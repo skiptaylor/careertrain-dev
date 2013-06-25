@@ -10,7 +10,7 @@ end
 
 post '/awards/new/?' do
   award = Award.create(
-    :id_user            => params[:id_user],
+    :student_id         => params[:student_id],
     :award              => params[:award],
     :award_date         => params[:award_date],
     :award_date_change  => params[:award_date_change]
@@ -31,7 +31,7 @@ end
 post '/awards/:id/edit/?' do
   award = Award.get(params[:id])
   award.update(
-    :id_user            => params[:id_user],
+    :student_id         => params[:student_id],
     :award              => params[:award],
     :award_date         => params[:award_date],
     :award_date_change  => params[:award_date_change]

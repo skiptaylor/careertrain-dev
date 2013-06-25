@@ -5,7 +5,7 @@
 				<h1>Cover Letter</h1>
 		
 				<form method="post">
-					
+					<p><%= @student.email %>, <%= @student.id %></p>
 					<p>
 						<label for="title">Title</label>
 						<input type="text" name="title" id="title" class="textfield span4" value="<%= @letter.title %>" />
@@ -51,7 +51,7 @@
 						<input type="text" name="opening" id="opening" class="textfield span4" value="<%= @letter.opening %>" />
 					</p>
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/letters">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/letters/<%= @letter.id %>/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/letters">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/letters/<%= @letter.id %>/delete">Delete</a>
 					
 					</form>	
 			</div>

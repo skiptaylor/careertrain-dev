@@ -10,7 +10,7 @@ end
 
 post '/educations/new/?' do
   education = Education.create(
-    :id_user                  => params[:id_user],
+    :student_id               => params[:student_id],
     :attending                => params[:attending],
     :graduate_on              => params[:graduate_on],
     :plan_attend              => params[:plan_attend],
@@ -39,7 +39,7 @@ end
 post '/educations/:id/edit/?' do
   education = Education.get(params[:id])
   education.update(
-    :id_user                  => params[:id_user],
+    :student_id               => params[:student_id],
     :attending                => params[:attending],
     :graduate_on              => params[:graduate_on],
     :plan_attend              => params[:plan_attend],

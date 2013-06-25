@@ -5,7 +5,7 @@ class Trait
 	property   :deleted_at, ParanoidDateTime
 	property 	 :id, 				Serial
 
-  property :user_id,  Integer
+  property :student_id,  Integer
   property :trait_1,  String
   property :trait_2, String
   property :trait_3, String

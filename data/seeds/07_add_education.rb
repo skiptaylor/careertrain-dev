@@ -4,7 +4,7 @@ DataMapper.repository(:default).adapter.execute("delete from educations")
 CSV.open('./data/ct_resume_databases/education.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
     Education.create(
-      user_id:                line['ID'].to_i,
+      student_id:             line['ID'].to_i,
       id:                     line['ID_PK'].to_i,
       attending:              line['Attending'],
       graduate_on:            line['Graduate_On'],

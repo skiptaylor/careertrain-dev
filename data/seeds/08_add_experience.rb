@@ -4,7 +4,7 @@ DataMapper.repository(:default).adapter.execute("delete from experiences")
 CSV.open('./data/ct_resume_databases/work_experience.csv', { headers: true }) do |csv_lines|
   csv_lines.each do |line|
     Experience.create(
-      user_id:       line['ID'].to_i,
+      student_id:    line['ID'].to_i,
       id:            line['ID_PK'].to_i,
       company:       line['Company_Name'],
       city:          line['City'],

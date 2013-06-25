@@ -14,7 +14,7 @@ post '/activities/new/?' do
     :organization       => params[:organization],
     :date_start         => params[:date_start],
     :date_end           => params[:date_end],
-    :id_user            => params[:id_user],
+    :student_id         => params[:student_id],
     :date_start_change  => params[:date_start_change],
     :date_end_change    => params[:date_end_change]
   )
@@ -38,7 +38,7 @@ post '/activities/:id/edit/?' do
   :organization       => params[:organization],
   :date_start         => params[:date_start],
   :date_end           => params[:date_end],
-  :id_user            => params[:id_user],
+  :student_id         => params[:student_id],
   :date_start_change  => params[:date_start_change],
   :date_end_change    => params[:date_end_change]
     

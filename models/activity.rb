@@ -9,7 +9,7 @@ class Activity
   property :organization,  String
   property :date_start, String
   property :date_end, String
-  property :user_id, Integer
+  property :student_id, Integer
   property :date_start_change, String
   property :date_end_change, String
   

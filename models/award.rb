@@ -5,7 +5,7 @@ class Award
 	property   :deleted_at, ParanoidDateTime
 	property 	 :id, 				Serial
 
-  property :user_id,  Integer
+  property :student_id,  Integer
   property :award,  String
   property :award_date, String
   property :award_date_change, String

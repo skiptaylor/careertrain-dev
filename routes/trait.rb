@@ -10,7 +10,7 @@ end
 
 post '/traits/new/?' do
   trait = Trait.create(
-    :id_user           => params[:id_user],
+    :student_id        => params[:student_id],
     :trait_1           => params[:trait_1],
     :trait_2           => params[:trait_2],
     :trait_3           => params[:trait_3],
@@ -32,7 +32,7 @@ end
 post '/traits/:id/edit/?' do
   trait = Trait.get(params[:id])
   trait.update(
-    :id_user           => params[:id_user],
+    :student_id        => params[:student_id],
     :trait_1           => params[:trait_1],
     :trait_2           => params[:trait_2],
     :trait_3           => params[:trait_3],

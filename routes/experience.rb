@@ -10,7 +10,7 @@ end
 
 post '/experiences/new/?' do
   experience = Experience.create(
-    :id_user        => params[:id_user],
+    :student_id     => params[:student_id],
     :company        => params[:company],
     :city           => params[:city],
     :state          => params[:state],
@@ -36,7 +36,7 @@ end
 post '/experiences/:id/edit/?' do
   experience = Experience.get(params[:id])
   experience.update(
-    :id_user        => params[:id_user],
+    :student_id     => params[:student_id],
     :company        => params[:company],
     :city           => params[:city],
     :state          => params[:state],

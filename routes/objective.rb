@@ -10,7 +10,7 @@ end
 
 post '/objectives/new/?' do
   objective = Objective.create(
-    :id_user    => params[:id_user],
+    :student_id => params[:student_id],
     :goal       => params[:goal],
     :learn      => params[:learn],
     :long_goal  => params[:long_goal]
@@ -31,7 +31,7 @@ end
 post '/resume/objectives/:id/edit/?' do
   objective = Objective.get(params[:id])
   objective.update(
-    :id_user    => params[:id_user],
+    :student_id => params[:student_id],
     :goal       => params[:goal],
     :learn      => params[:learn],
     :long_goal  => params[:long_goal]

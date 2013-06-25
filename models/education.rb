@@ -5,7 +5,7 @@ class Education
 	property   :deleted_at, ParanoidDateTime
 	property 	 :id, 				Serial
 
-  property :user_id,  Integer
+  property :student_id,  Integer
   property :attending,  String
   property :graduate_on, String
   property :plan_attend, String

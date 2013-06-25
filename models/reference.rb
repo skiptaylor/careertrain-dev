@@ -7,7 +7,7 @@ class Reference
 	property   :deleted_at, ParanoidDateTime
 	property 	 :id, 				Serial
 
-  property :user_id,  Integer
+  property :student_id,  Integer
   property :name,  String
   property :relationship, String
   property :address, String
