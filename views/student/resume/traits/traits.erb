@@ -16,7 +16,7 @@
 					<% @student.traits.each do |trait| %>
 					<tr>
 						<td><%= trait.trait_1 %></td>
-						<td style="text-align: right;"><a href="/student/resume/traits/<%= trait.id %>/edit">Edit</a> &nbsp; <a href="/student/resume/traits/<%= trait.id %>/view">View</a></td>
+						<td style="text-align: right;"><span class="under-link"><a href="/student/resume/traits/<%= trait.id %>/edit">Edit</a></span> &nbsp; <span class="under-link"><a href="/student/resume/traits/<%= trait.id %>/view">View</a></span></td>
 					</tr>
 					<% end %>
 				</table>

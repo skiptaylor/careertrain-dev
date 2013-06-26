@@ -15,7 +15,7 @@
 					<% @student.experiences.each do |experience| %>
 					<tr>
 						<td><%= experience.company %></a></td>
-						<td style="text-align: right;"><a href="/student/resume/experience/<%= experience.id %>/edit">Edit</a> &nbsp; <a href="/student/resume/experience/<%= experience.id %>/view">View</a></td>
+						<td style="text-align: right;"><span class="under-link"><a href="/student/resume/experience/<%= experience.id %>/edit">Edit</a></span> &nbsp; <span class="under-link"><a href="/student/resume/experience/<%= experience.id %>/view">View</a></span></td>
 					</tr>
 					<% end %>
 				</table>

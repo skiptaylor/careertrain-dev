@@ -429,6 +429,11 @@ blockquote {
 
 .short	{
 	line-height: 1.9em;
-	margin: 0;
-	padding: 0;
+	margin: -7px 0 0 0;
+	padding: 0 0 9px 32px;
+}
+
+.big-check	{
+	font-size: 1.4em;
+	float: left;
 }
