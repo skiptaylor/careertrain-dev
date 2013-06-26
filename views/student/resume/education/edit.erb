@@ -2,14 +2,10 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span4 offset3">
-				<h1>Education</h1>
+				<h1>Education &nbsp; <small><%= @student.name %></small></h1><br />
 		
 				<form method="post">
 					
-					<p>
-						<label for="id_user">id_user</label>
-						<input type="text" name="id_user" id="id_user" class="textfield span4" value="<%= @education.id_user %>" />
-					</p>
 					<p>
 						<label for="attending">attending</label>
 						<input type="text" name="attending" id="attending" class="textfield span4" value="<%= @education.attending %>" />
@@ -59,7 +55,7 @@
 						<input type="text" name="degree" id="degree" class="textfield span4" value="<%= @education.degree %>" />
 					</p>
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/educations">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/educations/<%= @education.id %>/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/index">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/student/resume/education/<%= @education.id %>/delete">Delete</a>
 					
 					</form>	
 			</div>

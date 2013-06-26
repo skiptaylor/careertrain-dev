@@ -2,21 +2,21 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span8 offset2">
-				<h1>Interests &nbsp; <small><%= @student.name %></small></h1><br />
+				<h1>Traits &nbsp; <small><%= @student.name %></small></h1><br />
 			</div>
 			<div class="span8 offset2">
-				<p><a href="/student/resume/interests/new" class="btn btn-small btn-success pull-right">New</a>
+				<p><a href="/student/resume/traits/new" class="btn btn-small btn-success pull-right">New</a>
 				<a href="/student/resume/index" class="btn btn-small">Resume Tool</a></p>
 				
 				<table class="table table-striped table-condensed table-hover">
 					<tr>
-						<th>Interest</th>
+						<th>Traits</th>
 						<th style="text-align: right;">Edit</th>
 					</tr>
-					<% @student.interests.each do |interest| %>
+					<% @student.traits.each do |trait| %>
 					<tr>
-						<td><%= interest.interest %></td>
-						<td style="text-align: right;"><a href="/student/resume/interests/<%= interest.id %>/edit">Edit</a> &nbsp; <a href="/student/resume/interests/<%= interest.id %>/view">View</a></td>
+						<td><%= trait.trait_1 %></td>
+						<td style="text-align: right;"><a href="/student/resume/traits/<%= trait.id %>/edit">Edit</a> &nbsp; <a href="/student/resume/traits/<%= trait.id %>/view">View</a></td>
 					</tr>
 					<% end %>
 				</table>

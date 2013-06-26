@@ -1,0 +1,64 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span12">
+				<h1>Education &nbsp; <small><%= @student.name %></small></h1><br />
+				
+				<p>
+					<label for="attending">attending</label>
+					<%= @education.attending %>
+				</p>
+				<p>
+					<label for="graduate_on">graduate_on</label>
+					<%= @education.graduate_on %>
+				</p>
+				<p>
+					<label for="plan_attend">plan_attend</label>
+					<%= @education.plan_attend %>
+				</p>
+				<p>
+					<label for="completed">completed</label>
+					<%= @education.completed %>
+				</p>
+				<p>
+					<label for="completed_on">completed_on</label>
+					<%= @education.completed_on %>
+				</p>
+				<p>
+					<label for="graduated">graduated</label>
+					<%= @education.graduated %>
+				</p>
+				<p>
+					<label for="graduation_date">graduation_date</label>
+					<%= @education.graduation_date %>
+				</p>
+				<p>
+					<label for="study">study</label>
+					<%= @education.study %>
+				</p>
+				<p>
+					<label for="grad_date_change">grad_date_change</label>
+					<%= @education.grad_date_change %>
+				</p>
+				<p>
+					<label for="completed_date_change">completed_date_change</label>
+					<%= @education.completed_date_change %>
+				</p>
+				<p>
+					<label for="graduation_date_change">graduation_date_change</label>
+					<%= @education.graduation_date_change %>
+				</p>
+				<p>
+					<label for="degree">degree</label>
+					<%= @education.degree %>
+				</p>
+				
+				
+				<br />
+					
+				<p><a class="btn btn-success btn-small" href="/student/resume/education/<%= @education.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/index">Resume Tool</a></p>
+			</div>
+
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->

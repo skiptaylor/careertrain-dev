@@ -1,42 +1,54 @@
-get '/interests/?' do
+get '/student/resume/interests/?' do
+  @student = Student.get(session[:student])
 	@interest = Interest.all
-	erb :interests
+	erb :"/student/resume/interests"
 end
 
-get '/interests/new/?' do
+get '/student/resume/interests/new/?' do
+  @student = Student.get(session[:student])
   @interest = Interest.new
-  erb :edit_interest
+  erb :"/student/resume/interests/edit"
 end
 
-post '/interests/new/?' do
+post '/student/resume/interests/new/?' do
   interest = Interest.create(
-    :interest  => params[:interest],
-    :student_id   => params[:student_id]
+    :student_id   => session[:student],
+    :interest     => params[:interest]
   )
-  redirect '/interests'
+  redirect "/student/resume/interests/interests"
 end
 
-get '/interests/:id/?' do
+get '/student/resume/interests/interests/?' do
+  @student = Student.get(session[:student])
   @interest = Interest.get(params[:id])
-  erb :interests
+  erb :"/student/resume/interests/interests"
 end
 
-get '/interests/:id/edit/?' do
+get '/student/resume/interests/:id/view/?' do
+  @student = Student.get(session[:student])
   @interest = Interest.get(params[:id])
-  erb :edit_interest
+  erb :"/student/resume/interests/view"
 end
 
-post '/interests/:id/edit/?' do
+get '/student/resume/interests/:id/edit/?' do
+  @student = Student.get(session[:student])
+  @interest = Interest.get(params[:id])
+  erb :"/student/resume/interests/edit"
+end
+
+post '/student/resume/interests/:id/edit/?' do
+  @student = Student.get(session[:student])
   interest = Interest.get(params[:id])
   interest.update(
-    :interest  => params[:interest],
-    :student_id   => params[:student_id]
+    :student_id   => session[:student],
+    :interest     => params[:interest]
   )
-  redirect '/interests'
+  redirect "/student/resume/interests/interests"
 end
 
-get '/interests/:id/delete/?' do
+get '/student/resume/interests/:id/delete/?' do
+  @student = Student.get(session[:student])
   interest = Interest.get(params[:id])
   interest.destroy
-  redirect '/interests'
+  redirect '/student/resume/interests/interests'
 end

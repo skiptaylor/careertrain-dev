@@ -1,47 +1,63 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span9 offset3">
-				<h1 class="page-header">Student Profile</h1>
+			<div class="span12">
+				<h1 class="page-header">Student Profile &nbsp; <small><%= @student.name %></small></h1><br />
 			</div>
-			<div class="span9 offset3">
+			<div class="span7 offset2">
 		
-				<form method="post">
+				<form method="post" class="form-horizontal">
 					
-					<p>
-						<label for="email">Email</label>
-						<input type="text" name="email" id="email" class="textfield span5" value="<%= @student.email %>" />
-					</p>
-					<p>
-						<label for="password">Password</label>
-						<input type="text" name="password" id="password" class="textfield span5" value="<%= @student.password %>" />
-					</p>
-					<p>
-						<label for="name">Name</label>
-						<input type="text" name="name" id="name" class="textfield span5" value="<%= @student.name %>" />
-					</p>
-					<p>
-						<label for="address">Address</label>
-						<input type="text" name="address" id="address" class="textfield span5" value="<%= @student.address %>" />
-					</p>
-					<p>
-						<label for="city">City</label>
-						<input type="text" name="city" id="city" class="textfield span5" value="<%= @student.city %>" />
-					</p>
-					<p>
-						<label for="state">State</label>
-						<input type="text" name="state" id="state" class="textfield span1" value="<%= @student.state %>" />
-					</p>
-					<p>
-						<label for="zip">Zip</label>
-						<input type="text" name="zip" id="zip" class="textfield span2" value="<%= @student.zip %>" />
-					</p>
-					<p>
-						<label for="phone">Phone</label>
-						<input type="text" name="phone" id="phone" class="textfield span5" value="<%= @student.phone %>" />
-					</p>
+					<div class="control-group">
+						<label class="control-label" for="email">Email</label>
+						<div class="controls">
+							<input type="text" name="email" id="email" class="textfield span5" value="<%= @student.email %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label"for="password">Password</label>
+						<div class="controls">
+							<input type="text" name="password" id="password" class="textfield span5" value="<%= @student.password %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label"for="name">Name</label>
+						<div class="controls">
+							<input type="text" name="name" id="name" class="textfield span5" value="<%= @student.name %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label"for="address">Address</label>
+						<div class="controls">
+							<input type="text" name="address" id="address" class="textfield span5" value="<%= @student.address %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label"for="city">City</label>
+						<div class="controls">
+							<input type="text" name="city" id="city" class="textfield span5" value="<%= @student.city %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label"for="state">State</label>
+						<div class="controls">
+							<input type="text" name="state" id="state" class="textfield span1" value="<%= @student.state %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label"for="zip">Zip</label>
+						<div class="controls">
+							<input type="text" name="zip" id="zip" class="textfield span2" value="<%= @student.zip %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label"for="phone">Phone</label>
+						<div class="controls">
+							<input type="text" name="phone" id="phone" class="textfield span5" value="<%= @student.phone %>" />
+						</div>
+					</div>
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/index">Cancel</a> &nbsp; <a class="btn btn-small btn-warning" href="/students/<%= @student.id %>/delete">Delete</a>
+					<p style="text-align: center;"><input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/index">Cancel</a> <!-- &nbsp; <a class="btn btn-small btn-warning" href="/students/<%= @student.id %>/delete">Delete</a> --></p>
 					
 				</form>
 				

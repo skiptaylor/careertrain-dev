@@ -94,7 +94,6 @@ ul li, ol li	{
 	line-height: 22px;
 }
 
-
 p, h2, h3, h4, h5, h6 	{
 	font-family: 'Open Sans', helvetica, sans-serif;
 	margin-bottom: 12px;
@@ -426,4 +425,10 @@ blockquote {
 		     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 		        -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 		             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.short	{
+	line-height: 1.9em;
+	margin: 0;
+	padding: 0;
 }

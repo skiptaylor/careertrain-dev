@@ -2,7 +2,7 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span4 offset3">
-				<h1>Objectives</h1>
+				<h1>Objectives &nbsp; <small></small></h1><br />
 		
 				<form method="post">
 					
@@ -18,13 +18,8 @@
 						<label for="long_goal">Long Term Goal</label>
 						<input type="text" name="long_goal" id="long_goal" class="textfield span4" value="<%= @objective.long_goal %>" />
 					</p>
-					<p>
-						<label for="id_user">id_user</label>
-						<input type="text" name="id_user" id="id_user" class="textfield span4" value="<%= objective.id_user %>" />
-					</p>
-
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/objectives">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/objectives/<%= objective.id %>/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/index">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/student/resume/objectives/delete">Delete</a>
 					
 					</form>	
 			</div>

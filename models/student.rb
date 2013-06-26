@@ -20,7 +20,7 @@ class Student
   
   has n, :awards
   has n, :activities
-  has n, :educations
+  has 1, :education
   has n, :experiences
   has n, :interests
   has n, :letters

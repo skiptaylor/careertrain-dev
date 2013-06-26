@@ -2,7 +2,7 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span4 offset3">
-				<h1>Traits</h1>
+				<h1>Traits &nbsp; <small><%= @student.name %></small></h1><br />
 		
 				<form method="post">
 					
@@ -18,13 +18,8 @@
 						<label for="trait_3">Trait 3</label>
 						<input type="text" name="trait_3" id="trait_3" class="textfield span4" value="<%= @trait.trait_3 %>" />
 					</p>
-					<p>
-						<label for="opening_sentence">Opening Sentence</label>
-						<input type="text" name="opening_sentence" id="opening_sentence" class="textfield span4" value="<%= @trait.opening_sentence %>" />
-					</p>
-
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/traits">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/traits/<%= @trait.id %>/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/traits/traits">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/student/resume/traits/<%= @trait.id %>/delete">Delete</a>
 					
 					</form>	
 			</div>

@@ -1,0 +1,18 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span12">
+				<h1>Traits &nbsp; <small><%= @student.name %></small></h1><br />
+				
+				<p><%= @trait.trait_1 %></p>
+				<p><%= @trait.trait_2 %></p>
+				<p><%= @trait.trait_3 %></p>
+
+				<br />
+					
+				<p><a class="btn btn-success btn-small" href="/student/resume/traits/<%= @trait.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/traits/traits">Index</a> &nbsp; <a class="btn btn-small" href="/student/resume/index">Resume Tool</a></p>
+			</div>
+
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->
