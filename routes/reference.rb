@@ -1,16 +1,18 @@
-get '/references/?' do
+get '/student/resume/references/?' do
+  @student = Student.get(session[:student])
 	@reference = Reference.all
-	erb :references
+	erb :'/student/resume/references'
 end
 
-get '/references/new/?' do
+get '/student/resume/references/new/?' do
+  @student = Student.get(session[:student])
   @reference = Reference.new
-  erb :edit_reference
+  erb :'/student/resume/references/edit'
 end
 
-post '/references/new/?' do
+post '/student/resume/references/new/?' do
   reference = Reference.create(
-    :student_id     => params[:student_id],
+    :student_id     => session[:student],
     :name           => params[:name],
     :relationship   => params[:relationship],
     :address        => params[:address],
@@ -20,23 +22,33 @@ post '/references/new/?' do
     :phone          => params[:phone],
     :email          => params[:email]
   )
-  redirect '/references'
+  redirect '/student/resume/references/references'
 end
 
-get '/references/:id/?' do
+get '/student/resume/references/references?' do
+  @student = Student.get(session[:student])
   @reference = Reference.get(params[:id])
-  erb :reference
+  erb :'/student/resume/references/references'
 end
 
-get '/references/:id/edit/?' do
+
+get '/student/resume/references/:id/view?' do
+  @student = Student.get(session[:student])
   @reference = Reference.get(params[:id])
-  erb :edit_reference
+  erb :'/student/resume/references/view'
 end
 
-post '/references/:id/edit/?' do
+get '/student/resume/references/:id/edit/?' do
+  @student = Student.get(session[:student])
+  @reference = Reference.get(params[:id])
+  erb :'/student/resume/references/edit'
+end
+
+post '/student/resume/references/:id/edit/?' do
+  @student = Student.get(session[:student])
   reference = Reference.get(params[:id])
   reference.update(
-    :student_id     => params[:student_id],
+    :student_id     => session[:student],
     :name           => params[:name],
     :relationship   => params[:relationship],
     :address        => params[:address],
@@ -46,11 +58,12 @@ post '/references/:id/edit/?' do
     :phone          => params[:phone],
     :email          => params[:email]
   )
-  redirect '/references'
+  redirect '/student/resume/references/references'
 end
 
-get '/references/:id/delete/?' do
+get '/student/resume/references/:id/delete/?' do
+  @student = Student.get(session[:student])
   reference = Reference.get(params[:id])
   reference.destroy
-  redirect '/references'
+  redirect '/student/resume/references/references'
 end

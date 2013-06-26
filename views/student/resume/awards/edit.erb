@@ -2,7 +2,7 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span4 offset3">
-				<h1>Award</h1>
+				<h1>Award &nbsp; <small><%= @student.name %></small></h1><br />
 		
 				<form method="post">
 					
@@ -14,12 +14,8 @@
 						<label for="award_date">Date</label>
 						<input type="text" name="award_date" id="award_date" class="textfield span4" value="<%= @award.award_date %>" />
 					</p>
-					<p>
-						<label for="award_date_change">Ghange Date</label>
-						<input type="text" name="award_date_change" id="award_date_change" class="textfield span4" value="<%= @award.award_date_change %>" />
-					</p>
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/awards">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/awards/<%= @award.id %>/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/awards/awards">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/student/resume/awards/<%= @award.id %>/delete">Delete</a>
 					
 					</form>	
 			</div>

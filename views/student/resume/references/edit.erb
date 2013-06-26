@@ -2,14 +2,10 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span4 offset3">
-				<h1>Reference</h1>
+				<h1>Reference &nbsp; <small><%= @student.name %></small></h1><br />
 		
 				<form method="post">
 					
-					<p>
-						<label for="id_user">id_user</label>
-						<input type="text" name="id_user" id="id_user" class="textfield span4" value="<%= @reference.id_user %>" />
-					</p>
 					<p>
 						<label for="name">name</label>
 						<input type="text" name="name" id="name" class="textfield span4" value="<%= @reference.name %>" />
@@ -43,7 +39,7 @@
 						<input type="text" name="email" id="email" class="textfield span4" value="<%= @reference.email %>" />
 					</p>
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/@references">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/@references/<%= @reference.id %>/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/references/references">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/student/resume/references/<%= @reference.id %>/delete">Delete</a>
 					
 					</form>	
 			</div>

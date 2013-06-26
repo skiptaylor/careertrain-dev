@@ -1,9 +1,10 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span4 offset3">
-				<h1>RRC</h1>
+			<div class="span12">
+				<h1>Activities &nbsp; <small><%= @student.name %></small></h1><br />
 		
+			<div class="span8 offset2">
 				<form method="post">
 					
 					<p>
@@ -31,9 +32,9 @@
 						<input type="text" name="date_end_change" id="date_end_change" class="textfield span4" value="<%= @activity.date_end_change %>" />
 					</p>
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/activities">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/activities/<%= @activity.id %>/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/activities/activities">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/student/resume/activities/<%= @activity.id %>/delete">Delete</a>
 					
-					</form>	
+				</form>	
 			</div>
 			
 		</div> <!-- /row -->

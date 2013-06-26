@@ -1,16 +1,18 @@
-get '/experiences/?' do
+get '/student/resume/experience/?' do
+  @student = Student.get(session[:student])
 	@experience = Experience.all
-	erb :experiences
+	erb :'/student/resume/experience'
 end
 
-get '/experiences/new/?' do
+get '/student/resume/experience/new/?' do
+  @student = Student.get(session[:student])
   @experience = Experience.new
-  erb :edit_experience
+  erb :'/student/resume/experience/edit'
 end
 
-post '/experiences/new/?' do
+post '/student/resume/experience/new/?' do
   experience = Experience.create(
-    :student_id     => params[:student_id],
+    :student_id     => session[:student],
     :company        => params[:company],
     :city           => params[:city],
     :state          => params[:state],
@@ -20,23 +22,32 @@ post '/experiences/new/?' do
     :start_change   => params[:start_change],
     :end_change     => params[:end_change]
   )
-  redirect '/experiences'
+  redirect '/student/resume/experience/experiences'
 end
 
-get '/experiences/:id/?' do
+get '/student/resume/experience/experiences/?' do
+  @student = Student.get(session[:student])
   @experience = Experience.get(params[:id])
-  erb :experience
+  erb :'/student/resume/experience/experiences'
 end
 
-get '/experiences/:id/edit/?' do
+get '/student/resume/experience/:id/view/?' do
+  @student = Student.get(session[:student])
   @experience = Experience.get(params[:id])
-  erb :edit_experience
+  erb :'/student/resume/experience/view'
 end
 
-post '/experiences/:id/edit/?' do
+get '/student/resume/experience/:id/edit/?' do
+  @student = Student.get(session[:student])
+  @experience = Experience.get(params[:id])
+  erb :'/student/resume/experience/edit'
+end
+
+post '/student/resume/experience/:id/edit/?' do
+  @student = Student.get(session[:student])
   experience = Experience.get(params[:id])
   experience.update(
-    :student_id     => params[:student_id],
+    :student_id     => session[:student],
     :company        => params[:company],
     :city           => params[:city],
     :state          => params[:state],
@@ -46,11 +57,12 @@ post '/experiences/:id/edit/?' do
     :start_change   => params[:start_change],
     :end_change     => params[:end_change]
   )
-  redirect '/experiences'
+  redirect '/student/resume/experience/experiences'
 end
 
-get '/experiences/:id/delete/?' do
+get '/student/resume/experience/:id/delete/?' do
+  @student = Student.get(session[:student])
   experience = Experience.get(params[:id])
   experience.destroy
-  redirect '/experiences'
+  redirect '/student/resume/experience/experiences'
 end

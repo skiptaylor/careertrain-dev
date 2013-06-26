@@ -1,0 +1,35 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span12">
+				<h1>Award &nbsp; <small><%= @student.name %></small></h1><br />
+				
+				<p>
+					<label for="skill">Skill</label>
+					<%= @skill.skill %>
+				</p>
+				<p>
+					<label for="applied_1">Applied 1</label>
+					<%= @skill.applied_1 %>
+				</p>
+				<p>
+					<label for="applied_2">Applied 2</label>
+					<%= @skill.applied_2 %>
+				</p>
+				<!-- <p>
+					<label for="applied_3">Applied 3</label>
+					<%= @skill.applied_3 %>
+				</p>
+				<p>
+					<label for="applied_4">Applied 4</label>
+					<%= @skill.applied_4 %>
+				</p> -->
+				
+				<br />
+					
+				<p><a class="btn btn-success btn-small" href="/student/resume/skills/<%= @skill.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/index">Resume Tool</a></p>
+			</div>
+
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->

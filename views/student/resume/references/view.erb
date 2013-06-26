@@ -1,11 +1,11 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span8">
-				<h1>Reference</h1>
-		
-					<p>id_user<br /><%= @reference.id_user %></p>
-					
+			<div class="span12">
+				<h1>Reference &nbsp; <small><%= @student.name %></small></h1><br />
+			</div>
+			<div class="span8 offset2">
+						
 					<p>name<br /><%= @reference.name %></p>
 						
 					<p>relationship<br /><%= @reference.relationship %></p>
@@ -22,13 +22,9 @@
 					
 					<p>email<br /><%= @reference.email %></p>
 					
-				<a href="<%= @reference.id %>/edit">Edit</a>
+				<a href="/student/resume/references/<%= @reference.id %>/edit" class="btn btn-small">Edit</a>
 			</div>
-			<div class="span3 offset1">
-				<br /><br /><br /><br />
 
-				<a href="/admin/admin" class="btn btn-success">Admin</a></p>
-			</div>
 		</div> <!-- /row -->
 	</div> <!-- /container -->
 </div> <!-- /container-white -->

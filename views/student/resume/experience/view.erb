@@ -1,0 +1,49 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span12">
+				<h1>Experience &nbsp; <small><%= @student.name %></small></h1><br />
+			</div>
+			<div class="span8 offset2">
+				
+				<p>
+					<label for="company">company</label>
+					<%= @experience.company %>
+				</p>
+				<p>
+					<label for="city">city</label>
+					<%= @experience.city %>
+				</p>
+				<p>
+					<label for="state">state</label>
+					<%= @experience.state %>
+				</p>
+				<p>
+					<label for="start">start</label>
+					<%= @experience.start %>
+				</p>
+				<p>
+					<label for="end">end</label>
+					<%= @experience.end %>
+				</p>
+				<p>
+					<label for="position">position</label>
+					<%= @experience.position %>
+				</p>
+				<p>
+					<label for="start_change">start_change</label>
+					<%= @experience.start_change %>
+				</p>
+				<p>
+					<label for="end_change">end_change</label>
+					<%= @experience.end_change %>
+				</p>
+				
+				<br />
+					
+				<p><a class="btn btn-success btn-small" href="/student/resume/experience/<%= @experience.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/index">Resume Tool</a></p>
+			</div>
+
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->

@@ -1,9 +1,10 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span4 offset3">
-				<h1>Skills</h1>
-		
+			<div class="span12">
+				<h1>Skills &nbsp; <small><%= @student.name %></small></h1><br />
+			</div>
+			<div class="span8 offset2">
 				<form method="post">
 					
 					<p>
@@ -18,22 +19,18 @@
 						<label for="applied_2">Applied 2</label>
 						<input type="text" name="applied_2" id="applied_2" class="textfield span4" value="<%= @skill.applied_2 %>" />
 					</p>
-					<p>
+					<!-- <p>
 						<label for="applied_3">Applied 3</label>
 						<input type="text" name="applied_3" id="applied_3" class="textfield span4" value="<%= @skill.applied_3 %>" />
 					</p>
 					<p>
 						<label for="applied_4">Applied 4</label>
 						<input type="text" name="applied_4" id="applied_4" class="textfield span4" value="<%= @skill.applied_4 %>" />
-					</p>
-					<p>
-						<label for="id_user">id_user</label>
-						<input type="text" name="id_user" id="id_user" class="textfield span4" value="<%= @skill.id_user %>" />
-					</p>
+					</p> -->
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/skills">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/skills/<%= @skill.id %>/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume//skills/skills">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/student/resume/skills/<%= @skill.id %>/delete">Delete</a>
 					
-					</form>	
+				</form>	
 			</div>
 			
 		</div> <!-- /row -->
