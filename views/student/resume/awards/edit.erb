@@ -1,21 +1,32 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span4 offset3">
+			<div class="span12">
 				<h1>Award &nbsp; <small><%= @student.name %></small></h1><br />
+			</div>
+			<div class="span8 offset2">	
+				
+				<p>Describe your Awards and Commendations. You can enter others after saving.</p>
 		
-				<form method="post">
+				<form class="form-horizontal" method="post">
 					
-					<p>
-						<label for="award">Award</label>
-						<input type="text" name="award" id="award" class="textfield span4" value="<%= @award.award %>" />
-					</p>
-					<p>
-						<label for="award_date">Date</label>
-						<input type="text" name="award_date" id="award_date" class="textfield span4" value="<%= @award.award_date %>" />
-					</p>
-					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/awards/awards">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/student/resume/awards/<%= @award.id %>/delete">Delete</a>
+					<div class="control-group">
+					   <label class="control-label" for="award">Award</label>
+						<div class="controls">
+							<input type="text" name="award" id="award" class="textfield span4" value="<%= @award.award %>" />
+						</div>
+					</div>
+					<div class="control-group">
+					   <label class="control-label" for="award_date">Date</label>
+						<div class="controls">
+							<input type="text" name="award_date" id="award_date" class="textfield span4" value="<%= @award.award_date %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/awards/awards">Cancel</a> &nbsp; <% if @student.awards.count > 0 %><a class="btn btn-small btn-warning" href="/student/resume/awards/<%= @award.id %>/delete">Delete</a><% end %>
+						</div>
+					</div>
 					
 					</form>	
 			</div>

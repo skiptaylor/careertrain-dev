@@ -2,7 +2,7 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span12">
-				<h1>Activities &nbsp; <small><%= @student.name %></small></h1><br />
+				<h1>Activities and Associations &nbsp; <small><%= @student.name %></small></h1><br />
 		
 			<div class="span8 offset2">
 			
@@ -18,10 +18,11 @@
 					<tr>
 						<td><%= activity.position %></td>
 						<td><%= activity.organization %></td>
-						<td style="text-align: right;"><span class="under-link"><a href="/student/resume/activities/<%= activity.id %>/edit">Edit</a></span> &nbsp; <span class="under-link"><a href="/student/resume/activities/<%= activity.id %>/view">View</a></span></td>
+						<td style="text-align: right;"><span class="under-link"><a href="/student/resume/activities/<%= activity.id %>/edit">Edit</a></span></td>
 					</tr>
 					<% end %>
 				</table>
+				<br />
 			</div>
 
 		</div> <!-- /row -->

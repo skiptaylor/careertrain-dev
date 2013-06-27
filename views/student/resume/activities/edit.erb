@@ -2,38 +2,54 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span12">
-				<h1>Activities &nbsp; <small><%= @student.name %></small></h1><br />
+				<h1>Activities and Associations &nbsp; <small><%= @student.name %></small></h1><br />
 		
 			<div class="span8 offset2">
-				<form method="post">
+				
+				<p>You can enter others after saving.</p>
+				<form class="form-horizontal" method="post">
 					
-					<p>
-						<label for="position">Position</label>
-						<input type="text" name="position" id="position" class="textfield span4" value="<%= @activity.position %>" />
-					</p>
-					<p>
-						<label for="organization">Organization</label>
-						<input type="text" name="organization" id="organization" class="textfield span4" value="<%= @activity.organization %>" />
-					</p>
-					<p>
-						<label for="date_start">Start Date</label>
-						<input type="text" name="date_start" id="date_start" class="textfield span4" value="<%= @activity.date_start %>" />
-					</p>
-					<p>
-						<label for="date_end">End Date</label>
-						<input type="text" name="date_end" id="date_end" class="textfield span4" value="<%= @activity.date_end %>" />
-					</p>
-					<p>
-						<label for="date_start_change">Change Start Date</label>
-						<input type="text" name="date_start_change" id="date_start_change" class="textfield span4" value="<%= @activity.date_start_change %>" />
-					</p>
-					<p>
-						<label for="date_end_change">Change End Date</label>
-						<input type="text" name="date_end_change" id="date_end_change" class="textfield span4" value="<%= @activity.date_end_change %>" />
-					</p>
-					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/activities/activities">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/student/resume/activities/<%= @activity.id %>/delete">Delete</a>
-					
+					<div class="control-group">
+					   <label class="control-label" for="position">Position</label>
+						<div class="controls">
+							<input type="text" name="position" id="position" class="textfield span4" value="<%= @activity.position %>" />
+						</div>
+					</div>
+					<div class="control-group">
+					   <label class="control-label" for="organization">Organization</label>
+						<div class="controls">
+							<input type="text" name="organization" id="organization" class="textfield span4" value="<%= @activity.organization %>" />
+						</div>
+					</div>
+					<div class="control-group">
+					   <label class="control-label" for="date_start">Start Date</label>
+						<div class="controls">
+							<input type="text" name="date_start" id="date_start" class="textfield span4" value="<%= @activity.date_start %>" />
+						</div>
+					</div>
+					<div class="control-group">
+					   <label class="control-label" for="date_end">End Date</label>
+						<div class="controls">
+							<input type="text" name="date_end" id="date_end" class="textfield span4" value="<%= @activity.date_end %>" />
+						</div>
+					</div>
+					<!-- <div class="control-group">
+					   <label class="control-label" for="date_start_change">Change Start Date</label>
+						<div class="controls">
+							<input type="text" name="date_start_change" id="date_start_change" class="textfield span4" value="<%= @activity.date_start_change %>" />
+						</div>
+					</div>
+					<div class="control-group">
+					   <label class="control-label" for="date_end_change">Change End Date</label>
+						<div class="controls">
+							<input type="text" name="date_end_change" id="date_end_change" class="textfield span4" value="<%= @activity.date_end_change %>" />
+						</div>
+					</div> -->
+					<div class="control-group">
+						<div class="controls">
+							<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/activities/activities">Cancel</a> &nbsp; <% if @student.activities.count > 0 %><a class="btn btn-small btn-warning" href="/student/resume/activities/<%= @activity.id %>/delete">Delete</a><% end %>
+						</div>
+					</div><br />
 				</form>	
 			</div>
 			

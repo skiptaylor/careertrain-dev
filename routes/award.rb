@@ -47,7 +47,7 @@ post '/student/resume/awards/:id/edit/?' do
     :award_date         => params[:award_date],
     :award_date_change  => params[:award_date_change]
   )
-  redirect "/student/resume/awards/#{award.id}/view"
+  redirect "/student/resume/awards/awards"
 end
 
 get '/student/resume/awards/:id/delete/?' do

@@ -24,9 +24,17 @@
 					
 				<input type="checkbox" value="experience" class="big-check"><h5 class="under-link short"><a href="/student/resume/experience/experiences"><strong>Work Experience</strong></a></h5>
 
-				<input type="checkbox" value="activities" class="big-check"><h5 class="under-link short"><a href="/student/resume/activities/activities"><strong>Activities</strong></a></h5>
+				<% if @student.activities.count == 0 %>
+				<input type="checkbox" value="activities" class="big-check"><h5 class="under-link short"><a href="/student/resume/activities/new"><strong>Activities</strong></a></h5>
+				<% else %>
+				<input type="checkbox" value="activities" class="big-check" checked><h5 class="under-link short"><a href="/student/resume/activities/activities"><strong>Activities</strong></a></h5>
+				<% end %>
 
-				<input type="checkbox" value="awards" class="big-check"><h5 class="under-link short"><a href="/student/resume/awards/awards"><strong>Awards</strong></a></h5>
+				<% if @student.awards.count == 0 %>
+				<input type="checkbox" value="awards" class="big-check"><h5 class="under-link short"><a href="/student/resume/awards/new"><strong>Awards</strong></a></h5>
+				<% else %>
+				<input type="checkbox" value="awards" class="big-check" checked><h5 class="under-link short"><a href="/student/resume/awards/awards"><strong>Awards</strong></a></h5>
+				<% end %>
 
 				<% if @student.references.count == 0 %>
 				<input type="checkbox" value="references" class="big-check"><h5 class="under-link short"><a href="/student/resume/references/new"><strong>References</strong></a></h5>
