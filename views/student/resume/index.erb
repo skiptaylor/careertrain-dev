@@ -6,7 +6,11 @@
 			</div>
 			<div class="span5 offset1">
 				
+				<% if @student.name == "" %>
 				<input type="checkbox" value="info" class="big-check"><h5 class="under-link short"><a href="/student/resume/edit"><strong>Personal Information</strong></a></h5>
+				<% else %>
+				<input type="checkbox" value="info" class="big-check" checked><h5 class="under-link short"><a href="/student/resume/edit"><strong>Personal Information</strong></a></h5>
+				<% end %>
 				 
 				<% if @student.letters.count == 0 %>
 				<input type="checkbox" value="letters" class="big-check"><h5 class="under-link short"><a href="/student/resume/letters/new"><strong>Cover Letters</strong></a></h5>
@@ -14,16 +18,30 @@
 				<input type="checkbox" value="letters" class="big-check" checked><h5 class="under-link short"><a href="/student/resume/letters/letters"><strong>Cover Letters</strong></a></h5>
 				<% end %>
 
+				<% if @student.objectives.count == 0 %>
+				<input type="checkbox" value="objectives" class="big-check"><h5 class="under-link short"><a href="/student/resume/objectives/new"><strong>Career Objectives</strong></a></h5>
+				<% else %>
+				<input type="checkbox" value="objectives" class="big-check" checked><h5 class="under-link short"><a href="/student/resume/objectives/objectives"><strong>Career Objectives</strong></a></h5>
+				<% end %>
+
+				<% if @student.skills.count == 0 %>
+				<input type="checkbox" value="skills" class="big-check"><h5 class="under-link short"><a href="/student/resume/skills/new"><strong>Career Skills</strong></a></h5>
+				<% else %>
+				<input type="checkbox" value="skills" class="big-check" checked><h5 class="under-link short"><a href="/student/resume/skills/skills"><strong>Career Skills</strong></a></h5>
+				<% end %>
 				
-				<input type="checkbox" value="objectives" class="big-check" checked><h5 class="under-link short"><a href="/student/resume/objectives/edit"><strong>Career Objectives</strong></a></h5>
-					
-
-				<input type="checkbox" value="skills" class="big-check"><h5 class="under-link short"><a href="/student/resume/skills/skills"><strong>Career Skills</strong></a></h5>
-
-				<input type="checkbox" value="education" class="big-check"><h5 class="under-link short"><a href="/student/resume/education/view"><strong>Education</strong></a></h5>
-					
-				<input type="checkbox" value="experience" class="big-check"><h5 class="under-link short"><a href="/student/resume/experience/experiences"><strong>Work Experience</strong></a></h5>
-
+				<% if @student.educations.count == 0 %>
+				<input type="checkbox" value="education" class="big-check"><h5 class="under-link short"><a href="/student/resume/educations/new"><strong>Education</strong></a></h5>
+				<% else %>
+				<input type="checkbox" value="education" class="big-check" checked><h5 class="under-link short"><a href="/student/resume/educations/educations"><strong>Education</strong></a></h5>
+				<% end %>
+				
+				<% if @student.experiences.count == 0 %>
+				<input type="checkbox" value="experience" class="big-check"><h5 class="under-link short"><a href="/student/resume/experience/new"><strong>Work Experience</strong></a></h5>
+				<% else %>
+				<input type="checkbox" value="experience" class="big-check" checked><h5 class="under-link short"><a href="/student/resume/experience/experiences"><strong>Work Experience</strong></a></h5>
+				<% end %>
+				
 				<% if @student.activities.count == 0 %>
 				<input type="checkbox" value="activities" class="big-check"><h5 class="under-link short"><a href="/student/resume/activities/new"><strong>Activities</strong></a></h5>
 				<% else %>

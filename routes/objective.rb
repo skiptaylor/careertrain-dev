@@ -1,8 +1,8 @@
-get '/student/resume/objectives/?' do
-  @student = Student.get(session[:student])
-	@objective = Objective.all
-	erb :'/student/resume/objectives/edit'
-end
+# get '/student/resume/objectives/?' do
+#   @student = Student.get(session[:student])
+#   @objective = Objective.all
+#   erb :'/objectives'
+# end
 
 get '/student/resume/objectives/new/?' do
   @student = Student.get(session[:student])
@@ -11,14 +11,19 @@ get '/student/resume/objectives/new/?' do
 end
 
 post '/student/resume/objectives/new/?' do
-  @student = Student.get(session[:student])
   objective = Objective.create(
     :student_id => session[:student],
     :goal       => params[:goal],
     :learn      => params[:learn],
     :long_goal  => params[:long_goal]
   )
-  redirect "/student/resume/objectives/#{objective.id}/edit"
+  redirect "/student/resume/objectives/objectives"
+end
+
+get '/student/resume/objectives/objectives/?' do
+  @student = Student.get(session[:student])
+  @objective = Objective.get(params[:id])
+  erb :'/student/resume/objectives/objectives'
 end
 
 get '/student/resume/objectives/:id/edit/?' do
@@ -36,12 +41,12 @@ post '/student/resume/objectives/:id/edit/?' do
     :learn      => params[:learn],
     :long_goal  => params[:long_goal]
   )
-  redirect "/student/resume/objectives/#{objective.id}/edit"
+  redirect "/student/resume/objectives/objectives"
 end
 
-get '/student/objectives/:id/delete/?' do
+get '/student/resume/objectives/:id/delete/?' do
   @student = Student.get(session[:student])
   objective = Objective.get(params[:id])
   objective.destroy
-  redirect '/student/resume/objectives/new'
+  redirect '/student/resume/objectives/objectives'
 end

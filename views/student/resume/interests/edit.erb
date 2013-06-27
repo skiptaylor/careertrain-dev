@@ -6,7 +6,7 @@
 			</div>
 			<div class="span8 offset2">
 				
-				<p>Describe your Interest and Hobbies. You can add others after saving.</p>
+				<p>Describe an interest or hobby. You can add others after saving.</p>
 		
 				<form method="post">
 					
@@ -15,7 +15,7 @@
 						<input type="text" name="interest" id="interest" class="textfield span4" value="<%= @interest.interest %>" />
 					</p>
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/interests/interests">Cancel</a> &nbsp; <a class="btn btn-small btn-warning" href="/student/resume/interests/<%= @interest.id %>/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/interests/interests">Cancel</a> &nbsp; <% if @student.interests.count > 0 %><a class="btn btn-small btn-warning" href="/student/resume/interests/<%= @interest.id %>/delete">Delete</a><% end %>
 					
 					</form>	
 			</div>

@@ -1,0 +1,34 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span12">
+				<h1>Education &nbsp; <small><%= @student.name %></small></h1><br />
+			</div>
+			<div class="span8 offset2">
+				
+				<table class="table">
+
+					<% @student.educations.each do |education| %>
+					<tr>
+						<td><a href="/student/resume/index" class="btn btn-small">Resume Tool</a></td>
+						<td style="text-align: right;"><span class="under-link"><a href="/student/resume/educations/<%= education.id %>/edit">Edit</a></span><br />
+					</tr>
+					<tr><td style="text-align: right;">I am attending: (name of school):</td> <th><%= education.attending %></th></tr>
+					<tr><td style="text-align: right;">I will graduate on:</td><th><%= education.graduate_on %></th></tr>
+					<tr><td style="text-align: right;">I plan to attend:(name of school):</td><th><%= education.plan_attend %></th></tr>
+					<tr><td style="text-align: right;">Degree or field of study:</td><th><%= education.study %></th></tr>
+					<tr><td style="text-align: right;">I have completed:(name of school)</td><th><%= education.completed %></th></tr>
+					<tr><td style="text-align: right;">completion date:</td><th><%= education.completed_on %></th></tr>
+					<tr><td style="text-align: right;">I have graduated:(name of school)</td><th><%= education.attending %></th></tr>
+					<tr><td style="text-align: right;">Date of graduation</td><th><%= education.attending %></th></tr>
+					<tr><td style="text-align: right;">Degree received (AA, AT, BFA, BA, BS, MBA)</td><th><%= education.degree %></th></tr>
+						
+						</td>
+					</tr>
+					<% end %>
+				</table>
+			</div>
+
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->

@@ -1,16 +1,16 @@
-get '/student/resume/education/?' do
+get '/student/resume/educations/?' do
   @student = Student.get(session[:student])
-	@education = Education.all
-	erb :'/student/resume/education/edit'
+  @education = Education.all
+  erb :'/student/resume/educations/educations'
 end
 
-get '/student/resume/education/new/?' do
+get '/student/resume/educations/new/?' do
   @student = Student.get(session[:student])
   @education = Education.new
-  erb :'/student/resume/education/edit'
+  erb :'/student/resume/educations/edit'
 end
 
-post '/student/resume/education/new/?' do
+post '/student/resume/educations/new/?' do
   education = Education.create(
     :student_id               => session[:student],
     :attending                => params[:attending],
@@ -25,22 +25,22 @@ post '/student/resume/education/new/?' do
     :graduation_date_change   => params[:graduation_date_change],
     :degree                   => params[:degree]
   )
-  redirect "/student/resume/education/#{education.id}/edit"
+  redirect "/student/resume/educations/educations"
 end
 
-get '/student/resume/education/view?' do
+get '/student/resume/educations/educations/?' do
   @student = Student.get(session[:student])
 	@education = Education.get(params[:id])
-	erb :'/student/resume/education/view'
+	erb :'/student/resume/educations/educations'
 end
 
-get '/student/resume/education/:id/edit/?' do
+get '/student/resume/educations/:id/edit/?' do
   @student = Student.get(session[:student])
   @education = Education.get(params[:id])
-  erb :'/student/resume/education/edit'
+  erb :'/student/resume/educations/edit'
 end
 
-post '/student/resume/education/:id/edit/?' do
+post '/student/resume/educations/:id/edit/?' do
   @student = Student.get(session[:student])
   education = Education.get(params[:id])
   education.update(
@@ -57,10 +57,10 @@ post '/student/resume/education/:id/edit/?' do
     :graduation_date_change   => params[:graduation_date_change],
     :degree                   => params[:degree]
   )
-  redirect "/student/resume/education/#{education.id}/view"
+  redirect "/student/resume/educations/educations"
 end
 
-get '/student/resume/education/:id/delete/?' do
+get '/student/resume/educations/:id/delete/?' do
   @student = Student.get(session[:student])
   education = Education.get(params[:id])
   education.destroy

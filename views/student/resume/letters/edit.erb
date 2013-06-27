@@ -73,7 +73,7 @@
 						</div>
 					</div>
 					
-					<p style="text-align: center;"> &nbsp; <input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/letters/letters">Cancel</a> &nbsp; <a class="btn btn-small btn-warning" href="/student/resume/letters/<%= @letter.id %>/delete">Delete</a>
+					<p style="text-align: center;"> &nbsp; <input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/letters/letters">Cancel</a> &nbsp; <% if @student.letters.count > 0 %><a class="btn btn-small btn-warning" href="/student/resume/letters/<%= @letter.id %>/delete">Delete</a><% end %>
 					
 					</form>	
 			</div>

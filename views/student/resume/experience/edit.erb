@@ -40,7 +40,7 @@
 						<input type="text" name="end_change" id="end_change" class="textfield span4" value="<%= @experience.end_change %>" />
 					</p>
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/experience/experiences">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/student/resume/experience/<%= @experience.id %>/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/experience/experiences">Cancel</a> &nbsp; <% if @student.experiences.count > 0 %><a class="btn btn-small btn-warning pull-right" href="/student/resume/experience/<%= @experience.id %>/delete">Delete</a><% end %>
 					
 					</form>	
 			</div>

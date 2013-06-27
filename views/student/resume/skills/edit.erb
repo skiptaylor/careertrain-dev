@@ -28,7 +28,7 @@
 						<input type="text" name="applied_4" id="applied_4" class="textfield span4" value="<%= @skill.applied_4 %>" />
 					</p> -->
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume//skills/skills">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/student/resume/skills/<%= @skill.id %>/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume//skills/skills">Cancel</a> &nbsp; <% if @student.skills.count > 0 %><a class="btn btn-small btn-warning pull-right" href="/student/resume/skills/<%= @skill.id %>/delete">Delete</a><% end %>
 					
 				</form>	
 			</div>

@@ -1,0 +1,75 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span12">
+				<h1>Education &nbsp; <small><%= @student.name %></small></h1><br />
+			<div class="span10 offset2">
+				
+				<form class="form-horizontal" method="post">
+					
+					<div class="control-group">
+					   <label class="control-label" for="attending">I am attending: (name of school):</label>
+						<div class="controls">
+							<input type="text" name="attending" id="attending" class="textfield span4" value="<%= @education.attending %>" />
+						</div>
+					</div>
+					<div class="control-group">
+					   <label class="control-label" for="graduate_on">I will graduate on:</label>
+						<div class="controls">
+							<input type="text" name="graduate_on" id="graduate_on" class="textfield span4" value="<%= @education.graduate_on %>" />
+						</div>
+					</div>
+					<div class="control-group">
+					   <label class="control-label" for="plan_attend">I plan to attend:(name of school):</label>
+						<div class="controls">
+							<input type="text" name="plan_attend" id="plan_attend" class="textfield span4" value="<%= @education.plan_attend %>" />
+						</div>
+					</div>
+					<div class="control-group">
+					   <label class="control-label" for="study">Degree or field of study:</label>
+						<div class="controls">
+							<input type="text" name="study" id="study" class="textfield span4" value="<%= @education.study %>" />
+						</div>
+					</div>
+					<div class="control-group">
+					   <label class="control-label" for="completed">I have completed:(name of school)</label>
+						<div class="controls">
+							<input type="text" name="completed" id="completed" class="textfield span4" value="<%= @education.completed %>" />
+						</div>
+					</div>
+					<div class="control-group">
+					   <label class="control-label" for="completed_on">Completion date:</label>
+						<div class="controls">
+							<input type="text" name="completed_on" id="completed_on" class="textfield span4" value="<%= @education.completed_on %>" />
+						</div>
+					</div>
+					<div class="control-group">
+					   <label class="control-label" for="graduated">I have graduated:(name of school)</label>
+						<div class="controls">
+							<input type="text" name="graduated" id="graduated" class="textfield span4" value="<%= @education.graduated %>" />
+						</div>
+					</div>
+					<div class="control-group">
+					   <label class="control-label" for="graduation_date">Date of graduation</label>
+						<div class="controls">
+							<input type="text" name="graduation_date" id="graduation_date" class="textfield span4" value="<%= @education.graduation_date %>" />
+						</div>
+					</div>
+					<div class="control-group">
+					   <label class="control-label" for="degree">Degree received (AA, AT, BFA, BA, BS, MBA)</label>
+						<div class="controls">
+							<input type="text" name="degree" id="degree" class="textfield span4" value="<%= @education.degree %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/index">Cancel</a>
+						</div>
+					</div>
+				</form>	
+			</div>
+			
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->
+

@@ -56,9 +56,11 @@
 							<input type="text" name="phone" id="phone" class="textfield span5" value="<%= @student.phone %>" />
 						</div>
 					</div>
-					
-					<p style="text-align: center;"><input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/index">Cancel</a> <!-- &nbsp; <a class="btn btn-small btn-warning" href="/students/<%= @student.id %>/delete">Delete</a> --></p>
-					
+					<div class="control-group">
+						<div class="controls">
+							<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/index">Cancel</a>
+						</div>
+					</div>
 				</form>
 				
 			</div>

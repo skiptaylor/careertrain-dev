@@ -1,25 +1,33 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span4 offset3">
-				<h1>Objectives &nbsp; <small></small></h1><br />
+			<div class="span12">
+				<h1>Career Objectives &nbsp; <small><%= @student.name %></small></h1><br />
+			</div>
+			<div class="span8 offset2">
+				
+				<p>Please complete the following sentence.</p>
+ 
+				<p>Capitalize words and punctuate as though your answers occur within the middle of a sentence. Be sure to proofread your documents.</p>
+ 
+				<p><strong>Example:</strong> My immediate goal is to work as <abbr title="Position">an administrative assistant</abbr>. This position will help me learn <abbr title="Learn">office procedures</abbr> as I pursue my long-term goal of <abbr title="Long-term goal">earning a college degree in business administration</abbr>.</p>
 		
 				<form method="post">
 					
-					<p>
-						<label for="goal">Goal</label>
-						<input type="text" name="goal" id="goal" class="textfield span4" value="<%= @objective.goal %>" />
+					<p style="line-height: 2.5em;">
+						<strong>My immediate goal is to work as</strong> (the title of the position you are seeking)<strong>:</strong>
+						<input type="text" name="goal" id="goal" class="textfield span7" value="<%= @objective.goal %>" />
 					</p>
-					<p>
-						<label for="learn">Learn</label>
-						<input type="text" name="learn" id="learn" class="textfield span4" value="<%= @objective.learn %>" />
+					<p style="line-height: 2.5em;">
+						<strong>This position will help me learn:</strong>
+						<input type="text" name="learn" id="learn" class="textfield span7" value="<%= @objective.learn %>" />
 					</p>
-					<p>
-						<label for="long_goal">Long Term Goal</label>
-						<input type="text" name="long_goal" id="long_goal" class="textfield span4" value="<%= @objective.long_goal %>" />
+					<p style="line-height: 2.5em;">
+						<strong>as I pursue my long-term goal of:</strong>
+						<input type="text" name="long_goal" id="long_goal" class="textfield span7" value="<%= @objective.long_goal %>" />
 					</p>
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/index">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/student/resume/objectives/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/objectives/objectives">Cancel</a> &nbsp; <% if @student.objectives.count > 0 %><a class="btn btn-small btn-warning" href="/student/resume/objectives/<%= @objective.id %>/delete">Delete</a><% end %>
 					
 					</form>	
 			</div>
