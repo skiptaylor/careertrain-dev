@@ -1,17 +1,21 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span4 offset3">
-				<h1>Interest &nbsp; <small><%= @student.name %></small></h1><br />
+			<div class="span12">
+				<h1>Interests and Hobbies &nbsp; <small><%= @student.name %></small></h1><br />
+			</div>
+			<div class="span8 offset2">
+				
+				<p>Describe your Interest and Hobbies. You can add others after saving.</p>
 		
 				<form method="post">
 					
 					<p>
-						<label for="interest">Interest</label>
+						<label for="interest">Interests and Hobbies</label>
 						<input type="text" name="interest" id="interest" class="textfield span4" value="<%= @interest.interest %>" />
 					</p>
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/interests/interests">Cancel</a> &nbsp; <a class="btn btn-small btn-warning pull-right" href="/student/resume/interests/<%= @interest.id %>/delete">Delete</a>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/interests/interests">Cancel</a> &nbsp; <a class="btn btn-small btn-warning" href="/student/resume/interests/<%= @interest.id %>/delete">Delete</a>
 					
 					</form>	
 			</div>

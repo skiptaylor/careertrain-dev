@@ -17,7 +17,7 @@ post '/student/resume/traits/new/?' do
     :trait_2           => params[:trait_2],
     :trait_3           => params[:trait_3],
   )
-  redirect "/student/resume/traits/#{trait.id}/view"
+  redirect "/student/resume/traits/traits"
 end
 
 get '/student/resume/traits/traits/?' do
@@ -47,12 +47,12 @@ post '/student/resume/traits/:id/edit/?' do
     :trait_2           => params[:trait_2],
     :trait_3           => params[:trait_3],
   )
-  redirect "/student/resume/traits/#{trait.id}/view"
+  redirect "/student/resume/traits/traits"
 end
 
 get '/student/resume/traits/:id/delete/?' do
   @student = Student.get(session[:student])
   trait = Trait.get(params[:id])
   trait.destroy
-  redirect '/student/resume/traits/traits'
+  redirect '/student/resume/index'
 end

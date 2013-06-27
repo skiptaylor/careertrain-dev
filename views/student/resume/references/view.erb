@@ -2,27 +2,25 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span12">
-				<h1>Reference &nbsp; <small><%= @student.name %></small></h1><br />
+				<h1>References &nbsp; <small><%= @student.name %></small></h1><br />
 			</div>
 			<div class="span8 offset2">
+									
+					<p><strong><%= @reference.name %></strong><br />
 						
-					<p>name<br /><%= @reference.name %></p>
-						
-					<p>relationship<br /><%= @reference.relationship %></p>
+					<small><%= @reference.relationship %></small></p>
 							
-					<p>address<br /><%= @reference.address %></p>
+					<p><%= @reference.address %><br />
 
-					<p>city<br /><%= @reference.city %></p>
+					<%= @reference.city %>  <%= @reference.state %>  <%= @reference.zip %></p>
 					
-					<p>state<br /><%= @reference.state %></p>
+					<p><%= @reference.phone %></p>
 					
-					<p>zip<br /><%= @reference.zip %></p>
+					<p><%= @reference.email %></p>
 					
-					<p>phone<br /><%= @reference.phone %></p>
+					<br />
 					
-					<p>email<br /><%= @reference.email %></p>
-					
-				<a href="/student/resume/references/<%= @reference.id %>/edit" class="btn btn-small">Edit</a>
+				<p><a href="/student/resume/references/<%= @reference.id %>/edit" class="btn btn-small btn-success">Edit</a> &nbsp; <a href="/student/resume/references/references" class="btn btn-small">Index</a></p>
 			</div>
 
 		</div> <!-- /row -->
