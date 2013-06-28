@@ -5,6 +5,10 @@
 				<h1>References &nbsp; <small><%= @student.name %></small></h1><br />
 			</div>
 			<div class="span8 offset2">
+				
+				<p><a href="/student/resume/index" class="btn btn-small">Resume Tool</a></p>
+				
+				<hr />
 									
 					<p><strong><%= @reference.name %></strong><br />
 						
@@ -18,7 +22,7 @@
 					
 					<p><%= @reference.email %></p>
 					
-					<br />
+					<hr />
 					
 				<p><a href="/student/resume/references/<%= @reference.id %>/edit" class="btn btn-small btn-success">Edit</a> &nbsp; <a href="/student/resume/references/references" class="btn btn-small">Index</a></p>
 			</div>

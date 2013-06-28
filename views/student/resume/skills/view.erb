@@ -2,32 +2,25 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span12">
-				<h1>Award &nbsp; <small><%= @student.name %></small></h1><br />
-				
+				<h1>Career Skills &nbsp; <small><%= @student.name %></small></h1><br />
+			</div>
+			<div class="span8 offset2">	
 				<p>
-					<label for="skill">Skill</label>
+					<label for="skill"><strong>Skill</strong></label>
 					<%= @skill.skill %>
 				</p>
 				<p>
-					<label for="applied_1">Applied 1</label>
+					<label for="applied_1"><strong>Applied 1</strong></label>
 					<%= @skill.applied_1 %>
 				</p>
 				<p>
-					<label for="applied_2">Applied 2</label>
+					<label for="applied_2"><strong>Applied 2</strong></label>
 					<%= @skill.applied_2 %>
 				</p>
-				<!-- <p>
-					<label for="applied_3">Applied 3</label>
-					<%= @skill.applied_3 %>
-				</p>
-				<p>
-					<label for="applied_4">Applied 4</label>
-					<%= @skill.applied_4 %>
-				</p> -->
 				
 				<br />
 					
-				<p><a class="btn btn-success btn-small" href="/student/resume/skills/<%= @skill.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/index">Resume Tool</a></p>
+				<p><a class="btn btn-success btn-small" href="/student/resume/skills/<%= @skill.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/skills/skills">Index</a> &nbsp; <a class="btn btn-small" href="/student/resume/index">Resume Tool</a></p>
 			</div>
 
 		</div> <!-- /row -->

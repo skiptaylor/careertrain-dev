@@ -2,46 +2,22 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span12">
-				<h1>Experience &nbsp; <small><%= @student.name %></small></h1><br />
+				<h1>Work Experience &nbsp; <small><%= @student.name %></small></h1><br />
 			</div>
 			<div class="span8 offset2">
+				<p><a class="btn btn-small" href="/student/resume/index">Resume Tool</a></p>
+				<hr />
 				
-				<p>
-					<label for="company">company</label>
-					<%= @experience.company %>
-				</p>
-				<p>
-					<label for="city">city</label>
-					<%= @experience.city %>
-				</p>
-				<p>
-					<label for="state">state</label>
-					<%= @experience.state %>
-				</p>
-				<p>
-					<label for="start">start</label>
-					<%= @experience.start %>
-				</p>
-				<p>
-					<label for="end">end</label>
-					<%= @experience.end %>
-				</p>
-				<p>
-					<label for="position">position</label>
-					<%= @experience.position %>
-				</p>
-				<p>
-					<label for="start_change">start_change</label>
-					<%= @experience.start_change %>
-				</p>
-				<p>
-					<label for="end_change">end_change</label>
-					<%= @experience.end_change %>
-				</p>
+				<p style="clear: left;"><label class="resume-view">Company</label> <%= @experience.company %></p>
+				<p style="clear: left;"><label class="resume-view">City</label><%= @experience.city %></p>
+				<p style="clear: left;"><label class="resume-view">State</label><%= @experience.state %></p>
+				<p style="clear: left;"><label class="resume-view">Position</label><%= @experience.position %></p>
+				<p style="clear: left;"><label class="resume-view">Start date</label><%= @experience.start %></p>
+				<p style="clear: left;"><label class="resume-view">End date</label><%= @experience.end %></p>
 				
-				<br />
+				<hr />
 					
-				<p><a class="btn btn-success btn-small" href="/student/resume/experience/<%= @experience.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/index">Resume Tool</a></p>
+				<p><a class="btn btn-success btn-small" href="/student/resume/experience/<%= @experience.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/experience/experiences">Index</a></p>
 			</div>
 
 		</div> <!-- /row -->

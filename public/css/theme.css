@@ -247,6 +247,7 @@ dl dd	{
 
 label	{
 	font-size: .85em;
+	font-weight: 600;
 }
 
 p.question	{
@@ -437,3 +438,21 @@ blockquote {
 	font-size: 1.4em;
 	float: left;
 }
+
+.help-inline	{
+	font-size: .85em;
+	color: gray;
+}
+
+.resume-view	{
+	float: left;
+	clear: both;
+	text-align: right;
+	width: 200px;
+	margin-right: 18px;
+	line-height: 3em;
+	margin-top: -7px;
+}
+
+
+

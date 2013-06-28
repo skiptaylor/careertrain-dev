@@ -2,47 +2,53 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span12">
-				<h1>Experience &nbsp; <small><%= @student.name %></small></h1><br />
+				<h1>Work Experience &nbsp; <small><%= @student.name %></small></h1><br />
 			</div>
 			<div class="span8 offset2">
-				<form method="post">
+				<form method="post" class="form-horizontal">
 
-					<p>
-						<label for="company">company</label>
-						<input type="text" name="company" id="company" class="textfield span4" value="<%= @experience.company %>" />
-					</p>
-					<p>
-						<label for="city">city</label>
-						<input type="text" name="city" id="city" class="textfield span4" value="<%= @experience.city %>" />
-					</p>
-					<p>
-						<label for="state">state</label>
-						<input type="text" name="state" id="state" class="textfield span4" value="<%= @experience.state %>" />
-					</p>
-					<p>
-						<label for="start">start</label>
-						<input type="text" name="start" id="start" class="textfield span4" value="<%= @experience.start %>" />
-					</p>
-					<p>
-						<label for="end">end</label>
-						<input type="text" name="end" id="end" class="textfield span4" value="<%= @experience.end %>" />
-					</p>
-					<p>
-						<label for="position">position</label>
-						<input type="text" name="position" id="position" class="textfield span4" value="<%= @experience.position %>" />
-					</p>
-					<p>
-						<label for="start_change">start_change</label>
-						<input type="text" name="start_change" id="start_change" class="textfield span4" value="<%= @experience.start_change %>" />
-					</p>
-					<p>
-						<label for="end_change">end_change</label>
-						<input type="text" name="end_change" id="end_change" class="textfield span4" value="<%= @experience.end_change %>" />
-					</p>
-					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/experience/experiences">Cancel</a> &nbsp; <% if @student.experiences.count > 0 %><a class="btn btn-small btn-warning pull-right" href="/student/resume/experience/<%= @experience.id %>/delete">Delete</a><% end %>
-					
-					</form>	
+					<div class="control-group">
+						<label class="control-label" for="company">Company</label>
+						<div class="controls">
+							<input type="text" name="company" id="company" class="textfield span4" value="<%= @experience.company %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="city">City</label>
+						<div class="controls">
+							<input type="text" name="city" id="city" class="textfield span4" value="<%= @experience.city %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="state">State</label>
+						<div class="controls">
+							<input type="text" name="state" id="state" class="textfield span4" value="<%= @experience.state %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="position">Position</label>
+						<div class="controls">
+							<input type="text" name="position" id="position" class="textfield span4" value="<%= @experience.position %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="start">Employment start</label>
+						<div class="controls">
+							<input type="text" name="start" id="start" class="textfield span4" value="<%= @experience.start %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="end">Employment end</label>
+						<div class="controls">
+							<input type="text" name="end" id="end" class="textfield span4" value="<%= @experience.end %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/experience/experiences">Cancel</a> &nbsp; <% if @student.experiences.count > 0 %><a class="btn btn-small btn-warning" href="/student/resume/experience/<%= @experience.id %>/delete">Delete</a><% end %>
+						</div>
+					</div>					
+				</form>	
 			</div>
 			
 		</div> <!-- /row -->

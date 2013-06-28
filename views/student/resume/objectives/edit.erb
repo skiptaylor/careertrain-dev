@@ -16,15 +16,15 @@
 					
 					<p style="line-height: 2.5em;">
 						<strong>My immediate goal is to work as</strong> (the title of the position you are seeking)<strong>:</strong>
-						<input type="text" name="goal" id="goal" class="textfield span7" value="<%= @objective.goal %>" />
+						<input type="text" name="goal" id="goal" class="textfield span8" value="<%= @objective.goal %>" />
 					</p>
 					<p style="line-height: 2.5em;">
 						<strong>This position will help me learn:</strong>
-						<input type="text" name="learn" id="learn" class="textfield span7" value="<%= @objective.learn %>" />
+						<input type="text" name="learn" id="learn" class="textfield span8" value="<%= @objective.learn %>" />
 					</p>
 					<p style="line-height: 2.5em;">
 						<strong>as I pursue my long-term goal of:</strong>
-						<input type="text" name="long_goal" id="long_goal" class="textfield span7" value="<%= @objective.long_goal %>" />
+						<input type="text" name="long_goal" id="long_goal" class="textfield span8" value="<%= @objective.long_goal %>" />
 					</p>
 					
 					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/objectives/objectives">Cancel</a> &nbsp; <% if @student.objectives.count > 0 %><a class="btn btn-small btn-warning" href="/student/resume/objectives/<%= @objective.id %>/delete">Delete</a><% end %>

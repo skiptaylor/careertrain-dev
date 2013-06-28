@@ -3,6 +3,8 @@
 		<div class="row">  
 			<div class="span12">
 				<h1>Cover Letter &nbsp; <small><%= @student.name %></small></h1><br />
+			</div>
+			<div class="span8 offset2">
 				
 				<p><strong><%= @letter.title %> <%= @letter.first %> <%= @letter.last %></strong><br /><%= @letter.position %></p>
 
@@ -12,9 +14,9 @@
 				
 				<%= @letter.city %> <%= @letter.state %> <%= @letter.zip %></p>
 				
-				<p><strong>Job Apply:</strong> <%= @letter.apply %></p>
-				
-				<p><strong>Opening Sentence:</strong> <%= @letter.opening %></p>
+				<br />
+								
+				<label>Opening Sentence:</label> <%= @letter.opening %></p>
 				
 				<br />
 					

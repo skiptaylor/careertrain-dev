@@ -5,9 +5,9 @@ class Objective
 	property   :deleted_at, ParanoidDateTime
 	property 	 :id, 				Serial
 
-  property :goal,  String
-  property :learn,  String
-  property :long_goal, String
+  property :goal,  Text
+  property :learn,  Text
+  property :long_goal, Text
   property :student_id, Integer
   
   belongs_to :student, required: false

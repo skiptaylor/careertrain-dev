@@ -10,13 +10,13 @@ class Letter
   property :last, String
   property :position, String
   property :student_id, Integer
-  property :company, String
+  property :company, Text
   property :address, String
   property :city, String
   property :state, String
   property :zip, String
-  property :apply, String
-  property :opening, String
+  property :apply, Text
+  property :opening, Text
   
   belongs_to :student, required: false
   

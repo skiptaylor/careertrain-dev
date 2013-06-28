@@ -8,9 +8,9 @@
 				<form class="form-horizontal" method="post">
 					
 					<div class="control-group">
-					   <label class="control-label" for="attending">I am attending: (name of school):</label>
+					   <label class="control-label" for="attending">I am attending:</label>
 						<div class="controls">
-							<input type="text" name="attending" id="attending" class="textfield span4" value="<%= @education.attending %>" />
+							<input type="text" name="attending" id="attending" class="textfield span4" value="<%= @education.attending %>" /><span class="help-inline">(name of school)</span>
 						</div>
 					</div>
 					<div class="control-group">
@@ -20,9 +20,9 @@
 						</div>
 					</div>
 					<div class="control-group">
-					   <label class="control-label" for="plan_attend">I plan to attend:(name of school):</label>
+					   <label class="control-label" for="plan_attend">I plan to attend:</label>
 						<div class="controls">
-							<input type="text" name="plan_attend" id="plan_attend" class="textfield span4" value="<%= @education.plan_attend %>" />
+							<input type="text" name="plan_attend" id="plan_attend" class="textfield span4" value="<%= @education.plan_attend %>" /><span class="help-inline">(name of school)</span>
 						</div>
 					</div>
 					<div class="control-group">
@@ -32,9 +32,9 @@
 						</div>
 					</div>
 					<div class="control-group">
-					   <label class="control-label" for="completed">I have completed:(name of school)</label>
+					   <label class="control-label" for="completed">I have completed:</label>
 						<div class="controls">
-							<input type="text" name="completed" id="completed" class="textfield span4" value="<%= @education.completed %>" />
+							<input type="text" name="completed" id="completed" class="textfield span4" value="<%= @education.completed %>" /><span class="help-inline">(AA, AT, BFA, BA, BS, MBA)</span>
 						</div>
 					</div>
 					<div class="control-group">
@@ -44,9 +44,9 @@
 						</div>
 					</div>
 					<div class="control-group">
-					   <label class="control-label" for="graduated">I have graduated:(name of school)</label>
+					   <label class="control-label" for="graduated">I have graduated:</label>
 						<div class="controls">
-							<input type="text" name="graduated" id="graduated" class="textfield span4" value="<%= @education.graduated %>" />
+							<input type="text" name="graduated" id="graduated" class="textfield span4" value="<%= @education.graduated %>" /><span class="help-inline">(name of school)</span>
 						</div>
 					</div>
 					<div class="control-group">
@@ -56,16 +56,17 @@
 						</div>
 					</div>
 					<div class="control-group">
-					   <label class="control-label" for="degree">Degree received (AA, AT, BFA, BA, BS, MBA)</label>
+					   <label class="control-label" for="degree">Degree received:</label>
 						<div class="controls">
-							<input type="text" name="degree" id="degree" class="textfield span4" value="<%= @education.degree %>" />
+							<input type="text" name="degree" id="degree" class="textfield span4" value="<%= @education.degree %>" /><span class="help-inline">(AA, AT, BFA, BA, BS, MBA)</span>
 						</div>
 					</div>
 					<div class="control-group">
 						<div class="controls">
-							<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/index">Cancel</a>
+							<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/educations/educations">Cancel</a>
 						</div>
 					</div>
+					<br />
 				</form>	
 			</div>
 			

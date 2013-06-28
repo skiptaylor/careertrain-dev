@@ -8,7 +8,7 @@
 				
 				<p>List 3 character traits you possess that an employer would value. The words that describe each trait should be adjectives.</p>
 
-				<p>Capitalize words and punctuate as though your answers occur within the middle of a sentence. The tool will automatically capitalize the first word of every sentence or bullet. Be sure to proofread your documents.</p>
+				<p>Capitalize words and punctuate as though your answers occur within the middle of a sentence. Be sure to proofread your documents.</p>
 
 				<p><strong>Example:</strong> Because I am known to be <abbr title="Trait 1">kind</abbr>, <abbr title="Trait 2">enthusiastic</abbr>, and <abbr title="Trait 3">hard-working</abbr>, I believe I would be an asset to your company.</p>
 		
@@ -27,7 +27,7 @@
 						<input type="text" name="trait_3" id="trait_3" class="textfield span4" value="<%= @trait.trait_3 %>" />
 					</p>
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/traits/traits">Cancel</a> &nbsp; <% if @student.traits.count > 0 %><a class="btn btn-small btn-warning" href="/student/resume/traits/<%= @trait.id %>/delete">Delete</a><% end %>
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/traits/traits">Cancel</a>
 					
 					</form>	
 			</div>

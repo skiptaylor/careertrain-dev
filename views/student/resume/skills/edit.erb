@@ -2,34 +2,47 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span12">
-				<h1>Skills &nbsp; <small><%= @student.name %></small></h1><br />
+				<h1>Career Skills &nbsp; <small><%= @student.name %></small></h1><br />
 			</div>
 			<div class="span8 offset2">
+				
+				<p>For each skill list 2 ways you have learned, improved, or used this skill.</p>
+				
+				<p class="small"><strong>Example Skill:</strong> document preparation<br />
+				<strong>Applied Example:</strong> Typed rosters and reports for my National Guard Unit<br />
+				<strong>Applied Example:</strong> Typed meeting minutes for Future Business Leaders of America</p>
+
+				<p><strong>Example Skill:</strong> proofreading<br />
+				<strong>Applied Example:</strong> Corrected errors prior to publication as Editor of the Yearbook Staff<br />
+				<strong>Applied Example:</strong> Proofread all reports as Unit Administrator for my National Guard Unit</p>
+
+				<p><strong>Example Skill:</strong> customer care<br />
+				<strong>Applied Example:</strong> Helped customers select and design baked goods as Peartree Bakery<br />
+				<strong>Applied Example:</strong> Took responsibility, as a camp counselor, for a group of pre-adolescent girls at White Mountain Summer Camp</p>
+
+				<p><strong>Example Skill:</strong> MS Office<br />
+				<strong>Applied Example:</strong> Successfully completed U.S. Army Personnel Administration School<br />
+				<strong>Applied Example:</strong> Successfully completed Business Education courses at Palm Beach Senior High School</p>
+
+				<p><strong>Example:</strong> My previous experience has helped me develop <abbr title="Skill 1">document preparation</abbr>, <abbr title="Skill 2">proofreading</abbr>, <abbr title="Skill 3">customer care</abbr>, and <abbr title="Skill 4">MS Office</abbr> skills.</p>
+				<br />
 				<form method="post">
 					
 					<p>
-						<label for="skill">Skill</label>
-						<input type="text" name="skill" id="skill" class="textfield span4" value="<%= @skill.skill %>" />
+						<label for="skill">Career Skill</label>
+						<input type="text" name="skill" id="skill" class="textfield span8" value="<%= @skill.skill %>" />
 					</p>
 					<p>
 						<label for="applied_1">Applied 1</label>
-						<input type="text" name="applied_1" id="applied_1" class="textfield span4" value="<%= @skill.applied_1 %>" />
+						<input type="text" name="applied_1" id="applied_1" class="textfield span8" value="<%= @skill.applied_1 %>" />
 					</p>
 					<p>
 						<label for="applied_2">Applied 2</label>
-						<input type="text" name="applied_2" id="applied_2" class="textfield span4" value="<%= @skill.applied_2 %>" />
+						<input type="text" name="applied_2" id="applied_2" class="textfield span8" value="<%= @skill.applied_2 %>" />
 					</p>
-					<!-- <p>
-						<label for="applied_3">Applied 3</label>
-						<input type="text" name="applied_3" id="applied_3" class="textfield span4" value="<%= @skill.applied_3 %>" />
-					</p>
-					<p>
-						<label for="applied_4">Applied 4</label>
-						<input type="text" name="applied_4" id="applied_4" class="textfield span4" value="<%= @skill.applied_4 %>" />
-					</p> -->
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume//skills/skills">Cancel</a> &nbsp; <% if @student.skills.count > 0 %><a class="btn btn-small btn-warning pull-right" href="/student/resume/skills/<%= @skill.id %>/delete">Delete</a><% end %>
-					
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume//skills/skills">Cancel</a> &nbsp; <% if @student.skills.count > 0 %><a class="btn btn-small btn-warning" href="/student/resume/skills/<%= @skill.id %>/delete">Delete</a><% end %>
+					<br />
 				</form>	
 			</div>
 			

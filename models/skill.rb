@@ -5,11 +5,11 @@ class Skill
 	property   :deleted_at, ParanoidDateTime
 	property 	 :id, 				Serial
 
-  property :skill,     String
-  property :applied_1, String
-  property :applied_2, String
-  property :applied_3, String
-  property :applied_4, String
+  property :skill,     Text
+  property :applied_1, Text
+  property :applied_2, Text
+  property :applied_3, Text
+  property :applied_4, Text
   property :student_id,   Integer
   
   belongs_to :student, required: false

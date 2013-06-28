@@ -79,12 +79,19 @@
 			<div class="span5 offset1">
 				<h6>Account Info</h6>
 				<p><%= @student.email %></p>
-				<p><strong><%= @student.name %></strong><br />
-				<%= @student.address %><br />
-				<%= @student.city %> <%= @student.state %> <%= @student.zip %><br />
-				<%= @student.phone %>
-			</p>
+				<p>
+					The School
+				</p>
+				<p>
+					<strong><%= @student.name %></strong><br />
+					<%= @student.address %><br />
+					<%= @student.city %> <%= @student.state %> <%= @student.zip %><br />
+					<%= @student.phone %>
+				</p>
+				
 				<a class="btn btn-small" href="/student/resume/sign-out">Sign out</a>
+				<br /><br />
+
 			</div>
 			</div>
 		</div> <!-- /row -->

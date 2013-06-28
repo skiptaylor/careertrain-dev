@@ -7,9 +7,10 @@
 			<div class="span7 offset2">
 				<form method="post" class="form-horizontal">
 					<div class="control-group">
-						<label class="control-label" for="title" class="">Title</label>
+						<label class="control-label" for="title" class="">Title:</label>
 						<div class="controls">
-							<input type="text" name="title" id="title" class="textfield span2" value="<%= @letter.title %>" />
+							<input type="text" name="title" id="title" class="textfield span1" value="<%= @letter.title %>" />
+							<span class="help-inline">(Mr., Mrs., Ms., Dr., Rev, etc.)</span>
 						</div>
 					</div>
 					<div class="control-group">
@@ -60,22 +61,19 @@
 							<input type="text" name="zip" id="zip" class="textfield span2" value="<%= @letter.zip %>" />
 						</div>
 					</div>
-					<div class="control-group">
-						<label class="control-label" for="apply">Job Apply</label>
-						<div class="controls">
-							<input type="text" name="apply" id="apply" class="textfield span4" value="<%= @letter.apply %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="opening">Opening Sentence</label>
-						<div class="controls">
-							<input type="text" name="opening" id="opening" class="textfield span7" value="<%= @letter.opening %>" />
-						</div>
-					</div>
 					
-					<p style="text-align: center;"> &nbsp; <input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/letters/letters">Cancel</a> &nbsp; <% if @student.letters.count > 0 %><a class="btn btn-small btn-warning" href="/student/resume/letters/<%= @letter.id %>/delete">Delete</a><% end %>
+					<p><strong>Opening Sentence:</strong> If you have a good referral for the job you are seeking, you can type in the space provided to add an optional opening sentence. </p>
+
+					<p><strong>Eaxmple:</strong> Dr. John Roe, a family friend, told me your company may soon be expanding your office staff. If this is a possibility, I would appreciate your consideration for a position.</p>
 					
-					</form>	
+					<label for="opening">Opening Sentence</label>
+					<textarea type="text" name="opening" id="opening" class="span7" rows="3" cols="50"><%= @letter.opening %></textarea>
+
+					<br /><br />
+					
+					<p> &nbsp; <input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/letters/letters">Cancel</a> &nbsp; <% if @student.letters.count > 0 %><a class="btn btn-small btn-warning" href="/student/resume/letters/<%= @letter.id %>/delete">Delete</a><% end %>
+					
+				</form>	
 			</div>
 			
 		</div> <!-- /row -->

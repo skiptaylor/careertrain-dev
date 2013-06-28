@@ -6,23 +6,36 @@
 			</div>
 			<div class="span8 offset2">
 				
+				<p><a href="/student/resume/index" class="btn btn-small">Resume Tool</a></p>
+				
 				<table class="table">
 
 					<% @student.educations.each do |education| %>
 					<tr>
-						<td><a href="/student/resume/index" class="btn btn-small">Resume Tool</a></td>
-						<td style="text-align: right;"><span class="under-link"><a href="/student/resume/educations/<%= education.id %>/edit">Edit</a></span><br />
-					</tr>
-					<tr><td style="text-align: right;">I am attending: (name of school):</td> <th><%= education.attending %></th></tr>
-					<tr><td style="text-align: right;">I will graduate on:</td><th><%= education.graduate_on %></th></tr>
-					<tr><td style="text-align: right;">I plan to attend:(name of school):</td><th><%= education.plan_attend %></th></tr>
-					<tr><td style="text-align: right;">Degree or field of study:</td><th><%= education.study %></th></tr>
-					<tr><td style="text-align: right;">I have completed:(name of school)</td><th><%= education.completed %></th></tr>
-					<tr><td style="text-align: right;">completion date:</td><th><%= education.completed_on %></th></tr>
-					<tr><td style="text-align: right;">I have graduated:(name of school)</td><th><%= education.attending %></th></tr>
-					<tr><td style="text-align: right;">Date of graduation</td><th><%= education.attending %></th></tr>
-					<tr><td style="text-align: right;">Degree received (AA, AT, BFA, BA, BS, MBA)</td><th><%= education.degree %></th></tr>
+						<td>
+							
+							
+							
+							
+								<p style="clear: left;"><label class="resume-view">I am attending:</label> <%= education.attending %></p>
+								<p style="clear: left;"><label class="resume-view">I will graduate on:</label> <%= education.graduate_on %></p>
+								<p style="clear: left;"><label class="resume-view">I plan to attend:</label> <%= education.plan_attend %></p>
+								<p style="clear: left;"><label class="resume-view">Degree or field of study:</label> <%= education.study %></p>
+								<p style="clear: left;"><label class="resume-view">I have completed:</label> <%= education.completed %></p>
+								<p style="clear: left;"><label class="resume-view">Completion date:</label> <%= education.completed_on %></p>
+								<p style="clear: left;"><label class="resume-view">I have graduated:</label> <%= education.graduated %></p>
+								<p style="clear: left;"><label class="resume-view">Date of graduation:</label> <%= education.attending %></p>
+								<p style="clear: left;"><label class="resume-view">Degree received:</label> <%= education.degree %></p>
 						
+						
+						
+						
+						</td>
+					</tr>
+					<tr>
+						<td>
+							
+							<a href="/student/resume/educations/<%= education.id %>/edit"  class="btn btn-small btn-success">Edit</a>
 						</td>
 					</tr>
 					<% end %>
