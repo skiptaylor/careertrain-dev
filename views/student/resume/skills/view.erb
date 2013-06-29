@@ -4,7 +4,11 @@
 			<div class="span12">
 				<h1>Career Skills &nbsp; <small><%= @student.name %></small></h1><br />
 			</div>
-			<div class="span8 offset2">	
+			<div class="span8 offset2">
+				
+				<a class="btn btn-small" href="/student/resume/index">Resume Tool</a>
+				<hr />
+					
 				<p>
 					<label for="skill"><strong>Skill</strong></label>
 					<%= @skill.skill %>
@@ -18,9 +22,9 @@
 					<%= @skill.applied_2 %>
 				</p>
 				
-				<br />
+				<hr />
 					
-				<p><a class="btn btn-success btn-small" href="/student/resume/skills/<%= @skill.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/skills/skills">Index</a> &nbsp; <a class="btn btn-small" href="/student/resume/index">Resume Tool</a></p>
+				<p><a class="btn btn-success btn-small" href="/student/resume/skills/<%= @skill.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/skills/skills">Index</a></p>
 			</div>
 
 		</div> <!-- /row -->

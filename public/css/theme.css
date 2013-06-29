@@ -315,7 +315,6 @@ p.answer	{
 
 .pic-border 	{
 	border: 1px solid gray;
-
  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
@@ -423,20 +422,15 @@ blockquote {
    -webkit-border-radius: 12px;
       -moz-border-radius: 12px;
            border-radius: 12px;
-		     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-		        -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-		             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .short	{
 	line-height: 1.9em;
-	margin: -7px 0 0 0;
-	padding: 0 0 9px 32px;
-}
-
-.big-check	{
-	font-size: 1.4em;
-	float: left;
+	margin: 0;
+	padding: 0 0 9px 0;
 }
 
 .help-inline	{
@@ -454,5 +448,11 @@ blockquote {
 	margin-top: -7px;
 }
 
+.trans1	{
+	opacity: 0.1;
+}
 
+.trans4	{
+	opacity: 0.4;
+}
 
