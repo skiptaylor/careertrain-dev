@@ -105,10 +105,10 @@
 		<h2>Education</h2>
 		<% @student.educations.each do |education| %>
 			<ul>
-				<li>Scheduled to graduate from <%= education.attending %> on <%= education.graduate_on %>.</li>
-				<li>I plan to attend <%= education.plan_attend %> to study <%= education.study %>.</li>
-				<li>I have completed <%= education.completed %> on <%= education.completed_on %></li>
-				<li>I have graduated from <%= education.graduated %> on <%= education.attending %> with a <%= education.degree %> degree.</li>
+				<% if education.attending != "" %><li>Scheduled to graduate from <%= education.attending %> on <%= education.graduate_on %>.</li><% end %>
+				<% if education.plan_attend != "" %><li>I plan to attend <%= education.plan_attend %> to study <%= education.study %>.</li><% end %>
+				<% if education.completed != "" %><li>I have completed <%= education.completed %> on <%= education.completed_on %></li><% end %>
+				<% if education.graduated != "" %><li>I have graduated from <%= education.graduated %> on <%= education.attending %> with a <%= education.degree %> degree.</li><% end %>
 			</ul>
 		<% end %>
 		
