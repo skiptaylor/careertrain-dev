@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  	<meta charset="utf-8" />
+	  	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+			<style type="text/css">
+			@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700);
+			
+			body	{
+				margin: 0;
+				padding: 0;
+				background-color: #e2e2e0;
+			}
+
+			#container {
+				margin-left: auto;
+				margin-bottom: 24px;
+				margin-right: auto;
+				margin-top: 24px;
+				font-family: 'Open Sans', helvetica, sans-serif;
+				display: block;
+				padding: 64px 64px 48px 72px;
+				width: 612px;
+				line-height: 16px;
+				font-size: 12px;
+				background-color: #ffffff;
+			   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			      -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			}
+			
+			h1 	{
+				font-weight: 600;
+				font-size: 20px;
+				margin: 0 0 3px 0;
+			}
+			
+			h2 	{
+				font-size: 16px;
+				margin: 9px 0 6px 0;
+			}
+			
+			h3 	{
+				font-weight: 600;
+				font-size: 14px;
+				margin: 9px 0 6px 15px;
+			}
+			
+			p {
+				margin: 0;
+				padding: 6px 0 6px 0;
+				text-align: left;
+			}
+		
+			.lead	{
+				margin-top: 16px;
+				font-weight: 600;
+				font-size: 1.2em;
+				line-height: 1.3em;
+			}
+		
+			.small	{
+				font-size: 0.8em;
+			}
+				
+			ul, ol	{
+				margin: 0 0 0 12px;
+			}
+			
+			ul li, ol li	{
+				margin: 0;
+				padding: 0 0 3px 0;
+			}
+
+
+			</style>
+
+		</head>
+
+<body>
+	<div id="container">
+		
+		
+			<h1><%= @student.name %></h1>
+			<p><%= @student.address %><br />
+			<%= @student.city %>, <%= @student.state %> <%= @student.zip %><br />
+			<%= @student.phone %><br />
+			<%= @student.email %>
+			</p>
+		
+		<h2>Objectives</h2>
+		<% @student.objectives.each do |objective| %>
+			<p>My immediate goal is to work as <%= objective.goal %>. This will help me learn <%= objective.learn %>, as I pursue my long-term goal of <%= objective.long_goal %>.
+		<% end %>
+		<h2>Career Skills and Accomplishments</h2>
+		<% @student.skills.each do |skill| %>
+			<h3><%= skill.skill %></h3>
+			<ul>
+				<li><%= skill.applied_1 %></li>
+				<li><%= skill.applied_2 %></li>
+			</ul>
+		<% end %>
+		
+		
+		<h2>Education</h2>
+		<% @student.educations.each do |education| %>
+			<ul>
+				<li>Scheduled to graduate from <%= education.attending %> on <%= education.graduate_on %>.</li>
+				<li>I plan to attend <%= education.plan_attend %> to study <%= education.study %>.</li>
+				<li>I have completed <%= education.completed %> on <%= education.completed_on %></li>
+				<li>I have graduated from <%= education.graduated %> on <%= education.attending %> with a <%= education.degree %> degree.</li>
+			</ul>
+		<% end %>
+		
+		<h2>Work Experience</h2>
+		<% @student.experiences.each do |experience| %>
+		<ul>
+			<li><%= experience.company %>, <%= experience.position %>, <%= experience.city %>, <%= experience.state %>, <%= experience.start %> - <%= experience.end %></li>
+		</ul>
+		<% end %>
+		
+		
+		<h2>Activities and Associations</h2>
+		<% @student.activities.each do |activity| %>
+		<ul>
+			<li><%= activity.position %>, <%= activity.organization %>, <%= activity.date_start %> - <%= activity.date_end %></li>
+		</ul>
+		<% end %>
+		
+		
+		<h2>Awards and Commendations</h2>
+		<% @student.awards.each do |award| %>
+		<ul>
+			<li><%= award.award %>, <%= award.award_date %></li>
+		</ul>
+		<% end %>
+		
+		
+		<h2>Interests and Hobbies</h2>
+			<% @student.interests.each do |interest| %>
+			<ul>
+				<li><%= interest.interest %></li>
+			</ul>
+			<% end %>
+		
+		<p class="lead"><em>References available upon request</em></p>
+		
+
+	</div>
+</body>
+</html>

@@ -232,7 +232,7 @@
 				
 				
 					<br />
-				<p><a href="#" class="btn btn-small btn-success">View Cover Letters</a> &nbsp; <a href="#" class="btn btn-small btn-success">View Resume</a> &nbsp; <a href="#" class="btn btn-small btn-success">View References</a></p>
+				<p><a href="#" class="btn btn-small btn-success">View Cover Letters</a> &nbsp; <a href="/student/resume/resume-view" class="btn btn-small btn-success">View Resume</a> &nbsp; <a href="#" class="btn btn-small btn-success">View References</a></p>
 				<p><small>Copy and paste the contents of your cover letter, resume, thank you letter, and references sheet into a Microsoft Word or similar document so you can edit and save it. You will need to double check for grammar and spelling.</small></p>
 			</div>
 			<div class="span5 offset1">
@@ -248,7 +248,13 @@
 					<%= @student.phone %>
 				</p>
 				
-				<a class="btn btn-small" href="/student/resume/sign-out">Sign out</a>
+				<div class="well">
+					<p><strong>Protect your privacy.</strong><br />
+					<small>If you are using a public or shared device <strong>sign out</strong> when finished.</small></p>
+					<a class="btn btn-small btn-primary" href="/student/resume/sign-out">Sign out</a>
+					<br /><br />
+				</div>
+				
 				<br /><br />
 
 			</div>

@@ -119,11 +119,11 @@ post '/student/resume/edit/?' do
   redirect "/student/resume/index"
 end
 
-# get '/student/:id/delete/?' do
-#   @student = Student.get(params[:id])
-#   student.destroy
-#   redirect '/student'
-# end
+get '/student/:id/delete/?' do
+  @student = Student.get(params[:id])
+  student.destroy
+  redirect '/student'
+end
 
 get '/student/resources/?'  do
   erb :'/student/resources'
