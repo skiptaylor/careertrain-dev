@@ -4,73 +4,232 @@
 			<div class="span12">
 				<h1 class="page-header">Online Resume Tool</h1>
 			</div>
-			<div class="span5 offset1">
+			<div class="span5">
 				
-				<% if @student.name == "" %>
-				<h5 class="under-link short"><i class="icon-thumbs-up-alt trans1"></i> &nbsp; <a href="/student/resume/edit"><strong>Personal Information</strong></a></h5>
-				<% else %>
-				<h5 class="under-link short"><i class="icon-thumbs-up muted"></i> &nbsp; <a href="/student/resume/edit"><strong>Personal Information</strong></a></h5>
-				<% end %>
-				 
-				<% if @student.letters.count == 0 %>
-				<h5 class="under-link short"><i class="icon-thumbs-up-alt trans1"></i> &nbsp; <a href="/student/resume/letters/new"><strong>Cover Letters</strong></a></h5>
-				<% else %>
-				<h5 class="under-link short"><i class="icon-thumbs-up muted"></i> &nbsp; <a href="/student/resume/letters/letters"><strong>Cover Letters</strong></a>&nbsp;<small><%= @student.letters.count %></small></h5>
-				<% end %>
+            <ul class="rs-menu">
+					<% if @student.name == "" %>
+                <li>
+                    <a href="/student/resume/edit">
+                        <span class="ra-icon"><i class="icon-plus"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Get started</span><h2 class="rs-main">Personal Information</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% else %>
+                <li class="g">
+                    <a href="/student/resume/edit">
+                        <span class="rs-icon"><i class="icon-ok"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Edit</span><h2 class="rs-main">Personal Information</h2><span class="right-info">Edit</span>
+                        </div>
+                    </a>
+                </li>
+					 <% end %>
+					 
+					 <% if @student.letters.count == 0 %>
+                <li>
+                    <a href="/student/resume/letters/new">
+                        <span class="ra-icon"><i class="icon-plus"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Get started</span><h2 class="rs-main">Cover Letters</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% else %>
+                <li>
+                    <a href="/student/resume/letters/letters">
+                        <span class="rs-icon"><i class="icon-ok"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Edit</span><h2 class="rs-main">Cover Letters</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% end %>
+					 
+					 <% if @student.objectives.count == 0 %>
+                <li>
+                    <a href="/student/resume/objectives/new">
+                        <span class="ra-icon"><i class="icon-plus"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Get started</span><h2 class="rs-main">Career Objectives</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% else %>
+                <li>
+                    <a href="/student/resume/objectives/objectives">
+                        <span class="rs-icon"><i class="icon-ok"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Edit</span><h2 class="rs-main">Career Objectives</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% end %>
+					 
+					 <% if @student.skills.count == 0 %>
+                <li>
+                    <a href="/student/resume/skills/new">
+                        <span class="ra-icon"><i class="icon-plus"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Get started</span><h2 class="rs-main">Career Skills</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% else %>
+                <li>
+                    <a href="/student/resume/skills/skills">
+                        <span class="rs-icon"><i class="icon-ok"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Edit</span><h2 class="rs-main">Career Skills</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% end %>
+					 
+					 <% if @student.educations.count == 0 %>
+                <li>
+                    <a href="/student/resume/educations/new">
+                        <span class="ra-icon"><i class="icon-plus"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Get started</span><h2 class="rs-main">Education</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% else %>
+                <li>
+                    <a href="/student/resume/educations/educations">
+                        <span class="rs-icon"><i class="icon-ok"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Edit</span><h2 class="rs-main">Education</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% end %>
+					 
+					 <% if @student.experiences.count == 0 %>
+                <li>
+                    <a href="/student/resume/experience/new">
+                        <span class="ra-icon"><i class="icon-plus"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Get started</span><h2 class="rs-main">Work Experience</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% else %>
+                <li>
+                    <a href="/student/resume/experience/experiences">
+                        <span class="rs-icon"><i class="icon-ok"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Edit</span><h2 class="rs-main">Work Experience</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% end %>
+					 
+					 <% if @student.activities.count == 0 %>
+                <li>
+                    <a href="/student/resume/activities/new">
+                        <span class="ra-icon"><i class="icon-plus"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Get started</span><h2 class="rs-main">Activities</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% else %>
+                <li>
+                    <a href="/student/resume/activities/activities">
+                        <span class="rs-icon"><i class="icon-ok"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Edit</span><h2 class="rs-main">Activities</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% end %>
+					 
+					 <% if @student.awards.count == 0 %>
+                <li>
+                    <a href="/student/resume/awards/new">
+                        <span class="ra-icon"><i class="icon-plus"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Get started</span><h2 class="rs-main">Awards</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% else %>
+                <li>
+                    <a href="/student/resume/awards/awards">
+                        <span class="rs-icon"><i class="icon-ok"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Edit</span><h2 class="rs-main">Awards</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% end %>
+					 
+					 <% if @student.references.count == 0 %>
+                <li>
+                    <a href="/student/resume/references/new">
+                        <span class="ra-icon"><i class="icon-plus"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Get started</span><h2 class="rs-main">References</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% else %>
+                <li>
+                    <a href="/student/resume/references/references">
+                        <span class="rs-icon"><i class="icon-ok"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Edit</span><h2 class="rs-main">References</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% end %>
+					 
+					 <% if @student.traits.count == 0 %>
+                <li>
+                    <a href="/student/resume/traits/new">
+                        <span class="ra-icon"><i class="icon-plus"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Get started</span><h2 class="rs-main">Character Traits</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% else %>
+                <li>
+                    <a href="/student/resume/traits/traits">
+                        <span class="rs-icon"><i class="icon-ok"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Edit</span><h2 class="rs-main">Character Traits</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% end %>
+					 
+					 <% if @student.interests.count == 0 %>
+                <li>
+                    <a href="/student/resume/interests/new">
+                        <span class="ra-icon"><i class="icon-plus"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Get started</span><h2 class="rs-main">Interests and Hobbies</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% else %>
+                <li>
+                    <a href="/student/resume/interests/interests">
+                        <span class="rs-icon"><i class="icon-ok"></i></span>
+                        <div class="rs-content">
+                            <span class="right-info">Edit</span><h2 class="rs-main">Interests and Hobbies</h2>
+                        </div>
+                    </a>
+                </li>
+					 <% end %>
 
-				<% if @student.objectives.count == 0 %>
-				<h5 class="under-link short"><i class="icon-thumbs-up-alt trans1"></i> &nbsp; <a href="/student/resume/objectives/new"><strong>Career Objectives</strong></a></h5>
-				<% else %>
-				<h5 class="under-link short"><i class="icon-thumbs-up muted"></i> &nbsp; <a href="/student/resume/objectives/objectives"><strong>Career Objectives</strong></a>&nbsp;<small><%= @student.objectives.count %></small></h5>
-				<% end %>
-
-				<% if @student.skills.count == 0 %>
-				<h5 class="under-link short"><i class="icon-thumbs-up-alt trans1"></i> &nbsp; <a href="/student/resume/skills/new"><strong>Career Skills</strong></a></h5>
-				<% else %>
-				<h5 class="under-link short"><i class="icon-thumbs-up muted"></i> &nbsp; <a href="/student/resume/skills/skills"><strong>Career Skills</strong></a>&nbsp;<small><%= @student.skills.count %></small></h5>
-				<% end %>
+				</ul>
 				
-				<% if @student.educations.count == 0 %>
-				<h5 class="under-link short"><i class="icon-thumbs-up-alt trans1"></i> &nbsp; <a href="/student/resume/educations/new"><strong>Education</strong></a></h5>
-				<% else %>
-				<h5 class="under-link short"><i class="icon-thumbs-up muted"></i> &nbsp; <a href="/student/resume/educations/educations"><strong>Education</strong></a></h5>
-				<% end %>
 				
-				<% if @student.experiences.count == 0 %>
-				<h5 class="under-link short"><i class="icon-thumbs-up-alt trans1"></i> &nbsp; <a href="/student/resume/experience/new"><strong>Work Experience</strong></a></h5>
-				<% else %>
-				<h5 class="under-link short"><i class="icon-thumbs-up muted"></i> &nbsp; <a href="/student/resume/experience/experiences"><strong>Work Experience</strong></a>&nbsp;<small><%= @student.experiences.count %></small></h5>
-				<% end %>
-				
-				<% if @student.activities.count == 0 %>
-				<h5 class="under-link short"><i class="icon-thumbs-up-alt trans1"></i> &nbsp; <a href="/student/resume/activities/new"><strong>Activities</strong></a></h5>
-				<% else %>
-				<h5 class="under-link short"><i class="icon-thumbs-up muted"></i> &nbsp; <a href="/student/resume/activities/activities"><strong>Activities</strong></a>&nbsp;<small><%= @student.activities.count %></small></h5>
-				<% end %>
-
-				<% if @student.awards.count == 0 %>
-				<h5 class="under-link short"><i class="icon-thumbs-up-alt trans1"></i> &nbsp; <a href="/student/resume/awards/new"><strong>Awards</strong></a></h5>
-				<% else %>
-				<h5 class="under-link short"><i class="icon-thumbs-up muted"></i> &nbsp; <a href="/student/resume/awards/awards"><strong>Awards</strong></a>&nbsp;<small><%= @student.awards.count %></small></h5>
-				<% end %>
-
-				<% if @student.references.count == 0 %>
-				<h5 class="under-link short"><i class="icon-thumbs-up-alt trans1"></i> &nbsp; <a href="/student/resume/references/new"><strong>References</strong></a></h5>
-				<% else %>
-				<h5 class="under-link short"><i class="icon-thumbs-up muted"></i> &nbsp; <a href="/student/resume/references/references"><strong>References</strong></a>&nbsp;<small><%= @student.references.count %></small></h5>
-				<% end %>
-
-				<% if @student.traits.count == 0 %>
-				<h5 class="under-link short"><i class="icon-thumbs-up-alt trans1"></i> &nbsp; <a href="/student/resume/traits/new"><strong>Character Traits</strong></a></h5>
-				<% else %>
-				<h5 class="under-link short"><i class="icon-thumbs-up muted"></i> &nbsp; <a href="/student/resume/traits/traits"><strong>Character Traits</strong></a></h5>
-				<% end %>
-
-				<% if @student.interests.count == 0 %>
-				<h5 class="under-link short"><i class="icon-thumbs-up-alt trans1"></i> &nbsp; <a href="/student/resume/interests/new"><strong>Interests and Hobbies</strong></a></h5>
-				<% else %>
-				<h5 class="under-link short"><i class="icon-thumbs-up muted"></i> &nbsp; <a href="/student/resume/interests/interests"><strong>Interests and Hobbies</strong></a>&nbsp;<small><%= @student.interests.count %></small></h5>
-				<% end %>
 				
 					<br />
 				<p><a href="#" class="btn btn-small btn-success">View Cover Letters</a> &nbsp; <a href="#" class="btn btn-small btn-success">View Resume</a> &nbsp; <a href="#" class="btn btn-small btn-success">View References</a></p>
