@@ -97,7 +97,7 @@
 			<h3><%= skill.skill %></h3>
 			<ul>
 				<li><%= skill.applied_1 %></li>
-				<li><%= skill.applied_2 %></li>
+				<% if skill.applied_2 != "" %><li><%= skill.applied_2 %></li><% end %>
 			</ul>
 		<% end %>
 		
