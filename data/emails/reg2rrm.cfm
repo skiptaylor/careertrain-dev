@@ -142,11 +142,11 @@ body, span, div, p, pre, table, tr, th, td, input{
 #Comments#</p>
 </cfoutput>
 
-<p>Students use their school's unique password to generate online academic/planning reports and to use our Resume Tool. </p>
+<p>Students use their school's unique password to generate online academic/planning reports and to use our Resum&eacute; Tool. </p>
 
 <p>Visit the following Web sites to learn more:<br />
 Student academic/career planning reports: <a href="http://www.careertrain.com/reports/sample/report1.htm">http://www.careertrain.com/reports/sample/report1.htm</a> <br />
-Resume Tool: <a href="http://www.careertrain.com/cdStudentResumeTemp.cfm">http://www.careertrain.com/cdStudentResumeTemp.cfm </a> </p>
+Resum&eacute; Tool: <a href="http://www.careertrain.com/cdStudentResum&eacute;Temp.cfm">http://www.careertrain.com/cdStudentResum&eacute;Temp.cfm </a> </p>
 
 <p>With <strong>Career Direction 2</strong>, you have valuable "face" time with students who are exploring their future options. <strong>Career Direction 2</strong> gives you insight into students' individual interests, plans and motivations - helping you to become an effective career advisor to students. </p>
 

@@ -87,7 +87,7 @@ body, span, div, p, pre, table, tr, th, td, input{
 <p>Students use the password to generate personalized academic/vocational reports and to access the resume tool. </p>
 
 <p>Sample report: <a href="http://www.careertrain.com/reports/sample/report1.htm">http://www.careertrain.com/reports/sample/report1.htm</a> <br>
-Resume tool: <a href="http://www.careertrain.com/cdStudentResumeTemp.cfm">http://www.careertrain.com/cdStudentResumeTemp.cfm </a> </p>
+Resum&eacute; tool: <a href="http://www.careertrain.com/cdStudentResum&eacute;Temp.cfm">http://www.careertrain.com/cdStudentResum&eacute;Temp.cfm </a> </p>
 
 <p>If after one week you have not yet been contacted to schedule a <strong>Career Direction 2</strong> workshop, or if you need more information, please call or email me. </p>
 

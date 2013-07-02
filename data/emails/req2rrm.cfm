@@ -124,7 +124,7 @@ body, span, div, p, pre, table, tr, th, td, input{
 </cfoutput>
 
 <p>The counselor/teacher may need more information about the program to get final approval for your presentation. </p>
-<p>The school must have a password for students to access our online "Careers and Occupations Guide Reports" and Resume tools. 
+<p>The school must have a password for students to access our online "Careers and Occupations Guide Reports" and Resum&eacute; tools. 
 The procedure:</p>
 <p>
 1.  Go to <a href="http://www.careertrain.com/arngLanding.cfm">http://www.careertrain.com/arngLanding.cfm</a>   <br />
