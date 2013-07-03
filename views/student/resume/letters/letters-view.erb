@@ -1,0 +1,29 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span12">
+				<h1>Cover Letters</h1><br />
+			</div>
+			<div class="span10 offset1">
+				<p><a href="/student/resume/index" class="btn btn-small">Resum&eacute; Tool</a></p>
+				
+				<table class="table table-condensed">
+					<tr>
+						<th>Name</th>
+						<th>Company</th>
+						<th style="text-align: right;">View</th>
+					</tr>
+					<% @student.letters.each do |letter| %>
+					<tr>
+						<td><%= letter.first %> <%= letter.last %></td>
+						<td><%= letter.company %></td>
+						<td style="text-align: right;"></span> &nbsp; &nbsp; <span class="under-link"><a href="/student/resume/letters/<%= letter.id %>/cover-letter" class="under-link">Cover Letter</a></span> &nbsp; <span class="under-link"><a href="/student/resume/letters/<%= letter.id %>/thank-you-letter" class="under-link">Thank You Note</a></span></td>
+					</tr>
+					<% end %>
+				</table>
+			</div>
+
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->
+

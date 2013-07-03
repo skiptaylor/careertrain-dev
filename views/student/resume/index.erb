@@ -228,14 +228,9 @@
 					 <% end %>
 
 				</ul>
-				
-				
-				
-					<br />
-				<p><a href="/student/resume/cover-letter" class="btn btn-small btn-success">View Cover Letters</a> &nbsp; <a href="/student/resume/resume-view" class="btn btn-small btn-success">View Resum&eacute;</a> &nbsp; <a href="/student/resume/references-view" class="btn btn-small btn-success">View References</a></p>
-				<p class="muted semi-bold"><small>Check grammar and spelling.</small></p>
+				<br />
 			</div>
-			<div class="span5 offset1">
+			<div class="span6 offset1">
 				<h6>Account Info</h6>
 				<p><%= @student.email %></p>
 
@@ -249,11 +244,14 @@
 				<div>
 					<p><span class="semi-bold">PROTECT YOUR PRIVACY.</span><br />
 					<small>If you are using a public or shared device <strong>sign out</strong> when finished.</small></p>
-					<a class="btn btn-small btn-primary" href="/student/resume/sign-out">Sign out</a>
+					<a class="btn btn-small btn-primary" href="/student/resume/sign-out"><i class="icon-signout"> </i> &nbsp;Sign out</a>
 				</div>
+				<br />
+				<hr />
 				
-				<br /><br />
-
+				<p><small>View these documents at any time to check your progress, grammar, and spelling.</small></p>
+				<p><a href="/student/resume/letters/letters-view" class="btn btn-small btn-success">Cover Letters</a> <a href="/student/resume/resume-view" class="btn btn-small btn-success">Resum&eacute;</a> <a href="/student/resume/references/references-view" class="btn btn-small btn-success">References</a></p>
+				<p><small>Once you are finished you can download a PDF of each document or copy and paste the content into a text editor.</small></p>
 			</div>
 			</div>
 		</div> <!-- /row -->

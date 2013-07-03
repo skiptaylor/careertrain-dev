@@ -1,0 +1,44 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span12">
+				<h1 class="page-header">Thank You Note</h1>
+			</div>
+			<div class="span10 offset1">
+				<p><a href="/student/resume/letters/letters-view" class="btn btn-small">Index</a> &nbsp; <a href="/student/resume/index" class="btn btn-small">Resum&eacute; Tool</a><a class="btn btn-small btn-success pull-right" href="#">Download PDF</a></p>
+				
+				<hr />
+					<p><small>You can also copy and paste contents into a Microsoft Word or similar document to edit and save.
+					<span class="semi-bold ">Check grammar and spelling.</span></small></p>
+					
+				<div class="resume-content">
+				<br />
+				<p><%= format_day(DateTime.now) %></p>
+				<br />
+				<p><%= @letter.title %> <%= @letter.first %> <%= @letter.last %><br />
+				<%= @letter.position %>, <%= @letter.company %><br />
+				<%= @letter.address %><br />
+				<%= @letter.city %>, <%= @letter.state %>  <%= @letter.zip %></p>
+	
+				<br />
+				<p>Dear <%= @letter.title %> <%= @letter.last %>:</p>
+
+		
+				<p>Thank you very much for the opportunity to interview for the help position at <%= @letter.company %>. I appreciate the time you spent with me.</p>
+		
+				<p>Now that we have discussed the job, I am more convinced than ever that working on your team would help me learn <% @student.objectives.each do |objective| %><%= objective.learn %> in preparation for my plans of <%= objective.long_goal %><% end %>.</p>
+		
+				<p>If there is any additional information you need from me in order to make your decision, please let me know.</p>
+		
+				<p>Again, thank you for the opportunity to meet you and learn about <%= @letter.company %>.</p>
+		
+
+				<p>Sincerely,</p>
+				
+				<br /><br /><br /><br /><br />
+		
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
