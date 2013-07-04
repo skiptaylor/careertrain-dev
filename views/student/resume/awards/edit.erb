@@ -2,7 +2,7 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span12">
-				<h1>Award &nbsp; <small><%= @student.name %></small></h1><br />
+				<h1 class="page-header">Award &nbsp; <small><%= @student.name %></small></h1><br />
 			</div>
 			<div class="span8 offset2">	
 				
@@ -19,7 +19,7 @@
 					<div class="control-group">
 					   <label class="control-label" for="award_date">Date</label>
 						<div class="controls">
-							<input type="text" name="award_date" id="award_date" class="textfield span4" value="<%= @award.award_date %>" />
+							<input type="text" name="award_date" id="datepicker" class="textfield span4" value="<%= @award.award_date %>" />
 						</div>
 					</div>
 					<div class="control-group">
@@ -28,9 +28,9 @@
 						</div>
 					</div>
 					
-					</form>	
+				</form>	
+				
 			</div>
-			
 		</div> <!-- /row -->
 	</div> <!-- /container -->
 </div> <!-- /container-white -->
