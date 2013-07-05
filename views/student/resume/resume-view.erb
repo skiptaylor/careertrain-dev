@@ -29,10 +29,10 @@
 							<% end %>
 							<h2>Career Skills and Accomplishments</h2>
 							<% @student.skills.each do |skill| %>
-								<h3><%= skill.skill %></h3>
+								<h3><%= skill.skill.capitalize %></h3>
 								<ul>
-									<li><%= skill.applied_1 %></li>
-									<% if skill.applied_2 != "" %><li><%= skill.applied_2 %></li><% end %>
+									<li><%= skill.applied_1.capitalize %></li>
+									<% if skill.applied_2 != "" %><li><%= skill.applied_2.capitalize %></li><% end %>
 								</ul>
 							<% end %>
 		
@@ -58,7 +58,7 @@
 							<h2>Activities and Associations</h2>
 							<% @student.activities.each do |activity| %>
 							<ul>
-								<li><%= activity.position %>, <%= activity.organization %>, <%= activity.date_start %> - <%= activity.date_end %></li>
+								<li><%= activity.position.capitalize %>, <%= activity.organization %>, <%= activity.date_start %> - <%= activity.date_end %></li>
 							</ul>
 							<% end %>
 		
@@ -66,7 +66,7 @@
 							<h2>Awards and Commendations</h2>
 							<% @student.awards.each do |award| %>
 							<ul>
-								<li><%= award.award %>, <%= award.award_date %></li>
+								<li><%= award.award.capitalize %>, <%= award.award_date %></li>
 							</ul>
 							<% end %>
 		
@@ -74,7 +74,7 @@
 							<h2>Interests and Hobbies</h2>
 								<% @student.interests.each do |interest| %>
 								<ul>
-									<li><%= interest.interest %></li>
+									<li><%= interest.interest.capitalize %></li>
 								</ul>
 								<% end %>
 		

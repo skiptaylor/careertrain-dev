@@ -29,10 +29,11 @@
 	
 				<p>My previous experience has helped me develop <% @student.skills.each do |skill| %><%= skill.skill %><% end %>. I have learned that "doing" is the best way of learning, so I would really appreciate the opportunity to continue improving my skills with your team.</p>
 	
-				<p>Because I am known to be <% @student.traits.each do |trait| %><%= trait.trait_1 %>, <%= trait.trait_2 %>, and <%= trait.trait_3 %><% end %>, I believe I would be an asset to Home Fixers. A resume of my qualifications is enclosed for your review. I look forward to arranging an interview to discuss the possibility of employment.</p>
+				<p>Because I am known to be <% @student.traits.each do |trait| %><%= trait.trait_1 %>, <%= trait.trait_2 %>, and <%= trait.trait_3 %><% end %>, I believe I would be an asset to <%= @letter.company %>. A resume of my qualifications is enclosed for your review. I look forward to arranging an interview to discuss the possibility of employment.</p>
 	
 
 				<p>Sincerely,</p>
+
 
 				<br /><br /><br /><br />
 

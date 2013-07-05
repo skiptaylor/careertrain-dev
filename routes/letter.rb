@@ -25,7 +25,7 @@ post '/student/resume/letters/new/?' do
     :apply        => params[:apply],
     :opening      => params[:opening]
   )
-  redirect '/student/resume/letters/letters'
+  redirect "/student/resume/letters/letters"
 end
 
 get '/student/resume/letters/letters/?' do
@@ -34,7 +34,7 @@ get '/student/resume/letters/letters/?' do
 	erb :'/student/resume/letters/letters'
 end
 
-get '/student/resume/letters/:id/view/?' do
+get "/student/resume/letters/:id/view/?" do
   @student = Student.get(session[:student])
   @letter = Letter.get(params[:id])
   erb :"/student/resume/letters/view"
