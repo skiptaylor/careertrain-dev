@@ -27,7 +27,7 @@
 	
 				<p><%= @letter.company %> enjoys a reputation as a great place to work and I would like to be a part of your team. My immediate goal is to work as <% @student.objectives.each do |objective| %><%= objective.goal %>. This position will help me to learn <%= objective.learn %> as I pursue my long-term goal of <%= objective.long_goal %><% end %>.</p>
 	
-				<p>My previous experience has helped me develop <% @student.skills.each do |skill| %><%= skill.skill %><% end %>. I have learned that "doing" is the best way of learning, so I would really appreciate the opportunity to continue improving my skills with your team.</p>
+				<p>My previous experience has helped me develop <% @student.skills.each do |skill| %><%= (skill.skill).from(0) %><% end %>. I have learned that "doing" is the best way of learning, so I would really appreciate the opportunity to continue improving my skills with your team.</p>
 	
 				<p>Because I am known to be <% @student.traits.each do |trait| %><%= trait.trait_1 %>, <%= trait.trait_2 %>, and <%= trait.trait_3 %><% end %>, I believe I would be an asset to <%= @letter.company %>. A resume of my qualifications is enclosed for your review. I look forward to arranging an interview to discuss the possibility of employment.</p>
 	
