@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'chronic', '~> 0.9.1'
 gem 'coffee-script', '>= 2.2.0'
 gem 'jsmin', '>= 1.0.1'
 gem 'kramdown', '>= 0.14.2'
