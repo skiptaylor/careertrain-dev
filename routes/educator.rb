@@ -28,10 +28,10 @@ namespace '/educator' do
       :email                  => params[:email],
       :number_seniors         => params[:number_seniors]
     )
-    params[:active] 					? achool.update(:active => true)    : school.update(:active => false)
-    params[:cd] 					    ? achool.update(:cd => true)        : school.update(:cd => false)
-    params[:ff] 					    ? achool.update(:ff => true)        : school.update(:ff => false)
-    params[:cd_before] 				? achool.update(:cd_before => true) : school.update(:cd_before => false)
+    params[:active] 					? school.update(:active => true)    : school.update(:active => false)
+    params[:cd] 					    ? school.update(:cd => true)        : school.update(:cd => false)
+    params[:ff] 					    ? school.update(:ff => true)        : school.update(:ff => false)
+    params[:cd_before] 				? school.update(:cd_before => true) : school.update(:cd_before => false)
   
     redirect "/educator/thanks"
   end
