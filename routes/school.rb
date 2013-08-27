@@ -4,14 +4,24 @@ get '/arng/schools/schools/?' do
 	erb :'/arng/schools/schools'
 end
 
+post '/admin/admin/?' do
+  if (params[:password].strip.downcase == 'coconutisland')
+    session[:admin] = true
+    redirect '/admin/admin_edit'
+  else
+    flash[:alert] = 'Bad Login. Try Again.'
+    redirect '/admin/admin'
+  end
+end
+
 get '/arng/schools/new/?' do
-  
+  auth_cdguard
   @school = School.new
   erb :'/arng/schools/edit_school'
 end
 
 post '/arng/schools/new/?' do
-  
+  auth_cdguard
   school = School.create(
     :school_id              => params[:school_id],
     :date_modified          => params[:date_modified],
@@ -51,13 +61,13 @@ get '/arng/schools/:id/?' do
 end
 
 get '/arng/schools/:id/edit/?' do
-  
+  auth_cdguard
   @school = School.get(params[:id])
   erb :"/arng/schools/edit_school"
 end
 
 post '/arng/schools/:id/edit/?' do
-  
+  auth_cdguard
   school = School.get(params[:id])
   school.update(
     :school_id              => params[:school_id],
@@ -104,10 +114,14 @@ get '/arng/schools/:id/delete/?' do
   redirect "/arng/schools/schools"
 end
 
-get '/arng/schools/schools/?' do
-  auth_cdguard
-	@school = School.all
-	erb :'/arng/schools/schools'
+post '/admin/admin/?' do
+  if (params[:password].strip.downcase == 'coconutisland')
+    session[:admin] = true
+    redirect '/admin/admin_edit'
+  else
+    flash[:alert] = 'Bad Login. Try Again.'
+    redirect '/admin/admin'
+  end
 end
 
 post '/arng/arng/?' do
@@ -181,6 +195,13 @@ helpers do
     unless session[:cdguard] == true
       flash[:alert] = 'You must login to see that page.'
       redirect '/arng/arng'
+    end
+  end
+  
+  def auth_admin
+    unless session[:admin] == true
+      flash[:alert] = 'You must be an admin to see that page.'
+      redirect '/index'
     end
   end
   

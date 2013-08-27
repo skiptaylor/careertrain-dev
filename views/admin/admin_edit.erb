@@ -2,24 +2,23 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span8">
-				<h1>RRC Display</h1>
-		
+				<h1>Admin</h1>
+
 				<table class="table table-striped table-hover">
 					<tr>
-						<th>State</th>
-						<td><%= @rrc.state %></td>
+						<th>Edit Schools</th>
+						<td><a href="/arng/schools/schools">View Schools</a></td>
 					</tr>
 					<tr>
-						<th>Email</th>
-						<td><%= @rrc.email %></td>
+						<th>RRC List</th>
+						<td><a href="/rrcs">View RRCs</a></td>
 					</tr>
 				</table>
-				<a href="<%= @rrc.id %>/edit">Edit</a>
 			</div>
 			<div class="span3 offset1">
 				<br /><br /><br /><br />
 
-				<a href="../admin/admin_edit" class="btn btn-success">Admin</a></p>
+				<a href="../index" class="btn btn-success"><i class="icon-signout"></i> &nbsp;Sign out</a></p>
 			</div>
 		</div> <!-- /row -->
 	</div> <!-- /container -->
