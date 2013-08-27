@@ -192,7 +192,7 @@ helpers do
   # end
 
   def auth_cdguard
-    unless session[:cdguard] == true
+    unless session[:cdguard] == true || session[:admin] == true
       flash[:alert] = 'You must login to see that page.'
       redirect '/arng/arng'
     end
