@@ -151,7 +151,7 @@ get '/arng/register/?' do
   unless params[:zip]
     @results = []
   else
-    @school = School.all(school_zip: params[:zip].strip.downcase)
+    @results = School.all(school_zip: params[:zip].strip.downcase)
   end
   erb :"/arng/register"
 end
