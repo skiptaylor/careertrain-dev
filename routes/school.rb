@@ -5,14 +5,14 @@ get '/arng/schools/schools/?' do
 end
 
 get '/arng/schools/new/?' do
-  auth_cdguard
+  
   @school = School.new
   erb :'/arng/schools/edit_school'
 end
 
 post '/arng/schools/new/?' do
-  auth_cdguard
-  @school = School.create(
+  
+  school = School.create(
     :school_id              => params[:school_id],
     :date_modified          => params[:date_modified],
     :first_name             => params[:first_name],
@@ -41,7 +41,7 @@ post '/arng/schools/new/?' do
   params[:ff] 					    ? school.update(:ff => true)        : school.update(:ff => false)
   params[:cd_before] 				? school.update(:cd_before => true) : school.update(:cd_before => false)
   
-  redirect "/arng/schools/#{school.id}/edit"
+  redirect "/arng/schools/#{school.id}/school"
 end
 
 get '/arng/schools/:id/?' do
@@ -51,14 +51,14 @@ get '/arng/schools/:id/?' do
 end
 
 get '/arng/schools/:id/edit/?' do
-  auth_cdguard
+  
   @school = School.get(params[:id])
   erb :"/arng/schools/edit_school"
 end
 
 post '/arng/schools/:id/edit/?' do
-  auth_cdguard
-  @school = School.get(params[:id])
+  
+  school = School.get(params[:id])
   school.update(
     :school_id              => params[:school_id],
     :date_modified          => params[:date_modified],
@@ -151,11 +151,10 @@ get '/arng/register/?' do
   unless params[:zip]
     @results = []
   else
-    @school = School.all(school_zip: params[:zip].strip.downcase)
+    @results = School.all(school_zip: params[:zip].strip.downcase)
   end
   erb :"/arng/register"
 end
-
 
 get '/arng/show_password/?' do
   auth_cdguard

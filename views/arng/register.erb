@@ -20,7 +20,7 @@
 			<div class="span12">
 				<h1 class="page-header">School Registration</h1>
 			</div>
-			<div class="span8">
+			<div class="span7">
 
 				<p class="lead">
 					Before presenting the <strong>Career Direction 2</strong> workshop, register your school 
@@ -68,7 +68,7 @@
 						<li>Future plans the student currently envisions</li>
 						<li>Education or training path the student currectly envisions</li>
 						<li>Employment plans (full- or part-time)</li>
-						<li>Financial needs for student' s desired education or training path</li>
+						<li>Financial needs for student's desired education or training path</li>
 						<li>Expressed interest in military</li>
 						<li>Typical personality and behavior pattern of the student</li>
 						<li>Appropriate MOS fields as related to the <strong>Career Direction 2</strong> exercise</li>
@@ -77,25 +77,28 @@
 				
 			</div>
 
-			<div class="span4">
+			<div class="span5">
 				<div class="sign-in">
 
-					<h3>Find a password or register a school</h3>
+					<h3>Find your school's password or register a school</h3>
 					<p>
-					<form method="get" class="form-search">
-					  <input type="text" name="zip" class="input-small search-query" placeholder="School Zip"/>  &nbsp;  
-					  <input type="submit" class="btn btn-success btn-small" />
-				  </p>
-					</form>
-
-					<% @results.each do |school| %>
+						<form method="get" class="form-search">
+						  <input type="text" name="zip" class="input-small search-query" placeholder="School Zip"/>  &nbsp;  
+						  <input type="submit" class="btn btn-success btn-small" />
+						</form>
+			  		</p>
+					<% if @results %>
   					<p>
-						<hr />
-  					  <strong><%= school.school_name %></strong> <small><%= "(Not Activated)" unless school.active %></small><br />
-					  <small><%= school.school_city %> <%= school.school_state %></small> &nbsp; &nbsp; &nbsp; <% unless school.active %><a href="/arng/schools/<%= school.id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><span class="pull-right"><small>Password</small> <span class="password-show"><%= school.school_password %></span></span><% end %>
-  					</p>
-					<% end %>
 					
+						<% @results.each do |c| %>
+							<hr />
+							<strong><%= c.school_name %></strong> <small><%= "(Not Activated)" unless c.active %></small><br />
+							<small><%= c.school_city %> <%= c.school_state %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= school.id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><span class="pull-right"><small>Password</small> <span class="password-show"><%= c.school_password %></span></span><% end %>
+						<% end %>
+  					</p>
+						
+					<% end %>
+
 					<hr />	
 					<p style="line-height: 1.3em;" class="semi-bold"><a href="/arng/schools/new" style="margin: 9px 0 12px 12px;" class="btn btn-mini btn-success pull-right">Register</a><small>After submitting your school's zip, if your school is not listed above, you can register it now.
 					<hr />

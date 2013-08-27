@@ -37,3 +37,13 @@ namespace '/educator' do
   end
   
 end
+
+get '/educator/resume/?' do
+  @school = School.all
+  unless params[:zip]
+    @results = []
+  else
+    @results = School.all(school_zip: params[:zip].strip.downcase)
+  end
+  erb :"/educator/resume"
+end
