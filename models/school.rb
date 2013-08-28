@@ -21,11 +21,11 @@ class School
   property :mail_address2,      String, default: ""
   property :mail_city,          String, default: ""
   property :mail_state,         String, default: ""
-  property :mail_zip,           Integer
+  property :mail_zip,           String, default: ""
   property :phone,              String, default: ""
   property :fax,                String, default: ""
   property :ng_rep,             String, default: ""
-  property :email,              String, default: ""
+  property :email,              Text,   default: ""
   property :number_seniors,     Integer, default: 0
   
   property :active,             Boolean, :default => false

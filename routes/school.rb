@@ -4,16 +4,6 @@ get '/arng/schools/schools/?' do
 	erb :'/arng/schools/schools'
 end
 
-post '/admin/admin/?' do
-  if (params[:password].strip.downcase == 'coconutisland')
-    session[:admin] = true
-    redirect '/admin/admin_edit'
-  else
-    flash[:alert] = 'Bad Login. Try Again.'
-    redirect '/admin/admin'
-  end
-end
-
 get '/arng/schools/new/?' do
   auth_cdguard
   @school = School.new
@@ -114,16 +104,6 @@ get '/arng/schools/:id/delete/?' do
   redirect "/arng/schools/schools"
 end
 
-post '/admin/admin/?' do
-  if (params[:password].strip.downcase == 'coconutisland')
-    session[:admin] = true
-    redirect '/admin/admin_edit'
-  else
-    flash[:alert] = 'Bad Login. Try Again.'
-    redirect '/admin/admin'
-  end
-end
-
 post '/arng/arng/?' do
   if (params[:password].strip.downcase == 'cdguard') || (params[:email].strip.downcase.include?('.mil'))
     session[:cdguard] = true
@@ -183,14 +163,6 @@ end
 
 helpers do
 
-  # Using auth_cdguard:
-  #
-  # get 'your/route/here/?' do
-  #   auth_cdguard
-  #   ...do stuff...
-  #   erb :'your/route/view'
-  # end
-
   def auth_cdguard
     unless session[:cdguard] == true || session[:admin] == true
       flash[:alert] = 'You must login to see that page.'
@@ -206,3 +178,11 @@ helpers do
   end
   
 end
+
+
+
+# unique_scool_code = line['SZipUnique']
+# unique_scool_code = ("%02d" % unique_scool_code.to_i).to_s if unique_scool_code.to_i < 10
+# c.update(school_password: "cd#{c.school_zip}#{unique_scool_code}") if c.school_zip
+
+

@@ -7,122 +7,181 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span12">
-				<h1 class="page-header">Careers and Occupations Guide <br />School Registration</h1>
+				<h1 class="page-header">Careers and Occupations Guide School Registration</h1>
 			</div>
 			<div class="span8">
 				
+				<h5>Register your school to get a password.</h5>
+				<p>&nbsp;</p>
+					
 				<form method="post" class="school">
-
-					<h5>Register your school to get a password.</h5>
-					<p class="hidden">What program are you currently using:</p>
 				
-				<p class="hidden" style="padding-left: 192px;">
+				<p class="hidden">
 				  <label class="checkbox">
 				    <input type="checkbox" name="cd" id="cd" checked <%= 'checked="checked"' if @school.cd  %> />
-				    <strong>Career Direction (High School)</strong>
-				  </label>
-				  <label class="checkbox">
-				    <input type="checkbox" name="ff" id="ff" <%= 'checked="checked"' if @school.ff  %> />
-				    <strong>FutureFocus (Middle School)</strong>
 				  </label>
 				</p>
-
-				<p>
-					<label class="horz" for="first_name">First name</label>
-					<input type="text" class="textfield input-small dec" name="first_name" id="first_name" value="<%= @school.first_name %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="middle_initial">Initial</label>
-					<input type="text" class="textfield input-small dec" name="middle_initial" id="middle_initial" value="<%= @school.middle_initial %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="last_name">Last name</label>
-					<input type="text" class="textfield input-small dec" name="last_name" id="last_name" value="<%= @school.last_name %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="school_name">School name</label>
-					<input type="text" class="textfield input-small dec" name="school_name" id="school_name" value="<%= @school.school_name %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="school_address1">School Address</label>
-					<input type="text" class="textfield input-small dec" name="school_address1" id="school_address1" value="<%= @school.school_address1 %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="school_address2"> </label>
-					<input type="text" class="textfield input-small dec" name="school_address2" id="school_address2" value="<%= @school.school_address2 %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="school_city">City</label>
-					<input type="text" class="textfield input-small dec" name="school_city" id="school_city" value="<%= @school.school_city %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="school_state">State</label>
-					<input type="text" class="textfield input-small dec" name="school_state" id="school_state" value="<%= @school.school_state %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="school_zip">Zip</label>
-					<input type="text" class="textfield input-small dec" name="school_zip" id="school_zip" value="<%= @school.school_zip %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="mail_address1">Mailing address</label>
-					<input type="text" class="textfield input-small dec" name="mail_address1" id="mail_address1" value="<%= @school.mail_address1 %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="mail_address2"> </label>
-					<input type="text" class="textfield input-small dec" name="mail_address2" id="mail_address2" value="<%= @school.mail_address2 %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="mail_city">City</label>
-					<input type="text" class="textfield input-small dec" name="mail_city" id="mail_city" value="<%= @school.mail_city %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="mail_state">State</label>
-					<input type="text" class="textfield input-small dec" name="mail_state" id="mail_state" value="<%= @school.mail_state %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="mail_zip">Zip</label>
-					<input type="text" class="textfield input-small dec" name="mail_zip" id="mail_zip" value="<%= @school.mail_zip %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="mail_zip">Phone</label>
-					<input type="text" class="textfield input-small dec" name="mail_zip" id="mail_zip" value="<%= @school.phone %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="mail_zip">Fax</label>
-					<input type="text" class="textfield input-small dec" name="mail_zip" id="mail_zip" value="<%= @school.fax %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="email">Counselor/teacher email</label>
-					<input type="text" class="textfield input-small dec" name="email" id="email" value="<%= @school.email %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="number_seniors">Number of students</label>
-					<input type="text" class="textfield input-small dec" name="number_seniors" id="number_seniors" value="<%= @school.number_seniors %>" /> 
-				</p>
-			  <label class="checkbox">
-			    <input type="checkbox" name="cd_before" id="cd_before" <%= 'checked="checked"' if @school.cd_before  %> />
-			    <strong>Used Career Direction Before?</strong>
-			  </label>
-				<p>
-					<label class="horz" for="ng_rep">National Guard Representative</label>
-					<input type="text" class="textfield input-small dec" name="ng_rep" id="ng_rep" value="<%= @school.ng_rep %>" /> 
-				</p>
 				
-				<p class="hiden">
- 				  <label class="checkbox">
- 				    <input type="checkbox" name="active" id="active" checked <%= 'checked="checked"' if @school.active  %> />
- 				    <strong>Active</strong>
- 				  </label>
-			  </p>
+				<div class="control-group">
+					<label class="control-label" for="first_name">First name</label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="first_name" id="first_name" value="<%= @school.first_name %>" /> 
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="middle_initial">Initial</label>
+					<div class="controls">
+						<input type="text" class="textfield input-small" name="middle_initial" id="middle_initial" value="<%= @school.middle_initial %>" /> 
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="last_name">Last name</label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="last_name" id="last_name" value="<%= @school.last_name %>" /> 
+					</div>
+				</div>
 				
-				<input class="btn btn-small btn-primary" type="submit" value="Activate" />
-		</form>
+				<div class="control-group">
+					<label class="control-label" for="school_name">School name</label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="school_name" id="school_name" value="<%= @school.school_name %>" /> 
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="school_address1">School Address</label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="school_address1" id="school_address1" value="<%= @school.school_address1 %>" /> 
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="school_address2"> </label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="school_address2" id="school_address2" value="<%= @school.school_address2 %>" /> 
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="school_city">City</label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="school_city" id="school_city" value="<%= @school.school_city %>" /> 
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="school_state">State</label>
+					<div class="controls">
+						<input type="text" class="textfield input-small" name="school_state" id="school_state" value="<%= @school.school_state %>" /> 
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="school_zip">Zip</label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="school_zip" id="school_zip" value="<%= @school.school_zip %>" /> 
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="mail_address1">Mailing address</label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="mail_address1" id="mail_address1" value="<%= @school.mail_address1 %>" /> 
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="mail_address2"> </label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="mail_address2" id="mail_address2" value="<%= @school.mail_address2 %>" /> 
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="mail_city">City</label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="mail_city" id="mail_city" value="<%= @school.mail_city %>" /> 
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="mail_state">State</label>
+					<div class="controls">
+						<input type="text" class="textfield input-small" name="mail_state" id="mail_state" value="<%= @school.mail_state %>" /> 
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="mail_zip">Zip</label>
+					<div class="controls">
+						<input type="text" class="textfield input-small" name="mail_zip" id="mail_zip" value="<%= @school.mail_zip %>" /> 
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="phone">Phone</label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="phone" id="phone" value="<%= @school.phone %>" /> 
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="fax">Fax</label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="fax" id="fax" value="<%= @school.fax %>" /> 
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="email">Counselor/teacher email</label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="email" id="email" value="<%= @school.email %>" /> 
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="number_seniors">Number of students</label>
+					<div class="controls">
+						<input type="text" class="textfield input-small" name="number_seniors" id="number_seniors" value="<%= @school.number_seniors %>" /> 
+					</div>
+				</div>
+				<div class="control-group">
+				    <div class="controls">
+				      <label class="checkbox">
+			    		  <input type="checkbox" name="cd_before" id="cd_before" <%= 'checked="checked"' if @school.cd_before  %> />
+			    		 Used Career Direction Before?
+			  	  		</label>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="ng_rep">National Guard Rep</label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="ng_rep" id="ng_rep" value="<%= @school.ng_rep %>" /> 
+					</div>
+				</div>
+				<div class="control-group">
+				    <div class="controls">
+				      <label class="checkbox">
+ 				    	  <input type="checkbox" name="active" id="active" checked <%= 'checked="checked"' if @school.active  %> />
+						  Active
+ 				  		</label>
+					</div>
+				</div>
+				<div class="control-group hidden">
+					<label class="control-label" for="school_password">School Password</label>
+					<div class="controls">
+						<input type="text" class="textfield input-large" name="school_password" id="school_password" value="<%= @school.school_password %>" /> 
+					</div>
+				</div>
+				<div class="control-group">
+				    <div class="controls">
+						 <input class="btn btn-small btn-success" type="submit" value="Save" />
+					 </div>
+				 </div>
+			 	</form>
 				
 			</div>
 
-			<div class="span4">
-				 <p>Password: <%= @school.school_password %></p>
-			</div>
 		</div>
 		
 		</div>

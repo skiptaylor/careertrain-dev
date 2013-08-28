@@ -7,13 +7,27 @@ get '/index/?' do
 end
 
 get '/admin/?'  do
-  erb :resume_admin
+  erb :"/admin/admin"
+end
+
+get '/admin/admin_edit/?'  do
+  auth_admin
+  erb :"/admin/admin_edit"
+end
+
+post '/admin/admin/?' do
+  if (params[:password].strip.downcase == 'coconutisland')
+    session[:admin] = true
+    redirect '/admin/admin_edit'
+  else
+    flash[:alert] = 'Bad Login. Try Again.'
+    redirect '/admin/admin'
+  end
 end
 
 get '/student/report/scores' do
   erb :'/student/report/scores', layout: false
 end
-
 
 get '/student/resume/resume-view' do
   @student = Student.get(session[:student])

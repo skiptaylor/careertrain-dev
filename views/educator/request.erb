@@ -24,12 +24,7 @@
 					<h5>Give us a little information and someone will contact you.</h5>
 				<form method="post" class="school">
 					<br />
-				<p class="hidden">
-				  <label class="checkbox">
-				    <input type="checkbox" name="cd" id="cd" checked <%= 'checked="checked"' if @school.cd  %> />
-				    <strong>Career Direction (High School)</strong>
-				  </label>
-				</p>
+
 				
 				<p>
 					<label class="horz" for="school_name">School name</label>
@@ -78,12 +73,7 @@
 			  </label>
 		  </p>
 				
-				<p class="hidden">
- 				  <label class="checkbox">
- 				    <input type="checkbox" name="active" id="active" <%= 'checked' if @school.active  %> />
- 				    <strong>Active</strong>
- 				  </label>
-			  </p>
+
 			  <p style="padding-left: 192px;">
 				<input class="btn btn-small btn-primary" type="submit" value="Submit" />
 			</p>

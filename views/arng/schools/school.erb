@@ -1,48 +1,38 @@
-	
-	<div class="container">
-		  
-
-      </div>
-
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
 			<div class="span12">
-				<h1 class="page-header">Careers and Occupations Guide <br />School Registration</h1>
+				<h1 class="page-header">Careers and Occupations Guide School Password</h1>
 			</div>
-				<div class=" span8 sign-in" style="padding: 42px 12px; margin-bottom: 60px;">
-					
-					<div class="span3">
-						<strong><%= @school.school_name %></strong><br />
-						<%= @school.school_city %>, <%= @school.school_state %>
-					</div>
-				
-					<div class="span2 offset1">
-						<small>Password</small> &nbsp; <span class="password-show"><%= @school.school_password %></span>
-					</div>
-					
-					<div class="span7">
-						<br />
-						<hr />
+			<div class=" span8 offset2 sign-in" style="padding: 24px 12px; margin-bottom: 60px;">
+				<div class="span8">
+					<h5><%= @school.school_name %></h5>
+					<p><%= @school.school_city %>, <%= @school.school_state %> &nbsp;<%= @school.school_zip %></p>
+					<div class="well well-small span3" style="text-align: center; margin: 9px 0 18px 0; padding-top: 6px;">
 						<p>
-							You should give the password to your students during your <strong>Career Direction 2</strong> 
-							presentation.
+							<small>School Password</small>
 						</p>
-				
-						<p>After the class, be sure to return CD2 exercise scanforms to CTC:</p>
-				
-						<p>	<address class="padleft"><strong>Career Training Concepts, Inc.</strong><br />
-								ATTN: Scantron Forms<br />
-								3640 Hewatt Court<br />
-								Snellville, GA 30039</address>
-						</p>
+						<h6 style="color: #b5011c;"><%= @school.school_password %></h6>
 					</div>
 				</div>
-			
+				<div class="span7">
+					<hr />
+					<p>
+						You should give this password to your students during your <strong>Career Direction 2</strong> presentation.
+					</p>
+					<p>
+						After the class, be sure to return <strong>CD2</strong> exercise scanforms to CTC:
+					</p>
+					<p>	
+						<address class="padleft"><strong>Career Training Concepts, Inc.</strong><br />
+							ATTN: Scantron Forms<br />
+							3640 Hewatt Court<br />
+							Snellville, GA 30039
+						</address>
+					</p>
+				</div>
 			</div>
+		</div>
+	</div>
+</div>
 
-		</div>
-		
-		</div>
-	</div> <!-- /container -->
-</div> <!-- /container-white -->
