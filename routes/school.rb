@@ -177,6 +177,14 @@ helpers do
     end
   end
   
+  def generate_password
+    if school.active = true
+      school.school_password = "cd#school.school_zip"
+    else
+      school.school_password = ""
+    end
+  end
+  
 end
 
 
