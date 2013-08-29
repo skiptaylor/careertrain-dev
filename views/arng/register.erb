@@ -80,7 +80,7 @@
 			<div class="span5">
 				<div class="sign-in">
 
-					<h3>Find your school's password or register a school</h3>
+					<h3>Find Your School&rsquo;s Password or Register a School</h3>
 					<p>
 						<form method="get" class="form-search">
 						  <input type="text" name="zip" class="input-small search-query" placeholder="School Zip"/>  &nbsp;  
@@ -93,7 +93,8 @@
 						<% @results.each do |c| %>
 							<hr />
 							<strong><%= c.school_name %></strong> <small><%= "(Not Activated)" unless c.active %></small><br />
-							<small><%= c.school_city %> <%= c.school_state %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= school.id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><span class="pull-right"><small>Password</small> <span class="password-show"><%= c.school_password %></span></span><% end %>
+							<small><%= c.school_city %> <%= c.school_state %> &nbsp;<%= c.school_zip %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= school.id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><br />
+							<small>School Password</small> &nbsp;&nbsp;<span class="password-show"><%= c.school_password %></span><% end %>
 						<% end %>
   					</p>
 						
