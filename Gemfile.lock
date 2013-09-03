@@ -6,6 +6,8 @@ GEM
     bcrypt-ruby (3.1.1)
     chassis-datamapper (1.0.1)
       sinatra-chassis (>= 1.1.0)
+    chassis-pony (1.0.0)
+      sinatra-chassis (>= 1.1.0)
     chronic (0.9.1)
     coffee-script (2.2.0)
       coffee-script-source
@@ -72,8 +74,15 @@ GEM
     json (1.8.0)
     json_pure (1.8.0)
     kramdown (1.1.0)
+    mail (2.5.4)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    mime-types (1.25)
     multi_json (1.7.7)
     paint (0.8.6)
+    polyglot (0.3.3)
+    pony (1.5)
+      mail (> 2.0)
     rack (1.5.2)
     rack-flash3 (1.0.3)
       rack
@@ -103,13 +112,17 @@ GEM
       tilt (~> 1.3)
     stringex (1.5.1)
     tilt (1.4.1)
+    treetop (1.4.15)
+      polyglot
+      polyglot (>= 0.3.1)
     uuidtools (2.1.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  chassis-datamapper
+  chassis-datamapper (~> 1.0.1)
+  chassis-pony (~> 1.0.0)
   chronic (~> 0.9.1)
   coffee-script (>= 2.2.0)
   data_mapper (~> 1.2.0)
@@ -117,6 +130,7 @@ DEPENDENCIES
   dm-sqlite-adapter (~> 1.2.0)
   jsmin (>= 1.0.1)
   kramdown (>= 0.14.2)
+  pony (~> 1.4)
   sass (>= 3.2.9)
   sinatra (>= 1.4.3)
   sinatra-chassis (>= 1.1.1)
