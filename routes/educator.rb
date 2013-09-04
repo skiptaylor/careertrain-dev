@@ -1,15 +1,15 @@
-namespace '/educator' do
+
   
   ['/student/resume/sign-in/?'].each do |path|
     before(path) { authenticate :educator }
   end
   
-  get '/request/?' do
+  get '/educator/request/?' do
     @school = School.new
     erb :"/educator/request"
   end
 
-  post '/request/?' do
+  post '/educator/request/?' do
     school = School.create(
       :school_id              => params[:school_id],
       :date_modified          => params[:date_modified],
@@ -28,12 +28,10 @@ namespace '/educator' do
       :email                  => params[:email],
       :number_seniors         => params[:number_seniors]
     )
-
-  
     redirect "/educator/thanks"
   end
   
-end
+
 
 get '/educator/resume/?' do
   @school = School.all

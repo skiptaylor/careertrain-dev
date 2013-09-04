@@ -1,15 +1,13 @@
-	
-	<div class="container">
-		  
-		<ul class="breadcrumb">
-			<li><a href="index">Career Direction 2</a> <span class="divider"> </span> </li>
-			<li><a href="steps">Steps to Success</a> <span class="divider"> </span> </li>
-			<li><a href="resume">Resum&eacute; Tool</a> <span class="divider"> </span> </li>
-			<li><a href="request" style="color: #9a0000;">Request CD2</a> <span class="divider"> </span> </li>
-			<li><a href="feedback">Educator Feedback</a> <span class="divider"> </span> </li>
-			<li><a href="resources">Helpful Links</a> <span class="divider"> </span> </li>
-		 </ul>
-      </div>
+<div class="container">
+	<ul class="breadcrumb">
+		<li><a href="index">Career Direction 2</a> <span class="divider"> </span> </li>
+		<li><a href="steps">Steps to Success</a> <span class="divider"> </span> </li>
+		<li><a href="resume">Resum&eacute; Tool</a> <span class="divider"> </span> </li>
+		<li><a href="request" style="color: #9a0000;">Request CD2</a> <span class="divider"> </span> </li>
+		<li><a href="feedback">Educator Feedback</a> <span class="divider"> </span> </li>
+		<li><a href="resources">Helpful Links</a> <span class="divider"> </span> </li>
+	</ul>
+</div>
 
 <div class="container-white">
 	<div class="container">	
@@ -22,72 +20,62 @@
 				
 				<div class="sign-in" style="padding: 24px; margin: 42px 0;">
 					<h5>Give us a little information and someone will contact you.</h5>
-				<form method="post" class="school">
+					<form method="post" class="school">
 					<br />
-
+					<p>
+						<label class="horz" for="school_name">School name</label>
+						<input type="text" class="textfield span4 dec" placeholder="School name" name="school_name" id="school_name" value="<%= @school.school_name %>" /> 
+					</p>
+					<p>
+						<label class="horz" for="school_address1">School Address</label>
+						<input type="text" class="textfield span4 dec" placeholder="Street Address" name="school_address1" id="school_address1" value="<%= @school.school_address1 %>" /> 
+						<br />
+						<label class="horz" for="school_address2"> </label>
+						<input type="text" class="textfield span4 dec" placeholder="Street Address" name="school_address2" id="school_address2" value="<%= @school.school_address2 %>" /> 
+					</p>
+					<p class="form-inline">
+						<label class="horz" for="school_city"> </label>
+						<input type="text" class="textfield span3 dec" placeholder="City" name="school_city" id="school_city" value="<%= @school.school_city %>" /> 
+						<input type="text" class="textfield span1 dec" placeholder="State" name="school_state" id="school_state" value="<%= @school.school_state %>" /> 
+						<input type="text" class="textfield span1 dec" placeholder="Zip" name="school_zip" id="school_zip" value="<%= @school.school_zip %>" /> 
+					</p>
+					<p class="form-inline">
+						<label class="horz" for="first_name">Contact</label>
+						<input type="text" class="textfield span2 dec" placeholder="First" name="first_name" id="first_name" value="<%= @school.first_name %>" /> 
+						<input type="text" class="textfield span1 dec" placeholder="MI" name="middle_initial" id="middle_initial" value="<%= @school.middle_initial %>" /> 
+						<input type="text" class="textfield span2 dec" placeholder="Last" name="last_name" id="last_name" value="<%= @school.last_name %>" /> 
+					</p>
+					<p>
+						<label class="horz" for="email">Email</label>
+						<input type="text" class="textfield span4 dec" placeholder="Email" name="email" id="email" value="<%= @school.email %>" /> 
+					</p>
+					<p>
+						<label class="horz" for="mail_zip">Phone</label>
+						<input type="text" class="textfield span4 dec" placeholder="Phone" name="mail_zip" id="mail_zip" value="<%= @school.mail_zip %>" /> 
+					</p>
+					<p>
+						<label class="horz" for="mail_zip">Fax</label>
+						<input type="text" class="textfield span4 dec" placeholder="Fax" name="mail_zip" id="mail_zip" value="<%= @school.mail_zip %>" /> 
+					</p>
 				
-				<p>
-					<label class="horz" for="school_name">School name</label>
-					<input type="text" class="textfield span4 dec" placeholder="School name" name="school_name" id="school_name" value="<%= @school.school_name %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="school_address1">School Address</label>
-					<input type="text" class="textfield span4 dec" placeholder="Street Address" name="school_address1" id="school_address1" value="<%= @school.school_address1 %>" /> 
-					<br />
-					<label class="horz" for="school_address2"> </label>
-					<input type="text" class="textfield span4 dec" placeholder="Street Address" name="school_address2" id="school_address2" value="<%= @school.school_address2 %>" /> 
-				</p>
-				<p class="form-inline">
-					<label class="horz" for="school_city"> </label>
-					<input type="text" class="textfield span3 dec" placeholder="City" name="school_city" id="school_city" value="<%= @school.school_city %>" /> 
-					<input type="text" class="textfield span1 dec" placeholder="State" name="school_state" id="school_state" value="<%= @school.school_state %>" /> 
-					<input type="text" class="textfield span1 dec" placeholder="Zip" name="school_zip" id="school_zip" value="<%= @school.school_zip %>" /> 
-				</p>
-				<p class="form-inline">
-					<label class="horz" for="first_name">Contact</label>
-					<input type="text" class="textfield span2 dec" placeholder="First" name="first_name" id="first_name" value="<%= @school.first_name %>" /> 
-					<input type="text" class="textfield span1 dec" placeholder="MI" name="middle_initial" id="middle_initial" value="<%= @school.middle_initial %>" /> 
-					<input type="text" class="textfield span2 dec" placeholder="Last" name="last_name" id="last_name" value="<%= @school.last_name %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="email">Email</label>
-					<input type="text" class="textfield span4 dec" placeholder="Email" name="email" id="email" value="<%= @school.email %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="mail_zip">Phone</label>
-					<input type="text" class="textfield span4 dec" placeholder="Phone" name="mail_zip" id="mail_zip" value="<%= @school.mail_zip %>" /> 
-				</p>
-				<p>
-					<label class="horz" for="mail_zip">Fax</label>
-					<input type="text" class="textfield span4 dec" placeholder="Fax" name="mail_zip" id="mail_zip" value="<%= @school.mail_zip %>" /> 
-				</p>
-				
-				<p>
-					<label class="horz" for="number_seniors">Number of students</label>
-					<input type="text" class="textfield input-small dec" name="number_seniors" id="number_seniors" value="<%= @school.number_seniors %>" /> 
-				</p>
-				<p style="padding-left: 192px;">
-			  <label class="checkbox">
-			    <input type="checkbox" name="cd_before" id="cd_before" <%= 'checked="checked"' if @school.cd_before  %> />
-			    <strong>Used Career Direction Before</strong>
-			  </label>
-		  </p>
-				
-
-			  <p style="padding-left: 192px;">
-				<input class="btn btn-small btn-primary" type="submit" value="Submit" />
-			</p>
-		</form>
-				
+					<p>
+						<label class="horz" for="number_seniors">Number of students</label>
+						<input type="text" class="textfield input-small dec" name="number_seniors" id="number_seniors" value="<%= @school.number_seniors %>" /> 
+					</p>
+					<p style="padding-left: 192px;">
+						<label class="checkbox">
+							<input type="checkbox" name="cd_before" id="cd_before" <%= 'checked="checked"' if @school.cd_before  %> />
+							<strong>Used Career Direction Before</strong>
+						</label>
+					</p>
+					<p style="padding-left: 192px;">
+						<input class="btn btn-small btn-primary" type="submit" value="Submit" />
+					</p>
+				</form>
 			</div>
 		</div>
-
 		<div class="span4">
 			<p><img src="../img/instructor.jpg" class="pic-border" /></p>
-		</div>
-			
-		</div>
-		
 		</div>
 	</div> <!-- /container -->
 </div> <!-- /container-white -->

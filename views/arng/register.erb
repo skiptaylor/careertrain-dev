@@ -93,7 +93,7 @@
 						<% @results.each do |c| %>
 							<hr />
 							<strong><%= c.school_name %></strong> <small><%= "(Not Activated)" unless c.active %></small><br />
-							<small><%= c.school_city %> <%= c.school_state %> &nbsp;<%= c.school_zip %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= school.id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><br />
+							<small><%= c.school_city %> <%= c.school_state %> &nbsp;<%= c.school_zip %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= c.id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><br />
 							<small>School Password</small> &nbsp;&nbsp;<span class="password-show"><%= c.school_password %></span><% end %>
 						<% end %>
   					</p>
