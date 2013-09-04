@@ -17,3 +17,5 @@ gem 'dm-sqlite-adapter', '~> 1.2.0', group: :development
 gem 'dm-postgres-adapter', '~> 1.2.0', group: :production
 
 gem 'pony', '~> 1.4'
+
+gem 'rake', '~> 10.1.0'
