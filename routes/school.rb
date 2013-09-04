@@ -186,21 +186,16 @@ helpers do
   # end
 
   # passwords = School.all(school_zip: school.school_zip).map { |s| zips << s.school_password }
-  # passwords = passwords.sort{ |a, b| a <=> b }
-  # if passwords.count == 0
-  #   code = '01'
-  # else
-  #   code = zips.last.sub("cd32207", '').to_i + 1
-  # end
-  # ("%02d" % code.to_i).to_s if code.to_i < 10
-  # school.school_password = "cd#{school.school_zip}#{code}"
+ #  passwords = passwords.sort{ |a, b| a <=> b }
+ #  if passwords.count == 0
+ #    code = '01'
+ #  else
+ #    code = zips.last.sub("cd32207", '').to_i + 1
+ #  end
+ #  ("%02d" % code.to_i).to_s if code.to_i < 10
+ #  school.school_password = "cd#{school.school_zip}#{code}"
 
 end
 
-
-
-# unique_scool_code = line['SZipUnique']
-# unique_scool_code = ("%02d" % unique_scool_code.to_i).to_s if unique_scool_code.to_i < 10
-# c.update(school_password: "cd#{c.school_zip}#{unique_scool_code}") if c.school_zip
 
 
