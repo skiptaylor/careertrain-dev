@@ -168,8 +168,8 @@
 				<div class="control-group">
 				    <div class="controls">
 				      <label class="checkbox">
- 				    	  <input type="checkbox" name="active" id="active" checked <%= 'checked="checked"' if @school.active  %> />
-						  Active
+ 				    	  <input type="checkbox" name="active" id="active" <%= 'checked="checked"' if @school.active  %> />
+						  <strong>Active</strong> &nbsp;<small>(activates school and creates password)</small>
  				  		</label>
 					</div>
 				</div>
@@ -181,7 +181,7 @@
 				</div>
 				<div class="control-group">
 				    <div class="controls">
-						 <input class="btn btn-small btn-success" type="submit" value="Activate" />
+						 <input class="btn btn-success" type="submit" value="Save" />
 					 </div>
 				 </div>
 			 	</form>

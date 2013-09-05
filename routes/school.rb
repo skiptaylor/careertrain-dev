@@ -40,7 +40,7 @@ post '/arng/schools/new/?' do
   params[:cd] 					    ? school.update(:cd => true)        : school.update(:cd => false)
   params[:ff] 					    ? school.update(:ff => true)        : school.update(:ff => false)
   params[:cd_before] 				? school.update(:cd_before => true) : school.update(:cd_before => false)
-
+  
   redirect "/arng/schools/#{school.id}/school"
 end
 
@@ -87,7 +87,7 @@ post '/arng/schools/:id/edit/?' do
   params[:cd] 					    ? school.update(:cd => true)        : school.update(:cd => false)
   params[:ff] 					    ? school.update(:ff => true)        : school.update(:ff => false)
   params[:cd_before] 				? school.update(:cd_before => true) : school.update(:cd_before => false)
-
+  
   redirect "/arng/schools/#{params[:id]}/school"
 end
 
@@ -177,25 +177,4 @@ helpers do
     end
   end
 
-  # def generate_password
-  #   if school.active = true
-  #     school.school_password = "cd#school.school_zip"
-  #   else
-  #     school.school_password = ""
-  #   end
-  # end
-
-  # passwords = School.all(school_zip: school.school_zip).map { |s| zips << s.school_password }
- #  passwords = passwords.sort{ |a, b| a <=> b }
- #  if passwords.count == 0
- #    code = '01'
- #  else
- #    code = zips.last.sub("cd32207", '').to_i + 1
- #  end
- #  ("%02d" % code.to_i).to_s if code.to_i < 10
- #  school.school_password = "cd#{school.school_zip}#{code}"
-
 end
-
-
-

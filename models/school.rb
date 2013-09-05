@@ -32,5 +32,17 @@ class School
   property :cd,                 Boolean, :default => false
   property :ff,                 Boolean, :default => false
   property :cd_before,          Boolean, :default => false
+ 
+  # before :create do
+  #   passwords = School.all(school_zip: school_zip).map { |s| zips << s.school_password }
+  #   passwords = passwords.sort{ |a, b| a <=> b }
+  #   if passwords.count == 0
+  #     code = '01'
+  #   else
+  #     code = zips.last.sub("cd32207", '').to_i + 1
+  #   end
+  #   ("%02d" % code.to_i).to_s if code.to_i < 10
+  #   school_password = "cd#{school_zip}#{code}"
+  # end
   
 end

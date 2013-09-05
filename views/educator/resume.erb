@@ -50,13 +50,14 @@
 					
 						<% @results.each do |c| %>
 							<hr />
-							<strong><%= c.school_name %></strong> <small><%= "(Not Activated)" unless c.active %></small><br />
-							<small><%= c.school_city %> <%= c.school_state %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= school.id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><span class="pull-right"><small>Password</small> <span class="password-show"><%= c.school_password %></span></span><% end %>
+							<strong><%= c.school_name %></strong> &nbsp; <small><%= "(Not Activated)" unless c.active %></small><br />
+							<small><%= c.school_city %> <%= c.school_state %> &nbsp;<%= c.school_zip %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><% else %><br />
+							<small>School Password</small> &nbsp;&nbsp;<span class="password-show"><%= c.school_password %></span><% end %>
 						<% end %>
   					</p>
 						
 					<% end %>
-
+					
 					<hr />
 					<p style="line-height: 1.3em;"><small>If the school is <strong>not listed above</strong> or listed as <strong>Not Activated</strong>, please call 888-326-9229.</small></p>
 			

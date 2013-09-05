@@ -8,11 +8,15 @@
 				<div class="span8">
 					<h5><%= @school.school_name %></h5>
 					<p><%= @school.school_city %>, <%= @school.school_state %> &nbsp;<%= @school.school_zip %></p>
-					<div class="well well-small span3" style="text-align: center; margin: 9px 0 18px 0; padding-top: 6px;">
+					<div class="well well-small span4" style="text-align: center; margin: 9px 0 18px 0; padding-top: 6px;">
 						<p>
 							<small>School Password</small>
 						</p>
-						<h6 style="color: #b5011c;"><%= @school.school_password %></h6>
+						<% if @school.active == true %> 
+							<h6 style="color: #b5011c;"><%= @school.school_password %></h6>
+						<% else %>
+							<h5 class="muted">SCHOOL NOT ACTIVATED</h5>
+						<% end %>
 					</div>
 				</div>
 				<div class="span7">
