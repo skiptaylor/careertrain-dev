@@ -370,9 +370,8 @@ following occupations.</p>
 
 <hr size="1" />
 
-	<span class="header2">Veterinary 
-Technician</span><br /><br />
-	<img class="job_pic" src="/images/icons/AD/Ph43131.jpg" 
+	<span class="header2">Veterinary Technician</span><br /><br />
+	<img class="job_pic" src="/images/icons/AD/PH43131.jpg" 
 width="100" height="100" border="0" alt="Veterinary Technician" />
 	<span class="header3">Job Description</span>
 	<blockquote>A veterinary technician works with animals in 
