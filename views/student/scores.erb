@@ -211,25 +211,37 @@
 		
 		<hr />
 		<center><a href="http://www.nationalguard.com/education" target="blank"><img src="/img/ads/EducationBenefits.gif" /></a></center>
-		<hr />
-		<%= @cat1 %>
-		<hr />
-		<%= @cat2 %>
-		<hr />
-		<%= @cat3 %>
+    <% if @cat1 %>
+      <hr />
+		  <%= @cat1 %>
+    <% end %>
+    <% if @cat2 %>
+      <hr />
+		  <%= @cat2 %>
+    <% end %>
+    <% if @cat3 %>
+      <hr />
+		  <%= @cat3 %>
+    <% end %>
 		<hr />
 		<center><a href="http://www.nationalguard.com/careers" target="blank"><img src="/img/ads/CareerOpportunities.gif" /></a></center>
-		<hr class="divider" /><br />
-		<%= @report1 %>
-		<hr />
+    <% if @report1 %>
+		  <hr class="divider" /><br />
+		  <%= @report1 %>
+		  <hr />
+    <% end %>
 		<center><a href="http://www.nationalguard.com/events/citizen-soldier" target="blank"><img src="/img/ads/Patriotism.gif" /></a></center>
-		<hr class="divider" /><br />
-		<%= @report2 %>
-		<hr />
+    <% if @report2 %>
+		  <hr class="divider" /><br />
+		  <%= @report2 %>
+		  <hr />
+    <% end %>
 		<center><a href="http://www.nationalguard.com/life/fitness" target="blank"><img src="/img/ads/Leadership.gif" /></a></center>
-		<hr class="divider" /><br />
-		<%= @report3 %>
-		<hr />
+    <% if @report3 %>
+		  <hr class="divider" /><br />
+		  <%= @report3 %>
+		  <hr />
+    <% end %>
 		<center><a href="http://www.nationalguard.com/benefits" target="blank"><img src="/img/ads/FindAdventure.gif" /></a></center>
 		<br />
 		<center><a href="http://www.nationalguard.com/benefits/enlistment-options" target="blank"><img src="/img/ads/guard1.gif" /></a></center>

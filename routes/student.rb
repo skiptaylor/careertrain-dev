@@ -13,29 +13,61 @@ end
 
 get "/student/report/:school_password/?" do
   @school = School.first(school_password: params[:school_password])
-  
-  if params[:score1] && params[:score2] && params[:score3]
-     params[:score1].strip!
-     params[:score1].downcase!
-     params[:score2].strip!
-     params[:score2].downcase!
-     params[:score3].strip!
-     params[:score3].downcase!
     
-  if File.exists?("./views/reports/#{params[:score1]}#{params[:score2]}.inc") &&
-      File.exists?("./views/reports/#{params[:score1]}#{params[:score3]}.inc") &&
-      File.exists?("./views/reports/#{params[:score2]}#{params[:score3]}.inc")
-      @report1 = File.read("./views/reports/#{params[:score1]}#{params[:score2]}.inc")
-      @report2 = File.read("./views/reports/#{params[:score1]}#{params[:score3]}.inc")
-      @report3 = File.read("./views/reports/#{params[:score2]}#{params[:score3]}.inc")
-      @cat1 = File.read("./views/reports/#{params[:score1]}.inc")
-      @cat2 = File.read("./views/reports/#{params[:score2]}.inc")
-      @cat3 = File.read("./views/reports/#{params[:score3]}.inc")
-      erb :'student/scores', layout: false
-    else
+  if params[:score1] && params[:score1] != ''
+    params[:score1].strip!
+    params[:score1].downcase!
+  else
+    params[:score1] = false
+  end
+
+  if params[:score2] && params[:score2] != ''
+    params[:score2].strip!
+    params[:score2].downcase!
+  else
+    params[:score2] = false
+  end
+
+  if params[:score3] && params[:score3] != ''
+    params[:score3].strip!
+    params[:score3].downcase!
+  else
+    params[:score3] = false
+  end
+  
+  if params[:score1] && File.exists?("./views/reports/#{params[:score1]}.inc")
+    @cat1 = File.read("./views/reports/#{params[:score1]}.inc")
+  end
+
+  if params[:score2] && File.exists?("./views/reports/#{params[:score2]}.inc")
+    @cat2 = File.read("./views/reports/#{params[:score2]}.inc")
+  end
+
+  if params[:score3] && File.exists?("./views/reports/#{params[:score3]}.inc")
+    @cat3 = File.read("./views/reports/#{params[:score3]}.inc")
+  end
+  
+  if params[:score1] && params[:score2] && File.exists?("./views/reports/#{params[:score1]}#{params[:score2]}.inc")
+    @report1 = File.read("./views/reports/#{params[:score1]}#{params[:score2]}.inc")
+  end
+
+  if params[:score1] && params[:score3] && File.exists?("./views/reports/#{params[:score1]}#{params[:score3]}.inc")
+    @report2 = File.read("./views/reports/#{params[:score1]}#{params[:score3]}.inc")
+  end
+
+  if params[:score2] && params[:score3] && File.exists?("./views/reports/#{params[:score2]}#{params[:score3]}.inc")
+    @report3 = File.read("./views/reports/#{params[:score2]}#{params[:score3]}.inc")
+  end
+  
+  if params[:score1] && params[:score2]
+    unless @cat1 && @cat2
       flash[:alert] = "Invalid scores. Try again."
       erb :'student/enter_scores'
     end
+  end
+  
+  if params[:score1] && params[:score2] && defined?(@cat1) && defined?(@cat2)
+    erb :'student/scores', layout: false
   else
     erb :'student/enter_scores'
   end
