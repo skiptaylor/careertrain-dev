@@ -98,6 +98,11 @@ post '/student/resume/create/?' do
   end
 end
 
+get "/student/resume/students/?" do
+  @student = Student.all
+  erb :"student/resume/students"
+end
+
 get "/student/resume/signin/?" do 
   erb :"student/resume/signin"
 end

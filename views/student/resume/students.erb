@@ -2,11 +2,9 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="span10 offset1">
-				
-				<p><a href="/student/resume" class="btn btn-success pull-right"><i class="icon-signout"></i> &nbsp;Sign out</a></p>
-			<h1 class="page-header">Online Resum&eacute; Tool</h1>
-		
-				<table class="table table-striped table-condensed table-hover">
+			<h1>Student List</h1>
+			<p><a href="/admin/admin_edit" class="btn btn-small">Index</a></p>
+			<table class="table table-striped table-condensed table-hover">
 					<tr>
 						<th>Name</th>
 						<th>Email</th>
@@ -18,7 +16,7 @@
 						<td><%= student.name %></td>
 						<td><%= student.email %></td>
 						<td><%= student.password %></td>
-						<td style="text-align: center;" width="30px"><a href="/students/<%= student.id %>/edit"> <i class="icon-pencil"></i> </a></td>
+						<td style="text-align: center;" width="30px"><a href=""> <i class="icon-pencil"></i> </a></td>
 					</tr>
 					<% end %>
 				</table>
