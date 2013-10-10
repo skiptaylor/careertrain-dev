@@ -7,7 +7,7 @@ CSV.open('./data/ct_resume_databases/contact_info.csv', { headers: true }) do |c
         city:           line['City'],
         state:          line['State'],
         zip:            line['Zip'],
-        phone:          line['Phone_Number'],
+        phone:          line['Phone_Number']
       )
     end
   end
