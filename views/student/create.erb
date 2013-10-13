@@ -17,7 +17,7 @@
 
     <p>
       <label>School Password</label>
-      <input type="text" name="school_password" id="school_password" value="<%= params[:school_password] %>" />
+      <input type="text" name="school_password" id="school_password" value="<%= params[:school_password] %>" required />
       <% if @errors.include? :school_not_found %>
         <span class="help-inline">School not found.</span>
       <% end %>

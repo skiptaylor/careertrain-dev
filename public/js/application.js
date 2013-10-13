@@ -16,3 +16,15 @@ jQuery(function() {
 	});
 		
 });
+
+(function() {
+
+  $(window).load(function() {
+    $('a.delete').click(function() {
+      if (!confirm('This cannot be undone! Continue?')) {
+        return false;
+      }
+    });
+  });
+
+}).call(this);

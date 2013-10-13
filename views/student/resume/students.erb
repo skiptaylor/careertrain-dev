@@ -1,22 +1,23 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span10 offset1">
+			<div class="span12">
 			<h1>Student List</h1>
-			<p><a href="/admin/admin_edit" class="btn btn-small">Index</a></p>
+			<p><small>Temporarily, Admin can only delete empty student records.</small></p>
+			<p><a href="/admin/admin_edit" class="btn btn-small">Admin Index</a></p>
 			<table class="table table-striped table-condensed table-hover">
 					<tr>
 						<th>Name</th>
 						<th>Email</th>
 						<th>Password</th>
-						<th style="text-align: center;" width="30px">Edit</th>
+						<th> </th>
 					</tr>
 					<% @student.sort_by(&:created_at).reverse.each do |student| %>
 					<tr>
 						<td><%= student.name %></td>
 						<td><%= student.email %></td>
 						<td><%= student.password %></td>
-						<td style="text-align: center;" width="30px"><a href="/student/resume/<%= student.id %>/delete" class="btn btn-mini">Delete</a></td>
+						<td style="text-align: right;"><a href="/student/resume/<%= student.id %>/student"><i class="icon-info-sign"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/student/resume/<%= student.id %>/delete" class="delete text-error"><i class="icon-trash"></i></a></td>
 					</tr>
 					<% end %>
 				</table>

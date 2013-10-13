@@ -1,9 +1,12 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span9 offset3">
-				<h1 class="page-header">Profile</h1>
+			<div class="span6 offset3">
+				<h1>Student Profile</h1>
+				<a href="/student/resume/students" class="btn btn-small">Admin Student List</a></p>
+				<hr />
 			</div>
+			
 			<div class="span4 offset3">
 						
 				<p><strong>Email</strong><br /><%= @student.email %></p>
@@ -15,12 +18,11 @@
 					<%= @student.phone %><br />
 				</p>
 				<br />
-				<a href="/students/<%= @student.id %>/edit" class="btn btn-success"><i class="icon-pencil"></i> &nbsp;Edit</a>
+				
 
 			</div>
 			<div class="span3">
-				<a href="/students/<%= @student.id %>/student/resume/index" class="btn btn-primary">Online Resum&eacute; Tool</a></p>
-				<a href="/admin/admin" class="btn btn-success"><i class="icon-signout"></i> &nbsp;Sign out</a></p>
+				
 			</div>
 		</div> <!-- /row -->
 	</div> <!-- /container -->

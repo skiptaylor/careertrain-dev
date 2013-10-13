@@ -103,6 +103,11 @@ get "/student/resume/students/?" do
   erb :"student/resume/students"
 end
 
+get "/student/resume/:id/student/?" do
+  @student = Student.get(params[:id])
+  erb :"student/resume/student"
+end
+
 get "/student/resume/signin/?" do 
   erb :"student/resume/signin"
 end
