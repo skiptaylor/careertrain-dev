@@ -137,6 +137,25 @@ get "/student/resume/index/?" do
   erb :"student/resume/index"
 end
 
+get '/student/resume/:id/edit/?' do
+  @student = Student.get(params[:id])
+  erb :'/student/resume/edit_student'
+end
+
+post '/student/resume/:id/edit/?' do
+  @student = Student.get(params[:id]).update(
+    :email     => params[:email],
+    :password  => params[:password],
+    :name      => params[:name],
+    :address   => params[:address],
+    :city      => params[:city],
+    :state     => params[:state],
+    :zip       => params[:zip],
+    :phone     => params[:phone],
+  )
+  redirect "/student/resume/index"
+end
+
 get '/student/resume/edit/?' do
   @student = Student.get(session[:student])
   erb :'/student/resume/edit_student'
@@ -156,10 +175,10 @@ post '/student/resume/edit/?' do
   redirect "/student/resume/index"
 end
 
-get '/student/:id/delete/?' do
-  @student = Student.get(params[:id])
+get '/student/resume/:id/delete/?' do
+  student = Student.get(params[:id])
   student.destroy
-  redirect '/student'
+  redirect '/student/resume/students'
 end
 
 get '/student/resources/?'  do

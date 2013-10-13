@@ -11,12 +11,12 @@
 						<th>Password</th>
 						<th style="text-align: center;" width="30px">Edit</th>
 					</tr>
-					<% @student.each do |student| %>
+					<% @student.sort_by(&:created_at).reverse.each do |student| %>
 					<tr>
 						<td><%= student.name %></td>
 						<td><%= student.email %></td>
 						<td><%= student.password %></td>
-						<td style="text-align: center;" width="30px"><a href=""> <i class="icon-pencil"></i> </a></td>
+						<td style="text-align: center;" width="30px"><a href="/student/resume/<%= student.id %>/delete" class="btn btn-mini">Delete</a></td>
 					</tr>
 					<% end %>
 				</table>
