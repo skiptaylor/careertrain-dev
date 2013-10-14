@@ -100,6 +100,12 @@ end
 
 get "/student/resume/students/?" do
   @student = Student.all
+  
+	if params[:search] && !params[:search].nil?
+		@student = Student.all(:email.like  =>  "%#{params[:search]}%")
+
+	end
+  
   erb :"student/resume/students"
 end
 
