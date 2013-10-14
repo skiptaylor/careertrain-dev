@@ -12,7 +12,7 @@ post '/student/resume/objectives/new/?' do
     :learn      => params[:learn],
     :long_goal  => params[:long_goal]
   )
-  redirect "/student/resume/objectives/objectives"
+  redirect "/student/resume/index"
 end
 
 get '/student/resume/objectives/objectives/?' do
@@ -36,7 +36,7 @@ post '/student/resume/objectives/:id/edit/?' do
     :learn      => params[:learn],
     :long_goal  => params[:long_goal]
   )
-  redirect "/student/resume/objectives/objectives"
+  redirect "/student/resume/index"
 end
 
 get '/student/resume/objectives/:id/delete/?' do
