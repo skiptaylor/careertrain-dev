@@ -11,6 +11,7 @@ get '/student/resume/interests/new/?' do
 end
 
 post '/student/resume/interests/new/?' do
+  @student = Student.get(session[:student])
   interest = Interest.create(
     :student_id   => session[:student],
     :interest     => params[:interest]
