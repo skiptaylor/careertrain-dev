@@ -1,9 +1,3 @@
-# get '/student/resume/objectives/?' do
-#   @student = Student.get(session[:student])
-#   @objective = Objective.all
-#   erb :'/objectives'
-# end
-
 get '/student/resume/objectives/new/?' do
   @student = Student.get(session[:student])
   @objective = Objective.new
@@ -11,6 +5,7 @@ get '/student/resume/objectives/new/?' do
 end
 
 post '/student/resume/objectives/new/?' do
+  @student = Student.get(session[:student])
   objective = Objective.create(
     :student_id => session[:student],
     :goal       => params[:goal],
