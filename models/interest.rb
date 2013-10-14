@@ -6,7 +6,7 @@ class Interest
 	property 	 :id, 				Serial
 
   property :student_id,  Integer
-  property :interest,  String
+  property :interest,    Text
   
   belongs_to :student, required: false
   
