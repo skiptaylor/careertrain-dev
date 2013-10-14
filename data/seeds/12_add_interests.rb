@@ -6,7 +6,7 @@ CSV.open('./data/ct_resume_databases/Interests.csv', { headers: true }) do |csv_
     Interest.create(
       student_id: line['ID'].to_i,
       id:         line['ID_PK'].to_i,
-      interest:   line['Interest'],
+      interest:   line['Interest']
     )
   end
 end
