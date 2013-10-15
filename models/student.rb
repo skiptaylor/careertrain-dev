@@ -18,16 +18,16 @@ class Student
   property :zip, String
   property :phone, String
   
-  has n, :awards
-  has n, :activities
-  has n, :educations
-  has n, :experiences
-  has n, :interests
-  has n, :letters
-  has n, :objectives
-  has n, :references
-  has n, :reports
-  has n, :skills
-  has n, :traits
+  has n, :awards, :constraint => :destroy
+  has n, :activities, :constraint => :destroy
+  has n, :educations, :constraint => :destroy
+  has n, :experiences, :constraint => :destroy
+  has n, :interests, :constraint => :destroy
+  has n, :letters, :constraint => :destroy
+  has n, :objectives, :constraint => :destroy
+  has n, :references, :constraint => :destroy
+  has n, :reports, :constraint => :destroy
+  has n, :skills, :constraint => :destroy
+  has n, :traits, :constraint => :destroy
   
 end
