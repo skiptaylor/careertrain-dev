@@ -11,6 +11,9 @@ get '/student/resume/educations/new/?' do
 end
 
 post '/student/resume/educations/new/?' do
+  params[:graduate_on] = nil if params[:graduate_on] == ''
+  params[:completed_on] =  nil if params[:completed_on] == ''
+  params[:graduation_date] =  nil if params[:graduation_date] == ''
   education = Education.create(
     :student_id               => session[:student],
     :attending                => params[:attending],
@@ -21,9 +24,6 @@ post '/student/resume/educations/new/?' do
     :completed_on             => params[:completed_on],
     :graduation_date          => params[:graduation_date],
     :study                    => params[:study],
-    :grad_date_change         => params[:grad_date_change],
-    :completed_date_change    => params[:completed_date_change],
-    :graduation_date_change   => params[:graduation_date_change],
     :degree                   => params[:degree]
   )
   redirect "/student/resume/educations/educations"
@@ -54,9 +54,6 @@ post '/student/resume/educations/:id/edit/?' do
     :completed_on             => params[:completed_on],
     :graduation_date          => params[:graduation_date],
     :study                    => params[:study],
-    :grad_date_change         => params[:grad_date_change],
-    :completed_date_change    => params[:completed_date_change],
-    :graduation_date_change   => params[:graduation_date_change],
     :degree                   => params[:degree]
   )
   redirect "/student/resume/educations/educations"

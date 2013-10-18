@@ -11,11 +11,11 @@ get '/student/resume/awards/new/?' do
 end
 
 post '/student/resume/awards/new/?' do
+  params[:award_date] = nil if params[:award_date] == ''
   award = Award.create(
     :student_id         => session[:student],
     :award              => params[:award],
     :award_date         => params[:award_date],
-    :award_date_change  => params[:award_date_change]
   )
   redirect "/student/resume/awards/awards"
 end
@@ -45,7 +45,6 @@ post '/student/resume/awards/:id/edit/?' do
     :student_id         => session[:student],
     :award              => params[:award],
     :award_date         => Chronic.parse(params[:award_date]),
-    :award_date_change  => params[:award_date_change]
   )
   redirect "/student/resume/awards/awards"
 end

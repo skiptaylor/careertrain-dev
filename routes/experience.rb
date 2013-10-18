@@ -11,6 +11,8 @@ get '/student/resume/experience/new/?' do
 end
 
 post '/student/resume/experience/new/?' do
+  params[:start] = nil if params[:start] == ''
+  params[:end] =  nil if params[:end] == ''
   experience = Experience.create(
     :student_id     => session[:student],
     :company        => params[:company],

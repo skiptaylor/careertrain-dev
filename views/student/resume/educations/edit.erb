@@ -6,7 +6,7 @@
 			<div class="span10 offset2">
 				
 				<form class="form-horizontal" method="post">
-					
+					<hr />
 					<div class="control-group">
 					   <label class="control-label" for="attending">I am attending:</label>
 						<div class="controls">
@@ -14,11 +14,13 @@
 						</div>
 					</div>
 					<div class="control-group">
-					   <label class="control-label" for="graduate_on">I will graduate on:</label>
-						<div class="controls">
-							<input type="text" name="graduate_on" id="graduate_on" class="textfield span4 datepicker" value="<%= @education.graduate_on %>" />
+						<label class="control-label" for="graduate_on">I will graduate on:</label>
+						<div class="span2 input-append date">
+							<input type="text" class="form_date" placeholder="Graduation Date" name="graduate_on" id="graduate_on" data-date="graduate_on" data-date-format="MM dd, yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd" value="<%= @education.graduate_on %>" />
 						</div>
+						<input type="hidden" id="dtp_input2" value="" /><br/>
 					</div>
+					<hr />
 					<div class="control-group">
 					   <label class="control-label" for="plan_attend">I plan to attend:</label>
 						<div class="controls">
@@ -31,6 +33,7 @@
 							<input type="text" name="study" id="study" class="textfield span4" value="<%= @education.study %>" />
 						</div>
 					</div>
+					<hr />
 					<div class="control-group">
 					   <label class="control-label" for="completed">I have completed:</label>
 						<div class="controls">
@@ -38,11 +41,13 @@
 						</div>
 					</div>
 					<div class="control-group">
-					   <label class="control-label" for="completed_on">Completion date:</label>
-						<div class="controls">
-							<input type="text" name="completed_on" id="completed_on" class="textfield span4 datepicker" value="<%= @education.completed_on %>" />
+						<label class="control-label" for="completed_on">Completion date:</label>
+						<div class="span2 input-append date">
+							<input type="text" class="form_date" placeholder="Graduation Date" name="completed_on" id="completed_on" data-date="completed_on" data-date-format="MM dd, yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd" value="<%= @education.completed_on %>" />
 						</div>
+						<input type="hidden" id="dtp_input2" value="" /><br/>
 					</div>
+					<hr />
 					<div class="control-group">
 					   <label class="control-label" for="graduated">I have graduated:</label>
 						<div class="controls">
@@ -50,10 +55,11 @@
 						</div>
 					</div>
 					<div class="control-group">
-					   <label class="control-label" for="graduation_date">Date of graduation</label>
-						<div class="controls">
-							<input type="text" name="graduation_date" id="graduation_date" class="textfield span4 datepicker" value="<%= @education.graduation_date %>" />
+						<label class="control-label" for="graduation_date">Date of graduation:</label>
+						<div class="span2 input-append date">
+							<input type="text" class="form_date" placeholder="Graduation Date" name="graduation_date" id="graduation_date" data-date="graduation_date" data-date-format="MM dd, yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd" value="<%= @education.completed_on %>" />
 						</div>
+						<input type="hidden" id="dtp_input2" value="" /><br/>
 					</div>
 					<div class="control-group">
 					   <label class="control-label" for="degree">Degree received:</label>
@@ -61,6 +67,7 @@
 							<input type="text" name="degree" id="degree" class="textfield span4" value="<%= @education.degree %>" /><span class="help-inline">(AA, AT, BFA, BA, BS, MBA)</span>
 						</div>
 					</div>
+					<hr />
 					<div class="control-group">
 						<div class="controls">
 							<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/educations/educations">Cancel</a>

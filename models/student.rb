@@ -7,8 +7,8 @@ class Student
 
   property :email,  String
   property :password, String
-  property :last_activity, String
-  property :create_date, String
+  property :last_activity, Date
+  property :create_date, Date
 
  # From Contact
   property :name,  String

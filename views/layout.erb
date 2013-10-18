@@ -9,26 +9,17 @@
   	<link href="/css/bootstrap.css" rel="stylesheet">
   	<link href="/css/bootstrap-responsive.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="/css/resume-style.css" />
-	<link type="text/css" rel="stylesheet" href="/css/jquery-ui-1.10.3.custom.css" />
+	<link type="text/css" rel="stylesheet" href="/css/datetimepicker.css" />
 	<link type="text/css" rel="stylesheet" href="/css/resume-content.css" />
 	<link type="text/css" rel="stylesheet" href="/css/theme.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome-ie7.min.css" />
 	
-  	<script type="text/javascript" src="/js/jquery-1.8.0.min.js"></script>
-  	<script type="text/javascript" src="/js/jquery-ui-1.8.22.custom.min.js"></script>
+  	<script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
+  	<script type="text/javascript" src="/js/bootstrap-datetimepicker.js"></script>
   	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
   	<script type="text/javascript" src="/js/hide_addressbar.js"></script>
   	<script type="text/javascript" src="/js/application.js"></script>
-	<script>
-	$(function() {
-	    $( ".datepicker" ).datepicker({
-	      showOn: "button",
-	      buttonImage: "/images/calendar.png",
-	      buttonImageOnly: true
-	    });
-	  });
-	  </script>
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
@@ -70,6 +61,17 @@
       <footer>
         <p class="container"><a href="/about" class="btn btn-inverse pull-left"><img src="/img/ctc-logo-sm.png" style="margin-top: -4px;" /> &nbsp;About CTC</a> &nbsp; &copy; 1996 - 2013 Career Training Concepts Inc. All rights reserved. &nbsp; <a href="/admin/admin" class="btn btn-mini">Admin</a> <img src="/img/ng-wide.png" class="pull-right" /></p>
       </footer>
+		
+		<script type="text/javascript">
+			$('.form_date').datetimepicker({
+				minView: 4,
+				format: "MM dd, yyyy",
+				autoclose: true,
+				todayBtn: true,
+				todayHighlight: true,
+				forceParse: true
+		    });
+		</script>
 
   </body>
 </html>
