@@ -5,15 +5,15 @@ class Experience
 	property   :deleted_at, ParanoidDateTime
 	property 	 :id, 				Serial
 
-  property :student_id,  Integer
-  property :company,  String
-  property :city, String
-  property :state, String
-  property :start, String
-  property :end, String
-  property :position, String
-  property :start_change, String
-  property :end_change, String
+  property :student_id,   Integer
+  property :company,      String
+  property :city,         String
+  property :state,        String
+  property :start,        Date
+  property :end,          Date
+  property :position,     String
+  property :start_change, Date
+  property :end_change,   Date
   
   belongs_to :student, required: false
   

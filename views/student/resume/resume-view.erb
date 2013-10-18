@@ -40,9 +40,9 @@
 							<h2>Education</h2>
 							<% @student.educations.each do |education| %>
 								<ul>
-									<% if education.attending != "" %><li>Scheduled to graduate from <%= education.attending %> on <%= education.graduate_on %>.</li><% end %>
+									<% if education.attending != "" %><li>Scheduled to graduate from <%= education.attending %> on <%= format_day(education.graduate_on) %>.</li><% end %>
 									<% if education.plan_attend != "" %><li>I plan to attend <%= education.plan_attend %> to study <%= education.study %>.</li><% end %>
-									<% if education.completed != "" %><li>I have completed <%= education.completed %> on <%= education.completed_on %></li><% end %>
+									<% if education.completed != "" %><li>I have completed <%= education.completed %> on <%= format_day(education.completed_on) %></li><% end %>
 									<% if education.graduated != "" %><li>I have graduated from <%= education.graduated %> on <%= education.attending %> with a <%= education.degree %> degree.</li><% end %>
 								</ul>
 							<% end %>
@@ -50,7 +50,7 @@
 							<h2>Work Experience</h2>
 							<% @student.experiences.each do |experience| %>
 							<ul>
-								<li><%= experience.company %>, <%= experience.position %>, <%= experience.city %>, <%= experience.state %>, <%= experience.start %> - <%= experience.end %></li>
+								<li><%= experience.company %>, <%= experience.position %>, <%= experience.city %>, <%= experience.state %>, <%= format_day(experience.start) %> - <%= format_day(experience.end) %></li>
 							</ul>
 							<% end %>
 		
@@ -58,7 +58,7 @@
 							<h2>Activities and Associations</h2>
 							<% @student.activities.each do |activity| %>
 							<ul>
-								<li><%= activity.position.capitalize %>, <%= activity.organization %>, <%= activity.date_start %> - <%= activity.date_end %></li>
+								<li><%= activity.position.capitalize %>, <%= activity.organization %>, <%= format_day(activity.date_start) %> - <%= format_day(activity.date_end) %></li>
 							</ul>
 							<% end %>
 		
@@ -66,7 +66,7 @@
 							<h2>Awards and Commendations</h2>
 							<% @student.awards.each do |award| %>
 							<ul>
-								<li><%= award.award.capitalize %>, <%= award.award_date %></li>
+								<li><%= award.award.capitalize %>, <%= format_day(award.award_date) %></li>
 							</ul>
 							<% end %>
 		
