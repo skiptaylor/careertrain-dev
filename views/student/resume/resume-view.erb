@@ -40,17 +40,28 @@
 							<h2>Education</h2>
 							<% @student.educations.each do |education| %>
 								<ul>
+<<<<<<< HEAD
 									<% if education.attending != "" %><li>Scheduled to graduate from <%= education.attending %><% if education.graduate_on != nil %> on <%= format_day(education.graduate_on) %><% end %>.</li><% end %>
 									<% if education.plan_attend != "" %><li>I plan to attend <%= education.plan_attend %> to study <%= education.study %>.</li><% end %>
 									<% if education.completed != "" %><li>I have completed <%= education.completed %> on <%= format_day(education.completed_on) %></li><% end %>
 									<% if education.graduated != "" %><li>I have graduated from <%= education.graduated %> on <%= format_day(education.graduation_date) %> with a <%= education.degree %> degree.</li><% end %>
+=======
+									<% if education.attending != "" %><li>Scheduled to graduate from <%= education.attending %> on <%= format_day(education.graduate_on) %>.</li><% end %>
+									<% if education.plan_attend != "" %><li>I plan to attend <%= education.plan_attend %> to study <%= education.study %>.</li><% end %>
+									<% if education.completed != "" %><li>I have completed <%= education.completed %> on <%= format_day(education.completed_on) %></li><% end %>
+									<% if education.graduated != "" %><li>I have graduated from <%= education.graduated %> on <%= education.attending %> with a <%= education.degree %> degree.</li><% end %>
+>>>>>>> 04204764821f5ccb783f47981a6f8f0e01abfb2f
 								</ul>
 							<% end %>
 		
 							<h2>Work Experience</h2>
 							<% @student.experiences.each do |experience| %>
 							<ul>
+<<<<<<< HEAD
 								<li><%= experience.company %>, <%= experience.position %>, <%= experience.city %>, <%= experience.state %><% if experience.start != nil %>, <%= format_day(experience.start) %><% end %><% if experience.end != nil %> - <%= format_day(experience.end) %><% end %></li>
+=======
+								<li><%= experience.company %>, <%= experience.position %>, <%= experience.city %>, <%= experience.state %>, <%= format_day(experience.start) %> - <%= format_day(experience.end) %></li>
+>>>>>>> 04204764821f5ccb783f47981a6f8f0e01abfb2f
 							</ul>
 							<% end %>
 		
@@ -58,7 +69,11 @@
 							<h2>Activities and Associations</h2>
 							<% @student.activities.each do |activity| %>
 							<ul>
+<<<<<<< HEAD
 								<li><%= activity.position.capitalize %>, <%= activity.organization %><% if activity.date_start != nil %>, <%= format_day(activity.date_start) %><% end %><% if activity.date_end != nil %> - <%= format_day(activity.date_end) %><% end %></li>
+=======
+								<li><%= activity.position.capitalize %>, <%= activity.organization %>, <%= format_day(activity.date_start) %> - <%= format_day(activity.date_end) %></li>
+>>>>>>> 04204764821f5ccb783f47981a6f8f0e01abfb2f
 							</ul>
 							<% end %>
 		
@@ -66,7 +81,11 @@
 							<h2>Awards and Commendations</h2>
 							<% @student.awards.each do |award| %>
 							<ul>
+<<<<<<< HEAD
 								<li><%= award.award.capitalize %><% if award.award_date != nil %>, <%= format_day(award.award_date) %><% end %></li>
+=======
+								<li><%= award.award.capitalize %>, <%= format_day(award.award_date) %></li>
+>>>>>>> 04204764821f5ccb783f47981a6f8f0e01abfb2f
 							</ul>
 							<% end %>
 		
