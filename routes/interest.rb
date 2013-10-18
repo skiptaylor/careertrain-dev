@@ -10,8 +10,7 @@ get '/student/resume/interests/new/?' do
   erb :"/student/resume/interests/edit"
 end
 
-post '/student/resume/interests/new/?' do
-  @student = Student.get(session[:student])
+post "/student/resume/interests/new/?" do
   interest = Interest.create(
     :student_id   => session[:student],
     :interest     => params[:interest]
