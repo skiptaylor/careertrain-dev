@@ -15,28 +15,23 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome-ie7.min.css" />
 	
-<<<<<<< HEAD
   	<script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
   	<script type="text/javascript" src="/js/bootstrap-datetimepicker.js"></script>
   	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
   	<script type="text/javascript" src="/js/hide_addressbar.js"></script>
   	<script type="text/javascript" src="/js/application.js"></script>
-=======
-  	<script type="text/javascript" src="/js/jquery-1.9.1.js"></script>
-  	<script type="text/javascript" src="/js/jquery-ui-1.10.3.js"></script>
-  	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-  	<script type="text/javascript" src="/js/hide_addressbar.js"></script>
-  	<script type="text/javascript" src="/js/application.js"></script>
 	<script>
 	$(function() {
-		$( ".datepicker" ).datepicker({
-			showOn: "button",
-			buttonImage: "/images/calendar.png",
-			buttonImageOnly: true
+		$( ".form_date" ).datepicker({
+			format: "MM dd, yyyy",
+			startView: 2,
+			minView: 0,
+			todayHighlight: true,
+			autoclose: true,
+			todayBtn: true
 		});
 	});
 	</script>
->>>>>>> 04204764821f5ccb783f47981a6f8f0e01abfb2f
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>

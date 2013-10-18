@@ -23,16 +23,19 @@
 					</div>
 					<div class="control-group">
 						<label class="control-label" for="date_start">Start Date</label>
-						<div class="span2 input-append date" id="datetimepicker">
-							<input type="text" class="form_date" name="date_start" id="date_start" value="<%= @activity.date_start %>" />
+						<div class="span2 input-append date">
+							<input type="text" name="date_start" id="date_start" class="form_date" data-date-format="MM dd, yyyy" data-link-format="yyyy-mm-dd" value="<%= @activity.date_start %>" />
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label" for="date_end">End Date</label>
-						<div class="span2 input-append date" id="datetimepicker">
-							<input type="text" class="form_date" name="date_end" id="date_end" value="<%= @activity.date_end %>" />
+						<div class="span2 input-append date">
+							<input type="text" class="form_date" name="date_end" id="date_end" data-date-format="MM dd, yyyy" data-link-format="yyyy-mm-dd" value="<%= @activity.date_end %>" />
 						</div>
 					</div>
+
+					
+					
 					<div class="control-group">
 						<div class="controls">
 							<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/activities/activities">Cancel</a> &nbsp; <% if @student.activities.count > 0 %><a class="btn btn-small btn-warning delete" href="/student/resume/activities/<%= @activity.id %>/delete">Delete</a><% end %>

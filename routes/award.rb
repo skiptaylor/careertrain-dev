@@ -44,12 +44,8 @@ post '/student/resume/awards/:id/edit/?' do
   award.update(
     :student_id         => session[:student],
     :award              => params[:award],
-<<<<<<< HEAD
-    :award_date         => Chronic.parse(params[:award_date]),
-=======
     :award_date         => params[:award_date],
     :award_date_change  => params[:award_date_change]
->>>>>>> 04204764821f5ccb783f47981a6f8f0e01abfb2f
   )
   redirect "/student/resume/awards/awards"
 end
