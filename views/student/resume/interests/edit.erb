@@ -8,16 +8,20 @@
 				
 				<p>Describe an interest or hobby. You can add others after saving.</p>
 		
-				<form method="post">
+				<form class="form-horizontal" method="post">
 					
-					<p>
-						<label for="interest">Interests and Hobbies</label>
-						<input type="text" name="interest" id="interest" class="textfield span4" value="<%= @interest.interest %>" />
-					</p>
-					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/interests/interests">Cancel</a> &nbsp; <% if @student.interests.count > 0 %><a class="btn btn-small btn-warning" href="/student/resume/interests/<%= @interest.id %>/delete">Delete</a><% end %>
-					
-					</form>	
+					<div class="control-group">
+						<label class="control-label" for="interest">Interests and Hobbies</label>
+						<div class="controls">
+							<input type="text" name="interest" id="interest" class="textfield span4" value="<%= @interest.interest %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/interests/interests">Cancel</a> &nbsp; <% if @student.interests.count > 0 %><a class="btn btn-small btn-warning" href="/student/resume/interests/<%= @interest.id %>/delete">Delete</a><% end %>
+						</div>
+					</div>
+				</form>	
 			</div>
 			
 		</div> <!-- /row -->
