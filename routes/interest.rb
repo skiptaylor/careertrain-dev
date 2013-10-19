@@ -1,7 +1,7 @@
 get '/student/resume/interests/?' do
   @student = Student.get(session[:student])
 	@interest = Interest.all
-	erb :"/student/resume/interests"
+	erb :"/student/resume/interests/interests"
 end
 
 get '/student/resume/interests/new/?' do
@@ -15,7 +15,7 @@ post "/student/resume/interests/new/?" do
     :student_id   => session[:student],
     :interest     => params[:interest]
   )
-  redirect "/student/resume/interests/interests"
+  redirect "/student/resume/index"
 end
 
 get '/student/resume/interests/interests/?' do
