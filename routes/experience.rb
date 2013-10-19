@@ -20,9 +20,7 @@ post '/student/resume/experience/new/?' do
     :state          => params[:state],
     :start          => params[:start],
     :end            => params[:end],
-    :position       => params[:position],
-    :start_change   => params[:start_change],
-    :end_change     => params[:end_change]
+    :position       => params[:position]
   )
   redirect '/student/resume/experience/experiences'
 end
@@ -55,9 +53,7 @@ post '/student/resume/experience/:id/edit/?' do
     :state          => params[:state],
     :start          => params[:start],
     :end            => params[:end],
-    :position       => params[:position],
-    :start_change   => params[:start_change],
-    :end_change     => params[:end_change]
+    :position       => params[:position]
   )
   redirect '/student/resume/experience/experiences'
 end
