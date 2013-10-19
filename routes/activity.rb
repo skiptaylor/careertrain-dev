@@ -18,9 +18,7 @@ post '/student/resume/activities/new/?' do
     :organization       => params[:organization],
     :date_start         => params[:date_start],
     :date_end           => params[:date_end],
-    :student_id         => session[:student],
-    :date_start_change  => params[:date_start_change],
-    :date_end_change    => params[:date_end_change]
+    :student_id         => session[:student]
   )
   flash[:alert] = params.inspect
   
@@ -49,14 +47,14 @@ end
 post '/student/resume/activities/:id/edit/?' do
   @student = Student.get(session[:student])
   activity = Activity.get(params[:id])
+  params[:date_start] = nil if params[:date_start] == ''
+  params[:date_end] = nil if params[:date_end] == ''
   activity.update(
     :position           => params[:position],
     :organization       => params[:organization],
     :date_start         => params[:date_start],
     :date_end           => params[:date_end],
-    :student_id         => session[:student],
-    :date_start_change  => params[:date_start_change],
-    :date_end_change    => params[:date_end_change]
+    :student_id         => session[:student]
   )
   flash[:alert] = params.inspect
   redirect '/student/resume/activities/activities'

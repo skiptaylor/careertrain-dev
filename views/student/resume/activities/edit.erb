@@ -3,12 +3,9 @@
 		<div class="row">  
 			<div class="span12">
 				<h1>Activities and Associations &nbsp; <small><%= @student.name %></small></h1><br />
-		
 			<div class="span8 offset2">
-				
 				<p>You can enter others after saving.</p>
 				<form class="form-horizontal" method="post">
-					
 					<div class="control-group">
 					   <label class="control-label" for="position">Position</label>
 						<div class="controls">
@@ -33,9 +30,6 @@
 							<input type="text" class="form_date" name="date_end" id="date_end" data-date-format="MM dd, yyyy" data-link-format="yyyy-mm-dd" value="<%= @activity.date_end %>" />
 						</div>
 					</div>
-
-					
-					
 					<div class="control-group">
 						<div class="controls">
 							<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/activities/activities">Cancel</a> &nbsp; <% if @student.activities.count > 0 %><a class="btn btn-small btn-warning delete" href="/student/resume/activities/<%= @activity.id %>/delete">Delete</a><% end %>
@@ -43,7 +37,6 @@
 					</div><br />
 				</form>	
 			</div>
-			
 		</div> <!-- /row -->
 	</div> <!-- /container -->
 </div> <!-- /container-white -->

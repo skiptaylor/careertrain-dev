@@ -3,40 +3,27 @@
 		<div class="row">  
 			<div class="span12">
 				<h1>Activities and Associations &nbsp; <small><%= @student.name %></small></h1><br />
-		
-			<div class="span8 offset2">
-			
-				<p>
-					<label for="position">Position</label>
-					<%= @activity.position %>
-				</p>
-				<p>
-					<label for="organization">Organization</label>
-					<%= @activity.organization %>
-				</p>
-				<p>
-					<label for="date_start">Start Date</label>
-					<%= @activity.date_start %>
-				</p>
-				<p>
-					<label for="date_end">End Date</label>
-					<%= @activity.date_end %>
-				</p>
-				<p>
-					<label for="date_start_change">Change Start Date</label>
-					<%= @activity.date_start_change %>
-				</p>
-				<p>
-					<label for="date_end_change">Change End Date</label>
-					<%= @activity.date_end_change %>
-				</p>
-				
-				
-				<br />
-					
-				<p><a class="btn btn-success btn-small" href="/student/resume/activities/<%= @activity.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/index">Resum&eacute; Tool</a></p>
+				<div class="span8 offset2">
+					<p>
+						<label for="position">Position</label>
+						<%= @activity.position %>
+					</p>
+					<p>
+						<label for="organization">Organization</label>
+						<%= @activity.organization %>
+					</p>
+					<p>
+						<label for="date_start">Start Date</label>
+						<%= @activity.date_start %>
+					</p>
+					<p>
+						<label for="date_end">End Date</label>
+						<%= @activity.date_end %>
+					</p>
+					<br />
+					<p><a class="btn btn-success btn-small" href="/student/resume/activities/<%= @activity.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/index">Resum&eacute; Tool</a></p>
+				</div>
 			</div>
-
 		</div> <!-- /row -->
 	</div> <!-- /container -->
 </div> <!-- /container-white -->
