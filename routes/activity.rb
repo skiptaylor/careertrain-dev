@@ -20,7 +20,6 @@ post '/student/resume/activities/new/?' do
     :date_end           => params[:date_end],
     :student_id         => session[:student]
   )
-  flash[:alert] = params.inspect
   
   redirect '/student/resume/activities/activities'
 end
@@ -56,7 +55,7 @@ post '/student/resume/activities/:id/edit/?' do
     :date_end           => params[:date_end],
     :student_id         => session[:student]
   )
-  flash[:alert] = params.inspect
+
   redirect '/student/resume/activities/activities'
 end
 

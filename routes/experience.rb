@@ -46,6 +46,8 @@ end
 post '/student/resume/experience/:id/edit/?' do
   @student = Student.get(session[:student])
   experience = Experience.get(params[:id])
+  params[:start] = nil if params[:start] == ''
+  params[:end] =  nil if params[:end] == ''
   experience.update(
     :student_id     => session[:student],
     :company        => params[:company],

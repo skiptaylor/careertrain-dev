@@ -41,6 +41,7 @@ end
 post '/student/resume/awards/:id/edit/?' do
   @student = Student.get(session[:student])
   award = Award.get(params[:id])
+  params[:award_date] = nil if params[:award_date] == ''
   award.update(
     :student_id         => session[:student],
     :award              => params[:award],
