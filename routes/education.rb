@@ -45,6 +45,9 @@ end
 post '/student/resume/educations/:id/edit/?' do
   @student = Student.get(session[:student])
   education = Education.get(params[:id])
+  params[:graduate_on] = nil if params[:graduate_on] == ''
+  params[:completed_on] = nil if params[:completed_on] == ''
+  params[:graduation_date] = nil if params[:graduation_date] == ''
   education.update(
     :student_id               => session[:student],
     :attending                => params[:attending],
