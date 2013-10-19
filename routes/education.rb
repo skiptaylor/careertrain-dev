@@ -26,7 +26,6 @@ post '/student/resume/educations/new/?' do
     :study                    => params[:study],
     :degree                   => params[:degree]
   )
-  flash[:alert] = params.inspect
   redirect "/student/resume/educations/educations"
 end
 
@@ -60,7 +59,6 @@ post '/student/resume/educations/:id/edit/?' do
     :study                    => params[:study],
     :degree                   => params[:degree]
   )
-  flash[:alert] = params.inspect
   redirect "/student/resume/educations/educations"
 end
 
