@@ -14,9 +14,6 @@ class Education
   property :graduated,              String
   property :graduation_date,        Date
   property :study,                  String
-  property :grad_date_change,       Date
-  property :completed_date_change,  Date
-  property :graduation_date_change, Date
   property :degree,                 String
   
   belongs_to :student, required: false

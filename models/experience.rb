@@ -12,8 +12,6 @@ class Experience
   property :start,        Date
   property :end,          Date
   property :position,     String
-  property :start_change, Date
-  property :end_change,   Date
   
   belongs_to :student, required: false
   

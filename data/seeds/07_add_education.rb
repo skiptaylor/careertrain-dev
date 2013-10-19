@@ -14,9 +14,6 @@ CSV.open('./data/ct_resume_databases/education.csv', { headers: true }) do |csv_
       graduated:              line['Graduated'],
       graduation_date:        line['Graduation_Date'],
       study:                  line['Study'],
-      grad_date_change:       line['Grad_Date_Change'],
-      completed_date_change:  line['Completed_Date_Change'],
-      graduation_date_change: line['Graduation_Date_Change'],
       degree:                 line['Degree_Recieved']
     )
   end
