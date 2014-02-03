@@ -448,3 +448,21 @@ blockquote {
 	opacity: 0.4;
 }
 
+div#alert {
+	display: none;
+	position: absolute;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 4em;
+	display: block;
+	background-color: rgba(254, 226, 027, 0.2);
+	padding: 0 12px;
+	margin: 0 auto;
+	text-align: center;
+	color: #e82602;
+	font-weight: 800;
+	z-index: 999;
+}
+
+
+

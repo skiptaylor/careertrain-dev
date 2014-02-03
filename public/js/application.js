@@ -14,6 +14,14 @@ jQuery(function() {
 		$('a.job-link[data-status="' + status + '"]').show();
 		return false;
 	});
+	
+	$(document).ready(function(){
+		setTimeout(function(){
+			$("div#alert").fadeOut("slow", function () {
+			$("div#alert").remove();
+	      });
+		}, 4500);
+	});
 		
 });
 
