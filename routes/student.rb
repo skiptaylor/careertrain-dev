@@ -79,9 +79,9 @@ end
 
 post '/student/resume/create/?' do
   params[:email].strip!
-  params[:email].downcase!
+  
   params[:password].strip!
-  params[:password].downcase!
+  
   params[:school_password].strip!
   params[:school_password].downcase!
 
@@ -114,15 +114,16 @@ get "/student/resume/:id/student/?" do
   erb :"student/resume/student"
 end
 
-get "/student/resume/signin/?" do 
+get "/student/resume/signin/?" do
+  @student = Student.all
   erb :"student/resume/signin"
 end
 
 post '/student/resume/signin/?' do
   params[:email].strip!
-  params[:email].downcase!
+  
   params[:password].strip!
-  params[:password].downcase!
+  
 
   @errors << :email_not_found unless @student = Student.first(email: params[:email])
   @errors << :password_not_matched unless @student && @student.password == params[:password]
