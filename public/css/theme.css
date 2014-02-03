@@ -77,16 +77,6 @@ body {
 }
 
 
-lert	{
-	font-weight: 600;
-	position: fixed;
-	color: #de6658;
-	margin: 0 auto;
-	left: 55%;
-	background: transparent;
-	border: 0px;
-}
-
 @media (max-width: 980px) { body { padding-top: 0px; } }
 
 ul li, ol li	{
@@ -454,11 +444,11 @@ div#alert {
 	position: absolute;
 	width: 100%;
 	font-family: 'Open Sans', sans-serif;
-	line-height: 4em;
+	line-height: 2em;
 	display: block;
 	background-color: rgba(254, 226, 027, 0.2);
-	padding: 0 12px;
-	margin: 0 auto;
+	padding: 0 4px;
+	margin: 36px auto 0 auto;
 	text-align: center;
 	color: #e82602;
 	font-weight: 800;
