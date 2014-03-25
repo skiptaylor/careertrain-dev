@@ -6,10 +6,6 @@ get '/index/?' do
 	erb :index, layout: false
 end
 
-get '/admin/?'  do
-  erb :"/admin/admin"
-end
-
 get '/admin/admin_edit/?'  do
   auth_admin
   erb :"/admin/admin_edit"

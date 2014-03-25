@@ -122,6 +122,7 @@ end
 post '/student/resume/signin/?' do
   params[:email].strip!
   
+  
   params[:password].strip!
   
 
