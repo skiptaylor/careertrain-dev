@@ -5,17 +5,55 @@
 				<div class="sign-in" style="padding:24px 32px; margin: 48px 0;">
 		      <form class="form-signin" method="post">
 		        <h1 class="form-signin-heading">Create New Account</h1>
-				  <input type="school_password" class="input-block-level" placeholder="School's password" name="school_password" id="school_password" value="<%= params[:school_password] %>">
-				  <p style="line-height: 1em;"><small>If you do not know your school's password, please contact your guidance counselor or teacher.</small></p>
-		        <input type="text" class="input-block-level" placeholder="Email address" name="email" id="email" value="<%= params[:email] %>">
-		        <input type="password" class="input-block-level" placeholder="Personal password" name="password" id="password" value="<%= params[:password] %>">
-		        <p><label class="checkbox">
-		          <input type="checkbox" value="remember-me" checked> I am 13 or older
-		        </label></p>
-		        <p><button class="btn btn-primary" type="submit">Create</button></p>
+					<div class="control-group">
+						<label class="control-label"for="school_password">School's Password</label>
+						<div class="controls">
+							<input type="text" class="textfield span4" placeholder="School's Password" name="school_password" id="school_password" value="<%= params[:school_password] %>" />
+							<span class="help-block" style="line-height: 1.2em;"><small>If you do not know your school's password, please contact your guidance counselor or teacher.</small></span>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label"for="email">Email Address</label>
+						<div class="controls">
+							<input type="text" class="textfield span4" placeholder="Email Address" name="email" id="email" value="<%= params[:email] %>" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label"for="password">Personal Password</label>
+						<div class="controls">
+							<input type="text" class="textfield span4" placeholder="Personal Password" name="password" id="password" value="<%= params[:password] %>" />
+						</div>
+					</div>
+						
+	  				<div class="control-group" style="margin-bottom: 1.6em;">
+	  				    <div class="controls">
+	  				      <label class="checkbox">
+							  <input type="checkbox" value="account" checked="checked" onClick="EnableSubmit(this)" /> I am 13 or older
+						  </label>
+	  					</div>
+	  				</div>
+				  <div class="control-group">
+					  <label class="control-label" for="account"></label>
+					  <div class="controls">
+						  <button class="btn btn-primary" id="account" type="submit">Create Account</button> <a href="/student/resume_tool" class="btn pull-right">Cancel</a>
+					  </div>
+				  </div>
 		      </form>
 				</div>
 			</div>
-		</div> <!-- /row -->
-	</div> <!-- /container -->
-</div> <!-- /container-white -->
+		</div>
+	</div>
+	<script type="text/javascript">
+		EnableSubmit = function(val) {
+		var submit = document.getElementById("account");
+			if (val.checked == true) {
+	        submit.disabled = false;
+	    	}
+			else {
+	        submit.disabled = true;
+		  	}
+		}
+	</script>
+</div>
+
+		

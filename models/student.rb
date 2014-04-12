@@ -9,6 +9,8 @@ class Student
   property :password, String
   property :last_activity, Date
   property :create_date, Date
+  
+  property :agegate,  Boolean, :default => false
 
  # From Contact
   property :name,  String

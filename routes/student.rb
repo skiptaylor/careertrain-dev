@@ -96,6 +96,7 @@ post '/student/resume/create/?' do
     flash[:alert] = 'There was an error creating your account. Please try again.'
     erb :'/student/resume_tool'
   end
+    
 end
 
 get "/student/resume/students/?" do

@@ -12,28 +12,28 @@
 			    	<h1>Sign In</h1>
 
 			    	<p>
-				      <label>Email address</label>
-				      <input type="text" name="email" id="email" class="input-xlarge" value="<%= params[:email] %>" />
+				      <label>Email Address</label>
+				      <input type="text" name="email" id="email" class="input-xlarge span4" placeholder="Email Address" value="<%= params[:email] %>" />
 				      <% if @errors.include? :email_not_found %>
 				        <span class="help-inline">That email address isn't in our system. Maybe you need to <a href="/student/resume/create">create an account</a>.</span>
 				      <% end %>
 				    </p>
 
 				    <p>
-				      <label>Password</label>
-				      <input type="password" name="password" id="password" class="input-xlarge" value="<%= params[:password] %>" />
+				      <label>Personal Password</label>
+				      <input type="password" name="password" id="password" placeholder="Personal Password" class="input-xlarge span4" value="<%= params[:password] %>" />
 				      <% if @errors.include?(:password_not_matched) && !@errors.include?(:email_not_found) %>
 				        <span class="help-inline">Wrong password.</span>
 				      <% end %>
 				    </p>
 
 				    <p>
-				      <button type="submit" class="btn btn-primary">Sign In</button>
+				      <button type="submit" class="btn btn-primary">Sign In</button> <a href="/student/resume_tool" style="margin-right: 15px;" class="btn pull-right">Cancel</a>
 				    </p>
 				  </fieldset>
 				</form>
 			</div>
 			</div>	
-		</div> <!-- /row -->
-	</div> <!-- /container -->
-</div> <!-- /container-white -->
+		</div>
+	</div>
+</div>
