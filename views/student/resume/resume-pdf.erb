@@ -1,0 +1,91 @@
+
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span12">
+				<div class="span12">
+					<h1>Resum&eacute;</h1><br />
+				</div>
+				<div class="span10 offset1">	
+					
+					<!-- <p class="pull-right"><a class="btn btn-small btn-success" href="/student/resume/resume-print">Download Text</a></p> -->
+					<p><a class="btn btn-small" href="/student/resume/index">Resum&eacute; Tool</a></p>
+					<hr />
+						<p>You can also copy and paste contents into a Microsoft Word or similar document to edit and save.</p>
+						<p class="semi-bold ">Check grammar and spelling.</p>
+					
+		
+						<div class="resume-content">
+		
+							<h1><%= @student.name %></h1>
+							<p><%= @student.address %><br />
+							<%= @student.city %>, <%= @student.state %> <%= @student.zip %><br />
+							<%= @student.phone %><br />
+							<%= @student.email %>
+							</p>
+		
+							<h2 style="margin-top: 9px;">Objectives</h2>
+							<% @student.objectives.each do |objective| %>
+								<p>My immediate goal is to work as <%= objective.goal %>. This will help me learn <%= objective.learn %>, as I pursue my long-term goal of <%= objective.long_goal %>.
+							<% end %>
+							<h2>Career Skills and Accomplishments</h2>
+							<% @student.skills.each do |skill| %>
+								<h3><%= skill.skill.capitalize %></h3>
+								<ul>
+									<li><%= skill.applied_1.capitalize %></li>
+									<% if skill.applied_2 != "" %><li><%= skill.applied_2 %></li><% end %>
+								</ul>
+							<% end %>
+		
+		
+							<h2>Education</h2>
+							<% @student.educations.each do |education| %>
+								<ul>
+									<% if education.attending != "" %><li>Scheduled to graduate from <%= education.attending %><% if education.graduate_on != nil %> on <%= format_day(education.graduate_on) %><% end %>.</li><% end %>
+									<% if education.plan_attend != "" %><li>I plan to attend <%= education.plan_attend %> to study <%= education.study %>.</li><% end %>
+									<% if education.completed != "" %><li>I have completed <%= education.completed %> on <%= format_day(education.completed_on) %></li><% end %>
+									<% if education.graduated != "" %><li>I have graduated from <%= education.graduated %> on <%= format_day(education.graduation_date) %> with a <%= education.degree %> degree.</li><% end %>
+								</ul>
+							<% end %>
+		
+							<h2>Work Experience</h2>
+							<% @student.experiences.each do |experience| %>
+							<ul>
+
+								<li><%= experience.company %>, <%= experience.position %>, <%= experience.city %>, <%= experience.state %><% if experience.start != nil %>, <%= format_day(experience.start) %><% end %><% if experience.end != nil %> - <%= format_day(experience.end) %><% end %></li>
+
+							</ul>
+							<% end %>
+		
+		
+							<h2>Activities and Associations</h2>
+							<% @student.activities.each do |activity| %>
+							<ul>
+								<li><%= activity.position.capitalize %>, <%= activity.organization %><% if activity.date_start != nil %>, <%= format_day(activity.date_start) %><% end %><% if activity.date_end != nil %> - <%= format_day(activity.date_end) %><% end %></li>
+							</ul>
+							<% end %>
+		
+		
+							<h2>Awards and Commendations</h2>
+							<% @student.awards.each do |award| %>
+							<ul>
+								<li><%= award.award.capitalize %><% if award.award_date != nil %>, <%= format_day(award.award_date) %><% end %></li>
+							</ul>
+							<% end %>
+		
+		
+							<h2>Interests and Hobbies</h2>
+								<% @student.interests.each do |interest| %>
+								<ul>
+									<li><%= interest.interest.capitalize %></li>
+								</ul>
+								<% end %>
+		
+						<p class="lead"><em>References available upon request</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

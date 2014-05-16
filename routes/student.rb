@@ -116,16 +116,16 @@ get "/student/resume/:id/student/?" do
 end
 
 get "/student/resume/signin/?" do
+	session[:student] = nil
+	session.clear
   @student = Student.all
   erb :"student/resume/signin"
 end
 
 post '/student/resume/signin/?' do
+  
   params[:email].strip!
-  
-  
   params[:password].strip!
-  
 
   @errors << :email_not_found unless @student = Student.first(email: params[:email])
   @errors << :password_not_matched unless @student && @student.password == params[:password]

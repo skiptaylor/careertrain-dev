@@ -78,11 +78,15 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
-    multi_json (1.9.2)
+    multi_json (1.10.0)
     paint (0.8.7)
+    pdf-core (0.2.5)
     polyglot (0.3.4)
     pony (1.8)
       mail (>= 2.0)
+    prawn (1.0.0)
+      pdf-core (~> 0.2.2)
+      ttfunk (~> 1.1.1)
     rack (1.5.2)
     rack-flash3 (1.0.5)
       rack
@@ -91,7 +95,7 @@ GEM
     rack-test (0.6.2)
       rack (>= 1.0)
     rake (10.1.1)
-    sass (3.3.5)
+    sass (3.3.7)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -115,6 +119,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
+    ttfunk (1.1.1)
     uuidtools (2.1.4)
 
 PLATFORMS
@@ -131,6 +136,7 @@ DEPENDENCIES
   jsmin (>= 1.0.1)
   kramdown (>= 0.14.2)
   pony (~> 1.4)
+  prawn (~> 1.0.0)
   rake (~> 10.1.0)
   sass (>= 3.2.9)
   sinatra (>= 1.4.3)
