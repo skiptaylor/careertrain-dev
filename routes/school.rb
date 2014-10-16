@@ -1,6 +1,13 @@
 get '/arng/schools/schools/?' do
   auth_cdguard
-	@school = School.all
+	@school = School.all(order: [:updated_at.desc], limit: 300)
+  
+	if params[:search] && !params[:search].nil?
+		@school = School.all(:school_name.like => "%#{params[:search]}%", limit: 300)
+	else
+		@school = School.all(:school_name.not => nil, order: [:updated_at.desc], limit: 300)
+	end
+  
 	erb :'/arng/schools/schools'
 end
 

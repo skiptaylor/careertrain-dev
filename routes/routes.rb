@@ -16,7 +16,7 @@ post '/admin/admin/?' do
     session[:admin] = true
     redirect '/admin/admin_edit'
   else
-    flash[:alert] = 'Bad Login. Try Again.'
+    flash[:alert] = 'Yikes! Try typing that again.'
     redirect '/admin/admin'
   end
 end
