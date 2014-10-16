@@ -12,7 +12,7 @@
 			    	<h1>Sign In</h1>
 
 			    	<p>
-				      <label>Email Address</label>
+				      <label>Email Address - <small style="color: #808080;">Case sensitive</small></label>
 				      <input type="text" name="email" id="email" class="input-xlarge span4" placeholder="Email Address" value="<%= params[:email] %>" />
 				      <% if @errors.include? :email_not_found %>
 				        <span class="help-inline">That email address isn't in our system. Maybe you need to <a href="/student/resume/create">create an account</a>.</span>
@@ -20,7 +20,7 @@
 				    </p>
 
 				    <p>
-				      <label>Personal Password</label>
+				      <label>Personal Password - <small style="color: #808080;">Case sensitive</small></label>
 				      <input type="password" name="password" id="password" placeholder="Personal Password" class="input-xlarge span4" value="<%= params[:password] %>" />
 				      <% if @errors.include?(:password_not_matched) && !@errors.include?(:email_not_found) %>
 				        <span class="help-inline">Wrong password.</span>
