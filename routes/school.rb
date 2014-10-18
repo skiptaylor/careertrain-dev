@@ -116,7 +116,7 @@ post '/arng/arng/?' do
     session[:cdguard] = true
     redirect '/arng/leads'
   else
-    flash[:alert] = 'Bad Login. Try Again.'
+    flash[:alert] = 'Please enter a valid authorization code or your state, name and email below.'
     redirect '/arng/arng'
   end
 end
