@@ -77,24 +77,68 @@ get "/student/resume/create/?" do
   erb :'student/resume/create'
 end
 
+# post '/student/resume/create/?' do
+#   params[:email].strip!
+#
+#   params[:password].strip!
+#
+#   params[:school_password].strip!
+#   params[:school_password].downcase!
+#
+#   @errors << :email_in_use if Student.all(email: params[:email]).count > 0
+#
+#   if @errors.count == 0
+#     @student = Student.create(email: params[:email], password: params[:password])
+#     session[:student] = @student.id
+#     flash[:alert] = 'You are now signed in.'
+#     redirect '/student/resume/index'
+#   else
+#     flash[:alert] = 'There was an error creating your account. Please try again.'
+#     erb :'/student/resume_tool'
+#   end
+#
+# end
+
 post '/student/resume/create/?' do
   params[:email].strip!
-  
   params[:password].strip!
-  
   params[:school_password].strip!
   params[:school_password].downcase!
 
-  @errors << :email_in_use if Student.all(email: params[:email]).count > 0
+  unless params[:school_password] == ''
+    
+    if school = School.first(:school_password => params[:school_password])
+  
+      unless params[:email] == ''
 
-  if @errors.count == 0
-    @student = Student.create(email: params[:email], password: params[:password])
-    session[:student] = @student.id
-    flash[:alert] = 'You are now signed in.'
-    redirect '/student/resume/index'
+        unless student = Student.first(:email => params[:email])
+          unless params[:password] == ''
+            @student = Student.create(email: params[:email], password: params[:password])
+            session[:student] = @student.id
+            flash[:alert] = 'You are now signed in.'
+            redirect '/student/resume/index'
+          else
+            flash[:alert] = 'Please create a personal password that will be used to sign into your account.'
+            erb :"student/resume/create"
+          end
+        else
+          flash[:alert] = 'This email already exists. Maybe you need to sign in.'
+          erb :"student/resume/create"
+        end
+      
+      else
+        flash[:alert] = 'You must enter your personal email.'
+        erb :"student/resume/create"
+      end 
+      
+    else
+      flash[:alert] = 'That is not a valid school password.'
+      erb :"student/resume/create"
+    end 
+    
   else
-    flash[:alert] = 'There was an error creating your account. Please try again.'
-    erb :'/student/resume_tool'
+    flash[:alert] = 'You must enter a valid school password.'
+    erb :"student/resume/create"
   end
     
 end
