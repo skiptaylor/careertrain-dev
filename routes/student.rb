@@ -196,11 +196,11 @@ post '/student/resume/signin/?' do
         flash[:alert] = 'Welcome back! You are now signed in.'
         redirect "/student/resume/index"
       else
-        flash[:alert] = 'Email/password combo does not match. Try again.'
+        flash[:alert] = 'Your password is incorrect.'
         erb :"student/resume/signin"
       end
     else
-      flash[:alert] = 'This email is not linked to an existing account. Maybe you need to create an account.'
+      flash[:alert] = 'We can\'t find an account with that email address. Maybe you need to create an one.'
       erb :"student/resume/signin"
     end
     
@@ -209,7 +209,16 @@ post '/student/resume/signin/?' do
     erb :"student/resume/signin"
   end
   
+  # Email.reset(student.email, student.password)
+  
 end
+
+# get "/student/resume/reset_password/?" do
+#   @student = Student.all
+#
+#
+#   erb :"student/resume/signin"
+# end
 
 get "/student/resume/sign-out/?" do
   session[:student] = nil
