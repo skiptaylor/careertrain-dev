@@ -112,7 +112,7 @@ get '/arng/schools/:id/delete/?' do
 end
 
 post '/arng/arng/?' do
-  if (params[:password].strip.downcase == 'cdguard') || (params[:email].strip.downcase.include?('.mil'))
+  if (params[:password].strip.downcase == 'cdguard') || (params[:password].strip == 'Protect') || (params[:email].strip.downcase.include?('.mil'))
     session[:cdguard] = true
     redirect '/arng/leads'
   else
