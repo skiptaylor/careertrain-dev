@@ -6,9 +6,9 @@ require 'sinatra/chassis/helpers'
 require 'sinatra/reloader' if development?
 
 use Rack::Protection, :except => :session_hijacking
-
 enable :sessions
-set :session_secret, 'secret123'
+use Rack::Session::Cookie,  :Key => 'rck.session', 
+                            :secret => 'secret123'
 
 require_directory([
   'config',
