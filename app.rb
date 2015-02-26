@@ -7,7 +7,8 @@ require 'sinatra/reloader' if development?
 
 use Rack::Protection, :except => :session_hijacking
 enable :sessions
-use Rack::Session::Cookie,  :Key => 'rck.session', 
+set :session_secret, 'supersecret'
+use Rack::Session::Cookie,  :Key => 'rack.session', 
                             :secret => 'secret123'
 
 require_directory([
