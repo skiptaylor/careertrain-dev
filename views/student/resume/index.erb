@@ -233,14 +233,14 @@
 			<div class="span6 offset1">
 				<h6>Account Info</h6>
 				<p><%= @student.email %></p>
-
+				<% unless @student.name == "" %>
 				<p>
 					<strong><%= @student.name %></strong><br />
 					<%= @student.address %><br />
 					<%= @student.city %> <%= @student.state %> <%= @student.zip %><br />
 					<%= @student.phone %>
 				</p>
-				
+				<% end %>
 				<hr />
 				<p><strong>View these documents</strong> at any time to check your progress, grammar, and spelling.</p>
 				<p><a href="/student/resume/letters/letters-view" class="btn btn-small btn-success">Cover Letters</a> <a href="/student/resume/resume-view" class="btn btn-small btn-success">Resum&eacute;</a> <a href="/student/resume/resume-print" class="btn btn-small btn-success">Print</a> <a href="/student/resume/references/references-view" class="btn btn-small btn-success">References</a></p>
