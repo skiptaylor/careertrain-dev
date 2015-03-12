@@ -32,7 +32,7 @@ jQuery(function() {
 			$("div#alert").fadeOut("slow", function () {
 			$("div#alert").remove();
 	      });
-		}, 9500);
+		}, 3600);
 	});
 
 }).call(this);
