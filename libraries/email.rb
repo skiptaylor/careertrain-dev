@@ -18,7 +18,7 @@ class Email
     body << "<p>School Name: #{school_name}</p>"
     body << "<p>#{school_address1}</p>"
     body << "<p>#{school_address2}</p>"
-    body << "<p>$#{school_city} #{school_state} #{school_zip}</p>"
+    body << "<p>#{school_city} #{school_state} #{school_zip}</p>"
     body << "<p>Contac: #{first_name} #{last_name}</p>"
     body << "<p>Email: #{email}</p>"
     body << "<p>Phone: #{phone}</p>"
