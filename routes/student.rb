@@ -200,7 +200,7 @@ post '/student/resume/signin/?' do
         erb :"student/resume/signin"
       end
     else
-      flash[:alert] = 'We can\'t find an account with that email address. Maybe you need to create an one.'
+      flash[:alert] = 'We can\'t find an account with that email address. Maybe you need to create one.'
       erb :"student/resume/signin"
     end
     
@@ -209,16 +209,33 @@ post '/student/resume/signin/?' do
     erb :"student/resume/signin"
   end
   
-  # Email.reset(student.email, student.password)
-  
 end
 
-# get "/student/resume/reset_password/?" do
-#   @student = Student.all
-#
-#
-#   erb :"student/resume/signin"
-# end
+get "/student/resume/reset/?" do
+	session[:student] = nil
+	session.clear
+  @student = Student.all
+  
+  erb :"student/resume/reset"
+end
+
+post "/student/resume/reset/?" do
+  params[:email].strip!
+  
+  unless params[:email] == ''
+    if student = Student.first(:email => params[:email])
+      Email.reset(student.email, student.password)
+      redirect "/student/resume/reset_password"
+    else
+      flash[:alert] = 'We can\'t find an account with that email address. Maybe you need to create one or try again.'
+      erb :"student/resume/reset"
+    end
+  else
+    flash[:alert] = 'You must enter a valid email.'
+    erb :"student/resume/reset"
+  end
+  
+end
 
 get "/student/resume/sign-out/?" do
   session[:student] = nil
