@@ -211,6 +211,8 @@ post '/student/resume/signin/?' do
   
 end
 
+
+
 get "/student/resume/reset/?" do
 	session[:student] = nil
 	session.clear
@@ -236,6 +238,8 @@ post "/student/resume/reset/?" do
   end
   
 end
+
+
 
 get "/student/resume/sign-out/?" do
   session[:student] = nil

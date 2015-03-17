@@ -1,13 +1,14 @@
 class Email
 
-  def self.reset(to, password)
+  def self.reset(student.email, student.password)
     body = ""
-    body << '<p>Your Password: #{password}</p>'
+    body << '<p>Careertrain.com Resume Tool Account</p>'
+    body << '<p>Your Password: #{student.password}</p>'
 
     Pony.mail(headers: { 'Content-Type' => 'text/html' },
-                   to: to,
+                   to: student.email,
                  from: 'no-reply@careertrain.com',
-              subject: 'Account Password',
+              subject: 'Resume Tool Account Password',
                  body: body)
   end
   
