@@ -6,7 +6,7 @@ class Email
     body << '<p>Your Password: #{password}</p>'
 
     Pony.mail(headers: { 'Content-Type' => 'text/html' },
-                   to: to,
+                   to: email,
                  from: 'no-reply@careertrain.com',
               subject: 'Resume Tool Account Password',
                  body: body)
