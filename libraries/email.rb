@@ -3,7 +3,7 @@ class Email
   def self.reset(to, password)
     body = ""
     body << '<p>Resume Tool Account</p>'
-    body << '<p>Your Password: #{student.password}</p>'
+    body << '<p>Your Password: #{password}</p>'
 
     Pony.mail(headers: { 'Content-Type' => 'text/html' },
                    to: to,
