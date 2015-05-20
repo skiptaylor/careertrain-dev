@@ -38,6 +38,12 @@
 						<td style="text-align: center;"><a href="/arng/schools/<%= school.id %>/edit"> <i class="icon-edit"></i> </a></td>
 					</tr>
 					<% end %>
+					<tr>
+						<td colspan="5">Total number of registered schools: <%= @school.count %><br />
+							Total number of active schools: <% @school = School.all(:active => true) %> <%= @school.count %><br />
+							Total number of active schools: <% @school = School.all(:active => false) %> <%= @school.count %>
+						</td>
+					</tr>
 				</table>
 			</div>
 
