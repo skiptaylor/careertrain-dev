@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.2.0'
 
 gem 'chronic', '~> 0.9.1'
 gem 'coffee-script', '>= 2.2.0'
