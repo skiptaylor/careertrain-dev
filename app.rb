@@ -3,7 +3,7 @@ Bundler.require
 
 require 'sinatra'
 require 'sinatra/chassis/helpers'
-require "prawn"
+
 require 'sinatra/reloader' if development?
 
 use Rack::Protection, :except => :session_hijacking
