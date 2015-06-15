@@ -33,3 +33,4 @@ class Student
   has n, :traits, :constraint => :destroy
   
 end
+

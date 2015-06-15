@@ -30,6 +30,7 @@
 						<th style="text-align: center;">Edit</th>
 					</tr>
 					<% @school.sort_by(&:updated_at).each do |school| %>
+					
 					<tr>
 						<td><%= school.school_name %></td>
 						<td><%= school.school_city %>,  <%= school.school_state %></td>
@@ -38,6 +39,12 @@
 						<td style="text-align: center;"><a href="/arng/schools/<%= school.id %>/edit"> <i class="icon-edit"></i> </a></td>
 					</tr>
 					<% end %>
+					<tr>
+						<th colspan="5"><small>Total number of registered schools: <%= @school.count %><br /> 
+							Total number of active schools:<% @school = School.all(:active => true) %> <%= @school.count %><br />
+							Total number of inactive schools:<% @school = School.all(:active => false) %> <%= @school.count %></small>
+						</th>
+					</tr>
 				</table>
 			</div>
 
