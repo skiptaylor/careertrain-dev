@@ -1,11 +1,45 @@
-
-
 get '/?' do
 	erb :index, layout: false
 end
 
 get '/index/?' do
 	erb :index, layout: false
+end
+
+get '/educator/index/?' do
+	erb :'/educator/index'
+end
+
+get '/educator/steps/?' do
+	erb :'/educator/steps'
+end
+
+get '/educator/feedback/?' do
+	erb :'/educator/feedback'
+end
+
+get '/educator/resources/?' do
+	erb :'/educator/resources'
+end
+
+get '/contact_us/?' do
+	erb :'/contact_us'
+end
+
+get '/admin/admin/?' do
+	erb :'/admin/admin'
+end
+
+get '/about/?' do
+	erb :'/about'
+end
+
+get '/nac/?' do
+	erb :'/nac'
+end
+
+get '/arng/arng/?' do
+	erb :'/arng/arng'
 end
 
 get '/admin/admin_edit/?'  do
@@ -28,16 +62,19 @@ get '/student/report/scores' do
 end
 
 get '/student/resume/resume-view' do
+  auth_student
   @student = Student.get(session[:student])
   erb :'/student/resume/resume-view'
 end
 
 get '/student/resume/resume-print' do
+  auth_student
   @student = Student.get(session[:student])
   erb :'/student/resume/resume-print', layout: false
 end
 
 get '/student/resume/resume-pdf' do
+  auth_student
   @student = Student.get(session[:student])
   
   
@@ -145,18 +182,21 @@ get '/download' do
 end
 
 get '/student/resume/references/references-view' do
+  auth_student
   @student = Student.get(session[:student])
   @reference = Reference.get(params[:id])
   erb :'/student/resume/references/references-view'
 end
 
 get '/student/resume/letters/letters-view/?' do
+  auth_student
   @student = Student.get(session[:student])
   @letter = Letter.get(params[:id])
   erb :"/student/resume/letters/letters-view"
 end
 
 get '/student/resume/letters/:id/cover-letter' do
+  auth_student
   @student = Student.get(session[:student])
   @letter = Letter.get(params[:id])
   @objective = Objective.get(params[:id])
@@ -164,6 +204,7 @@ get '/student/resume/letters/:id/cover-letter' do
 end
 
 get '/student/resume/letters/:id/thank-you-letter' do
+  auth_student
   @student = Student.get(session[:student])
   @letter = Letter.get(params[:id])
   erb :'/student/resume/letters/thank-you-letter'

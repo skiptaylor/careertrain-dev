@@ -168,20 +168,3 @@ get '/arng/show_schools/?' do
   erb :"/arng/show_schools"
 end
 
-helpers do
-
-  def auth_cdguard
-    unless session[:cdguard] == true || session[:admin] == true
-      flash[:alert] = 'You must login to see that page.'
-      redirect '/arng/arng'
-    end
-  end
-
-  def auth_admin
-    unless session[:admin] == true
-      flash[:alert] = 'You must be an admin to see that page.'
-      redirect '/index'
-    end
-  end
-
-end
