@@ -259,19 +259,19 @@ get "/student/resume/sign-out/?" do
 end
   
 get "/student/resume/index/?" do
-  auth_student
+  
   @student = Student.get(session[:student])
   erb :"student/resume/index"
 end
 
 get '/student/resume/:id/edit/?' do
-  auth_student
+  
   @student = Student.get(params[:id])
   erb :'/student/resume/edit_student'
 end
 
 post '/student/resume/:id/edit/?' do
-  auth_student
+  
   @student = Student.get(params[:id]).update(
     :email     => params[:email],
     :password  => params[:password],
@@ -286,13 +286,13 @@ post '/student/resume/:id/edit/?' do
 end
 
 get '/student/resume/edit/?' do
-  auth_student
+  
   @student = Student.get(session[:student])
   erb :'/student/resume/edit_student'
 end
 
 post '/student/resume/edit/?' do
-  auth_student
+  
   @student = Student.get(session[:student]).update(
     :email     => params[:email],
     :password  => params[:password],
@@ -307,7 +307,7 @@ post '/student/resume/edit/?' do
 end
 
 get '/student/resume/:id/delete/?' do
-  auth_student
+  
   student = Student.get(params[:id])
   student.destroy
   redirect '/student/resume/students'

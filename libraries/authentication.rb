@@ -5,18 +5,7 @@ helpers do
   # role - Symbol of the role to authenticate, such as :student or :rrc
   #
   # Returns nothing.
-  def authenticate(role)
 
-    case role
-
-    when :student
-      unless session[role]
-        flash[:alert] = 'You must sign in to see that page.'
-        redirect 'student/resume/signin'
-      end
-    end
-
-  end
 
   def auth_cdguard
     unless session[:cdguard] == true || session[:admin] == true

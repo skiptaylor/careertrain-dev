@@ -62,19 +62,19 @@ get '/student/report/scores' do
 end
 
 get '/student/resume/resume-view' do
-  auth_student
+  
   @student = Student.get(session[:student])
   erb :'/student/resume/resume-view'
 end
 
 get '/student/resume/resume-print' do
-  auth_student
+  
   @student = Student.get(session[:student])
   erb :'/student/resume/resume-print', layout: false
 end
 
 get '/student/resume/resume-pdf' do
-  auth_student
+  
   @student = Student.get(session[:student])
   
   
@@ -182,21 +182,21 @@ get '/download' do
 end
 
 get '/student/resume/references/references-view' do
-  auth_student
+  
   @student = Student.get(session[:student])
   @reference = Reference.get(params[:id])
   erb :'/student/resume/references/references-view'
 end
 
 get '/student/resume/letters/letters-view/?' do
-  auth_student
+  
   @student = Student.get(session[:student])
   @letter = Letter.get(params[:id])
   erb :"/student/resume/letters/letters-view"
 end
 
 get '/student/resume/letters/:id/cover-letter' do
-  auth_student
+  
   @student = Student.get(session[:student])
   @letter = Letter.get(params[:id])
   @objective = Objective.get(params[:id])
@@ -204,7 +204,7 @@ get '/student/resume/letters/:id/cover-letter' do
 end
 
 get '/student/resume/letters/:id/thank-you-letter' do
-  auth_student
+  
   @student = Student.get(session[:student])
   @letter = Letter.get(params[:id])
   erb :'/student/resume/letters/thank-you-letter'
