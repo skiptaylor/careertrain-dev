@@ -73,7 +73,7 @@ get '/student/resume/resume-print' do
   erb :'/student/resume/resume-print', layout: false
 end
 
-get '/student/resume/resume-pdf' do
+get '/student/resume/resume' do
   
   @student = Student.get(session[:student])
   
@@ -171,10 +171,13 @@ get '/student/resume/resume-pdf' do
 	    pdf.text "<b><i>References available upon request</i></b>", 
       :inline_format => true, :align => :center
 
-    pdf.render_file "#{@student.name.split.join}-resume.pdf"
+    pdf.render
     
-    send_file "#{@student.name.split.join}-resume.pdf", :type => :pdf
     
+    # pdf.render_file "#{@student.name.split.join}-resume.pdf"
+#
+#     send_file "#{@student.name.split.join}-resume.pdf", :type => :pdf
+
 end
 
 get '/download' do
