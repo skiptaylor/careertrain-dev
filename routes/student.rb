@@ -250,7 +250,9 @@ post "/student/resume/reset/?" do
 
 end
 
-
+get "/student/resume/reset_password/?" do
+  erb :"student/resume/reset_password"
+end
 
 get "/student/resume/sign-out/?" do
   session[:student] = nil
