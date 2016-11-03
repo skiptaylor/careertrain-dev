@@ -26,6 +26,18 @@ get '/contact_us/?' do
 	erb :'/contact_us'
 end
 
+post '/contact_us/?' do
+	erb :'/contact_us'
+   
+   Email.contactUs
+  
+   redirect "/thanks"
+end
+
+get '/thanks/?' do
+	erb :'/thanks'
+end
+
 get '/admin/admin/?' do
 	erb :'/admin/admin'
 end
