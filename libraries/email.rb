@@ -34,15 +34,4 @@ class Email
     )
   end
   
-  def self.contactUs name, email, subject, msg 
-    
-    Pony.mail(
-      headers: { 'Content-Type' => 'text/html' },
-      to: 'info@careertrain.com, tayloraid@gmail.com',
-      from: 'no-reply@careertrain.com',
-      subject: "#{params[:subject]}",
-      body: "#{:msg}<hr />#{:name}<br />#{:email}"
-    )
-  end
-
 end

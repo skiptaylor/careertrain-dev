@@ -27,11 +27,14 @@ get '/contact_us/?' do
 end
 
 post '/contact_us/?' do
-	erb :'/contact_us'
-   
-   Email.contactUs(:name, :email, :subject, :msg)
-  
-   redirect "/thanks"
+	Pony.mail(
+		headers: { 'Content-Type' => 'text/html' },
+		to: 'info@careertrain.com, skip@tayloraid.com',
+		from: 'contactUs@careertrain.com',
+		subject: "#{params[:subject]}",
+		body: "#{markdown params[:msg]}<hr />#{params[:name]}<br />#{params[:email]}"
+	)
+	redirect '/thanks'
 end
 
 get '/thanks/?' do
