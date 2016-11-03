@@ -34,7 +34,7 @@ class Email
     )
   end
   
-  def self.contactUs   
+  def self.contactUs name, email, subject, msg 
     
     Pony.mail(
       headers: { 'Content-Type' => 'text/html' },
