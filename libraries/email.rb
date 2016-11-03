@@ -40,7 +40,7 @@ class Email
       headers: { 'Content-Type' => 'text/html' },
       to: 'info@careertrain.com, tayloraid@gmail.com',
       from: 'no-reply@careertrain.com',
-      subject: "subject",
+      subject: "#{params[:subject]}",
       body: "#{:msg}<hr />#{:name}<br />#{:email}"
     )
   end

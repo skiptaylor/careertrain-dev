@@ -29,7 +29,7 @@ end
 post '/contact_us/?' do
 	erb :'/contact_us'
    
-   Email.contactUs(name, email, subject, msg)
+   Email.contactUs(:name, :email, :subject, :msg)
   
    redirect "/thanks"
 end
