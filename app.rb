@@ -6,7 +6,7 @@ require 'sinatra/chassis/helpers'
 
 require 'sinatra/reloader' if development?
 
-use Rack::Protection, :except => :session_hijacking
+disable :protection
 enable :sessions
 set :session_secret, 'secret123'
 
