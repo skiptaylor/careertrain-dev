@@ -16,7 +16,7 @@
 			</div>
 			<div class="span6">
 					
-				<form method="post" class="school form-horizontal">
+				<form method="post" id="register-school" class="school form-horizontal">
 				
 				<p class="hidden">
 				  <label class="checkbox">
@@ -193,3 +193,21 @@
 		</div>
 	</div> <!-- /container -->
 </div> <!-- /container-white -->
+
+<script  type="text/javascript">
+	var frmvalidator = new Validator("register-school");
+	frmvalidator.addValidation("first_name","req","Please enter your First Name");
+	frmvalidator.addValidation("last_name","req","Please enter your Last Name");
+	frmvalidator.addValidation("school_name","req","Please enter your School Name");
+	frmvalidator.addValidation("school_address1","req","Please enter your School Address");
+	frmvalidator.addValidation("school_city","req","Please enter your School City");
+	frmvalidator.addValidation("school_state","req","Please enter your School State");
+	frmvalidator.addValidation("school_zip","req","Please enter your School Zip");
+	frmvalidator.addValidation("ng_rep","req","Please enter your National Guard Rep");
+	frmvalidator.addValidation("mail_address1","req","Please enter your mailing address");
+	frmvalidator.addValidation("mail_city","req","Please enter your city");
+	frmvalidator.addValidation("mail_state","req","Please enter your state");
+	frmvalidator.addValidation("mail_zip","req","Please enter your zip");
+	frmvalidator.addValidation("phone","req","Please enter your phone");
+	rmvalidator.addValidation("phone","req","Please enter your phone");
+</script>
