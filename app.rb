@@ -32,9 +32,5 @@ configure :production do
   end
 end
 
-get '/*/?' do
-	puts "--> #{request.referrer} // #{request.user_agent} // #{request.xhr?} // #{request.ip}"
-	erb :"#{params[:splat].first}"
-end
 
 DataMapper.finalize

@@ -14,13 +14,13 @@ gem 'sinatra-contrib', '>= 1.4.4', require: 'sinatra/contrib'
 gem 'chassis-datamapper', '~> 1.0.1'
 gem 'chassis-pony', '~> 1.0.0'
 
+gem 'rake', '~> 10.4.2'
+
 gem 'data_mapper', '~> 1.2.0'
 gem 'dm-sqlite-adapter', '~> 1.2.0', group: :development
 gem 'dm-postgres-adapter', '~> 1.2.0', group: :production
 
 gem 'pony', '~> 1.4'
-
-gem 'rake', '~> 10.1.0'
 
 gem 'prawn', '~> 2.0.1'
 gem 'prawn-table', '~> 0.2.1'

@@ -1,19 +1,19 @@
-<span class="header1">Clerical/Administrative paired with 
+<span class="header1">Clerical/Administrative paired with
 Social/Helping (DI)</span>
 
-<p>Your high scores in "D" and "I" show that you have 
-characteristics that are useful to people. You are seen as 
-dependable, friendly, and helpful. Others know that they can count 
-on you. No matter what you choose to do, you will want to know you 
+<p>Your high scores in "D" and "I" show that you have
+characteristics that are useful to people. You are seen as
+dependable, friendly, and helpful. Others know that they can count
+on you. No matter what you choose to do, you will want to know you
 are helping people.</p>
-<p>Most occupations in this pairing require at least a bachelor's 
-degree.  In some of these jobs, it helps to have a master's degree 
+<p>Most occupations in this pairing require at least a bachelor's
+degree.  In some of these jobs, it helps to have a master's degree
 or a Ph.D.</p>
-<p><strong>Courses you may want to consider taking in high school 
+<p><strong>Courses you may want to consider taking in high school
 and beyond (in addition to English & Math):</strong><br />
-In high school you should take courses that help you to understand 
-people. Any courses in social studies or social sciences will be of 
-interest to you.  They will also help prepare you for possible 
+In high school you should take courses that help you to understand
+people. Any courses in social studies or social sciences will be of
+interest to you.  They will also help prepare you for possible
 career opportunities in this area.</p>
 
 <table cellpadding="10" cellspacing="10">
@@ -46,10 +46,10 @@ career opportunities in this area.</p>
 	</tr>
 </table>
 
-<p><strong>Extracurricular / volunteer activities or organizations 
+<p><strong>Extracurricular / volunteer activities or organizations
 you may find interesting:</strong><br />
-If you have time for afterschool activities or part-time jobs, make 
-them count. You will most enjoy any club or activity where you can 
+If you have time for afterschool activities or part-time jobs, make
+them count. You will most enjoy any club or activity where you can
 use your people skills.</p>
 
 <table cellpadding="10" cellspacing="10">
@@ -79,9 +79,9 @@ use your people skills.</p>
 	</tr>
 </table>
 
-<p><strong>Workplaces that you may wish to consider for a part-time 
+<p><strong>Workplaces that you may wish to consider for a part-time
 job:</strong><br />
-These places may offer valuable opportunities to help you decide 
+These places may offer valuable opportunities to help you decide
 what you want to do when you are an adult.</p>
 
 <table cellpadding="10" cellspacing="10">
@@ -106,28 +106,28 @@ what you want to do when you are an adult.</p>
 		<td>
 			Restaurants<br />
 			Camp Programs<br />
-			Recreation 
+			Recreation
 		</td>
 	</tr>
 </table>
 
-<p><strong>Here are some career possibilities for you to 
+<p><strong>Here are some career possibilities for you to
 explore.</strong></p>
 
 <table width="100%" cellpadding="20" cellspacing="0" border="0">
 	<tr>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
-			<span class="header1">DI Career 
+			<span class="header1">DI Career
 Possibilities</span><br /><br />
-			<table bgcolor="0" cellpadding="0" 
+			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
-					<td width="33%" 
+					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
-					<td width="33%" 
+					<td width="33%"
 align="center"><strong><----------></strong></td>
-					<td width="33%" 
+					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
 			</table>
@@ -135,105 +135,105 @@ align="right"><strong>More Technical Oriented</strong></td>
 	</tr>
 	<tr>
 		<td bgcolor="#D3EEF5" align="center" width="50">
-			<table border="0" cellpadding="0" 
+			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
-				<tr align="center" 
+				<tr align="center"
 height="33%"><td><strong>More<br /></strong></td></tr>
-				<tr align="center" 
+				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br/>Required
 </strong></td></tr>
-				<tr align="center" 
+				<tr align="center"
 height="33%"><td><strong><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
-			<table border="0" cellspacing="3" 
+			<table border="0" cellspacing="3"
 cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
-						<span 
+						<span
 class="header2">Education</span><br /><br />
-						<em>Education 
+						<em>Education
 Administrator<br /><br />
 						Teacher
 							<ul>
-							
+
 	<li>Business</li>
-							
+
 	<li>Continuing Education</li>
-							
+
 	<li>Computer</li>
-							
+
 	<li>Math</li>
-							
+
 	<li>Physical Education</li>
 							</ul>
-						Nursing 
+						Nursing
 Instructor<br /><br />
-						Career 
+						Career
 Counselor<br /><br />
-						Library 
+						Library
 Technician<br /><br />
-						Pre-school 
+						Pre-school
 Coordinator<br /><br />
-						Computer 
+						Computer
 Trainer<br /><br />
-						Camp 
+						Camp
 Counselor</em>
 					</td>
 					<td width="33%">
-						<span 
+						<span
 class="header2">Social Helping</span><br /><br />
-						<em>Assistant 
+						<em>Assistant
 Hospital Administrator<br /><br />
-					
+
 	Clergy<br /><br />
-						Social Care 
+						Social Care
 Worker<br /><br />
-						Marriage & 
-Family 
+						Marriage &
+Family
 Therapist<br /><br />
-						Retirement 
-Facility 
+						Retirement
+Facility
 Administrator<br /><br />
-						Traffic Safety 
+						Traffic Safety
 Administrator<br /><br />
-						Flight 
+						Flight
 Attendant<br /><br />
-						Cruise Ship 
+						Cruise Ship
 Activities Director<br /><br />
-						Convention 
+						Convention
 Coordinator<br /><br />
-						Meeting & Events 
+						Meeting & Events
 Planner<br /><br />
-						Nursery School 
+						Nursery School
 Child-
 Care Provider</em>
 					</td>
 					<td width="33%">
-						<span 
+						<span
 class="header2">Administrative Helping</span><br /><br />
-						<em>Bank Branch 
+						<em>Bank Branch
 Manager<br /><br />
-						Contract 
+						Contract
 Administrator<br /><br />
-						Loan 
+						Loan
 Officer<br /><br />
-						Office 
+						Office
 Manager<br /><br />
-						Insurance Sales 
+						Insurance Sales
 Agent<br /><br />
-						Hotel Desk 
+						Hotel Desk
 Clerk<br /><br />
-						Customer Service 
+						Customer Service
 Representative<br /><br />
-						Claims 
+						Claims
 Adjuster<br /><br />
-						Personnel 
+						Personnel
 Clerk<br /><br />
-						Hospital 
+						Hospital
 Receptionist<br /><br />
-					
+
 	Secretary<br /><br />
 						Bank Teller</em>
 					</td>
@@ -246,245 +246,221 @@ Receptionist<br /><br />
 <hr size="1" />
 
 <span class="header1">EDUCATION</span>
-<p>The occupations in this field deal with helping others learn 
+<p>The occupations in this field deal with helping others learn
 more.</p>
 
 <hr size="1" />
 
-	<span class="header2">Education 
+	<span class="header2">Education
 Administrator</span><br /><br />
 	<span class="header3">Job Description</span>
-	<blockquote>Even in a school or college, somebody must be in 
-charge. An education administrator oversees the activities that go 
-on in a school, college, or school system. In this job, you might be 
-a school principal. You might also be a county superintendent, or a 
-dean at a college. You would make sure that the teachers, 
-professors, and other school personnel were doing their jobs. You 
-would set goals and plan educational or school programs as 
+	<blockquote>Even in a school or college, somebody must be in
+charge. An education administrator oversees the activities that go
+on in a school, college, or school system. In this job, you might be
+a school principal. You might also be a county superintendent, or a
+dean at a college. You would make sure that the teachers,
+professors, and other school personnel were doing their jobs. You
+would set goals and plan educational or school programs as
 well.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need a master's degree or Ph.D. to advance 
-in the field of education. Teaching experience is required as 
+	<blockquote>You need a master's degree or Ph.D. to advance
+in the field of education. Teaching experience is required as
 well.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of education 
-administrators was $86,970 in May 2010.</blockquote>
+	<blockquote>The median annual wage of education
+administrators was $92,510 in May 2016.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Training and Development 
+	<span class="header2">Training and Development
 Manager</span><br /><br />
-	<img class="job_pic" src="/images/icons/DI/1378.jpg" 
+	<img class="job_pic" src="/images/icons/DI/1378.jpg"
 width="100" height="100" border="0" alt="Computer Trainer" />
 	<span class="header3">Job Description</span>
-	<blockquote>Training and development managers and 
-specialists conduct and supervise training and development programs 
-for employees. Increasingly, management recognizes that training 
-offers a way of developing skills, enhancing productivity and 
-quality of work, and building worker loyalty to the firm, and most 
-importantly, increasing individual and organizational performance to 
+	<blockquote>Training and development managers and
+specialists conduct and supervise training and development programs
+for employees. Increasingly, management recognizes that training
+offers a way of developing skills, enhancing productivity and
+quality of work, and building worker loyalty to the firm, and most
+importantly, increasing individual and organizational performance to
 achieve business results.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Many colleges and universities have programs 
-leading to a degree in personnel, human resources, or labor 
-relations. Some offer degree programs in human resources 
-administration or human resources management, training and 
+	<blockquote>Many colleges and universities have programs
+leading to a degree in personnel, human resources, or labor
+relations. Some offer degree programs in human resources
+administration or human resources management, training and
 development, or compensation and benefits. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of training and 
-developement managers was $89,170 in May 2010. </blockquote>
+	<blockquote>The median annual wage of training and
+developement managers was $105,830 in May 2016. </blockquote>
 
 <hr size="1" />
 
 <span class="header2">Recreation Worker</span><br /><br />
-	<img class="job_pic" src="/images/icons/DI/C557003.jpg" 
+	<img class="job_pic" src="/images/icons/DI/C557003.jpg"
 width="100" height="100" border="0" alt="Camp Counselor" />
 	<span class="header3">Job Description</span>
-	<blockquote>Recreation workers plan, organize, and direct 
-activities in local playgrounds and recreation areas, parks, 
-community centers, religious organizations, camps, theme parks, and 
+	<blockquote>Recreation workers plan, organize, and direct
+activities in local playgrounds and recreation areas, parks,
+community centers, religious organizations, camps, theme parks, and
 tourist attractions.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>The educational and training requirements for 
+	<blockquote>The educational and training requirements for
 recreation workers vary widely depending on the type of job. Full-
-time career positions usually require a college degree. Many jobs, 
-however, can be learned with only a short period of on-the-job 
+time career positions usually require a college degree. Many jobs,
+however, can be learned with only a short period of on-the-job
 training.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of recreation workers was 
-$22,260 in May 2010. </blockquote>
+	<blockquote>The median annual wage of recreation workers was
+$23,870 in May 2016. </blockquote>
 
 <hr size="1" />
 
 <span class="header1">SOCIAL HELPING</span>
-<p>These occupations are for people who want to give support and 
+<p>These occupations are for people who want to give support and
 encouragement to those in need.</p>
 
 <hr size="1" />
 
 	<span class="header2">Clergy</span><br /><br />
-	<img class="job_pic" src="/images/icons/DI/43007.jpg" 
+	<img class="job_pic" src="/images/icons/DI/43007.jpg"
 width="100" height="100" border="0" alt="Clergy" />
 	<span class="header3">Job Description</span>
-	<blockquote>Conduct religious worship and perform other 
-spiritual functions associated with beliefs and practices of 
-religious faith or denomination. Provide spiritual and moral 
+	<blockquote>Conduct religious worship and perform other
+spiritual functions associated with beliefs and practices of
+religious faith or denomination. Provide spiritual and moral
 guidance and assistance to members.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need at least a bachelor's degree to enter 
+	<blockquote>You need at least a bachelor's degree to enter
 this occupation.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job-search website indeed.com, 
-the median annual wage of clergy was $44,000 in September 
-2012.</blockquote>
+	<blockquote>The median annual wage of clergy was $45,740 in
+May 2016.</blockquote>
 
 <hr size="1" />
 
 	<span class="header2">Registered Nurse</span><br /><br />
-	<img class="job_pic" src="/images/icons/DI/43148.jpg" 
+	<img class="job_pic" src="/images/icons/DI/43148.jpg"
 width="100" height="100" border="0" alt="Medical Assistant" />
 	<span class="header3">Job Description</span>
-	<blockquote>Registered nurses (RNs), regardless of specialty 
-or work setting, treat patients, educate patients and the public 
-about various medical conditions, and provide advice and emotional 
-support to patients' family members. RNs record patients' medical 
-histories and symptoms, help perform diagnostic tests and analyze 
-results, operate medical machinery, administer treatment and 
-medications, and help with patient follow-up and 
+	<blockquote>Registered nurses (RNs), regardless of specialty
+or work setting, treat patients, educate patients and the public
+about various medical conditions, and provide advice and emotional
+support to patients' family members. RNs record patients' medical
+histories and symptoms, help perform diagnostic tests and analyze
+results, operate medical machinery, administer treatment and
+medications, and help with patient follow-up and
 rehabilitation.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>The three major educational paths to registered 
-nursing are a bachelor's degree, an associate degree, and a diploma 
+	<blockquote>The three major educational paths to registered
+nursing are a bachelor's degree, an associate degree, and a diploma
 from an approved nursing program.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of registered nurses was 
-$64,690 in May 2010. </blockquote>
+	<blockquote>The median annual wage of registered nurses was
+$68,450 in May 2016. </blockquote>
 
 <hr size="1" />
 
 	<span class="header2">Child Care Worker</span><br /><br />
 	<span class="header3">Job Description</span>
-	<blockquote>A childcare worker has to enjoy being around 
-small children because they take care of children ages five and 
-under. 
-You would help keep them occupied and happy with activities. You 
-would see that they got enough rest.  You would also help them to 
-enjoy snacks and meal times. You would probably work with groups of 
+	<blockquote>A childcare worker has to enjoy being around
+small children because they take care of children ages five and
+under.
+You would help keep them occupied and happy with activities. You
+would see that they got enough rest.  You would also help them to
+enjoy snacks and meal times. You would probably work with groups of
 children in a nursery, preschool, or daycare center.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need at least a high school diploma for this 
-job.  Many employers want to hire people who have experience working 
+	<blockquote>You need at least a high school diploma for this
+job.  Many employers want to hire people who have experience working
 with children.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of child care workers was 
-$19,300 in May 2010. </blockquote>
+	<blockquote>The median annual wage of child care workers was
+$21,170 in May 2016. </blockquote>
 
 <hr size="1" />
 
 <span class="header1">ADMINISTRATIVE HELPING</span>
-<p>If you chose an occupation in this field, you would provide 
+<p>If you chose an occupation in this field, you would provide
 support and help in a company.</p>
 
 <hr size="1" />
 
-<span class="header2">Pharmacy 
+<span class="header2">Pharmacy
 Technician</span><br /><br />
-	<img class="job_pic" src="/images/icons/DH/1374.jpg" 
-width="100" height="100" border="0" alt="Medical Record 
+	<img class="job_pic" src="/images/icons/DH/1374.jpg"
+width="100" height="100" border="0" alt="Medical Record
 Technician" />
 	<span class="header3">Job Description</span>
-	<blockquote>Pharmacy technicians help licensed Pharmacists 
-provide medication and other health care products to patients. 
-Technicians usually perform routine tasks to help prepare prescribed 
-medication such as counting tablets and labeling bottles. They also 
-perform administrative duties such as answering phones, stocking 
+	<blockquote>Pharmacy technicians help licensed Pharmacists
+provide medication and other health care products to patients.
+Technicians usually perform routine tasks to help prepare prescribed
+medication such as counting tablets and labeling bottles. They also
+perform administrative duties such as answering phones, stocking
 shelves, and operating cash registers. </blockquote>
 	<span class="header3">Education</span>
 	<blockquote>Most pharmacy technicians are trained on-the-
-job, but employers favor applicants who have formal training, 
-certification, or previous experience. Strong customer service 
-skills also are important. Certification is required in some states. 
+job, but employers favor applicants who have formal training,
+certification, or previous experience. Strong customer service
+skills also are important. Certification is required in some states.
 </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of pharmacy technicians 
-was $28,400 in May 2010. </blockquote>
+	<blockquote>The median annual wage of pharmacy technicians
+was $30,920 in May 2016. </blockquote>
 <hr size="1" />
 
-	<span class="header2">Human Resources 
+	<span class="header2">Human Resources
 Assistant</span><br /><br />
-	<img class="job_pic" src="/images/icons/DI/43302.jpg" 
+	<img class="job_pic" src="/images/icons/DI/43302.jpg"
 width="100" height="100" border="0" alt="Office Manager" />
 	<span class="header3">Job Description</span>
-	<blockquote>Human resources assistants keep records of a 
-company's employees. Every day human resources assistants update 
-information and answer questions about employees. They also may 
-create reports for managers. They get information from job 
-applicants about their education and work experience. They give out 
+	<blockquote>Human resources assistants keep records of a
+company's employees. Every day human resources assistants update
+information and answer questions about employees. They also may
+create reports for managers. They get information from job
+applicants about their education and work experience. They give out
 tests and explain the company's rules.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>These workers must have at least a high school 
+	<blockquote>These workers must have at least a high school
 diploma or a G.E.D. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of human resources 
-assistants was $33,710 in May 2010. </blockquote>
+	<blockquote>The median annual wage of human resources
+assistants was $32,920 in May 2016. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Computer Support 
+	<span class="header2">Computer Support
 Specialist</span><br /><br />
-	<img class="job_pic" src="/images/icons/DI/43328.jpg" 
+	<img class="job_pic" src="/images/icons/DI/43328.jpg"
 width="100" height="100" border="0" alt="Personnel Clerk" />
 	<span class="header3">Job Description</span>
-	<blockquote>Computer support specialists help people use 
-computers. When something goes wrong, support specialists figure out 
-why. Then, they try to fix it. Computer support specialists also 
-install printers, software, and other computer tools. Then, they 
-teach people how to use them. 
+	<blockquote>Computer support specialists help people use
+computers. When something goes wrong, support specialists figure out
+why. Then, they try to fix it. Computer support specialists also
+install printers, software, and other computer tools. Then, they
+teach people how to use them.
 
 </blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Some people earn an associate degree. Some 
+	<blockquote>Some people earn an associate degree. Some
 employers prefer to hire people who earn a bachelor's degree.
 </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of computer support 
-specialists was $46,260 in May 2010. </blockquote>
+	<blockquote>The median annual wage of computer support
+specialists was $52,160 in May 2016. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit 
-the <em>Occupational Outlook Handbook</em>:</strong> <a 
-href="http://www.bls.gov/oco">www.bls.gov/oco</a></p>
+<p><strong>Looking for more information on specific careers? Visit
+the <em>Occupational Outlook Handbook</em>:</strong> <a
+href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
 
-<p><strong>You may also want to try the <em>Occupational Information 
-Network</em> Web site:</strong> <a 
+<p><strong>You may also want to try the <em>Occupational Information
+Network</em> Web site:</strong> <a
 href="http://online.onetcenter.org/gen_search_page">online.onetcenter
 .org/gen_search_page</a></p>
 
 
-<blockquote>Salary data from Bureau of Labor Statistics, U.S. 
-Department of Labor, <i>Occupational Outlook Handbook, 2012-13 
-Edition, </i> visited 8/27/2012. </blockquote>
-
-
-
-
-
-Additional average salary information acquired from job search 
-website indeed.com in September 2012. The Indeed Salary Search data 
-is based on an index of salary information extracted from over 50 
-million job postings from thousands of unique sources over the 
-previous year.
-
-
-
-
-
-
-
-
-
-
-
-
-
+<blockquote>Salary data from Bureau of Labor Statistics, U.S.
+Department of Labor, <i>Occupational Outlook Handbook, 2016-17
+Edition, </i> visited 2/08/2018. </blockquote>

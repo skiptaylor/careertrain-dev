@@ -38,32 +38,32 @@
   </head>
     
   <body>
-	  
-      <div class="navbar navbar-inverse nav-grad-sm navbar-static-top">
-        <div class="navbar-inner">
-          <div class="container">
+	
+	<div class="navbar navbar-inverse nav-grad-sm navbar-static-top">
+		<div class="navbar-inner">
+			<div class="container">
 
 				<a class="brand span5" href="/index"><img src="/img/cd2-circle120.png">&nbsp;&nbsp;&nbsp;CAREER DIRECTION 2</a>
 				
-            <ul class="nav pull-right">
-              <li class="<%= active 'student' %>"><a href="/student/student">Student</a></li>
-              <li class="<%= active 'educator' %>"><a href="/educator/index">Educator</a></li>
-              <li class="<%= active 'arng' %>"><a href="/arng/arng">ARNG Rep</a></li>
-              <li class="<%= active 'contact' %>"><a href="/contact_us">Contact Us</a></li>
-            </ul>
+				<ul class="nav pull-right">
+					<li class="<%= active 'student' %>"><a href="/student/student">Student</a></li>
+					<li class="<%= active 'educator' %>"><a href="/educator/index">Educator</a></li>
+					<li class="<%= active 'arng' %>"><a href="/arng/arng">ARNG Rep</a></li>
+					<li class="<%= active 'contact' %>"><a href="/contact_us">Contact Us</a></li>
+				</ul>
 
-        </div>
-      </div>
-    </div>
+			</div>
+		</div>
+	</div>
 
 	
 	<%= alert %>
 	<%= yield %>
 
 		
-      <footer>
-        <p class="container"><a href="/about" class="btn btn-inverse pull-left"><img src="/img/ctc-logo-sm.png" style="margin-top: -4px;" /> &nbsp;About CTC</a> &nbsp; &copy; 1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc. All rights reserved. &nbsp; <a href="/admin/admin" class="btn btn-mini">Admin</a> <img src="/img/ng-wide.png" class="pull-right" /></p>
-      </footer>
+	<footer>
+		<p class="container"><a href="/about" class="btn btn-inverse pull-left"><img src="/img/ctc-logo-sm.png" style="margin-top: -4px;" /> &nbsp;About CTC</a> &nbsp; &copy; 1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc. All rights reserved. &nbsp; <a href="/admin/admin" class="btn btn-mini">Admin</a> <img src="/img/ng-wide.png" class="pull-right" /></p>
+	</footer>
 		
 		<script type="text/javascript">
 			$('.form_date').datetimepicker({
