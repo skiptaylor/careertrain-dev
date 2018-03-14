@@ -85,28 +85,43 @@
 					</div>
 				</div>
 				<div class="control-group">
+					<label class="control-label" for="email">Counselor/teacher email</label>
+					<div class="controls">
+						<input type="text" class="textfield span4" name="email" id="email" value="<%= @school.email %>" /> 
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="number_seniors">Number of students</label>
+					<div class="controls">
+						<input type="text" class="textfield span1" name="number_seniors" id="number_seniors" value="<%= @school.number_seniors %>" /> 
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="span6 form-horizontal">
+				
+				<div class="control-group">
 					<label class="control-label" for="ng_rep">National Guard Rep</label>
 					<div class="controls">
 						<input type="text" class="textfield span4" name="ng_rep" id="ng_rep" value="<%= @school.ng_rep %>" /> 
 					</div>
 				</div>
 				
-			</div>
-			<div class="span6 form-horizontal">
 				
-				<div class="control-group">
+				<!-- <div class="control-group">
 					<label class="control-label" for="mail_address1">Mailing address</label>
 					<div class="controls">
-						<input type="text" class="textfield span4" name="mail_address1" id="mail_address1" value="<%= @school.mail_address1 %>" /> 
+						<input type="text" class="textfield span4" name="mail_address1" id="mail_address1" value="<%= @school.mail_address1 %>" />
 					</div>
-				</div>
+				</div> -->
 				
-				<div class="control-group">
+				<!-- <div class="control-group">
 					<label class="control-label" for="mail_address2"> </label>
 					<div class="controls">
-						<input type="text" class="textfield span4" name="mail_address2" id="mail_address2" value="<%= @school.mail_address2 %>" /> 
+						<input type="text" class="textfield span4" name="mail_address2" id="mail_address2" value="<%= @school.mail_address2 %>" />
 					</div>
-				</div>
+				</div> -->
 				
 				<div class="control-group">
 					<label class="control-label" for="mail_city">City</label>
@@ -136,34 +151,24 @@
 					</div>
 				</div>
 				
-				<div class="control-group">
+				<!-- <div class="control-group">
 					<label class="control-label" for="fax">Fax</label>
 					<div class="controls">
-						<input type="text" class="textfield span3" name="fax" id="fax" value="<%= @school.fax %>" /> 
+						<input type="text" class="textfield span3" name="fax" id="fax" value="<%= @school.fax %>" />
 					</div>
-				</div>
+				</div> -->
 				
-				<div class="control-group">
-					<label class="control-label" for="email">Counselor/teacher email</label>
-					<div class="controls">
-						<input type="text" class="textfield span4" name="email" id="email" value="<%= @school.email %>" /> 
-					</div>
-				</div>
 				
-				<div class="control-group">
-					<label class="control-label" for="number_seniors">Number of students</label>
-					<div class="controls">
-						<input type="text" class="textfield span1" name="number_seniors" id="number_seniors" value="<%= @school.number_seniors %>" /> 
-					</div>
-				</div>
-				<div class="control-group">
+				
+				
+				<!-- <div class="control-group">
 				    <div class="controls">
 				      <label class="checkbox">
 			    		  <input type="checkbox" name="cd_before" id="cd_before" <%= 'checked="checked"' if @school.cd_before  %> />
 			    		 Used Career Direction Before?
 			  	  		</label>
 					</div>
-				</div>
+				</div> -->
 				
 				<div class="control-group">
 				    <div class="controls">
