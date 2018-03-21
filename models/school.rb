@@ -26,6 +26,7 @@ class School
   property :fax,                String, default: ""
   property :ng_rep,             String, default: ""
   property :email,              Text,   default: ""
+  property :arng_email,         Text,   default: ""
   property :number_seniors,     Integer, default: 0
   
   property :active,             Boolean, :default => false

@@ -41,6 +41,7 @@ post '/arng/schools/new/?' do
     :fax                    => params[:fax],
     :ng_rep                 => params[:ng_rep],
     :email                  => params[:email],
+    :arng_email             => params[:arng_email],
     :number_seniors         => params[:number_seniors]
   )
   params[:active] 					? school.update(:active => true)    : school.update(:active => false)
@@ -88,6 +89,7 @@ post '/arng/schools/:id/edit/?' do
     :fax                    => params[:fax],
     :ng_rep                 => params[:ng_rep],
     :email                  => params[:email],
+    :arng_email             => params[:arng_email],
     :number_seniors         => params[:number_seniors]
   )
   params[:active] 					? school.update(:active => true)    : school.update(:active => false)

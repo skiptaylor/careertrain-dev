@@ -1,21 +1,14 @@
-	
-	<div class="container">
-
-   </div>
-
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
 			<div class="span12">
 				<h1 class="page-header">Careers and Occupations Guide School Registration</h1>
-			
-				
 				<h5>Register your school to get a password.</h5>
-				<p>&nbsp;</p>
-				
 			</div>
+		</div>
+		<div class="row">
 			<div class="span6">
-					
+									
 				<form method="post" id="register-school" class="school form-horizontal">
 				
 				<p class="hidden">
@@ -24,8 +17,10 @@
 				  </label>
 				</p>
 				
+				<p style="font-size: 1.1em; margin: 1em 0 1.5em 0;"><strong>Educator’s Contact Information</strong></p>
+				
 				<div class="control-group">
-					<label class="control-label" for="first_name">First name</label>
+					<label class="control-label" for="first_name">Educator’s First name</label>
 					<div class="controls">
 						<input type="text" class="textfield span4" name="first_name" id="first_name" value="<%= @school.first_name %>" /> 
 					</div>
@@ -37,7 +32,7 @@
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label" for="last_name">Last name</label>
+					<label class="control-label" for="last_name">Educator’s Last name</label>
 					<div class="controls">
 						<input type="text" class="textfield span4" name="last_name" id="last_name" value="<%= @school.last_name %>" /> 
 					</div>
@@ -101,6 +96,8 @@
 			</div>
 			<div class="span6 form-horizontal">
 				
+				<p style="font-size: 1.1em; margin: 1em 0 1.5em 3em;"><strong>ARNG Rep’s Contact Information</strong></p>
+				
 				<div class="control-group">
 					<label class="control-label" for="ng_rep">National Guard Rep</label>
 					<div class="controls">
@@ -123,10 +120,17 @@
 					</div>
 				</div> -->
 				
-				<div class="control-group">
+				<!-- <div class="control-group">
 					<label class="control-label" for="mail_city">City</label>
 					<div class="controls">
-						<input type="text" class="textfield span4" name="mail_city" id="mail_city" value="<%= @school.mail_city %>" /> 
+						<input type="text" class="textfield span4" name="mail_city" id="mail_city" value="<%= @school.mail_city %>" />
+					</div>
+				</div> -->
+					
+				<div class="control-group">
+					<label class="control-label" for="arng_email">Email</label>
+					<div class="controls">
+						<input type="text" class="textfield span4" name="arng_email" id="arng_email" value="<%= @school.arng_email %>" />
 					</div>
 				</div>
 				
@@ -157,10 +161,7 @@
 						<input type="text" class="textfield span3" name="fax" id="fax" value="<%= @school.fax %>" />
 					</div>
 				</div> -->
-				
-				
-				
-				
+								
 				<!-- <div class="control-group">
 				    <div class="controls">
 				      <label class="checkbox">
@@ -192,8 +193,6 @@
 			 	</form>
 				
 			</div>
-
-		</div>
 		
 		</div>
 	</div> <!-- /container -->
