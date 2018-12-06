@@ -43,9 +43,9 @@
 				
 				<div class="control-group">
 					<div class="controls">
-						<div class="g-recaptcha" data-sitekey="6Les9X4UAAAAAJJXKpfwTPeEEYLMSLIdKi0i86_B"></div>
+						<div class="g-recaptcha" data-sitekey="6Les9X4UAAAAAJJXKpfwTPeEEYLMSLIdKi0i86_B" data-callback="enableBtn"></div>
 						<br />
-						<input type="submit" class="btn btn-primary" value="Send" />
+						<input type="submit" id="submit" class="btn btn-primary" value="Submit" />
 					</div>
 				</div>
 	
@@ -64,3 +64,11 @@
 	</div> <!-- /container -->
 </div> <!-- /container-white -->
 
+	<script>
+	
+		document.getElementById("submit").disabled = true;
+		function enableBtn(){
+		    document.getElementById("submit").disabled = false;
+		   }
+ 
+	</script>
