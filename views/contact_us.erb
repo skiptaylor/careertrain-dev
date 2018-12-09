@@ -16,8 +16,15 @@
 						<input type="text" class="input-xlarge" id="name" name="name" />
 					</div>
 				</div>
+				
+				<div class="control-group" id="email_name" style="margin-left: -1017px;">
+					<label class="control-label" for="email">Email name</label>
+					<div class="controls">
+						<input type="text" class="input-xlarge" id="email_name" name="email_name" />
+					</div>
+				</div>
 		
-				<div class="control-group" id="email-group">
+				<div class="control-group" id="email-group" style="margin-top: -48px;">
 					<label class="control-label" for="email">Email address</label>
 					<div class="controls">
 						<input type="text" class="input-xlarge" id="email" name="email" />
@@ -64,11 +71,17 @@
 	</div> <!-- /container -->
 </div> <!-- /container-white -->
 
-	<script>
-	
-		document.getElementById("submit").disabled = true;
-		function enableBtn(){
-		    document.getElementById("submit").disabled = false;
-		   }
- 
-	</script>
+<script>
+	document.getElementById("submit").disabled = true;
+	function enableBtn(){
+		document.getElementById("submit").disabled = false;
+	}
+</script>
+			
+<script>
+	document.ready(function() {
+		$("eform").submit(function() {
+			$("#email_name").val('');
+		});
+	});
+</script>
