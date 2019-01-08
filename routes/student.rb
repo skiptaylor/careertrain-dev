@@ -53,14 +53,20 @@ get "/student/report/:school_password/?" do
   
   if params[:score1] && params[:score2] && File.exists?("./views/reports/#{params[:score1]}#{params[:score2]}.inc")
     @report1 = File.read("./views/reports/#{params[:score1]}#{params[:score2]}.inc")
+  elsif params[:score1] && params[:score2] && File.exists?("./views/reports/#{params[:score2]}#{params[:score1]}.inc")
+    @report1 = File.read("./views/reports/#{params[:score2]}#{params[:score1]}.inc")
   end
 
   if params[:score1] && params[:score3] && File.exists?("./views/reports/#{params[:score1]}#{params[:score3]}.inc")
     @report2 = File.read("./views/reports/#{params[:score1]}#{params[:score3]}.inc")
+  elsif params[:score1] && params[:score3] && File.exists?("./views/reports/#{params[:score3]}#{params[:score1]}.inc")
+    @report2 = File.read("./views/reports/#{params[:score3]}#{params[:score1]}.inc")
   end
 
   if params[:score2] && params[:score3] && File.exists?("./views/reports/#{params[:score2]}#{params[:score3]}.inc")
     @report3 = File.read("./views/reports/#{params[:score2]}#{params[:score3]}.inc")
+  elsif params[:score2] && params[:score3] && File.exists?("./views/reports/#{params[:score3]}#{params[:score2]}.inc")
+    @report3 = File.read("./views/reports/#{params[:score3]}#{params[:score2]}.inc")
   end
   
   if params[:score1] && params[:score2]
