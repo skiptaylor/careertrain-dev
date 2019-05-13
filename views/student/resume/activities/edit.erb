@@ -19,15 +19,15 @@
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label" for="date_start">Start Date</label>
-						<div class="span2 input-append date">
-							<input type="text" name="date_start" id="date_start" class="form_date" data-date-format="MM dd, yyyy" data-link-format="yyyy-mm-dd" value="<%= @activity.date_start %>" />
+						<label class="control-label" for="date_start">Start Date (Month Year)</label>
+						<div class="controls">
+							<input type="text" name="date_start" id="date_start" class="textfield span4" value="<%= @activity.date_start %>" />
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label" for="date_end">End Date</label>
-						<div class="span2 input-append date">
-							<input type="text" class="form_date" name="date_end" id="date_end" data-date-format="MM dd, yyyy" data-link-format="yyyy-mm-dd" value="<%= @activity.date_end %>" />
+						<label class="control-label" for="date_end">End Date (Month Year)</label>
+						<div class="controls">
+							<input type="text" class="textfield span4" name="date_end" id="date_end" value="<%= @activity.date_end %>" />
 						</div>
 					</div>
 					<div class="control-group">

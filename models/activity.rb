@@ -7,8 +7,8 @@ class Activity
 
   property :position,           String
   property :organization,       String
-  property :date_start,         Date
-  property :date_end,           Date
+  property :date_start,         String
+  property :date_end,           String
   property :student_id,         Integer
   
   belongs_to :student, required: false

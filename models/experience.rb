@@ -9,8 +9,8 @@ class Experience
   property :company,      String
   property :city,         String
   property :state,        String
-  property :start,        Date
-  property :end,          Date
+  property :start,        String
+  property :end,          String
   property :position,     String
   
   belongs_to :student, required: false
