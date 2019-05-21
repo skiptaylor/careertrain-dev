@@ -138,7 +138,7 @@ get '/student/resume/resume' do
         :inline_format => true, :leading => 4
       @student.educations.each do |education|
       if education.attending != ""
-        pdf.text "Scheduled to graduate from #{education.attending} on #{format_day(education.graduate_on)}.",
+        pdf.text "Scheduled to graduate from #{education.attending} on #{education.graduate_on}.",
           :inline_format => true, :indent_paragraphs => 8, :leading => 1
       end
       if education.plan_attend != ""
@@ -146,11 +146,11 @@ get '/student/resume/resume' do
           :inline_format => true, :indent_paragraphs => 8, :leading => 1
       end
       if education.completed != ""
-        pdf.text "I have completed #{education.completed} on #{format_day(education.completed_on)}",
+        pdf.text "I have completed #{education.completed} on #{education.completed_on}",
           :inline_format => true, :indent_paragraphs => 8, :leading => 1
       end
       if education.graduated != ""
-        pdf.text "I have graduated from #{education.graduated} on #{format_day(education.graduation_date)} with a #{education.degree} degree.",
+        pdf.text "I have graduated from #{education.graduated} on #{education.graduation_date} with a #{education.degree} degree.",
           :inline_format => true, :indent_paragraphs => 8, :leading => 1
       end
     end
@@ -159,21 +159,21 @@ get '/student/resume/resume' do
 		pdf.text "<b><font size='10px'>Work Experience</font></b>",
       :inline_format => true, :leading => 4
       @student.experiences.each do |experience|
-        pdf.text "•  #{experience.company}, #{experience.position}, #{experience.city}, #{experience.state}, #{format_day(experience.start)} - #{format_day(experience.end)}",
+        pdf.text "•  #{experience.company}, #{experience.position}, #{experience.city}, #{experience.state}, #{experience.start} - #{experience.end}",
          :inline_format => true, :indent_paragraphs => 8, :leading => 1
       end
     pdf.move_down(12)
 		pdf.text "<b><font size='10px'>Activities and Associations</font></b>",
       :inline_format => true, :leading => 4
       @student.activities.each do |activity|
-        pdf.text "•  #{activity.position.capitalize}, #{activity.organization}, #{format_day(activity.date_start)} - #{format_day(activity.date_end)}",
+        pdf.text "•  #{activity.position.capitalize}, #{activity.organization}, #{activity.date_start} - #{activity.date_end}",
           :inline_format => true, :indent_paragraphs => 8, :leading => 1
       end
       pdf.move_down(12)
 		pdf.text "<b><font size='10px'>Awards and Commendations</font></b>",
       :inline_format => true, :leading => 4
       @student.awards.each do |award|
-        pdf.text "•  #{award.award.capitalize}, #{format_day(award.award_date)}",
+        pdf.text "•  #{award.award.capitalize}, #{award.award_date}",
           :inline_format => true, :indent_paragraphs => 8, :leading => 1
       end
     pdf.move_down(12)
