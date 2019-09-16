@@ -144,8 +144,7 @@ cellspacing="0" height="400">
 				<tr align="center"
 height="33%"><td><strong>More<br /></strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong>Education<br />or<br />Training<br />Require
-d</strong></td></tr>
+height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong><br />Less</strong></td></tr>
 			</table>
