@@ -96,6 +96,8 @@ GEM
       rack
     rack-protection (2.0.7)
       rack
+    rack-recaptcha (0.6.6)
+      json
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rake (10.4.2)
@@ -130,6 +132,7 @@ GEM
     tilt (2.0.10)
     ttfunk (1.4.0)
     uuidtools (2.1.5)
+    vcard (0.2.15)
 
 PLATFORMS
   ruby
@@ -147,11 +150,13 @@ DEPENDENCIES
   pony (~> 1.13, >= 1.13.1)
   prawn (~> 2.0.1)
   prawn-table (~> 0.2.1)
+  rack-recaptcha
   rake (~> 10.4.2)
   sass (>= 3.2.9)
   sinatra (>= 1.4.6)
   sinatra-chassis (>= 1.1.1)
   sinatra-contrib (>= 1.4.4)
+  vcard (~> 0.2.8)
 
 RUBY VERSION
    ruby 2.5.1p57
