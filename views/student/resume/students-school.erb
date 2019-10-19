@@ -1,0 +1,69 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span12">
+				<a href="/admin/admin_edit" class="btn btn-small pull-right">Admin Index</a>
+			<h1>Student List by School</h1>
+			<div class="pull-right">
+				<form class="form-search" method="get">
+					
+						
+						
+						<input type="text" class="search-query span3" name="search" placeholder="Search School Password" value="<%= params[:search] %>" />
+						
+						<button type="submit" class="btn btn-success">Find</button>
+					
+					&nbsp; &nbsp; &nbsp;<strong>Start:</strong> &nbsp; <%= date_to_field 'start', @start %>
+					&nbsp; &nbsp; &nbsp;
+					<strong>End:</strong> &nbsp; <%= date_to_field 'end', @end %>
+					&nbsp; &nbsp;
+					
+					&nbsp;
+					
+					
+					
+				</form>
+			</div>
+			
+			
+			<table class="table table-striped table-condensed table-hover">
+					<tr>
+						<th>Name</th>
+						<th>School Password</th>
+						<th>School</th>
+						<th> </th>
+					</tr>
+					
+					<% @student.sort_by(&:created_at).reverse.each do |student| %>
+					<% if student.school_id %>
+					<tr>
+						<td>
+							<strong><%= student.first_name %> <%= student.middle_name %> <%= student.last_name %></strong><br /><small><%= format_american_day(student.created_at) %></small>
+						</td>
+						<td>
+							<%= student.school_password %>
+						</td>
+						<td>
+							<%= student.school.school_name %>
+						</td>
+						<td> 
+							<%= student.address %><br />
+							<%= student.city %>, <%= student.state %> <%= student.zip %><br />
+							<%= formatted_number(student.phone) %><br />
+							<%= student.email %><br />
+							<%= format_american_day(student.birth_date) %><br />
+						</td>
+						
+					</tr>
+					<% end %>
+					<% end %>
+				</table>
+				<% if @student.count < 100 %>
+					<a href="<%= request.url %>&csv=true" class="btn btn-success pull-right">Download CSV</a>
+				<% end %>
+		
+			</div>
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->
+

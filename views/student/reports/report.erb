@@ -4,21 +4,36 @@
 			<div class="span12">
 				<h1 class="page-header">Careers and Occupations Guide Report</h1>
 			</div>
+			
 			<div class="span8 offset2">
 				<p class="lead">
-					<%= @school.school_name %>
-					<br />
-					<a href="/img/CTC-Cluster-CarDir.pdf" class="btn btn-small" target="blank"><strong>View CD2 Career Categories and US DOE Career Clusters Comparison Chart</strong></a>
+					
+				
+					<a href="/img/CTC-Cluster-CarDir.pdf" class="btn btn-small btn-info" target="blank"><strong>View CD2 Career Categories and US DOE Career Clusters Comparison Chart</strong></a>
 				</p>
-				<div class="sign-in" style="margin: 12px 0 32px 0; padding: 48px;">
+				
+				<form method="get">
+				<% unless @student.school_password == "" || @student.school_password == nil %>
+					
+				<p>
+  					<% unless @student.name == "" || @student.name == nil %><strong><%= @student.name %></strong>
+  					<% else %><strong><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></strong>
+  					<% end %><br />
+					<%= @student.email %><br />
+  					<% unless @student.address == "" %><%= @student.address %><br /><% end %>
+  					<% unless @student.city == "" %><%= @student.city %><% end %> <% unless @student.state == "" %><%= @student.state %><% end %> <% unless @student.zip == "" %><%= @student.zip %><br /><% end %>
+  					<% unless @student.phone == "" %><%= formatted_number(@student.phone) %><% end %><br />
+  					<strong>Date of Birth</strong> &nbsp; <%= format_day(@student.birth_date) %><br />
+  					<strong>School Password</strong> &nbsp; <%= @student.school_password %>
+					
+					
+					<a href="/student/reports/<%= @student.id %>/edit" class="btn btn-small pull-right">Edit</a><br /><br />
+					</p>
+				
+				<div class="sign-in" style="margin: 32px 0 32px 0; padding: 32px 48px;">
 
-					<form method="get">
-					  <p>
-					    Name
-					    <input type="text" class="input-medium" name="first_name" id="first_name" />
-					    <input type="text" class="input-medium" name="last_name" id="last_name" />
-					  </p>
-					  <hr />
+						
+					 
 					  <p>Please enter the Occupational Category letters corresponding to your highest column totals from your Interest Exercise (letters A - I). You must enter at least 2 letters to create a report.</p>
 					  <p>
 						  <select type="text" class="span1" name="score1" id="score1" style="text-align: center;" >
@@ -68,6 +83,15 @@
 					  <p>
 					    <input type="submit" class="btn btn-success" value="Show Report" />
 					  </p>
+					  
+					  <% else %>
+					  
+					  You must complete your student profile to continue.
+					  <a href="/student/reports/<%= @student.id %>/edit" class="btn btn-small pull-right">Edit Profile</a>
+					  
+					  <% end %>
+					  
+					  
 					</form>
 					
 				</div>

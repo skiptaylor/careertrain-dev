@@ -71,7 +71,7 @@
 					<%= @student.city %>, <%= @student.state %> &nbsp;<%= @student.zip %>
 				</p>
 				<p>
-					<span class="semi-bold"><%= @student.phone %></span>
+					<span class="semi-bold"><%= formatted_number(@student.phone) %></span>
 				</p>
 				<a href="/students/<%= @student.id %>/edit" class="btn btn-success btn-small"><i class="icon-pencil"></i> &nbsp;Edit Profile</a>
 				<br /><br /><br />

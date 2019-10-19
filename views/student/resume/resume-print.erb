@@ -76,7 +76,7 @@
 			<h1><%= @student.name %></h1>
 			<p><%= @student.address %><br />
 			<%= @student.city %>, <%= @student.state %> <%= @student.zip %><br />
-			<%= @student.phone %><br />
+			<%= formatted_number(@student.phone) %><br />
 			<%= @student.email %>
 			</p>
 		

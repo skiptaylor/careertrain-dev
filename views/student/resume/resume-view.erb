@@ -19,7 +19,7 @@
 							<h1><%= @student.name %></h1>
 							<p><%= @student.address %><br />
 							<%= @student.city %>, <%= @student.state %> <%= @student.zip %><br />
-							<%= @student.phone %><br />
+							<%= formatted_number(@student.phone) %><br />
 							<%= @student.email %>
 							</p>
 		
@@ -60,7 +60,7 @@
 							<h2>Activities and Associations</h2>
 							<% @student.activities.each do |activity| %>
 							<ul>
-								<li><%= activity.position.capitalize %>, <%= activity.organization %><% if activity.date_start != nil %>, <%= activity.date_start %><% end %><% if activity.date_end != nil %> - <%= activity.date_end %><% end %></li>
+								<li><%= activity.position %>, <%= activity.organization %><% if activity.date_start != nil %>, <%= activity.date_start %><% end %><% if activity.date_end != nil %> - <%= activity.date_end %><% end %></li>
 							</ul>
 							<% end %>
 		
@@ -68,7 +68,7 @@
 							<h2>Awards and Commendations</h2>
 							<% @student.awards.each do |award| %>
 							<ul>
-								<li><%= award.award.capitalize %><% if award.award_date != nil %>, <%= award.award_date %><% end %></li>
+								<li><%= award.award %><% if award.award_date != nil %>, <%= award.award_date %><% end %></li>
 							</ul>
 							<% end %>
 		
@@ -76,7 +76,7 @@
 							<h2>Interests and Hobbies</h2>
 								<% @student.interests.each do |interest| %>
 								<ul>
-									<li><%= interest.interest.capitalize %></li>
+									<li><%= interest.interest %></li>
 								</ul>
 								<% end %>
 		

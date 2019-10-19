@@ -12,13 +12,19 @@ class Student
   
   property :agegate,  Boolean, :default => false
 
- # From Contact
   property :name,  String
+  property :first_name,  String
+  property :middle_name,  String
+  property :last_name,  String
   property :address, String
   property :city, String
   property :state, String
   property :zip, String
   property :phone, String
+  property :birth_date, Date, :default => Chronic.parse('1900-01-01')
+  property :school_password, String
+
+  belongs_to :school, required: false
   
   has n, :awards, :constraint => :destroy
   has n, :activities, :constraint => :destroy
@@ -34,3 +40,7 @@ class Student
   
 end
 
+
+# delete from students where email IS NULL;
+
+# delete from students where deleted_at IS NOT NULL;

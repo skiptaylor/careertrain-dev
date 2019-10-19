@@ -30,7 +30,7 @@ post '/contact_us/?' do
   if params[:email_name] == ""
 	Pony.mail(
 		headers: { 'Content-Type' => 'text/html' },
-		to: 'info@careertrain.com, skip@tayloraid.com',
+		to: 'info@careertrain.com, tayloraid@gmail.com',
 		from: 'contactUs@careertrain.com',
 		subject: "#{params[:subject]}",
 		body: "#{markdown params[:msg]}<hr />#{params[:name]}<br />#{params[:email]}"
@@ -99,17 +99,17 @@ get '/student/resume/resume' do
 
      pdf = Prawn::Document.new
      pdf.font "Helvetica"
-     pdf.font_size 9
+     pdf.font_size 12
      
      pdf.move_down(12)
-     pdf.text "<b><font size='11px'>Resume</font></b>",
-     :inline_format => true, :leading => 16, :align => :center
+     # pdf.text "<b><font size='11px'>Resume</font></b>",
+#      :inline_format => true, :leading => 16, :align => :center
      
-     pdf.text "<b><font size='11px'>#{@student.name}</font></b>",
-     :inline_format => true, :leading => 6
+     pdf.text "<b><font size='13px'>#{@student.name}</font></b>",
+     :inline_format => true, :leading => 8
 		pdf.text "#{@student.address}
 		#{@student.city}, #{@student.state}  #{@student.zip}
-		#{@student.phone}
+		#{formatted_number(@student.phone)}
 		#{@student.email}", 
      :inline_format => true, :leading => 2
       
@@ -117,8 +117,7 @@ get '/student/resume/resume' do
      pdf.text "<b><font size='10px'>Objectives</font></b>",
        :inline_format => true, :leading => 4
      @student.objectives.each do |objective|
-       pdf.text "My immediate goal is to work as #{objective.goal}. This will help me learn #{objective.learn}, 
-       as I pursue my long-term goal of #{objective.long_goal}."
+       pdf.text "My immediate goal is to work as #{objective.goal}. This will help me learn #{objective.learn}, as I pursue my long-term goal of #{objective.long_goal}."
      end
       
       pdf.move_down(12) 
@@ -126,10 +125,10 @@ get '/student/resume/resume' do
       :inline_format => true, :leading => 4
       @student.skills.each do |skill|
         pdf.text "<b>#{skill.skill}</b>",
-        :inline_format => true, :indent_paragraphs => 8, :leading => 1
+        :inline_format => true, :indent_paragraphs => 8, :leading => 2
         pdf.text "•  #{skill.applied_1}
         •  #{skill.applied_2}",
-        :inline_format => true, :indent_paragraphs => 16, :leading => 1
+        :inline_format => true, :indent_paragraphs => 16, :leading => 2
         pdf.move_down(6)
       end
 
@@ -139,19 +138,19 @@ get '/student/resume/resume' do
       @student.educations.each do |education|
       if education.attending != ""
         pdf.text "Scheduled to graduate from #{education.attending} on #{education.graduate_on}.",
-          :inline_format => true, :indent_paragraphs => 8, :leading => 1
+          :inline_format => true, :indent_paragraphs => 8, :leading => 2
       end
       if education.plan_attend != ""
         pdf.text "I plan to attend #{education.plan_attend} to study #{education.study}.",
-          :inline_format => true, :indent_paragraphs => 8, :leading => 1
+          :inline_format => true, :indent_paragraphs => 8, :leading => 2
       end
       if education.completed != ""
         pdf.text "I have completed #{education.completed} on #{education.completed_on}",
-          :inline_format => true, :indent_paragraphs => 8, :leading => 1
+          :inline_format => true, :indent_paragraphs => 8, :leading => 2
       end
       if education.graduated != ""
         pdf.text "I have graduated from #{education.graduated} on #{education.graduation_date} with a #{education.degree} degree.",
-          :inline_format => true, :indent_paragraphs => 8, :leading => 1
+          :inline_format => true, :indent_paragraphs => 8, :leading => 2
       end
     end
     
@@ -160,33 +159,33 @@ get '/student/resume/resume' do
       :inline_format => true, :leading => 4
       @student.experiences.each do |experience|
         pdf.text "•  #{experience.company}, #{experience.position}, #{experience.city}, #{experience.state}, #{experience.start} - #{experience.end}",
-         :inline_format => true, :indent_paragraphs => 8, :leading => 1
+         :inline_format => true, :indent_paragraphs => 8, :leading => 2
       end
     pdf.move_down(12)
 		pdf.text "<b><font size='10px'>Activities and Associations</font></b>",
       :inline_format => true, :leading => 4
       @student.activities.each do |activity|
-        pdf.text "•  #{activity.position.capitalize}, #{activity.organization}, #{activity.date_start} - #{activity.date_end}",
-          :inline_format => true, :indent_paragraphs => 8, :leading => 1
+        pdf.text "•  #{activity.position}, #{activity.organization}, #{activity.date_start} - #{activity.date_end}",
+          :inline_format => true, :indent_paragraphs => 8, :leading => 2
       end
       pdf.move_down(12)
 		pdf.text "<b><font size='10px'>Awards and Commendations</font></b>",
       :inline_format => true, :leading => 4
       @student.awards.each do |award|
-        pdf.text "•  #{award.award.capitalize}, #{award.award_date}",
-          :inline_format => true, :indent_paragraphs => 8, :leading => 1
+        pdf.text "•  #{award.award}, #{award.award_date}",
+          :inline_format => true, :indent_paragraphs => 8, :leading => 2
       end
     pdf.move_down(12)
 		pdf.text "<b><font size='10px'>Interests and Hobbies</font></b>",
       :inline_format => true, :leading => 4
 			@student.interests.each do |interest|
-        pdf.text "•  #{interest.interest.capitalize}",  
-        :inline_format => true, :indent_paragraphs => 8, :leading => 1
+        pdf.text "•  #{interest.interest}",  
+        :inline_format => true, :indent_paragraphs => 8, :leading => 2
       end
     
     pdf.move_down(12)
 	    pdf.text "<b><i>References available upon request</i></b>", 
-      :inline_format => true, :align => :center
+      :inline_format => true
 
     pdf.render
     

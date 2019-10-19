@@ -4,10 +4,10 @@
 			<div class="span12">
 				<h1 class="page-header">Online Resum&eacute; Tool</h1>
 			</div>
-			<div class="span5">
+			<div class="span6">
 				
             <ul class="rs-menu">
-					<% if @student.name == "" %>
+					<% if @student.name == "" && @student.last_name == "" %>
                 <li>
                     <a href="/student/resume/edit">
                         <span class="ra-icon"><i class="icon-plus"></i></span>
@@ -21,7 +21,7 @@
                     <a href="/student/resume/edit">
                         <span class="rs-icon"><i class="icon-ok"></i></span>
                         <div class="rs-content">
-                            <span class="right-info">Edit</span><h2 class="rs-main">Personal Information</h2><span class="right-info">Edit</span>
+                            <span class="right-info edit">Edit</span><h2 class="rs-main">Personal Information</h2><span class="right-info">Edit</span>
                         </div>
                     </a>
                 </li>
@@ -41,7 +41,7 @@
                     <a href="/student/resume/letters/letters">
                         <span class="rs-icon"><i class="icon-ok"></i></span>
                         <div class="rs-content">
-                            <span class="right-info">Edit</span><h2 class="rs-main">Cover Letters</h2>
+                            <span class="right-info edit">Edit</span><h2 class="rs-main">Cover Letters</h2>
                         </div>
                     </a>
                 </li>
@@ -61,7 +61,7 @@
                     <a href="/student/resume/objectives/objectives">
                         <span class="rs-icon"><i class="icon-ok"></i></span>
                         <div class="rs-content">
-                            <span class="right-info">Edit</span><h2 class="rs-main">Career Objectives</h2>
+                            <span class="right-info edit">Edit</span><h2 class="rs-main">Career Objectives</h2>
                         </div>
                     </a>
                 </li>
@@ -81,7 +81,7 @@
                     <a href="/student/resume/skills/skills">
                         <span class="rs-icon"><i class="icon-ok"></i></span>
                         <div class="rs-content">
-                            <span class="right-info">Edit</span><h2 class="rs-main">Career Skills</h2>
+                            <span class="right-info edit">Edit</span><h2 class="rs-main">Career Skills</h2>
                         </div>
                     </a>
                 </li>
@@ -101,7 +101,7 @@
                     <a href="/student/resume/educations/educations">
                         <span class="rs-icon"><i class="icon-ok"></i></span>
                         <div class="rs-content">
-                            <span class="right-info">Edit</span><h2 class="rs-main">Education</h2>
+                            <span class="right-info edit">Edit</span><h2 class="rs-main">Education</h2>
                         </div>
                     </a>
                 </li>
@@ -121,7 +121,7 @@
                     <a href="/student/resume/experience/experiences">
                         <span class="rs-icon"><i class="icon-ok"></i></span>
                         <div class="rs-content">
-                            <span class="right-info">Edit</span><h2 class="rs-main">Work Experience</h2>
+                            <span class="right-info edit">Edit</span><h2 class="rs-main">Work Experience</h2>
                         </div>
                     </a>
                 </li>
@@ -141,7 +141,7 @@
                     <a href="/student/resume/activities/activities">
                         <span class="rs-icon"><i class="icon-ok"></i></span>
                         <div class="rs-content">
-                            <span class="right-info">Edit</span><h2 class="rs-main">Activities</h2>
+                            <span class="right-info edit">Edit</span><h2 class="rs-main">Activities</h2>
                         </div>
                     </a>
                 </li>
@@ -161,7 +161,7 @@
                     <a href="/student/resume/awards/awards">
                         <span class="rs-icon"><i class="icon-ok"></i></span>
                         <div class="rs-content">
-                            <span class="right-info">Edit</span><h2 class="rs-main">Awards</h2>
+                            <span class="right-info edit">Edit</span><h2 class="rs-main">Awards</h2>
                         </div>
                     </a>
                 </li>
@@ -181,7 +181,7 @@
                     <a href="/student/resume/references/references">
                         <span class="rs-icon"><i class="icon-ok"></i></span>
                         <div class="rs-content">
-                            <span class="right-info">Edit</span><h2 class="rs-main">References</h2>
+                            <span class="right-info edit">Edit</span><h2 class="rs-main">References</h2>
                         </div>
                     </a>
                 </li>
@@ -201,7 +201,7 @@
                     <a href="/student/resume/traits/traits">
                         <span class="rs-icon"><i class="icon-ok"></i></span>
                         <div class="rs-content">
-                            <span class="right-info">Edit</span><h2 class="rs-main">Character Traits</h2>
+                            <span class="right-info edit">Edit</span><h2 class="rs-main">Character Traits</h2>
                         </div>
                     </a>
                 </li>
@@ -221,7 +221,7 @@
                     <a href="/student/resume/interests/interests">
                         <span class="rs-icon"><i class="icon-ok"></i></span>
                         <div class="rs-content">
-                            <span class="right-info">Edit</span><h2 class="rs-main">Interests and Hobbies</h2>
+                            <span class="right-info edit">Edit</span><h2 class="rs-main">Interests and Hobbies</h2>
                         </div>
                     </a>
                 </li>
@@ -230,26 +230,31 @@
 				</ul>
 				<br />
 			</div>
-			<div class="span6 offset1">
+			<div class="span6">
 				<h6>Account Info</h6>
-				<p><%= @student.email %></p>
+				<p><%= @student.email %><br />
 
-				<p>
-					<% unless @student.name == "" %><strong><%= @student.name %></strong><br /><% end %>
+					<% unless @student.name == "" || @student.name == nil %><strong><%= @student.name %></strong>
+					<% else %><strong><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></strong>
+					<% end %><br />
 					<% unless @student.address == "" %><%= @student.address %><br /><% end %>
 					<% unless @student.city == "" %><%= @student.city %><% end %> <% unless @student.state == "" %><%= @student.state %><% end %> <% unless @student.zip == "" %><%= @student.zip %><br /><% end %>
-					<% unless @student.phone == "" %><%= @student.phone %><% end %>
+					<% unless @student.phone == "" %><%= formatted_number(@student.phone) %><% end %><br />
+					<strong>Date of Birth</strong> &nbsp; <%= format_day(@student.birth_date) %><br />
+					<strong>School Password</strong> &nbsp; <%= @student.school_password %>
+					
 				</p>
 				
 				<hr />
-				<p><strong>View these documents</strong> at any time to check your progress, grammar, and spelling.</p>
+				<p style="margin-bottom: 6px;"><strong>View these documents</strong> at any time to check your progress, grammar, and spelling.</p>
 				<!-- <p><a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
     Action
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu">
     <li><a href="/student/resume/#{@student.name.split.join}-resume-pdf">PDF</a></li> -->
-  </ul><a href="/student/resume/resume-view" class="btn btn-small btn-success">Resum&eacute;</a> <a href="/student/resume/resume-print" class="btn btn-small btn-success">Print</a> <a href="/student/resume/resume" class="btn btn-small btn-success">PDF</a> <a href="/student/resume/letters/letters-view" class="btn btn-small btn-success">Cover Letters</a> <a href="/student/resume/references/references-view" class="btn btn-small btn-success">References</a></p>
+  </ul><a href="/student/resume/resume-view" class="btn btn-small btn-success">Resum&eacute;</a> <a href="/student/resume/resume-print" class="btn btn-small btn-success">Print</a> <a href="/student/resume/resume" class="btn btn-small btn-success">PDF</a> <br style="line-height: 3em;" />
+  <a href="/student/resume/letters/letters-view" class="btn btn-small btn-success">Cover & Thank You Letters</a> <a href="/student/resume/references/references-view" class="btn btn-small btn-success">References</a></p>
 				<p><small>Once you are finished you can print your resume or copy and paste the content of each document into a text editor.</small></p>
 				<p><a class="btn btn-info" href="/downloads/job-application.pdf"><i class="icon-download"> </i> &nbsp;<strong>Download Your Practice Job Application</strong></a></p>
 				<div>

@@ -33,6 +33,8 @@ class School
   property :cd,                 Boolean, :default => false
   property :ff,                 Boolean, :default => false
   property :cd_before,          Boolean, :default => false
+  
+  has n, :students
  
   before :create do |s|
     if s.school_password == ''
