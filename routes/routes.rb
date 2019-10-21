@@ -81,6 +81,7 @@ end
 get '/student/resume/resume-view' do
   
   @student = Student.get(session[:student])
+  @reference = Reference.all
   erb :'/student/resume/resume-view'
 end
 
@@ -99,19 +100,19 @@ get '/student/resume/resume' do
 
      pdf = Prawn::Document.new
      pdf.font "Helvetica"
-     pdf.font_size 12
+     pdf.font_size 11
      
-     pdf.move_down(12)
+     pdf.move_down(11)
      # pdf.text "<b><font size='11px'>Resume</font></b>",
 #      :inline_format => true, :leading => 16, :align => :center
      
-     pdf.text "<b><font size='13px'>#{@student.name}</font></b>",
+     pdf.text "<b><font size='13px'>#{@student.first_name} #{@student.middle_name} #{@student.last_name}</font></b>",
      :inline_format => true, :leading => 8
 		pdf.text "#{@student.address}
 		#{@student.city}, #{@student.state}  #{@student.zip}
 		#{formatted_number(@student.phone)}
 		#{@student.email}", 
-     :inline_format => true, :leading => 2
+     :inline_format => true, :leading => 1
       
      pdf.move_down(24)
      pdf.text "<b><font size='10px'>Objectives</font></b>",
@@ -184,16 +185,35 @@ get '/student/resume/resume' do
       end
     
     pdf.move_down(12)
+    
+    if @student.references == nil
+      
 	    pdf.text "<b><i>References available upon request</i></b>", 
       :inline_format => true
 
+    else
+			
+	    pdf.text "<b><i>References</i></b>", 
+      :inline_format => true
+      
+			@student.references.each do |reference|
+			  pdf.move_down(8)
+				pdf.text "<b>#{reference.name}</b>",
+     :inline_format => true, :leading => 1
+        pdf.text "#{reference.relationship}
+				#{reference.address}
+				#{reference.city} #{reference.state} #{reference.zip}
+				#{reference.phone}
+				#{reference.email}",
+     :inline_format => true, :leading => 1
+			
+			end
+ 			
+    end
+ 
     pdf.render
     
-    
-    # pdf.render_file "#{@student.name.split.join}-resume.pdf"
-#
-#     send_file "#{@student.name.split.join}-resume.pdf", :type => :pdf
-
+ 
 end
 
 get '/download' do

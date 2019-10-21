@@ -5,7 +5,7 @@
 				<h1 class="page-header">Student Profile &nbsp; <small><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></small></h1><br />
 			</div>
 			<div class="span7 offset2">
-				<form method="post" class="form-horizontal" enctype="multipart/form-data">
+				<form method="post" class="form-horizontal" id="resume_edit" enctype="multipart/form-data">
 					<div class="control-group">
 						<label class="control-label" for="email">Email</label>
 						<div class="controls">
@@ -19,17 +19,23 @@
 						</div>
 					</div>
 					<div class="control-group">
+						
 						<label class="control-label"for="school_password">School Password</label>
 						<div class="controls">
-							<input type="text" name="school_password" id="school_password" class="textfield span2" value="<%= @student.school_password %>" />
+							<input type="text" class="textfield span4" placeholder="School's Password Required" name="school_password" id="school_password" value="<%= params[:school_password] %>" />
+							<span class="help-block" style="line-height: 1.2em; margin: 5px 52px 6px 0;"><small>If you do not know your school's password, please contact your guidance counselor or teacher.</small></span>
 						</div>
+						
+						
+						
+					
 					</div>
-					<div class="control-group">
+					<!-- <div class="control-group">
 						<label class="control-label"for="name">Name</label>
 						<div class="controls">
 							<input type="text" name="name" id="name" class="textfield span5" value="<%= @student.name %>" />
 						</div>
-					</div>
+					</div> -->
 					<div class="control-group">
 						<label class="control-label"for="first_name">First Name</label>
 						<div class="controls">
@@ -97,3 +103,14 @@
 	</div> <!-- /container -->
 </div> <!-- /container-white -->
 
+<script  type="text/javascript">
+	var frmvalidator = new Validator("resume_edit");
+	frmvalidator.addValidation("school_password","req","Please enter your School Password");
+	frmvalidator.addValidation("first_name","req","Please enter your First Name");
+	frmvalidator.addValidation("last_name","req","Please enter your Last Name");
+	frmvalidator.addValidation("address","req","Please enter your Address");
+	frmvalidator.addValidation("city","req","Please enter your City");
+	frmvalidator.addValidation("state","req","Please enter your State");
+	frmvalidator.addValidation("zip","req","Please enter your Zip");
+	frmvalidator.addValidation("phone","req","Please enter your phone");
+</script>

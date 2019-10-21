@@ -6,6 +6,8 @@
 			</div>
 			<div class="span6">
 				
+				<% unless @student.school_password == "" || @student.school_password == nil %>
+				
             <ul class="rs-menu">
 					<% if @student.name == "" && @student.last_name == "" %>
                 <li>
@@ -32,7 +34,7 @@
                     <a href="/student/resume/letters/new">
                         <span class="ra-icon"><i class="icon-plus"></i></span>
                         <div class="rs-content">
-                            <span class="right-info">Get started</span><h2 class="rs-main">Cover Letters</h2>
+                            <span class="right-info">Get started</span><h2 class="rs-main">Cover, Thank You Letters</h2>
                         </div>
                     </a>
                 </li>
@@ -41,7 +43,7 @@
                     <a href="/student/resume/letters/letters">
                         <span class="rs-icon"><i class="icon-ok"></i></span>
                         <div class="rs-content">
-                            <span class="right-info edit">Edit</span><h2 class="rs-main">Cover Letters</h2>
+                            <span class="right-info edit">Edit</span><h2 class="rs-main">Cover, Thank You Letters</h2>
                         </div>
                     </a>
                 </li>
@@ -253,7 +255,7 @@
   </a>
   <ul class="dropdown-menu">
     <li><a href="/student/resume/#{@student.name.split.join}-resume-pdf">PDF</a></li> -->
-  </ul><a href="/student/resume/resume-view" class="btn btn-small btn-success">Resum&eacute;</a> <a href="/student/resume/resume-print" class="btn btn-small btn-success">Print</a> <a href="/student/resume/resume" class="btn btn-small btn-success">PDF</a> <br style="line-height: 3em;" />
+  </ul><a href="/student/resume/resume-view" class="btn btn-small btn-success">Resum&eacute;</a> <a href="/student/resume/resume" class="btn btn-small btn-success">PDF</a> <!-- <a href="/student/resume/resume-print" class="btn btn-small btn-success">For Editor</a><br style="line-height: 3em;" /> --><br style="line-height: 3em;" />
   <a href="/student/resume/letters/letters-view" class="btn btn-small btn-success">Cover & Thank You Letters</a> <a href="/student/resume/references/references-view" class="btn btn-small btn-success">References</a></p>
 				<p><small>Once you are finished you can print your resume or copy and paste the content of each document into a text editor.</small></p>
 				<p><a class="btn btn-info" href="/downloads/job-application.pdf"><i class="icon-download"> </i> &nbsp;<strong>Download Your Practice Job Application</strong></a></p>
@@ -265,7 +267,12 @@
 				</div>
 				<br />
 				
-				
+			<% else %>
+			
+		  <strong>You must complete your student profile to continue.</strong>
+		  <a href="/student/resume/<%= @student.id %>/edit" class="btn btn-small pull-right">Edit Profile</a>
+		  
+		  <% end %>
 			</div>
 			</div>
 		</div> <!-- /row -->

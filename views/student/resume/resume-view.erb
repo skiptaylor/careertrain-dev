@@ -16,7 +16,7 @@
 		
 						<div class="resume-content">
 		
-							<h1><%= @student.name %></h1>
+							<h1><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></h1>
 							<p><%= @student.address %><br />
 							<%= @student.city %>, <%= @student.state %> <%= @student.zip %><br />
 							<%= formatted_number(@student.phone) %><br />
@@ -80,7 +80,37 @@
 								</ul>
 								<% end %>
 		
+						<% if @student.references == nil %>
+						
 						<p class="lead"><em>References available upon request</em></p>
+						
+						<% else %>
+						
+						<p class="lead"><em>References</em></p> <br />
+						
+						<% @student.references.each do |reference| %>
+						<tr>
+							<td><strong><%= reference.name %></strong><br />
+							
+						
+							<%= reference.relationship %><br />
+							
+							<%= reference.address %><br />
+
+							<%= reference.city %>  <%= reference.state %>  <%= reference.zip %><br />
+					
+							<%= reference.phone %><br />
+					
+							<%= reference.email %>
+							
+							</td><br /><br />
+						</tr>
+						
+						<% end %>
+						
+						<% end %>
+						
+						
 					</div>
 				</div>
 			</div>

@@ -6,6 +6,14 @@
 			</div>
 			<div class="span8 offset2">
 				
+				<h5><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></h5>
+				<p><%= @student.address %><br />
+				<%= @student.city %>, <%= @student.state %> <%= @student.zip %><br />
+				<%= formatted_number(@student.phone) %><br />
+				<%= @student.email %>
+				</p>
+				<br /><br />
+				
 				<p><strong><%= @letter.title %> <%= @letter.first %> <%= @letter.last %></strong><br /><%= @letter.position %></p>
 
 				<p><strong><%= @letter.company %></strong><br />
@@ -16,9 +24,9 @@
 				
 				<br />
 								
-				<label>Opening Sentence:</label> <%= @letter.opening %></p>
+				<!-- <label>Opening Sentence:</label>  --><%= @letter.opening %></p>
 				
-				<br />
+				<br /><br />
 					
 				<p><a class="btn btn-success btn-small" href="/student/resume/letters/<%= @letter.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/letters/letters">Index</a> &nbsp; <a class="btn btn-small" href="/student/resume/index">Resum&eacute; Tool</a></p>
 			</div>
