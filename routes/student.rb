@@ -98,11 +98,20 @@ end
 
 
 get "/student/reports/signin/?" do
+  
+  unless session[:student]
+    
 	session[:student] = nil
 	session.clear
   @school = School.all
   @student = Student.all
   erb :"student/reports/signin"
+  
+  else
+    
+    redirect("/student/reports/report/enter_score")
+  
+  end
 end
 
 post '/student/reports/signin/?' do
@@ -431,10 +440,19 @@ get "/student/resume/:id/student/?" do
 end
 
 get "/student/resume/signin/?" do
+  
+  unless session[:student]
+    
 	session[:student] = nil
 	session.clear
   @student = Student.all
   erb :"student/resume/signin"
+  
+  else
+  
+  redirect "/student/resume/index"
+
+  end
 end
 
 # post '/student/resume/signin/?' do
