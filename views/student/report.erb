@@ -25,10 +25,18 @@
 						<p>New user</p>
 						<p><a href="/student/reports/create" class="btn btn-primary">Create an account</a></p>
 					</div>
+					
+					
 					<div style="margin-left: 184px;">
+						<% unless session[:student] %>
 						<p>Already have an account</p>
 						<p><a href="/student/reports/signin" class="btn btn-success"><i class="icon-signin"></i> &nbsp;Sign in</a></p>
+						<% else %>
+						<p>You are already signed in</p>
+						<p><a href="/student/reports/signin" class="btn btn-success">Create Report</a></p>
+						<% end %>
 					</div>
+					
 					
 					<p style="clear: both; padding-top: 12px;"><small>You will need your school's password to create a new account. If you do not know your school’s password, please contact your guidance counselor or teacher.</small></p> 
 				</div>
