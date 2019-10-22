@@ -543,6 +543,10 @@ end
 post '/student/resume/:id/edit/?' do
   
   if school = School.first(:school_password => params[:school_password])
+    
+    @student = Student.get(params[:id]).update(
+      :school_id => school.id
+    )
   
   @student = Student.get(params[:id]).update(
   :email        => params[:email],
@@ -573,12 +577,16 @@ post '/student/resume/:id/edit/?' do
 end
 
 get '/student/resume/edit/?' do
-  @school = School.get(params[:id])
+  @school = School.all
   @student = Student.get(session[:student])
   erb :'/student/resume/edit_student'
 end
 
 post '/student/resume/edit/?' do
+  
+  @student = Student.get(params[:id]).update(
+    :school_id => school.id
+  )
   
   @student = Student.get(session[:student]).update(
   :email        => params[:email],
@@ -595,8 +603,7 @@ post '/student/resume/edit/?' do
     :school_password => params[:school_password],
     :birth_date   => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
   )
-
-  
+    
   redirect "/student/resume/index"
 end
 
