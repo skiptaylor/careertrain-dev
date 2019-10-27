@@ -20,7 +20,7 @@
 				
 				<div class="sign-in" style="padding: 24px; margin: 42px 0;">
 					<h5>Give us a little information and someone will contact you.</h5>
-					<form method="post" class="school">
+					<form method="post" class="school" id="request">
 					<br />
 					<p>
 						<label class="horz" for="school_name">School name</label>
@@ -47,7 +47,7 @@
 					</p>
 					<p>
 						<label class="horz" for="email">Email</label>
-						<input type="text" class="textfield span4 dec" placeholder="Email" name="email" id="email" value="<%= @school.email %>" /> 
+						<input type="text" class="textfield span4 dec" placeholder="Email *Required" name="email" id="email" value="<%= @school.email %>" /> 
 					</p>
 					<p>
 						<label class="horz" for="phone">Phone</label>
@@ -79,3 +79,9 @@
 		</div>
 	</div> <!-- /container -->
 </div> <!-- /container-white -->
+
+<script  type="text/javascript">
+	var frmvalidator = new Validator("request");
+	frmvalidator.addValidation("school.email","req","Please enter your School Email");
+</script>
+
