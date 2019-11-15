@@ -3,28 +3,34 @@
 		<div class="row">  
 			<div class="span12">
 				<a href="/admin/admin_edit" class="btn btn-small pull-right">Admin Index</a>
-			<h1>Student List by School</h1>
-			<div class="pull-right">
-				<form class="form-search" method="get">
-					
+				<h1>Student List by School</h1>
+			</div>
+
+			<form class="form-search" method="get">
+				
+			
+				<div class="span4" style="text-align: center;">
+					<input type="text" class="search-query span3" name="search" placeholder="Search School Password" value="<%= params[:search] %>" />
 						
 						
-						<input type="text" class="search-query span3" name="search" placeholder="Search School Password" value="<%= params[:search] %>" />
-						
-						<button type="submit" class="btn btn-success">Find</button>
+				</div>
+				<div class="span5" style="text-align: right;">
+					<p><strong>Start:</strong> &nbsp; <%= date_to_field 'start', @start %></p>
+					<p><strong>End:</strong> &nbsp; <%= date_to_field 'end', @end %></p>
 					
-					&nbsp; &nbsp; &nbsp;<strong>Start:</strong> &nbsp; <%= date_to_field 'start', @start %>
-					&nbsp; &nbsp; &nbsp;
-					<strong>End:</strong> &nbsp; <%= date_to_field 'end', @end %>
-					&nbsp; &nbsp;
+				</div>
+				<div class="span1" style="text-align: left;">
+					<button type="submit" class="btn btn-success">Find</button>
+				</div>
+				<div class="span2">	
 					
-					&nbsp;
-					
-					
-					
-				</form>
+					<% if @student.count > 0 %>
+						<a href="<%= request.url %>&csv=true" class="btn btn-success pull-right">Download CSV</a>
+					<% end %>
+				</div>
 			</div>
 			
+			</form>
 			
 			<table class="table table-striped table-condensed table-hover">
 					<tr>
@@ -58,9 +64,7 @@
 					<% end %>
 					<% end %>
 				</table>
-				<% if @student.count < 100 %>
-					<a href="<%= request.url %>&csv=true" class="btn btn-success pull-right">Download CSV</a>
-				<% end %>
+				
 		
 			</div>
 		</div> <!-- /row -->
