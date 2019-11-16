@@ -602,7 +602,9 @@ end
 
 post '/student/resume/edit/?' do
   
-  @student = Student.get(params[:id]).update(
+  if school = School.first(:school_password => params[:school_password])
+  
+  @student = Student.get(session[:student]).update(
     :school_id => school.id
   )
   
@@ -623,6 +625,13 @@ post '/student/resume/edit/?' do
   )
     
   redirect "/student/resume/index"
+  
+  else
+    flash[:alert] = 'You must enter a valid school password.'
+    redirect request.referrer
+  
+  end
+  
 end
 
 get '/student/resume/:id/delete/?' do

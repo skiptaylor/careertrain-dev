@@ -4,9 +4,19 @@
 			<div class="span12">
 				<h1 class="page-header">Online Resum&eacute; Tool</h1>
 			</div>
-			<div class="span6">
+			<div class="span8">
 				
-				<% unless @student.school_password == "" || @student.school_password == nil %>
+				<% if @student.school_password == "" || @student.school_password == nil %>
+				
+	 			
+	 			<hr/>
+	 			<a href="/student/resume/<%= @student.id %>/edit" class="btn btn-small btn-primary pull-right">Edit Profile</a>
+	 		  <h5>You must complete your student profile to continue.</h5>
+	 		  <hr/>
+			  <% else %>
+			  
+			 </div>
+			 <div class="span6">
 				
             <ul class="rs-menu">
 					<% if @student.name == "" && @student.last_name == "" %>
@@ -267,11 +277,7 @@
 				</div>
 				<br />
 				
-			<% else %>
 			
-		  <strong>You must complete your student profile to continue.</strong>
-		  <a href="/student/resume/<%= @student.id %>/edit" class="btn btn-small pull-right">Edit Profile</a>
-		  
 		  <% end %>
 			</div>
 			</div>
