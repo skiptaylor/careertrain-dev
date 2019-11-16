@@ -27,7 +27,11 @@
 					
 					<% if @student.count > 0 %>
 						<a href="<%= request.url %>&csv=true" class="btn btn-success pull-right">Download CSV</a>
+						<br />
+						<br />
+						<p class="pull-right"><strong><%= @student.count %></strong> students found</p>
 					<% end %>
+					
 				</div>
 			</div>
 			
