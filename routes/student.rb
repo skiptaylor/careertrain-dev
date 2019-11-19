@@ -368,7 +368,7 @@ get "/student/resume/students-school/?" do
   if params[:start_month] && params[:start_day] && params[:start_year]
     @start = Chronic.parse("#{params[:start_year]}-#{params[:start_month]}-#{params[:start_day]}")
   else
-    @start = Chronic.parse('Oct 1, 2019')
+    @start = Chronic.parse('1 week ago')
   end
 
   if params[:end_month] && params[:end_day] && params[:end_year]

@@ -45,9 +45,9 @@
 						  <input type="submit" class="btn btn-success btn-small" />
 						</form>
 			  		</p>
+
 					<% if @results %>
   					<p>
-					
 						<% @results.each do |c| %>
 							<hr />
 							<strong><%= c.school_name %></strong> &nbsp; <small><%= "(Not Activated)" unless c.active %></small><br />
@@ -55,7 +55,6 @@
 							<small>School Password</small> &nbsp;&nbsp;<span class="password-show"><%= c.school_password %></span><% end %>
 						<% end %>
   					</p>
-						
 					<% end %>
 					
 					<hr />
@@ -68,7 +67,7 @@
 				</div>
 			</div>
 			<div class="span5">
-				<p style="margin-left: 24px;"><img src="/img/resume-cron.png" class="rotated"</p>
+				<p style="margin-left: 24px;"><img src="/img/resume-cron.png" class="rotated"></p>
 			</div>
 				
 			
