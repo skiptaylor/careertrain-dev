@@ -57,12 +57,19 @@
 							<input type="text" name="city" id="city" class="textfield span4"  placeholder="Required"value="<%= @city %>" />
 						</div>
 					</div>
+					
 					<div class="control-group">
-						<label class="control-label"for="state">State</label>
+						<label for="state" class="control-label">State</label>
 						<div class="controls">
-							<input type="text" name="state" id="state" class="textfield span2" placeholder="Required" value="<%= @state %>" />
+							<select type="text" id="state" name="state" style="width: 86px;" value="<%= @state %>">
+									<option value=""></option>
+								<% @state.sort{|a,b| a.abbr <=> b.abbr}.each do |state| %>
+									<option value="<%= state.abbr %>" <%= 'selected' if state.abbr == @state %>><%= state.abbr %></option>
+								<% end %>
+							</select>&nbsp;&nbsp;&nbsp;&nbsp;
 						</div>
 					</div>
+					
 					<div class="control-group">
 						<label class="control-label"for="zip">Zip</label>
 						<div class="controls">

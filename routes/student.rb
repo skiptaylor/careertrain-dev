@@ -24,6 +24,7 @@ end
 
 get "/student/reports/create/?" do 
   @school = School.all
+  @state = State.all
   erb :'student/reports/create'
 end
 
@@ -145,6 +146,7 @@ post '/student/reports/signin/?' do
 end
 
 get '/student/reports/:id/edit/?' do
+  @state = State.all
   @school = School.all
   @student = Student.get(params[:id])
   erb :'/student/reports/edit_student'
@@ -285,6 +287,7 @@ end
 
 get "/student/resume/create/?" do 
   @school = School.all
+  @state = State.all
   erb :'student/resume/create'
 end
 
@@ -554,6 +557,7 @@ end
 
 get '/student/resume/:id/edit/?' do
   @school = School.all
+  @state = State.all
   @student = Student.get(params[:id])
   erb :'/student/resume/edit_student'
 end
@@ -596,6 +600,7 @@ end
 
 get '/student/resume/edit/?' do
   @school = School.all
+  @state = State.all
   @student = Student.get(session[:student])
   erb :'/student/resume/edit_student'
 end

@@ -1,7 +1,12 @@
 .rs-menu{
     padding: 0;
     margin: 3px  0;
-    width: 400px;
+    
+}
+
+ul.rs-menu{
+	
+	width: 96%;
 }
 .rs-menu li{
     width: 100%;
@@ -53,7 +58,7 @@
 .rs-content{
     position: absolute;
     left: 42px;
-    width: 84%;
+    width: 82%;
     height: 36px;
     top: 0px;
 }
@@ -83,7 +88,7 @@
 }
 .rs-menu li:hover .rs-main{
     color: #fff;
-    font-size: 22px;
+    font-size: 18px;
 	 line-height: 34px;
 	 text-decoration: none;
 }
@@ -96,6 +101,12 @@
 	line-height: 38px;
 	color: #8f9ca2;
 	font-size: 12px;
+	font-weight: 600;
+}
+
+.edit{
+	color: #407fff;
+	font-weight: 600;
 }
 
 

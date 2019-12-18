@@ -43,7 +43,5 @@ get '/educator/resume/?' do
 end
 
 get '/educator/thanks/?' do
-   
-   
-   erb :"/educator/thanks"
+  erb :"/educator/thanks"
 end

@@ -62,9 +62,18 @@
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label"for="state">State</label>
+						<label for="state" class="control-label">State</label>
 						<div class="controls">
-							<input type="text" name="state" id="state" class="textfield span1" value="<%= @student.state %>" />
+							<% if @student.state == "" %>
+							<select type="text" id="state" name="state" style="width: 86px;" value="<%= @student.state %>" autofocus>
+							<% else %>
+							<select type="text" id="state" name="state" style="width: 86px;" value="<%= @student.state %>">
+							<% end %>
+									<option value=""></option>
+								<% @state.sort{|a,b| a.abbr <=> b.abbr}.each do |state| %>
+									<option value="<%= state.abbr %>" <%= 'selected' if @student.state == state.abbr %>><%= state.abbr %></option>
+								<% end %>
+							</select>&nbsp;&nbsp;&nbsp;&nbsp;
 						</div>
 					</div>
 					<div class="control-group">

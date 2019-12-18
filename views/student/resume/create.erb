@@ -58,9 +58,14 @@
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label"for="state">State</label>
+						<label for="state" class="control-label">State</label>
 						<div class="controls">
-							<input type="text" name="state" id="state" class="textfield span2" placeholder="Required" value="<%= @state %>" />
+							<select type="text" id="state" name="state" style="width: 86px;" value="<%= @state %>">
+									<option value=""></option>
+								<% @state.sort{|a,b| a.abbr <=> b.abbr}.each do |state| %>
+									<option value="<%= state.abbr %>" <%= 'selected' if state.abbr == @state %>><%= state.abbr %></option>
+								<% end %>
+							</select>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #989998;">Required</span>
 						</div>
 					</div>
 					<div class="control-group">
@@ -88,7 +93,7 @@
 	  				<div class="control-group" style="margin-bottom: 1.6em;">
 	  				    <div class="controls">
 	  				      <label class="checkbox">
-							  <input type="checkbox" value="account" onClick="EnableSubmit(this)" checked /> I am 13 or older
+							  <input type="checkbox" value="account" onClick="EnableSubmit(this)" /> I am 13 or older
 						  </label>
 	  					</div>
 	  				</div>
@@ -103,10 +108,10 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		EnableSubmit = function(val) {
+	<script type="text/javascript">	
+		EnableSubmit = function(attr) {
 		var submit = document.getElementById("account");
-			if (val.checked == true) {
+			if (attr.checked == true) {
 	        submit.disabled = false;
 	    	}
 			else {
