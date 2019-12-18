@@ -27,7 +27,7 @@
 					<p><strong>Email</strong><br /><%= @student.email %></p>
 					<p><strong>Password</strong><br /><%= @student.password %></p>
 					<p><strong>School Password</strong><br /><%= @student.school_password %></p>
-					<p><strong>School Password</strong><br /><% unless @student.school_password = 'nil' %><%= @student.school.school_name %><% end %></p>
+					<p><strong>School</strong><br /><% unless @student.school_password == nil %><%= @student.school.school_name %><% end %></p>
 				</div>
 			</div>
 		</div> <!-- /row -->
