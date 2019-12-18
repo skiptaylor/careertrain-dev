@@ -86,18 +86,23 @@
 						</form>
 			  		</p>
 					<% if @results %>
-  					<p>
 					
+  					<p>
 						<% @results.each do |c| %>
 							<hr />
+							<% unless c.school_zip == params[:zip] %>
+							<p>No school found</p>
+							<% else %>
 							<strong><%= c.school_name %></strong> &nbsp; <small><%= "(Not Activated)" unless c.active %></small><br />
 							<small><%= c.school_city %> <%= c.school_state %> &nbsp;<%= c.school_zip %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= c.id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><br />
 							<small>School Password</small> &nbsp;&nbsp;<span class="password-show"><%= c.school_password %></span> &nbsp; &nbsp; &nbsp; <a href="/arng/schools/<%= c.id %>/edit"><i class="icon-edit"></i></a><% end %>
+							
+								
+							<% end %>
 						<% end %>
   					</p>
-						
-					<% end %>
 
+					<% end %>
 					<hr />	
 					<p style="line-height: 1.3em;" class="semi-bold"><a href="/arng/schools/new" style="margin: 9px 0 12px 12px;" class="btn btn-mini btn-success pull-right">Register</a><small>After submitting your school's zip, if your school is not listed above, you can register it now.
 					<hr />
