@@ -57,12 +57,15 @@
   					</p> 
 
 					<% end %>
-						
+					
+					<% if (@results.count < 1) && (params[:zip] != '') %>
+						<hr />
+						<span class="password-show">NO SCHOOL FOUND FOR <%= params[:zip] %></span>
+					<% end %>
 						
 						<hr />
 					<p style="line-height: 1.3em;"><small>If the school is <strong>not listed above</strong> or listed as <strong>Not Activated</strong>, please call 888-326-9229.</small></p>
 			
-				
 				</div>
 			</div>
 			<div class="span5">
