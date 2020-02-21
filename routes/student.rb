@@ -398,12 +398,13 @@ get "/student/resume/students-school/?" do
 		
 		file = ''
 		file = CSV.generate do |csv|
-			csv << ['School', 'First', 'Middle', 'Last', 'Email', 'Address', 'City', 'State', 'ZIP', 'Phone', 'Birth Date',]
+			csv << ['Created on', 'School', 'First', 'Middle', 'Last', 'Email', 'Address', 'City', 'State', 'ZIP', 'Phone', 'Birth Date',]
 			@student.each do |s|
         if s.school_id
 				csv << [
+          format_american_day(s.created_at),
           "#{s.school.school_name}",
-					s.first_name,
+          s.first_name,
           s.middle_name,
           s.last_name,
 					s.email,
