@@ -1,14 +1,16 @@
 <div class="container">
 	<ul class="breadcrumb">
-		 <li><a href="arng">Career Direction 2</a> <span class="divider"> </span> </li>
-		 <% if session[:cdguard] == true %>
-		 <li><a href="leads">Generate Leads</a> <span class="divider"> </span> </li>
-		 <li><a href="register">Register Your School</a> <span class="divider"> </span> </li>
-		 <li><a href="feedback">Recruiter Feedback</a> <span class="divider"> </span> </li>
-		 <li><a href="practices">Best Practices</a> <span class="divider"> </span> </li>
-		 <li><a href="downloads" style="color: #9a0000;">Downloads</a> <span class="divider"> </span> </li>
-		 <li><a href="faq">FAQ</a> <span class="divider"> </span> </li>
-		 <% end %>
+		 <li><a href="/arng/arng">Career Direction 2</a> <span class="divider"> </span> </li>
+		 <% if session[:recruiter] %>
+		 <li><a href="/arng/leads">Generate Leads</a> <span class="divider"> </span> </li>
+		 <li><a href="/arng/register">Register Your School</a> <span class="divider"> </span> </li>
+		 
+		 <li><a href="/recruiters/<%= session[:recruiter] %>/profile">Recruiter Profile</a> <span class="divider"> </span> </li>
+		
+		 <li><a href="/arng/practices">Best Practices</a> <span class="divider"> </span> </li>
+		 <li><a href="/arng/downloads" style="color: #9a0000;">Downloads</a> <span class="divider"> </span> </li>
+		 <li><a href="/arng/faq">FAQ</a> <span class="divider"> </span> </li>
+		<% end %>
 	 </ul>
 </div>
 
@@ -16,6 +18,8 @@
 	<div class="container">	
 		<h1 class="page-header">Download Materials</h1>
 		<div class="row">  
+			<p><span style="color: #af4532;"><%= session[:admin] %> / <%= session[:recruiter] %><br /><%= session.inspect %></span></p>
+			
 			<div class="span8 under-link">
 				
 				<p align="left"><a href="../downloads/CTC-Cluster-CarDir.pdf" class="under-link" target="blank">CD2 Career Categories and US DOE Career Clusters Comparison Chart for 41st and Prior Editions</a></p>

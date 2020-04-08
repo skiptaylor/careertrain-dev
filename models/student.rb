@@ -23,8 +23,11 @@ class Student
   property :phone, String
   property :birth_date, Date, :default => Chronic.parse('1900-01-01')
   property :school_password, String
+  
+  property  :future, String
 
   belongs_to :school, required: false
+  belongs_to :presentation, required: false
   
   has n, :awards, :constraint => :destroy
   has n, :activities, :constraint => :destroy

@@ -37,9 +37,9 @@
 						<input type="text" class="textfield span4" name="last_name" id="last_name" value="<%= @school.last_name %>" /> 
 					</div>
 				</div>
-				
+				<br />
 				<div class="control-group">
-					<label class="control-label" for="school_name">School name</label>
+					<label class="control-label" for="school_name"><strong>School name</strong></label>
 					<div class="controls">
 						<input type="text" class="textfield span4" name="school_name" id="school_name" value="<%= @school.school_name %>" /> 
 					</div>
@@ -65,20 +65,34 @@
 						<input type="text" class="textfield span4" name="school_city" id="school_city" value="<%= @school.school_city %>" /> 
 					</div>
 				</div>
-				
+					
 				<div class="control-group">
-					<label class="control-label" for="school_state">State</label>
+					<label for="school_state" class="control-label">State</label>
 					<div class="controls">
-						<input type="text" class="textfield span1" name="school_state" id="school_state" value="<%= @school.school_state %>" /> 
+						<select type="text" id="school_state" name="school_state" style="width: 86px;" value="<%= @school.school_state %>">
+								<option value=""></option>
+							<% @state.sort{|a,b| a.abbr <=> b.abbr}.each do |state| %>
+								<option value="<%= state.abbr %>" <%= 'selected' if state.abbr == @school.school_state %>><%= state.abbr %></option>
+							<% end %>
+						</select>&nbsp;&nbsp;&nbsp;&nbsp;
 					</div>
 				</div>
 				
+				<% unless @school.active %>
 				<div class="control-group">
 					<label class="control-label" for="school_zip">Zip</label>
 					<div class="controls">
 						<input type="text" class="textfield span2" name="school_zip" id="school_zip" value="<%= @school.school_zip %>" /> 
 					</div>
 				</div>
+				<% else %>
+				<div class="control-group">
+					<label class="control-label" for="school_zip">Zip</label>
+					<div class="controls">
+						<input type="text" class="textfield span2" name="school_zip" id="disabledInput" value="<%= @school.school_zip %>"  disabled /> 
+					</div>
+				</div>
+				<% end %>
 				<div class="control-group">
 					<label class="control-label" for="email">Counselor/teacher email</label>
 					<div class="controls">
@@ -96,14 +110,14 @@
 			</div>
 			<div class="span6 form-horizontal">
 				
-				<p style="font-size: 1.1em; margin: 1em 0 1.5em 3em;"><strong>ARNG Rep’s Contact Information</strong></p>
+				<p style="font-size: 1.1em; margin: 1em 0 1.5em 3em;"><strong>ARNG Rep</strong></p>
 				
-				<div class="control-group">
+				<!-- <div class="control-group">
 					<label class="control-label" for="ng_rep">National Guard Rep</label>
 					<div class="controls">
-						<input type="text" class="textfield span4" name="ng_rep" id="ng_rep" value="<%= @school.ng_rep %>" /> 
+						<input type="text" class="textfield span4" name="ng_rep" id="ng_rep" value="<%= @school.ng_rep %>" />
 					</div>
-				</div>
+				</div> -->
 				
 				
 				<!-- <div class="control-group">
@@ -127,33 +141,33 @@
 					</div>
 				</div> -->
 					
-				<div class="control-group">
+				<!-- <div class="control-group">
 					<label class="control-label" for="arng_email">Email</label>
 					<div class="controls">
 						<input type="text" class="textfield span4" name="arng_email" id="arng_email" value="<%= @school.arng_email %>" />
 					</div>
 				</div>
-				
+
 				<div class="control-group">
 					<label class="control-label" for="mail_state">State</label>
 					<div class="controls">
-						<input type="text" class="textfield span1" name="mail_state" id="mail_state" value="<%= @school.mail_state %>" /> 
+						<input type="text" class="textfield span1" name="mail_state" id="mail_state" value="<%= @school.mail_state %>" />
 					</div>
 				</div>
-				
+
 				<div class="control-group">
 					<label class="control-label" for="mail_zip">Zip</label>
 					<div class="controls">
-						<input type="text" class="textfield span2" name="mail_zip" id="mail_zip" value="<%= @school.mail_zip %>" /> 
+						<input type="text" class="textfield span2" name="mail_zip" id="mail_zip" value="<%= @school.mail_zip %>" />
 					</div>
 				</div>
-				
+
 				<div class="control-group">
 					<label class="control-label" for="phone">Phone</label>
 					<div class="controls">
-						<input type="text" class="textfield span3" name="phone" id="phone" value="<%= @school.phone %>" /> 
+						<input type="text" class="textfield span3" name="phone" id="phone" value="<%= @school.phone %>" />
 					</div>
-				</div>
+				</div> -->
 				
 				<!-- <div class="control-group">
 					<label class="control-label" for="fax">Fax</label>
@@ -171,34 +185,56 @@
 					</div>
 				</div> -->
 				
-				<div class="control-group">
-				    <div class="controls">
-				      <label class="checkbox">
- 				    	  <input type="checkbox" name="active" id="active" <%= 'checked="checked"' if @school.active  %> />
-						  <strong>Active</strong> &nbsp;<small>(activates school and creates password)</small>
- 				  		</label>
-					</div>
-				</div>
 				<div class="control-group hidden">
 					<label class="control-label" for="school_password">School Password</label>
 					<div class="controls">
 						<input type="text" class="textfield span3" name="school_password" id="school_password" value="<%= @school.school_password %>" /> 
 					</div>
 				</div>
+				
+				<div class="control-group">
+					<label for="recruiter_id" class="control-label">Recruiter</label>
+					<div class="controls">
+						<select type="text" id="recruiter_id" name="recruiter_id" class="span4" value="<%= @school.recruiter_id %>">
+								<option value=""></option>
+							<% @recruiter.each do |recruiter| %>
+								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter_id %>><%= recruiter.state %> - <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %> - <%= recruiter.id %></option>
+							<% end %>
+						</select>
+					</div>
+				</div>
+				
 				<div class="control-group">
 				    <div class="controls">
-						 <input class="btn btn-success" type="submit" value="Save" />&nbsp;&nbsp;&nbsp;<a href="/arng/schools/<%= @school.id %>/delete" class="delete btn btn-warning"><i class="icon-trash"></i></a>
+				      <label class="checkbox">
+ 				    	  <input type="checkbox" name="active" id="active" <%= 'checked="checked"' if @school.active  %> />
+						  <span style="font-size: 17px;"><strong>Active</strong></span> &nbsp;<small>(activates school and creates password)</small>
+ 				  		</label>
+					</div>
+				</div>
+					
+				<div class="control-group">
+				    <div class="controls">
+						 <input class="btn btn-success" type="submit" value="Save" />&nbsp;&nbsp;&nbsp;<a href="/arng/schools/<%= @school.id %>/school" class="btn">Cancel</a>&nbsp;&nbsp;&nbsp;<a href="/arng/schools/<%= @school.id %>/delete" class="delete btn btn-warning"><i class="icon-trash"></i></a>
 					 </div>
 				 </div>
+				 <div class="well" style="margin: 4em; padding: 2em 0 1em 0; text-align: center;">
+				<% if @school.active == true %> 
+					School Password
+					<h6 style="color: #b5011c;"><%= @school.school_password %></h6>
+				<% else %>
+					<h5 class="muted">SCHOOL NOT ACTIVATED</h5>
+				<% end %>	
+				 </div>
 			 	</form>
-				
 			</div>
-		
+			
 		</div>
+		<%= session[:admin] %> / <%= session[:recruiter] %> // <%= @school.recruiter_id %>
 	</div> <!-- /container -->
 </div> <!-- /container-white -->
 
-<script  type="text/javascript">
+<!-- <script  type="text/javascript">
 	var frmvalidator = new Validator("register-school");
 	frmvalidator.addValidation("first_name","req","Please enter your First Name");
 	frmvalidator.addValidation("last_name","req","Please enter your Last Name");
@@ -214,4 +250,4 @@
 	frmvalidator.addValidation("mail_zip","req","Please enter your zip");
 	frmvalidator.addValidation("phone","req","Please enter your phone");
 	rmvalidator.addValidation("phone","req","Please enter your phone");
-</script>
+</script> -->

@@ -57,6 +57,7 @@ post '/student/reports/create/?' do
             :zip              => params[:zip],
             :phone            => params[:phone],
             :school_password  => params[:school_password],
+            :future           => params[:future],
             :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}"),
             )
             
@@ -173,6 +174,7 @@ post '/student/reports/:id/edit/?' do
     :zip              => params[:zip],
     :phone            => params[:phone],
     :school_password  => params[:school_password],
+    :future           => params[:future],
     :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
   )
 
@@ -320,6 +322,7 @@ post '/student/resume/create/?' do
             :zip          => params[:zip],
             :phone        => params[:phone],
             :school_password => params[:school_password],
+            :future           => params[:future],
             :birth_date   => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}"),
             )
             
@@ -386,9 +389,6 @@ get "/student/resume/students-school/?" do
    	end
     
   
-  
-	
-  
   @student = Student.all(order: [:created_at.desc], :school_password.like  =>  "%#{params[:search]}%", :created_at.gte => @start, :created_at.lte => @end)
   
   
@@ -423,17 +423,6 @@ get "/student/resume/students-school/?" do
   else
   	erb :'student/resume/students-school'
   end
-  
-
-
-
-
-
-
-
-
-  
-  
  
 end
 
@@ -584,6 +573,7 @@ post '/student/resume/:id/edit/?' do
     :zip       => params[:zip],
     :phone     => params[:phone],
     :school_password => params[:school_password],
+    :future           => params[:future],
     :birth_date   => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
   )
     
@@ -627,6 +617,7 @@ post '/student/resume/edit/?' do
     :zip       => params[:zip],
     :phone     => params[:phone],
     :school_password => params[:school_password],
+    :future           => params[:future],
     :birth_date   => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
   )
     

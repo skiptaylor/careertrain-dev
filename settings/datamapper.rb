@@ -3,7 +3,7 @@ configure :development do
 	# DataMapper.setup :default, 'sqlite::memory:'
 	# DataMapper.setup :default, "sqlite://#{Dir.pwd}/data/development.sqlite3"
 	# DataMapper.setup :default, 'mysql://username:password@host_url:3306/database_name'
-	DataMapper.setup :default, 'postgres://localhost:5432/careertrain_cap'
+	DataMapper.setup :default, 'postgres://localhost:5432/careertrain-dev_db'
 end
 
 configure :production do
@@ -12,5 +12,5 @@ configure :production do
 	# DataMapper.setup :default, "sqlite://#{Dir.pwd}/data/production.sqlite3"
 	# DataMapper.setup :default, 'mysql://username:password@host_url:3306/database_name'
 	# DataMapper.setup :default, 'postgres://username:password@host_url:5432/database_name'
-	DataMapper.setup(:default, ENV['HEROKU_POSTGRESQL_ORANGE_URL'] || 'postgres://localhost/mydb')
+	# DataMapper.setup(:default, ENV['HEROKU_POSTGRESQL_ORANGE_URL'] || 'postgres://localhost/mydb')
 end

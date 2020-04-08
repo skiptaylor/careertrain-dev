@@ -27,7 +27,7 @@ post '/educator/request/?' do
     :number_seniors         => params[:number_seniors]
   )
   
-  Email.requestcd2(school.school_name, school.school_address1, school.school_address2, school.school_city, school.school_state, school.school_zip, school.first_name, school.last_name, school.email, school.phone, school.fax)
+  # Email.requestcd2(school.school_name, school.school_address1, school.school_address2, school.school_city, school.school_state, school.school_zip, school.first_name, school.last_name, school.email, school.phone, school.fax)
   
   redirect "/educator/thanks"
 end

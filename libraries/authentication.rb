@@ -7,13 +7,13 @@ helpers do
   # Returns nothing.
 
 
-  def auth_cdguard
-    unless session[:cdguard] == true || session[:admin] == true
-      flash[:alert] = 'You must login to see that page.'
+  def auth_recruiter
+    unless session[:recruiter] != "" || session[:admin] == true 
+      flash[:alert] = 'You must sign in to see that page.'
       redirect '/arng/arng'
     end
   end
-
+  
   def auth_admin
     unless session[:admin] == true
       flash[:alert] = 'You must be an admin to see that page.'
@@ -22,10 +22,11 @@ helpers do
   end
   
   def auth_student
-    unless session[:student] == true || session[:admin] == true || session[:cdguard] == true
+    unless session[:student] == true || session[:admin] == true || session[:recruiter] != ""
       flash[:alert] = 'You must sign in to see that page.'
       redirect 'student/resume/signin'
     end
   end
 
 end
+

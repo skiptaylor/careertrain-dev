@@ -1,0 +1,15 @@
+	<ul class="breadcrumb">
+		 <li><a href="/arng/arng">Career Direction 2</a> <span class="divider"> </span> </li>
+		 <% if session[:recruiter] %>
+		 <li><a href="/arng/leads">Generate Leads</a> <span class="divider"> </span> </li>
+		 <li><a href="/arng/register">Register Your School</a> <span class="divider"> </span> </li>
+		 
+		 <li><a href="/recruiters/<%= session[:recruiter] %>/profile">Recruiter Profile</a> <span class="divider"> </span> </li>
+		
+		 <li><a href="/arng/practices">Best Practices</a> <span class="divider"> </span> </li>
+		 <li><a href="/arng/downloads">Downloads</a> <span class="divider"> </span> </li>
+		 <li><a href="/arng/faq">FAQ</a> <span class="divider"> </span> </li>
+		<% end %>
+	 </ul>
+	 
+ style="color: #9a0000;"

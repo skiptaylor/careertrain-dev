@@ -35,6 +35,7 @@ class School
   property :cd_before,          Boolean, :default => false
   
   has n, :students
+  belongs_to :recruiter, required: false
  
   before :create do |s|
     if s.school_password == ''

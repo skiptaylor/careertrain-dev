@@ -1,15 +1,17 @@
 <div class="container">
 	<ul class="breadcrumb">
-		<li><a href="arng" style="color: #9a0000;">Career Direction 2</a> <span class="divider"> </span> </li>
-		<% if session[:cdguard] == true %>
-		<li><a href="leads">Generate Leads</a> <span class="divider"> </span> </li>
-		<li><a href="register">Register Your School</a> <span class="divider"> </span> </li>
-		<li><a href="feedback">Recruiter Feedback</a> <span class="divider"> </span> </li>
-		<li><a href="practices">Best Practices</a> <span class="divider"> </span> </li>
-		<li><a href="downloads">Downloads</a> <span class="divider"> </span> </li>
-		<li><a href="faq">FAQ</a> <span class="divider"> </span> </li>
+		 <li><a href="/arng/arng" style="color: #9a0000;">Career Direction 2</a> <span class="divider"> </span> </li>
+		 <% if session[:recruiter] %>
+		 <li><a href="/arng/leads">Generate Leads</a> <span class="divider"> </span> </li>
+		 <li><a href="/arng/register">Register Your School</a> <span class="divider"> </span> </li>
+		 
+		 <li><a href="/recruiters/<%= session[:recruiter] %>/profile">Recruiter Profile</a> <span class="divider"> </span> </li>
+		
+		 <li><a href="/arng/practices">Best Practices</a> <span class="divider"> </span> </li>
+		 <li><a href="/arng/downloads">Downloads</a> <span class="divider"> </span> </li>
+		 <li><a href="/arng/faq">FAQ</a> <span class="divider"> </span> </li>
 		<% end %>
-	</ul>
+	 </ul>
 </div>
 
 <div class="container-white">
@@ -22,33 +24,33 @@
 				<p class="lead">The <strong>Army National Guard</strong> continues to support its mission first established in 1636 to provide for the security and well-being of our country and communities. The Guard saves lives during floods, tornadoes, blizzards, and other disasters.</p>
 				<p>Guard members protect and defend. Both the Guard and Career Training Concepts are proud to be your partners in this important endeavor of planning your future.</p>
 				<p>The National Guard offers educational, training, employment, financial assistance, and personal growth opportunities for qualifying students.</p>
-				<p class="under-link">Visit <a href="http://www.NationalGuard.com" target="blank">NationalGuard.com</a> for more information on the Army National Guard.</p><br />
+				<p class="under-link">Visit <a href="http://www.NationalGuard.com" target="blank">NationalGuard.com</a> for more information on the Army National Guard.</p>
 			
-				<div class="sign-in" style="padding: 18px 32px; margin: 30px 0;">		
-					<h6>Access to the Career Direction 2 ARNG Section is restricted to National Guard Representatives.</h6>
-					<p>Please provide your authorization code:</p>
+				<div class="sign-in" style="padding: 18px 32px; margin: 48px 0;">
+					<h6>ARNG Section </h6>
+					<div style="padding-right: 18px; float: left; border-right: 1px solid #b2b5bc;">
+						<p>New Recruiter</p>
+						<p><a href="/recruiters/new" class="btn btn-primary">Create an account</a></p>
+					</div>
+					<div style="margin-left: 184px;">
+						<% if session[:recruiter] %>
+							<p> You are signed in</p>
+							<p><a href="/recruiters/signout" class="btn btn-inverse"><i class="icon-signout"> </i> &nbsp;Sign out</a></p>
+						<% else %>
+							<p>Already have an account</p>
+							<p><a href="/recruiters/signin" class="btn btn-success"><i class="icon-signin"></i> &nbsp;Sign in</a></p>
+						<% end %>
+					</div>
 					
-				<form method="post">
-					
-						<input type="password" name="password" id="password" value="<%= params[:password] %>" class="input-small search-query" /> &nbsp;
-						<input type="Submit" class="btn btn-success" value="Enter"><br />
-				
-				<hr style="margin-top: 24px;" />
-					
-					<h5>Forgotten your authorization code?</h5>
-					<p>Are you an ARNG Representative?</p>
-					<p>In what state do you serve? &nbsp; <input name="State" id="State" type="text" class="span1"  />	
-						
-		 			  <label for="name">Name</label>
-		 				<input type="text" class="textfield span4" name="name" id="name" value="<%= params[:name] %>" />
-		 					
-		 				<label for="email">Email</label>
-		 				<input type="email" class="textfield span4" name="email" id="email" value="<%= params[:email] %>" />
-		 					<br />
-		 		    <input type="submit" class="btn btn-success" value="Enter" />
-
+					<p style="clear: both; padding-top: 12px;"><small>You will need to create an account to activate a school and schedule a class to present Career Direction 2. For further assistance, email <a href="MAILTO:info@careertrain.com">info@careertrain.com</a>.</small></p> 
+					<p style="line-height: 17px; margin-top: 14px;">
+					<strong>PROTECT YOUR PRIVACY.</strong>
+					<small>If you are using a public or shared device <strong>sign out</strong> when finished.</small></p>
 				</div>
+				<span style="color: #af4532;"><%= session[:admin] %> / <%= session[:recruiter] %><br /><%= session.inspect %></span>
+				
 			</div>
+			
 			
 			<div class="span4">
 				<p><img src="../img/chopper.jpg" class="pic-border" /></p>

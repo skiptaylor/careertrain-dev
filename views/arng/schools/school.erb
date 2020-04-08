@@ -7,33 +7,36 @@
 			<div class=" span8 offset2 sign-in" style="padding: 24px 12px; margin-bottom: 60px;">
 				<div class="span8">
 					<h5><%= @school.school_name %></h5>
-					<p><%= @school.school_city %>, <%= @school.school_state %> &nbsp;<%= @school.school_zip %></p>
-					<div class="well well-small span4" style="text-align: center; margin: 9px 0 18px 0; padding-top: 6px;">
-						<p>
+					<p><%= @school.school_address1 %> <%= @school.school_address2 %><br />
+						<%= @school.school_city %>, <%= @school.school_state %> &nbsp;<%= @school.school_zip %></p>
+					<p><strong>Educator:</strong> &nbsp; &nbsp; <%= @school.first_name %> <%= @school.middle_initial %> <%= @school.last_name %><br />
+					<strong>Counselor/teacher email:</strong> &nbsp; &nbsp; <%= @school.email %>
+					</p>
+					<div class="well well-small span7" style="text-align: center; margin: 9px 0 18px 0; padding-top: 16px;">
+						
 							<small>School Password</small>
-						</p>
+						
 						<% if @school.active == true %> 
 							<h6 style="color: #b5011c;"><%= @school.school_password %></h6>
 						<% else %>
 							<h5 class="muted">SCHOOL NOT ACTIVATED</h5>
 						<% end %>
 					</div>
+					
+					<p style="clear: left;"><strong>Recruiter:</strong> &nbsp; &nbsp; <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %></p>
+					
 				</div>
 				<div class="span7">
 					<hr />
 					<p>
-						You should give this password to your students during your <strong>Career Direction 2</strong> presentation.
+						
 					</p>
+					<% if session[:recruiter] %>
 					<p>
-						After the class, be sure to return <strong>CD2</strong> exercise scanforms to CTC:
+						<a href="/arng/schools/<%= @school.id %>/edit" class="btn btn-small">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/recruiters/<%= session[:recruiter] %>/profile" class="btn btn-small">Recruiter Profile</a>
 					</p>
-					<p>	
-						<address class="padleft"><strong>Career Training Concepts, Inc.</strong><br />
-							ATTN: Scantron Forms<br />
-							3640 Hewatt Court<br />
-							Snellville, GA 30039
-						</address>
-					</p>
+					<% end %>
+					<%= session[:admin] %> / <%= session[:recruiter] %>
 				</div>
 			</div>
 		</div>

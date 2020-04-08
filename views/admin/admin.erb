@@ -4,8 +4,12 @@
 			<div class="span6 offset3 well">
 				<h1>Admin</h1>
 				<form method="post">
+					<% if session[:admin] == true %>
+						You are already signed in &nbsp;&nbsp;&nbsp;<a href="/admin/admin_edit" class="btn btn-success">Go to Admin Section</a>
+					<% else %>
 						<input type="password" name="password" id="password" value="<%= params[:password] %>" class="input-xlarge search-query" /> &nbsp;
 						<input type="Submit" class="btn btn-success" value="Enter"><br />
+					<% end %>
 				</form>
 			</div>
 		</div> <!-- /row -->

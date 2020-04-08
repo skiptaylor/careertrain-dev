@@ -43,6 +43,10 @@ get '/thanks/?' do
 	erb :'/thanks'
 end
 
+get '/nac/?' do
+	erb :'/nac'
+end
+
 get '/admin/admin/?' do
 	erb :'/admin/admin'
 end
@@ -51,16 +55,8 @@ get '/about/?' do
 	erb :'/about'
 end
 
-get '/nac/?' do
-	erb :'/nac'
-end
-
-get '/arng/arng/?' do
-	erb :'/arng/arng'
-end
-
 get '/admin/admin_edit/?'  do
-  auth_admin
+  
   erb :"/admin/admin_edit"
 end
 
@@ -73,6 +69,14 @@ post '/admin/admin/?' do
     redirect '/admin/admin'
   end
 end
+
+get "/admin/signout/?"  do
+  session[:admin] = nil
+  session.clear
+  flash[:alert] = 'You are now signed out.'
+  redirect "/index"
+end
+
 
 get '/student/report/scores' do
   erb :'/student/report/scores', layout: false

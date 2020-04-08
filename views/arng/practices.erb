@@ -1,23 +1,25 @@
 <div class="container">
-		  
 	<ul class="breadcrumb">
-		 <li><a href="arng">Career Direction 2</a> <span class="divider"> </span> </li>
-		 <% if session[:cdguard] == true %>
-		 <li><a href="leads">Generate Leads</a> <span class="divider"> </span> </li>
-		 <li><a href="register">Register Your School</a> <span class="divider"> </span> </li>
-		 <li><a href="feedback">Recruiter Feedback</a> <span class="divider"> </span> </li>
-		 <li><a href="practices" style="color: #9a0000;">Best Practices</a> <span class="divider"> </span> </li>
-		 <li><a href="downloads">Downloads</a> <span class="divider"> </span> </li>
-		 <li><a href="faq">FAQ</a> <span class="divider"> </span> </li>
-		 <% end %>
+		 <li><a href="/arng/arng">Career Direction 2</a> <span class="divider"> </span> </li>
+		 <% if session[:recruiter] %>
+		 <li><a href="/arng/leads">Generate Leads</a> <span class="divider"> </span> </li>
+		 <li><a href="/arng/register">Register Your School</a> <span class="divider"> </span> </li>
+		 
+		 <li><a href="/recruiters/<%= session[:recruiter] %>/profile">Recruiter Profile</a> <span class="divider"> </span> </li>
+		
+		 <li><a href="/arng/practices" style="color: #9a0000;">Best Practices</a> <span class="divider"> </span> </li>
+		 <li><a href="/arng/downloads">Downloads</a> <span class="divider"> </span> </li>
+		 <li><a href="/arng/faq">FAQ</a> <span class="divider"> </span> </li>
+		<% end %>
 	 </ul>
 </div>
-
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
 			<div class="span12">
 				<h1 class="page-header">Best Practices</h1>
+				<p>		<span style="color: #af4532;"><%= session[:admin] %> / <%= session[:recruiter] %><br /><%= session.inspect %></span>
+</p>
 			</div>
 			<div class="span8 under-link">
 				

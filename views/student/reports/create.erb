@@ -91,6 +91,22 @@
 							<%= date_to_field('birth_date', (@birth_date || Time.now)) %>
 						</div>
 					</div>
+					<div class="control-group">
+						<label class="control-label"for="future">Future Plans</label>
+						<div class="controls">
+	  					<select type="text" class="span4" name="future" id="future" style="text-align: center;" >
+	  						<option value="Select one">-- Select one --</option>
+	  						<option <%= 'selected' if @future == 'Enter technical college/trade school' %> value="Enter technical college/trade school">Enter technical college/trade school</option>
+	  						<option <%= 'selected' if @future == 'Work full-time' %> value="Work full-time">Work full-time</option>
+	  						<option <%= 'selected' if @future == 'Work part-time' %> value="Work part-time">Work part-time</option>
+	  						<option <%= 'selected' if @future == 'Enter the military' %> value="Enter the military">Enter the military</option>
+	  						<option <%= 'selected' if @future == 'Go to college' %> value="Go to college">Go to college</option>
+	  						<option <%= 'selected' if @future == 'I have money to pay for education' %> value="I have money to pay for education">I have money to pay for education</option>
+	  						<option <%= 'selected' if @future == "Counting on parents for money for education" %> value="Counting on parents for money for education">Counting on parents for money for education</option>
+	  						<option <%= 'selected' if @future == 'Considering sources' %> value='Considering sources'>Considering sources of financial aid or scholarships</option>
+	  					</select>
+						</div>
+					</div>
 						
 	  				<div class="control-group" style="margin-bottom: 1.6em;">
 	  				    <div class="controls">

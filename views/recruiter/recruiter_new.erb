@@ -1,0 +1,78 @@
+<div class="container-white">
+	<div class="container">	
+		<div class="row">  
+			<div class="span6">
+				<h1>New Recruiter</h1>
+				
+				<form method="post">
+				
+					
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" class="textfield span5" value="<%= @recruiter.email %>" />
+					
+					
+						<label for="password">Password</label>
+						<input type="text" name="password" id="password" class="textfield span5" value="<%= @recruiter.password %>" />
+					
+					
+						<label for="rank">Rank</label>
+						<input type="text" name="rank" id="rank" class="textfield span1" value="<%= @recruiter.rank %>" />
+					
+				
+						<label for="first_name">Fist name</label>
+						<input type="text" name="first_name" id="first_name" class="textfield span5" value="<%= @recruiter.first_name %>" />
+		
+						<label for="middle_name">Middle name</label>
+						<input type="text" name="middle_name" id="middle_name" class="textfield span5" value="<%= @recruiter.middle_name %>" />
+				
+						<label for="last_name">Last name</label>
+						<input type="text" name="last_name" id="last_name" class="textfield span5" value="<%= @recruiter.last_name %>" />
+			
+			</div>
+			<div class="span6">
+				
+						<label for="address1">Address</label>
+						<input type="text" name="address1" id="address1" class="textfield span5" value="<%= @recruiter.address1 %>" />
+				
+						<label for="address2"></label>
+						<input type="text" name="address2" id="address2" class="textfield span5" value="<%= @recruiter.address2 %>" />
+				
+						<label for="city">City</label>
+						<input type="text" name="city" id="city" class="textfield span5" value="<%= @recruiter.city %>" />
+					
+					<div class="control-group">
+						<label for="state" class="control-label">State</label>
+						<div class="controls">
+							<select type="text" id="state" name="state" style="width: 86px;" value="<%= @recruiter.state %>">
+									<option value=""></option>
+								<% @state.sort{|a,b| a.abbr <=> b.abbr}.each do |state| %>
+									<option value="<%= state.abbr %>" <%= 'selected' if state.abbr == @recruiter.state %>><%= state.abbr %></option>
+								<% end %>
+							</select>&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					</div>
+					
+						<label for="zip">ZIP</label>
+						<input type="text" name="zip" id="zip" class="textfield span2" value="<%= @recruiter.zip %>" />
+				
+						<label for="phone">Phone</label>
+						<input type="text" name="phone" id="phone" class="textfield span3" value="<%= @recruiter.phone %>" />
+				
+						<label for="ssnl4">SSN last 4 digits</label>
+						<input type="text" name="ssnl4" id="ssnl4" class="textfield span1" value="<%= @recruiter.ssnl4 %>" />
+					
+					<!-- <div class="control-group">
+					    <div class="controls">
+					      <label class="checkbox">
+	 				    	  <input type="checkbox" name="recruiter_status" id="recruiter_status" <%= 'checked="checked"' if @recruiter.recruiter_status  %> />
+							  <strong>Active</strong>
+	 				  		</label>
+						</div>
+					</div> -->
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a href="/arng/arng/" class="btn btn-small">Cancel</a>
+				</form>	
+			
+			</div> <!-- /span6 -->
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /container-white -->

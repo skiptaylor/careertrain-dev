@@ -1,17 +1,17 @@
 <div class="container">
-		  
-	<ul class="breadcrumb">
-		 <li><a href="arng">Career Direction 2</a> <span class="divider"> </span> </li>
-		 <% if session[:cdguard] == true %>
-		 <li><a href="leads" style="color: #9a0000;">Generate Leads</a> <span class="divider"> </span> </li>
-		 <li><a href="register">Register Your School</a> <span class="divider"> </span> </li>
-		 <li><a href="feedback">Recruiter Feedback</a> <span class="divider"> </span> </li>
-		 <li><a href="practices">Best Practices</a> <span class="divider"> </span> </li>
-		 <li><a href="downloads">Downloads</a> <span class="divider"> </span> </li>
-		 <li><a href="faq">FAQ</a> <span class="divider"> </span> </li>
-		 <% end %>
-	 </ul>
+ 	<ul class="breadcrumb">
+ 		 <li><a href="/arng/arng">Career Direction 2</a> <span class="divider"> </span> </li>
+ 		 <% if session[:recruiter] %>
+ 		 <li><a href="/arng/leads" style="color: #9a0000;">Generate Leads</a> <span class="divider"> </span> </li>
+ 		 <li><a href="/arng/register">Register Your School</a> <span class="divider"> </span> </li>
 		 
+ 		 <li><a href="/recruiters/<%= session[:recruiter] %>/profile">Recruiter Profile</a> <span class="divider"> </span> </li>
+		
+ 		 <li><a href="/arng/practices">Best Practices</a> <span class="divider"> </span> </li>
+ 		 <li><a href="/arng/downloads">Downloads</a> <span class="divider"> </span> </li>
+ 		 <li><a href="/arng/faq">FAQ</a> <span class="divider"> </span> </li>
+ 		<% end %>
+ 	 </ul>
 </div>
 
 <div class="container-white">
@@ -21,7 +21,6 @@
 				<h1 class="page-header">Use Career Direction 2 to Generate <br />Refined Non-Prior Service Leads</h1>
 			</div>
 			<div class="span8">
-
 		<p class="lead">
 			<strong>Career Direction 2</strong> is an exclusive NPS entry tool available <em>only</em> 
 			to Army National Guard RRNCOs. It is a valuable career guidance workshop that truly meets the needs of 
@@ -75,5 +74,7 @@
 				</div>
 				  
 		  	   </div>
+				<span style="color: #af4532;"><%= session[:admin] %> / <%= session[:recruiter] %><br /><%= session.inspect %></span>
+				
 		     </div> <!-- /container -->
 		  </div> <!-- /container-white -->
