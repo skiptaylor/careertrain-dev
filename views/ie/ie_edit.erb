@@ -1,0 +1,52 @@
+<div class="container-white">
+	<div class="container">
+		<div class="row" style="padding: 20px 0 22px 0;">
+			<div class="span10 offset1">
+				<h1>Interest Exercise</h1>
+				<hr />
+			</div>
+			<form method='post'>
+			<div class="form-horizontal span10 offset1">
+				<br />
+				<div class="control-group">
+					<label for="position_number" class="span2 control-label">Position Number</label>
+					<div class="span4">
+						<input type="text" class="form-control span1" name="position_number" id="position_number" value="<%= @ie.position_number %>" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label for="item" class="span2 control-label">Interest</label>
+					<div class="span5">
+						<input type="text" class="form-control span7" name="item" id="item" value="<%= @ie.item %>" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label for="category" class="span2 control-label">Category</label>
+					<div class="span5">
+ 						  <select type="text" class="span1" name="category" id="category" value="<%= @ie.category %>">
+ 						    <option></option>
+ 							 <option value="A" <%= 'selected' if 'A' == @ie.category %>>A</option>
+ 						    <option value="B" <%= 'selected' if 'B' == @ie.category %>>B</option>
+ 						    <option value="C" <%= 'selected' if 'C' == @ie.category %>>C</option>
+ 						    <option value="D" <%= 'selected' if 'D' == @ie.category %>>D</option>
+ 						    <option value="E" <%= 'selected' if 'E' == @ie.category %>>E</option>
+ 						    <option value="F" <%= 'selected' if 'F' == @ie.category %>>F</option>
+ 						    <option value="G" <%= 'selected' if 'G' == @ie.category %>>G</option>
+ 						    <option value="H" <%= 'selected' if 'H' == @ie.category %>>H</option>
+ 						    <option value="I" <%= 'selected' if 'I' == @ie.category %>>I</option>
+ 						  </select>
+					</div>
+				</div>
+				<br />
+				<div class="control-group">
+					<label for="" class="span2 control-label"></label>
+					<div class="span4">
+						<input class="btn btn-small btn-success" type="submit" value="Save" /> &nbsp; <a class="btn btn-default btn-small" href="/ie/ies">Cancel</a> &nbsp; <a href="/ie/<%= @ie.id %>/delete" class="btn btn-small btn-warning pull-right delete">Delete</a>
+					</div>
+				</div>
+			</div>
+			</form>
+		</div>    <!-- row -->
+	</div>   <!-- container -->
+</div>  <!-- white -->
+

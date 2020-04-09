@@ -8,7 +8,7 @@ class Exercise
   property :student_id,   Integer
   property :scores,       Integer
   
-  has n, :ieInterests
+  has n, :ies
   belongs_to :student, required: false
   
 end

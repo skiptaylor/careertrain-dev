@@ -1,0 +1,25 @@
+<div class="container-white">
+	<div class="container">
+		<div class="row" style="padding: 20px 0 24px 0;">
+			<div class="span12">
+			<a href="/admin/admin_edit" class="btn btn-small pull-right">Admin Index</a>
+			<h1>Interest Exercise</h1>
+			<table class="table table-striped table-condensed">
+				<tr>
+				<th style="text-align: center;">Position</th>	
+				<th>Items</th>
+				<th style="text-align: center;">Category</th>
+				<th><a href="/ie/new" class="btn btn-mini btn-success pull-right">&nbsp;New&nbsp;</a></th>
+			</tr>
+			<% @ie.each do |ie| %>
+			<tr>
+				<td style="text-align: center;"><strong><%= ie.position_number %></strong></td>
+				<td><%= ie.item %></td>
+				<td style="text-align: center;"><strong><%= ie.category %></strong></td>
+				<td style="text-align: right;"><a href="/ie/<%= ie.id %>/edit" class="btn btn-small">Edit</a></td>
+			</tr>
+			<% end %>
+			</table>
+		</div>
+	</div>
+</div>
