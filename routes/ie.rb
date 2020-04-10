@@ -46,3 +46,7 @@ get "/ie/:id/delete/?" do
   redirect "/ie/ies"
 end
 
+get "/ie/exercise/?"  do
+  @ie = Ie.all
+  erb :"/ie/exercise"
+end
