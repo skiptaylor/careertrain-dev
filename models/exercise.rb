@@ -4,11 +4,19 @@ class Exercise
 	timestamps :at, :on
 	property   :deleted_at, ParanoidDateTime
 	property 	 :id, 				Serial
+  
+  property  :score_a,      Integer, default: 0
+  property  :score_b,      Integer, default: 0
+  property  :score_c,      Integer, default: 0
+  property  :score_d,      Integer, default: 0
+  property  :score_e,      Integer, default: 0
+  property  :score_f,      Integer, default: 0
+  property  :score_g,      Integer, default: 0
+  property  :score_h,      Integer, default: 0
+  property  :score_i,      Integer, default: 0
+  
+  belongs_to  :student, required: false
 
-  property :student_id,   Integer
-  property :scores,       Integer
-  
-  has n, :ies
-  belongs_to :student, required: false
-  
 end
+
+

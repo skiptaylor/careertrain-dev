@@ -7,10 +7,15 @@ end
 post "/ie/new/?" do
   auth_admin
   ie = Ie.create(
-  :position_number  => params[:position_number],
-  :item             => params[:item],
-  :category        => params[:category]
+    :position_number  => params[:position_number],
+    :item             => params[:item],
+    :section          => params[:section],
+    :category         => params[:category],
+    :answer_id        => params[:answer_id]
   )
+  
+  params[:answer_yes]  ? ie.update(:answer_yes => true) : ie.update(:answer_yes => false)
+  params[:answer_no]  ? ie.update(:answer_no => true) : ie.update(:answer_no => false)
 
   redirect "/ie/ies"
 end
@@ -33,8 +38,13 @@ post "/ie/:id/edit/?" do
   ie.update(
     :position_number  => params[:position_number],
     :item             => params[:item],
-    :category        => params[:category]
+    :section          => params[:section],
+    :category         => params[:category],
+    :answer_id        => params[:answer_id]
   )
+  
+  params[:answer_yes]  ? ie.update(:answer_yes => true) : ie.update(:answer_yes => false)
+  params[:answer_no]  ? ie.update(:answer_no => true) : ie.update(:answer_no => false)
 
   redirect "/ie/ies"
 end
@@ -44,9 +54,4 @@ get "/ie/:id/delete/?" do
   ie = Ie.get(params[:id])
   ie.destroy
   redirect "/ie/ies"
-end
-
-get "/ie/exercise/?"  do
-  @ie = Ie.all
-  erb :"/ie/exercise"
 end
