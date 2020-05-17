@@ -32,19 +32,39 @@ post  "/student/reports/exercise/?"  do
   exercise.score_g = 0
   exercise.score_h = 0
   exercise.score_i = 0
-  
-   ie = Ie.each do |ie| 
+ 
+  Ie.each do |ie|
      
-   if ie.category == "A" && ie == "checked"
-     exercise.score_a = exercise.score_a + 1
-   end
-   if ie.category == "B" 
-     exercise.score_b = exercise.score_b + 1 
-   end
-    
-   end
-   exercise.save
+    if params[ie.position_number.to_s] == "true"
 
+      case ie.category
+      when "A"
+        exercise.score_a = exercise.score_a + 1
+      when "B"
+        exercise.score_b = exercise.score_b + 1
+      when "C"
+        exercise.score_c = exercise.score_c + 1
+      when "D"
+        exercise.score_d = exercise.score_d + 1
+      when "F"
+        exercise.score_e = exercise.score_e + 1
+      when "F"
+        exercise.score_f = exercise.score_f + 1
+      when "G"
+        exercise.score_g = exercise.score_g + 1
+      when "H"
+        exercise.score_h = exercise.score_h + 1
+      when "I"
+        exercise.score_i = exercise.score_i + 1
+      else
+        puts "Unknown"
+      end  
+
+    end
+      
+  end
+  exercise.save
+    
    redirect "/student/reports/exercise"
 end
 

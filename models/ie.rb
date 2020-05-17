@@ -9,7 +9,6 @@ class Ie
   property  :category,          String
   property  :position_number,   Integer
   property  :section,           Integer
-  property  :answer_id,         Serial
   
   property :answer_yes,         Boolean, :default => false
   property :answer_no,          Boolean, :default => false

@@ -19,13 +19,13 @@
 					<td><span style="color: #941100;"><%= ie.category %></span></td>
 					<td style="text-align: right;">
 						
-						<label class="radio inline checker">YES
-  						 	<input type="radio" name="<%= ie.position_number %>" id="<%= ie.answer_yes %>" value="true" />
+						<label class="radio inline checker" for="<%= ie.position_number %>">YES
+  						 	<input type="radio" name="<%= ie.position_number %>" id="<%= ie.position_number %>" value="true" />
 							<span class="checkmark"></span>
 						</label>
 						
 						<label class="radio inline checker">NO
-  						 	<input type="radio" name="<%= ie.position_number %>" id="" value="false" />
+  						 	<input type="radio" name="<%= ie.position_number %>" id="<%= ie.id %> + 100" value="false"  />
 							<span class="checkmark"></span>
 						</label>
 						
@@ -33,33 +33,14 @@
 				</tr>
 			<% end %>
 		</table>
-			<input class="btn btn-small btn-success pull-right" style="margin-left: 2em;" type="submit" value="Save" />
-			<h5 class="pull-right">Save to view your Career Direction 2 Student Report</h5>
+ 			<input class="btn btn-small btn-success pull-right" style="margin-left: 2em;" type="submit" value="Submit"/>
+			<h5 class="pull-right">Submit to view your Career Direction 2 Student Report</h5>
 			</div>
 			</form>
 			
 		</div>
 	</div>
 </div>
-
-				<!-- <script>
-					function loopForm(form) {
-
-					    var radioResults = 'Radio buttons: ';
-					    for (var i = 0; i < form.elements.length; i++ ) {
-
-					        if (form.elements[i].type == 'radio') {
-					            if (form.elements[i].checked == true) {
-					                radioResults += form.elements[i].value + ' ';
-					            }
-					        }
-					    }
-					    document.getElementById("radioResults") == radioResults;
-					}
-					
-					
-					onclick="loopForm(document.exercise);"
-				</script> -->
 				
 <style>
 /* The container */
