@@ -46,7 +46,7 @@ post  "/student/reports/exercise/?"  do
         exercise.score_c = exercise.score_c + 1
       when "D"
         exercise.score_d = exercise.score_d + 1
-      when "F"
+      when "E"
         exercise.score_e = exercise.score_e + 1
       when "F"
         exercise.score_f = exercise.score_f + 1
@@ -65,7 +65,14 @@ post  "/student/reports/exercise/?"  do
   end
   exercise.save
     
-   redirect "/student/reports/exercise"
+   redirect "/student/reports/ie_scores"
+end
+
+get "/student/reports/ie_scores" do
+  @student = Student.get(session[:student])
+  @exercise = Exercise.get(params[:id])
+  
+  erb :"/student/reports/ie_scores"
 end
 
 
