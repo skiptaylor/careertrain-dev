@@ -67,7 +67,7 @@ post '/student/reports/create/?' do
             @student.save
             
             flash[:alert] = 'Welcome to the Online Resume Tool. You are now signed in.'
-            redirect '/student/reports/report/enter_score'
+            redirect '/student/reports/:id/report/enter_score'
           else
             flash[:alert] = 'Please create a personal password that will be used to sign into your account.'
             erb :"student/reports/create"
@@ -178,7 +178,7 @@ post '/student/reports/:id/edit/?' do
     :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
   )
 
-  redirect("/student/reports/report/enter_score")
+  redirect("/student/reports/:id/report/enter_score")
   
   else
     

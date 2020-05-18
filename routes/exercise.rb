@@ -1,12 +1,12 @@
 
-get "/student/reports/exercise/?"  do
+get "/student/reports/:id/exercise/?"  do
   @student = Student.get(session[:student])
   @ie = Ie.all
   @exercise = Exercise.new
   erb :"/student/reports/exercise"
 end
 
-post  "/student/reports/exercise/?"  do
+post  "/student/reports/:id/exercise/?"  do
   student = Student.get(session[:student])
   ie = Ie.all
   
@@ -65,10 +65,10 @@ post  "/student/reports/exercise/?"  do
   end
   exercise.save
     
-   redirect "/student/reports/ie_scores"
+   redirect "/student/reports/#{student.id}/ie_scores"
 end
 
-get "/student/reports/ie_scores" do
+get "/student/reports/:id/ie_scores" do
   @student = Student.get(session[:student])
   @exercise = Exercise.get(params[:id])
   
