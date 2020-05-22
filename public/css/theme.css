@@ -14,23 +14,26 @@ body {
 
 .container-white 	{
 	background: white;
-	padding: 24px 0px 36px 0px;
+	paddin: 14px 0px 26px 0px;
 	margin: 0px;
 	border: none;
 	border-top: 1px solid silver;
 }
 
 .container {
-  margin-top: 0px;
+  
   color: #000000;
 }
 
+/*.nav	{
+	padding: 0px;
+}
+*/
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
   color: #f9f9f9;
-  font-size: 1.15em;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  padding: 36px 12px 32px 12px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .navbar-inverse .brand:hover,
@@ -40,15 +43,17 @@ body {
 .navbar-inverse .brand:active,
 .navbar-inverse .nav > li > a:active {
   color: #009ed8;
+  padding: 0px;
 }
 
 .navbar-inverse .brand {
-	margin-top: 14px;
   color: #f9f9f9;
+  padding: 0px;
 }
 
 .navbar-inverse .navbar-text {
   color: #f9f9f9;
+  padding: 0px;
 }
 
 .navbar-inverse .nav > li > a:focus,
@@ -56,6 +61,7 @@ body {
 .navbar-inverse .nav > li > a:active {
   color: #009ed8;
   background-color: transparent;
+  padding: 0px;
 }
 
 .navbar-inverse .nav .active > a,
@@ -64,16 +70,19 @@ body {
 .navbar-inverse .nav .active > a:active {
   color: #009ed8;
   background-color: transparent;
+  padding: 0px;
 }
 
 .navbar-inverse .navbar-link {
   color: #009ed8;
+  padding: 0px;
 }
 
 .navbar-inverse .navbar-link:hover,
 .navbar-inverse .navbar-link:focus,
 .navbar-inverse .navbar-link:active {
   color: #009ed8;
+  padding: 0px;
 }
 
 
@@ -86,7 +95,7 @@ body {
   cursor: default;
   border: 1px solid #bbbbbb;
   border-bottom-color: transparent;
-  
+  padding: 0px;
 }
 
 
@@ -116,11 +125,11 @@ h1	{
 	letter-spacing: -1px;
 }
 
-.page-header	{
+/*.page-header	{
 	margin: 18px 0 32px 0;
 	border: none;
 }
-
+*/
 .textfield	{
 	font-family: 'Open Sans', helvetica, sans-serif;
 }
@@ -209,14 +218,13 @@ footer	{
 	font-weight: 300;
 	font-size: 1.5em;
 	line-height: 1.6em;
-	margin-bottom: 32px;
+	margin-bottom: 20px;
 }
 
 .navbar .brand {
-  padding: 7px 0px;
+  padding: 0px 0px;
   margin-left: 0;
-  font-size: 14px;
-  font-weight: 200;
+
 }
 
 hr	{
@@ -339,7 +347,7 @@ p.answer	{
 	font-weight: 600;
 }
 
-.nav-grad .navbar-inner	{
+/*.nav-grad .navbar-inner	{
    background-image: url('../img/groundbig.png');
    background-position: top left;
    background-repeat: repeat-x;
@@ -352,7 +360,7 @@ p.answer	{
 	border: none;
 	border-bottom: 1px solid black;
 }
-
+*/
 .half-space p	{
 	margin-bottom: 32px;
 }

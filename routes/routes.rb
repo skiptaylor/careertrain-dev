@@ -1,9 +1,9 @@
 get '/?' do
-	erb :index, layout: false
+	erb :index
 end
 
 get '/index/?' do
-	erb :index, layout: false
+	erb :index
 end
 
 get '/educator/index/?' do
