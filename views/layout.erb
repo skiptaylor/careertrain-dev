@@ -14,6 +14,7 @@
 	<link type="text/css" rel="stylesheet" href="/css/theme.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome-ie7.min.css" />
+	<link type="text/css" rel="stylesheet" href="/css/buttons_altered.css" />
 	
   	<script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
   	<script type="text/javascript" src="/js/bootstrap-datetimepicker.js"></script>
@@ -43,7 +44,7 @@
 		<div class="navbar-inner">
 			<div class="container">
 								
-				<a class="brand span3" href="/index" style="padding: 16px 0px; color: black;"><img src="/img/careerdirection+.png"></a>
+				<a class="brand span3" href="/index" style="padding: 16px 0px; color: black;"><img src="/img/careerdirection-e.svg"></a>
 				
 				<ul class="nav pull-right">
 					<li class="<%= active 'student' %>"><a href="/student/student" style="padding: 20px 10px 10px 10px">Student</a></li>
@@ -62,7 +63,7 @@
 
 		
 	<footer>
-		<p class="container"><a href="/about" class="btn btn-inverse pull-left"><img src="/img/ctc-logo-sm.png" style="margin-top: -4px;" /> &nbsp;About CTC</a> &nbsp; &copy; 1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc. All rights reserved. &nbsp; <a href="/admin/admin" class="btn btn-mini">Admin</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+		<p class="container"><a href="/about" class="btn btn-inverse pull-left">About CTC</a> &nbsp; &copy; 1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc. All rights reserved. &nbsp; <a href="/admin/admin" class="btn btn-mini">Admin</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
 			<span style="color: #af4532;"><strong><%= session[:admin] %> / <%= session[:recruiter] %> / <%= session[:student] %></strong></span>
 			 <img src="/img/arng_4cp_cta_camo.png" width="100px" class="pull-right" /></p>
 	</footer>

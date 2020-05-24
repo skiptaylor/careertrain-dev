@@ -3140,7 +3140,7 @@ table th[class*="span"],
   filter: alpha(opacity=40);
 }
 
-button.close {
+/*button.close {
   padding: 0;
   cursor: pointer;
   background: transparent;
@@ -3816,7 +3816,7 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 0 0 6px 6px;
      -moz-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px;
-}
+}*/
 
 .alert {
   padding: 8px 35px 8px 14px;

@@ -14,14 +14,14 @@ body {
 
 .container-white 	{
 	background: white;
-	paddin: 14px 0px 26px 0px;
+	padding: 14px 0px 36px 0px;
 	margin: 0px;
 	border: none;
 	border-top: 1px solid silver;
 }
 
 .container {
-  
+	
   color: #000000;
 }
 
@@ -125,11 +125,21 @@ h1	{
 	letter-spacing: -1px;
 }
 
-/*.page-header	{
-	margin: 18px 0 32px 0;
-	border: none;
+h2	{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px 0 9px 0;
+	font-size: 2em;
+	line-height: 1.2em;
+	font-weight: 700;
+	letter-spacing: -1px;
 }
-*/
+
+
+.page-header	{
+	margin: 18px 0 32px 0;
+	border-bottom: 1px solid silver;
+}
+
 .textfield	{
 	font-family: 'Open Sans', helvetica, sans-serif;
 }
