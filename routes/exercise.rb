@@ -10,6 +10,9 @@ post  "/student/reports/:id/exercise/?"  do
   student = Student.get(session[:student])
   ie = Ie.all
   
+  exercise = Exercise.all
+  exercise.destroy
+  
   exercise = Exercise.create(
     :student_id   => session[:student],
     :score_a      => params[:score_a],
