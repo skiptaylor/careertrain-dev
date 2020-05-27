@@ -498,4 +498,12 @@ div#alert {
 }
 
 
+div#ground	{
+	background-image: url("../img/CDe-ground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+
 
