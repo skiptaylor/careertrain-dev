@@ -10,9 +10,6 @@ post  "/student/reports/:id/exercise/?"  do
   student = Student.get(session[:student])
   ie = Ie.all
   
-  exercise = Exercise.all
-  exercise.destroy
-  
   exercise = Exercise.create(
     :student_id   => session[:student],
     :score_a      => params[:score_a],
@@ -68,7 +65,7 @@ post  "/student/reports/:id/exercise/?"  do
   end
   exercise.save
     
-   redirect "/student/reports/#{student.id}/ie_scores"
+   redirect "/student/reports/report/enter_score"
 end
 
 get "/student/reports/:id/ie_scores" do

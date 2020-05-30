@@ -173,8 +173,8 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #257de1;
-  border-color: #257de1;
+  background-color: #025bda;
+  border-color: #025bda;
 /*-webkit-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	-moz-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	 	  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);*/
@@ -184,7 +184,7 @@ input[type="button"].btn-block {
 
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #1255fb \9;
+  background-color: #025bda \9;
 /*-webkit-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	-moz-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	 	  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);*/

@@ -178,7 +178,7 @@ post '/student/reports/:id/edit/?' do
     :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
   )
 
-  redirect("/student/reports/:id/report/enter_score")
+  redirect("/student/reports/report/enter_score")
   
   else
     
