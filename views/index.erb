@@ -1,17 +1,17 @@
 <div class="container-white">
-	<div class="container" id="ground">	
+	<div class="container page-ease" id="ground">	
 		<div class="row">
-			<div class="span12" style="color: white; text-align: center; margin-top: 3em;">
+			<div class="span12" style="color: white; text-align: center; margin-top: 4em;" id="header">
 				<h1>A Comprehensive Guide To Planning Your Future</h1>
 				<p style="font-weight: 300; font-size: 1.8em; line-height: 1.4em;">Guidance for high school students and young adults.</p>
 			</div>
 				  
-			<div class="span5 offset3" style="margin-top: 20em;">
+			<div class="span4 offset4" style="margin-top: 20em; text-align: center;">
 				<p id="students" style="font-weight: 300; font-size: 1.3em; line-height: 1.4em; color: white;">The <span style="font-weight: 600;">Career Direction</span> program meets virtually all mandated career guidance criteria.</p>
 				<br />
-				<p id="reports" style="font-weight: 300; font-size: 1.3em; line-height: 1.4em; color: white;"><span style="font-weight: 600;">CD2 Reports</span> can help you start working toward your career success today!</p>
+				<p id="reports" style="font-weight: 300; font-size: 1.3em; line-height: 1.4em; color: white;"><span style="font-weight: 600;">CD<em>e</em> Reports</span> can help you start working toward your career success today!</p>
 				<br />
-				<p id="resumes" style="font-weight: 300; font-size: 1.3em; line-height: 1.4em; color: white;"><span style="font-weight: 600;">CD2 Online Resum&eacute; Tool</span> can help you create resum&eacute;s and cover letters that will help you &ldquo;get that job!&rdquo;</p>
+				<p id="resumes" style="font-weight: 300; font-size: 1.3em; line-height: 1.4em; color: white;"><span style="font-weight: 600;">CD<em>e</em> Online Resum&eacute; Tool</span> can help you create resum&eacute;s and cover letters that will help you &ldquo;get that job!&rdquo;</p>
 				<br />
 			</div>
 		</div> 
@@ -19,7 +19,7 @@
 	<br /><br />
 	<div class="container">
 		<div class="row">
-			<div class="span4" style="text-align: center;">
+			<div class="span4" id="student" style="text-align: center;">
 				<h1>Student</h1>
 				<p style="font-weight: 300; font-size: 1.3em; line-height: 1.4em">Your career, education and training, and lifestyle decisions are some of the most important decisions you will ever make!</p>
 					 
@@ -35,7 +35,7 @@
 					  </div> -->
 				<br /> <br />
 			</div>  
-			<div class="span4" style="text-align: center;">
+			<div class="span4" id="educator" style="text-align: center;">
 				<h1>Educator</h1>
 				<p style="font-weight: 300; font-size: 1.3em; line-height: 1.4em">Career Direction is a no-cost guidance workshop that has helped over 6 million high school students plan their futures.</p>
 					  
@@ -52,7 +52,7 @@
 				
 				<br /> <br />
 			</div> 
-			<div class="span4" style="text-align: center;">  
+			<div class="span4" id="rep" style="text-align: center;">  
 				
 				<h1>ARNG Rep</h1>
 				<p style="font-weight: 300; font-size: 1.3em; line-height: 1.4em">The National Guard offers educational, training, employment, financial assistance, and personal growth opportunities for qualifying students.</p>
@@ -84,8 +84,28 @@
 
 
 <style>
+	
+	.page-ease	{
+		animation: fadepic 1s 1 ease-in-out;
+	}
+	
+	@keyframes fadepic {
+	  0% {
+	    opacity: 0;
+	  }
+	  100% {
+	    opacity: 1;
+	  }
+	}
+	
 	#students {
-	  animation: movein 1s 1 ease-in-out;
+	  animation: movein 2s 1 ease-in-out;
+	}
+	#reports {
+	  animation: movein 2.25s 1 ease-in-out;
+	}
+	#resumes {
+	  animation: movein 2.5s 1 ease-in-out;
 	}
 
 	@keyframes movein {
@@ -97,33 +117,45 @@
 	  }
 	}
 	
-	#reports {
-	  animation: movein 1.5s 1 ease-in-out;
+	#student {
+	  animation: fadein 1.25s 1 ease-in-out;
 	}
-
-	@keyframes movein {
+	#educator {
+	  animation: fadein 1.5s 1 ease-in-out;
+	}
+	#rep {
+	  animation: fadein 1.75s 1 ease-in-out;
+	}
+	
+	
+	@keyframes fadein {
 	  0% {
-	    color: #000000;
-		 
+	    opacity: 0;
+	  }
+	  50%	{
+		  opacity: 0;
 	  }
 	  100% {
-	    color: #ffffff;
+	    opacity: 1;
 	  }
 	}
 	
-	#resumes {
-	  animation: movein 2s 1 ease-in-out;
+	#header	{
+		animation: movedown 0.75s 1 ease-in-out;
 	}
-
-	@keyframes movein {
+	
+	@keyframes movedown {
 	  0% {
-	    color: #000000;
-		 
+	    opacity: 0;
+		 transform: translateY(-36px);
 	  }
 	  100% {
-	    color: #ffffff;
+	    opacity: 1;
+		 transform: translateY(0px);
 	  }
 	}
+	
+
 </style>
 
 		
