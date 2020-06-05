@@ -43,16 +43,59 @@
 	<div class="navbar navbar-inverse navbar-static-top">
 		<div class="navbar-inner">
 			<div class="container">
-								
+				
+			   <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>			
 				<a class="brand span3" href="/index" style="padding: 16px 0px; color: black;"><img src="/img/careerdirection-e.svg"></a>
 				
-				<ul class="nav pull-right">
-					<li class="<%= active 'student' %>"><a href="/student/student" style="padding: 20px 10px 10px 10px">Student</a></li>
-					<li class="<%= active 'educator' %>"><a href="/educator/index" style="padding: 20px 10px 10px 10px">Educator</a></li>
-					<li class="<%= active 'arng' %>"><a href="/arng/arng" style="padding: 20px 10px 10px 10px">ARNG Rep</a></li>
-					<li class="<%= active 'contact' %>"><a href="/contact_us" style="padding: 20px 10px 10px 10px">Contact Us</a></li>
-				</ul>
-
+				<div class="nav-collapse">
+					<ul class="nav pull-right">
+						<li class="dropdown <%= active 'student' %>"><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding: 20px 30px 10px 30px;">Student&nbsp;<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li class="<%= active 'student/student' %>"><a href="/student/student">Career Direction e</a></li>
+								<li class="<%= active 'student/report' %>"><a href="/student/report">Student Report</a></li>
+								<li class="<%= active 'student/resume_tool' %>"><a href="/student/resume_tool">Resum&eacute; Tool</a></li>
+								<li class="<%= active 'student/feedback' %>"><a href="/student/feedback">Student Feedback</a></li>
+								<li class="<%= active 'student/resources' %>"><a href="/student/resources">Helpful Links</a></li>
+							</ul>
+						</li>
+						<li class="dropdown <%= active 'educator' %>"><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding: 20px 30px 10px 30px;">Educator&nbsp;<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li class="<%= active 'educator/index' %>"><a href="/educator/index">Career Direction 2</a></li>
+								<li class="<%= active 'educator/steps' %>"><a href="/educator/steps">Steps to Success</a></li>
+								<li class="<%= active 'educator/resume' %>"><a href="/educator/resume">Resum&eacute; Tool</a></li>
+								<li class="<%= active 'educator/request' %>"><a href="/educator/request">Request CD2</a></li>
+								<li class="<%= active 'educator/feedback' %>"><a href="/educator/feedback">Educator Feedback</a></li>
+								<li class="<%= active 'educator/resources' %>"><a href="/educator/resources">Helpful Links</a></li>
+							</ul>
+						</li>
+						<li class="dropdown <%= active 'arng' %>"><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding: 20px 30px 10px 30px;">ARNG Rep&nbsp;<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li class="<%= active 'arng/arng' %>"><a href="/arng/arng">Career Direction e</a></li>
+								 <% if session[:recruiter] %>
+								  <li class="<%= active 'arng/leads' %>"><a href="/arng/leads">Generate Leads</a></li>
+								  <li class="<%= active 'arng/register' %>"><a href="/arng/register">Register Your School</a></li>
+								  <li class="<%= active 'profile' %>"><a href="/recruiters/<%= session[:recruiter] %>/profile">Recruiter Profile</a></li>
+								  <li class="<%= active 'arng/practices' %>"><a href="/arng/practices">Best Practices</a></li>
+								  <li class="<%= active 'arng/downloads' %>"><a href="/arng/downloads">Downloads</a></li>
+								  <li class="<%= active 'arng/faq' %>"><a href="/arng/faq">FAQ</a></li>
+								 <% end %>
+							</ul>
+						</li>
+						<li class="<%= active 'contact' %>"><a href="/contact_us" style="padding: 20px 30px 10px 30px;">Contact Us</a></li>
+					</ul>
+				</div>
+				<!-- <div class="nav-collapse">
+					<ul class="nav pull-right">
+						<li class="<%= active 'student' %>"><a href="/student/student" style="padding: 20px 10px 10px 10px">Student</a></li>
+						<li class="<%= active 'educator' %>"><a href="/educator/index" style="padding: 20px 10px 10px 10px">Educator</a></li>
+						<li class="<%= active 'arng' %>"><a href="/arng/arng" style="padding: 20px 10px 10px 10px">ARNG Rep</a></li>
+						<li class="<%= active 'contact' %>"><a href="/contact_us" style="padding: 20px 10px 10px 10px">Contact Us</a></li>
+					</ul>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -62,11 +105,27 @@
 	<%= yield %>
 
 		
+	
 	<footer>
-		<p class="container"><a href="/about" class="btn btn-info pull-left">About CTC</a> &nbsp; &copy; 1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc. All rights reserved. &nbsp; <a href="/admin/admin" class="btn btn-info btn-mini">&nbsp;Admin&nbsp;</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-			<span style="color: #af4532;"><strong><%= session[:admin] %> / <%= session[:recruiter] %> / <%= session[:student] %></strong></span>
-			 <img src="/img/arng_4cp_cta_camo.png" width="80px" class="pull-right" /></p>
+		<div class="container">
+			<div class="row">
+		<div class="span2">
+			<a href="/about" class="btn btn-info btn-mini" style="text-align: left; margin-bottom: 14px;">About CTC</a>
+		</div>
+		<div class="span8" style="line-height: 16px;">
+			<p>1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc. All rights reserved. &nbsp; <span class="under-link"><a href="/admin/admin" >&nbsp;Admin&nbsp;</a></span> 
+				<!-- <br >
+			<span style="color: #af4532;"><strong><%= session[:admin] %> / <%= session[:recruiter] %> / <%= session[:student] %></strong></span> -->
+			</p>
+			
+		</div>
+		<div class="span2">
+			 <img src="/img/arng_4cp_cta_camo.png" width="80px" />
+		</div>
+		</div>
+		</div>
 	</footer>
+	
 		
 		<script type="text/javascript">
 			$('.form_date').datetimepicker({

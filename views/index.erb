@@ -86,7 +86,7 @@
 <style>
 	
 	.page-ease	{
-		animation: fadepic 1s 1 ease-in-out;
+		animation: fadepic 0.75s 1 ease-in-out;
 	}
 	
 	@keyframes fadepic {
@@ -99,18 +99,21 @@
 	}
 	
 	#students {
-	  animation: movein 2s 1 ease-in-out;
+	  animation: movein 1s 1 ease-in-out;
 	}
 	#reports {
-	  animation: movein 2.25s 1 ease-in-out;
+	  animation: movein 1.25s 1 ease-in-out;
 	}
 	#resumes {
-	  animation: movein 2.5s 1 ease-in-out;
+	  animation: movein 1.5s 1 ease-in-out;
 	}
 
 	@keyframes movein {
 	  0% {
 	    opacity: 0;
+	  }
+	  70%	{
+		  opacity: 0;
 	  }
 	  100% {
 	    opacity: 1;
@@ -118,13 +121,13 @@
 	}
 	
 	#student {
-	  animation: fadein 1.25s 1 ease-in-out;
+	  animation: fadein 2s 1 ease-in-out;
 	}
 	#educator {
-	  animation: fadein 1.5s 1 ease-in-out;
+	  animation: fadein 2.25s 1 ease-in-out;
 	}
 	#rep {
-	  animation: fadein 1.75s 1 ease-in-out;
+	  animation: fadein 2.5s 1 ease-in-out;
 	}
 	
 	
@@ -132,7 +135,7 @@
 	  0% {
 	    opacity: 0;
 	  }
-	  50%	{
+	  80%	{
 		  opacity: 0;
 	  }
 	  100% {
@@ -141,11 +144,15 @@
 	}
 	
 	#header	{
-		animation: movedown 0.75s 1 ease-in-out;
+		animation: movedown 1.1s 1 ease-in-out;
 	}
 	
 	@keyframes movedown {
 	  0% {
+	    opacity: 0;
+		 transform: translateY(-36px);
+	  }
+	  50% {
 	    opacity: 0;
 		 transform: translateY(-36px);
 	  }
