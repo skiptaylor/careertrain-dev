@@ -1,10 +1,10 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span12">
+			<div class="col-md-12">
 				<h1>Character Traits &nbsp; <small><%= @student.name %></small></h1><br />
 			</div>
-			<div class="span8 offset2">
+			<div class="col-md-8 offset2">
 				
 				<p>List 3 character traits you possess that an employer would value. The words that describe each trait should be adjectives.</p>
 
@@ -16,15 +16,15 @@
 					
 					<p>
 						<label for="trait_1">Trait 1</label>
-						<input type="text" name="trait_1" id="trait_1" class="textfield span4" value="<%= @trait.trait_1 %>" />
+						<input type="text" name="trait_1" id="trait_1" class="textfield col-md-4" value="<%= @trait.trait_1 %>" />
 					</p>
 					<p>
 						<label for="trait_2">Trait 2</label>
-						<input type="text" name="trait_2" id="trait_2" class="textfield span4" value="<%= @trait.trait_2 %>" />
+						<input type="text" name="trait_2" id="trait_2" class="textfield col-md-4" value="<%= @trait.trait_2 %>" />
 					</p>
 					<p>
 						<label for="trait_3">Trait 3</label>
-						<input type="text" name="trait_3" id="trait_3" class="textfield span4" value="<%= @trait.trait_3 %>" />
+						<input type="text" name="trait_3" id="trait_3" class="textfield col-md-4" value="<%= @trait.trait_3 %>" />
 					</p>
 					
 					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/traits/traits">Cancel</a>

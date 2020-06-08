@@ -1,10 +1,10 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span12">
+			<div class="col-md-12">
 				<h1 class="page-header">Award &nbsp; <small><%= @student.name %></small></h1><br />
 			</div>
-			<div class="span8 offset2">	
+			<div class="col-md-8 offset2">	
 				
 				<p>Describe your Awards and Commendations. You can enter others after saving.</p>
 		
@@ -13,13 +13,13 @@
 					<div class="control-group">
 					   <label class="control-label" for="award">Award</label>
 						<div class="controls">
-							<input type="text" name="award" id="award" class="textfield span4" value="<%= @award.award %>" />
+							<input type="text" name="award" id="award" class="textfield col-md-4" value="<%= @award.award %>" />
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label" for="award_date">Date (Month Year)</label>
 						<div class="controls">
-							<input type="text" class="textfield span4" name="award_date" id="award_date" value="<%= @award.award_date %>" />
+							<input type="text" class="textfield col-md-4" name="award_date" id="award_date" value="<%= @award.award_date %>" />
 						</div>
 					</div>
 					<div class="control-group">

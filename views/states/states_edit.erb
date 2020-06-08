@@ -1,23 +1,23 @@
 <div class="white">
 	<div class="container">
 		<div class="row" style="padding: 60px 0 62px 0;">
-			<div class="span8 offset2">
+			<div class="col-md-8 offset2">
 				<h5>State</h5>
 				<hr />
 			</div>
 			<form method='post'>
-			<div class="form-horizontal span8 offset2">
+			<div class="form-horizontal col-md-8 offset2">
 				<br />
 				<div class="control-group">
 					<label for="name" class="span2 control-label">State</label>
-					<div class="span4">
-						<input type="text" class="form-control span4" name="name" id="name" value="<%= @state.name %>" />
+					<div class="col-md-4">
+						<input type="text" class="form-control col-md-4" name="name" id="name" value="<%= @state.name %>" />
 					</div>
 				</div>
 				<div class="control-group">
 					<label for="abbr" class="span2 control-label">Abbreviation</label>
 					<div class="span5">
-						<input type="text" class="form-control span4" name="abbr" id="abbr" value="<%= @state.abbr %>" />
+						<input type="text" class="form-control col-md-4" name="abbr" id="abbr" value="<%= @state.abbr %>" />
 					</div>
 				</div>
 				<div class="control-group">
@@ -33,7 +33,7 @@
 				<br />
 				<div class="control-group">
 					<label for="" class="span2 control-label"></label>
-					<div class="span4">
+					<div class="col-md-4">
 						<input class="btn btn-small btn-success" type="submit" value="Save" /> &nbsp; <a class="btn btn-default btn-small" href="/states/states">Cancel</a> &nbsp; <a href="/states/<%= @state.id %>/delete" class="btn btn-small btn-warning pull-right delete">Delete</a>
 					</div>
 				</div>

@@ -1,7 +1,7 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span12">
+			<div class="col-md-12">
 				<h1 class="page-header">Student Profile &nbsp; <small><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></small></h1><br />
 			</div>
 			<div class="span7 offset2">
@@ -22,7 +22,7 @@
 						
 						<label class="control-label"for="school_password">School Password</label>
 						<div class="controls">
-							<input type="text" class="textfield span4" placeholder="School's Password Required" name="school_password" id="school_password" value="<%= @student.school_password%>" />
+							<input type="text" class="textfield col-md-4" placeholder="School's Password Required" name="school_password" id="school_password" value="<%= @student.school_password%>" />
 							<span class="help-block" style="line-height: 1.2em; margin: 5px 52px 6px 0;"><small>If you do not know your school's password, please contact your guidance counselor or teacher.</small></span>
 						</div>
 						
@@ -102,7 +102,7 @@
 					<div class="control-group">
 						<label class="control-label"for="future">Future Plans</label>
 						<div class="controls">
-	  					<select type="text" class="span4" name="future" id="future" style="text-align: center;" >
+	  					<select type="text" class="col-md-4" name="future" id="future" style="text-align: center;" >
 	  						<option value="Select one">-- Select one --</option>
 	  						<option <%= 'selected' if @student.future == 'Enter technical college/trade school' %> value="Enter technical college/trade school">Enter technical college/trade school</option>
 	  						<option <%= 'selected' if @student.future == 'Work full-time' %> value="Work full-time">Work full-time</option>

@@ -1,28 +1,28 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span8 offset2">
+			<div class="col-md-8 offset2">
 				<div class="sign-in" style="padding:24px 32px; margin: 48px 0;">
 		      <form class="form-horizontal" method="post" id="resume_tool">
 		        <h1 class="form-signin-heading">Create New Account</h1>
 					<div class="control-group">
 						<label class="control-label"for="school_password">School's Password</label>
 						<div class="controls">
-							<input type="text" class="textfield span4" placeholder="School's Password Required" name="school_password" id="school_password" value="<%= params[:school_password] %>" />
+							<input type="text" class="textfield col-md-4" placeholder="School's Password Required" name="school_password" id="school_password" value="<%= params[:school_password] %>" />
 							<span class="help-block" style="line-height: 1.2em; margin: 5px 52px 6px 0;"><small>If you do not know your school's password, please contact your guidance counselor or teacher.</small></span>
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label"for="email">Personal Email Address</label>
 						<div class="controls">
-							<input type="text" class="textfield span4" placeholder="Personal Email Address Required" name="email" id="email" value="<%= params[:email] %>" />
+							<input type="text" class="textfield col-md-4" placeholder="Personal Email Address Required" name="email" id="email" value="<%= params[:email] %>" />
 							<span class="help-block" style="line-height: 1.2em; margin: 5px 0 6px 0;"><small>You will use your personal email to access your account.</small></span>
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label"for="password">Personal Password</label>
 						<div class="controls">
-							<input type="text" class="textfield span4" placeholder="Personal Password Required" name="password" id="password" value="<%= params[:password] %>" />
+							<input type="text" class="textfield col-md-4" placeholder="Personal Password Required" name="password" id="password" value="<%= params[:password] %>" />
 							<span class="help-block" style="line-height: 1.2em; margin: 5px 52px 6px 0;"><small>This personal password will be used with your email to access your account. Please remember it.</small></span>
 						</div>
 					</div>
@@ -30,31 +30,31 @@
 					<div class="control-group">
 						<label class="control-label"for="first_name">First Name</label>
 						<div class="controls">
-							<input type="text" name="first_name" id="first_name" class="textfield span4" placeholder="Required" value="<%= @first_name %>" />
+							<input type="text" name="first_name" id="first_name" class="textfield col-md-4" placeholder="Required" value="<%= @first_name %>" />
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label"for="middle_name">Middle Name</label>
 						<div class="controls">
-							<input type="text" name="middle_name" id="middle_name" class="textfield span4" placeholder="Optional" value="<%= @middle_name %>" />
+							<input type="text" name="middle_name" id="middle_name" class="textfield col-md-4" placeholder="Optional" value="<%= @middle_name %>" />
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label"for="last_name">Last Name</label>
 						<div class="controls">
-							<input type="text" name="last_name" id="last_name" class="textfield span4" placeholder="Required" value="<%= @last_name %>" />
+							<input type="text" name="last_name" id="last_name" class="textfield col-md-4" placeholder="Required" value="<%= @last_name %>" />
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label"for="address">Address</label>
 						<div class="controls">
-							<input type="text" name="address" id="address" class="textfield span4" placeholder="Required" value="<%= @address %>" />
+							<input type="text" name="address" id="address" class="textfield col-md-4" placeholder="Required" value="<%= @address %>" />
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label"for="city">City</label>
 						<div class="controls">
-							<input type="text" name="city" id="city" class="textfield span4"  placeholder="Required"value="<%= @city %>" />
+							<input type="text" name="city" id="city" class="textfield col-md-4"  placeholder="Required"value="<%= @city %>" />
 						</div>
 					</div>
 					
@@ -94,7 +94,7 @@
 					<div class="control-group">
 						<label class="control-label"for="future">Future Plans</label>
 						<div class="controls">
-	  					<select type="text" class="span4" name="future" id="future" style="text-align: center;" >
+	  					<select type="text" class="col-md-4" name="future" id="future" style="text-align: center;" >
 	  						<option value="Select one">-- Select one --</option>
 	  						<option <%= 'selected' if @future == 'Enter technical college/trade school' %> value="Enter technical college/trade school">Enter technical college/trade school</option>
 	  						<option <%= 'selected' if @future == 'Work full-time' %> value="Work full-time">Work full-time</option>

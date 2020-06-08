@@ -1,11 +1,10 @@
 
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span12">
+			<div class="col-md-12">
 				<h1 class="page-header">Request the Career Direction 2 Program</h1>
 			</div>
-			<div class="span8">
+			<div class="col-md-7">
 				<p class="lead">Would you like a member of the <strong>Army National Guard</strong> to provide a free presentation of the <strong>Career Direction 2</strong> program to your students?</p>
 				
 				<div class="sign-in" style="padding: 24px; margin: 42px 0;">
@@ -14,14 +13,14 @@
 					<br />
 					<p>
 						<label class="horz" for="school_name">School name</label>
-						<input type="text" class="textfield span4 dec" placeholder="School name" name="school_name" id="school_name" value="<%= @school.school_name %>" /> 
+						<input type="text" class="textfield col-md-4 dec" placeholder="School name" name="school_name" id="school_name" value="<%= @school.school_name %>" /> 
 					</p>
 					<p>
 						<label class="horz" for="school_address1">School Address</label>
-						<input type="text" class="textfield span4 dec" placeholder="Street Address" name="school_address1" id="school_address1" value="<%= @school.school_address1 %>" /> 
+						<input type="text" class="textfield col-md-4 dec" placeholder="Street Address" name="school_address1" id="school_address1" value="<%= @school.school_address1 %>" /> 
 						<br />
 						<label class="horz" for="school_address2"> </label>
-						<input type="text" class="textfield span4 dec" placeholder="Street Address" name="school_address2" id="school_address2" value="<%= @school.school_address2 %>" /> 
+						<input type="text" class="textfield col-md-4 dec" placeholder="Street Address" name="school_address2" id="school_address2" value="<%= @school.school_address2 %>" /> 
 					</p>
 					<p class="form-inline">
 						<label class="horz" for="school_city"> </label>
@@ -37,15 +36,15 @@
 					</p>
 					<p>
 						<label class="horz" for="email">Email</label>
-						<input type="text" class="textfield span4 dec" placeholder="Email *Required" name="email" id="email" value="<%= @school.email %>" /> 
+						<input type="text" class="textfield col-md-4 dec" placeholder="Email *Required" name="email" id="email" value="<%= @school.email %>" /> 
 					</p>
 					<p>
 						<label class="horz" for="phone">Phone</label>
-						<input type="text" class="textfield span4 dec" placeholder="Phone" name="phone" id="phone" value="<%= @school.phone %>" /> 
+						<input type="text" class="textfield col-md-4 dec" placeholder="Phone" name="phone" id="phone" value="<%= @school.phone %>" /> 
 					</p>
 					<p>
 						<label class="horz" for="fax">Fax</label>
-						<input type="text" class="textfield span4 dec" placeholder="Fax" name="fax" id="fax" value="<%= @school.fax %>" /> 
+						<input type="text" class="textfield col-md-4 dec" placeholder="Fax" name="fax" id="fax" value="<%= @school.fax %>" /> 
 					</p>
 				
 					<p>
@@ -64,12 +63,11 @@
 				</form>
 			</div>
 		</div>
-		<div class="span4">
-			<p><img src="../img/arng-image.jpg" /></p>
+		<div class="col-md-5">
+			<p><img src="../img/arng-image.jpg" width="100%" /></p>
 		</div>
 	</div> <!-- /container -->
-</div> <!-- /container-white -->
-
+</div>
 <script  type="text/javascript">
 	var frmvalidator = new Validator("requestcd2");
 	frmvalidator.addValidation("email","req","Please enter an Email");

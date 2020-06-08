@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
   	<meta charset="utf-8" />
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   	<meta name="description" content="" />
   	<meta name="author" content="" />
   	<title>Career Direction +</title>
-  	<link href="/css/bootstrap.css" rel="stylesheet">
-  	<link href="/css/bootstrap-responsive.css" rel="stylesheet">
+  	<link href="/css/bootstrap.min.css" rel="stylesheet">
+  	<link href="/css/bootstrap-reboot.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-grid.min.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="/css/resume-style.css" />
 	<link type="text/css" rel="stylesheet" href="/css/datetimepicker.css" />
 	<link type="text/css" rel="stylesheet" href="/css/resume-content.css" />
@@ -16,10 +18,10 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome-ie7.min.css" />
 	<link type="text/css" rel="stylesheet" href="/css/buttons_altered.css" />
 	
-  	<script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
-  	<script type="text/javascript" src="/js/bootstrap-datetimepicker.js"></script>
+  	<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
   	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-  	<script type="text/javascript" src="/js/hide_addressbar.js"></script>
+  	<script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap-datetimepicker.js"></script>
 	<script type="text/javascript" src="/js/gen_validatorv4.js"></script>
   	<script type="text/javascript" src="/js/application.js"></script>
 	<script>
@@ -39,18 +41,100 @@
   </head>
     
   <body>
+	  
+	  
+	  
+  <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark" style="background-color: #000000;">
+	  <div class="container">  
+	    <a class="navbar-brand" href="/index"><img src="/img/careerdirection-e.svg"></a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	      <ul class="navbar-nav mr-auto mr-3">
+	        <li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle <%= active 'student/' %>" id="dropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Student
+				  </a>
+				  <div class="dropdown-menu" aria-labelledby="dropdown1">
+					  <a class="dropdown-item <%= active 'student/student' %>" href="/student/student">Career Direction e</a>
+					  <a class="dropdown-item <%= active 'student/report' %>" href="/student/report">Student Report</a>
+					  <a class="dropdown-item <%= active 'student/resume_tool' %>" href="/student/resume_tool">Resum&eacute; Tool</a>
+					  <a class="dropdown-item <%= active 'student/feedback' %>" href="/student/feedback">Student Feedback</a>
+					  <a class="dropdown-item <%= active 'student/resources' %>" href="/student/resources">Helpful Links</a>
+	          </div>
+	        </li>
+	        <li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle <%= active 'educator/' %>" id="dropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Educator</a>
+				  <div class="dropdown-menu" aria-labelledby="dropdown2">
+					  <a class="dropdown-item <%= active 'educator/index' %>" href="/educator/index">Career Direction e</a>
+					  <a class="dropdown-item <%= active 'educator/steps' %>" href="/educator/steps">Steps to Success</a>
+					  <a class="dropdown-item <%= active 'educator/resume' %>" href="/educator/resume">Resum&eacute; Tool</a>
+					  <a class="dropdown-item <%= active 'educator/request' %>" href="/educator/request">Request CD2</a>
+					  <a class="dropdown-item <%= active 'educator/feedback' %>" href="/educator/feedback">Educator Feedback</a>
+					  <a class="dropdown-item <%= active 'educator/resources' %>" href="/educator/resources">Helpful Links</a>
+	          </div>
+	        </li>
+	        <li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle <%= active 'arng/' %>" id="dropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ARNG Rep</a>
+				  <div class="dropdown-menu" aria-labelledby="dropdown3">
+					  <a class="dropdown-item <%= active 'arng/arng' %>" href="/arng/arng">Career Direction e</a>
+					  <% if session[:recruiter] %>
+					  <a class="dropdown-item <%= active 'arng/leads' %>" href="/arng/leads">Generate Leads</a>
+					  <a class="dropdown-item <%= active 'arng/register' %>" href="/arng/register">Register Your School</a>
+					  <a class="dropdown-item <%= active 'profile' %>" href="/recruiters/<%= session[:recruiter] %>/profile">Recruiter Profile</a>
+					  <a class="dropdown-item <%= active 'arng/practices' %>" href="/arng/practices">Best Practices</a>
+					  <a class="dropdown-item <%= active 'arng/downloads' %>" href="/arng/downloads">Downloads</a>
+					  <a class="dropdown-item <%= active 'arng/faq' %>" href="/arng/faq">FAQ</a>
+					  <% end %>
+				  </div>
+			  </li>
+			  <li class="nav-item">
+				  <a href="/contact_us" class="nav-link <%= active 'contact' %>">Contact Us</a>
+			  </li>
+	      </ul>
+	    </div>
+	 </div>
+	</nav>
+	  
+	  
+	  
 	
-	<div class="navbar navbar-inverse navbar-static-top">
-		<div class="navbar-inner">
+
+	<!-- <nav class="navbar sticky-top navbar-expand-md navbar-dark md-dark" style="background-color: #000000;">
+		<div class="container">
+		<a class="brand span3" href="/index" style="padding: 16px 0px; color: black;"><img src="/img/careerdirection-e.svg"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	   <div class="collapse navbar-collapse" id="navbarsExample01">
+	     <ul class="navbar-nav text-right">
+				<li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarsExample01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Student
+		        </a>
+		       <div class="dropdown-menu" aria-labelledby="navbarsExample01">
+					  <a class="dropdown-item <%= active 'student/student' %>" href="/student/student">Career Direction e</a>
+					  <a class="dropdown-item <%= active 'student/report' %>" href="/student/report">Student Report</a>
+					  <a class="dropdown-item <%= active 'student/resume_tool' %>" href="/student/resume_tool">Resum&eacute; Tool</a>
+					  <a class="dropdown-item <%= active 'student/feedback' %>" href="/student/feedback">Student Feedback</a>
+					  <a class="dropdown-item <%= active 'student/resources' %>" href="/student/resources">Helpful Links</a>
+		        </div>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+	</div> -->
+		<!-- <div class="navbar-inner">
 			<div class="container">
-				
+
 			   <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-				</a>			
+				</a>
 				<a class="brand span3" href="/index" style="padding: 16px 0px; color: black;"><img src="/img/careerdirection-e.svg"></a>
-				
+
 				<div class="nav-collapse">
 					<ul class="nav pull-right">
 						<li class="dropdown <%= active 'student' %>"><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding: 20px 30px 10px 30px;">Student&nbsp;<b class="caret"></b></a>
@@ -88,17 +172,17 @@
 						<li class="<%= active 'contact' %>"><a href="/contact_us" style="padding: 20px 30px 10px 30px;">Contact Us</a></li>
 					</ul>
 				</div>
-				<!-- <div class="nav-collapse">
+				<div class="nav-collapse">
 					<ul class="nav pull-right">
 						<li class="<%= active 'student' %>"><a href="/student/student" style="padding: 20px 10px 10px 10px">Student</a></li>
 						<li class="<%= active 'educator' %>"><a href="/educator/index" style="padding: 20px 10px 10px 10px">Educator</a></li>
 						<li class="<%= active 'arng' %>"><a href="/arng/arng" style="padding: 20px 10px 10px 10px">ARNG Rep</a></li>
 						<li class="<%= active 'contact' %>"><a href="/contact_us" style="padding: 20px 10px 10px 10px">Contact Us</a></li>
 					</ul>
-				</div> -->
+				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	
 	<%= alert %>
@@ -107,22 +191,22 @@
 		
 	
 	<footer>
-		<div class="container">
+		<div class="container-md">
 			<div class="row">
-		<div class="span2">
-			<a href="/about" class="btn btn-info btn-mini" style="text-align: left; margin-bottom: 14px;">About CTC</a>
-		</div>
-		<div class="span8" style="line-height: 16px;">
-			<p>1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc. All rights reserved. &nbsp; <span class="under-link"><a href="/admin/admin" >&nbsp;Admin&nbsp;</a></span> 
-				<!-- <br >
-			<span style="color: #af4532;"><strong><%= session[:admin] %> / <%= session[:recruiter] %> / <%= session[:student] %></strong></span> -->
-			</p>
-			
-		</div>
-		<div class="span2">
-			 <img src="/img/arng_4cp_cta_camo.png" width="80px" />
-		</div>
-		</div>
+			<div class="col-3" style="text-align: left; margin-bottom: 14px;">
+				<a href="/about" class="btn btn-info btn-sm">About CTC</a>
+			</div>
+			<div class="col-6" style="line-height: 16px;">
+				<p>1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc. All rights reserved. &nbsp; <span class="under-link"><a href="/admin/admin" >&nbsp;Admin&nbsp;</a></span> 
+					<!-- <br >
+				<span style="color: #af4532;"><strong><%= session[:admin] %> / <%= session[:recruiter] %> / <%= session[:student] %></strong></span> -->
+				</p>
+				
+			</div>
+			<div class="col-3" style="text-align: right;">
+				 <img src="/img/arng_4cp_cta_camo.png" width="80px" />
+			</div>
+			</div>
 		</div>
 	</footer>
 	

@@ -1,7 +1,7 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span12">
+			<div class="col-md-12">
 				<h1 class="page-header">Careers and Occupations Guide School Registration</h1>
 				<h5>Register your school to get a password.</h5>
 			</div>
@@ -22,7 +22,7 @@
 				<div class="control-group">
 					<label class="control-label" for="first_name">Educator’s First name</label>
 					<div class="controls">
-						<input type="text" class="textfield span4" name="first_name" id="first_name" value="<%= @school.first_name %>" /> 
+						<input type="text" class="textfield col-md-4" name="first_name" id="first_name" value="<%= @school.first_name %>" /> 
 					</div>
 				</div>
 				<div class="control-group">
@@ -34,35 +34,35 @@
 				<div class="control-group">
 					<label class="control-label" for="last_name">Educator’s Last name</label>
 					<div class="controls">
-						<input type="text" class="textfield span4" name="last_name" id="last_name" value="<%= @school.last_name %>" /> 
+						<input type="text" class="textfield col-md-4" name="last_name" id="last_name" value="<%= @school.last_name %>" /> 
 					</div>
 				</div>
 				<br />
 				<div class="control-group">
 					<label class="control-label" for="school_name"><strong>School name</strong></label>
 					<div class="controls">
-						<input type="text" class="textfield span4" name="school_name" id="school_name" value="<%= @school.school_name %>" /> 
+						<input type="text" class="textfield col-md-4" name="school_name" id="school_name" value="<%= @school.school_name %>" /> 
 					</div>
 				</div>
 				
 				<div class="control-group">
 					<label class="control-label" for="school_address1">School Address</label>
 					<div class="controls">
-						<input type="text" class="textfield span4" name="school_address1" id="school_address1" value="<%= @school.school_address1 %>" /> 
+						<input type="text" class="textfield col-md-4" name="school_address1" id="school_address1" value="<%= @school.school_address1 %>" /> 
 					</div>
 				</div>
 				
 				<div class="control-group">
 					<label class="control-label" for="school_address2"> </label>
 					<div class="controls">
-						<input type="text" class="textfield span4" name="school_address2" id="school_address2" value="<%= @school.school_address2 %>" /> 
+						<input type="text" class="textfield col-md-4" name="school_address2" id="school_address2" value="<%= @school.school_address2 %>" /> 
 					</div>
 				</div>
 				
 				<div class="control-group">
 					<label class="control-label" for="school_city">City</label>
 					<div class="controls">
-						<input type="text" class="textfield span4" name="school_city" id="school_city" value="<%= @school.school_city %>" /> 
+						<input type="text" class="textfield col-md-4" name="school_city" id="school_city" value="<%= @school.school_city %>" /> 
 					</div>
 				</div>
 					
@@ -87,7 +87,7 @@
 				<div class="control-group">
 					<label class="control-label" for="email">Counselor/teacher email</label>
 					<div class="controls">
-						<input type="text" class="textfield span4" name="email" id="email" value="<%= @school.email %>" /> 
+						<input type="text" class="textfield col-md-4" name="email" id="email" value="<%= @school.email %>" /> 
 					</div>
 				</div>
 				<div class="control-group">
@@ -131,7 +131,7 @@
 				<div class="control-group">
 					<label for="recruiter_id" class="control-label">Recruiter</label>
 					<div class="controls">
-						<select type="text" id="recruiter_id" name="recruiter_id" class="span4" value="<%= @school.recruiter_id %>">
+						<select type="text" id="recruiter_id" name="recruiter_id" class="col-md-4" value="<%= @school.recruiter_id %>">
 								<option value=""></option>
 							<% @recruiter.each do |recruiter| %>
 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter_id %>><%= recruiter.state %> - <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %> - <%= recruiter.id %></option>

@@ -1,10 +1,10 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span12">
+			<div class="col-md-12">
 				<h1>Career Skills &nbsp; <small><%= @student.name %></small></h1><br />
 			</div>
-			<div class="span8 offset2">
+			<div class="col-md-8 offset2">
 				
 				<p>For each skill list 2 ways you have learned, improved, or used this skill.</p>
 				
@@ -30,15 +30,15 @@
 					
 					<p>
 						<label for="skill">Career Skill</label>
-						<input type="text" name="skill" id="skill" class="textfield span8" value="<%= @skill.skill %>" />
+						<input type="text" name="skill" id="skill" class="textfield col-md-8" value="<%= @skill.skill %>" />
 					</p>
 					<p>
 						<label for="applied_1">Applied 1</label>
-						<input type="text" name="applied_1" id="applied_1" class="textfield span8" value="<%= @skill.applied_1 %>" />
+						<input type="text" name="applied_1" id="applied_1" class="textfield col-md-8" value="<%= @skill.applied_1 %>" />
 					</p>
 					<p>
 						<label for="applied_2">Applied 2</label>
-						<input type="text" name="applied_2" id="applied_2" class="textfield span8" value="<%= @skill.applied_2 %>" />
+						<input type="text" name="applied_2" id="applied_2" class="textfield col-md-8" value="<%= @skill.applied_2 %>" />
 					</p>
 					
 					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/skills/skills">Cancel</a> &nbsp; <% if @student.skills.count > 0 %><a class="btn btn-small btn-warning delete" href="/student/resume/skills/<%= @skill.id %>/delete">Delete</a><% end %>

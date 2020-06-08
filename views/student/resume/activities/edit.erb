@@ -1,33 +1,33 @@
 <div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span12">
+			<div class="col-md-12">
 				<h1>Activities and Associations &nbsp; <small><%= @student.name %></small></h1><br />
-			<div class="span8 offset2">
+			<div class="col-md-8 offset2">
 				<p>You can enter others after saving.</p>
 				<form class="form-horizontal" method="post">
 					<div class="control-group">
 					   <label class="control-label" for="position">Position</label>
 						<div class="controls">
-							<input type="text" name="position" id="position" class="textfield span4" value="<%= @activity.position %>" />
+							<input type="text" name="position" id="position" class="textfield col-md-4" value="<%= @activity.position %>" />
 						</div>
 					</div>
 					<div class="control-group">
 					   <label class="control-label" for="organization">Organization</label>
 						<div class="controls">
-							<input type="text" name="organization" id="organization" class="textfield span4" value="<%= @activity.organization %>" />
+							<input type="text" name="organization" id="organization" class="textfield col-md-4" value="<%= @activity.organization %>" />
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label" for="date_start">Start Date (Month Year)</label>
 						<div class="controls">
-							<input type="text" name="date_start" id="date_start" class="textfield span4" value="<%= @activity.date_start %>" />
+							<input type="text" name="date_start" id="date_start" class="textfield col-md-4" value="<%= @activity.date_start %>" />
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label" for="date_end">End Date (Month Year)</label>
 						<div class="controls">
-							<input type="text" class="textfield span4" name="date_end" id="date_end" value="<%= @activity.date_end %>" />
+							<input type="text" class="textfield col-md-4" name="date_end" id="date_end" value="<%= @activity.date_end %>" />
 						</div>
 					</div>
 					<div class="control-group">
