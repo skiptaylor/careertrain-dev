@@ -2,12 +2,11 @@
 <html lang="en">
   <head>
   	<meta charset="utf-8" />
-  	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" /> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   	<meta name="description" content="" />
   	<meta name="author" content="" />
-  	<title>Career Direction +</title>
-  	<link href="/css/bootstrap.min.css" rel="stylesheet">
+  	<title>Career Direction e</title>
+   <link href="/css/bootstrap.min.css" rel="stylesheet">
   	<link href="/css/bootstrap-reboot.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-grid.min.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="/css/resume-style.css" />
@@ -19,7 +18,7 @@
 	<link type="text/css" rel="stylesheet" href="/css/buttons_altered.css" />
 	
   	<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
-  	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  	<!-- <script type="text/javascript" src="/js/bootstrap.min.js"></script> -->
   	<script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="/js/bootstrap-datetimepicker.js"></script>
 	<script type="text/javascript" src="/js/gen_validatorv4.js"></script>
@@ -44,19 +43,20 @@
 	  
 	  
 	  
-  <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark" style="background-color: #000000;">
+  <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #000000;">
 	  <div class="container">  
-	    <a class="navbar-brand" href="/index"><img src="/img/careerdirection-e.svg"></a>
+	    <a class="navbar-brand mb-2" href="/index"><img src="/img/careerdirection-e.svg" width="220px"></a>
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-	      <ul class="navbar-nav mr-auto mr-3">
-	        <li class="nav-item dropdown">
+			 
+	      <ul class="navbar-nav mr-auto ml-4">
+	        <li class="nav-item dropdown px-1">
 				  <a class="nav-link dropdown-toggle <%= active 'student/' %>" id="dropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					  Student
 				  </a>
-				  <div class="dropdown-menu" aria-labelledby="dropdown1">
+				  <div class="dropdown-menu pic-border" aria-labelledby="dropdown1">
 					  <a class="dropdown-item <%= active 'student/student' %>" href="/student/student">Career Direction e</a>
 					  <a class="dropdown-item <%= active 'student/report' %>" href="/student/report">Student Report</a>
 					  <a class="dropdown-item <%= active 'student/resume_tool' %>" href="/student/resume_tool">Resum&eacute; Tool</a>
@@ -64,9 +64,9 @@
 					  <a class="dropdown-item <%= active 'student/resources' %>" href="/student/resources">Helpful Links</a>
 	          </div>
 	        </li>
-	        <li class="nav-item dropdown">
+	        <li class="nav-item dropdown px-1">
 				  <a class="nav-link dropdown-toggle <%= active 'educator/' %>" id="dropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Educator</a>
-				  <div class="dropdown-menu" aria-labelledby="dropdown2">
+				  <div class="dropdown-menu pic-border" aria-labelledby="dropdown2">
 					  <a class="dropdown-item <%= active 'educator/index' %>" href="/educator/index">Career Direction e</a>
 					  <a class="dropdown-item <%= active 'educator/steps' %>" href="/educator/steps">Steps to Success</a>
 					  <a class="dropdown-item <%= active 'educator/resume' %>" href="/educator/resume">Resum&eacute; Tool</a>
@@ -75,9 +75,9 @@
 					  <a class="dropdown-item <%= active 'educator/resources' %>" href="/educator/resources">Helpful Links</a>
 	          </div>
 	        </li>
-	        <li class="nav-item dropdown">
+	        <li class="nav-item dropdown px-1">
 				  <a class="nav-link dropdown-toggle <%= active 'arng/' %>" id="dropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ARNG Rep</a>
-				  <div class="dropdown-menu" aria-labelledby="dropdown3">
+				  <div class="dropdown-menu pic-border" aria-labelledby="dropdown3">
 					  <a class="dropdown-item <%= active 'arng/arng' %>" href="/arng/arng">Career Direction e</a>
 					  <% if session[:recruiter] %>
 					  <a class="dropdown-item <%= active 'arng/leads' %>" href="/arng/leads">Generate Leads</a>
@@ -89,10 +89,11 @@
 					  <% end %>
 				  </div>
 			  </li>
-			  <li class="nav-item">
+			  <li class="nav-item px-1">
 				  <a href="/contact_us" class="nav-link <%= active 'contact' %>">Contact Us</a>
 			  </li>
 	      </ul>
+		
 	    </div>
 	 </div>
 	</nav>
@@ -101,88 +102,6 @@
 	  
 	
 
-	<!-- <nav class="navbar sticky-top navbar-expand-md navbar-dark md-dark" style="background-color: #000000;">
-		<div class="container">
-		<a class="brand span3" href="/index" style="padding: 16px 0px; color: black;"><img src="/img/careerdirection-e.svg"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-	   <div class="collapse navbar-collapse" id="navbarsExample01">
-	     <ul class="navbar-nav text-right">
-				<li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarsExample01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Student
-		        </a>
-		       <div class="dropdown-menu" aria-labelledby="navbarsExample01">
-					  <a class="dropdown-item <%= active 'student/student' %>" href="/student/student">Career Direction e</a>
-					  <a class="dropdown-item <%= active 'student/report' %>" href="/student/report">Student Report</a>
-					  <a class="dropdown-item <%= active 'student/resume_tool' %>" href="/student/resume_tool">Resum&eacute; Tool</a>
-					  <a class="dropdown-item <%= active 'student/feedback' %>" href="/student/feedback">Student Feedback</a>
-					  <a class="dropdown-item <%= active 'student/resources' %>" href="/student/resources">Helpful Links</a>
-		        </div>
-		      </li>
-		    </ul>
-		  </div>
-		</nav>
-	</div> -->
-		<!-- <div class="navbar-inner">
-			<div class="container">
-
-			   <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</a>
-				<a class="brand span3" href="/index" style="padding: 16px 0px; color: black;"><img src="/img/careerdirection-e.svg"></a>
-
-				<div class="nav-collapse">
-					<ul class="nav pull-right">
-						<li class="dropdown <%= active 'student' %>"><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding: 20px 30px 10px 30px;">Student&nbsp;<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li class="<%= active 'student/student' %>"><a href="/student/student">Career Direction e</a></li>
-								<li class="<%= active 'student/report' %>"><a href="/student/report">Student Report</a></li>
-								<li class="<%= active 'student/resume_tool' %>"><a href="/student/resume_tool">Resum&eacute; Tool</a></li>
-								<li class="<%= active 'student/feedback' %>"><a href="/student/feedback">Student Feedback</a></li>
-								<li class="<%= active 'student/resources' %>"><a href="/student/resources">Helpful Links</a></li>
-							</ul>
-						</li>
-						<li class="dropdown <%= active 'educator' %>"><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding: 20px 30px 10px 30px;">Educator&nbsp;<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li class="<%= active 'educator/index' %>"><a href="/educator/index">Career Direction 2</a></li>
-								<li class="<%= active 'educator/steps' %>"><a href="/educator/steps">Steps to Success</a></li>
-								<li class="<%= active 'educator/resume' %>"><a href="/educator/resume">Resum&eacute; Tool</a></li>
-								<li class="<%= active 'educator/request' %>"><a href="/educator/request">Request CD2</a></li>
-								<li class="<%= active 'educator/feedback' %>"><a href="/educator/feedback">Educator Feedback</a></li>
-								<li class="<%= active 'educator/resources' %>"><a href="/educator/resources">Helpful Links</a></li>
-							</ul>
-						</li>
-						<li class="dropdown <%= active 'arng' %>"><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding: 20px 30px 10px 30px;">ARNG Rep&nbsp;<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li class="<%= active 'arng/arng' %>"><a href="/arng/arng">Career Direction e</a></li>
-								 <% if session[:recruiter] %>
-								  <li class="<%= active 'arng/leads' %>"><a href="/arng/leads">Generate Leads</a></li>
-								  <li class="<%= active 'arng/register' %>"><a href="/arng/register">Register Your School</a></li>
-								  <li class="<%= active 'profile' %>"><a href="/recruiters/<%= session[:recruiter] %>/profile">Recruiter Profile</a></li>
-								  <li class="<%= active 'arng/practices' %>"><a href="/arng/practices">Best Practices</a></li>
-								  <li class="<%= active 'arng/downloads' %>"><a href="/arng/downloads">Downloads</a></li>
-								  <li class="<%= active 'arng/faq' %>"><a href="/arng/faq">FAQ</a></li>
-								 <% end %>
-							</ul>
-						</li>
-						<li class="<%= active 'contact' %>"><a href="/contact_us" style="padding: 20px 30px 10px 30px;">Contact Us</a></li>
-					</ul>
-				</div>
-				<div class="nav-collapse">
-					<ul class="nav pull-right">
-						<li class="<%= active 'student' %>"><a href="/student/student" style="padding: 20px 10px 10px 10px">Student</a></li>
-						<li class="<%= active 'educator' %>"><a href="/educator/index" style="padding: 20px 10px 10px 10px">Educator</a></li>
-						<li class="<%= active 'arng' %>"><a href="/arng/arng" style="padding: 20px 10px 10px 10px">ARNG Rep</a></li>
-						<li class="<%= active 'contact' %>"><a href="/contact_us" style="padding: 20px 10px 10px 10px">Contact Us</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div> -->
 
 	
 	<%= alert %>
