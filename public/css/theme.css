@@ -93,8 +93,6 @@ body {
 
 
 
-
-
 /*@media (max-width: 980px) { body { padding-top: 0px; } }*/
 
 /*ul li, ol li	{
@@ -501,3 +499,29 @@ div#ground	{
 	font-size: 1.3em;
 	color: #1abd9c;
 }
+
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #1abd9c;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #007bff;
+
