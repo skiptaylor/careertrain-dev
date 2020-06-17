@@ -128,7 +128,6 @@
 			</div>
 		</div>
 	</footer>
-	
 		
 		<script type="text/javascript">
 			$('.form_date').datetimepicker({
@@ -139,6 +138,27 @@
 				todayHighlight: true,
 				forceParse: true
 		    });
+			 
+		 	$(function() {
+				$(document).ready(function(){
+			 		setTimeout(function(){
+			 			$("div#alert").fadeOut("slow", function () {
+			 			$("div#alert").remove();
+			 	      });
+			 		}, 1500);
+			 	});
+		   
+			}).call(this);	
+			
+		  $(function() {
+			   $(window).load(function() {
+					$('a.delete').click(function() {
+						if (!confirm('This cannot be undone! Continue?')) {
+							return false;
+						}
+					});
+				});
+			}).call(this);
 		</script>
 
   </body>

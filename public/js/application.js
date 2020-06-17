@@ -17,22 +17,22 @@ $(function() {
 			
 });
 
-$(function() {
-
-  $(window).load(function() {
-    $('a.delete').click(function() {
-      if (!confirm('This cannot be undone! Continue?')) {
-        return false;
-      }
-    });
-  });
-  
-	$(document).ready(function(){
-		setTimeout(function(){
-			$("div#alert").fadeOut("slow", function () {
-			$("div#alert").remove();
-	      });
-		}, 1500);
-	});
-
-}).call(this);
+// $(function() {
+//
+//   $(window).load(function() {
+//     $('a.delete').click(function() {
+//       if (!confirm('This cannot be undone! Continue?')) {
+//         return false;
+//       }
+//     });
+//   });
+//
+// 	$(document).ready(function(){
+// 		setTimeout(function(){
+// 			$("div#alert").fadeOut("slow", function () {
+// 			$("div#alert").remove();
+// 	      });
+// 		}, 1500);
+// 	});
+//
+// }).call(this);
