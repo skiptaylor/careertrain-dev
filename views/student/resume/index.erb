@@ -4,7 +4,9 @@
 			<div class="col-md-12">
 				<h1 class="page-header">Online Resum&eacute; Tool</h1>
 			</div>
-			<div class="col-md-8">
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				
 				<% if @student.school_password == "" || @student.school_password == nil %>
 				
@@ -14,9 +16,7 @@
 	 		  <h5>You must complete your student profile to continue.</h5>
 	 		  <hr/>
 			  <% else %>
-			  
-			 </div>
-			 <div class="span6">
+			 
 				
             <ul class="rs-menu">
 					<% if @student.name == "" && @student.last_name == "" %>
@@ -242,7 +242,7 @@
 				</ul>
 				<br />
 			</div>
-			<div class="span6">
+			<div class="col md-6">
 				<h6>Account Info</h6>
 				<p><%= @student.email %><br />
 

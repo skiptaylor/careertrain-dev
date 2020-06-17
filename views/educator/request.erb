@@ -4,62 +4,100 @@
 			<div class="col-md-12">
 				<h1 class="page-header">Request the Career Direction 2 Program</h1>
 			</div>
+		</div>
+		<div class="row">
 			<div class="col-md-7">
 				<p class="lead">Would you like a member of the <strong>Army National Guard</strong> to provide a free presentation of the <strong>Career Direction 2</strong> program to your students?</p>
 				
 				<div class="sign-in" style="padding: 24px; margin: 42px 0;">
 					<h5>Give us a little information and someone will contact you.</h5>
 					<form method="post" class="school" id="requestcd2">
-					<br />
-					<p>
-						<label class="horz" for="school_name">School name</label>
-						<input type="text" class="textfield col-md-4 dec" placeholder="School name" name="school_name" id="school_name" value="<%= @school.school_name %>" /> 
-					</p>
-					<p>
-						<label class="horz" for="school_address1">School Address</label>
-						<input type="text" class="textfield col-md-4 dec" placeholder="Street Address" name="school_address1" id="school_address1" value="<%= @school.school_address1 %>" /> 
-						<br />
-						<label class="horz" for="school_address2"> </label>
-						<input type="text" class="textfield col-md-4 dec" placeholder="Street Address" name="school_address2" id="school_address2" value="<%= @school.school_address2 %>" /> 
-					</p>
-					<p class="form-inline">
-						<label class="horz" for="school_city"> </label>
-						<input type="text" class="textfield span3 dec" placeholder="City" name="school_city" id="school_city" value="<%= @school.school_city %>" /> 
-						<input type="text" class="textfield span1 dec" placeholder="State" name="school_state" id="school_state" value="<%= @school.school_state %>" /> 
-						<input type="text" class="textfield span1 dec" placeholder="Zip" name="school_zip" id="school_zip" value="<%= @school.school_zip %>" /> 
-					</p>
-					<p class="form-inline">
-						<label class="horz" for="first_name">Contact</label>
-						<input type="text" class="textfield span2 dec" placeholder="First" name="first_name" id="first_name" value="<%= @school.first_name %>" /> 
-						<input type="text" class="textfield span1 dec" placeholder="MI" name="middle_initial" id="middle_initial" value="<%= @school.middle_initial %>" /> 
-						<input type="text" class="textfield span2 dec" placeholder="Last" name="last_name" id="last_name" value="<%= @school.last_name %>" /> 
-					</p>
-					<p>
-						<label class="horz" for="email">Email</label>
-						<input type="text" class="textfield col-md-4 dec" placeholder="Email *Required" name="email" id="email" value="<%= @school.email %>" /> 
-					</p>
-					<p>
-						<label class="horz" for="phone">Phone</label>
-						<input type="text" class="textfield col-md-4 dec" placeholder="Phone" name="phone" id="phone" value="<%= @school.phone %>" /> 
-					</p>
-					<p>
-						<label class="horz" for="fax">Fax</label>
-						<input type="text" class="textfield col-md-4 dec" placeholder="Fax" name="fax" id="fax" value="<%= @school.fax %>" /> 
-					</p>
-				
-					<p>
-						<label class="horz" for="number_seniors">Number of students</label>
-						<input type="text" class="textfield input-small dec" name="number_seniors" id="number_seniors" value="<%= @school.number_seniors %>" /> 
-					</p>
-					<p style="padding-left: 192px;">
-						<label class="checkbox">
-							<input type="checkbox" name="cd_before" id="cd_before" <%= 'checked="checked"' if @school.cd_before  %> />
-							<strong>Used Career Direction Before</strong>
-						</label>
-					</p>
-					<p style="padding-left: 192px;">
-						<input class="btn btn-small btn-primary" type="submit" value="Submit" />
-					</p>
+					
+					
+					
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<label for="school_name">School name</label>
+							<input class="form-control" placeholder="School name" name="school_name" id="school_name" value="<%= @school.school_name %>" />
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<label for="school_address1">School Address</label>
+							<input class="form-control" placeholder="Street Address" name="school_address1" id="school_address1" value="<%= @school.school_address1 %>" />
+							<input class="form-control" placeholder="Street Address" name="school_address2" id="school_address2" value="<%= @school.school_address2 %>" />
+						</div>
+					</div>	
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="school_city">City</label>
+							<input type="text" class="form-control" placeholder="City" name="school_city" id="school_city" value="<%= @school.school_city %>" />
+						</div>
+	  					<div class="form-group col-md-3">
+	  						<label for="school_state">State</label>
+	  						<select type="text"  class="form-control" id="school_state" name="school_state" value="<%= @school.school_state %>">
+	  								<option value="None"></option>
+	  							<% @state.sort{|a,b| a.abbr <=> b.abbr}.each do |state| %>
+	  								<option value="<%= state.abbr %>" <%= 'selected' if state.abbr == @school.school_state %>><%= state.abbr %></option>
+	  							<% end %>
+	  						</select>
+	  					</div>
+						<div class="form-group col-md-3">
+							<label for="inputZip">Zip</label>
+							<input type="text" class="form-control" placeholder="Zip" name="school_zip" id="school_zip" value="<%= @school.school_zip %>">
+						</div>
+					</div>
+					
+					<div class="form-row">
+						<div class="form-group col-sm-5">
+							<label for="first_name">Contact</label>
+							<input type="text" class="form-control" placeholder="First name" name="first_name" id="first_name" value="<%= @school.first_name %>" />
+						</div>
+						<div class="form-group col-sm-2">
+							<label for="first_name">&nbsp;</label>
+							<input type="text" class="form-control" placeholder="MI" name="middle_initial" id="middle_initial" value="<%= @school.middle_initial %>" />
+						</div>
+						<div class="form-group col-sm-5">
+							<label for="first_name">&nbsp;</label>
+							<input type="text" class="form-control" placeholder="Last name" name="last_name" id="last_name" value="<%= @school.last_name %>" />
+						</div>
+					</div>  
+					<div class="form row">
+						<div class="form-group col-md-12">
+							<label for="email">Email</label>
+							<input type="email" class="form-control" placeholder="Email" name="email" id="email" value="<%= @school.email %>" />
+						</div>
+					</div>
+					<div class="form row">
+						<div class="form-group col-sm-6">
+							<label for="phone">Phone</label>
+							<input type="phone" class="form-control" placeholder="Phone" name="phone" id="phone" value="<%= @school.phone %>" />
+						</div>
+						<div class="form-group col-sm-6">
+							<label for="fax">Fax</label>
+							<input type="phone" class="form-control" placeholder="Fax" name="fax" id="fax" value="<%= @school.fax %>" />
+						</div>
+					</div>  	
+					<div class="form row">
+						<div class="form-group col-sm-5">
+							<label for="number_seniors">Number of students</label>
+							<input type="text" class="form-control" name="number_seniors" id="number_seniors" value="<%= @school.number_seniors %>" />
+						</div>
+					    <div class="col-sm-1"></div>
+					    <div class="col-sm-6">
+					      <div class="form-check">
+					        <input class="form-check-input" type="checkbox" name="cd_before" id="cd_before" <%= 'checked="checked"' if @school.cd_before  %>>
+					        <label class="form-check-label" for="cd_before">
+					          Used Career Direction Before
+					        </label>
+					      </div>
+					    </div>
+					  </div>	
+					  <div class="form row"  style="float: right; margin: -12px 9px 12px 0;">
+						  <input class="btn btn-primary" type="submit" value="Submit" />
+						  
+					  </div>
+					  <br />
 				</form>
 			</div>
 		</div>

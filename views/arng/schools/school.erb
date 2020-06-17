@@ -28,15 +28,13 @@
 				</div>
 				<div class="span7">
 					<hr />
-					<p>
-						
-					</p>
+
 					<% if session[:recruiter] %>
-					<p>
-						<a href="/arng/schools/<%= @school.id %>/edit" class="btn btn-small">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/recruiters/<%= session[:recruiter] %>/profile" class="btn btn-small">Recruiter Profile</a>
+					<p style="margin: 1rem 0 0 1rem;">
+						<a href="/arng/schools/<%= @school.id %>/edit" class="btn btn-small">Edit School</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/recruiters/<%= session[:recruiter] %>/profile" class="btn btn-small">Recruiter Profile</a>
 					</p>
 					<% end %>
-					<%= session[:admin] %> / <%= session[:recruiter] %>
+					<!-- <%= session[:admin] %> / <%= session[:recruiter] %> -->
 				</div>
 			</div>
 		</div>

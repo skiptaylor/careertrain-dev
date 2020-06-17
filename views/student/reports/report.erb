@@ -3,121 +3,21 @@
 			<div class="col-md-12">
 				<h1 class="page-header">Careers and Occupations Guide Report</h1>
 			</div>
-			<div class="col-md-5">
-				<form method="get">
-				<% if @student.school_password == "" || @student.school_password == nil %>
-
- 			  <hr/>
-			  
- 			  <a href="/student/reports/<%= @student.id %>/edit" class="btn btn-small btn-primary pull-right">Edit Profile</a>
- 			  <h5>You must complete your student profile to continue.</h5>
- 			  <hr/>
-			  
- 			   <% else %>
-				
-				<!-- <p class="lead">
-					<a href="/img/CTC-Cluster-CarDir.pdf" class="btn btn-small btn-info" target="blank"><strong>View CD2 Career Categories and US DOE Career Clusters Comparison Chart</strong></a>
-				</p> -->
-				
-				
-					
-				<h5>
-  					<% unless @student.name == "" || @student.name == nil %><strong><%= @student.name %></strong>
-  					<% else %><strong><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></strong>
-  					<% end %><br />
-				</h5>
-				<p>	
-					<%= @student.email %><br />
-  					<% unless @student.address == "" %><%= @student.address %><br /><% end %>
-  					<% unless @student.city == "" %><%= @student.city %><% end %> <% unless @student.state == "" %><%= @student.state %><% end %> <% unless @student.zip == "" %><%= @student.zip %><br /><% end %>
-  					<% unless @student.phone == "" %><%= formatted_number(@student.phone) %><% end %><br />
-  					<strong>Date of Birth</strong> &nbsp; <%= format_day(@student.birth_date) %><br />
-  					<strong>School Password</strong> &nbsp; <%= @student.school_password %><br /><br />
-					
-					<a href="/student/reports/<%= @student.id %>/edit" class="btn btn-small btn-info">Edit Profiile</a><br /><br />
-					</p>
-					
-					
-				</div>
-				<div class="col-md-7">
-				
-				<div class="sign-in" style="margin: 0px 0 32px 0; padding: 32px 48px;">
-
-						<p>Let's take the Inventory Exercise to get your Careers and Occupations Guide Report.</p>
-						<p>This is your own personalized academic and career planning report.</p>
-						
-						<a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success">Inventory Exercise</a>
-						
-				</div>
+		</div>
+		<div class="row">	
+			<div class="col-md-12">
+			<form method="get">
+				<h3><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></h3>
+				<%= @student.email %><br /><br />
 			</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<h1 class="page-header">Your Career Direction Interest Exercise Scores</h1>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-5">
-					<div class="sign-in"style="margin: 0; padding: 18px;">
-					
-					  <p><strong>Enter the Occupational Category letters</strong> corresponding to your highest totals from your Interest Exercise (letters A - I). You must enter at least 2 letters to create a report.</p>
-					  <p>
-						  <select type="text" class="span1" name="score1" id="score1" style="text-align: center;" >
-						    <option></option>
-							 <option>A</option>
-						    <option>B</option>
-						    <option>C</option>
-						    <option>D</option>
-						    <option>E</option>
-						    <option>F</option>
-						    <option>G</option>
-						    <option>H</option>
-						    <option>I</option>
-						  </select>
-					     &nbsp; 1st Highest
-					  </p>
-					  <p>
-						  <select type="text" class="span1" name="score2" id="score2" style="text-align: center;" >
-						    <option></option>
-							 <option>A</option>
-						    <option>B</option>
-						    <option>C</option>
-						    <option>D</option>
-						    <option>E</option>
-						    <option>F</option>
-						    <option>G</option>
-						    <option>H</option>
-						    <option>I</option>
-						  </select>
-					     &nbsp; 2nd Highest
-					  </p>
-					  <p>
-						  <select type="text" class="span1" name="score3" id="score3" style="text-align: center;" >
-						    <option></option>
-							 <option>A</option>
-						    <option>B</option>
-						    <option>C</option>
-						    <option>D</option>
-						    <option>E</option>
-						    <option>F</option>
-						    <option>G</option>
-						    <option>H</option>
-						    <option>I</option>
-						  </select>
-					     &nbsp; 3rd Highest or Tie (if above a score of 3)
-					  </p>
-					  <p>
-					    <input type="submit" class="btn btn-success" value="Get Your Report" />
-					  </p>
-					  <% end %>
-					</div>
-			  </div>
+		</div>
+		<div class="row">	
 			
-				<div class="col-md-7">	
-					<form method="post" id="exercise">
-					<table class="table table-striped table-condensed table-bordered">
-						
-						<!-- <p><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></p> -->
+
+  			<div class="col-lg-7">
+
+				<table class="table table-striped table-small table-bordered">
+					<thead>
 						<tr>
 							<th style="text-align: left;">Date</th>
 							<th style="text-align: center;">A</th>
@@ -130,8 +30,10 @@
 							<th style="text-align: center;">H</th>
 							<th style="text-align: center;">I</th>
 						</tr>
-					<% Exercise.sort{|a| a.updated_at}.each do |e| %>
-					<% if session[:student] == e.student.id %>
+					</thead>
+					<tbody>
+				<% Exercise.sort{|a| a.updated_at}.each do |e| %>
+				<% if session[:student] == e.student.id %>
 					
 						<tr>
 							<td style="text-align: left;"><%= format_day(e.created_at) %></td>
@@ -145,43 +47,66 @@
 							<td style="text-align: center;"><%= e.score_h %></td>
 							<td style="text-align: center;"><%= e.score_i %></td>
 						</tr>
-					
-					</table>
-				<!-- <div class="progress" style="margin: 2px;">
-				    <div class="bar" style="width: <%= e.score_a*13.5 %>%;"><strong>A</strong>&nbsp;&nbsp;&nbsp;</div>&nbsp;&nbsp;<%= e.score_a %>
-				</div>
-				<div class="progress" style="margin: 2px;">
-				    <div class="bar" style="width: <%= e.score_b*13.5 %>%;"><strong>B</strong>&nbsp;&nbsp;&nbsp;</div>&nbsp;&nbsp;<%= e.score_b %>
-				</div>
-				<div class="progress" style="margin: 2px;">
-				    <div class="bar" style="width: <%= e.score_c*13.5 %>%"><strong>C</strong>&nbsp;&nbsp;&nbsp;</div>&nbsp;&nbsp;<%= e.score_c %>
-				</div>
-				<div class="progress" style="margin: 2px;">
-				    <div class="bar" style="width: <%= e.score_d*13.5 %>%"><strong>D</strong>&nbsp;&nbsp;&nbsp;</div>&nbsp;&nbsp;<%= e.score_d %>
-				</div>
-				<div class="progress" style="margin: 2px;">
-				    <div class="bar" style="width: <%= e.score_e*13.5 %>%"><strong>E</strong>&nbsp;&nbsp;&nbsp;</div>&nbsp;&nbsp;<%= e.score_e %>
-				</div>
-				<div class="progress" style="margin: 2px;">
-				    <div class="bar" style="width: <%= e.score_f*13.5 %>%"><strong>F</strong>&nbsp;&nbsp;&nbsp;</div>&nbsp;&nbsp;<%= e.score_f %>
-				</div>
-				<div class="progress" style="margin: 2px;">
-				    <div class="bar" style="width: <%= e.score_g*13.5 %>%"><strong>G</strong>&nbsp;&nbsp;&nbsp;</div>&nbsp;&nbsp;<%= e.score_g %>
-				</div>
-				<div class="progress" style="margin: 2px;">
-				    <div class="bar" style="width: <%= e.score_h*13.5 %>%"><strong>H</strong>&nbsp;&nbsp;&nbsp;</div>&nbsp;&nbsp;<%= e.score_h %>
-				</div>
-				<div class="progress" style="margin: 2px;">
-				    <div class="bar" style="width: <%= e.score_i*13.5 %>%"><strong>I</strong>&nbsp;&nbsp;&nbsp;</div>&nbsp;&nbsp;<%= e.score_i %>
-				</div> -->
+						<% end %>
+						<% end %>
+					</tbody>
+				</table>
+			</div>
 				
-					<% end %>
-					<% end %>
-					</form>
+				<div class="col-md-5">
+					<p>Please enter the Occupational Category letters corresponding to your highest column totals from your Interest Exercise (letters A - I). You must enter at least 2 letters to create a report.</p>
+					<p>
+						<select type="text" class="form-control col-sm-2" name="score1" id="score1" style="text-align: center;" >
+							<option></option>
+							<option>A</option>
+							<option>B</option>
+							<option>C</option>
+							<option>D</option>
+							<option>E</option>
+							<option>F</option>
+							<option>G</option>
+							<option>H</option>
+							<option>I</option>
+						</select>
+						&nbsp; 1st Highest
+					</p>
+					<p>
+						<select type="text" class="form-control col-sm-2" name="score2" id="score2" style="text-align: center;" >
+							<option></option>
+							<option>A</option>
+							<option>B</option>
+							<option>C</option>
+							<option>D</option>
+							<option>E</option>
+							<option>F</option>
+							<option>G</option>
+							<option>H</option>
+							<option>I</option>
+						</select>
+						&nbsp; 2nd Highest
+					</p>
+					<p>
+						<select type="text" class="form-control col-sm-2" name="score3" id="score3" style="text-align: center;" >
+							<option></option>
+							<option>A</option>
+							<option>B</option>
+							<option>C</option>
+							<option>D</option>
+							<option>E</option>
+							<option>F</option>
+							<option>G</option>
+							<option>H</option>
+							<option>I</option>
+						</select>
+						&nbsp; 3rd Highest or Tie (if above a score of 3)
+					</p>
+					<p>
+						<input type="submit" class="btn btn-success" value="Show Report" />
+					</p>
+				</form>
 				</div>
-				
-				
-				
-			
+
+			</div>
 		</div>
 	</div>
+	

@@ -1,4 +1,4 @@
-jQuery(function() {
+$(function() {
 
 	$('.link-row').click(function() {
 		window.location = $(this).attr('id');
@@ -17,7 +17,7 @@ jQuery(function() {
 			
 });
 
-(function() {
+$(function() {
 
   $(window).load(function() {
     $('a.delete').click(function() {

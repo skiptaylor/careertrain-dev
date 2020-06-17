@@ -3,7 +3,7 @@
 			<div class="col-md-12">
 				<h1 class="page-header">School Registration</h1>
 			</div>
-			<div class="col-md-7">
+			<div class="col-lg-7">
 
 				<p class="lead">
 					Before presenting the <strong>Career Direction 2</strong> workshop, register your school 
@@ -58,14 +58,14 @@
 				
 			</div>
 
-			<div class="col-md-5">
+			<div class="col-lg-5">
 				<div class="sign-in">
 
 					<h3>Find Your School&rsquo;s Password or Register a School</h3>
 					<p>
-						<form method="get" class="form-search">
-						  <input type="text" name="zip" class="input-small search-query" placeholder="School Zip"/>  &nbsp;  
-						  <input type="submit" class="btn btn-success btn-small" />
+						<form method="get" class="form-search form-inline">
+						  <input type="text" name="zip" class="form-control search-query" placeholder="School Zip"/>  &nbsp;  
+						  <input type="submit" class="btn btn-success" />
 						</form>
 			  		</p>
 					<% if @results %>
@@ -73,7 +73,7 @@
 						<% @results.each do |c| %>
 							<hr />
 							<strong><%= c.school_name %></strong> &nbsp; <small><%= "(Not Activated)" unless c.active %></small><br />
-							<small><%= c.school_city %> <%= c.school_state %> &nbsp;<%= c.school_zip %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= c.id %>/edit" class="btn btn-mini">Finish Registration</a><% else %><br />
+							<small><%= c.school_city %> <%= c.school_state %> &nbsp;<%= c.school_zip %></small> &nbsp; &nbsp; &nbsp; <% unless c.active %><a href="/arng/schools/<%= c.id %>/edit" class="btn">Finish Registration</a><% else %><br />
 							<small>School Password</small> &nbsp;&nbsp;<span class="password-show"><%= c.school_password %></span> &nbsp; &nbsp; &nbsp; <a href="/arng/schools/<%= c.id %>/edit"><i class="icon-edit"></i></a><% end %>
 						<% end %>
   					</p>
@@ -84,11 +84,11 @@
 						<span class="password-show">NO SCHOOL FOUND FOR <%= params[:zip] %></span>
 					<% end %>
 					<hr />	
-					<p style="line-height: 1.3em;" class="semi-bold"><a href="/arng/schools/new" style="margin: 9px 0 12px 12px;" class="btn btn-mini btn-success pull-right">Register</a><small>After submitting your school's zip, if your school is not listed above, you can register it now.
+					<p style="line-height: 1.3em;" class="semi-bold"><a href="/arng/schools/new" style="margin: 2px 0 12px 12px;" class="btn btn-success pull-right">Register</a>After submitting your school's zip, if your school is not listed above, you can register it now.
 					<hr />
-					<p style="line-height: 1.3em;"><small>If your school is listed above as <strong>Not Activated</strong>, finish registration and click “Save” to activate.</small></p>
-					<p style="line-height: 1.3em;"><small>If your school is listed as active, you can click on the edit icon to the right of the school’s password to update information, if needed.</small></p>
-					<p style="line-height: 1.3em;"><small>If your school is listed more than once, please call 888-326-9229 to delete duplications.</small></p>
+					<p style="line-height: 1.3em;">If your school is listed above as <strong>Not Activated</strong>, finish registration and click “Save” to activate.</small></p>
+					<p style="line-height: 1.3em;">If your school is listed as active, you can click on the edit icon to the right of the school’s password to update information, if needed.</small></p>
+					<p style="line-height: 1.3em;">If your school is listed more than once, please call 888-326-9229 to delete duplications.</p>
 			
 				</div>
 		

@@ -1,0 +1,47 @@
+	<div class="container">	
+		<div class="row">  
+			<div class="col-md-12">
+				<h1 class="page-header">Careers and Occupations Guide Report</h1>
+			</div>
+			<div class="col-md-5">
+				<form method="get">
+				<% if @student.school_password == "" || @student.school_password == nil %>
+
+ 			  <hr/>
+			  
+ 			  <a href="/student/reports/<%= @student.id %>/edit" class="btn btn-small btn-primary pull-right">Edit Profile</a>
+ 			  <h5>You must complete your student profile to continue.</h5>
+ 			  <hr/>
+			  
+ 			   <% else %>
+									
+				<h5>
+  					<% unless @student.name == "" || @student.name == nil %><strong><%= @student.name %></strong>
+  					<% else %><strong><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></strong>
+  					<% end %><br />
+				</h5>
+				<p>	
+					<%= @student.email %><br />
+  					<% unless @student.address == "" %><%= @student.address %><br /><% end %>
+  					<% unless @student.city == "" %><%= @student.city %><% end %> <% unless @student.state == "" %><%= @student.state %><% end %> <% unless @student.zip == "" %><%= @student.zip %><br /><% end %>
+  					<% unless @student.phone == "" %><%= formatted_number(@student.phone) %><% end %><br />
+  					<strong>Date of Birth</strong> &nbsp; <%= format_day(@student.birth_date) %><br />
+  					<strong>School Password</strong> &nbsp; <%= @student.school_password %><br /><br />
+					
+					<a href="/student/reports/<%= @student.id %>/edit" class="btn btn-small btn-info">Edit Profiile</a><br /><br />
+					</p>
+					<% end %>
+				</div>
+				<div class="col-md-7">
+				
+				<div class="sign-in" style="margin: 0px 0 32px 0; padding: 32px 48px;">
+
+						<p>Let's take the Inventory Exercise to get your Careers and Occupations Guide Report.</p>
+						<p>This is your own personalized academic and career planning report.</p>
+						
+						<a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success">Inventory Exercise</a>
+						
+				</div>
+			</div>
+		</div>
+	</div>

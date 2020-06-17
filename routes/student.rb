@@ -67,7 +67,7 @@ post '/student/reports/create/?' do
             @student.save
             
             flash[:alert] = 'Welcome to the Online Resume Tool. You are now signed in.'
-            redirect '/student/reports/:id/report/enter_score'
+            redirect '/student/reports/:id/report/report_profile'
           else
             flash[:alert] = 'Please create a personal password that will be used to sign into your account.'
             erb :"student/reports/create"
@@ -95,6 +95,12 @@ post '/student/reports/create/?' do
 end
 
 
+get '/student/reports/report/report_profile/?' do
+  @state = State.all
+  @school = School.all
+  @student = Student.get(session[:student])
+  erb :'/student/reports/report_profile'
+end
 
 
 
@@ -111,7 +117,7 @@ get "/student/reports/signin/?" do
   
   else
     
-    redirect("/student/reports/report/enter_score")
+    redirect("/student/reports/report/report_profile")
   
   end
 end
@@ -128,7 +134,7 @@ post '/student/reports/signin/?' do
         session[:student] = student.id
         
         flash[:alert] = 'Welcome back! You are now signed in.'
-        redirect("/student/reports/report/enter_score")
+        redirect("/student/reports/report/report_profile")
         
       else
         flash[:alert] = 'Your password is incorrect.'
@@ -178,7 +184,7 @@ post '/student/reports/:id/edit/?' do
     :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
   )
 
-  redirect("/student/reports/report/enter_score")
+  redirect("/student/reports/report/report_profile")
   
   else
     

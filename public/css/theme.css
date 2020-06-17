@@ -126,7 +126,8 @@ h2	{
 
 .page-header	{
 	margin: 18px 0 32px 0;
-	line-height: 1.6em;
+	line-height: 1.15em;
+	padding-bottom: 8px;
 	border-bottom: 1px solid #1abd9c;
 }
 
@@ -266,7 +267,6 @@ dl dd	{
 }
 
 label	{
-	font-size: .85em;
 	font-weight: 600;
 }
 

@@ -3,11 +3,13 @@
 end
 
 get '/educator/request/?' do
+  @state = State.all
   @school = School.new
   erb :"/educator/request"
 end
 
 post '/educator/request/?' do
+  state = State.all
   school = School.create(
     :school_id              => params[:school_id],
     :date_modified          => params[:date_modified],
