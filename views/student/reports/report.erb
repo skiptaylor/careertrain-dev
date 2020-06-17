@@ -14,21 +14,21 @@
 		<div class="row">	
 			
 
-  			<div class="col-lg-7">
+  			<div class="col-md-7">
 
-				<table class="table table-striped table-small table-bordered">
+				<table class="table table-striped table-sm table-bordered">
 					<thead>
 						<tr>
 							<th style="text-align: left;">Date</th>
-							<th style="text-align: center;">A</th>
-							<th style="text-align: center;">B</th>
-							<th style="text-align: center;">C</th>
-							<th style="text-align: center;">D</th>
-							<th style="text-align: center;">E</th>
-							<th style="text-align: center;">F</th>
-							<th style="text-align: center;">G</th>
-							<th style="text-align: center;">H</th>
-							<th style="text-align: center;">I</th>
+							<th style="text-align: center; color: teal;">A</th>
+							<th style="text-align: center; color: teal;">B</th>
+							<th style="text-align: center; color: teal;">C</th>
+							<th style="text-align: center; color: teal;">D</th>
+							<th style="text-align: center; color: teal;">E</th>
+							<th style="text-align: center; color: teal;">F</th>
+							<th style="text-align: center; color: teal;">G</th>
+							<th style="text-align: center; color: teal;">H</th>
+							<th style="text-align: center; color: teal;">I</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -53,9 +53,10 @@
 				</table>
 			</div>
 				
-				<div class="col-md-5">
-					<p>Please enter the Occupational Category letters corresponding to your highest column totals from your Interest Exercise (letters A - I). You must enter at least 2 letters to create a report.</p>
-					<p>
+			<div class="col-md-5">
+				<p>Enter the Occupational Category letters corresponding to your highest column totals from your Interest Exercise (letters A - I) at left. You must enter at least 2 letters to create a report.</p>
+				<div class="form-group row">
+					<label for="score1"class="col-sm-4 col-form-label">1st Highest</label>
 						<select type="text" class="form-control col-sm-2" name="score1" id="score1" style="text-align: center;" >
 							<option></option>
 							<option>A</option>
@@ -68,9 +69,9 @@
 							<option>H</option>
 							<option>I</option>
 						</select>
-						&nbsp; 1st Highest
-					</p>
-					<p>
+				</div>
+				<div class="form-group row">
+					<label for="score1"class="col-sm-4 col-form-label">2nd Highest</label>	
 						<select type="text" class="form-control col-sm-2" name="score2" id="score2" style="text-align: center;" >
 							<option></option>
 							<option>A</option>
@@ -83,9 +84,9 @@
 							<option>H</option>
 							<option>I</option>
 						</select>
-						&nbsp; 2nd Highest
-					</p>
-					<p>
+				</div>
+				<div class="form-group row">
+					<label for="score1"class="col-sm-4 col-form-label">3rd Highest</label>	
 						<select type="text" class="form-control col-sm-2" name="score3" id="score3" style="text-align: center;" >
 							<option></option>
 							<option>A</option>
@@ -98,10 +99,10 @@
 							<option>H</option>
 							<option>I</option>
 						</select>
-						&nbsp; 3rd Highest or Tie (if above a score of 3)
-					</p>
+						<span style="margin: 6px 0 0 9px;">(or Tie if above a score of 3)</span>
+				</div>
 					<p>
-						<input type="submit" class="btn btn-success" value="Show Report" />
+						<input type="submit" class="btn btn-success" value="View Report" />
 					</p>
 				</form>
 				</div>
