@@ -1,19 +1,14 @@
-<div class="container">
-
-</div>
-
-<div class="container-white">
-	<div class="container">	
-		<div class="row"> 
-			<div class="span5 offset3">
-				<div class="sign-in" style="padding: 32px; margin: 48px 0;">
+<div class="container">	
+	<div class="row"> 
+		<div class="col-md-8 offset-md-2">
+				<div class="sign-in" style="padding: 2px 32px 18px 32px; margin: 48px 0;">
 				<form method="post">
 	  			 <fieldset>
-			    	<h1>Sign In</h1>
+			    	<h1 class="page-header">Sign In</h1>
 
 			    	<p>
 				      <label>Email Address - <small style="color: #808080;">Case sensitive</small></label>
-				      <input type="text" name="email" id="email" class="input-xlarge col-md-4" placeholder="Email Address" style="border-radius: 22px; padding: 8px 12px;" value="<%= params[:email] %>" />
+				      <input type="text" name="email" id="email" class="form-control" placeholder="Email Address" style="border-radius: 22px; padding: 8px 12px;" value="<%= params[:email] %>" />
 				      <% if @errors.include? :email_not_found %>
 				        <span class="help-inline">That email address isn't in our system. Maybe you need to <a href="/student/reports/create">create an account</a>.</span>
 				      <% end %>
@@ -21,13 +16,15 @@
 
 				    <p>
 				      <label>Personal Password - <small style="color: #808080;">Case sensitive</small></label>
-				      <input type="password" name="password" id="password" placeholder="Personal Password" class="input-xlarge col-md-4" style="border-radius: 22px; padding: 8px 12px;" value="<%= params[:password] %>" />
+				      <input type="password" name="password" id="password" placeholder="Personal Password" class="form-control" style="border-radius: 22px; padding: 8px 12px;" value="<%= params[:password] %>" />
 				      <% if @errors.include?(:password_not_matched) && !@errors.include?(:email_not_found) %>
 				        <span class="help-inline">Wrong password.</span>
 				      <% end %>
-				    <small><a href="/student/resume/reset">Forget your password?</a></small>
-				    <p>
-				      <button type="submit" class="btn btn-primary">Sign In</button> <a href="/student/report" style="margin-right: 15px;" class="btn pull-right">Cancel</a>
+					<p>
+				    <a href="/student/resume/reset">Forget your password?</a>
+				 	</p>
+				    <p  style="margin-top: 25px;">
+				      <button type="submit" class="btn btn-primary">Sign In</button> <a href="/student/report" class="btn pull-right">Cancel</a>
 				    </p>
 				  </fieldset>
 				</form>

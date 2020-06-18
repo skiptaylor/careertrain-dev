@@ -4,82 +4,78 @@
 				<h1 class="page-header">Questions &amp; Comments</h1>
 			</div>
 			<div class="col-md-12">
-					<p class="lead">We'd love to hear what you have to say</p>
+				<p class="lead">We'd love to hear what you have to say</p>
 			</div>
-			<div class="col-md-12">
-			<form class="form-horizontal" id="eform" method="post">
-	
-				<div class="control-group" id="name-group">
-					<label class="control-label" for="name">Name</label>
-					<div class="controls">
-						<input type="text" class="col-6" id="name" name="name" />
-					</div>
-				</div>
-				
-				<div class="control-group" id="email_name" style="margin-left: -1017px;">
-					<label class="control-label" for="email">Email name</label>
-					<div class="controls">
-						<input type="text" class="col-6" id="email_name" name="email_name" />
-					</div>
-				</div>
+		</div>
 		
-				<div class="control-group" id="email-group" style="margin-top: -48px;">
-					<label class="control-label" for="email">Email address</label>
-					<div class="controls">
-						<input type="text" class="col-6" id="email" name="email" />
-					</div>
-				</div>
-
-				<div class="control-group" id="subject-group">
-					<label class="control-label" for="subject">Subject</label>
-					<div class="controls">
-						<select id="subject" name="subject">
-							<option value="Careertrain.com feedback: I have a question">I have a question</option>
-							<option value="Careertrain.com feedback: I have a comment">I have a comment</option>
-						</select>
-					</div>
-				</div>
-
-				<div class="control-group" id="msg-group">
-					<label class="control-label" for="msg">Message</label>
-					<div class="controls">
-						<textarea name="msg" id="msg" class="col-md-9" rows="11"></textarea>
-					</div>
-				</div>
+		<form id="eform" method="post">
 				
-				<div class="control-group">
-					<div class="controls">
-						<div class="g-recaptcha" data-sitekey="6Les9X4UAAAAAJJXKpfwTPeEEYLMSLIdKi0i86_B" data-callback="enableBtn"></div>
-						<br />
-						<input type="submit" id="submit" class="btn btn-primary" value="Submit" />
-					</div>
-				</div>
-	
-			</form>
-				</div>
-
-					
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="name" id="name-group">Name</label>
+				<input type="text" class="form-control" id="name" name="name" />
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="email" id="email-group">Email</label>
+				<input type="email" class="form-control" id="email" name="email" />
+			</div>
+		</div>
+		
+		<!-- <div class="form-group row" style="margin-left: -1517px;">
+			<label class="col-sm-2 col-form-label text-right" for="email-name" id="email-name-group">Email name</label>
+			<div class="col-sm-2">
+				<input type="text" class="form-control" id="email_name" name="email_name" />
+			</div>
+		</div> -->		
+		
+		<div class="form-row">
+			<div class="form-group col-md-4">
+				<label for="subject" id="subject-group">Subject</label>
+				<div class="controls">
+					<select class="form-control" id="subject" name="subject">
+						<option value="Careertrain.com feedback: I have a question">I have a question</option>
+						<option value="Careertrain.com feedback: I have a comment">I have a comment</option>
+					</select>
 				</div>
 			</div>
 		</div>
-			
-		</div> <!-- /row -->
+		<div class="form-row">
+			<div class="form-group col-md-8">
+				<label for="msg" id="msg-group">Message</label>
+				<textarea name="msg" id="msg" class="form-control" rows="8"></textarea>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<div class="col-sm-10">
+				<div class="g-recaptcha" data-sitekey="6Les9X4UAAAAAJJXKpfwTPeEEYLMSLIdKi0i86_B" data-callback="enableBtn"></div>
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<div class="col-sm-10">
+				<input type="submit" id="submit" class="btn btn-primary" value="Submit" />
+			</div>
+		</div>
+					
+		</form>
+	
+	</div>
 
 
-				
-	</div> <!-- /container -->
-
-<script>
+<!-- <script>
 	document.getElementById("submit").disabled = true;
 	function enableBtn(){
 		document.getElementById("submit").disabled = false;
 	}
-</script>
+</script> -->
 			
-<script>
+<!-- <script>
 	document.ready(function() {
 		$("eform").submit(function() {
 			$("#email_name").val('');
 		});
 	});
-</script>
+</script> -->

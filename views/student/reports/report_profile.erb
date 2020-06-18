@@ -28,16 +28,18 @@
   					<strong>Date of Birth</strong> &nbsp; <%= format_day(@student.birth_date) %><br />
   					<strong>School Password</strong> &nbsp; <%= @student.school_password %><br /><br />
 					
-					<a href="/student/reports/<%= @student.id %>/edit" class="btn btn-small btn-info">Edit Profiile</a><br /><br />
+					<a href="/student/reports/<%= @student.id %>/edit" class="btn btn-small btn-primary">Edit Profiile</a><br /><br />
 					</p>
 					<% end %>
 				</div>
 				<div class="col-md-7">
 				
 				<div class="sign-in" style="margin: 0px 0 32px 0; padding: 32px 48px;">
+					<h6>Inventory Exercise</h6>
 
 						<p>Let's take the Inventory Exercise to get your Careers and Occupations Guide Report.</p>
 						<p>This is your own personalized academic and career planning report.</p>
+						<br />
 						
 						<a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success">Inventory Exercise</a>
 						
