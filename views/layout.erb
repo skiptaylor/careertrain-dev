@@ -82,7 +82,7 @@
 					  <% if session[:recruiter] %>
 					  <a class="dropdown-item <%= active 'arng/leads' %>" href="/arng/leads">Generate Leads</a>
 					  <a class="dropdown-item <%= active 'arng/register' %>" href="/arng/register">Register Your School</a>
-					  <a class="dropdown-item <%= active 'profile' %>" href="/recruiters/<%= session[:recruiter] %>/profile">Recruiter Profile</a>
+					  <a class="dropdown-item <%= active 'recruiters' %>" href="/recruiters/<%= session[:recruiter] %>/profile">Recruiter Profile</a>
 					  <a class="dropdown-item <%= active 'arng/practices' %>" href="/arng/practices">Best Practices</a>
 					  <a class="dropdown-item <%= active 'arng/downloads' %>" href="/arng/downloads">Downloads</a>
 					  <a class="dropdown-item <%= active 'arng/faq' %>" href="/arng/faq">FAQ</a>
@@ -113,7 +113,7 @@
 		<div class="container-md">
 			<div class="row">
 			<div class="col-3" style="text-align: left; margin-bottom: 14px;">
-				<a href="/about" class="btn btn-info btn-sm">About CTC</a>
+				<a href="/about" style="color: #fff; background-color: #575f67; border-color: #575f67;" class="btn btn-sm">About CTC</a>
 			</div>
 			<div class="col-6" style="line-height: 16px;">
 				<p>1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc. All rights reserved. &nbsp; <span class="under-link"><a href="/admin/admin" >&nbsp;Admin&nbsp;</a></span> 
