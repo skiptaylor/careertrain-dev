@@ -29,6 +29,8 @@ get "/student/reports/create/?" do
 end
 
 post '/student/reports/create/?' do
+  school = School.all
+  state = State.all
   
   params[:email].strip!
   params[:password].strip!
@@ -67,7 +69,7 @@ post '/student/reports/create/?' do
             @student.save
             
             flash[:alert] = 'Welcome to the Online Resume Tool. You are now signed in.'
-            redirect '/student/reports/:id/report/report_profile'
+            redirect '/student/reports/report/report_profile'
           else
             flash[:alert] = 'Please create a personal password that will be used to sign into your account.'
             erb :"student/reports/create"
