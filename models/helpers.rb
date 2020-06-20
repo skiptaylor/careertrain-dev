@@ -119,19 +119,19 @@
     def date_to_field(field, date)
       date_field = ""
 
-      date_field << "<select name='#{field}_month' id='#{field}_month' class='month'>"
+      date_field << "<select name='#{field}_month' id='#{field}_month' class='month form-control pull-left'>"
       (1..12).each do |m|
         date_field << "<option value='#{m}' #{'selected' if m == date.strftime('%m').to_i}>#{m}</option>"
       end
       date_field << "</select>"
 
-      date_field << "<select name='#{field}_day' id='#{field}_day' class='day'>"
+      date_field << "<select name='#{field}_day' id='#{field}_day' class='day form-control pull-left'>"
       (1..31).each do |d|
         date_field << "<option value='#{d}' #{'selected' if d == date.strftime('%d').to_i}>#{d}</option>"
       end
       date_field << "</select>"
 
-      date_field << "<select name='#{field}_year' id='#{field}_year' class='year'>"
+      date_field << "<select name='#{field}_year' id='#{field}_year' class='year form-control'>"
       (1935..Chronic.parse('3 years from now').strftime('%Y').to_i).each do |y|
         date_field << "<option value='#{y}' #{'selected' if y == date.strftime('%Y').to_i}>#{y}</option>"
       end
@@ -143,19 +143,19 @@
     def date_to_field_array_hack(field, date)
       date_field = ""
 
-      date_field << "<select name='#{field}_month]' id='#{field}_month' class='month'>"
+      date_field << "<select name='#{field}_month]' id='#{field}_month' class='month form-control'>"
       (1..12).each do |m|
         date_field << "<option value='#{m}' #{'selected' if m == date.strftime('%m').to_i}>#{m}</option>"
       end
       date_field << "</select>"
 
-      date_field << "<select name='#{field}_day]' id='#{field}_day' class='day'>"
+      date_field << "<select name='#{field}_day]' id='#{field}_day' class='day form-control'>"
       (1..31).each do |d|
         date_field << "<option value='#{d}' #{'selected' if d == date.strftime('%d').to_i}>#{d}</option>"
       end
       date_field << "</select>"
 
-      date_field << "<select name='#{field}_year]' id='#{field}_year' class='year'>"
+      date_field << "<select name='#{field}_year]' id='#{field}_year' class='year form-control'>"
       (1935..Chronic.parse('3 years from now').strftime('%Y').to_i).each do |y|
         date_field << "<option value='#{y}' #{'selected' if y == date.strftime('%Y').to_i}>#{y}</option>"
       end

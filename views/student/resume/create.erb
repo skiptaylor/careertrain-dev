@@ -1,98 +1,90 @@
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="col-md-8 offset2">
-				<div class="sign-in" style="padding:24px 32px; margin: 48px 0;">
-		      <form class="form-horizontal" method="post" id="resume_tool">
-		        <h1 class="form-signin-heading">Create New Account</h1>
-					<div class="control-group">
-						<label class="control-label"for="school_password">School's Password</label>
-						<div class="controls">
-							<input type="text" class="textfield col-md-4" placeholder="School's Password Required" name="school_password" id="school_password" value="<%= params[:school_password] %>" />
-							<span class="help-block" style="line-height: 1.2em; margin: 5px 52px 6px 0;"><small>If you do not know your school's password, please contact your guidance counselor or teacher.</small></span>
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label"for="email">Personal Email Address</label>
-						<div class="controls">
-							<input type="text" class="textfield col-md-4" placeholder="Personal Email Address Required" name="email" id="email" value="<%= params[:email] %>" />
-							<span class="help-block" style="line-height: 1.2em; margin: 5px 0 6px 0;"><small>You will use your personal email to access your account.</small></span>
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label"for="password">Personal Password</label>
-						<div class="controls">
-							<input type="text" class="textfield col-md-4" placeholder="Personal Password Required" name="password" id="password" value="<%= params[:password] %>" />
-							<span class="help-block" style="line-height: 1.2em; margin: 5px 52px 6px 0;"><small>This personal password will be used with your email to access your account. Please remember it.</small></span>
-						</div>
-					</div>
-					
-					<div class="control-group">
-						<label class="control-label"for="first_name">First Name</label>
-						<div class="controls">
-							<input type="text" name="first_name" id="first_name" class="textfield col-md-4" placeholder="Required" value="<%= @first_name %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label"for="middle_name">Middle Name</label>
-						<div class="controls">
-							<input type="text" name="middle_name" id="middle_name" class="textfield col-md-4" placeholder="Optional" value="<%= @middle_name %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label"for="last_name">Last Name</label>
-						<div class="controls">
-							<input type="text" name="last_name" id="last_name" class="textfield col-md-4" placeholder="Required" value="<%= @last_name %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label"for="address">Address</label>
-						<div class="controls">
-							<input type="text" name="address" id="address" class="textfield col-md-4" placeholder="Required" value="<%= @address %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label"for="city">City</label>
-						<div class="controls">
-							<input type="text" name="city" id="city" class="textfield col-md-4"  placeholder="Required"value="<%= @city %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<label for="state" class="control-label">State</label>
-						<div class="controls">
-							<select type="text" id="state" name="state" style="width: 86px;" value="<%= @state %>">
-									<option value=""></option>
-								<% @state.sort{|a,b| a.abbr <=> b.abbr}.each do |state| %>
-									<option value="<%= state.abbr %>" <%= 'selected' if state.abbr == @state %>><%= state.abbr %></option>
-								<% end %>
-							</select>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #989998;">Required</span>
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label"for="zip">Zip</label>
-						<div class="controls">
-							<input type="text" name="zip" id="zip" class="textfield span2" placeholder="Required" value="<%= @zip %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="phone">Phone</label>
-						<div class="controls">
-							<input type="text" name="phone" id="phone" class="textfield span3" placeholder="Required" value="<%= @phone %>" />
-						</div>
-					</div>
-					
-					
-					
-					<div class="control-group">
-						<label for="birth_date" class="control-label">Date of Birth</label>
-						<div class="span3 input-append date">
-							<%= date_to_field('birth_date', (@birth_date || Time.now)) %>
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label"for="future">Future Plans</label>
-						<div class="controls">
-	  					<select type="text" class="col-md-4" name="future" id="future" style="text-align: center;" >
+			<div class="col-md-12">
+		      <h1 class="page-header">Create New Account</h1>
+			</div>
+		</div>
+		<form class="form-horizontal" method="post" id="resume_tool">
+		<div class="form-row">
+			<div class="form-group col-md-6"> 
+				<label for="school_password">School's Password</label>
+				<input type="text" class="form-control" placeholder="" name="school_password" id="school_password" aria-describedby="schoolpasswordHelp" value="<%= params[:school_password] %>" />
+					<small id="schoolpasswordHelp" class="form-text">If you do not know your school's password, please contact your guidance counselor or teacher.</small>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="email">Personal Email Address</label>
+				<input type="text" class="form-control" placeholder="" name="email" id="email" aria-describedby="emailHelp" value="<%= params[:email] %>" />
+					<small id="emailHelp" class="form-text">You will use your personal email to access your account.</small>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="password">Personal Password</label>
+				<input type="text" class="form-control" placeholder="" name="password" id="password" aria-describedby="passwordHelp" value="<%= params[:password] %>" />
+					<small id="passwordHelp" class="form-text">This personal password will be used with your email to access your account.</small>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-4">
+				<label for="first_name">First Name</label>
+				<input type="text" name="first_name" id="first_name" class="form-control" placeholder="" value="<%= @first_name %>" />
+			</div>
+			<div class="form-group col-md-4">						
+				<label for="middle_name">Middle Name</label>
+				<input type="text" name="middle_name" id="middle_name" class="form-control" placeholder="" value="<%= @middle_name %>" />
+			</div>
+			<div class="form-group col-md-4">
+				<label for="last_name">Last Name</label>
+				<input type="text" name="last_name" id="last_name" class="form-control" placeholder="" value="<%= @slast_name %>" />
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="address">Address</label>
+				<input type="text" name="address" id="address" class="form-control" placeholder="" value="<%= @address %>" />
+			</div>
+			<div class="form-group col-md-6">
+				<label for="address2">Address</label>
+				<input type="text" name="address2" id="addres2" class="form-control" placeholder="" value="<%= @address2 %>" />
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="city">City</label>
+				<input type="text" name="city" id="city" class="form-control"  placeholder=""value="<%= @city %>" />
+			</div>
+			<div class="form-group col-md-2">
+				<label for="state">State</label>
+				<select type="text" id="state" name="state" class="form-control" value="<%= @state %>">
+					<option value=""></option>
+					<% @state.sort{|a,b| a.abbr <=> b.abbr}.each do |state| %>
+					<option value="<%= state.abbr %>" <%= 'selected' if state.abbr == @state %>><%= state.abbr %></option>
+					<% end %>
+				</select>
+			</div>
+			<div class="form-group col-md-2">
+				<label class="control-label"for="zip">Zip</label>
+				<input type="text" name="zip" id="zip" class="form-control" placeholder="" value="<%= @zip %>" />
+			</div>
+		</div>
+		<div class="form-row">		
+			<div class="form-group col-md-6">
+				<label for="phone">Phone</label>
+				<input type="text" name="phone" id="phone" class="form-control" placeholder="" value="<%= @phone %>" />
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="birth_date">Date of Birth</label>
+				<div class="input-append date">
+					<%= date_to_field('birth_date', (@birth_date || Time.now)) %>
+				</div>
+			</div>
+		</div>
+		<div class="form-row">		
+			<div class="form-group col-md-6">			
+				<label for="future">Future Plans</label>
+				<select type="text" class="form-control" name="future" id="future" style="text-align: center;" >
 	  						<option value="Select one">-- Select one --</option>
 	  						<option <%= 'selected' if @future == 'Enter technical college/trade school' %> value="Enter technical college/trade school">Enter technical college/trade school</option>
 	  						<option <%= 'selected' if @future == 'Work full-time' %> value="Work full-time">Work full-time</option>
@@ -102,31 +94,28 @@
 	  						<option <%= 'selected' if @future == 'I have money to pay for education' %> value="I have money to pay for education">I have money to pay for education</option>
 	  						<option <%= 'selected' if @future == "Counting on parents for money for education" %> value="Counting on parents for money for education">Counting on parents for money for education</option>
 	  						<option <%= 'selected' if @future == 'Considering sources' %> value='Considering sources'>Considering sources of financial aid or scholarships</option>
-	  					</select>
-						</div>
-					</div>	
-	  				<div class="control-group" style="margin-bottom: 1.6em;">
-	  				    <div class="controls">
-	  				      <label class="checkbox">
-							  <input type="checkbox" value="account" onClick="EnableSubmit(this)" /> I am 13 or older
-						  </label>
-	  					</div>
-	  				</div>
-				  <div class="control-group">
-					  <label class="control-label" for="account"></label>
-					  <div class="controls">
-						  <button class="btn btn-primary" id="account" type="submit">Create Account</button> <a href="/student/resume_tool" style="margin: 0 0 0 12px;" class="btn">Cancel</a>
-					  </div>
-				  </div>
-		      </form>
-				</div>
+				</select>
 			</div>
 		</div>
+		<div class="form-row">				
+			<div class="form-group col-md-6">
+				<label class="checkbox">
+					<input type="checkbox" value="account" onClick="EnableSubmit(this)" checked />&nbsp;&nbsp; I am 13 or older
+					</label>
+			</div>
+			<div class="form-group col-md-6" style="text-align: right;">
+				<label for="account"></label>
+				<button class="btn btn-primary" id="account" type="submit">Create Account</button>&nbsp;&nbsp;<a href="/student/report" class="btn btn-secondary">Cancel</a>
+			</div>
+		</div>
+		</form>
 	</div>
-	<script type="text/javascript">	
-		EnableSubmit = function(attr) {
+
+
+	<script type="text/javascript">
+		EnableSubmit = function(val) {
 		var submit = document.getElementById("account");
-			if (attr.checked == true) {
+			if (val.checked == true) {
 	        submit.disabled = false;
 	    	}
 			else {

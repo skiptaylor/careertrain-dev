@@ -1,7 +1,7 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1 class="page-header">Recruiter</h1>
+				<h1 class="page-header">Edit Recruiter</h1>
 			</div>
 		</div>
 		<div class="row">  
@@ -85,7 +85,7 @@
 				</div>
 				<div class="form-row">
 					<div class="form-group col-md-12 text-right">
-						<p style="margin-top:14px;"><input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a href="/recruiters/recruiters/" class="btn btn-secondary btn-small">Cancel</a> &nbsp; <a class="delete btn btn-small btn-warning" href="/recruiters/<%= @recruiter.id %>/delete">Delete</a></p>
+						<p style="margin-top:14px;"><input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a onclick="goBack()" class="btn btn-secondary btn-small">Cancel</a> &nbsp; <a class="delete btn btn-small btn-warning" href="/recruiters/<%= @recruiter.id %>/delete">Delete</a></p>
 					</div>
 				</form>	
 			</div>

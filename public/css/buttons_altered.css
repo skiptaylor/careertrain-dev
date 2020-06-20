@@ -43,7 +43,7 @@ button.close {
   vertical-align: middle;
   cursor: pointer;
   background-color: #efefef;
-  border: 1px solid #afb1b5;
+  border: 1px solid #1abd9c;
   -webkit-border-radius: 18px;
      -moz-border-radius: 18px;
           border-radius: 18px;
@@ -279,6 +279,38 @@ input[type="button"].btn-block {
 	 	  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);*/
   
 }
+
+.btn-secondary {
+   color: #ffffff;
+   text-shadow: none;
+   background-color: #565e67;
+   border-color: #2e3337;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active,
+.btn-secondary.disabled,
+.btn-secondary[disabled] {
+  color: #ffffff;
+  background-color: #2e3337;
+  *background-color: #2e3337;
+/*-webkit-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
+	-moz-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
+	 	  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);*/
+  
+}
+
+.btn-secondary:active,
+.btn-secondary.active {
+  background-color: #565e67 \9;
+/*-webkit-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
+	-moz-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
+	 	  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);*/
+  
+}
+
 
 .btn-success {
    color: #ffffff;

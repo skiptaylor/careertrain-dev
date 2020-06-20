@@ -17,6 +17,7 @@ class Student
   property :middle_name,  String
   property :last_name,  String
   property :address, String
+  property :address2, String
   property :city, String
   property :state, String
   property :zip, String

@@ -196,7 +196,7 @@
 				 </div>
  				<div class="control-group">
  				    <div class="controls" style="text-align: center;">
- 						 <input class="btn btn-success" type="submit" value="Save" />&nbsp;&nbsp;&nbsp;<a href="/arng/schools/<%= @school.id %>/school" class="btn">Cancel</a>&nbsp;&nbsp;&nbsp;<a href="/arng/schools/<%= @school.id %>/delete" class="delete btn btn-warning"><i class="icon-trash"></i></a>
+ 						 <input class="btn btn-success" type="submit" value="Save" />&nbsp;&nbsp;&nbsp;<a onclick="goBack()" class="btn">Cancel</a>&nbsp;&nbsp;&nbsp;<a href="/arng/schools/<%= @school.id %>/delete" class="delete btn btn-warning"><i class="icon-trash"></i></a>
  					 </div>
  				 </div>
 			 	</form>
@@ -206,7 +206,7 @@
 		<!-- <%= session[:admin] %> / <%= session[:recruiter] %> // <%= @school.recruiter_id %> -->
 	</div> <!-- /container -->
 
-<!-- <script  type="text/javascript">
+<script  type="text/javascript">
 	var frmvalidator = new Validator("register-school");
 	frmvalidator.addValidation("first_name","req","Please enter your First Name");
 	frmvalidator.addValidation("last_name","req","Please enter your Last Name");
@@ -222,4 +222,4 @@
 	frmvalidator.addValidation("mail_zip","req","Please enter your zip");
 	frmvalidator.addValidation("phone","req","Please enter your phone");
 	rmvalidator.addValidation("phone","req","Please enter your phone");
-</script> -->
+</script>
