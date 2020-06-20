@@ -243,6 +243,7 @@
 				<br />
 			</div>
 			<div class="col md-6">
+				<a href="/student/reports/<%= @student.id %>/edit" class="btn btn-mini btn-secondary pull-right">&nbsp;&nbsp;Edit Profile&nbsp;&nbsp;</a>
 				<h6>Account Info</h6>
 				<p><%= @student.email %><br />
 
@@ -253,7 +254,7 @@
 					<% unless @student.city == "" %><%= @student.city %><% end %> <% unless @student.state == "" %><%= @student.state %><% end %> <% unless @student.zip == "" %><%= @student.zip %><br /><% end %>
 					<% unless @student.phone == "" %><%= formatted_number(@student.phone) %><% end %><br />
 					<strong>Date of Birth</strong> &nbsp; <%= format_day(@student.birth_date) %><br />
-					<strong>School Password</strong> &nbsp; <%= @student.school_password %>
+					<strong>School Password</strong> &nbsp; <%= @student.school_password %><br />
 					
 				</p>
 				
@@ -270,7 +271,7 @@
 				<p><small>Once you are finished you can print your resume or copy and paste the content of each document into a text editor.</small></p>
 				<p><a class="btn btn-info" href="/downloads/job-application.pdf"><i class="icon-download"> </i> &nbsp;<strong>Download Your Practice Job Application</strong></a></p>
 				<div>
-					<p style="line-height: 17px; margin-top: 14px;"><a style="margin: 5px 24px 24px 0;" class="btn btn-mini btn-primary pull-left" href="/student/resume/sign-out"><i class="icon-signout"> </i> &nbsp;Sign out</a>
+					<p style="line-height: 17px; margin-top: 14px;"><a style="margin: 5px 24px 24px 0;" class="btn btn-mini btn-primary pull-left" href="/student/resume/sign-out">&nbsp;&nbsp;<i class="icon-signout"> </i> &nbsp;Sign out&nbsp;&nbsp;</a>
 					<strong>PROTECT YOUR PRIVACY.</strong>
 					<small>If you are using a public or shared device <strong>sign out</strong> when finished.</small></p>
 					
