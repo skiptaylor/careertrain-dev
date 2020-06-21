@@ -211,6 +211,10 @@ get '/arng/downloads/?' do
   erb :"/arng/downloads"
 end
 
+get '/arng/feedback/?' do
+  auth_recruiter
+  erb :"/arng/feedback"
+end
 
 get '/arng/practices/?' do
   auth_recruiter
