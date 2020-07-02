@@ -4,14 +4,30 @@
 		      <h1 class="page-header">Create New Account</h1>
 			</div>
 		</div>
-		<form class="form-horizontal" method="post" id="resume_tool">
+		<form class="form-horizontal" method="post" id="student_report">
 		<div class="form-row">
 			<div class="form-group col-md-6"> 
 				<label for="school_password">School's Password</label>
 				<input type="text" class="form-control" placeholder="" name="school_password" id="school_password" aria-describedby="schoolpasswordHelp" value="<%= params[:school_password] %>" />
-					<small id="schoolpasswordHelp" class="form-text">If you do not know your school's password, please contact your guidance counselor or teacher.</small>
+					<small id="schoolpasswordHelp" class="form-text">This code will be furnished by the ARNG Rep.</small>
 			</div>
 		</div>
+		
+		
+		<div class="form-row">
+			<div class="form-group col-md-9"> 
+				<label for="sub_code">Student Access Code</label>
+				<input type="text" class="form-control" placeholder="" name="access_code" id="sub_code" value="<%= params[:sub_code] %>" />
+				<label for="sub_code2" style="margin-top: 7px;">Please Type Access Code Again</label>
+				<input type="text" class="form-control" placeholder="" name="access_code2" id="sub_code2" aria-describedby="schoolpasswordHelp" value="<%= params[:sub_code2] %>" />
+					<small id="schoolpasswordHelp" class="form-text">This code will be furnished by the ARNG Rep.</small>
+			</div>
+		</div>
+		</p>
+		
+		
+		
+		
 		<div class="form-row">
 			<div class="form-group col-md-6">
 				<label for="email">Personal Email Address</label>
@@ -38,103 +54,53 @@
 				<input type="text" name="last_name" id="last_name" class="form-control" placeholder="" value="<%= @slast_name %>" />
 			</div>
 		</div>
-		<div class="form-row">
-			<div class="form-group col-md-6">
-				<label for="address">Address</label>
-				<input type="text" name="address" id="address" class="form-control" placeholder="" value="<%= @address %>" />
-			</div>
-			<div class="form-group col-md-6">
-				<label for="address2">Address</label>
-				<input type="text" name="address2" id="addres2" class="form-control" placeholder="" value="<%= @address2 %>" />
-			</div>
-		</div>
-		<div class="form-row">
-			<div class="form-group col-md-6">
-				<label for="city">City</label>
-				<input type="text" name="city" id="city" class="form-control"  placeholder=""value="<%= @city %>" />
-			</div>
-			<div class="form-group col-md-2">
-				<label for="state">State</label>
-				<select type="text" id="state" name="state" class="form-control" value="<%= @state %>">
-					<option value=""></option>
-					<% @state.sort{|a,b| a.abbr <=> b.abbr}.each do |state| %>
-					<option value="<%= state.abbr %>" <%= 'selected' if state.abbr == @state %>><%= state.abbr %></option>
-					<% end %>
-				</select>
-			</div>
-			<div class="form-group col-md-2">
-				<label class="control-label"for="zip">Zip</label>
-				<input type="text" name="zip" id="zip" class="form-control" placeholder="" value="<%= @zip %>" />
-			</div>
-		</div>
-		<div class="form-row">		
-			<div class="form-group col-md-6">
-				<label for="phone">Phone</label>
-				<input type="text" name="phone" id="phone" class="form-control" placeholder="" value="<%= @phone %>" />
-			</div>
-		</div>
-		<div class="form-row">		
-			<div class="form-group col-md-6">			
-				<label for="birth_date">Date of Birth</label>
-				<div class="input-append date">
-					<%= date_to_field('birth_date', (@birth_date || Time.now)) %>
-				</div>
-			</div>
-		</div>		
-		<div class="form-row">		
-			<div class="form-group col-md-6">			
-				<label for="future">Future Plans</label>
-				<select type="text" class="form-control" name="future" id="future" style="text-align: center;" >
-	  						<option value="Select one">-- Select one --</option>
-	  						<option <%= 'selected' if @future == 'Enter technical college/trade school' %> value="Enter technical college/trade school">Enter technical college/trade school</option>
-	  						<option <%= 'selected' if @future == 'Work full-time' %> value="Work full-time">Work full-time</option>
-	  						<option <%= 'selected' if @future == 'Work part-time' %> value="Work part-time">Work part-time</option>
-	  						<option <%= 'selected' if @future == 'Enter the military' %> value="Enter the military">Enter the military</option>
-	  						<option <%= 'selected' if @future == 'Go to college' %> value="Go to college">Go to college</option>
-	  						<option <%= 'selected' if @future == 'I have money to pay for education' %> value="I have money to pay for education">I have money to pay for education</option>
-	  						<option <%= 'selected' if @future == "Counting on parents for money for education" %> value="Counting on parents for money for education">Counting on parents for money for education</option>
-	  						<option <%= 'selected' if @future == 'Considering sources' %> value='Considering sources'>Considering sources of financial aid or scholarships</option>
-				</select>
-			</div>
-		</div>
-		<div class="form-row">				
-			<div class="form-group col-md-6">
-				<label class="checkbox">
-					<input type="checkbox" value="account" onClick="EnableSubmit(this)" checked />&nbsp;&nbsp; I am 13 or older
-					</label>
-			</div>
 			<div class="form-group col-md-6" style="text-align: right;">
 				<label for="account"></label>
-				<button class="btn btn-primary" id="account" type="submit">Create Account</button> <a href="/student/report" class="btn">Cancel</a>
+				<button class="btn btn-primary" id="account" type="submit">Create Account</button> <a href="/student/reports/report_profile" class="btn">Cancel</a>
 			</div>
 		</div>
 		</form>
 	</div>
 
 
-	<script type="text/javascript">
-		EnableSubmit = function(val) {
-		var submit = document.getElementById("account");
-			if (val.checked == true) {
-	        submit.disabled = false;
-	    	}
-			else {
-	        submit.disabled = true;
-		  	}
-		}
-	</script>
+	
 </div>
 
-<!-- <script  type="text/javascript">
-	var frmvalidator = new Validator("resume_tool");
+<script type="text/javascript">
+	EnableSubmit = function(val) {
+		var submit = document.getElementById("account");
+		if (val.checked == true) {
+			submit.disabled = false;
+		}
+		else {
+			submit.disabled = true;
+		}
+	}
+</script>
+
+<script>
+	window.onload = function() {
+		const sub_code = document.getElementById('sub_code');
+		sub_code.onpaste = function(e) {
+			e.preventDefault();
+		}
+		const sub_code2 = document.getElementById('sub_code2');
+		sub_code2.onpaste = function(g) {
+			g.preventDefault();
+		}
+	}
+</script>
+
+<script  type="text/javascript">
+	var frmvalidator = new Validator("student_report");
+	frmvalidator.addValidation("school_password","req","Please enter your School's Password");
+	frmvalidator.addValidation("sub_code","req","Please enter your Student Access Code");
+	frmvalidator.addValidation("email","req","Please enter your Personal Email");
+	frmvalidator.addValidation("password","req","Please create a Personal Password");
 	frmvalidator.addValidation("first_name","req","Please enter your First Name");
 	frmvalidator.addValidation("last_name","req","Please enter your Last Name");
-	frmvalidator.addValidation("address","req","Please enter your Address");
-	frmvalidator.addValidation("city","req","Please enter your City");
-	frmvalidator.addValidation("state","req","Please enter your State");
-	frmvalidator.addValidation("zip","req","Please enter your Zip");
-	frmvalidator.addValidation("phone","req","Please enter your phone");
-</script> -->
+	
+</script>
 
 
 		

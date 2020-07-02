@@ -24,6 +24,7 @@ class Student
   property :phone, String
   property :birth_date, Date, :default => Chronic.parse('1900-01-01')
   property :school_password, String
+  property :sub_code, String
   
   property  :future, String
 

@@ -23,12 +23,14 @@ end
 
 
 get "/student/reports/create/?" do 
+  @subscription = Subscription.all
   @school = School.all
   @state = State.all
   erb :'student/reports/create'
 end
 
 post '/student/reports/create/?' do
+  subscription = Subscription.all
   school = School.all
   state = State.all
   
@@ -98,6 +100,7 @@ end
 
 
 get '/student/reports/report/report_profile/?' do
+  @subscription = Subscription.all
   @state = State.all
   @school = School.all
   @student = Student.get(session[:student])

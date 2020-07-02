@@ -22,10 +22,7 @@
 				</h5>
 				<p>	
 					<%= @student.email %><br />
-  					<% unless @student.address == "" %><%= @student.address %><br /><% end %>
-  					<% unless @student.city == "" %><%= @student.city %><% end %> <% unless @student.state == "" %><%= @student.state %><% end %> <% unless @student.zip == "" %><%= @student.zip %><br /><% end %>
-  					<% unless @student.phone == "" %><%= formatted_number(@student.phone) %><% end %><br />
-  					<strong>Date of Birth</strong> &nbsp; <%= format_day(@student.birth_date) %><br />
+  					
   					<strong>School Password</strong> &nbsp; <%= @student.school_password %><br /><br />
 					
 					<a href="/student/reports/<%= @student.id %>/edit" class="btn btn-small btn-secondary">&nbsp;&nbsp;Edit Profile&nbsp;&nbsp;</a><br /><br />
@@ -40,20 +37,16 @@
 						<p>Let's take the Inventory Exercise to get your Careers and Occupations Guide Report.</p>
 						<p>This is your own personalized academic and career planning report.</p>
 						<p>Enter your student access code for todays class.
-						<form method="post" id="ie_access">
-						<div class="form-row">
-							<div class="form-group col-md-9"> 
-								<label for="access_code">Student Access Code</label>
-								<input type="text" class="form-control" placeholder="" name="access_code" id="access_code" aria-describedby="schoolpasswordHelp" value="<%= params[:school_password] %>" />
-									<small id="schoolpasswordHelp" class="form-text">This code will be furnished by the ARNG Rep.</small>
-							</div>
-						</div>
-						</p>
-						<br />
 						
+						<br /><br />
+					
 						<a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success">Inventory Exercise</a>
-						
+					
+					
+					
+					
 				</div>
 			</div>
 		</div>
 	</div>
+	
