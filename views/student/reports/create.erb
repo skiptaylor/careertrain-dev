@@ -16,11 +16,12 @@
 		
 		<div class="form-row">
 			<div class="form-group col-md-5 offset-md-3"> 
-				<label for="sub_code">Student Access Code</label>
+				<label for="sub_code">Student Access Code&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="myFunction()"></label>
 				<input type="password" class="form-control" placeholder="" name="sub_code" id="sub_code" value="<%= params[:sub_code] %>" />
-				<label for="sub_code2" style="margin-top: 7px;">Please Type Access Code Again</label>
+				<label for="sub_code2" style="margin-top: 7px;">Please Type Access Code Again&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="ourFunction()"></label>
 				<input type="password" class="form-control" placeholder="" name="sub_code2" id="sub_code2" aria-describedby="schoolpasswordHelp" value="<%= params[:sub_code2] %>" />
 					<small id="schoolpasswordHelp" class="form-text">This code will be furnished by the ARNG Rep.</small>
+					
 			</div>
 		</div>
 		</p>
@@ -76,7 +77,7 @@ function myFunction() {
 }
 </script>
 <script type="text/javascript">
-function myFunction() {
+function ourFunction() {
   var x = document.getElementById("sub_code2");
   if (x.type === "password") {
     x.type = "text";
