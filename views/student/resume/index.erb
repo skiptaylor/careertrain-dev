@@ -253,7 +253,7 @@
 					<% unless @student.address == "" %><%= @student.address %><br /><% end %>
 					<% unless @student.city == "" %><%= @student.city %><% end %> <% unless @student.state == "" %><%= @student.state %><% end %> <% unless @student.zip == "" %><%= @student.zip %><br /><% end %>
 					<% unless @student.phone == "" %><%= formatted_number(@student.phone) %><% end %><br />
-					<strong>Date of Birth</strong> &nbsp; <%= format_day(@student.birth_date) %><br />
+					<strong>Date of Birth</strong> &nbsp; <% unless @student.birth_date == nil %><%= format_day(@student.birth_date) %><% end %><br />
 					<strong>School Password</strong> &nbsp; <%= @student.school_password %><br />
 					
 				</p>

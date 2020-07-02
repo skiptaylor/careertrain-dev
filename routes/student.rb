@@ -38,13 +38,15 @@ post '/student/reports/create/?' do
   params[:password].strip!
   params[:school_password].strip!
   params[:school_password].downcase!
+  params[:sub_code].strip!
 
   unless params[:school_password] == ''
     
     if school = School.first(:school_password => params[:school_password]) 
-
       
-      unless params[:email] == ''
+      if subscription = Subscription.first(:sub_code => params[:sub_code])
+        
+        if params[:sub_code] == params[:sub_code2]
 
         unless student = Student.first(:email => params[:email])
           unless params[:password] == ''
@@ -62,6 +64,7 @@ post '/student/reports/create/?' do
             :phone            => params[:phone],
             :school_password  => params[:school_password],
             :future           => params[:future],
+            :sub_code         => params[:sub_code],
             :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}"),
             )
             
@@ -70,7 +73,7 @@ post '/student/reports/create/?' do
             @student.school_id = school.id
             @student.save
             
-            flash[:alert] = 'Welcome to the Online Resume Tool. You are now signed in.'
+            flash[:alert] = 'Welcome to the Occupations Guide. You are now signed in.'
             redirect '/student/reports/report/report_profile'
           else
             flash[:alert] = 'Please create a personal password that will be used to sign into your account.'
@@ -80,11 +83,16 @@ post '/student/reports/create/?' do
           flash[:alert] = 'This email already exists. Maybe you need to sign in.'
           erb :"student/reports/create"
         end
-      
+        
       else
-        flash[:alert] = 'You must enter your personal email.'
+        flash[:alert] = 'This Student Access Codes must match. Try typing them again.'
         erb :"student/reports/create"
-      end 
+      end
+        
+      else
+        flash[:alert] = 'This Student Access Code already exists. Try typing it again.'
+        erb :"student/reports/create"
+      end
       
     else
       flash[:alert] = 'That is not a valid school password.'

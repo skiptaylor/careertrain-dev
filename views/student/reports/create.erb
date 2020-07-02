@@ -6,7 +6,7 @@
 		</div>
 		<form class="form-horizontal" method="post" id="student_report">
 		<div class="form-row">
-			<div class="form-group col-md-6"> 
+			<div class="form-group col-md-5 offset-md-3"> 
 				<label for="school_password">School's Password</label>
 				<input type="text" class="form-control" placeholder="" name="school_password" id="school_password" aria-describedby="schoolpasswordHelp" value="<%= params[:school_password] %>" />
 					<small id="schoolpasswordHelp" class="form-text">This code will be furnished by the ARNG Rep.</small>
@@ -15,11 +15,11 @@
 		
 		
 		<div class="form-row">
-			<div class="form-group col-md-9"> 
+			<div class="form-group col-md-5 offset-md-3"> 
 				<label for="sub_code">Student Access Code</label>
-				<input type="text" class="form-control" placeholder="" name="access_code" id="sub_code" value="<%= params[:sub_code] %>" />
+				<input type="password" class="form-control" placeholder="" name="sub_code" id="sub_code" value="<%= params[:sub_code] %>" />
 				<label for="sub_code2" style="margin-top: 7px;">Please Type Access Code Again</label>
-				<input type="text" class="form-control" placeholder="" name="access_code2" id="sub_code2" aria-describedby="schoolpasswordHelp" value="<%= params[:sub_code2] %>" />
+				<input type="password" class="form-control" placeholder="" name="sub_code2" id="sub_code2" aria-describedby="schoolpasswordHelp" value="<%= params[:sub_code2] %>" />
 					<small id="schoolpasswordHelp" class="form-text">This code will be furnished by the ARNG Rep.</small>
 			</div>
 		</div>
@@ -29,34 +29,33 @@
 		
 		
 		<div class="form-row">
-			<div class="form-group col-md-6">
+			<div class="form-group col-md-5 offset-md-3">
 				<label for="email">Personal Email Address</label>
 				<input type="text" class="form-control" placeholder="" name="email" id="email" aria-describedby="emailHelp" value="<%= params[:email] %>" />
 					<small id="emailHelp" class="form-text">You will use your personal email to access your account.</small>
 			</div>
-			<div class="form-group col-md-6">
+			<div class="form-group col-md-5 offset-md-3">
 				<label for="password">Personal Password</label>
 				<input type="text" class="form-control" placeholder="" name="password" id="password" aria-describedby="passwordHelp" value="<%= params[:password] %>" />
 					<small id="passwordHelp" class="form-text">This personal password will be used with your email to access your account.</small>
 			</div>
 		</div>
 		<div class="form-row">
-			<div class="form-group col-md-4">
+			<div class="form-group col-md-5 offset-md-3">
 				<label for="first_name">First Name</label>
 				<input type="text" name="first_name" id="first_name" class="form-control" placeholder="" value="<%= @first_name %>" />
 			</div>
-			<div class="form-group col-md-4">						
+			<div class="form-group col-md-5 offset-md-3">						
 				<label for="middle_name">Middle Name</label>
 				<input type="text" name="middle_name" id="middle_name" class="form-control" placeholder="" value="<%= @middle_name %>" />
 			</div>
-			<div class="form-group col-md-4">
+			<div class="form-group col-md-5 offset-md-3">
 				<label for="last_name">Last Name</label>
 				<input type="text" name="last_name" id="last_name" class="form-control" placeholder="" value="<%= @slast_name %>" />
 			</div>
-		</div>
-			<div class="form-group col-md-6" style="text-align: right;">
+			<div class="form-group col-md-5 offset-md-3">
 				<label for="account"></label>
-				<button class="btn btn-primary" id="account" type="submit">Create Account</button> <a href="/student/reports/report_profile" class="btn">Cancel</a>
+				<button class="btn btn-primary" id="account" type="submit">Create Account</button>&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="goBack()" class="btn">Cancel</a>
 			</div>
 		</div>
 		</form>
@@ -65,6 +64,27 @@
 
 	
 </div>
+
+<script type="text/javascript">
+function myFunction() {
+  var x = document.getElementById("sub_code");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+<script type="text/javascript">
+function myFunction() {
+  var x = document.getElementById("sub_code2");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 
 <script type="text/javascript">
 	EnableSubmit = function(val) {
