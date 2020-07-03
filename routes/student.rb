@@ -90,7 +90,7 @@ post '/student/reports/create/?' do
       end
         
       else
-        flash[:alert] = 'This Student Access Code already exists. Try typing it again.'
+        flash[:alert] = 'This Student Access Code is incorrect. Try typing it again.'
         erb :"student/reports/create"
       end
       
