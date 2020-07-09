@@ -20,7 +20,7 @@ class Recruiter
   property :phone, String
   property :ssnl4, Integer
   property :recruiter_status, Boolean, :default => false
-  property :active, Boolean, :default => true
+  property :active, Boolean, :default => false
   
   has n, :schools
   has n, :presentations

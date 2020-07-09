@@ -19,7 +19,7 @@
 				<td><%= recruiter.email %></td>
 				<td style="text-align: center;"><%= recruiter.state %></td>
 				<td style="text-align: center;"><% if recruiter.recruiter_status == true %>RRC<% end %></td>
-				<td style="text-align: right;"><a href="/recruiters/<%= recruiter.id %>/edit/" class="btn btn-small">Edit</a>&nbsp;&nbsp;<a href="/recruiters/<%= recruiter.id %>/view/" class="btn btn-small">View</a></td>
+				<td style="text-align: right;"><a href="/recruiters/<%= recruiter.id %>/edit/" class="btn btn-small">Edit</a>&nbsp;&nbsp;<a href="/recruiters/<%= recruiter.id %>/view/" class="btn btn-small">View</a>&nbsp;&nbsp;<a href="/recruiters/<%= recruiter.id %>/view/" class="btn btn-small">Schools</a></td>
 			</tr>
 			<% end %>
 			</table>

@@ -5,26 +5,26 @@
 			</div>
 		</div>
 		
-		<form method="post">
+		<form method="post" id="create_rec">
 					
 		<div class="form-row">
 			<div class="form-group col-md-6">
 				<label for="email">Email</label>
-				<input type="text" name="email" id="email" class="form-control" value="<%= @recruiter.email %>" />
+				<input type="email" name="email" id="email" class="form-control" value="<%= @recruiter.email %>" />
 			</div>
 			<div class="form-group col-md-6">
 			<label for="password">Password</label>
-				<input type="text" name="password" id="password" class="form-control" value="<%= @recruiter.password %>" />
+				<input type="password" name="password" id="password" class="form-control" value="<%= @recruiter.password %>" />
 			</div>
 		</div>	
-		<div class="form-row">
+		<!-- <div class="form-row">
 			<div class="form-group">
 				<label class="checkbox">&nbsp;</label>
 				<input type="checkbox" name="recruiter_status" id="recruiter_status" <%= 'checked="checked"' if @recruiter.recruiter_status  %> /><strong>&nbsp;&nbsp;&nbsp;RRC</strong><label class="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  				<input type="checkbox" name="active" id="active" <%= 'checked="checked"' if @recruiter.active  %> />&nbsp;&nbsp;&nbsp;<strong>Active Recruiter</strong>
-				
+
 			</div>
-		</div>		
+		</div>	 -->	
 		<div class="form-row">
 			<div class="form-group col-md-1">
 				<label for="rank">Rank</label>
@@ -101,3 +101,18 @@
 			
 		</div> <!-- /row -->
 	</div> <!-- /container -->
+	
+	<script  type="text/javascript">
+		var frmvalidator = new Validator("create_rec");
+		frmvalidator.addValidation("email","req","Please enter your Email");
+		frmvalidator.addValidation("password","req","Please enter a password");
+		frmvalidator.addValidation("first_name","req","Please enter your First Name");
+		frmvalidator.addValidation("last_name","req","Please create your Last Name");
+		frmvalidator.addValidation("address","req","Please enter your Address");
+		frmvalidator.addValidation("city","req","Please enter your City");
+		frmvalidator.addValidation("state","req","Please enter your State");
+		frmvalidator.addValidation("zip","req","Please enter your Zip");
+		frmvalidator.addValidation("phone","req","Please enter your Phone");
+	</script>
+	
+	

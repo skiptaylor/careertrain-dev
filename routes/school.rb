@@ -5,8 +5,8 @@ get '/arng/schools/schools/?' do
 	@school = School.all(order: [:updated_at.desc], limit: 300)
   
 	if params[:search] && !params[:search].nil?
-		@school = School.all(:school_name.like => "%#{params[:search]}%", limit: 300) || @school = School.all(:school_password.like => "%#{params[:search]}%")
-	else
+		@school = School.all(:school_zip.like => "%#{params[:search]}%", limit: 30) 
+  else
 		@school = School.all(:school_name.not => nil, order: [:updated_at.desc], limit: 300)
 	end
   
@@ -202,7 +202,7 @@ get '/arng/faq/?' do
 end
 
 get '/arng/leads/?' do
-  
+  auth_recruiter
   erb :"/arng/leads"
 end
 
@@ -222,7 +222,7 @@ get '/arng/practices/?' do
 end
 
 get '/arng/register/?' do
-  
+  auth_recruiter
   @school = School.all
   unless params[:zip]
     @results = []

