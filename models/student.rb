@@ -46,6 +46,8 @@ class Student
   has n, :skills, :constraint => :destroy
   has n, :traits, :constraint => :destroy
   
+  has n, :exercises, :constraint => :destroy
+  
 end
 
 
