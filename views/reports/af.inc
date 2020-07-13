@@ -1,6 +1,6 @@
 <span class="header1">Outdoor paired with Technology (AF)</span>
 
-<p>With an "AF" interest, you will want to combine your interest in
+<!-- <p>With an "AF" interest, you will want to combine your interest in
 open-air occupations with your interest in technologies. You like to
 conduct research, employ change and apply what you know,  to work
 settings of the technologies and outdoors.</p>
@@ -100,7 +100,7 @@ what you want to do when you are an adult.</p>
 			Lawn Care
 		</td>
 	</tr>
-</table>
+</table> -->
 
 <p><strong>Here are some career possibilities for you to
 explore:</strong></p>
@@ -221,7 +221,7 @@ Technologist</em>
 
 <hr size="1" />
 
-<span class="header1">NATURE/ANIMALS</span>
+<!-- <span class="header1">NATURE/ANIMALS</span>
 <p>If you choose an occupation in this field, you will work
 directly with nature and animals. People in these occupations often
 work as practical scientists. They discover new information about
@@ -435,4 +435,4 @@ href="http://online.onetcenter.org/gen_search_page">online.onetcenter
 
 <blockquote>Salary data from Bureau of Labor Statistics, U.S.
 Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/2/2018. </blockquote>
+Edition, </i> visited 2/2/2018. </blockquote> -->

@@ -3,7 +3,7 @@
 	<head>
 	  	<meta charset="utf-8" />
 	  	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-	  	<title>Career Direction 2</title>
+	  	<title>eCareerDirection</title>
 			<style type="text/css">
 			@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,300,400,600,700);
 			
@@ -144,13 +144,13 @@
 			<img src="/img/arng_4cp_cta_camo.png" width="82px" style="float: right;">
 			<img src="/img/ctc.png">
 		</p>
-		<hr />
+		<!--<hr />-->
 		
 		<p class="lead">Report for <%= @student.first_name %> <%= @student.last_name %> at <%= @student.school.school_name %></p>
 		
-		<h1>Careers and Occupations Guide</h1>
+		<!-- <h1>Careers and Occupations Guide</h1>
 		<p><small>Support Manual for</small><br />
-		<strong>CD2, Career Direction</strong> and <em><strong>FUTURE</strong>FOCUS</em>
+		<strong><em>e</em>CD, Career Direction</strong> and <em><strong>FUTURE</strong>FOCUS</em>
 		<br />
 		<small>Version 5.0</small>
 		<p><small>
@@ -167,20 +167,20 @@
 		<small>Toll Free: 888-326-9229 &nbsp; www.careertrain.com</small> <br />
 		<small>© <%= Time.now.strftime("%Y") %> Career Training Concepts, Inc. All Rights Reserved.</small>
 		</p>
-		
+
 		<hr />
-		
+
 		<p class="lead">Welcome to your <strong>Careers and Occupations Guide (COG)</strong> Report!</p>
 		<p>This report combines career categories you find most interesting to help you:</p>
 		<ul>
 			<li> understand your unique personality,</li>
 			<li> identify what occupations you might enjoy the most, and </li>
-			<li> determine the education and training required to meet your career goals. </li> 
+			<li> determine the education and training required to meet your career goals. </li>
 		</ul>
 
-		<p>Your <B> <I> COG </B> </i> Report is based on your interests and 
+		<p>Your <B> <I> COG </B> </i> Report is based on your interests and
 		provides suggestions in the following areas:</p>
-		<ul> 
+		<ul>
 			<li> high school courses</li>
 			<li> extra-curricular and volunteer activities</li>
 			<li> part-time jobs</li>
@@ -188,18 +188,18 @@
 			<li> occupations detailed by job description and income range</li>
 		</ul>
 
-		<p>Remember, you are just exploring right now. You can create other 
-		<B> <I>COG </i> </b> reports using different career category 
+		<p>Remember, you are just exploring right now. You can create other
+		<B> <I>COG </i> </b> reports using different career category
 		combinations too.</P>
 
-		<p>You might want to share the information with your parents, your 
-		teacher, or a friend. This information will help you make good 
+		<p>You might want to share the information with your parents, your
+		teacher, or a friend. This information will help you make good
 		decisions as you plan for life in high school and beyond. </p>
 
-		<p>Before you begin, it will help you to understand some words used 
+		<p>Before you begin, it will help you to understand some words used
 		in this report.</p>
 
-		<OL> 
+		<OL>
 			<li> <B>Technical, Trade, and Business Colleges </b> - in two years or less, these schools prepare you for job entry into specific trades, professions, or career fields. </li>
 			<li> <B>Two-year Junior or Community Colleges</b> - these colleges award an Associate's Degree. You can take freshman and sophomore level classes at a Junior College and then transfer to a four-year institution. </li>
 			<li> <B>Four-year College or University</b> - these are schools where you can earn a Bachelor's Degree and high level degrees such as a Master's or Ph.D.</li>
@@ -208,7 +208,7 @@
 		</ol>
 
 		<p>Are you ready to explore your future career possibilities? Let's get started!
-		
+
 		<hr />
 		<center><a href="http://www.nationalguard.com/education" target="blank"><img src="/img/ads/EducationBenefits.gif" /></a></center>
     <% if @cat1 %>
@@ -222,15 +222,16 @@
     <% if @cat3 %>
       <hr />
 		  <%= @cat3 %>
-    <% end %>
+    <% end %> 
 		<hr />
-		<center><a href="http://www.nationalguard.com/careers" target="blank"><img src="/img/ads/CareerOpportunities.gif" /></a></center>
+		<center><a href="http://www.nationalguard.com/careers" target="blank"><img src="/img/ads/CareerOpportunities.gif" /></a></center> -->
     <% if @report1 %>
-		  <hr class="divider" /><br />
-		  <%= @report1 %>
+		  <!-- <hr class="divider" /><br /> -->
 		  <hr />
+		  <%= @report1 %>
+		 <!-- <hr />-->
     <% end %>
-		<center><a href="http://www.nationalguard.com/events/citizen-soldier" target="blank"><img src="/img/ads/Patriotism.gif" /></a></center>
+		<!-- <center><a href="http://www.nationalguard.com/events/citizen-soldier" target="blank"><img src="/img/ads/Patriotism.gif" /></a></center>
     <% if @report2 %>
 		  <hr class="divider" /><br />
 		  <%= @report2 %>
@@ -241,16 +242,16 @@
 		  <hr class="divider" /><br />
 		  <%= @report3 %>
 		  <hr />
-    <% end %>
-		<center><a href="http://www.nationalguard.com/benefits" target="blank"><img src="/img/ads/FindAdventure.gif" /></a></center>
+    <% end %> -->
+		<!-- <center><a href="http://www.nationalguard.com/benefits" target="blank"><img src="/img/ads/FindAdventure.gif" /></a></center>
 		<br />
 		<center><a href="http://www.nationalguard.com/benefits/enlistment-options" target="blank"><img src="/img/ads/guard1.gif" /></a></center>
 		<br />
-		<center><a href="http://www.nationalguard.com" target="blank"><img src="/img/arng_4cp_cta_camo.png" width="160px" /></a></center>
+		<center><a href="http://www.nationalguard.com" target="blank"><img src="/img/arng_4cp_cta_camo.png" width="160px" /></a></center> -->
 		<br />
-		<center><img src="/img/ads/guard3.gif" /></center>
-		<p><center><a href="/student/student" class="button">Sign out</a></center></p>
-		<hr />
+		<!--<center><img src="/img/ads/guard3.gif" /></center>-->
+		<p><center><a href="/student/student" class="button">Back </a></center></p>
+		<!--<hr />-->
 		<p><center><small>&copy; <%= Time.now.strftime("%Y") %> Career Training Concepts Inc.</small></center></p>
 
 	</div>

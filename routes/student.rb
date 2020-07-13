@@ -300,6 +300,7 @@ get "/student/reports/report/:school_password/?" do
  else
    erb :'student/reports/report'
   end
+  
 end
 
 
