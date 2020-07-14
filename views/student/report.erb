@@ -5,36 +5,48 @@
 				<h1 class="page-header">Your Career</h1>
 			</div>
 			<div class="col-md-7">
-				<p class="lead"><strong>Career Direction 2</strong> Reports can help you start working toward your career success today!</p> 
-				<p>The <span class="semi-bold">Careers and Occupations Guide Reports</span> will give you suggestions for courses to take, extra-curricular activities to participate in, part-time jobs and internships, as well as, career possibilities that are well-suited to your interests.</p>
-				<p>By entering your school's password, you can create your own personalized academic and career planning report.</p>
+				<p class="lead"><em>e</em><span style="font-weight: 900;">CareerDirection Reports</span> can help you start working toward your career success today!</p> 
+				<p>The Careers and Occupations Guide Reports will give you suggestions for courses to take, extra-curricular activities to participate in, part-time jobs and internships, as well as, career possibilities that are well-suited to your interests. You can create your own personalized academic and career planning report.</p>
+				
+					<p class="lead"><em>e</em><span style="font-weight: 900;">CareerDirection Online Resum&eacute; Tool</span> can help you create a resum&eacute; and cover letter that will help you &ldquo;get that job!&rdquo;</p>
+					<p>By completing the online form, you can automatically generate:</p>
+					<ul class="padleft">
+						<li>resum&eacute;</li>
+						<li>cover letters and thank you notes for after your interview</li>
+						<li>references</li>
+					</ul>
+					
+					
+					
 	   
 				<div class="sign-in" style="padding: 18px 32px; margin: 48px 0;">
-					<h6>Student Report</h6>
+					<h6>Student Account</h6>
 					<div style="padding-right: 18px; float: left; border-right: 1px solid #b2b5bc;">
+						<% unless session[:student] %>
 						<p>New user</p>
 						<p><a href="/student/reports/create" class="btn btn-primary">Create an account</a></p>
-					</div>
-					
-					
-					<div style="margin-left: 184px;">
-						<% unless session[:student] %>
-						<p>Already have an account</p>
-						<p><a href="/student/reports/signin" class="btn btn-success"><i class="icon-signin"></i> &nbsp;Sign in</a></p>
 						<% else %>
-						<p>You are already signed in</p>
+						<p>You are signed in</p>
 						<p><a href="/student/reports/signin" class="btn btn-success">Create Report</a></p>
 						<% end %>
 					</div>
+					<div style="margin-left: 184px;">
+						<% unless session[:student] %>
+						<p>Existing user</p>
+						<p><a href="/student/reports/signin" class="btn btn-primary"><i class="icon-signin"></i> &nbsp;Sign in</a></p>
+						<% else %>
+						<p>You are signed in</p>
+						<p><a href="/student/resume/signin" class="btn btn-success">Resume Tool</a></p>
+						<% end %>
+					</div>
 					
-					
-					<p style="clear: both; padding-top: 12px;">You will need your school's password to create a new account. If you do not know your school’s password, please contact your guidance counselor or teacher.</p> 
-				</div>
-				<div>
-					<p style="line-height: 17px; margin-top: 14px;"><a style="margin: 5px 24px 24px 0;" class="btn btn-mini btn-secondary pull-left" href="/student/resume/sign-out">&nbsp;&nbsp;<i class="icon-signout"> </i> &nbsp;Sign out&nbsp;&nbsp;</a>
+					<% if session[:student] %>
+					<br />
+			
+					<p style="line-height: 15px;"><a style="margin: 5px 24px 20px 0;" class="btn btn-mini btn-secondary pull-left" href="/student/resume/sign-out">&nbsp;&nbsp;<i class="icon-signout"> </i> &nbsp;Sign out&nbsp;&nbsp;</a>
 					<strong>PROTECT YOUR PRIVACY.</strong>
 					<small>If you are using a public or shared device <strong>sign out</strong> when finished.</small></p>
-					
+					<% end %>
 				</div>
 				
 				

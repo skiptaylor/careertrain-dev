@@ -58,8 +58,12 @@
 				  </a>
 				  <div class="dropdown-menu pic-border" aria-labelledby="dropdown1">
 					  <a class="dropdown-item <%= active 'student/student' %>" href="/student/student">Career Direction e</a>
+					  <% unless session[:student] %>
 					  <a class="dropdown-item <%= active 'student/report' %>" href="/student/report">Your Career</a>
-					  <a class="dropdown-item <%= active 'student/resume' %>" href="/student/resume_tool">Resum&eacute; Tool</a>
+					  <% else %>
+					  <a class="dropdown-item <%= active 'student/reports' %>" href="/student/reports/report/report_profile">Your Career</a>
+					  <% end %>
+					  <!-- <a class="dropdown-item <%= active 'student/resume' %>" href="/student/resume_tool">Resum&eacute; Tool</a> -->
 					  <a class="dropdown-item <%= active 'student/feedback' %>" href="/student/feedback">Student Feedback</a>
 					  <a class="dropdown-item <%= active 'student/resources' %>" href="/student/resources">Helpful Links</a>
 	          </div>
@@ -140,7 +144,7 @@
 			 			$("div#alert").fadeOut("slow", function () {
 			 			$("div#alert").remove();
 			 	      });
-			 		}, 5000);
+			 		}, 2500);
 			 	});
 		   
 			}).call(this);	
