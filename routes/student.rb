@@ -365,12 +365,12 @@ get "/student/reports/:id/report/?" do
     @report3 = File.read("./views/reports/#{@student.score3}#{@student.score2}.inc")
   end
   
- if @student.score1 && @student.score2
-   unless @cat1 && @cat2
-     flash[:alert] = "Invalid scores. Try again."
-     erb :'student/reports/report'
-   end
- end
+ # if @student.score1 && @student.score2
+#    unless @cat1 && @cat2
+#      flash[:alert] = "Invalid scores. Try again."
+#      erb :'student/reports/report'
+#    end
+#  end
  
  # -------------------- show report ---------------------
  if @student.score1 && @student.score2 && defined?(@cat1) && defined?(@cat2)
