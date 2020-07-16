@@ -65,14 +65,33 @@ post  "/student/reports/:id/exercise/?"  do
   end
   exercise.save
     
-   redirect "/student/reports/report/enter_score"
+   redirect "/student/reports/#{session[:student]}/ie_scores/?"
 end
 
-get "/student/reports/:id/ie_scores" do
+# get "/student/reports/:id/report/?" do
+#   @student = Student.get(session[:student])
+#   @exercise = Exercise.get(params[:id])
+#
+#   erb :"/student/reports/report"
+# end
+
+get "/student/reports/:id/ie_scores/?" do
   @student = Student.get(session[:student])
   @exercise = Exercise.get(params[:id])
   
   erb :"/student/reports/ie_scores"
+end
+
+
+
+post "/student/reports/:id/ie_scores/?" do
+  exercise = Exercise.get(params[:id])
+  student = Student.get(session[:student]).update(
+    :score1     => params[:score1],
+    :score2     => params[:score2]
+  )
+
+  redirect "/student/reports/#{session[:student]}/report/?"
 end
 
 
