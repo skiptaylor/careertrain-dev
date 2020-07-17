@@ -269,7 +269,7 @@ get "/student/reports/:id/scores/?" do
   end
   
  if @student.score1 && @student.score2
-    unless @cat1 && @cat2
+    if @cat1 && @cat2
       erb :'student/reports/report'
     end
   end
