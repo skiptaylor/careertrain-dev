@@ -268,12 +268,7 @@ get "/student/reports/:id/scores/?" do
     @report3 = File.read("./views/reports/#{@student.score3}#{@student.score2}.inc")
   end
   
- if @student.score1 && @student.score2
-    unless @cat1 && @cat2
-     flash[:alert] = "Invalid scores. Try again."
-      erb :'student/reports/scores'
-    end
-  end
+ 
  
  # -------------------- show report ---------------------
  if @student.score1 && @student.score2 && defined?(@cat1) && defined?(@cat2)
