@@ -216,7 +216,7 @@ end
 
 get "/student/reports/:id/scores/?" do
   @school = School.all
-  @exercise = Exercise.get(params[:id])
+  @exercise = Exercise.get(params[:exercise_id])
   @student = Student.get(params[:id])
   
     
@@ -268,15 +268,11 @@ get "/student/reports/:id/scores/?" do
     @report3 = File.read("./views/reports/#{@student.score3}#{@student.score2}.inc")
   end
   
- if @student.score1 && @student.score2
-    if @cat1 && @cat2
-      erb :'student/reports/report'
-    end
-  end
+ 
  
  # -------------------- show report ---------------------
- if @student.score1 && @student.score2 && defined?(@cat1) && defined?(@cat2)
-   erb :'student/reports/scores', layou: false
+ if @student.score1 && @student.score2
+   erb :'student/reports/scores'
  else
    erb :'student/reports/report'
  end
