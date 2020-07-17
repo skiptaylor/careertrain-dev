@@ -205,113 +205,16 @@ post '/student/reports/:id/edit/?' do
     redirect request.referrer
   
   end
-
-  
 end
 
 
 
-# get "/student/reports/enter_scores/?" do
-#   @school = School.all
-#   @student = Student.get(session[:student])
-#   erb :'student/reports/enter_scores'
-# end
-
-# get "/student/reports/report/:school_password/?" do
-#   @school = School.all
-#   @student = Student.get(session[:student])
-#   erb :'student/reports/report'
-# end
-
-# post "/student/reports/report/?" do
-  # if school = School.first(school_password: params[:password].downcase.strip)
-  # redirect("student/reports/#{student.school.school_password}")
-  # else
-    # flash[:alert] = "School could not be found."
-    # erb :'student/reports/:school_password'
-  # end
-# end
-
-
-
-# get "/student/reports/:id/report/?" do
-#   @school = School.all
-#   @student = Student.get(session[:student])
-#
-#
-#   if params[:score1] && params[:score1] != ''
-#     params[:score1].strip!
-#     params[:score1].downcase!
-#   else
-#     params[:score1] = false
-#   end
-#
-#   if params[:score2] && params[:score2] != ''
-#     params[:score2].strip!
-#     params[:score2].downcase!
-#   else
-#     params[:score2] = false
-#   end
-#
-#   if params[:score3] && params[:score3] != ''
-#     params[:score3].strip!
-#     params[:score3].downcase!
-#   else
-#     params[:score3] = false
-#   end
-#
-#   if params[:score1] && File.exists?("./views/reports/#{params[:score1]}.inc")
-#     @cat1 = File.read("./views/reports/#{params[:score1]}.inc")
-#   end
-#
-#   if params[:score2] && File.exists?("./views/reports/#{params[:score2]}.inc")
-#     @cat2 = File.read("./views/reports/#{params[:score2]}.inc")
-#   end
-#
-#   if params[:score3] && File.exists?("./views/reports/#{params[:score3]}.inc")
-#     @cat3 = File.read("./views/reports/#{params[:score3]}.inc")
-#   end
-#
-#   if params[:score1] && params[:score2] && File.exists?("./views/reports/#{params[:score1]}#{params[:score2]}.inc")
-#     @report1 = File.read("./views/reports/#{params[:score1]}#{params[:score2]}.inc")
-#   elsif params[:score1] && params[:score2] && File.exists?("./views/reports/#{params[:score2]}#{params[:score1]}.inc")
-#     @report1 = File.read("./views/reports/#{params[:score2]}#{params[:score1]}.inc")
-#   end
-#
-#   if params[:score1] && params[:score3] && File.exists?("./views/reports/#{params[:score1]}#{params[:score3]}.inc")
-#     @report2 = File.read("./views/reports/#{params[:score1]}#{params[:score3]}.inc")
-#   elsif params[:score1] && params[:score3] && File.exists?("./views/reports/#{params[:score3]}#{params[:score1]}.inc")
-#     @report2 = File.read("./views/reports/#{params[:score3]}#{params[:score1]}.inc")
-#   end
-#
-#   if params[:score2] && params[:score3] && File.exists?("./views/reports/#{params[:score2]}#{params[:score3]}.inc")
-#     @report3 = File.read("./views/reports/#{params[:score2]}#{params[:score3]}.inc")
-#   elsif params[:score2] && params[:score3] && File.exists?("./views/reports/#{params[:score3]}#{params[:score2]}.inc")
-#     @report3 = File.read("./views/reports/#{params[:score3]}#{params[:score2]}.inc")
-#   end
-#
-#  if params[:score1] && params[:score2]
-#    unless @cat1 && @cat2
-#      flash[:alert] = "Invalid scores. Try again."
-#      erb :'student/reports/report'
-#    end
-#  end
-#
-#  # -------------------- show report ---------------------
-#  if params[:score1] && params[:score2] && defined?(@cat1) && defined?(@cat2)
-#    erb :'student/reports/scores', layou: false
-#  else
-#    erb :'student/reports/report'
-#  end
-  
-# end
 
 
 
 
 
-
-get "/student/reports/:id/report/?" do
+get "/student/reports/:id/scores/?" do
   @school = School.all
   @exercise = Exercise.get(params[:id])
   @student = Student.get(params[:id])
@@ -365,12 +268,12 @@ get "/student/reports/:id/report/?" do
     @report3 = File.read("./views/reports/#{@student.score3}#{@student.score2}.inc")
   end
   
- # if @student.score1 && @student.score2
-#    unless @cat1 && @cat2
-#      flash[:alert] = "Invalid scores. Try again."
-#      erb :'student/reports/report'
-#    end
-#  end
+ if @student.score1 && @student.score2
+    unless @cat1 && @cat2
+     flash[:alert] = "Invalid scores. Try again."
+      erb :'student/reports/scores'
+    end
+  end
  
  # -------------------- show report ---------------------
  if @student.score1 && @student.score2 && defined?(@cat1) && defined?(@cat2)

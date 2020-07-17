@@ -15,34 +15,34 @@
 		<div class="row">
 			<div class="col-md-5">
 				<p>Enter the Occupational Category letters from your Interest Exercise Video (letters A - I). You must enter both letters to create a report.</p>
-				<form method="post" id="scores">
+				<form method="post" id="ie_scores">
 				<div class="form-group row">
 						<select type="text" class="form-control pull-left" name="score1" id="score1" style="width: 100px; margin-left: 12px;" >
 							<option>&nbsp;</option>
-							<option>A</option>
-							<option>B</option>
-							<option>C</option>
-							<option>D</option>
-							<option>E</option>
-							<option>F</option>
-							<option>G</option>
-							<option>H</option>
-							<option>I</option>
+							<option <%= 'selected' if @student.score1 == 'A' %> value="A">A</option>
+							<option <%= 'selected' if @student.score1 == 'B' %> value="B">B</option>
+							<option <%= 'selected' if @student.score1 == 'C' %> value="C">C</option>
+							<option <%= 'selected' if @student.score1 == 'D' %> value="D">D</option>
+							<option <%= 'selected' if @student.score1 == 'E' %> value="E">E</option>
+							<option <%= 'selected' if @student.score1 == 'F' %> value="F">F</option>
+							<option <%= 'selected' if @student.score1 == 'G' %> value="G">G</option>
+							<option <%= 'selected' if @student.score1 == 'H' %> value="H">H</option>
+							<option <%= 'selected' if @student.score1 == 'I' %> value="I">I</option>
 						</select>
 						<span style="margin: 7px 0 0 12px">1st Highest</span>
 				</div>
 				<div class="form-group row">
 						<select type="text" class="form-control pull-left" name="score2" id="score2" style="width: 100px; margin-left: 12px;" >
 							<option>&nbsp;</option>
-							<option>A</option>
-							<option>B</option>
-							<option>C</option>
-							<option>D</option>
-							<option>E</option>
-							<option>F</option>
-							<option>G</option>
-							<option>H</option>
-							<option>I</option>
+							<option <%= 'selected' if @student.score2 == 'A' %> value="A">A</option>
+							<option <%= 'selected' if @student.score2 == 'B' %> value="B">B</option>
+							<option <%= 'selected' if @student.score2 == 'C' %> value="C">C</option>
+							<option <%= 'selected' if @student.score2 == 'D' %> value="D">D</option>
+							<option <%= 'selected' if @student.score2 == 'E' %> value="E">E</option>
+							<option <%= 'selected' if @student.score2 == 'F' %> value="F">F</option>
+							<option <%= 'selected' if @student.score2 == 'G' %> value="G">G</option>
+							<option <%= 'selected' if @student.score2 == 'H' %> value="H">H</option>
+							<option <%= 'selected' if @student.score2 == 'I' %> value="I">I</option>
 						</select>
 						<span style="margin: 7px 0 0 12px">2nd Highest</span>
 				</div>
@@ -52,17 +52,11 @@
 					</p>
 				</form>
 			</div>
-			
-			
-			
-			
-			
 		</div>
 	</div>
 
 <script  type="text/javascript">
-	var frmvalidator = new Validator("scores");
-	frmvalidator.addValidation("score1","req","Please enter your 1st highest score");
-	frmvalidator.addValidation("score2","req","Please enter your 2nd highest score");
-
+	var frmvalidator = new Validator("ie_scores");
+	frmvalidator.addValidation("score1","req","Please enter your highest score");
+	frmvalidator.addValidation("score2","req","Please enter your second highest score");
 </script>

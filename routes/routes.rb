@@ -78,9 +78,7 @@ get "/admin/signout/?"  do
 end
 
 
-get '/student/report/scores' do
-  erb :'/student/report/scores', layout: false
-end
+
 
 get '/student/resume/resume-view' do
   

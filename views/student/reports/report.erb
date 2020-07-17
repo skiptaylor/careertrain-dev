@@ -4,6 +4,11 @@
 				<h1 class="page-header">Careers and Occupations Guide Report</h1>
 			</div>
 		</div>
+		<div class="row">  
+			<div class="col-md-12">
+				<h3 style="color: #e31400;">THIS IS WHERE THE IE VODEO RELATED TO LETTERS GO!</h3>
+			</div>
+		</div>
 		<div class="row">	
 			<div class="col-md-5">
 				<h3><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></h3>
@@ -16,7 +21,7 @@
 				<h3>Your Highest Score - <%= @student.score1 %></h3>
 				<h3>Your 2nd Highest Score - <%= @student.score2 %></h3>
 				<br />
-				<input type="submit" class="btn btn-success" value="View short Report" />
+				<a href="/student/reports/<%= @student.id %>/scores"  class="btn btn-success">View short Report</a>
 			</form>
 			
 			</div>
@@ -26,9 +31,3 @@
 		</div>
 	</div>
 	
-<script  type="text/javascript">
-	var frmvalidator = new Validator("scores");
-	frmvalidator.addValidation("score1","req","Please enter your 1st highest score");
-	frmvalidator.addValidation("score2","req","Please enter your 2nd highest score");
-
-</script>
