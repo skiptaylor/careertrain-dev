@@ -22,7 +22,7 @@ helpers do
   end
   
   def auth_student
-    unless session[:student] == true || session[:admin] == true || session[:recruiter] == true
+    unless session[:student] == true || session[:admin] == true || session[:recruiter] == true || session[:recruiter] != ''
       flash[:alert] = 'You must sign in to see that page.'
       redirect 'student/resume/signin'
     end
