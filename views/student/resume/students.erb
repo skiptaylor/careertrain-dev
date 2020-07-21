@@ -17,14 +17,14 @@
 					<tr>
 						<th>Name</th>
 						<th>Email</th>
-						<th>Password</th>
+						<th>School Password</th>
 						<th> </th>
 					</tr>
 					<% @student.sort_by(&:created_at).reverse.each do |student| %>
 					<tr>
 						<td><%= student.first_name %> <%= student.middle_name %> <%= student.last_name %></td>
 						<td><%= student.email %></td>
-						<td><%= student.password %></td>
+						<td><%= student.school_password %></td>
 						<td style="text-align: right;"><a href="/student/resume/<%= student.id %>/student"><i class="icon-info-sign"></i></a>&nbsp;&nbsp;&nbsp;<a href="/student/resume/<%= student.id %>/delete" class="delete text-error"><i class="icon-trash"></i></a></td>
 					</tr>
 					<% end %>

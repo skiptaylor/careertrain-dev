@@ -37,15 +37,18 @@
 
 					<% @school.sort_by(&:updated_at).each do |school| %>
 					<% if session[:recruiter] == school.recruiter_id %>
+					<% unless school.school_password == '' || school.school_password == nil %>
 					<tr>
 						<!-- <th style="text-align: center; color: #af4532;"><%= school.recruiter_id %></th> -->
 						<td><%= school.school_name %></td>
 						<td><%= school.school_password %></td>
-						<td style="text-align: right;"><a href="/arng/schools/<%= school.id %>/school/" class="btn btn-small">Get Reports</a></td>
+						<td style="text-align: right;"><a href="/arng/schools/<%= school.id %>/school_report" class="btn btn-small">Get Reports</a></td>
 					</tr>
+				
+					
 					<% end %>
 					<% end %>
-
+					<% end %>
 				</table>
 
 

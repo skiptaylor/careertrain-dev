@@ -121,11 +121,8 @@ get '/recruiters/:id/profile/?' do
   @school = School.all(order: [:updated_at.desc], limit:50)
   @state = State.all
   @recruiter = Recruiter.get(params[:id])
-  if @recruiter.active == true
-    erb :"/recruiter/recprofile"
-  else
-    erb :"/recruiter/noaccount"
-  end
+    
+  erb :"/recruiter/recprofile"
 end
 
 get "/recruiters/:id/view/?" do

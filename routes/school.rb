@@ -67,6 +67,20 @@ post '/arng/schools/new/?' do
   redirect "/arng/schools/#{school.id}/school"
 end
 
+
+
+
+get '/arng/schools/:id/school_report/?' do
+  auth_recruiter
+  @school = School.get(params[:id])
+  @recruiter = Recruiter.get(params[:recruiter_id])
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
+  
+  erb :"/arng/schools/school_report"
+  # redirect "/arng/schools/#{@school.id}/school_report"
+end
+
+
 get '/arng/schools/:id/?' do
   auth_recruiter
   @recruiter = Recruiter.all
@@ -74,6 +88,9 @@ get '/arng/schools/:id/?' do
   @school = School.get(params[:id])
   erb :"/arng/schools/edit_school"
 end
+
+
+
 
 get '/arng/schools/:id/edit_admin/?' do
   auth_admin
@@ -183,6 +200,7 @@ get '/arng/schools/:id/school/?' do
   @school = School.get(params[:id])
   erb :"/arng/schools/school"
 end
+
 
 get '/arng/schools/:id/delete/?' do
   auth_recruiter

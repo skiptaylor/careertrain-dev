@@ -27,7 +27,7 @@ class Recruiter
   
 end
 
-def recruiter_name(id)
+def recruiter_name
   "#{self.rank} #{self.first_name} #{self.middle_name} #{self.last_name}"
 end
 
