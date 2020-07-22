@@ -5,16 +5,17 @@
 			<div style="width: 100%; background-color: #1abd9c; color: white;">
 				<p style="text-align: center;"><strong>AF Career Possibilities</strong></p>
 			</div>
-			<div style="width: 100%; background-color: #defff5; color: black; margin-top: -10px;">
-				<p style="text-align: left;">&nbsp;&nbsp;<= More People Oriented</p><p style="float: right;margin-top: -34px;">More Technical Oriented =>&nbsp;&nbsp;</p>
+			<div style="width: 100%; background-color: #defff5; color: black; margin-top: -11px;">
+				<p style="text-align: left;">&nbsp;&nbsp;<img src="/img/icons/caret-left-fill.svg" alt="" width="22" height="22" title="">  More People Oriented</p><p style="float: right;margin-top: -36px;">More Technical Oriented  <img src="/img/icons/caret-right-fill.svg" alt="" width="22" height="22" title="">&nbsp;&nbsp;</p>
 			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-2" >
-			<div style="background-color: #defff5; text-align: center; height: 100%; v-align: middle;">
+		<div class="col-auto">
+			<div style="background-color: #defff5; text-align: center; height: 100%; padding: 3px;">
+				<span class="align-middle">
 				<br /><br />
-				<strong>Less</strong>
+				<img src="/img/icons/caret-up-fill.svg" alt="" width="22" height="22" title="">
 				<br /><br />
 				Education
 				<br />
@@ -24,11 +25,11 @@
 				<br />
 				Required
 				<br /><br />
-				<strong>More</strong>
-				
+				<img src="/img/icons/caret-down-fill.svg" alt="" width="22" height="22" title="">
+				</span>
 			</div>
 		</div>
-		<div class="col-md" style="margin-bottom: 20px;">
+		<div class="col" style="margin-bottom: 20px;">
 			<h5>Biotechnology<br />Environmental</h5>
 
 			<em>Veterinarian<br />
