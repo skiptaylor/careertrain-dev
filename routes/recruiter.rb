@@ -121,7 +121,7 @@ get '/recruiters/:id/profile/?' do
   @school = School.all(order: [:updated_at.desc], limit:50)
   @state = State.all
   @recruiter = Recruiter.get(params[:id])
-    
+   
   erb :"/recruiter/recprofile"
 end
 

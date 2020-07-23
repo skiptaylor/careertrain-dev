@@ -74,11 +74,19 @@ get '/arng/schools/:id/school_report/?' do
   auth_recruiter
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
-  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
+  
+	if params[:start_month] && params[:start_day] && params[:start_year]
+    @start = Chronic.parse("#{params[:start_year]}-#{params[:start_month]}-#{params[:start_day]}")
+  else
+    @start = Chronic.parse('January 1, 2020')
+  end
+  
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :created_on => @start)
   
   erb :"/arng/schools/school_report"
-  # redirect "/arng/schools/#{@school.id}/school_report"
 end
+
+
 
 
 get '/arng/schools/:id/?' do
@@ -88,9 +96,6 @@ get '/arng/schools/:id/?' do
   @school = School.get(params[:id])
   erb :"/arng/schools/edit_school"
 end
-
-
-
 
 get '/arng/schools/:id/edit_admin/?' do
   auth_admin
