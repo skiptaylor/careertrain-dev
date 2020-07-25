@@ -110,19 +110,29 @@
 	
 	<footer>
 		<div class="container">
+			<div class="row d-block d-md-none">
+				<div class="col-12" style="line-height: 16px;">
+					<p>1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc.<br />All rights reserved. &nbsp; <span class="under-link"><a href="/admin/admin" >&nbsp;Admin&nbsp;</a></span> 
+						<br >
+					<span style="color: #af4532;"><strong><%= session[:admin] %> / <%= session[:recruiter] %> / <%= session[:student] %></strong></span>
+					</p>
+				</div>
+			</div>
+			
+			<div class="d-none d-sm-none d-md-block">
 			<div class="row">
-			<div class="col-3" style="text-align: left; margin-bottom: 14px;">
-				<a href="/about" class="btn btn-success d-none d-sm-none d-md-block">About CTC</a>
-			</div>
-			<div class="col-6" style="line-height: 16px;">
-				<p>1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc. All rights reserved. &nbsp; <span class="under-link"><a href="/admin/admin" >&nbsp;Admin&nbsp;</a></span> 
+				<div class="col-3" style="text-align: left; margin-bottom: 14px;">
+					<a href="/about" class="btn">About CTC</a>
+				</div>
+				<div class="col-6" style="line-height: 16px;">
+					<p>1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc.<br />All rights reserved. &nbsp; <span class="under-link"><a href="/admin/admin" >&nbsp;Admin&nbsp;</a></span> 
 					<br >
-				<span style="color: #af4532;"><strong><%= session[:admin] %> / <%= session[:recruiter] %> / <%= session[:student] %></strong></span>
-				</p>
-				
-			</div>
-			<div class="col-3 d-none d-sm-none d-md-block" style="text-align: right;">
-				 <img src="/img/arng_4cp_cta_camo.png" width="80px" />
+					<span style="color: #af4532;"><strong><%= session[:admin] %> / <%= session[:recruiter] %> / <%= session[:student] %></strong></span>
+					</p>
+				</div>
+				<div class="col-3" style="text-align: right;">
+				 	<img src="/img/arng_4cp_cta_camo.png" width="80px" />
+				</div>
 			</div>
 			</div>
 		</div>

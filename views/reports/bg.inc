@@ -1,492 +1,217 @@
-<span class="header1">Arts/Communications paired with Public Service
-(BG)</span>
-
-<p>If you scored high in the "B" and "G" categories, you are a very
-independent person. Your "no-nonsense" approach ensures that things
-get done. You are creative, responsible, and outgoing. You enjoy
-working with others, but can work alone. More than likely, you will
-choose an occupation that will help your community.</p>
-<p>Most occupations in this pairing require at least a bachelor's
-degree. In certain occupations, it is valuable to have a master's
-degree or a Ph.D.</p>
-<p><strong>Courses you may want to consider taking in high school
-and beyond (in addition to English & Math):</strong><br />
-In high school you should take courses that help you understand
-communication and people. Social studies courses such as political
-science and sociology will be of particular interest to you.</p>
-
-<table cellpadding="10" cellspacing="10">
-	<tr valign="top">
-		<td>
-			Advertising/Marketing<br />
-			Psychology<br />
-			Physical Education<br />
-			Business Education
-		</td>
-		<td>
-			Government/Civics<br />
-			Art<br />
-			Public Relations<br />
-			Music
-		</td>
-		<td>
-			Graphic Arts<br />
-			Communications<br />
-			Business Law<br />
-			Political Science
-		</td>
-		<td>
-			Foreign Language<br />
-			Geography<br />
-			Computer Technology<br />
-			Sociology
-		</td>
-		<td>
-			Photography<br />
-			Health/Nutrition<br />
-			Government<br />
-			Economics
-		</td>
-	</tr>
-</table>
-
-<p><strong>Extracurricular / volunteer activities or organizations
-you may find interesting:</strong><br />
-If you have time for afterschool activities or part-time jobs, make
-them count. Any club or activity where communicating with others
-and/or working in a team.</p>
-
-<table cellpadding="10" cellspacing="10">
-	<tr valign="top">
-		<td>
-			Drama/Theatre<br />
-			Debate Team<br />
-			Church Activities
-		</td>
-		<td>
-			Band/Chorus<br />
-			Safety Patrol<br />
-			Chess Club
-		</td>
-		<td>
-			Newspaper/Yearbook<br />
-			Audio-Visual Services<br />
-			Youth Organizations
-		</td>
-		<td>
-			Language Club<br />
-			Peer Counselor<br />
-			Hospital Volunteer
-		</td>
-		<td>
-			Radio/TV Activities<br />
-			Photography Club
-		</td>
-	</tr>
-</table>
-
-<p><strong>Workplaces that you may wish to consider for a part-time
-job:</strong><br />
-These places may offer valuable opportunities to help you decide
-what you want to do when you are an adult.</p>
-
-<table cellpadding="10" cellspacing="10">
-	<tr valign="top">
-		<td>
-			Camp Counseling<br />
-			Church Programs<br />
-			Courthouse Offices
-		</td>
-		<td>
-			Graphic Design<br />
-			Libraries<br />
-			Life Guarding
-		</td>
-		<td>
-			Newspaper Offices<br />
-			Political Offices<br />
-			Printing Companies
-		</td>
-		<td>
-			TV/Radio Studios<br />
-			Recreation Departments<br />
-			Special Olympics
-		</td>
-		<td>
-			Theater<br />
-			Youth Coaching
-		</td>
-	</tr>
-</table>
-
-<p><strong>Here are some career possibilities for you to
-explore:</strong></p>
-
-<table width="100%" cellpadding="20" cellspacing="0" border="0">
-	<tr>
-		<td></td>
-		<td bgcolor="#FFF9D8" align="center" height="50">
-			<span class="header1">BG Career
-Possibilities</span><br /><br />
-			<table bgcolor="0" cellpadding="0"
-cellspacing="0" width="100%">
-				<tr bgcolor="#FFF9D8">
-					<td width="33%"
-align="left"><strong>More People Oriented</strong></td>
-					<td width="33%"
-align="center"><strong><----------></strong></td>
-					<td width="33%"
-align="right"><strong>More Technical Oriented</strong></td>
-				</tr>
-			</table>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#D3EEF5" align="center" width="50">
-			<table border="0" cellpadding="0"
-cellspacing="0" height="400">
-				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
-				<tr align="center"
-height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
-				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
-			</table>
-		</td>
-		<td valign="top">
-			<table border="0" cellspacing="3"
-cellpadding="0" width="100%">
-				<tr valign="top">
-					<td width="33%">
-						<span
-class="header2">Community Support Services</span><br /><br />
-						<em>Community
-College Administrator<br /><br />
-						City Zoning
-Director<br /><br />
-						Continuing Education
-Coordinator<br /><br />
-						Teacher
-							<ul>
-
-	<li>Adult Education</li>
-
-	<li>Public Speaking</li>
-
-	<li>Broadcasting</li>
-							</ul>
-						Chamber of Commerce
-Representative<br /><br />
-						Visitors Bureau
-Representative<br /><br />
-						TV/Radio Public
-Affairs Producer<br /><br />
-						Lobbyist<br /><br />
-						Clergy<br /><br />
-						Church Youth
-Director<br /><br />
-						Reservation/Ticket
-Agent</em>
-					</td>
-					<td width="33%">
-						<span
-class="header2">Art and Design</span><br /><br />
-						<em>Ballet/Symphony
-Director<br /><br />
-						Ballet/Symphony
-Manager<br /><br />
-						Museum
-Director<br /><br />
-						City
-Planner<br /><br />
-						Orchestra
-Conductor<br /><br />
-						Historic
-Preservationist<br /><br />
-						Performing Arts
-Personnel Director<br /><br />
-						Landscape
-Designer<br /><br />
-						Arts Festival
-Coordinator<br /><br />
-						Exhibit
-Designer<br /><br />
-
-	Photographer<br /><br />
-						Cook<br /><br />
-						Floral Designer</em>
-					</td>
-					<td width="33%">
-						<span
-class="header2">Communication Services</span><br /><br />
-						<em>Copyright
-Attorney<br /><br />
-						Public Relations
-Specialist<br /><br />
-						Community Affairs
-Director<br /><br />
-						TV/Radio Talk Show
-Host<br /><br />
-						College Marketing
-Specialist<br /><br />
-						Cultural Marketing
-Specialist<br /><br />
-
-	Broadcaster<br /><br />
-						Editorial
-Writer<br /><br />
-						Documentary Film
-Maker<br /><br />
-
-	Interpreter<br /><br />
-						Product
-Spokesperson<br /><br />
-						Theatrical Press
-Agent<br /><br />
-						Market
-Researcher</em>
-					</td>
-				</tr>
-			</table>
-		</td>
-	</tr>
-</table>
-
-<hr size="1" />
-
-<span class="header1">COMMUNITY SUPPORT SERVICES</span>
-<p>Leadership ability plays an important role in achieving success
-in this field.  Creativity and independence are valuable for those
-in this field as well.  If you have leadership skills and are
-creative, here are three occupations to consider.</p>
-
-<hr size="1" />
-
-	<span class="header2">Education
-Administrator</span><br /><br />
-	<span class="header3">Job Description</span>
-	<blockquote>If you like the idea of helping others to
-improve their education, you may choose to become an education
-administrator. In this job, you would plan educational programs for
-those in your community. You would also hire qualified instructors
-to teach them. You would need good problem solving skills.  You
-would also have to know how to work with large numbers of
-people.</blockquote>
-	<span class="header3">Education</span>
-	<blockquote>Many jobs require a master's or doctoral degree
-and experience in a related occupation, such as teaching or
-admissions counseling.</blockquote>
-	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of education
-administrators was $92,510 in May 2016. </blockquote>
-
-<hr size="1" />
-
-	<span class="header2">Flight Attendant</span><br /><br />
-	<img class="job_pic" src="/images/icons/BG/1216.jpg"
-width="100" height="100" border="0" alt="Flight Attendant" />
-	<span class="header3">Job Description</span>
-	<blockquote>Major airlines are required by law to provide
-flight attendants for the safety and security of the traveling
-public. Although the primary job of the flight attendants is to
-ensure that security and safety regulations are followed, attendants
-also try to make flights comfortable and enjoyable for
-passengers.</blockquote>
-	<span class="header3">Education</span>
-	<blockquote>Flight attendants must be certified by the
-Federal Aviation Administration (FAA). A high school diploma is the
-minimum educational requirement, but airlines increasingly prefer
-applicants who have a college degree. Experience in dealing with the
-public is important because flight attendants must be able to
-interact comfortably with strangers and remain calm under
-duress.</blockquote>
-	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of flight attendants was
-$48,500 in May 2016. </blockquote>
-
-<hr size="1" />
-
-	<span class="header2">Ticket Agent</span><br /><br />
-	<img class="job_pic" src="/images/icons/BG/43274.jpg"
-width="100" height="100" border="0" alt="Ticket Agent" />
-	<span class="header3">Job Description</span>
-	<blockquote>If the idea of helping people get to where they
-want to go appeals to you, you might become a ticket agent. As a
-ticket agent, you would sell tickets at bus stations, train
-stations, and airports. You would assign seats to passengers and
-check-in their luggage. You must like working with the public to be
-good at this job.</blockquote>
-	<span class="header3">Education</span>
-	<blockquote>Most reservation and transportation ticket
-agents spend several weeks in company-sponsored training programs
-learning the reservation system and other travel-related
-information. Good customer service skills and the ability to work
-quickly are important. </blockquote>
-	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of ticket agents was
-$32,920 in May 2016. </blockquote>
-
-<hr size="1" />
-
-<span class="header1">ART AND DESIGN</span>
-<p>To do well in the occupations in this field, you need to be able
-to lead.  You also need to have good organization skills.
-Creativity is important as well.</p>
-
-<hr size="1" />
-
-	<span class="header2">Museum Director</span><br /><br />
-	<img class="job_pic" src="/images/icons/BG/43054.jpg"
-width="100" height="100" border="0" alt="Museum Director" />
-	<span class="header3">Job Description</span>
-	<blockquote>A museum is a building where important relics
-and artifacts are kept and displayed for the public to view. The
-person who acquires artifacts for a museum to display and makes sure
-these artifacts are cared for is the museum director or curator.  As
-a museum director, you would manage the staff, plan the budget,
-raise funds, and set museum policies. This is a very difficult job.
-To succeed in it, you need plenty of energy.</blockquote>
-	<span class="header3">Education</span>
-	<blockquote>For employment as a curator, most museums
-require a master's degree in an appropriate discipline of the
-museum's specialty: art, history, or archaeology, or in museum
-studies. Many employers prefer a doctoral degree, particularly for
-curators in natural history or science museums. Earning two graduate
-degrees: one in museum studies (museology) and the other in a
-specialized subject, gives a candidate a distinct advantage in this
-competitive job market. In small museums, curatorial positions may
-be available to individuals with a bachelor's degree.</blockquote>
-	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of museum directors was
-$47,230 in May 2016. </blockquote>
-
-<hr size="1" />
-
-	<span class="header2">Orchestra Conductor</span><br /><br />
-	<span class="header3">Job Description</span>
-	<blockquote>An orchestra conductor leads a group of
-musicians who play different instruments.  As a conductor, you would
-choose the music, set up tours, and direct rehearsals and concerts.
-This job requires a person who has musical talent and plays an
-instrument well.  It also requires a person who enjoys classical
-music.</blockquote>
-	<span class="header3">Education</span>
-	<blockquote>Formal training may be obtained through private
-study with an accomplished musician, in a college or university
-music program, or in a music conservatory. You also need to have had
-a successful career as a musician.  Most conductors have played in
-several orchestras before they gain this position.</blockquote>
-	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of orchestra conductors
-was $50,110 in May 2016. </blockquote>
-
-<hr size="1" />
-
-	<span class="header2">Floral Designer</span><br /><br />
-	<img class="job_pic" src="/images/icons/BG/43094.jpg"
-width="100" height="100" border="0" alt="Floral Designer" />
-	<span class="header3">Job Description</span>
-	<blockquote>If you like flowers and plants and know how to
-arrange them, you might become a floral designer. As a designer, you
-would use different kinds of plants to make bouquets and other
-flower arrangements.  You would work directly with the customers, so
-good people skills are necessary.</blockquote>
-	<span class="header3">Education</span>
-	<blockquote>Floral design is the only design occupation that
-does not require formal postsecondary training; most floral
-designers learn their skills on the job. Employers generally look
-for high school graduates who have creativity, a flair for arranging
-flowers, and a desire to learn.</blockquote>
-	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of floral designers was
-$28,850 in May 2016. </blockquote>
-
-<hr size="1" />
-
-<span class="header1">COMMUNICATION SERVICE</span>
-<p>The processes of creating and sharing are important to each of
-the occupations in this field. Your creativity and communication
-skills are valuable assets to these occupations.</p>
-
-<hr size="1" />
-
-	<span class="header2">Radio Program
-Director</span><br /><br />
-	<span class="header3">Job Description</span>
-	<blockquote>Program directors are in charge of on-air
-programming in radio stations. Program directors decide what type of
-music will be played, supervise on-air personnel, and often select
-the specific songs and the order in which they will be played.
-Considerable experience, usually as a disc jockey, is required, as
-well as a thorough knowledge of music.</blockquote>
-	<span class="header3">Education</span>
-	<blockquote>You need a college degree to become a radio
-program director. It will be important to have experience
-too.</blockquote>
-	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of radio program
-directors was $70,950 in May 2016.
-</blockquote>
-
-<hr size="1" />
-
-	<span class="header2">Editorial Writer</span><br /><br />
-	<img class="job_pic" src="/images/icons/BG/43276.jpg"
-width="100" height="100" border="0" alt="Editorial Writer" />
-	<span class="header3">Job Description</span>
-	<blockquote>If you like for others to know your opinions on
-events in your community or nation, you might become an editorial
-writer.  In this job, you would write an opinion about current news
-issues or stories.  Your goal would be to get others to agree with
-your point of view.  To be good at this job, you must write well.
-You must also be willing to work hard to understand the
-issues.</blockquote>
-	<span class="header3">Education</span>
-	<blockquote>You need a degree in journalism to work for a
-newspaper.  Most editorial writers work as reporters for several
-years.  Only then are they given the chance to write their
-opinions.</blockquote>
-	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of editorial writers was
-$38,870 in May 2016. </blockquote>
-
-<hr size="1" />
-
-	<span class="header2">Theatrical Press
-Agent</span><br /><br />
-	<span class="header3">Job Description</span>
-	<blockquote>A theatrical press agent or public relations
-specialist, handles the publicity
-for plays.  It is this person who lets people know when a new play
-opens in your city or town.  As a theatrical press agent, you would
-supervise the creation of posters, newspaper advertisements, and
-radio and television commercials.  You would also contact the
-newspapers, the television station, and radio stations to have the
-advertisements run.  This is an influential job.  Without a
-theatrical press agent, people would not know about the play.  No
-money would be made.</blockquote>
-	<span class="header3">Education</span>
-	<blockquote>Opportunities should be best for college
-graduates who combine a degree in public relations, journalism, or
-another communications-related field with a studies in theatre.
-</blockquote>
-	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of theatrical press
-agents was $58,020 in May 2016.
-</blockquote>
-
-<hr size="1" />
-
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
+	<div class="row">
+		<div class="col-md-12">
+			<p class="lead">Arts/Communications paired with Public Service (BG)</p>
+			<p>Here are some career possibilities for you to explore:</p>
+			<div style="width: 100%; background-color: #1abd9c; color: white;">
+				<p style="text-align: center; padding: 3px 0;"><strong>BG Career Possibilities</strong></p>
+			</div>
+			<div style="width: 100%; background-color: #defff5; color: black; margin-top: -11px;">
+				<p style="text-align: left;"><img src="/img/icons/caret-left-fill.svg" alt="" width="22" height="22" title="">  People Oriented</p><p style="float: right;margin-top: -35px;">Technical Oriented  <img src="/img/icons/caret-right-fill.svg" alt="" width="22" height="22" title=""></p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="d-none d-sm-none d-md-block">
+	<div class="row">
+		<div class="col-auto">
+			<div style="background-color: #defff5; text-align: center; height: 100%; padding: 3px 3px 3px 6px;">
+				<table>
+					<tr>
+						<td>
+							<img src="/img/icons/caret-up-fill.svg" alt="" width="22" height="22" title="">
+							</p><br />
+							Education
+							<br />
+							or
+							<br />
+							Training
+							<br />
+							Required
+							</p><br />
+							<img src="/img/icons/caret-down-fill.svg" alt="" width="22" height="22" title="">
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="col" style="margin-bottom: 20px;">
+			<h5>Community Support Services</h5>
+			<p><em>Community College Administrator</p>
+			<p>City Zoning Director</p>
+			<p>Continuing Education Coordinator</p>
+			<p>Teacher
+				<ul>
+					<li>Adult Education</li>
+					<li>Public Speaking</li>
+					<li>Broadcasting</li>
+				</ul></p>
+			<p>Chamber of Commerce Representative</p>
+			<p>Visitors Bureau Representative</p>
+			<p>TV/Radio Public Affairs Producer</p>
+			<p>Lobbyist</p>
+			<p>Clergy</p>
+			<p>Church Youth Director</p>
+			<p>Reservation/Ticket Agent</em></p>
+		</div>
+		<div class="col" style="margin-bottom: 20px;">
+			<h5>Art and Design</h5>
+			<p><em>Ballet/Symphony Director</p>
+			<p>Ballet/Symphony Manager</p>
+			<p>Museum Director</p>
+			<p>City Planner</p>
+			<p>Orchestra Conductor</p>
+			<p>Historic Preservationist</p>
+			<p>Performing Arts Personnel Director</p>
+			<p>Landscape Designer</p>
+			<p>Arts Festival Coordinator</p>
+			<p>Exhibit Designer</p>
+			<p>Photographer</p>
+			<p>Cook</p>
+			<p>Floral Designer</em></p>
+		</div>
+		<div class="col">
+			<h5>Communication Services</h5>
+			<p><em>Copyright Attorney</p>
+			<p>Public Relations Specialist</p>
+			<p>Community Affairs Director</p>
+			<p>TV/Radio Talk Show Host</p>
+			<p>College Marketing Specialist</p>
+			<p>Cultural Marketing Specialist</p>
+			<p>Broadcaster</p>
+			<p>Editorial Writer</p>
+			<p>Documentary Film Maker</p>
+			<p>Interpreter</p>
+			<p>Product Spokesperson</p>
+			<p>Theatrical Press Agent</p>
+			<p>Market Researcher</em></p>
+		</div>
+	</div>
+	</div>
+	
+	
+	<div class="d-block d-md-none">
+	<div class="row" style="margin-bottom: 24px;">
+		<div class="col-auto">
+			<div style="background-color: #defff5; text-align: center; height: 100%; padding: 3px 3px 3px 6px;">
+				<table>
+					<tr>
+						<td>
+							<img src="/img/icons/caret-up-fill.svg" alt="" width="22" height="22" title="">
+							</p><br />
+							Education
+							<br />
+							or
+							<br />
+							Training
+							<br />
+							Required
+							</p><br />
+							<img src="/img/icons/caret-down-fill.svg" alt="" width="22" height="22" title="">
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="col" style="margin-bottom: 20px;">
+			<h5>Community Support Services</h5>
+			<p><em>Community College Administrator</p>
+			<p>City Zoning Director</p>
+			<p>Continuing Education Coordinator</p>
+			<p>Teacher
+				<ul>
+					<li>Adult Education</li>
+					<li>Public Speaking</li>
+					<li>Broadcasting</li>
+				</ul></p>
+			<p>Chamber of Commerce Representative</p>
+			<p>Visitors Bureau Representative</p>
+			<p>TV/Radio Public Affairs Producer</p>
+			<p>Lobbyist</p>
+			<p>Clergy</p>
+			<p>Church Youth Director</p>
+			<p>Reservation/Ticket Agent</em></p>
+		</div>
+	</div>
+	<div class="row" style="margin-bottom: 24px;">	
+		<div class="col-auto">
+			<div style="background-color: #defff5; text-align: center; height: 100%; padding: 3px 3px 3px 6px;">
+				<table>
+					<tr>
+						<td>
+							<img src="/img/icons/caret-up-fill.svg" alt="" width="22" height="22" title="">
+							</p><br />
+							Education
+							<br />
+							or
+							<br />
+							Training
+							<br />
+							Required
+							</p><br />
+							<img src="/img/icons/caret-down-fill.svg" alt="" width="22" height="22" title="">
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="col" style="margin-bottom: 20px;">
+			<h5>Art and Design</h5>
+			<p><em>Ballet/Symphony Director</p>
+			<p>Ballet/Symphony Manager</p>
+			<p>Museum Director</p>
+			<p>City Planner</p>
+			<p>Orchestra Conductor</p>
+			<p>Historic Preservationist</p>
+			<p>Performing Arts Personnel Director</p>
+			<p>Landscape Designer</p>
+			<p>Arts Festival Coordinator</p>
+			<p>Exhibit Designer</p>
+			<p>Photographer</p>
+			<p>Cook</p>
+			<p>Floral Designer</em></p>
+		</div>
+	</div>
+	<div class="row" style="margin-bottom: 24px;">	
+		<div class="col-auto">
+			<div style="background-color: #defff5; text-align: center; height: 100%; padding: 3px 3px 3px 6px;">
+				<table>
+					<tr>
+						<td>
+							<img src="/img/icons/caret-up-fill.svg" alt="" width="22" height="22" title="">
+							</p><br />
+							Education
+							<br />
+							or
+							<br />
+							Training
+							<br />
+							Required
+							</p><br />
+							<img src="/img/icons/caret-down-fill.svg" alt="" width="22" height="22" title="">
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="col">
+			<h5>Communication Services</h5>
+			<p><em>Copyright Attorney</p>
+			<p>Public Relations Specialist</p>
+			<p>Community Affairs Director</p>
+			<p>TV/Radio Talk Show Host</p>
+			<p>College Marketing Specialist</p>
+			<p>Cultural Marketing Specialist</p>
+			<p>Broadcaster</p>
+			<p>Editorial Writer</p>
+			<p>Documentary Film Maker</p>
+			<p>Interpreter</p>
+			<p>Product Spokesperson</p>
+			<p>Theatrical Press Agent</p>
+			<p>Market Researcher</em></p>
+		</div>
+	</div>
+	</div>
 
 
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/07/2018. </blockquote>
+
+
