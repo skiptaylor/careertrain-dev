@@ -483,7 +483,8 @@ div#alert {
 
 
 div#ground	{
-	background-image: url("../img/CDe-ground.jpg");
+	/*background-image: url("../img/CDe-ground.jpg");*/
+	background-image: url("../img/hiker.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
