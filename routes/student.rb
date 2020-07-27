@@ -384,7 +384,7 @@ get "/student/resume/students-school/?" do
    	end
     
   
-  @student = Student.all(order: [:created_at.desc], :school_password.like  =>  "%#{params[:search]}%", :created_at.gte => @start, :created_at.lte => @end)
+  @student = Student.all(order: [:created_on.desc], :school_password.like  =>  "%#{params[:search]}%", :created_on.gte => @start, :created_on.lte => @end)
   
   
   if params[:csv]
@@ -397,7 +397,7 @@ get "/student/resume/students-school/?" do
 			@student.each do |s|
         if s.school_id
 				csv << [
-          format_american_day(s.created_at),
+          format_american_day(s.created_on),
           "#{s.school.school_name}",
           s.first_name,
           s.middle_name,
@@ -408,7 +408,7 @@ get "/student/resume/students-school/?" do
 					s.state,
           s.zip,
           s.phone,
-          format_american_day(s.birth_date)
+          
 				]
         end
 			end
