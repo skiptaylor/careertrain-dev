@@ -7,7 +7,7 @@
 				<% end %>
 				
 				
-				<h1 class="page-header"><span class="logo-e">e</span>CareerDirection Class Reports</h1>
+				<h1 class="page-header">Class Reports</h1>
 			</div>
 			
 			<div class=" col-md-5">
@@ -20,42 +20,56 @@
 						<strong>School Password:</strong> &nbsp; <%= @school.school_password %><br />
 
 						<strong>Recruiter:</strong> &nbsp; <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %><br />
-						<small style="color: #e31400;">Total registered students in school: &nbsp;&nbsp;<%= @school.students.count %></small></p>
+						<small>Total registered students in this school: &nbsp;&nbsp;<strong><%= @school.students.count %></strong></small></p>
 			</div>		
 			<div class=" col-md-7">
+				<p>
+					<strong>Select class date</strong>
+				</p>
+				<p>
+					<span style="float:left;"><%= date_to_field('start', @start) %></span><button type="submit" class="btn btn-primary pull-left" style="margin-left: 6px; margin-top: 2px;">Show</button>
+				</p>
+				<p class="clear-both">&nbsp;<br /><br /></p>
 				
 				<form method="get">
-					<p>
-						<span style="float:left;"><%= date_to_field('start', @start) %></span><button type="submit" class="btn btn-primary pull-left" style="margin-left: 12px; margin-top: 2px;">Filter</button> 
-						<!-- <a href="<%= request.url %><%= params.count > 0 ? '&export=true' : '?export=true' %>" class="btn">Export</a> -->
+				<div class="row" style="margin-top: 2em;">
+				<div class="col">
+
+					<p><strong>Summary Report</strong></p>
+					<p><a href="<%= request.url %><%= params.count > 0 ? '&export=true' : '?export=true' %>" class="btn btn-success" >Export</a>
 					</p>
+				</div>
+				<div class="col">
+					<p><strong>Individual Reports</strong></p>
+					<p><a href="<%= request.url %><%= params.count > 0 ? '&export=true' : '?export=true' %>" class="btn btn-success" >Export</a></p>
+				</div>
 				</form>
-				
+				</div>
 			</div>
 		</div>
 		<div class="row"> 
 			<div class="col-md-12">	
 				
 				<br />
-				<span style="color: #e31400;">This table currently displays all students at <strong><%= @school.school_name %></strong> with the <strong>school password</strong>. Report filters to come.</span>
+
 				<table class="table table-striped table-condensed table-hover">
 						<tr>
-							<th>Name&nbsp;&nbsp;<small style="color: #e31400;">created on date</small></th>
+							<th>Student</th>
 							<th>School Password</th>
-							<th>Email</th>
+							<th>Class Date</th>
 						</tr>
 					
 						<% @school.students.sort_by(&:created_at).reverse.each do |student| %>
 						
 						<tr>
 							<td>
-								<strong><%= student.first_name %>  <%= student.last_name %></strong>&nbsp;&nbsp;<small style="color: #e31400;"><%= format_american_day(student.created_on) %></small>
+								<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %>
 							</td>
 							<td>
 								<%= student.school_password %>
 							</td>
 							<td> 
-								<%= student.email %>
+								<%= format_american_day(student.created_on) %>
 							</td>
 						
 						</tr>

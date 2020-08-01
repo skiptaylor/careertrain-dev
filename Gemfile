@@ -29,3 +29,8 @@ gem 'prawn-table', '~> 0.2.1'
 
 gem 'vcard', '~> 0.2.8'
 gem 'rack-recaptcha', require: 'rack/recaptcha'
+
+# Used for creating PDF from html
+
+gem 'pdfkit', '~> 0.8.4.3.1'
+gem 'wkhtmltopdf-binary', '~> 0.12.6.2'

@@ -7,6 +7,7 @@ class Presentation
 
   property :class_code,  String
   property :class_date,  Date
+  property :number_students, Integer
   
   property :recruiter_id,  Integer
   property :school_password, String
