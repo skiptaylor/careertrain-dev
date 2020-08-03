@@ -89,6 +89,52 @@ end
 
 
 
+
+get '/arng/schools/:id/summary_report/?' do
+  
+  auth_recruiter
+  @school = School.get(params[:id])
+  @recruiter = Recruiter.get(params[:recruiter_id])
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :created_on => @start)
+  
+  content_type 'application/pdf'
+
+  pdf = Prawn::Document.new
+     pdf.font "Helvetica"
+     pdf.font_size 10
+     
+     pdf.move_down(0)
+     pdf.text "<b><font size='11px'>Summary Report</font></b>",
+     :inline_format => true, :leading => 1, :align => :center
+     
+     pdf.text "<b>#{@school.school_name}</b>
+     #{@school.school_city} #{@school.school_state}",
+     :inline_format => true, :leading => 1
+		  pdf.text "#{@start}",
+     :inline_format => true, :leading => 1
+      
+     @school.students.sort_by(&:created_on).each do |student|
+      
+
+			  pdf.move_down(8)
+				pdf.text "<b>#{student.first_name} #{student.middle_name} #{student.last_name}</b>",
+        :inline_format => true, :leading => 1
+        pdf.text "#{format_american_day(student.created_on)}",
+        :inline_format => true, :leading => 1
+				
+				
+			end
+			
+ 			
+
+ 
+    pdf.render
+ 
+end
+
+
+
+
 get '/arng/schools/:id/?' do
   auth_recruiter
   @recruiter = Recruiter.all
