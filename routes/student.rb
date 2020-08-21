@@ -63,10 +63,19 @@ post '/student/reports/create/?' do
             :zip              => params[:zip],
             :phone            => params[:phone],
             :school_password  => params[:school_password],
-            :future           => params[:future],
             :sub_code         => params[:sub_code],
+            :grade            => params[:grade],
+            :future1          => params[:future1],
+            :future2          => params[:future2],
+            :future3          => params[:future3],
+            :future4          => params[:future4],
+            :future5          => params[:future5],
+            :future6          => params[:future6],
+            :future7          => params[:future7],
+            :future8          => params[:future8],
             :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}"),
             )
+            
             
             session[:student] = @student.id
             
@@ -176,11 +185,11 @@ post '/student/reports/:id/edit/?' do
   
   if school = School.first(:school_password => params[:school_password])
     
-  @student = Student.get(params[:id]).update(
+  student = Student.get(params[:id]).update(
     :school_id => school.id
   )
   
-  @student = Student.get(params[:id]).update(
+  student = Student.get(params[:id]).update(
     :email            => params[:email],
     :password         => params[:password],
     :name             => params[:name],
@@ -193,10 +202,20 @@ post '/student/reports/:id/edit/?' do
     :zip              => params[:zip],
     :phone            => params[:phone],
     :school_password  => params[:school_password],
-    :future           => params[:future],
+    :grade            => params[:grade],
+    :future1          => params[:future1],
+    :future2          => params[:future2],
+    :future3          => params[:future3],
+    :future4          => params[:future4],
+    :future5          => params[:future5],
+    :future6          => params[:future6],
+    :future7          => params[:future7],
+    :future8          => params[:future8],
     :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
   )
-
+  
+  
+  
   redirect("/student/reports/report/report_profile")
   
   else
@@ -317,9 +336,18 @@ post '/student/resume/create/?' do
             :zip          => params[:zip],
             :phone        => params[:phone],
             :school_password => params[:school_password],
-            :future           => params[:future],
+            :grade            => params[:grade],
+            :future1          => params[:future1],
+            :future2          => params[:future2],
+            :future3          => params[:future3],
+            :future4          => params[:future4],
+            :future5          => params[:future5],
+            :future6          => params[:future6],
+            :future7          => params[:future7],
+            :future8          => params[:future8],
             :birth_date   => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}"),
             )
+            
             
             session[:student] = @student.id
             
@@ -531,7 +559,7 @@ end
 get "/student/resume/sign-out/?" do
   session[:student] = nil
   flash[:alert] = 'Thank you, come again!'
-  redirect "/student/student"
+  redirect "/student/report"
 end
   
 get "/student/resume/index/?" do
@@ -568,9 +596,18 @@ post '/student/resume/:id/edit/?' do
     :zip       => params[:zip],
     :phone     => params[:phone],
     :school_password => params[:school_password],
-    :future           => params[:future],
+    :grade            => params[:grade],
+    :future1          => params[:future1],
+    :future2          => params[:future2],
+    :future3          => params[:future3],
+    :future4          => params[:future4],
+    :future5          => params[:future5],
+    :future6          => params[:future6],
+    :future7          => params[:future7],
+    :future8          => params[:future8],
     :birth_date   => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
   )
+  
     
   redirect "/student/resume/index"
   
@@ -612,9 +649,18 @@ post '/student/resume/edit/?' do
     :zip       => params[:zip],
     :phone     => params[:phone],
     :school_password => params[:school_password],
-    :future           => params[:future],
+    :grade            => params[:grade],
+    :future1          => params[:future1],
+    :future2          => params[:future2],
+    :future3          => params[:future3],
+    :future4          => params[:future4],
+    :future5          => params[:future5],
+    :future6          => params[:future6],
+    :future7          => params[:future7],
+    :future8          => params[:future8],
     :birth_date   => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
   )
+  
     
   redirect "/student/resume/index"
   

@@ -73,37 +73,92 @@
 				<input type="text" name="phone" id="phone" class="form-control" placeholder="" value="<%= @student.phone %>" />
 			</div>
 		</div>
-		<div class="form-row">		
-			<div class="form-group col-md-6">			
+		<!-- <div class="form-row">
+			<div class="form-group col-md-6">
 				<label for="birth_date">Date of Birth</label>
 				<div class="input-append date">
 					<%= date_to_field('birth_date', (@student.birth_date || Time.now)) %>
 				</div>
 			</div>
-		</div>		
-		<div class="form-row">		
-			<div class="form-group col-md-6">			
-				<label for="future">Future Plans</label>
-				<select type="text" class="form-control" name="future" id="future" style="text-align: center;" >
-	  						<option value="Select one">-- Select one --</option>
-	  						<option <%= 'selected' if @student.future == 'Enter technical college/trade school' %> value="Enter technical college/trade school">Enter technical college/trade school</option>
-	  						<option <%= 'selected' if @student.future == 'Work full-time' %> value="Work full-time">Work full-time</option>
-	  						<option <%= 'selected' if @student.future == 'Work part-time' %> value="Work part-time">Work part-time</option>
-	  						<option <%= 'selected' if @student.future == 'Enter the military' %> value="Enter the military">Enter the military</option>
-	  						<option <%= 'selected' if @student.future == 'Go to college' %> value="Go to college">Go to college</option>
-	  						<option <%= 'selected' if @student.future == 'I have money to pay for education' %> value="I have money to pay for education">I have money to pay for education</option>
-	  						<option <%= 'selected' if @student.future == "Counting on parents for money for education" %> value="Counting on parents for money for education">Counting on parents for money for education</option>
-	  						<option <%= 'selected' if @student.future == 'Considering sources' %> value='Considering sources'>Considering sources of financial aid or scholarships</option>
+		</div> -->
+		
+		<div class="form-row">
+			<div class="control-group">		
+				<label for="grade">Grade level</label>
+				<select type="text" class="form-control" name="grade" id="grade" style="text-align: center; margin-bottom: 10px;" >
+					<option value="Select one">-- Select one --</option>
+					<option <%= 'selected' if @student.grade == '9' %> value="9">9</option>
+					<option <%= 'selected' if @student.grade == '10' %> value="10">10</option>
+					<option <%= 'selected' if @student.grade == '11' %> value="11">11</option>
+					<option <%= 'selected' if @student.grade == '12' %> value="12">12</option>
+					<option <%= 'selected' if @student.grade == 'College' %> value="College">College</option>
 				</select>
 			</div>
 		</div>
-		<div class="form-row">				
-			<div class="form-group col-md-6">
-				<label class="checkbox">
-					<input type="checkbox" value="account" onClick="EnableSubmit(this)" checked />&nbsp;&nbsp; I am 13 or older
-					</label>
+		
+		
+		<div class="form-row">
+			<div class="control-group">
+				<label for="future1">Future Plans</label>
 			</div>
+		</div>
+		<div class="form-row">
+			<div class="control-group">
+				<label for="future1"> &nbsp; </label>
+				<input type="checkbox" name="future1" id="future1" <%= 'checked="checked"' if @student.future1  %> /> <span> &nbsp; Enter technical college/trade school</span>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="control-group">		
+				<label for="future2"> &nbsp; </label>
+				<input type="checkbox" name="future2" id="future2" <%= 'checked="checked"' if @student.future2  %> /> <span> &nbsp; Work full-time</span>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="control-group">	
+				<label for="future3"> &nbsp; </label>
+				<input type="checkbox" name="future3" id="future1" <%= 'checked="checked"' if @student.future3  %> /> <span> &nbsp; Work part-time</span>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="control-group">		
+				<label for="future4"> &nbsp; </label>
+				<input type="checkbox" name="future4" id="future4" <%= 'checked="checked"' if @student.future4  %> /> <span> &nbsp; Enter the military</span>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="control-group">	
+				<label for="future5"> &nbsp; </label>
+				<input type="checkbox" name="future5" id="future5" <%= 'checked="checked"' if @student.future5  %> /> <span> &nbsp; Go to college</span>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="control-group">		
+				<label for="future6"> &nbsp; </label>
+				<input type="checkbox" name="future6" id="future6" <%= 'checked="checked"' if @student.future6  %> /> <span> &nbsp; I have money to pay for education</span>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="control-group">		
+				<label for="future7"> &nbsp; </label>
+				<input type="checkbox" name="future7" id="future7" <%= 'checked="checked"' if @student.future7  %> /> <span> &nbsp; Counting on parents for money for education</span>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="control-group">		
+				<label for="future8"> &nbsp; </label>
+				<input type="checkbox" name="future8" id="future8" <%= 'checked="checked"' if @student.future8  %> /> <span> &nbsp; Considering sources of financial aid or scholarships</span>
+			</div>
+		</div>
+		
+		
+		
+		
+				
+		<div class="form-row">				
 			<div class="form-group col-md-6" style="text-align: right;">
+
+			
 				<label for="account"></label>
 				<button class="btn btn-primary" id="account" type="submit">Save</button> &nbsp;&nbsp;&nbsp;&nbsp;<a onclick="goBack()" class="btn">Cancel</a>
 			</div>

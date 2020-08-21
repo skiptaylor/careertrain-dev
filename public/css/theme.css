@@ -31,7 +31,7 @@ body {
   color: #000000;
 }
 
-/*.navbar-inverse ul.nav li.a:hover 	{
+.navbar-inverse ul.nav li.a:hover 	{
 	color: #ffffff;
 }
 
@@ -80,7 +80,8 @@ body {
 .navbar-inverse .navbar-link:active {
   color: red;
 }
-*/
+
+
 /*.aTabs > li.active > a,
 .aTabs > li.active > a:hover,
 .aTabs > li.active > a:focus {
@@ -125,7 +126,8 @@ h2	{
 
 
 .page-header	{
-	margin: 18px 0 32px 0;
+	font-size: 2.4em;
+	margin: 18px 0 22px 0;
 	line-height: 1.15em;
 	padding-bottom: 8px;
 	border-bottom: 1px solid #1abd9c;
@@ -227,9 +229,9 @@ footer	{
 .lead	{
 	color: black;
 	font-weight: 300;
-	font-size: 1.5em;
-	line-height: 1.6em;
-	margin-bottom: 20px;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	margin-bottom: 14px;
 }
 
 hr	{
@@ -484,7 +486,7 @@ div#alert {
 
 div#ground	{
 	/*background-image: url("../img/CDe-ground.jpg");*/
-	background-image: url("../img/hiker.jpg");
+	background-image: url("../img/eCD test 1 image.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;

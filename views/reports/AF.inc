@@ -36,7 +36,6 @@
 		</div>
 		<div class="col" style="margin-bottom: 20px;">
 			<h5>Biotechnology<br />Environmental</h5>
-
 			<p><em>Veterinarian</p>
 			<p>Aquatic Biologist</p>
 			<p>Ecologist</p>
@@ -65,7 +64,6 @@
 		</div>
 		<div class="col">
 			<h5>Engineering</h5>
-
 			<p><em>Engineer</p>
 			<p>Electrical Engineer</p>
 			<p>Mechanical Engineer</p>

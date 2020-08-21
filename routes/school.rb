@@ -83,6 +83,9 @@ get '/arng/schools/:id/school_report/?' do
   
   @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :created_on => @start)
   
+  @school.class_date = @start
+  @school.save
+  
   erb :"/arng/schools/school_report"
 end
 
@@ -95,42 +98,70 @@ get '/arng/schools/:id/summary_report/?' do
   auth_recruiter
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
-  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :created_on => @start)
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
+  
+  content_type 'application/pdf'
+
+  pdf = Prawn::Document.new
+  pdf = Prawn::Document.new(page_size: "LETTER", page_layout: :portrait)
+  pdf.font "Helvetica"
+  pdf.font_size 10
+     
+  pdf.move_down(0)
+     pdf.text "<b><font size='11px'>Summary Report</font></b>",
+     :inline_format => true, :leading => 1, :align => :center
+     pdf.text "<b>#{@school.school_name}</b>, #{@school.school_city} #{@school.school_state}, <b>Class Date:</b> #{format_american_day(@school.class_date)}",
+     :inline_format => true, :leading => 1, :align => :center
+
+  pdf.move_down(23)
+
+     @school.students.each do |student|
+       if student.created_on == @school.class_date
+         
+			  pdf.move_down(3)
+				pdf.text "<b>#{student.first_name} #{student.middle_name} #{student.last_name}</b> - #{student.address}, #{student.address2}, #{student.city}, #{student.state} #{student.zip} - #{student.email} - <b>High Scores:</b> #{student.score1} #{student.score2}",
+        :inline_format => true, :leading => 1
+        pdf.text "#{student.future1}, #{student.future2}, #{student.future3}, #{student.future4}, #{student.future5}, #{student.future6}, #{student.future7}, #{student.future8}",
+        :inline_format => true, :leading => 1, :font_size => 8
+				
+      end
+			end
+		
+    pdf.render
+ 
+end
+
+get '/arng/schools/:id/ind_report/?' do
+  
+  auth_recruiter
+  @school = School.get(params[:id])
+  @recruiter = Recruiter.get(params[:recruiter_id])
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
   
   content_type 'application/pdf'
 
   pdf = Prawn::Document.new
      pdf.font "Helvetica"
      pdf.font_size 10
-     
-     pdf.move_down(0)
-     pdf.text "<b><font size='11px'>Summary Report</font></b>",
+     pdf.text "<b><font size='11px'>Individual Student Reports</font></b>",
      :inline_format => true, :leading => 1, :align => :center
-     
-     pdf.text "<b>#{@school.school_name}</b>
-     #{@school.school_city} #{@school.school_state}",
-     :inline_format => true, :leading => 1
-		  pdf.text "#{@start}",
-     :inline_format => true, :leading => 1
-      
-     @school.students.sort_by(&:created_on).each do |student|
-      
+     pdf.text "<font size='9px'>One student per page (instructions and other information goes here)",
+     :inline_format => true, :leading => 1, :align => :center
 
-			  pdf.move_down(8)
-				pdf.text "<b>#{student.first_name} #{student.middle_name} #{student.last_name}</b>",
-        :inline_format => true, :leading => 1
-        pdf.text "#{format_american_day(student.created_on)}",
+     @school.students.each do |student|
+       if student.created_on == @school.class_date
+         pdf.start_new_page
+			  pdf.move_down(3)
+				pdf.text "<b>#{student.first_name} #{student.middle_name} #{student.last_name}</b> - #{format_american_day(student.created_on)} - #{@school.school_password}",
         :inline_format => true, :leading => 1
 				
-				
+      end
 			end
-			
- 			
-
- 
+		 
     pdf.render
  
 end
+
 
 
 

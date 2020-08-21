@@ -29,7 +29,16 @@ class Student
   property :score2, String
   property :score3, String
   
-  property  :future, String
+  property :grade, String
+  
+  property  :future1, String
+  property  :future2, String
+  property  :future3, String
+  property  :future4, String
+  property  :future5, String
+  property  :future6, String
+  property  :future7, String
+  property  :future8, String
 
   belongs_to :school, required: false
   belongs_to :presentation, required: false

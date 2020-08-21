@@ -20,7 +20,7 @@
 						<strong>School Password:</strong> &nbsp; <%= @school.school_password %><br />
 
 						<strong>Recruiter:</strong> &nbsp; <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %><br />
-						<small>Total registered students in this school: &nbsp;&nbsp;<strong><%= @school.students.count %></strong></small></p>
+					</p>
 			</div>		
 			<div class=" col-md-7">
 				<form method="get">
@@ -46,7 +46,7 @@
 					</div>
 					<div class="col">
 						<p><strong>Individual Reports</strong></p>
-						<p><a href="<%= request.url %><%= params.count > 0 ? '&export=true' : '?export=true' %>" class="btn btn-success" >Export</a></p>
+						<p><a href="/arng/schools/<%= @school.id %>/ind_report" class="btn btn-success" >Export</a></p>
 					</div>
 				
 				</div>
@@ -59,7 +59,7 @@
 
 				<table class="table table-sm table-striped table-condensed table-hover">
 						<tr class="table-success">
-							<th>Student</th>
+							<th>Student &nbsp;&nbsp;<small>[ <%= @school.students.count %> ]</small></th>
 							<th>School Password</th>
 							<th>Class Date</th>
 						</tr>
@@ -78,7 +78,7 @@
 							</td>
 						
 						</tr>
-					
+						
 						<% end %>
 					</table>
 				

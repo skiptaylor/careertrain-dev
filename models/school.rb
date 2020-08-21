@@ -28,6 +28,7 @@ class School
   property :email,              Text,   default: ""
   property :arng_email,         Text,   default: ""
   property :number_seniors,     Integer, default: 0
+  property :class_date,         Date
   
   property :active,             Boolean, :default => false
   property :cd,                 Boolean, :default => false

@@ -17,8 +17,6 @@
     # 	message: 'It should be red!'
     # }
     
-   
-
 
   # Redirects with javascript, useful for shadowboxes
 
@@ -165,4 +163,8 @@
     end
 
 
+  end
+  
+  PDFKit.configure do |config|
+    config.wkhtmltopdf = '/usr/bin/wkhtmltopdf'
   end

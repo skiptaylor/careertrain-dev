@@ -4,8 +4,8 @@
   	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   	<meta name="description" content="" />
-  	<meta name="author" content="" />
-  	<title>Career Direction e</title>
+  	<meta name="author" content="Career Training Concepts, Inc." />
+  	<title>eCareerDirection</title>
    <link href="/css/bootstrap.min.css" rel="stylesheet">
   	<link href="/css/bootstrap-reboot.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-grid.min.css" rel="stylesheet">
@@ -57,13 +57,13 @@
 					  Student
 				  </a>
 				  <div class="dropdown-menu pic-border" aria-labelledby="dropdown1">
-					  <a class="dropdown-item <%= active 'student/student' %>" href="/student/student">Career Direction e</a>
+					  
 					  <% unless session[:student] %>
 					  <a class="dropdown-item <%= active 'student/report' %>" href="/student/report">Your Career</a>
 					  <% else %>
 					  <a class="dropdown-item <%= active 'student/reports' %>" href="/student/reports/report/report_profile">Your Career</a>
 					  <% end %>
-					  <!-- <a class="dropdown-item <%= active 'student/resume' %>" href="/student/resume_tool">Resum&eacute; Tool</a> -->
+					  <a class="dropdown-item <%= active 'student/student' %>" href="/student/student"><em>e</em>CareerDirection</a>
 					  <a class="dropdown-item <%= active 'student/feedback' %>" href="/student/feedback">Student Feedback</a>
 					  <a class="dropdown-item <%= active 'student/resources' %>" href="/student/resources">Helpful Links</a>
 	          </div>
