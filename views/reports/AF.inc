@@ -36,7 +36,7 @@
 		</div>
 		<div class="col" style="margin-bottom: 20px;">
 			<h5>Biotechnology<br />Environmental</h5>
-			<p><em>Veterinarian</p>
+			<em><p>Veterinarian</p>
 			<p>Aquatic Biologist</p>
 			<p>Ecologist</p>
 			<p>Geneticist</p>
@@ -44,11 +44,11 @@
 			<p>Physiologist</p>
 			<p>Oceanographer</p>
 			<p>Seismologist</p>
-			<p>Stratigrapher</p>
+			<p>Stratigrapher</p></em>
 		</div>
 		<div class="col" style="margin-bottom: 20px;">
 			<h5>Information</h5>
-			<p><em>Urban Planner</p>
+			<em><p>Urban Planner</p>
 			<p>Systems Analyst</p>
 			<p>Computer
 				<ul>
@@ -60,11 +60,11 @@
 			<p>Information Systems Mgr.</p>
 			<p>Applications Programmer</p>
 			<p>User Support Analyst</p>
-			<p>Recording Engineer</em></p>
+			<p>Recording Engineer</p></em>
 		</div>
 		<div class="col">
 			<h5>Engineering</h5>
-			<p><em>Engineer</p>
+			<em><p>Engineer</p>
 			<p>Electrical Engineer</p>
 			<p>Mechanical Engineer</p>
 			<p>Civil Engineer</p>
@@ -74,7 +74,7 @@
 			<p>Materials Engineer</p>
 			<p>Medical Scientist</p>
 			<p>Waste Management</p>
-			<p>Water Quality Technologist</em></p>
+			<p>Water Quality Technologist</p></em>
 		</div>
 	</div>
 	</div>
