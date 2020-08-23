@@ -8,8 +8,12 @@
 				<div>
 					<h6>Take the <em>e</em>CD Exercise to focus on your future</h6>
 					<p class="lead">Let's take the Inventory Exercise to get your Careers and Occupations Guide Report.</p>
-					<p>This is your own personalized academic and career planning report.</p>
+					<p>This is your own personalized academic and career planning report. You may take the exercise a second time to better define your career preferences</p>
+					<% if @student.exercises.count < 2 %>
 					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success">Inventory Exercise</a></p>
+					<% else %>
+					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/report" class="btn btn-success">Inventory Exercise Reports</a></p>
+					<% end %>
 				</div>
 				<hr style="margin: 20px 0; border-top-color: #1abc9c;" />
 				<div>
