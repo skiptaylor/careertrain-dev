@@ -39,6 +39,7 @@ class Student
   property  :future6, String
   property  :future7, String
   property  :future8, String
+  property  :future9, String
 
   belongs_to :school, required: false
   belongs_to :presentation, required: false

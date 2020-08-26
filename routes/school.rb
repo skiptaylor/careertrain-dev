@@ -136,29 +136,15 @@ get '/arng/schools/:id/ind_report/?' do
   auth_recruiter
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
-  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
+  @exercise = Exercise.get(params[:exercise_id])
+  @student = Student.get(params[:id])
   
-  content_type 'application/pdf'
-
-  pdf = Prawn::Document.new
-     pdf.font "Helvetica"
-     pdf.font_size 10
-     pdf.text "<b><font size='11px'>Individual Student Reports</font></b>",
-     :inline_format => true, :leading => 1, :align => :center
-     pdf.text "<font size='9px'>One student per page (instructions and other information goes here)",
-     :inline_format => true, :leading => 1, :align => :center
-
-     @school.students.each do |student|
-       if student.created_on == @school.class_date
-         pdf.start_new_page
-			  pdf.move_down(3)
-				pdf.text "<b>#{student.first_name} #{student.middle_name} #{student.last_name}</b> - #{format_american_day(student.created_on)} - #{@school.school_password}",
-        :inline_format => true, :leading => 1
-				
-      end
-			end
-		 
-    pdf.render
+ 
+  
+ 
+   erb :'arng/schools/ind_report', layout: false
+ 
+ 
  
 end
 

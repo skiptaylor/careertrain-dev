@@ -1,0 +1,126 @@
+   <link href="/css/bootstrap.min.css" rel="stylesheet">
+  	<link href="/css/bootstrap-reboot.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-grid.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="/css/resume-style.css" />
+	<link type="text/css" rel="stylesheet" href="/css/datetimepicker.css" />
+	<link type="text/css" rel="stylesheet" href="/css/resume-content.css" />
+	<link type="text/css" rel="stylesheet" href="/css/theme.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome-ie7.min.css" />
+	<link type="text/css" rel="stylesheet" href="/css/buttons_altered.css" />
+
+<style>
+	p	{
+		line-height: 1.1em;
+	}
+	
+	h5	{
+		font-size: 18px;
+		font-weight: 600;
+	}
+	ul	{
+		margin-bottom: 1px;
+	}
+	td {
+	  height: 275px;
+	  vertical-align: bottom;
+	}
+	
+	table.side tr td	{
+		font-size: 12px;
+		height: 0px;
+		vertical-align: top;
+		padding-top: 0;
+		
+	}
+	
+	div.inter	{
+		/*display: none;*/
+	}
+	
+	@media print {
+	  .pager {page-break-after: always;}
+	}
+</style>
+
+
+	<div class="container">	
+		<div class="row">  
+			<div class="col-md-12">
+				
+				<% if @school.students.each do |student| %>
+				<% if student.created_on == @school.class_date %>
+				
+				<br />	
+				<div style="float: right;"><strong>Date:</strong> &nbsp;&nbsp;<%= Time.now.strftime("%m/%d/%Y") %></div>
+				<h6><strong><em>e</em>CareerDirection</strong> - Interest Inventory Student Planning Report</h6>
+				
+				<p><strong>School: &nbsp;&nbsp;<%= @school.school_name %></strong> - <%= @school.school_address1 %> <%= @school.school_address2 %>, <%= @school.school_city %>, <%= @school.school_state %> &nbsp;<%= @school.school_zip %> &nbsp;&nbsp;- &nbsp;&nbsp;<strong>Rep:</strong> <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %></p>
+				<p><strong>Student:</strong> &nbsp;&nbsp;<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Grade:</strong> &nbsp;&nbsp;<%= student.grade %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Email:</strong>&nbsp;&nbsp;<%= student.email %> <% if student.phone %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Phone:</strong>&nbsp;&nbsp;<%= student.phone %><% end %></p>
+					
+						<form method="post" id="exercise">
+						<table cellpadding="10" cellspacing="0" class="side" style="margin: -9px;">
+						<tr>
+							<th style="text-align: left; font-size: 14px;"><em>e</em>CD Interest Exercise Scores</th>
+							<th style="text-align: left; font-size: 14px;">Date</th>
+							<th style="text-align: center; font-size: 14px;">A</th>
+							<th style="text-align: center; font-size: 14px;">B</th>
+							<th style="text-align: center; font-size: 14px;">C</th>
+							<th style="text-align: center; font-size: 14px;">D</th>
+							<th style="text-align: center; font-size: 14px;">E</th>
+							<th style="text-align: center; font-size: 14px;">F</th>
+							<th style="text-align: center; font-size: 14px;">G</th>
+							<th style="text-align: center; font-size: 14px;">H</th>
+							<th style="text-align: center; font-size: 14px;">I</th>
+						</tr>
+					<% student.exercises.reverse.each do |e| %>
+					
+						<tr>
+							<td style="line-height: 0.8em; text-align: left;"> &nbsp; </td> 
+							<td style="line-height: 0.8em; text-align: left;"><%= format_day(e.created_at) %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= e.score_a %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= e.score_b %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= e.score_c %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= e.score_d %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= e.score_e %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= e.score_f %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= e.score_g %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= e.score_h %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= e.score_i %></td>
+						</tr>
+					
+					<% end %>
+					</table>
+						</form>
+					<strong>Future Plans:</strong>&nbsp;&nbsp;&nbsp;<% if student.future1 == "on" %>&nbsp;Enter technical college/trade school&nbsp;&nbsp;&nbsp;<% end %> <% if student.future2 == "on" %>&nbsp;Work full-time&nbsp;&nbsp;&nbsp;<% end %> <% if student.future3 == "on" %>&nbsp;Work part-time&nbsp;&nbsp;&nbsp;<% end %> <% if student.future4 == "on" %>&nbsp;Enter the military&nbsp;&nbsp;&nbsp;<% end %> <% if student.future5 == "on" %>&nbsp;Go to college&nbsp;&nbsp;&nbsp;<% end %> <% if student.future6 == "on" %>&nbsp;I have money to pay for education&nbsp;&nbsp;&nbsp;<% end %> <% if student.future7 == "on" %>&nbsp;Counting on parents for money for education&nbsp;&nbsp;&nbsp;<% end %> <% if student.future8 == "on" %>&nbsp;Considering sources of financial aid or scholarships&nbsp;&nbsp;&nbsp;<% end %>
+					<br />
+					<p style="margin-top: 9px;">This report is based on the pairing of the two occupational categories in which you scored highest. Listed below is a general description of the personality type common to people who have your interests. It will help you better understand your unique personality. Next the report lists courses of study, extracurricular activities, and part-time jobs that may be right for you. This information should help you make appropriate decisions as you plan your future. Remember, you are just exploring your future right now and you can look at as many job possibilities as you want. If you want more information on jobs that interest you, ask your Guidance Counselor for additional sources.</p>
+					
+			    <% if student.score1 && student.score2 && File.exists?("./views/reports/#{student.score1}#{student.score2}.inc") %>
+			    	<%= @report1 = File.read("./views/reports/#{student.score1}#{student.score2}.inc") %>
+			    <% elsif student.score1 && @tudent.score2 && File.exists?("./views/reports/#{student.score2}#{student.score1}.inc") %>
+			    	<%= @report1 = File.read("./views/reports/#{student.score2}#{student.score1}.inc") %>
+			    <%  end %>
+
+			    <% if student.score1 && student.score3 && File.exists?("./views/reports/#{student.score1}#{student.score3}.inc") %>
+			    	<%= @report2 = File.read("./views/reports/#{student.score1}#{student.score3}.inc") %>
+			    <% elsif student.score1 && student.score3 && File.exists?("./views/reports/#{student.score3}#{student.score1}.inc") %>
+			    	<%= @report2 = File.read("./views/reports/#{student.score3}#{student.score1}.inc") %>
+			    <% end %>
+				
+  		    	<% end %>
+				
+					<div class="pager"><hr /></div>
+				<hr />
+				
+				<% end %>
+				
+				
+				<% end %>
+			
+			</div>
+				  
+		</div>
+	</div> <!-- /container -->
+
+
