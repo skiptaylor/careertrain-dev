@@ -1,0 +1,3 @@
+<p class="lead">CHARACTERISTICS OF THE <strong>"D"</strong> CATEGORY</p>
+<p class="header2">CLERICAL/ADMINISTRATIVE</p>
+<p>If you have a high score in the "D" category, you are a person that others can rely on to get the job done. You prefer to know what is expected of you. You also prefer to have set procedures for routine tasks. You learn best by experience and like to know the facts. You want to know exactly what will happen.</p>

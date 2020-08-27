@@ -1,3 +1,5 @@
+
+
 	<div class="row">
 		<div class="col-md-12">
 			<p class="lead">Outdoor paired with Arts/Communications (AB)</p>
@@ -14,7 +16,7 @@
 	<div class="d-none d-sm-none d-md-block">
 	<div class="row">
 		<div class="col-auto">
-			<div style="background-color: #defff5; text-align: center; height: 100%; padding: 3px 3px 3px 6px;">
+			<div style="background-color: #defff5; text-align: center; padding: 3px 3px 3px 6px;">
 				<table>
 					<tr>
 						<td>

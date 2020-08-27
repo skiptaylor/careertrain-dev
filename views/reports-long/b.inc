@@ -1,0 +1,4 @@
+<p class="lead">CHARACTERISTICS OF THE <strong>"B"</strong> CATEGORY</p>
+<p class="header2">ARTS/COMMUNICATIONS</p>
+<p>A high score in the "B" category shows that you like to communicate. There are different ways to do this. You may communicate by speaking, writing, and/or visual media. Visual media are charts, graphs, pictures, drawings, or sculptures.</p>
+<p>Your high score means that you are probably very independent and unique. You probably enjoy the idea that you are not like others. You are creative and original and will use these qualities to communicate what you feel and think. You like to be spontaneous and prefer to attend classes that allow you to think on your feet.</p>

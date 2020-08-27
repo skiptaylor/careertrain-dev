@@ -1,0 +1,3 @@
+<p class="lead">CHARACTERISTICS OF THE <strong>"G"</strong> CATEGORY</p>
+<p class="header2">PUBLIC SERVICE</p>
+<p>If you have a high score in the "G" category, you are more than likely very energetic. You are very interested in your community. You also believe that you have a responsibility to make it a better place. You are an independent person and you do not need others to get things done. But you also probably enjoy being on a team. You will be valuable in the work force because you can adapt to what is appropriate to the work situation.</p>

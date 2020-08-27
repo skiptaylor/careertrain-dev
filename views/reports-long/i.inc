@@ -1,0 +1,3 @@
+<p class="lead">CHARACTERISTICS OF THE <strong>"I"</strong> CATEGORY</p>
+<p class="header2">SOCIAL/HELPING</p>
+<p>A high score in category "I" means you probably enjoy relationships with people far more than you enjoy working with systems, equipment, or processes. You are also likely to enjoy helping people. You may be very interested in serving your community and feel a responsibility to make things better for others. Serving and nurturing probably fit you well.</p>
