@@ -73,7 +73,8 @@
 							<th style="text-align: center; font-size: 14px;">H</th>
 							<th style="text-align: center; font-size: 14px;">I</th>
 						</tr>
-					<% student.exercises.reverse.each do |e| %>
+					<% student.exercises.each do |e| %>
+					<% if e == student.exercises.last %>
 					
 						<tr>
 							<td style="line-height: 0.8em; text-align: left;"> &nbsp; </td> 
@@ -88,7 +89,7 @@
 							<td style="line-height: 0.8em; text-align: center;"><%= e.score_h %></td>
 							<td style="line-height: 0.8em; text-align: center;"><%= e.score_i %></td>
 						</tr>
-					
+					<% end %>
 					<% end %>
 					</table>
 						</form>
