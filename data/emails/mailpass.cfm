@@ -8,7 +8,7 @@
 
 <CFMAIL FROM="#FFEmail#" TO="#Email#" Subject="#ptype# Password Issued for Your School" type="html">
 
-<p>Dear Guidance Counselor,</p>
+<p>Dear school Counselor,</p>
 
 <p>Thank you for selecting <i><strong>FUTURE</strong>FOCUS</i> as your career exploration tool this year!</p> 
 

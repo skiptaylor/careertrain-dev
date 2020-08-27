@@ -40,7 +40,7 @@
 			<p>Public Health Education</p>
 			<p>Police Academy</p>
 			<p>Instructor</p>
-			<p>Guidance Counselor</p>
+			<p>school Counselor</p>
 			<p>Training Specialist</p>
 			<p>Library Technician</em></p>
 		</div>
@@ -120,7 +120,7 @@
 			<p>Public Health Education</p>
 			<p>Police Academy</p>
 			<p>Instructor</p>
-			<p>Guidance Counselor</p>
+			<p>school Counselor</p>
 			<p>Training Specialist</p>
 			<p>Library Technician</em></p>
 		</div>

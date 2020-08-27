@@ -36,7 +36,7 @@
 						Public Health Education<br /><br />
 						Police Academy<br /><br />
 						Instructor<br /><br />
-						Guidance Counselor<br /><br />
+						school Counselor<br /><br />
 						Training Specialist<br /><br />
 						Library Technician</em>
 					</td>
@@ -107,11 +107,11 @@
 
 <hr size="1" />
 
-	<span class="header2">Guidance Counselor</span><br /><br />
+	<span class="header2">school Counselor</span><br /><br />
 	<span class="header3">Job Description</span>
-	<blockquote>A guidance counselor has many responsibilities in a school. In this job, you would  listen to your student's problems. You would help students discover their strengths and interests. You would help them reach their educational goals. You might also educate students about important topics such as drug or alcohol use. You might work with elementary, middle school, or high school students.</blockquote>
+	<blockquote>A school Counselor has many responsibilities in a school. In this job, you would  listen to your student's problems. You would help students discover their strengths and interests. You would help them reach their educational goals. You might also educate students about important topics such as drug or alcohol use. You might work with elementary, middle school, or high school students.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need at least a Bachelor's Degree to be a guidance counselor.  Many states require their counselors to do master's level coursework before they can be certified.</blockquote>
+	<blockquote>You need at least a Bachelor's Degree to be a school Counselor.  Many states require their counselors to do master's level coursework before they can be certified.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The yearly salary ranges from $20,000 to $40,000.</blockquote>
 

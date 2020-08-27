@@ -12,7 +12,7 @@
 
 <cfif #Program# eq "FF">
 <CFMAIL FROM="#FFEmail#" TO="#Email#" Subject="FutureFocus Password Verification"  Type="HTML">
-<p>Dear Guidance Counselor:</p>
+<p>Dear school Counselor:</p>
 
 <p>Thank you for your interest in <i><strong>FUTURE</strong>FOCUS</i> and the Careers 
 and Occupations Guide. The password for your school has already
@@ -38,7 +38,7 @@ been issued and is verified as: </p>
 <cfelse> <!---program is Career Direction--->
 
 <CFMAIL FROM="#CD2Email#" TO="#Email#" Subject="#ptype# Password Verification">
-Dear Guidance Counselor:
+Dear school Counselor:
 
 Thank you for your interest in #ptype# and the Careers 
 and Occupations Guide. The password for your school has already
