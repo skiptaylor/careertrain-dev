@@ -298,6 +298,72 @@ get "/student/reports/:id/scores/?" do
   
 end
 
+get "/student/reports/:id/scores_full/?" do
+  @school = School.all
+  @exercise = Exercise.get(params[:exercise_id])
+  @student = Student.get(params[:id])
+  
+    
+  if @student.score1 && @student.score1 != ''
+    
+  else
+    @student.score1 = false
+  end
+
+  if @student.score2 && @student.score2 != ''
+    
+  else
+    @student.score2 = false
+  end
+
+  if @student.score3 && @student.score3 != ''
+    
+  else
+    @student.score3 = false
+  end
+  
+  if @student.score1 && File.exists?("./views/reports-long/#{@student.score1}.inc")
+    @cat1 = File.read("./views/reports-long/#{@student.score1}.inc")
+  end
+
+  if @student.score2 && File.exists?("./views/reports-long/#{@student.score2}.inc")
+    @cat2 = File.read("./views/reports-long/#{@student.score2}.inc")
+  end
+
+  if @student.score3 && File.exists?("./views/reports-long/#{@student.score3}.inc")
+    @cat3 = File.read("./views/reports-long/#{@student.score3}.inc")
+  end
+  
+  if @student.score1 && @student.score2 && File.exists?("./views/reports-long/#{@student.score1}#{@student.score2}.inc")
+    @report1 = File.read("./views/reports-long/#{@student.score1}#{@student.score2}.inc")
+  elsif @student.score1 && @tudent.score2 && File.exists?("./views/reports-long/#{student.score2}#{student.score1}.inc")
+    @report1 = File.read("./views/reports-long/#{student.score2}#{student.score1}.inc")
+  end
+
+  if @student.score1 && @student.score3 && File.exists?("./views/reports-long/#{@student.score1}#{@student.score3}.inc")
+    @report2 = File.read("./views/reports-long/#{@student.score1}#{@student.score3}.inc")
+  elsif @student.score1 && @student.score3 && File.exists?("./views/reports-long/#{@student.score3}#{@student.score1}.inc")
+    @report2 = File.read("./views/reports-long/#{@student.score3}#{@student.score1}.inc")
+  end
+
+  if @student.score2 && @student.score3 && File.exists?("./views/reports-long/#{@student.score2}#{@student.score3}.inc")
+    @report3 = File.read("./views/reports-long/#{@student.score2}#{@student.score3}.inc")
+  elsif @student.score2 && @student.score3 && File.exists?("./views/reports-long/#{@student.score3}#{@student.score2}.inc")
+    @report3 = File.read("./views/reports-long/#{@student.score3}#{@student.score2}.inc")
+  end
+  
+ 
+ 
+ # -------------------- show report ---------------------
+ if @student.score1 && @student.score2
+   erb :'student/reports/scores_full'
+ else
+   erb :'student/reports/report'
+ end
+  
+end
+
+
 
 # -------------------- RESUME ---------------------
 

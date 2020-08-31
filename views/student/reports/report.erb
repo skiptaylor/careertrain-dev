@@ -15,10 +15,12 @@
 			<div class="col-md-7">
 				
 			<form method="get">
-				<h4>Your Highest Score - <%= @student.score1 %></h4>
-				<h4>Your 2nd Highest Score - <%= @student.score2 %></h4>
+				<h5>Your Highest Score - <%= @student.score1 %></h5>
+				<h5>Your 2nd Highest Score - <%= @student.score2 %></h5>
 				<br />
-				<a href="/student/reports/<%= @student.id %>/scores"  class="btn btn-success">View short Report</a>
+				<a href="/student/reports/<%= @student.id %>/scores"  class="btn btn-success">View short Report</a> &nbsp;&nbsp;&nbsp;&nbsp;
+				
+				<a href="/student/reports/<%= @student.id %>/scores_full"  class="btn btn-success">Download full Report</a>
 			</form>
 			
 			</div>

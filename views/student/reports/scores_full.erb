@@ -140,10 +140,19 @@
 
 <body>
 	<div id="container">
-		<p style="margin-top: 24px;">
+		
+		<span class="d-none d-sm-none d-md-block"><p  style="float: right; margin-top:12px;"><a onclick="goBack()" class="btn">Back</a></p><img src="/img/arng_4cp_cta_camo.png" style="float: right; margin: 12px 24px;" width="80px"></span>
+		<span class="d-block d-md-none"><img src="/img/arng_4cp_cta_camo.png" style="float: right; margin-top:12px;" width="60px"></span>
+		
+		
+		<span class="d-none d-sm-none d-md-block"><img src="/img/eCareerDirection-logo-black.svg" style="margin-top:42px;" width="240px"></span>
+		<span class="d-block d-md-none"><img src="/img/eCareerDirection-logo-black.svg" style="margin-top:42px;" width="210px"></span>
+		
+		
+		<!-- <p style="margin-top: 24px;">
 			<img src="/img/arng_4cp_cta_camo.png" width="82px" style="float: right;">
-			<img src="/img/ctc.png">
-		</p>
+			<img src="/img/eCareerDirection-logo-black.svg" width="300px">
+		</p> -->
 		<hr />
 		
 		<p class="lead">Report for <%= @student.first_name %> <%= @student.last_name %> at <%= @student.school.school_name %></p>
