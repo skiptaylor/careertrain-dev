@@ -356,7 +356,7 @@ get "/student/reports/:id/scores_full/?" do
  
  # -------------------- show report ---------------------
  if @student.score1 && @student.score2
-   erb :'student/reports/scores_full'
+   erb :'student/reports/scores_full', layout: false
  else
    erb :'student/reports/report'
  end

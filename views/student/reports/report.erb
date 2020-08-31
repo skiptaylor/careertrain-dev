@@ -18,11 +18,14 @@
 				<h5>Your Highest Score - <%= @student.score1 %></h5>
 				<h5>Your 2nd Highest Score - <%= @student.score2 %></h5>
 				<br />
-				<a href="/student/reports/<%= @student.id %>/scores"  class="btn btn-success">View short Report</a> &nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="/student/reports/<%= @student.id %>/scores" style="margin-bottom: 9px;" class="btn btn-success">View short Report</a> &nbsp;&nbsp;&nbsp;&nbsp;
 				
-				<a href="/student/reports/<%= @student.id %>/scores_full"  class="btn btn-success">Download full Report</a>
+				<a href="/student/reports/<%= @student.id %>/scores_full" style="margin-bottom: 9px;" class="btn btn-success">Download full Report</a>
 			</form>
 			
+			</div>
+			<div class="col-md-12">
+			<p class="flash">Might need to explain about videos and reports here.</p>
 			</div>
 		</div>
 		<br />

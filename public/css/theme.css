@@ -383,7 +383,9 @@ select.year {
 
 
 .flash	{
-	color: red;
+	color: #dc0042;
+	font-weight: 600;
+	font-size: 0.85em;
 }
 
 .sign-in {
