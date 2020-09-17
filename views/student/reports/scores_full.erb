@@ -3,7 +3,7 @@
 	<head>
 	  	<meta charset="utf-8" />
 	  	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-	  	<title><em>e</em>CareerDirection</title>
+	  	<title>eCareerDirection</title>
 			<style type="text/css">
 			
 			
@@ -64,10 +64,10 @@
 
 			td {
 				text-align: left;
-				line-height: 21px;
+				line-height: 16px;
 				font-size: 14px;
 				margin: 0;
-				padding: 6px 12px;
+				padding: 4px 9px;
 			}
 							
 			ul, ol	{
@@ -140,6 +140,7 @@
 
 <body>
 	<div id="container">
+		<form id="fullreport">
 		
 		<img src="/img/arng_4cp_cta_camo.png" style="float: right; margin: 12px 24px;" width="80px">
 		
@@ -239,7 +240,7 @@
 		  <%= @report1 %>
 		  <hr />
     <% end %>
-		<center><a href="http://www.nationalguard.com/events/citizen-soldier" target="blank"><img src="/img/ads/Patriotism.gif" /></a></center>
+		<!-- <center><a href="http://www.nationalguard.com/events/citizen-soldier" target="blank"><img src="/img/ads/Patriotism.gif" /></a></center>
     <% if @report2 %>
 		  <hr class="divider" /><br />
 		  <%= @report2 %>
@@ -251,7 +252,7 @@
 		  <%= @report3 %>
 		  <hr />
     <% end %>
-		<center><a href="http://www.nationalguard.com/benefits" target="blank"><img src="/img/ads/FindAdventure.gif" /></a></center>
+		<center><a href="http://www.nationalguard.com/benefits" target="blank"><img src="/img/ads/FindAdventure.gif" /></a></center> -->
 		<br />
 		<center><a href="http://www.nationalguard.com/benefits/enlistment-options" target="blank"><img src="/img/ads/guard1.gif" /></a></center>
 		<br />
@@ -261,6 +262,10 @@
 		<p><center><a href="/student/student" class="button">Sign out</a></center></p>
 		<hr />
 		<p><center><small>&copy; <%= Time.now.strftime("%Y") %> Career Training Concepts Inc.</small></center></p>
+
+
+		<input type="submit" id="submit" class="btn btn-primary" value="email" />
+		<form>
 
 	</div>
 </body>

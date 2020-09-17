@@ -488,9 +488,10 @@ div#alert {
 
 div#ground	{
 	/*background-image: url("../img/CDe-ground.jpg");*/
-	background-image: url("../img/eCD test 1 image.jpg");
+	background-image: url("../img/eCDweb.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: top center;
 	position: relative;
    -webkit-transition: all .3s ease-in-out;
         -o-transition: all .3s ease-in-out;
@@ -499,9 +500,9 @@ div#ground	{
 
 
 .logo-e	{
-	font-family: "Times New Roman", Times, serif;
+	
 	font-style: italic;
-	font-size: 1.3em;
+	
 	color: #1abd9c;
 }
 

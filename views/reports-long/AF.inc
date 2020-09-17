@@ -110,7 +110,7 @@ explore:</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">AF Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">

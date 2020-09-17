@@ -363,6 +363,11 @@ get "/student/reports/:id/scores_full/?" do
   
 end
 
+post "/student/reports/:id/scores_full/?" do
+  email.fullreport
+  redirect "/student/reports/report"
+end
+
 
 
 # -------------------- RESUME ---------------------

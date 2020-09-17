@@ -28,13 +28,17 @@ end
 
 post '/contact_us/?' do
   if params[:email_name] == ""
+    
+    
+    
+    
 	Pony.mail(
-		headers: { 'Content-Type' => 'text/html' },
-		to: 'info@careertrain.com, tayloraid@gmail.com',
-		from: 'contactUs@careertrain.com',
-		subject: "#{params[:subject]}",
-		body: "#{markdown params[:msg]}<hr />#{params[:name]}<br />#{params[:email]}"
-	)
+   headers: { 'Content-Type' => 'text/html' },
+   to: 'info@careertrain.com, tayloraid@gmail.com',
+   from: 'contactUs@careertrain.com',
+   subject: "#{params[:subject]}",
+   body: "#{markdown params[:msg]}<hr />#{params[:name]}<br />#{params[:email]}"
+   )
 	redirect '/thanks'
   end
 end
@@ -109,12 +113,12 @@ get '/student/resume/resume' do
 #      :inline_format => true, :leading => 16, :align => :center
      
      pdf.text "<b><font size='13px'>#{@student.first_name} #{@student.middle_name} #{@student.last_name}</font></b>",
-     :inline_format => true, :leading => 8
+     :inline_format => true, :leading => 8, :align => :center
 		pdf.text "#{@student.address}
 		#{@student.city}, #{@student.state}  #{@student.zip}
 		#{formatted_number(@student.phone)}
 		#{@student.email}", 
-     :inline_format => true, :leading => 1
+     :inline_format => true, :leading => 1, :align => :center
       
      pdf.move_down(24)
      pdf.text "<b><font size='10px'>Objectives</font></b>",

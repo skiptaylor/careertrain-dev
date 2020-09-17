@@ -1,28 +1,22 @@
-<div class="container-white">
-	<div class="container">	
-		<div class="row">  
-			<div class="col-md-12">
-				<div class="col-md-12">
-					<h1>Resum&eacute;</h1><br />
-				</div>
-				<div class="span10 offset1">	
+<div class="container">	
+	<div class="row">  
+		<div class="col-md-12">
+			<a class="btn btn-small pull-right" style="margin-top: 12px;" href="/student/resume/index">Resum&eacute; Tool</a>
+			<h1 class="page-header">Resum&eacute;</h1>
+		</div>
+		<div class="col-md-10 offset-md-1">	
+			<p>You can also copy and paste contents into a Microsoft Word or similar document to edit and save.</p>
+			<p class="semi-bold ">Check grammar and spelling.</p>
+
+			<div class="resume-content">
+							
+				<h1 style="text-align: center;"><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></h1>
+				<p style="text-align: center;"><%= @student.address %><br />
+					<%= @student.city %>, <%= @student.state %> <%= @student.zip %><br />
+					<%= formatted_number(@student.phone) %><br />
+					<%= @student.email %>
+				</p>
 					
-					<!-- <p class="pull-right"><a class="btn btn-small btn-success" href="/student/resume/resume-print">Download Text</a></p> -->
-					<p><a class="btn btn-small" href="/student/resume/index">Resum&eacute; Tool</a></p>
-					<hr />
-						<p>You can also copy and paste contents into a Microsoft Word or similar document to edit and save.</p>
-						<p class="semi-bold ">Check grammar and spelling.</p>
-					
-		
-						<div class="resume-content">
-		
-							<h1><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></h1>
-							<p><%= @student.address %><br />
-							<%= @student.city %>, <%= @student.state %> <%= @student.zip %><br />
-							<%= formatted_number(@student.phone) %><br />
-							<%= @student.email %>
-							</p>
-		
 							<h2 style="margin-top: 9px;">Objectives</h2>
 							<% @student.objectives.each do |objective| %>
 								<p>My immediate goal is to work as <%= objective.goal %>. This will help me learn <%= objective.learn %>, as I pursue my long-term goal of <%= objective.long_goal %>.
@@ -113,8 +107,6 @@
 						
 					</div>
 				</div>
-			</div>
 		</div>
 	</div>
-</div>
 

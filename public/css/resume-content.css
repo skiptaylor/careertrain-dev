@@ -5,7 +5,7 @@
 	width: 612px;
 	line-height: 16px;
 	font-size: 12px;
-	padding: 42px 64px 42px 72px;
+	padding: 22px 64px 22px 72px;
 	background-color: #ffffff;
 	border: 1px solid #b2b5bc;
    -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
@@ -21,7 +21,7 @@
 
 #resume-content h2, .resume-content h2 	{
 	font-size: 14px;
-	margin: -3px 0 -6px 0;
+	margin: 12px 0 6px 0;
 	padding: 0;
 }
 
@@ -62,6 +62,7 @@
 	margin: 24px auto;
 	font-family: 'Open Sans', helvetica, sans-serif;
 	display: block;
+	width: 612px;
 	line-height: 16px;
 	font-size: 12px;
 	padding: 42px 64px 42px 72px;

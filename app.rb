@@ -6,6 +6,10 @@ require 'sinatra/chassis/helpers'
 
 require 'sinatra/reloader' if development?
 
+require 'sendgrid-ruby'
+include SendGrid
+require 'json'
+
 disable :protection
 enable :sessions
 set :session_secret, 'secret123'
