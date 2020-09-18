@@ -6,14 +6,14 @@
 			
 			<div class="col-md-7">
 				<div>
-					<h6>Take the <em>e</em>CD Exercise to focus on your future</h6>
+					<h6>Take the <strong><span class="logo-e">e</span>CD</strong> Exercise to focus on your future</h6>
 					<p class="lead">Let's take the Inventory Exercise to get your Careers and Occupations Guide Report.</p>
 					<% if @student.exercises.count < 2 %>
-					<p>This is your own personalized academic and career planning report. You may take the <em>e</em>CD Exercise a second time to better define your career preferences</p>
-					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success"><em>e</em>CD Exercise</a></p>
+					<p>This is your own personalized academic and career planning report. You may take the <strong><span class="logo-e">e</span>CD</strong> Exercise a second time to better define your career preferences</p>
+					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success"><strong><span class="logo-e">e</span>CD</strong> Exercise</a></p>
 					<% else %>
-					<p>This is your own personalized academic and career planning report. You have taken the <em>e</em>CD Exercise twice. You may still view your reports and videos</p>
-					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/report" class="btn btn-success"><em>e</em>CD Exercise Reports</a></p>
+					<p>This is your own personalized academic and career planning report. You have taken the <strong><span class="logo-e">e</span>CD</strong> Exercise twice. You may still view your reports and videos</p>
+					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/report" class="btn btn-success"><strong><span class="logo-e">e</span>CD</strong> Exercise Reports</a></p>
 					<% end %>
 					<!-- <p class="flash">Note: The above button and text change after taking exercise twice.</p> -->
 				</div>
