@@ -69,16 +69,16 @@ post  "/student/reports/:id/exercise/?"  do
 end
 
 
-get "/student/reports/:id/ie_scores/?" do
+get "/student/reports/:id/report/?" do
   @student = Student.get(params[:id])
   @exercise = Exercise.get(params[:exercise_id])
   
-  erb :"/student/reports/ie_scores"
+  erb :"/student/reports/report"
 end
 
 
 
-post "/student/reports/:id/ie_scores/?" do
+post "/student/reports/:id/report/?" do
   exercise = Exercise.get(params[:exercise_id])
   student = Student.get(params[:id]).update(
     :score1     => params[:score1],
