@@ -53,7 +53,7 @@
 				
 				<br />	
 				<div style="float: right;"><strong>Date:</strong> &nbsp;&nbsp;<%= Time.now.strftime("%m/%d/%Y") %></div>
-				<h6><strong><em>e</em>CareerDirection</strong> - Interest Inventory Student Planning Report</h6>
+				<h6><strong><span class="logo-e">e</span>CD</strong> Inventory Student Planning Report</h6>
 				
 				<p><strong>School: &nbsp;&nbsp;<%= @school.school_name %></strong> - <%= @school.school_address1 %> <%= @school.school_address2 %>, <%= @school.school_city %>, <%= @school.school_state %> &nbsp;<%= @school.school_zip %> &nbsp;&nbsp;- &nbsp;&nbsp;<strong>Rep:</strong> <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %></p>
 				<p><strong>Student:</strong> &nbsp;&nbsp;<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Grade:</strong> &nbsp;&nbsp;<%= student.grade %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Email:</strong>&nbsp;&nbsp;<%= student.email %> <% if student.phone %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Phone:</strong>&nbsp;&nbsp;<%= student.phone %><% end %></p>
@@ -61,7 +61,7 @@
 						<form method="post" id="exercise">
 						<table cellpadding="10" cellspacing="0" class="side" style="margin: -9px;">
 						<tr>
-							<th style="text-align: left; font-size: 14px;"><strong><span class="logo-e">e</span>CD</strong> Interest Exercise Scores</th>
+							<th style="text-align: left; font-size: 14px;"><strong><span class="logo-e">e</span>CD</strong> Exercise Scores</th>
 							<!-- <th style="text-align: left; font-size: 14px;">Date</th> -->
 							<th style="text-align: center; font-size: 14px;">A</th>
 							<th style="text-align: center; font-size: 14px;">B</th>

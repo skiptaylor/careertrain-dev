@@ -1,13 +1,13 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1 class="page-header">Your Career</h1>
+				<h1 class="page-header">Student Account</h1>
 			</div>
 			
 			<div class="col-md-7">
 				<div>
 					<h6>Take the <strong><span class="logo-e">e</span>CD</strong> Exercise to focus on your future</h6>
-					<p class="lead">Let's take the Inventory Exercise to get your Careers and Occupations Guide Report.</p>
+					<p class="lead">Let's take the <strong><span class="logo-e">e</span>CD</strong> Exercise to get your Careers and Occupations Guide Report.</p>
 					<% if @student.exercises.count < 2 %>
 					<p>This is your own personalized academic and career planning report. You may take the <strong><span class="logo-e">e</span>CD</strong> Exercise a second time to better define your career preferences</p>
 					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success"><strong><span class="logo-e">e</span>CD</strong> Exercise</a></p>
@@ -30,7 +30,7 @@
 				<div class="sign-in" style="padding: 24px 24px;">
 					<h5>
   						<% unless @student.name == "" || @student.name == nil %><strong><%= @student.name %></strong>
-  						<% else %><strong><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></strong>
+  						<% else %><strong><%= @student.first_name %> <%= @student.last_name %></strong>
   						<% end %><br />
 					</h5>
 					<p>	
