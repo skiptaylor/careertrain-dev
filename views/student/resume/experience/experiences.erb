@@ -1,21 +1,20 @@
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1>Work Experience &nbsp; <small><%= @student.name %></small></h1><br />
+				<a href="/student/resume/index" class="btn btn-small pull-right" style="margin-top: 12px;">Resum&eacute; Tool</a>
+				<h1 class="page-header">Work Experience</h1>
 			</div>
-			<div class="col-md-8 offset2">
-				<p><a href="/student/resume/experience/new" class="btn btn-small btn-success pull-right"><i class="icon-plus"></i> New</a>
-				<a href="/student/resume/index" class="btn btn-small">Resum&eacute; Tool</a></p>
-				<table class="table table-striped table-condensed table-hover">
+			<div class="col-md-8 offset-md-2">
+				
+				<table class="table table-striped table-condensed">
 					<tr>
 						<th>Company</th>
-						<th> </th>
+						<th><a href="/student/resume/experience/new" class="btn btn-small btn-success pull-right"><i class="icon-plus"></i> New</a></th>
 					</tr>
 					<% @student.experiences.each do |experience| %>
 					<tr>
 						<td><%= experience.company %></a></td>
-						<td style="text-align: right;"><span class="under-link"><a href="/student/resume/experience/<%= experience.id %>/edit">Edit</a></span> &nbsp; <span class="under-link"><a href="/student/resume/experience/<%= experience.id %>/view">View</a></span></td>
+						<td style="text-align: right;"><a href="/student/resume/experience/<%= experience.id %>/edit" class="btn btn-small">Edit</a> &nbsp; <a href="/student/resume/experience/<%= experience.id %>/view" class="btn btn-small">View</a></td>
 					</tr>
 					<% end %>
 				</table>
@@ -23,5 +22,4 @@
 
 		</div> <!-- /row -->
 	</div> <!-- /container -->
-</div> <!-- /container-white -->
 

@@ -1,24 +1,22 @@
-<div class="container-white">
+
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1>Career Skills &nbsp; <small><%= @student.name %></small></h1><br />
+				<a href="/student/resume/index" class="btn btn-small pull-right" style="margin-top: 12px;">Resum&eacute; Tool</a>
+				<h1 class="page-header">Career Skills</h1>
 			</div>
-			<div class="col-md-8 offset2">
-				
-				<a class="btn btn-small" href="/student/resume/index">Resum&eacute; Tool</a>
-				<hr />
+			<div class="col-md-8 offset-md-2">
 					
 				<p>
-					<label for="skill"><strong>Skill</strong></label>
+					<label for="skill"><strong>Skill: </strong></label>
 					<%= @skill.skill %>
 				</p>
 				<p>
-					<label for="applied_1"><strong>Applied 1</strong></label>
+					<label for="applied_1"><strong>Applied 1: </strong></label>
 					<%= @skill.applied_1 %>
 				</p>
 				<p>
-					<label for="applied_2"><strong>Applied 2</strong></label>
+					<label for="applied_2"><strong>Applied 2: </strong></label>
 					<%= @skill.applied_2 %>
 				</p>
 				
@@ -29,4 +27,4 @@
 
 		</div> <!-- /row -->
 	</div> <!-- /container -->
-</div> <!-- /container-white -->
+

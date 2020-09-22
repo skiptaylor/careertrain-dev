@@ -2,7 +2,7 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1 class="page-header">Your Career</h1>
+				<h1 class="page-header">Student Account</h1>
 			</div>
 			<div class="col-md-6">
 				<p class="lead"><span style="font-weight: 900;"><span class="logo-e">e</span>CareerDirection Reports</span> can help you start working toward your career success today!</p> 
@@ -24,7 +24,7 @@
 					<div style="padding-right: 18px; float: left; border-right: 1px solid #b2b5bc;">
 						<% unless session[:student] %>
 						<p>New user</p>
-						<p><a href="/student/reports/create" class="btn btn-primary">Create an account</a></p>
+						<p><a href="/student/reports/create" class="btn btn-primary">Create account</a></p>
 						<% else %>
 						<p>You are signed in</p>
 						<p><a href="/student/reports/signin" class="btn btn-success">Your Career</a></p>

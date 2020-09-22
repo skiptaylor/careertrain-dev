@@ -1,42 +1,43 @@
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1>Activities and Associations &nbsp; <small><%= @student.name %></small></h1><br />
-			<div class="col-md-8 offset2">
-				<p>You can enter others after saving.</p>
-				<form class="form-horizontal" method="post">
-					<div class="control-group">
-					   <label class="control-label" for="position">Position</label>
-						<div class="controls">
-							<input type="text" name="position" id="position" class="textfield col-md-4" value="<%= @activity.position %>" />
-						</div>
-					</div>
-					<div class="control-group">
-					   <label class="control-label" for="organization">Organization</label>
-						<div class="controls">
-							<input type="text" name="organization" id="organization" class="textfield col-md-4" value="<%= @activity.organization %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="date_start">Start Date (Month Year)</label>
-						<div class="controls">
-							<input type="text" name="date_start" id="date_start" class="textfield col-md-4" value="<%= @activity.date_start %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="date_end">End Date (Month Year)</label>
-						<div class="controls">
-							<input type="text" class="textfield col-md-4" name="date_end" id="date_end" value="<%= @activity.date_end %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<div class="controls">
-							<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/activities/activities">Cancel</a> &nbsp; <% if @student.activities.count > 0 %><a class="btn btn-small btn-warning delete" href="/student/resume/activities/<%= @activity.id %>/delete">Delete</a><% end %>
-						</div>
-					</div><br />
-				</form>	
+				<a href="/student/resume/index" class="btn btn-small pull-right" style="margin-top: 12px;">Resum&eacute; Tool</a>
+				<h1 class="page-header">Activities and Associations &nbsp; <small><%= @student.name %></small></h1>
 			</div>
-		</div> <!-- /row -->
+		</div>
+		<form method="post" class="form-horizontal">
+		
+		<div class="form-row">
+			<div class="form-group col-md-8 offset-md-2">
+				<p>You can enter others after saving.</p>
+				<label for="position">Position</label><br />
+				<input type="text" name="position" id="position" class="textfield col-md-6" value="<%= @activity.position %>" />
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-8 offset-md-2">
+				<label for="organization">Organization</label><br />
+				<input type="text" name="organization" id="organization" class="textfield col-md-6" value="<%= @activity.organization %>" />
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-8 offset-md-2">
+				<label for="date_start">Start Date (Month Year)</label><br />
+				<input type="text" name="date_start" id="date_start" class="textfield col-md-4" value="<%= @activity.date_start %>" />
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-8 offset-md-2">
+				<label for="date_end">End Date (Month Year)</label><br />
+				<input type="text" class="textfield col-md-4" name="date_end" id="date_end" value="<%= @activity.date_end %>" />
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-8 offset-md-2">
+				<label for="date_end"> &nbsp; </label><br />
+				<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/activities/activities">Cancel</a> &nbsp; <% if @student.activities.count > 0 %><a class="btn btn-small btn-warning delete" href="/student/resume/activities/<%= @activity.id %>/delete">Delete</a><% end %>
+			</div>
+		</div>
+
+		</form>
 	</div> <!-- /container -->
-</div> <!-- /container-white -->

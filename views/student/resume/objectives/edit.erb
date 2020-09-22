@@ -1,10 +1,11 @@
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1>Career Objectives &nbsp; <small><%= @student.name %></small></h1><br />
+				<h1 class="page-header">Career Objectives</h1>
 			</div>
-			<div class="col-md-8 offset2">
+		</div>
+		<div class="row">  
+			<div class="col-md-8 offset-md-2">
 				
 				<p>Please complete the following sentence.</p>
  
@@ -14,17 +15,17 @@
 		
 				<form method="post">
 					
-					<p style="line-height: 2.5em;">
-						<strong>My immediate goal is to work as</strong> (the title of the position you are seeking)<strong>:</strong>
-						<input type="text" name="goal" id="goal" class="textfield col-md-8" value="<%= @objective.goal %>" />
+					<p>
+						<strong>My immediate goal is to work as</strong> (the title of the position you are seeking):<br />
+						<input type="text" name="goal" id="goal" class="textfield col-md-12" style="margin: 6px 0" value="<%= @objective.goal %>" />
 					</p>
-					<p style="line-height: 2.5em;">
-						<strong>This position will help me learn:</strong>
-						<input type="text" name="learn" id="learn" class="textfield col-md-8" value="<%= @objective.learn %>" />
+					<p >
+						<strong>This position will help me learn:</strong><br />
+						<input type="text" name="learn" id="learn" class="textfield col-md-12" style="margin: 6px 0" value="<%= @objective.learn %>" />
 					</p>
-					<p style="line-height: 2.5em;">
-						<strong>as I pursue my long-term goal of:</strong>
-						<input type="text" name="long_goal" id="long_goal" class="textfield col-md-8" value="<%= @objective.long_goal %>" />
+					<p>
+						<strong>as I pursue my long-term goal of:</strong><br />
+						<input type="text" name="long_goal" id="long_goal" class="textfield col-md-12" style="margin: 6px 0" value="<%= @objective.long_goal %>" />
 					</p>
 					
 					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/index">Cancel</a>
@@ -34,4 +35,3 @@
 			
 		</div> <!-- /row -->
 	</div> <!-- /container -->
-</div> <!-- /container-white -->

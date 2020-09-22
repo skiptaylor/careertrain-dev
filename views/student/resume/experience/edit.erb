@@ -1,56 +1,55 @@
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1>Work Experience &nbsp; <small><%= @student.name %></small></h1><br />
+				<a href="/student/resume/index" class="btn btn-small pull-right" style="margin-top: 12px;">Resum&eacute; Tool</a>
+				<h1 class="page-header">Work Experience</h1>
 			</div>
-			<div class="col-md-8 offset2">
-				<form method="post" class="form-horizontal">
+		</div>
+		
+		<form method="post" class="form-horizontal">
+		
+		<div class="form-row">
+			<div class="form-group col-md-8 offset-md-2">
+				<label for="company">Company</label><br />
+				<input type="text" name="company" id="company" class="textfield col-md-8" value="<%= @experience.company %>" />
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-8 offset-md-2">
+				<label for="city">City</label><br />
+				<input type="text" name="city" id="city" class="textfield col-md-6" value="<%= @experience.city %>" />
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-8 offset-md-2">
+				<label for="state">State</label><br />
+				<input type="text" name="state" id="state" class="textfield col-md-4" value="<%= @experience.state %>" />
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-8 offset-md-2">
+				<label for="position">Position</label><br />
+				<input type="text" name="position" id="position" class="textfield col-md-6" value="<%= @experience.position %>" />
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-8 offset-md-2">
+				<label for="start">Start Date (Month Year)</label><br />
+				<input type="text" class="textfield col-md-4" name="start" id="start" value="<%= @experience.start %>" />
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-8 offset-md-2">
+				<label for="end">End Date (Month Year)</label><br />
+				<input type="text" class="textfield col-md-4" name="end" id="end" value="<%= @experience.end %>" />
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-8 offset-md-2">
+				<label for="end"> </label><br />
+				<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/experience/experiences">Cancel</a> &nbsp; <% if @student.experiences.count > 0 %><a class="btn btn-small btn-warning delete" href="/student/resume/experience/<%= @experience.id %>/delete">Delete</a><% end %>
+			</div>
+		</div>
 
-					<div class="control-group">
-						<label class="control-label" for="company">Company</label>
-						<div class="controls">
-							<input type="text" name="company" id="company" class="textfield col-md-4" value="<%= @experience.company %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="city">City</label>
-						<div class="controls">
-							<input type="text" name="city" id="city" class="textfield col-md-4" value="<%= @experience.city %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="state">State</label>
-						<div class="controls">
-							<input type="text" name="state" id="state" class="textfield col-md-4" value="<%= @experience.state %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="position">Position</label>
-						<div class="controls">
-							<input type="text" name="position" id="position" class="textfield col-md-4" value="<%= @experience.position %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="start">Start Date (Month Year)</label>
-						<div class="controls">
-							<input type="text" class="textfield col-md-4" name="start" id="start" value="<%= @experience.start %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="end">End Date (Month Year)</label>
-						<div class="controls">
-							<input type="text" class="textfield col-md-4" name="end" id="end" value="<%= @experience.end %>" />
-						</div>
-					</div>
-					<div class="control-group">
-						<div class="controls">
-							<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/experience/experiences">Cancel</a> &nbsp; <% if @student.experiences.count > 0 %><a class="btn btn-small btn-warning delete" href="/student/resume/experience/<%= @experience.id %>/delete">Delete</a><% end %>
-						</div>
-					</div>					
-				</form>	
-			</div>
-			
-		</div> <!-- /row -->
+		</form>
 	</div> <!-- /container -->
-</div> <!-- /container-white -->

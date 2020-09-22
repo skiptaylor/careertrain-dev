@@ -29,10 +29,10 @@
 				<label for="first_name">First Name</label>
 				<input type="text" name="first_name" id="first_name" class="form-control" placeholder="" value="<%= @student.first_name %>" />
 			</div>
-			<div class="form-group col-md-4">						
+			<!-- <div class="form-group col-md-4">
 				<label for="middle_name">Middle Name</label>
 				<input type="text" name="middle_name" id="middle_name" class="form-control" placeholder="" value="<%= @student.middle_name %>" />
-			</div>
+			</div> -->
 			<div class="form-group col-md-4">
 				<label for="last_name">Last Name</label>
 				<input type="text" name="last_name" id="last_name" class="form-control" placeholder="" value="<%= @student.last_name %>" />
@@ -96,62 +96,45 @@
 			</div>
 		</div>
 		
-		
 		<div class="form-row">
-			<div class="control-group">
-				<label for="future1">Future Plans</label>
+			<div class="form-group col-md-6">
+				<label for="future1">Future Plans  &nbsp; <span style="font-weight: 300;">(Check all that apply)</span></label>
+				
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="future1" name="future1" <%= 'checked="checked"' if @student.future1  %> />
+				<label class="custom-control-label" for="future1">&nbsp;Enter technical college/trade school</label>
 			</div>
-		</div>
-		<div class="form-row">
-			<div class="control-group">
-				<label for="future1"> &nbsp; </label>
-				<input type="checkbox" name="future1" id="future1" <%= 'checked="checked"' if @student.future1  %> /> <span> &nbsp; Enter technical college/trade school</span>
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="future2" name="future2" <%= 'checked="checked"' if @student.future2  %> />
+				<label class="custom-control-label" for="future2">&nbsp;Work full-time</label>
 			</div>
-		</div>
-		<div class="form-row">
-			<div class="control-group">		
-				<label for="future2"> &nbsp; </label>
-				<input type="checkbox" name="future2" id="future2" <%= 'checked="checked"' if @student.future2  %> /> <span> &nbsp; Work full-time</span>
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="future3" name="future3" <%= 'checked="checked"' if @student.future3  %> />
+				<label class="custom-control-label" for="future3">&nbsp; Work part-time</label>
 			</div>
-		</div>
-		<div class="form-row">
-			<div class="control-group">	
-				<label for="future3"> &nbsp; </label>
-				<input type="checkbox" name="future3" id="future1" <%= 'checked="checked"' if @student.future3  %> /> <span> &nbsp; Work part-time</span>
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="future4" name="future4" <%= 'checked="checked"' if @student.future4  %> />
+				<label class="custom-control-label" for="future4">&nbsp; Enter the military</label>
 			</div>
-		</div>
-		<div class="form-row">
-			<div class="control-group">		
-				<label for="future4"> &nbsp; </label>
-				<input type="checkbox" name="future4" id="future4" <%= 'checked="checked"' if @student.future4  %> /> <span> &nbsp; Enter the military</span>
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="future5" name="future5" <%= 'checked="checked"' if @student.future5  %> />
+				<label class="custom-control-label" for="future5">&nbsp; Go to college</label>
 			</div>
-		</div>
-		<div class="form-row">
-			<div class="control-group">	
-				<label for="future5"> &nbsp; </label>
-				<input type="checkbox" name="future5" id="future5" <%= 'checked="checked"' if @student.future5  %> /> <span> &nbsp; Go to college</span>
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="future6" name="future6" <%= 'checked="checked"' if @student.future6  %> />
+				<label class="custom-control-label" for="future6">&nbsp; I have money to pay for education</label>
 			</div>
-		</div>
-		<div class="form-row">
-			<div class="control-group">		
-				<label for="future6"> &nbsp; </label>
-				<input type="checkbox" name="future6" id="future6" <%= 'checked="checked"' if @student.future6  %> /> <span> &nbsp; I have money to pay for education</span>
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="future7" name="future7" <%= 'checked="checked"' if @student.future7  %> />
+				<label class="custom-control-label" for="future7">&nbsp; Counting on parents for money for education</label>
 			</div>
-		</div>
-		<div class="form-row">
-			<div class="control-group">		
-				<label for="future7"> &nbsp; </label>
-				<input type="checkbox" name="future7" id="future7" <%= 'checked="checked"' if @student.future7  %> /> <span> &nbsp; Counting on parents for money for education</span>
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="future8" name="future8" <%= 'checked="checked"' if @student.future8  %> />
+				<label class="custom-control-label" for="future8">&nbsp; Considering sources of financial aid or scholarships</label>
 			</div>
+			
 		</div>
-		<div class="form-row">
-			<div class="control-group">		
-				<label for="future8"> &nbsp; </label>
-				<input type="checkbox" name="future8" id="future8" <%= 'checked="checked"' if @student.future8  %> /> <span> &nbsp; Considering sources of financial aid or scholarships</span>
-			</div>
-		</div>
-		
-		
+	</div>
 		
 		
 				

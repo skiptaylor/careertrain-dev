@@ -1,11 +1,12 @@
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1>Education &nbsp; <small><%= @student.name %></small></h1><br />
+				<a href="/student/resume/index" class="btn btn-small pull-right" style="margin-top: 12px;">Resum&eacute; Tool</a>
+				<h1 class="page-header">Education</h1>
 			</div>
-			<div class="col-md-8 offset2">
-				<p><a href="/student/resume/index" class="btn btn-small">Resum&eacute; Tool</a></p>
+		</div>
+		<div class="row">  
+			<div class="col-md-8 offset-md-2">
 				<table class="table">
 					<% @student.educations.each do |education| %>
 					<tr>
@@ -31,4 +32,3 @@
 			</div>
 		</div> <!-- /row -->
 	</div> <!-- /container -->
-</div> <!-- /container-white -->

@@ -1,23 +1,23 @@
-<div class="container-white">
+
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1>Skills &nbsp; <small><%= @student.name %></small></h1><br />
+				<a href="/student/resume/index" class="btn btn-small pull-right" style="margin-top: 12px;">Resum&eacute; Tool</a>
+				<h1 class="page-header">Skills</h1>
 			</div>
-			<div class="col-md-8 offset2">
-				<p><a href="/student/resume/index" class="btn btn-small">Resum&eacute; Tool</a></p>
+			<div class="col-md-8 offset-md-2">
 				
-				<p><% if @student.skills.count < 4 %><a href="/student/resume/skills/new" class="btn btn-small btn-success pull-right"><i class="icon-plus"></i> New</a><% end %><strong>List four skills.</strong> For each skill list 2 ways you have learned, improved, or used this skill.</p>
+				<p><strong>List four skills.</strong> For each skill list 2 ways you have learned, improved, or used this skill.</p>
 				
 				<table class="table table-striped table-condensed table-hover">
 					<tr>
 						<th>Skills</th>
-						<th> </th>
+						<th><% if @student.skills.count < 4 %><a href="/student/resume/skills/new" class="btn btn-small btn-success pull-right"><i class="icon-plus"></i> New</a><% end %></th>
 					</tr>
 					<% @student.skills.each do |skill| %>
 					<tr>
 						<td><%= skill.skill %></td>
-						<td style="text-align: right;"><span class="under-link"><a href="/student/resume/skills/<%= skill.id %>/edit">Edit</a></span> &nbsp; <span class="under-link"><a href="/student/resume/skills/<%= skill.id %>/view">View</a></span></td>
+						<td style="text-align: right;"><a href="/student/resume/skills/<%= skill.id %>/edit" class="btn btn-small">Edit</a> &nbsp; <a href="/student/resume/skills/<%= skill.id %>/view" class="btn btn-small">View</a></td>
 					</tr>
 					<% end %>
 				</table>
@@ -25,4 +25,3 @@
 
 		</div> <!-- /row -->
 	</div> <!-- /container -->
-</div> <!-- /container-white -->

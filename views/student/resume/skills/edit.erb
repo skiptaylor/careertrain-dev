@@ -1,14 +1,13 @@
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1>Career Skills &nbsp; <small><%= @student.name %></small></h1><br />
+				<h1 class="page-header">Career Skills</h1>
 			</div>
-			<div class="col-md-8 offset2">
+			<div class="col-md-8 offset-md-2">
 				
 				<p>For each skill list 2 ways you have learned, improved, or used this skill.</p>
 				
-				<p class="small"><strong>Example Skill:</strong> document preparation<br />
+				<p ><strong>Example Skill:</strong> document preparation<br />
 				<strong>Applied Example:</strong> Typed rosters and reports for my National Guard Unit<br />
 				<strong>Applied Example:</strong> Typed meeting minutes for Future Business Leaders of America</p>
 
@@ -29,16 +28,16 @@
 				<form method="post">
 					
 					<p>
-						<label for="skill">Career Skill</label>
-						<input type="text" name="skill" id="skill" class="textfield col-md-8" value="<%= @skill.skill %>" />
+						<label for="skill">Career Skill</label><br />
+						<input type="text" name="skill" id="skill" class="textfield col-md-12" value="<%= @skill.skill %>" />
 					</p>
 					<p>
-						<label for="applied_1">Applied 1</label>
-						<input type="text" name="applied_1" id="applied_1" class="textfield col-md-8" value="<%= @skill.applied_1 %>" />
+						<label for="applied_1">Applied 1</label><br />
+						<input type="text" name="applied_1" id="applied_1" class="textfield col-md-12" value="<%= @skill.applied_1 %>" />
 					</p>
 					<p>
-						<label for="applied_2">Applied 2</label>
-						<input type="text" name="applied_2" id="applied_2" class="textfield col-md-8" value="<%= @skill.applied_2 %>" />
+						<label for="applied_2">Applied 2</label><br />
+						<input type="text" name="applied_2" id="applied_2" class="textfield col-md-12" value="<%= @skill.applied_2 %>" />
 					</p>
 					
 					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/skills/skills">Cancel</a> &nbsp; <% if @student.skills.count > 0 %><a class="btn btn-small btn-warning delete" href="/student/resume/skills/<%= @skill.id %>/delete">Delete</a><% end %>
@@ -48,4 +47,3 @@
 			
 		</div> <!-- /row -->
 	</div> <!-- /container -->
-</div> <!-- /container-white -->

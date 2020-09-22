@@ -1,29 +1,19 @@
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1>Activities and Associations &nbsp; <small><%= @student.name %></small></h1><br />
-				<div class="col-md-8 offset2">
-					<p>
-						<label for="position">Position</label>
-						<%= @activity.position %>
-					</p>
-					<p>
-						<label for="organization">Organization</label>
-						<%= @activity.organization %>
-					</p>
-					<p>
-						<label for="date_start">Start Date</label>
-						<%= @activity.date_start %>
-					</p>
-					<p>
-						<label for="date_end">End Date</label>
-						<%= @activity.date_end %>
-					</p>
-					<br />
-					<p><a class="btn btn-success btn-small" href="/student/resume/activities/<%= @activity.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/index">Resum&eacute; Tool</a></p>
-				</div>
+				<a href="/student/resume/index" class="btn btn-small pull-right" style="margin-top: 12px;">Resum&eacute; Tool</a>
+				<h1 class="page-header">Activities and Associations &nbsp; <small><%= @student.name %></small></h1>
 			</div>
+		</div>
+		<div class="row"> 
+			<div class="col-md-8 offset-md-2">
+				<p style="clear: left;"><label class="resume-view">Position</label><%= @activity.position %></p>
+				<p style="clear: left;"><label class="resume-view">Organization</label><%= @activity.organization %></p>
+				<p style="clear: left;"><label class="resume-view">Start Date</label><%= @activity.date_start %></p>
+				<p style="clear: left;"><label class="resume-view">End Date</label><%= @activity.date_end %></p>
+				
+				<p style="clear: left;"><label class="resume-view">&nbsp; </label><a class="btn btn-success btn-small" href="/student/resume/activities/<%= @activity.id %>/edit">Edit</a></p>
+			</div>
+
 		</div> <!-- /row -->
 	</div> <!-- /container -->
-</div> <!-- /container-white -->

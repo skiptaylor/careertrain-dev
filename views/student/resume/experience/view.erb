@@ -1,25 +1,21 @@
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1>Work Experience &nbsp; <small><%= @student.name %></small></h1><br />
+				<a href="/student/resume/index" class="btn btn-small pull-right" style="margin-top: 12px;">Resum&eacute; Tool</a>
+				<h1 class="page-header">Work Experience &nbsp; <small><%= @student.name %></small></h1><br />
 			</div>
-			<div class="col-md-8 offset2">
-				<p><a class="btn btn-small" href="/student/resume/index">Resum&eacute; Tool</a></p>
-				<hr />
-				
+		</div>
+		<div class="row"> 
+			<div class="col-md-8 offset-md-2">
 				<p style="clear: left;"><label class="resume-view">Company</label> <%= @experience.company %></p>
 				<p style="clear: left;"><label class="resume-view">City</label><%= @experience.city %></p>
 				<p style="clear: left;"><label class="resume-view">State</label><%= @experience.state %></p>
 				<p style="clear: left;"><label class="resume-view">Position</label><%= @experience.position %></p>
 				<p style="clear: left;"><label class="resume-view">Start date</label><%= @experience.start %></p>
 				<p style="clear: left;"><label class="resume-view">End date</label><%= @experience.end %></p>
-				
-				<hr />
-					
-				<p><a class="btn btn-success btn-small" href="/student/resume/experience/<%= @experience.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/experience/experiences">Index</a></p>
+	
+				<p style="clear: left;"><label class="resume-view"> &nbsp; </label><a class="btn btn-success btn-small" href="/student/resume/experience/<%= @experience.id %>/edit">Edit</a> &nbsp; <a class="btn btn-small" href="/student/resume/experience/experiences">Index</a></p>
 			</div>
 
 		</div> <!-- /row -->
 	</div> <!-- /container -->
-</div> <!-- /container-white -->
