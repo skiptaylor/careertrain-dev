@@ -198,6 +198,11 @@ get '/student/resume/resume' do
       :inline_format => true
 
     else
+      
+	    pdf.text "<b><i>References attached</i></b>", 
+      :inline_format => true
+      
+      pdf.start_new_page
 			
 	    pdf.text "<b><i>References</i></b>", 
       :inline_format => true

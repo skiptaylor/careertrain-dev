@@ -1,23 +1,23 @@
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1>Interests and Hobbies &nbsp; <small><%= @student.name %></small></h1><br />
+				<a href="/student/resume/index" class="btn btn-small pull-right" style="margin-top: 12px;">Resum&eacute; Tool</a>
+				<h1 class="page-header">Interests and Hobbies</h1>
 			</div>
-			<div class="col-md-8 offset2">
+			<div class="col-md-8 offset-md-2">
 				
 				<p>Describe an interest or hobby. You can add others after saving.</p>
 		
 				<form class="form-horizontal" method="post">
 					
-					<div class="control-group">
-						<label class="control-label" for="interest">Interests and Hobbies</label>
-						<div class="controls">
-							<input type="text" name="interest" id="interest" class="textfield col-md-4" value="<%= @interest.interest %>" />
+					<div class="form-row">
+						<div class="form-group">
+							<label for="interest">Interests and Hobbies</label>
+							<input type="text" name="interest" id="interest" class="textfield col-md-12" value="<%= @interest.interest %>" />
 						</div>
 					</div>
-					<div class="control-group">
-						<div class="controls">
+					<div class="form-row">
+						<div class="form-group">
 							<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/student/resume/interests/interests">Cancel</a> &nbsp; <% if @student.interests.count > 0 %><a class="btn btn-small btn-warning delete" href="/student/resume/interests/<%= @interest.id %>/delete">Delete</a><% end %>
 						</div>
 					</div>
@@ -26,5 +26,4 @@
 			
 		</div> <!-- /row -->
 	</div> <!-- /container -->
-</div> <!-- /container-white -->
 

@@ -1,32 +1,27 @@
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1>References &nbsp; <small><%= @student.name %></small></h1><br />
+				<a href="/student/resume/index" class="btn btn-small pull-right" style="margin-top: 12px;">Resum&eacute; Tool</a>
+				<h1 class="page-header">References</h1>
 			</div>
-			<div class="col-md-8 offset2">
+			<div class="col-md-8 offset-md-2">
 				
-				<p><a href="/student/resume/index" class="btn btn-small">Resum&eacute; Tool</a></p>
-				
-				<hr />
 									
-					<p><strong><%= @reference.name %></strong><br />
+					<p><strong><%= @reference.name %></strong></p>
 						
-					<small><%= @reference.relationship %></small></p>
+					<p><%= @reference.relationship %></p>
 							
 					<p><%= @reference.address %><br />
 
-					<%= @reference.city %>  <%= @reference.state %>  <%= @reference.zip %></p>
+					<%= @reference.city %>  <%= @reference.state %>  &nbsp;<%= @reference.zip %></p>
 					
 					<p><%= @reference.phone %></p>
 					
-					<p><%= @reference.email %></p>
+					<p><%= @reference.email %></p><br />
 					
-					<hr />
 					
 				<p><a href="/student/resume/references/<%= @reference.id %>/edit" class="btn btn-small btn-success">Edit</a> &nbsp; <a href="/student/resume/references/references" class="btn btn-small">Index</a></p>
 			</div>
 
 		</div> <!-- /row -->
 	</div> <!-- /container -->
-</div> <!-- /container-white -->

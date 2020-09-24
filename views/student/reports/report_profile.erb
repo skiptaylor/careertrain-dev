@@ -10,7 +10,7 @@
 					<p class="lead">Let's take the <strong><span class="logo-e">e</span>CD</strong> Exercise to get your Careers and Occupations Guide Report.</p>
 					<% if @student.exercises.count < 2 %>
 					<p>This is your own personalized academic and career planning report. You may take the <strong><span class="logo-e">e</span>CD</strong> Exercise a second time to better define your career preferences</p>
-					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success"><strong><span class="logo-e">e</span>CD</strong> Exercise</a></p>
+					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success"><strong><em>e</em>CD</strong> Exercise</a></p>
 					<% else %>
 					<p>This is your own personalized academic and career planning report. You have taken the <strong><span class="logo-e">e</span>CD</strong> Exercise twice. You may still view your reports and videos</p>
 					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/report" class="btn btn-success"><strong><span class="logo-e">e</span>CD</strong> Exercise Reports</a></p>

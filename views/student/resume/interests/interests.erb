@@ -1,22 +1,21 @@
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1>Interests and Hobbies &nbsp; <small><%= @student.name %></small></h1><br />
+				<a href="/student/resume/index" class="btn btn-small pull-right" style="margin-top: 12px;">Resum&eacute; Tool</a>
+				<h1 class="page-header">Interests and Hobbies</h1>
 			</div>
-			<div class="col-md-8 offset2">
-				<p><a href="/student/resume/interests/new" class="btn btn-small btn-success pull-right"><i class="icon-plus"></i> New</a>
-				<a href="/student/resume/index" class="btn btn-small">Resum&eacute; Tool</a></p>
+			<div class="col-md-8 offset-md-2">
+
 				
-				<table class="table table-striped table-condensed table-hover">
+				<table class="table table-striped table-condensed">
 					<tr>
 						<th>Interest or Hobby</th>
-						<th> </th>
+						<th><a href="/student/resume/interests/new" class="btn btn-small btn-success pull-right"><i class="icon-plus"></i> New</a></th>
 					</tr>
 					<% @student.interests.each do |interest| %>
 					<tr>
 						<td><%= interest.interest %></td>
-						<td style="text-align: right;"><span class="under-link"><a href="/student/resume/interests/<%= interest.id %>/edit">Edit</a></span></td>
+						<td style="text-align: right;"><span class="btn btn-small"><a href="/student/resume/interests/<%= interest.id %>/edit">Edit</a></span></td>
 					</tr>
 					<% end %>
 				</table>
@@ -24,4 +23,3 @@
 
 		</div> <!-- /row -->
 	</div> <!-- /container -->
-</div> <!-- /container-white -->
