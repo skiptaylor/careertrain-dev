@@ -70,7 +70,7 @@ end
 
 get "/student/reports/:id/report/?" do
   @student = Student.get(params[:id])
-  @exercise = Exercise.get(params[:exercise_id])
+  @exercise = Exercise.get(params[:student_id])
   erb :"/student/reports/report"
 end
 

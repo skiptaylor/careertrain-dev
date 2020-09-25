@@ -1,26 +1,33 @@
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="col-md-4 offset3">
-				<h1>RRC</h1>
-		
+			<div class="col-md-12">
+				<h1 class="page-header">RRC edit</h1>
+			</div>
+		</div>
+		<div class="row">  
+			<div class="col-md-8 offset-md-2">
 				<form method="post">
 					
-					<p>
+					<div class="form-group col-md-8">
 						<label for="email">Email</label>
-						<input type="text" name="email" id="email" class="textfield col-md-4" value="<%= @rrc.email %>" />
-					</p>
-					<p>
+						<input type="text" name="email" id="email" class="form-control" value="<%= @rrc.email %>" />
+					</div>
+					<div class="form-group col-md-3">
 						<label for="state">State</label>
-						<input type="text" name="state" id="state" class="textfield span1" value="<%= @rrc.state %>" />
-					</p>
+						<select type="text" id="state" name="state" class="form-control" value="<%= @rrc.state %>">
+							<option value=""></option>
+							<% @state.sort{|a,b| a.abbr <=> b.abbr}.each do |state| %>
+							<option value="<%= state.abbr %>" <%= 'selected' if state.abbr == @rrc.state %>><%= state.abbr %></option>
+							<% end %>
+						</select>
+					</div>
+					<br />
+					<div class="form-group col-md-12">
 					
-					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/rrcs">Cancel</a> &nbsp; <a class="delete btn btn-small btn-warning pull-right" href="/rrcs/<%= @rrc.id %>/delete">Delete</a>
-					
-					</form>	
+					<input class="btn btn-small btn-primary" type="submit" value="Save" /> &nbsp; <a class="btn btn-small" href="/rrcs">Cancel</a> &nbsp; <a class="delete btn btn-small btn-warning" href="/rrcs/<%= @rrc.id %>/delete">Delete</a>
+				</div>
+				</form>	
 			</div>
-			
 		</div> <!-- /row -->
 	</div> <!-- /container -->
-</div> <!-- /container-white -->
 

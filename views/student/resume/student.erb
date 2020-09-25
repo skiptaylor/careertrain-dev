@@ -1,38 +1,39 @@
-<div class="container-white">
 	<div class="container">	
 		<div class="row">  
-			<div class="span10 offset1">
-				<a onclick="goBack()" class="btn btn-small pull-right">Admin Student List</a></p>
-				<h1>Student Profile</h1>
-				<hr />
-				<br />
+			<div class="col-md-12">
+				<a onclick="goBack()" class="btn btn-small pull-right" style="margin-top: 12px;">Admin Student List</a></p>
+				<h1 class="page-header">Student Profile</h1>
+
 			</div>
 		</div>
 		<div class="row"> 
-				<div class="span5 offset1">
-					<h5>
-						<% unless @student.name = 'nil' %>
-						<strong><%= @student.name %></strong><br />
-						<% else %>
-						<strong><%= @student.first_name %> <%= @student.middle_name %> <%= @student.last_name %></strong><br />
-						<% end %>
-					</h5>
-					<p>
-						<%= @student.address %><br />
-						<%= @student.city %>, <%= @student.state %> <%= @student.zip %><br />
-						<%= formatted_number(@student.phone) %><br />
-					</p>
-				</div>
-				<div class="span5">
-					<p><strong>Email</strong><br /><%= @student.email %></p>
-					<p><strong>Password</strong><br /><%= @student.password %></p>
-					<p><strong>School Password</strong><br /><%= @student.school_password %></p>
-					<p><strong>School</strong><br /><% unless @student.school_password == nil %><%= @student.school.school_name %><% end %></p>
+				<div class="col-md-8 offset-md-2">
+					<div class="row">
+						<div class="col">
+							<h5>
+								<% unless @student.name = 'nil' %>
+								<strong><%= @student.name %></strong><br />
+								<% else %>
+								<strong><%= @student.first_name %>  <%= @student.last_name %></strong><br />
+								<% end %>
+							</h5>
+							<p>
+								<%= @student.address %><br />
+								<%= @student.city %>, <%= @student.state %> <%= @student.zip %><br />
+								<%= formatted_number(@student.phone) %><br />
+							</p>
+						</div>
+						<div class="col">
+							<p><strong>Email</strong><br /><%= @student.email %></p>
+							<p><strong>Password</strong><br /><%= @student.password %></p>
+							<p><strong>School Password</strong><br /><%= @student.school_password %></p>
+							<p><strong>School</strong><br /><% unless @student.school_password == nil %><%= @student.school.school_name %><% end %></p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div> <!-- /row -->
 	</div> <!-- /container -->
-</div> <!-- /container-white -->
 
 <script>
 function goBack() {

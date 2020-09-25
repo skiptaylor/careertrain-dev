@@ -454,10 +454,10 @@ post '/student/resume/create/?' do
 end
 
 get "/student/resume/students/?" do
-  @student = Student.all(order: [:updated_at.desc], limit: 400)
+  @student = Student.all(order: [:updated_at.asc], limit: 100)
    
 	if params[:search] && !params[:search].nil?
-		@student = Student.all(:email.like  =>  "%#{params[:search]}%")
+		@student = Student.all(:email.like  =>  "%#{params[:search]}%", limit: 100)
 	end
   
   erb :"student/resume/students"
@@ -492,14 +492,13 @@ get "/student/resume/students-school/?" do
 		
 		file = ''
 		file = CSV.generate do |csv|
-			csv << ['Created on', 'School', 'First', 'Middle', 'Last', 'Email', 'Address', 'City', 'State', 'ZIP', 'Phone', 'Birth Date',]
+			csv << ['Created on', 'School', 'First', 'Middle', 'Last', 'Email', 'Address', 'City', 'State', 'ZIP', 'Phone', 'Grade',]
 			@student.each do |s|
         if s.school_id
 				csv << [
           format_american_day(s.created_on),
           "#{s.school.school_name}",
           s.first_name,
-          s.middle_name,
           s.last_name,
 					s.email,
           s.address,
@@ -507,7 +506,7 @@ get "/student/resume/students-school/?" do
 					s.state,
           s.zip,
           s.phone,
-          
+          s.grade,
 				]
         end
 			end
