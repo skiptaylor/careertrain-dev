@@ -125,8 +125,9 @@ h2	{
 }
 
 
-.page-header	{
+h1.page-header	{
 	font-size: 2.4em;
+	color: #08297b;
 	margin: 18px 0 22px 0;
 	line-height: 1.15em;
 	padding-bottom: 8px;
