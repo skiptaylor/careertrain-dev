@@ -20,13 +20,15 @@
 		         box-shadow: 0 3px 5px rgba(0, 188, 156, 0.5);
 		}
 		
-		table {
+		/*table {
 		    border-collapse: collapse;
 		}
 
 		tr:nth-child(n + 3) {
 		    visibility: hidden;
-		}
+		}*/
+			
+			
 	</style>
 	
 	
@@ -114,8 +116,7 @@
 						<th style="color: #1abd9c;  font-size: 1.2em; text-align: center;">I</th>
 					</tr>
 				
-				<% Exercise.each do |e| %> 
-				<% if session[:student] == e.student_id %>
+				<% @student.exercises(order: [:created_at.desc], limit: 1).each do |e|  %>
 					<tr>
 						<td style="text-align: left;"><%= format_day(e.created_at) %></td>
 						<td style="text-align: center;"><%= e.score_a %></td>
@@ -128,12 +129,18 @@
 						<td style="text-align: center;"><%= e.score_h %></td>
 						<td style="text-align: center;"><%= e.score_i %></td>
 					</tr>
-				<% end %>
-				<% end %>
+				<% end %> 
 				</table>
 					</form>
 				
-			<form method="get">
+			<form method="post"> 
+				
+				<% @ie.each do |ie|  %>
+				<% if params[ie.position_number.to_s] == "true" %>
+					<%= @student.ie.category %>
+				<% end %>
+				<% end %>
+				
 				<h5>Your Highest Score - <%= @student.score1 %></h5>
 				<h5>Your 2nd Highest Score - <%= @student.score2 %></h5>
 				<br />
