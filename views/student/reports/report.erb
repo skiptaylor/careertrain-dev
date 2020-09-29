@@ -83,6 +83,16 @@
 				
 			<form method="post"> 
 				
+				
+				
+				
+				<% @student.exercises(order: [:created_at.desc], limit: 2).each do |e|  %>
+				
+				
+				
+				
+				<% end%>
+				
 				<% @ie.each do |ie|  %>
 				<% if params[ie.position_number.to_s] == "true" %>
 					<%= @student.ie.category %>
@@ -96,15 +106,15 @@
 				
 				<a href="/student/reports/<%= @student.id %>/scores_full" style="margin-bottom: 9px;" class="btn btn-success">Download full Report</a>
 			</form>
-			<br />
+			
 			</div>
 			
 			
 			<div class="col-lg-5 offset-lg-1">
 				
+				<br />
 				
-				
-				
+				<h3>Explore other Categories</h3>
 				<p>You may have more than two “high” scores or ties. To see additional reports, enter the letters of the other categories. Example: if you scored high in A, B, and C, you may want to view the A/B report, the A/C report, and the B/C report.</p>
 				<form method="post" id="ie_scores">
 				<div class="form-group row">
@@ -150,7 +160,6 @@
 				
 				<a href="/student/reports/<%= @student.id %>/scores_full" style="margin-bottom: 9px;" class="btn btn-info">View full Report</a>
 				
-				<br />
 				
 				
 			</div>
@@ -158,7 +167,7 @@
 			
 			
 		</div>
-		<br />
+		
 		<hr style="margin: 20px 0; border-top-color: #1abc9c;" />
 		<div class="row">
 			<div class="col-md-12">
