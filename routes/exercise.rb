@@ -70,19 +70,17 @@ end
 
 get "/student/reports/:id/report/?" do
   @student = Student.get(params[:id])
-  @ie = Ie.all
-  @exercise = @student.exercises
+  
   erb :"/student/reports/report"
 end
 
 
 
 post "/student/reports/:id/report/?" do
-  exercise = Exercise.get(params[:exercise_id])
-  ie = Ie.all
-  student = Student.get(params[:id]).update(
-    :score1     => params[:score1],
-    :score2     => params[:score2]
+  student = Student.get(params[:id])
+  student.update(
+    :ex_score1     => params[:ex_score1],
+    :ex_score2     => params[:ex_score2]
   )
 
   redirect "/student/reports/#{params[:id]}/report"

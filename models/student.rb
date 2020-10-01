@@ -29,6 +29,9 @@ class Student
   property :score2, String
   property :score3, String
   
+  property :ex_score1, String
+  property :ex_score2, String
+  
   property :grade, String
   
   property  :future1, String

@@ -20,8 +20,6 @@ end
 
 # end
 
-
-
 get "/student/reports/create/?" do 
   @subscription = Subscription.all
   @school = School.all
@@ -78,7 +76,6 @@ post '/student/reports/create/?' do
             :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}"),
             )
             
-            
             session[:student] = @student.id
             
             @student.school_id = school.id
@@ -122,7 +119,6 @@ post '/student/reports/create/?' do
     
 end
 
-
 get '/student/reports/report/report_profile/?' do
   @subscription = Subscription.all
   @state = State.all
@@ -130,9 +126,6 @@ get '/student/reports/report/report_profile/?' do
   @student = Student.get(session[:student])
   erb :'/student/reports/report_profile'
 end
-
-
-
 
 get "/student/reports/signin/?" do
   
@@ -221,8 +214,6 @@ post '/student/reports/:id/edit/?' do
     :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
   )
   
-  
-  
   redirect("/student/reports/report/report_profile")
   
   else
@@ -235,16 +226,10 @@ end
 
 
 
-
-
-
-
-
 get "/student/reports/:id/scores/?" do
   @school = School.all
   @exercise = Exercise.get(params[:exercise_id])
   @student = Student.get(params[:id])
-  
     
   if @student.score1 && @student.score1 != ''
     
@@ -293,11 +278,9 @@ get "/student/reports/:id/scores/?" do
   elsif @student.score2 && @student.score3 && File.exists?("./views/reports/#{@student.score3}#{@student.score2}.inc")
     @report3 = File.read("./views/reports/#{@student.score3}#{@student.score2}.inc")
   end
-  
- 
  
  # -------------------- show report ---------------------
- if @student.score1 && @student.score2
+ if @student.score1 && @student.score2 || @student.ex_score1 && @student.ex_score2
    erb :'student/reports/scores'
  else
    erb :'student/reports/report'
@@ -309,7 +292,6 @@ get "/student/reports/:id/scores_full/?" do
   @school = School.all
   @exercise = Exercise.get(params[:exercise_id])
   @student = Student.get(params[:id])
-  
     
   if @student.score1 && @student.score1 != ''
     
@@ -358,8 +340,6 @@ get "/student/reports/:id/scores_full/?" do
   elsif @student.score2 && @student.score3 && File.exists?("./views/reports-long/#{@student.score3}#{@student.score2}.inc")
     @report3 = File.read("./views/reports-long/#{@student.score3}#{@student.score2}.inc")
   end
-  
- 
  
  # -------------------- show report ---------------------
  if @student.score1 && @student.score2
@@ -370,10 +350,10 @@ get "/student/reports/:id/scores_full/?" do
   
 end
 
-post "/student/reports/:id/scores_full/?" do
-  email.fullreport
-  redirect "/student/reports/report"
-end
+        post "/student/reports/:id/scores_full/?" do
+          email.fullreport
+          redirect "/student/reports/report"
+        end
 
 
 
@@ -395,7 +375,6 @@ post '/student/resume/create/?' do
   unless params[:school_password] == ''
     
     if school = School.first(:school_password => params[:school_password]) 
-
       
       unless params[:email] == ''
 
@@ -425,7 +404,6 @@ post '/student/resume/create/?' do
             :future8          => params[:future8],
             :birth_date   => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}"),
             )
-            
             
             session[:student] = @student.id
             
@@ -661,18 +639,18 @@ post '/student/resume/:id/edit/?' do
     )
   
   @student = Student.get(params[:id]).update(
-  :email        => params[:email],
-  :password     => params[:password],
-  :name         => params[:name],
-  :first_name   => params[:first_name],
-  :middle_name  => params[:middle_name],
-  :last_name    => params[:last_name],
-    :address   => params[:address],
-    :city      => params[:city],
-    :state     => params[:state],
-    :zip       => params[:zip],
-    :phone     => params[:phone],
-    :school_password => params[:school_password],
+    :email            => params[:email],
+    :password         => params[:password],
+    :name             => params[:name],
+    :first_name       => params[:first_name],
+    :middle_name      => params[:middle_name],
+    :last_name        => params[:last_name],
+    :address          => params[:address],
+    :city             => params[:city],
+    :state            => params[:state],
+    :zip              => params[:zip],
+    :phone            => params[:phone],
+    :school_password  => params[:school_password],
     :grade            => params[:grade],
     :future1          => params[:future1],
     :future2          => params[:future2],
@@ -682,19 +660,15 @@ post '/student/resume/:id/edit/?' do
     :future6          => params[:future6],
     :future7          => params[:future7],
     :future8          => params[:future8],
-    :birth_date   => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
+    :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
   )
-  
     
   redirect "/student/resume/index"
-  
   
   else
     flash[:alert] = 'You must enter a valid school password.'
     redirect request.referrer
-
   end
-  
   
 end
 
@@ -714,18 +688,18 @@ post '/student/resume/edit/?' do
   )
   
   @student = Student.get(session[:student]).update(
-  :email        => params[:email],
-  :password     => params[:password],
-  :name         => params[:name],
-  :first_name   => params[:first_name],
-  :middle_name  => params[:middle_name],
-  :last_name    => params[:last_name],
-    :address   => params[:address],
-    :city      => params[:city],
-    :state     => params[:state],
-    :zip       => params[:zip],
-    :phone     => params[:phone],
-    :school_password => params[:school_password],
+    :email            => params[:email],
+    :password         => params[:password],
+    :name             => params[:name],
+    :first_name       => params[:first_name],
+    :middle_name      => params[:middle_name],
+    :last_name        => params[:last_name],
+    :address          => params[:address],
+    :city             => params[:city],
+    :state            => params[:state],
+    :zip              => params[:zip],
+    :phone            => params[:phone],
+    :school_password  => params[:school_password],
     :grade            => params[:grade],
     :future1          => params[:future1],
     :future2          => params[:future2],
@@ -735,10 +709,9 @@ post '/student/resume/edit/?' do
     :future6          => params[:future6],
     :future7          => params[:future7],
     :future8          => params[:future8],
-    :birth_date   => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
+    :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
   )
   
-    
   redirect "/student/resume/index"
   
   else

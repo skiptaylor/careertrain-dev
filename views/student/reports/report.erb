@@ -80,77 +80,57 @@
 				<% end %> 
 				</table>
 					</form>
+						
 				
-			<form method="post"> 
-				
-				
-				
-				
-				<% @student.exercises(order: [:created_at.desc], limit: 2).each do |e|  %>
-				
-				
-				
-				
-				<% end%>
-				
-				<% @ie.each do |ie|  %>
-				<% if params[ie.position_number.to_s] == "true" %>
-					<%= @student.ie.category %>
-				<% end %>
-				<% end %>
-				
-				<h5>Your Highest Score - <%= @student.score1 %></h5>
-				<h5>Your 2nd Highest Score - <%= @student.score2 %></h5>
+				<h5>Your Highest Score - <em><strong><%= @student.score1 %></strong></em></h5>
+				<h5>Your 2nd Highest Score - <em><strong><%= @student.score2 %></strong></em></h5>
 				<br />
 				<a href="/student/reports/<%= @student.id %>/scores" style="margin-bottom: 9px;" class="btn btn-success">View short Report</a> &nbsp;&nbsp;&nbsp;&nbsp;
 				
 				<a href="/student/reports/<%= @student.id %>/scores_full" style="margin-bottom: 9px;" class="btn btn-success">Download full Report</a>
 			</form>
-			
 			</div>
-			
 			
 			<div class="col-lg-5 offset-lg-1">
 				
 				<br />
 				
-				<h3>Explore other Categories</h3>
+				<h3>Explore Other Categories</h3>
 				<p>You may have more than two “high” scores or ties. To see additional reports, enter the letters of the other categories. Example: if you scored high in A, B, and C, you may want to view the A/B report, the A/C report, and the B/C report.</p>
-				<form method="post" id="ie_scores">
+				<form method="post" id="report">
 				<div class="form-group row">
-						<select type="text" class="form-control pull-left" name="score1" id="score1" style="width: 100px; margin-left: 12px;" >
+						<select type="text" class="form-control pull-left" name="ex_score1" id="ex_score1" style="width: 100px; margin-left: 12px;" >
 							<option>&nbsp;</option>
-							<option <%= 'selected' if @student.score1 == 'A' %> value="A">A</option>
-							<option <%= 'selected' if @student.score1 == 'B' %> value="B">B</option>
-							<option <%= 'selected' if @student.score1 == 'C' %> value="C">C</option>
-							<option <%= 'selected' if @student.score1 == 'D' %> value="D">D</option>
-							<option <%= 'selected' if @student.score1 == 'E' %> value="E">E</option>
-							<option <%= 'selected' if @student.score1 == 'F' %> value="F">F</option>
-							<option <%= 'selected' if @student.score1 == 'G' %> value="G">G</option>
-							<option <%= 'selected' if @student.score1 == 'H' %> value="H">H</option>
-							<option <%= 'selected' if @student.score1 == 'I' %> value="I">I</option>
+							<option <%= 'selected' if @student.ex_score1 == 'A' %> value="A">A</option>
+							<option <%= 'selected' if @student.ex_score1 == 'B' %> value="B">B</option>
+							<option <%= 'selected' if @student.ex_score1 == 'C' %> value="C">C</option>
+							<option <%= 'selected' if @student.ex_score1 == 'D' %> value="D">D</option>
+							<option <%= 'selected' if @student.ex_score1 == 'E' %> value="E">E</option>
+							<option <%= 'selected' if @student.ex_score1 == 'F' %> value="F">F</option>
+							<option <%= 'selected' if @student.ex_score1 == 'G' %> value="G">G</option>
+							<option <%= 'selected' if @student.ex_score1 == 'H' %> value="H">H</option>
+							<option <%= 'selected' if @student.ex_score1 == 'I' %> value="I">I</option>
 						</select>
-						<span style="margin: 7px 0 0 12px">1st Highest</span>
+						<span style="margin: 7px 0 0 12px"><strong>1st Highest Score</strong></span>
 				</div>
 				<div class="form-group row">
-						<select type="text" class="form-control pull-left" name="score2" id="score2" style="width: 100px; margin-left: 12px;" >
+						<select type="text" class="form-control pull-left" name="ex_score2" id="ex_score2" style="width: 100px; margin-left: 12px;" >
 							<option>&nbsp;</option>
-							<option <%= 'selected' if @student.score2 == 'A' %> value="A">A</option>
-							<option <%= 'selected' if @student.score2 == 'B' %> value="B">B</option>
-							<option <%= 'selected' if @student.score2 == 'C' %> value="C">C</option>
-							<option <%= 'selected' if @student.score2 == 'D' %> value="D">D</option>
-							<option <%= 'selected' if @student.score2 == 'E' %> value="E">E</option>
-							<option <%= 'selected' if @student.score2 == 'F' %> value="F">F</option>
-							<option <%= 'selected' if @student.score2 == 'G' %> value="G">G</option>
-							<option <%= 'selected' if @student.score2 == 'H' %> value="H">H</option>
-							<option <%= 'selected' if @student.score2 == 'I' %> value="I">I</option>
+							<option <%= 'selected' if @student.ex_score2 == 'A' %> value="A">A</option>
+							<option <%= 'selected' if @student.ex_score2 == 'B' %> value="B">B</option>
+							<option <%= 'selected' if @student.ex_score2 == 'C' %> value="C">C</option>
+							<option <%= 'selected' if @student.ex_score2 == 'D' %> value="D">D</option>
+							<option <%= 'selected' if @student.ex_score2 == 'E' %> value="E">E</option>
+							<option <%= 'selected' if @student.ex_score2 == 'F' %> value="F">F</option>
+							<option <%= 'selected' if @student.ex_score2 == 'G' %> value="G">G</option>
+							<option <%= 'selected' if @student.ex_score2 == 'H' %> value="H">H</option>
+							<option <%= 'selected' if @student.ex_score2 == 'I' %> value="I">I</option>
 						</select>
-						<span style="margin: 7px 0 0 12px">2nd Highest</span>
+						<span style="margin: 7px 0 0 12px"><strong>2nd Highest Score</strong></span>
 				</div>
 				
 					<p style="margin-top: 24px;">
-						<!-- <input type="submit" class="btn" value="Save Example Scores" /> -->
-						<input href="/student/reports/<%= @student.id %>/scores" type="submit" class="btn" value="Save Example Scores" /> &nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="submit" class="btn" value="Save Example Scores" />
 					</p>
 				</form>
 				
@@ -193,4 +173,12 @@
 			
 		</div>
 	</div>
+	
+
+<script  type="text/javascript">
+	var frmvalidator = new Validator("report");
+	frmvalidator.addValidation("ex_score1","req","Please enter your 1st highest score");
+	frmvalidator.addValidation("ex_score2","req","Please enter your 2nd highest score");
+</script>
+	
 	
