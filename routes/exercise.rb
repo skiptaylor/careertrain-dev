@@ -78,10 +78,16 @@ end
 
 post "/student/reports/:id/report/?" do
   student = Student.get(params[:id])
-  student.update(
-    :ex_score1     => params[:ex_score1],
-    :ex_score2     => params[:ex_score2]
-  )
+  
+  unless params[:ex_score1] == params[:ex_score2]
+    student.update(
+      :ex_score1     => params[:ex_score1],
+      :ex_score2     => params[:ex_score2]
+      )
+  else
+    flash[:alert] = '1st Highest and 2nd Highest Scores cannot be the same.'
+    redirect "/student/reports/#{params[:id]}/report"
+  end
 
   redirect "/student/reports/#{params[:id]}/report"
 end
