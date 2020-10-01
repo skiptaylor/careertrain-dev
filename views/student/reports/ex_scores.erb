@@ -1,0 +1,61 @@
+<style>
+	p	{
+		line-height: 1.2em;
+		padding-bottom: 0.01em;
+	}
+	
+	h5	{
+		font-size: 18px;
+		font-weight: 600;
+	}
+	ul	{
+		margin-bottom: 1px;
+	}
+	td {
+	  /*height: 275px;*/
+	  vertical-align: bottom;
+	}
+	
+	table.side tr td	{
+		
+		vertical-align: top;
+		padding-top: 0;
+	}
+	
+	div.inter	{
+		display: none;
+	}
+</style>
+
+
+<div class="container">	
+	<div class="row">
+		<div class="col-md-12">
+					
+					<span class="d-none d-sm-none d-md-block"><p  style="float: right; margin-top:12px;"><a onclick="goBack()" class="btn">Back</a></p><img src="/img/arng_4cp_cta_camo.png" style="float: right; margin: 12px 24px;" width="80px"></span>
+					<span class="d-block d-md-none"><img src="/img/arng_4cp_cta_camo.png" style="float: right; margin-top:12px;" width="60px"></span>
+					
+					
+					<span class="d-none d-sm-none d-md-block"><img src="/img/eCareerDirection-logo-black.svg" style="margin-top:42px;" width="240px"></span>
+					<span class="d-block d-md-none"><img src="/img/eCareerDirection-logo-black.svg" style="margin-top:42px;" width="210px"></span>
+				<p style="margin-top: 24px;">Report for <%= @student.first_name %> <%= @student.last_name %> at <%= @student.school.school_name %></p>
+			
+		</div>
+		<div class="col-md-12" style="margin-top: -32x;">			
+			<hr />
+		</div>
+	</div>
+		
+		    <% if @report1 %>
+				  <%= @report1 %>
+		    <% end %>
+			
+		
+	<div class="row">		
+		<div class="col-md-12">
+			<hr />
+			<p><center><a onclick="goBack()" class="btn">Back</a></center></p>
+		</div>
+	</div>
+</div>
+

@@ -280,7 +280,39 @@ get "/student/reports/:id/scores/?" do
   end
  
  # -------------------- show report ---------------------
- if @student.score1 && @student.score2 || @student.ex_score1 && @student.ex_score2
+ if @student.score1 && @student.score2
+   erb :'student/reports/scores'
+ else
+   erb :'student/reports/report'
+ end
+  
+end
+
+get "/student/reports/:id/ex_scores/?" do
+  @school = School.all
+  @exercise = Exercise.get(params[:exercise_id])
+  @student = Student.get(params[:id])
+    
+  if @student.ex_score1 && @student.ex_score1 != ''
+    
+  else
+    @student.ex_score1 = false
+  end
+
+  if @student.ex_score2 && @student.ex_score2 != ''
+    
+  else
+    @student.ex_score2 = false
+  end
+  
+  if @student.ex_score1 && @student.ex_score2 && File.exists?("./views/reports/#{@student.ex_score1}#{@student.ex_score2}.inc")
+    @report1 = File.read("./views/reports/#{@student.ex_score1}#{@student.ex_score2}.inc")
+  elsif @student.ex_score1 && @student.ex_score2 && File.exists?("./views/reports/#{@student.ex_score2}#{@student.ex_score1}.inc")
+    @report1 = File.read("./views/reports/#{@student.ex_score1}#{@student.ex_score2}.inc")
+  end
+
+ # -------------------- show report ---------------------
+ if @student.ex_score1 && @student.ex_score2
    erb :'student/reports/scores'
  else
    erb :'student/reports/report'
@@ -325,8 +357,8 @@ get "/student/reports/:id/scores_full/?" do
   
   if @student.score1 && @student.score2 && File.exists?("./views/reports-long/#{@student.score1}#{@student.score2}.inc")
     @report1 = File.read("./views/reports-long/#{@student.score1}#{@student.score2}.inc")
-  elsif @student.score1 && @tudent.score2 && File.exists?("./views/reports-long/#{student.score2}#{student.score1}.inc")
-    @report1 = File.read("./views/reports-long/#{student.score2}#{student.score1}.inc")
+  elsif @student.score1 && @student.score2 && File.exists?("./views/reports-long/#{@student.score2}#{@student.score1}.inc")
+    @report1 = File.read("./views/reports-long/#{@student.score2}#{@student.score1}.inc")
   end
 
   if @student.score1 && @student.score3 && File.exists?("./views/reports-long/#{@student.score1}#{@student.score3}.inc")
@@ -350,10 +382,51 @@ get "/student/reports/:id/scores_full/?" do
   
 end
 
-        post "/student/reports/:id/scores_full/?" do
-          email.fullreport
-          redirect "/student/reports/report"
-        end
+post "/student/reports/:id/scores_full/?" do
+  email.fullreport
+  redirect "/student/reports/report"
+end
+
+
+get "/student/reports/:id/ex_scores_full/?" do
+  @school = School.all
+  @exercise = Exercise.get(params[:exercise_id])
+  @student = Student.get(params[:id])
+
+  if @student.ex_score1 && @student.ex_score1 != ''
+
+  else
+    @student.ex_score1 = false
+  end
+
+  if @student.ex_score2 && @student.ex_score2 != ''
+
+  else
+    @student.ex_score2 = false
+  end
+
+  if @student.ex_score1 && File.exists?("./views/reports-long/#{@student.ex_score1}.inc")
+    @cat1 = File.read("./views/reports-long/#{@student.ex_score1}.inc")
+  end
+
+  if @student.ex_score2 && File.exists?("./views/reports-long/#{@student.ex_score2}.inc")
+    @cat2 = File.read("./views/reports-long/#{@student.ex_score2}.inc")
+  end
+
+  if @student.ex_score1 && @student.ex_score2 && File.exists?("./views/reports-long/#{@student.ex_score1}#{@student.ex_score2}.inc")
+    @report1 = File.read("./views/reports-long/#{@student.ex_score1}#{@student.ex_score2}.inc")
+  elsif @student.ex_score1 && @student.ex_score2 && File.exists?("./views/reports-long/#{@student.ex_score2}#{@student.ex_score1}.inc")
+    @report1 = File.read("./views/reports-long/#{@student.ex_score2}#{@student.ex_score1}.inc")
+  end
+
+ # -------------------- show report ---------------------
+ if @student.ex_score1 && @student.ex_score2
+   erb :'student/reports/ex_scores_full', layout: false
+ else
+   erb :'student/reports/report'
+ end
+
+end
 
 
 
