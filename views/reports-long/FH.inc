@@ -14,7 +14,7 @@ some of these occupations.</p>
 <p><strong>Courses you might want to take in high school and beyond
 (in addition to English & Math):</strong><br />
 In high school you should take courses that emphasize math and
-science. Any courses that provide opportunities to use your physical
+science. Any courses that provide opportunities to use your mental
 strength will be of great interest to you.  They will also help
 prepare you for career opportunities in this area.</p>
 
@@ -298,7 +298,7 @@ scientists who intend to conduct research or teach at the university
 level.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of marine biologists was
-$60,520 in May 2016. </blockquote>
+$79,580 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -314,14 +314,14 @@ also give advice on how to clean the environment. For example, they
 might design a safe way to get rid of trash. </blockquote>
 	<span class="header3">Education</span>
 	<blockquote>To be an environmental scientist, you would need
-at least a college degree. Most need an advanced degree; either a
+at least a bachelor's degree. Most need an advanced degree; either a
 master's degree, which takes one or two more years after finishing
 college, or a doctoral degree, which takes longer.
 
  </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of environmental
-scientists was $68,910 in May 2016. </blockquote>
+scientists was $71,360 in May 2019. </blockquote>
 
 </blockquote>
 
@@ -349,7 +349,7 @@ degrees and one-year certificate programs which are primarily
 intended for technicians. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of occupational health and
-safety specialists was $66,820 in May 2016. </blockquote>
+safety specialists was $74,100 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -359,21 +359,21 @@ need to have technical skills.</p>
 
 <hr size="1" />
 
-	<span class="header2">Aircraft Pilot</span><br /><br />
+	<span class="header2">Airline Pilot</span><br /><br />
 	<img class="job_pic" src="/images/icons/FH/43047.jpg"
 width="100" height="100" border="0" alt="Aircraft Pilot">
 	<span class="header3">Job Description</span>
-	<blockquote>An aircraft pilot flies an airplane or
+	<blockquote>An airline pilot flies an airplane or
 helicopter.  In this job, you would  be responsible for the safety
 of the aircraft as well as any passengers on board.  You must have
 perfect vision, hearing, and coordination to be a pilot.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Most commercial pilots have a college degree and
-have a pilot's license.  Many pilots start out as military
-pilots.</blockquote>
+	<blockquote>Commercial pilots need a high school diploma and a 
+pilot's license. Most have a bachelor's degree. Airline pilots usually start off as commercial pilots, and many start their career in the military.
+</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of aircraft pilots was
-$105,720 in May 2016. </blockquote>
+	<blockquote>The median annual wage of airline pilots was
+$147,220 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -394,8 +394,8 @@ their services directly to the public must be licensed. Continuing
 education to keep current with rapidly changing technology is
 important for engineers.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the online O*Net Resource Center, onetonline.org,
-the median annual wage of engineers was $97,300 in February 2018.</blockquote>
+	<blockquote>The median annual wage of engineers was $81,440 in 
+May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -417,12 +417,11 @@ arthritis, heart disease, fractures, head injuries, and cerebral
 palsy.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>Individuals pursuing a career as a physical
-therapist usually need a master's degree from an accredited physical
-therapy program and a state license requiring passing scores on
+therapist need a Doctor of Physical Therapy (DPT) degree and a state license. To earn the license, you need passing scores on
 national and state examinations.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of physical therapists
-was $85,400 in May 2016. </blockquote>
+was $89,440 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -444,7 +443,7 @@ Aspiring nuclear medicine technologists should check the
 requirements of the state in which they plan to work. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of nuclear medicine
-technnologists was $74,350 in May 2016. </blockquote>
+technnologists was $77,950 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -470,20 +469,8 @@ from a hospital, a vocational or technical school, or the Armed
 Forces. A few technicians learn their skills on the job.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of clinical laboratory
-technicians was $50,930 in May 2016. </blockquote>
+technologists and technicians was $53,120 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/08/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 22, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 22, 2020). </blockquote>

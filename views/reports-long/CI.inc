@@ -71,6 +71,7 @@ your people skills and help others.</p>
 			Church Activities<br />
 			Hospital Volunteer<br />
 			Computer Activities
+	<span class="header2">Mental Health and
 		</td>
 		<td>
 			Junior Achievement<br />
@@ -256,11 +257,10 @@ requirement, a master's degree in social work or a related field has
 become the standard for many positions.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of social workers was
-$46,890 in May 2016. </blockquote>
+$50,470 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Mental Health and
 Substance Abuse Social Worker </span><br /><br />
 	<img class="job_pic" src="/images/icons/CI/7240.jpg"
 width="100" height="100" border="0" alt="Occupational Social
@@ -278,7 +278,7 @@ typically required for positions in health settings and is required
 for clinical work as well.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of mental health and
-substance abuse social workers was $42,150 in May 2016. </blockquote>
+substance abuse social workers was $46,650 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -288,7 +288,7 @@ Assistants</span><br /><br />
 	<blockquote>Social and human service assistants provide
 services to clients to help them improve their quality of life. They
 assess clients' needs, investigate their eligibility for benefits
-and services such as food stamps, Medicaid, or welfare, and help to
+and services such as a nutrition assistance program, Medicaid, or welfare, and help to
 obtain them. They also arrange for transportation and escorts, if
 necessary, and provide emotional support. Social and human service
 assistants monitor and keep case records on clients and report
@@ -300,7 +300,7 @@ with relevant work experience or education beyond high
 school.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of social and human
-service assistants was $31,810 in May 2016. </blockquote>
+service assistants was $35,060 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -324,13 +324,13 @@ building. Your duties might include making rental agreements,
 collecting rent, and hiring employees to maintain the
 grounds.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Employers increasingly are hiring college
+	<blockquote>A high school diploma and related experience are needed for an entry level position as a property manager; however, employers are increasingly hiring college
 graduates with a bachelor's or master's degree in business
 administration, accounting, finance, or real estate, even if they
 don't have much practical experience.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of property real estate
-or community association managers was $57,040 in May 2016.
+or community association managers was $58,760 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -355,7 +355,7 @@ in which they work.  To get this license, you must take courses in
 real estate law and pass an exam.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of real estate agents was
-$46,410 in May 2016. </blockquote>
+$48,930 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -373,7 +373,7 @@ records.</blockquote>
 teller. A teller is given on-the-job training.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of bank tellers was
-$27,260 in May 2016. </blockquote>
+$31,230 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -400,7 +400,7 @@ apprenticeship, and pass an examination. College programs in
 mortuary science usually last from two to four years. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of funeral directors was
-$54,830 in May 2016. </blockquote>
+$58,310 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -427,8 +427,8 @@ with experience. Formal internships or part-time or summer work in a
 hotel are an asset. Most degree programs include work-study
 opportunities. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of lodging managers was
-$51,840 in May 2016.</blockquote>
+	<blockquote>The median annual wage of hotel managers was
+$54,430 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -455,21 +455,7 @@ computer science. Some programs combine classroom on-the-job
 experience. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of food service managers
-was $50,820 in May 2016. </blockquote>
+was $55,320 in May 2019. </blockquote>
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/08/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 15, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 15, 2020). </blockquote>

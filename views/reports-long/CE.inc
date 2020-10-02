@@ -96,10 +96,11 @@ what you want to do when you are an adult.</p>
 			Data Processing<br />
 			Graphic Design<br />
 			Life Guarding<br />
-			Photographic Studios<br />
+			Photography Studios<br />
 		</td>
 		<td>
-			Temporary Agencies<br />
+			Temporary Agencies<banager</span><br /><br />
+	<img class="job_pic" src="/images/icor />
 			Camp Counseling<br />
 			Equipment Operation<br />
 			Radio Stations
@@ -275,13 +276,12 @@ other fields who have demonstrated experience, interest, and
 aptitude. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of food service managers
-was $50,820 in May 2016.
+was $55,320 in May 2019.
 </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Construction Manager</span><br /><br />
-	<img class="job_pic" src="/images/icons/CE/1140.jpg"
+	<span class="header2">Construction Mns/CE/1140.jpg"
 width="100" height="100" border="0" alt="Construction Manager" />
 	<span class="header3">Job Description</span>
 	<blockquote>A construction manager works at a building site
@@ -301,7 +301,7 @@ construction workers to move up to become construction
 managers.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of construction managers
-was $89,300 in May 2016.
+was $95,260 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -329,7 +329,7 @@ collision repair. On-the-job training is also offered in some
 automotive repair shops.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of collision repair
-technicians was $38,470 in May 2016.
+technicians was $42,350 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -354,10 +354,10 @@ different people.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>A college degree is needed to become a
 management consultant.  Most companies look for those with degrees
-in business, math, or a computer-related area.</blockquote>
+in business, math, or a computer-related area and several years of related experience.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of management consultants
-was $81,330 in May 2016. </blockquote>
+was $85,260 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -389,10 +389,9 @@ Officer</span><br /><br />
 	<img class="job_pic" src="/images/icons/CE/1202.jpg"
 width="100" height="100" border="0" alt="Financial Aid Officer" />
 	<span class="header3">Job Description</span>
-	<blockquote>A financial aid officer works with students who
+	<blockquote>A financial aid officer (or advisor) works with students who
 need help in paying their college tuition. In this job, you would
-let students know what kinds of loans or grants they might qualify
-for. You would help them to complete the necessary application
+let students know what kinds of loans or grants might be available to them. You would help them to complete the necessary application
 forms. You would also see that those students who met the
 requirements for receiving money got this money.</blockquote>
 	<span class="header3">Education</span>
@@ -403,7 +402,7 @@ affairs, counseling, or higher education administration.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>According to the job search website, indeed.com, the
-median annual wage of financial aid officers was $39,049 in February 2018.
+median annual wage of financial aid officers was $45,950 in September 2020.
 </blockquote>
 
 <hr size="1" />
@@ -428,13 +427,12 @@ people who needed to know. Commanders might use this information as
 they plan possible military movements.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You need at least a bachelor's degree for this
-position.  You also need to understand one or more foreign
-languages.  Knowledge of other countries is a must. To be chosen as
+position.  You also need to understand one or more world languages.  Knowledge of other countries is a must. To be chosen as
 an attach&eacute;, you would need to have many years' experience in the
 military. The person who fills this position has to be very
 educated.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The yearly salary you recieve in the Military is
+	<blockquote>The yearly salary you receive in the Military is
 based on your rank, years of service, and occupational
 specialty.</blockquote>
 
@@ -454,13 +452,12 @@ Your goal would be to help Americans and American businesses enjoy
 or work in the country.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You need a bachelor's degree to be a Foreign
-Service officer.  You also need to have studied at least one foreign
+Service officer.  You also need to have studied at least one world
 language.  Also courses in English, history, economics, and public
 speaking are important. The person who fills this position must be
 very educated. Knowledge of other countries is a must.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median average wage of foreign service officers
-was $114,290 in May 2016. </blockquote>
+	<blockquote>The median average wage of foreign service officers was $123,092 in September 2020, according to state.gov. </blockquote>
 
 <hr size="1" />
 
@@ -480,28 +477,8 @@ field for this job. You also need to have skills in accounting and
 statistics.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of environmental
-protection specialists was $68,910 in May 2016. </blockquote>
+protection specialists was $71,360 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/07/2018. </blockquote>
-
-
-
-Additional average salary information acquired from job search
-website indeed.com in February 2018. The Indeed Salary Search data
-is based on an index of salary information extracted from over 50
-million job postings from thousands of unique sources over the
-previous year.
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 14, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 14, 2020). </blockquote><blockquote>U.S. Department of State, <i> 2020 Foreign Service Salary Schedule </i>, On the Internet at <a href="http://www/state.com">http://www/state.com</a> (visited September 14, 2020). </blockquote>

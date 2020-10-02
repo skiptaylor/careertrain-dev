@@ -38,7 +38,7 @@ that help you understand people.</p>
 			Criminal Justice
 		</td>
 		<td>
-			Foreign Language<br />
+			World Languages<br />
 			Physical Education<br />
 			Communications<br />
 			Computer Inf. Sys.
@@ -69,7 +69,7 @@ feelings.</p>
 		<td>
 			Band/Chorus<br />
 			Photography Club<br />
-			Fight Training<br />
+			Flight Training<br />
 			Radio/TV Activities
 		</td>
 		<td>
@@ -112,7 +112,7 @@ what you want to do when you are an adult.</p>
 		</td>
 		<td>
 			Newspaper publisher<br />
-			Photographic Studios<br />
+			Photography Studios<br />
 			Printing Companies
 		</td>
 	</tr>
@@ -160,7 +160,7 @@ cellpadding="0" width="100%">
 						<span
 class="header2">Written & Oral Communication</span><br /><br />
 
-	<em>Attach�<br /><br />
+	<em>Lawyer<br /><br />
 						Public Relations
 Manager<br /><br />
 						Foreign
@@ -257,16 +257,15 @@ instructions for online.</blockquote>
 communications, journalism, or English for this job. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of scientific or
-technical publications writers was $69,850 in May 2016. </blockquote>
+technical publications writers was $72,850 in May 2019. </blockquote>
 
 <hr size="1" />
 
 	<span class="header2">Editorial Assistant</span><br /><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As an editorial assistant you would work closely
-with an editor.  You would check to be sure that the grammar,
-spelling, and sentence structure were correct. You would also be
-sure that any facts, dates and other information were
+with an editor.  You would check to be sure that writers' grammar,
+spelling, sentence structure, facts, dates and other information were
 correct.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You need at least a bachelor's degree in
@@ -274,9 +273,8 @@ communications, journalism, or English for this job.  Volunteer work
 on yearbooks and school newspapers can give you
 experience.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job-search website indeed.com,
-the median annual wage of editorial assistants was $31,395 in
-February 2018.</blockquote>
+	<blockquote>The median annual wage of editorial assistants was $41,951 in
+May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -294,8 +292,8 @@ your research.</blockquote>
 communications, journalism, or English for this job.  Experience at
 a newspaper or broadcast studio is helpful too.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of reporters was $38,870
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of reporters was $46,270
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -316,13 +314,11 @@ factors influencing traffic conditions to decide where traffic
 lights, signs and road markings should be placed. Your designs would
 help traffic to flow smoothly. </blockquote>
 	<span class="header3">Education</span>
-	<blockquote>A traffic engineer must have at least a
-bachelor's degree and be registered in the state where he/she
+	<blockquote>A traffic engineer typically has at least a
+bachelor's degree and is registered in the state where he/she
 works.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job-search website indeed.com,
-the median annual wage of traffic engineers was $80,263 in February
-2016. </blockquote>
+	<blockquote>The median annual wage of traffic engineers was $87,060 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -340,9 +336,7 @@ the military.</blockquote>
 But courses in typing, speech, and English will be valuable. The
 military will train you in radio operation.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job-search website indeed.com,
-the median annual wage of radio operators was $29,924 in February
-2018. </blockquote>
+	<blockquote>The median annual wage of radio operators was $42,790 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -363,7 +357,7 @@ networking provides the best preparation for work as a broadcast
 technician.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of broadcast technicians
-was $42,550 in May 2016. </blockquote>
+was $40,570 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -382,7 +376,7 @@ Director" />
 	<span class="header3">Job Description</span>
 	<blockquote>News analysts, reporters, and correspondents
 gather information, prepare stories, and make broadcasts that inform
-us about local, State, national, and international events; present
+us about local, state, national, and international events; present
 points of view on current issues; and report on the actions of
 public officials, corporate executives, interest groups, and others
 who exercise power.</blockquote>
@@ -394,7 +388,7 @@ newspapers or broadcasting stations, and internships with news
 organizations.  </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of broadcast journalists
-was $38,870 in May 2016. </blockquote>
+was $46,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -416,7 +410,7 @@ familiarity with computer graphics and design software also are
 important.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of graphic designers was
-$47,640 in May 2016. </blockquote>
+$52,110 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -426,40 +420,20 @@ width="100" height="100" border="0" alt="Photojournalist" />
 	<span class="header3">Job Description</span>
 	<blockquote>If you like to take photographs, you might
 become a photojournalist. In this job, you would photograph
-important events for newspapers, magazines, and television.  A
-photojournalist's job is much like that of a reporter.  The
-difference is that you would use photos to tell the story.  To be
-successful, you need to be brave enough to follow a hunch.  You also
+important events for newspapers, magazines, and television. A
+photojournalist's job is much like that of a reporter. The
+difference is that you would use photos to tell the story. To be
+successful, you need to be brave enough to follow a hunch. You also
 have to be able to make quick decisions.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Entry-level positions in photojournalism or in
+	<block-quote>Positions in photojournalism or in
 industrial or scientific photography generally require a college
 degree in photography or in a field related to the industry in which
 the photographer seeks employment.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of photojournalists was
-$34,070 in May 2016. </blockquote>
+$36,280 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/07/2018. </blockquote>
-
-
-Additional average salary information acquired from job search
-website indeed.com in February 2018. The Indeed Salary Search data
-is based on an index of salary information extracted from over 50
-million job postings from thousands of unique sources over the
-previous year.
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 10, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 10, 2020). </blockquote>

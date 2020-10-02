@@ -74,8 +74,6 @@ get "/student/reports/:id/report/?" do
   erb :"/student/reports/report"
 end
 
-
-
 post "/student/reports/:id/report/?" do
   student = Student.get(params[:id])
   

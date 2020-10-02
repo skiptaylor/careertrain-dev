@@ -42,7 +42,7 @@ understand people as well.</p>
 		</td>
 		<td>
 			Bookkeeping<br />
-			Foreign Language<br />
+			World Languages<br />
 			Physical Education<br />
 		</td>
 	</tr>
@@ -54,7 +54,12 @@ If you have time for afterschool activities or part-time jobs, make
 them count. You will enjoy any club or activity that involves taking
 on challenges.</p>
 
+<table cellpadding="10" cellspacing="10">p>
+
 <table cellpadding="10" cellspacing="10">
+	<tr valign="top">
+		<td>
+			Construction Sites<
 	<tr valign="top">
 		<td>
 			Athletics<br />
@@ -86,12 +91,7 @@ on challenges.</p>
 <p><strong>Workplaces that you may wish to consider for a part-time
 job:</strong><br />
 These places may offer valuable opportunities to help you decide
-what you want to do when you are an adult.</p>
-
-<table cellpadding="10" cellspacing="10">
-	<tr valign="top">
-		<td>
-			Construction Sites<br />
+what you want to do when you are an adult.</br />
 			Radio/TV Stations<br />
 			Printing Companies
 		</td>
@@ -107,7 +107,7 @@ what you want to do when you are an adult.</p>
 		</td>
 		<td>
 			Camp Counseling<br />
-			Photographic Studios<br />
+			Photography Studios<br />
 			Parks/Recreation
 		</td>
 		<td>
@@ -204,7 +204,7 @@ Supervisor<br /><br />
 Technician<br /><br />
 						Office Machine
 Repair Technician<br /><br />
-						Accountant
+						Accounting Clerk
 							<ul>
 
 	<li>Payroll</li>
@@ -265,17 +265,17 @@ efficiently. They serve as information and communication managers
 for an office; plan and schedule meetings and appointments; organize
 and maintain paper and electronic files; manage projects; conduct
 research; and disseminate information by using the telephone, mail
-services, Web sites, and e-mail. They also may handle travel and
+services, websites, and e-mail. They also may handle travel and
 guest arrangements.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Employers of executive secretaries increasingly
-are seeking candidates with a college degree, as these secretaries
+	<blockquote>Employers of executive assistants increasingly
+are seeking candidates with a college degree, as these assistants
 work closely with top executives. A degree related to the business
 or industry in which a person is seeking employment may provide the
 job seeker with an advantage in the application process.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job search website, glassdoor.com, the
-median annual wage of executive assistants was $56,668 in February 2018. </blockquote>
+	<blockquote>The median annual wage of executive assistants 
+was $39,850 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -312,11 +312,11 @@ spent.</blockquote>
 	<blockquote>Employers usually prefer bookkeeping,
 accounting, and auditing clerks to have at least a high school
 diploma and some accounting coursework or relevant work experience.
-Clerks should also have good communication skills, be detail-
-oriented, and trustworthy.</blockquote>
+Clerks should also have good communication skills, be 
+detail-oriented, and trustworthy.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of accounting clerks was
-$38,390 in May 2016. </blockquote>
+$41,230 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -349,17 +349,16 @@ college program, but 4-year programs are increasingly available.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of cardiovascular
-technicians was $64,280 in May 2016.
+technicians was $59,600 in May 2019.
 </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Office and Administrative Support
-Worker Supervisor or Manager</span><br /><br />
+	<span class="header2">Supervisor of Office Support Workers</span><br /><br />
 	<img class="job_pic" src="/images/icons/DE/43302.jpg"
 width="100" height="100" border="0" alt="Clerical Supervisor" />
 	<span class="header3">Job Description</span>
-	<blockquote>A clerical supervisor plans and schedules what
+	<blockquote>A office supervisor plans and schedules what
 those in an office do. You would assign work, maintain personnel
 files, and train new staff members. If the office equipment were to
 break down, it would be your responsibility to make sure it was
@@ -373,8 +372,8 @@ become eligible for promotion to a supervisory position,
 administrative support workers must prove they are capable of
 handling additional responsibilities. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of administrative support
-managers was $90,050 in May 2016. </blockquote>
+	<blockquote>The median annual wage of supervisors of office support workers 
+was $56,620 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -392,7 +391,7 @@ job. It is helpful to attend a one-to-two year program in this
 field.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of office machine repair
-technicians was $36,940 in May 2016. </blockquote>
+technicians was $42,070 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -405,19 +404,20 @@ details and who are efficient.</p>
 	<span class="header2">Optometric
 Technician</span><br /><br />
 	<span class="header3">Job Description</span>
-	<blockquote>Optometry is the study of the eyes and vision.
-As an optometric technician, you would help an optometrist with
+	<blockquote>Optometry is the science of vision and eye care.
+Service members must have good vision. As an optometric technician (or optician)
+in the military, you would help an optometrist with
 his/her patients. You would perform vision screening tests and order
 glasses and contact lenses. You would have to be very precise in
 giving prescriptions for glasses and contacts.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You do not need any special education to become
-an optometric technician. It would be helpful to take courses such
-as geometry and algebra in high school.  Biology courses will also
+an optometric technician. Training usually occurs on-the-job. It would be helpful 
+to take courses such as geometry and algebra in high school.  Biology courses will also
 be helpful.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of optometric technicians
-was $34,630 in May 2016. </blockquote>
+	<blockquote>The median annual wage of civilian optometric technicians
+was $37,840 in May 2019. Military pay depends on rank and years of service. </blockquote>
 
 <hr size="1" />
 
@@ -436,8 +436,9 @@ would be military personnel and their families.</blockquote>
 	<blockquote>There are no formal requirements for this
 position.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of transportation
-specialists was $39,304 in May 2016. </blockquote>
+	<blockquote>The median annual wage of civilian transportation
+specialists was $56,640 in May 2019. Military pay depends on rank and 
+years of service. </blockquote>
 
 <hr size="1" />
 
@@ -454,22 +455,10 @@ well.</blockquote>
 	<blockquote>There are no formal requirements for this
 position.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of lodging specialists
-was $51,840 in May 2016. </blockquote>
+	<blockquote>The median annual wage of civilian lodging specialists
+was $54,430 in May 2019. Military pay depends on rank and years of service. </blockquote>
 
 <hr size="1" />
 
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/08/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 15, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 15, 2020). </blockquote>

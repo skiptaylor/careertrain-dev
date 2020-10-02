@@ -42,7 +42,7 @@ courses such as political science and sociology may interest you.</p>
 			Sociology<br />
 		</td>
 		<td>
-			Foreign Language<br />
+			World Languages<br />
 			Industrial Technology<br />
 			Advertising/Marketing<br />
 			Criminal Justice
@@ -52,7 +52,7 @@ courses such as political science and sociology may interest you.</p>
 
 <p><strong>Extracurricular/volunteer activities or organizations
 you may find interesting:</strong><br />
-If you have time for afterschool activities or part-time jobs, make
+If you have time for after-school activities or part-time jobs, make
 them count. You will most enjoy any club or activity where you can
 use your mental and physical strength.</p>
 
@@ -267,7 +267,7 @@ licensure, certification, or registration requirement, but the
 regulations vary.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of public health social
-workers was $46,890 in May 2016. </blockquote>
+workers was $59,300 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -286,7 +286,7 @@ although a bachelor's degree is adequate for some entry-level
 positions.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of medical and health
-services managers was $96,540 in May 2016. </blockquote>
+services managers was $100,980 in May 2019. </blockquote>
 
 
 <hr size="1" />
@@ -312,14 +312,14 @@ requires the specialist to be familiar with economic and wage data
 and to have extensive knowledge of labor law and collective
 bargaining trends.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Many labor relations jobs require graduate study
-in industrial or labor relations. A strong background in industrial
-relations and law is highly desirable for contract negotiators,
-mediators, and arbitrators; in fact, many people in these
+	<blockquote>Most labor relations jobs require at least a 
+bachelor's degree in industrial or labor relations. A graduate degree and 
+strong background in industrial relations and law are highly desirable 
+for contract negotiators, mediators, and arbitrators; in fact, many people in these
 specialties are lawyers. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of industrial labor
-relations specialists was $62,310 in May 2016. </blockquote>
+relations specialists was $69,020 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -344,7 +344,7 @@ detectives, and special agents improve their job performance.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of police detectives was
-$61,600 in May 2016. </blockquote>
+$65,170 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -362,7 +362,7 @@ building.</blockquote>
 You also need a valid driver's license.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of security guards was
-$25,840 in May 2016. </blockquote>
+$29,680 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -386,8 +386,7 @@ also speak to high school and community groups.</blockquote>
 recruiting specialist. Courses in English, social studies, and
 public speaking are valuable.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of recruiting specialists
-was $62,080 in May 2016. </blockquote>
+	<blockquote>The yearly salary you receive in the military isbased on your rank, years of service and occupationalspecialty. </blockquote>
 
 <hr size="1" />
 
@@ -406,8 +405,7 @@ people what to do if there was an emergency.</blockquote>
 	<blockquote>The military provides training to people who
 want to work in this occupation.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of emergency management
-specialists was $70,500 in May 2016. </blockquote>
+	<blockquote>The yearly salary you receive in the military isbased on your rank, years of service and occupationalspecialty. </blockquote>
 
 <hr size="1" />
 
@@ -425,23 +423,8 @@ his/her students.</blockquote>
 	<blockquote>You need a college degree for this job. Some
 training would be provided by the military.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of military trainers was $59,020 in
-May 2016. </blockquote>
+	<blockquote>The yearly salary you receive in the military isbased on your rank, years of service and occupationalspecialty. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/08/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 21, 2020). </blockquote>

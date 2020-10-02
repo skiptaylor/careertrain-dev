@@ -46,7 +46,7 @@ opportunities in this area.</p>
 			Art
 		</td>
 		<td>
-			Foreign Language<br />
+			World Languages<br />
 			Sociology
 	</tr>
 </table>
@@ -284,8 +284,7 @@ occupations that may interest you.</p>
 width="100" height="100" border="0" alt="Art Teacher" />
 	<span class="header3">Job Description</span>
 	<blockquote>An art teacher helps students in his/her class
-to enjoy the beauty in art and to develop any skills in art that
-they might have.  As an art teacher, you would write lesson plans,
+to enjoy the beauty in art and to develop any new artistic skills.  As an art teacher, you would write lesson plans,
 teach classes, and possibly sponsor the school's art club. You would
 need to have skill in at least one area of art. But what is most
 important is that you are able to help students get in touch with
@@ -297,8 +296,8 @@ certificate.  Most public school teachers earn a master's degree as
 they continue to teach.  Teachers love to learn and spend a great
 deal of time as students themselves.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage in May 2016 of art teachers
-in high schools was 58,030 and 75,430 in post-secondary settings. </blockquote>
+	<blockquote>The median annual wage in May 2019 of art teachers
+in elementary and middle schools was $59,420. High school teachers' salary was $61,660, and $83,220 was the median annual salary in post-secondary settings. </blockquote>
 
 <hr size="1" />
 
@@ -306,7 +305,7 @@ in high schools was 58,030 and 75,430 in post-secondary settings. </blockquote>
 Teacher</span><br /><br />
 	<span class="header3">Job Description</span>
 	<blockquote>A special education teacher works with students
-who have physical, mental, or emotional disabilities.  As a special
+who have learning, physical, mental, or emotional disabilities.  As a special
 education teacher, you would write individual lesson plans and teach
 your students.  You would need to be able to encourage students to
 work hard even when they found the work difficult. You must also be
@@ -320,7 +319,7 @@ to teach. Teachers love to learn and spend a great deal of time as
 students themselves.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of special education
-teachers was $57,910 in May 2016. </blockquote>
+teachers was $61,030 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -330,9 +329,8 @@ Assistant/Paraprofessional</span><br /><br />
 width="100" height="100" border="0" alt="Teacher's
 Aide/Paraprofessional" />
 	<span class="header3">Job Description</span>
-	<blockquote>Not everyone who works at a school is a teacher.
-The job of a teacher's aide is similar to that of a teacher. As a
-teacher's aide, you would help a teacher care for his/her students,
+	<blockquote>The job of a teacher's assistant is similar to that of a teacher. As a
+teacher's assistant, you would help a licensed teacher care for his/her students,
 grade papers, perform clerical duties, and prepare instructional
 materials.</blockquote>
 	<span class="header3">Education</span>
@@ -347,7 +345,7 @@ degree, have a minimum of 2 years of college, or pass a rigorous
 State or local assessment. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of teacher assistants was
-$25,410 in May 2016. </blockquote>
+$27,920 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -377,8 +375,8 @@ treatment center.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>A doctoral degree usually is required for
 independent practice as a psychologist. A specialist degree or its
-equivalent is required in most States for an individual to work as a
-school psychologist, although a few States still credential school
+equivalent is required in most states for an individual to work as a
+school psychologist, although a few states still credential school
 psychologists with master's degrees. People with a master's degree
 in psychology may work as industrial-organizational psychologists.
 A bachelor's degree in psychology qualifies a person to assist
@@ -387,7 +385,7 @@ centers, vocational rehabilitation offices, and correctional
 programs. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of psychologists was
-$75,230 in May 2016. </blockquote>
+$80,370 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -409,7 +407,7 @@ from colleges and universities and usually take 2 to 4 years to
 complete.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of interior designers was
-$49,810 in May 2016. </blockquote>
+$56,040 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -417,8 +415,7 @@ $49,810 in May 2016. </blockquote>
 	<img class="job_pic" src="/images/icons/BI/1302.jpg"
 width="100" height="100" border="0" alt="Retail Salesperson" />
 	<span class="header3">Job Description</span>
-	<blockquote>A retail salesperson answers questions that
-customers ask and helps them decide what to buy.  As a retail
+	<blockquote>A retail salesperson answers customers' questions and helps them decide what to buy.  As a retail
 salesperson, you would "ring up" the sale on a cash register or
 computer.  You would search for items that customers asked for.  You
 would also restock the shelves as needed. Other duties might include
@@ -432,7 +429,7 @@ limited, having a college degree or a great deal of experience may
 help retail salespersons move into management positions.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of retail salespersons
-was $22,900 in May 2016. </blockquote>
+was $25,440 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -450,8 +447,8 @@ width="100" height="100" border="0" alt="Screenwriter">
 	<span class="header3">Job Description</span>
 	<blockquote>A screenwriter does not perform on stage, but
 his/her work is still important. As a screenwriter, you would write
-plays that are seen in movies and television programs. You would
-search for interesting topics and write scripts and screenplays
+scripts for movies and television programs. You would
+search for interesting topics and create stories
 based on these. You would work closely with producers and
 directors.  You might even work with other writers.</blockquote>
 	<span class="header3">Education</span>
@@ -466,8 +463,8 @@ directing, and acting. For example, the American Film Institute
 offers training in directing, production, cinematography,
 screenwriting, editing, and production design.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of screenwriters was $61,240
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of screenwriters was $63,200
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -487,8 +484,8 @@ not train at a culinary institute are put through a tough on-the-job
 training program while working in a kitchen at another
 job.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of chefs was $43,180 in
-May 2016. </blockquote>
+	<blockquote>The median annual wage of chefs was $51,530 in
+May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -512,29 +509,10 @@ Formal training may be obtained through private study with an
 accomplished musician, in a college or university music program, or
 in a music conservatory. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job-search website indeed.com,
-the median annual wage of musicians was $32,484 in February 2018.
+	<blockquote>The median wage of musicians was $30.39 per hour in May 2019.
 </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 10, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 10, 2020). </blockquote>
 
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/07/2018. </blockquote>
-
-
-
-Additional average salary information acquired from job search
-website indeed.com in February 2018. The Indeed Salary Search data
-is based on an index of salary information extracted from over 50
-million job postings from thousands of unique sources over the
-previous year.

@@ -38,12 +38,11 @@ computer science and programming will be of interest to you.</p>
 		</td>
 		<td>
 			Business Math<br />
-			Foreign Language<br />
+			World Languages<br />
 			Public Speaking<br />
-			Public Relations
+			Political Science
 		</td>
 		<td>
-			Political Science<br />
 			Telecommunications<br />
 			Health/Nutrition<br />
 			Business Education
@@ -53,7 +52,7 @@ computer science and programming will be of interest to you.</p>
 
 <p><strong>Extracurricular/volunteer activities or organizations
 you may find interesting:</strong><br />
-If you have time for afterschool activities or part-time jobs, make
+If you have time for after-school activities or part-time jobs, make
 them count. You will enjoy any club or activity where you can use
 technology.</p>
 
@@ -81,7 +80,6 @@ technology.</p>
 			Math/Science Clubs
 		</td>
 		<td>
-			Safety Patrol<br />
 			Peer Counselor<br />
 			Martial Arts
 		</td>
@@ -251,7 +249,7 @@ technology, these may be good occupations for you.</p>
 
 <hr size="1" />
 
-	<span class="header2">Construction/Building
+	<span class="header2">Construction and Building
 Inspector</span><br /><br />
 	<img class="job_pic" src="/images/icons/FG/43241.jpg"
 width="100" height="100" border="0" alt="Building Inspector" />
@@ -266,14 +264,13 @@ a fire.  You would check the building for flaws and insist they be
 fixed.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>More often employers look for persons who have
-studied engineering or architecture or who have a degree from a
-community or junior college with courses in building inspection,
-home inspection, construction technology, drafting, and mathematics.
-Many community colleges offer certificate or associate degree
-programs in building inspection technology. </blockquote>
+experience in construction and who have studied engineering or architecture. A degree from a community or junior college with courses in building inspection,
+home inspection, construction technology, drafting, and mathematics is also desirable.
+Many community colleges offer certification in building inspection 
+technology. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of building inspectors
-was $58,480 in May 2016. </blockquote>
+was $60,710 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -295,7 +292,7 @@ vocational schools offer one, two, and three-year programs in
 surveying or surveying technology. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of land surveyors was
-$59,390 in May 2016. </blockquote>
+$63,420 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -313,17 +310,15 @@ unpredictable.</blockquote>
 	<blockquote>Most fire fighters have a high school diploma;
 however, the completion of community college courses, or in some
 cases an associate degree in fire science, may improve an
-applicant's chances for a job. A number of colleges and universities
-offer courses leading to two or four-year degrees in fire
-engineering or fire science.</blockquote>
+applicant's chances for a job. Firefighters are usually trained at a fire academy and must pass physical and written tests. They must also earn emergency medical technician (EMT) certification. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of firefighters was
-$48,030 in May 2016. </blockquote>
+$50,850 in May 2019. </blockquote>
 
 <hr size="1" />
 
 <span class="header1">TECHNOLOGY SERVICE</span>
-<p>The occupations in this field combine an interest in technical
+<p>The occupations in this field combine an interest in technology
 and industry.</p>
 
 <hr size="1" />
@@ -342,13 +337,13 @@ opportunities to improve those skills, and increase employees'
 satisfaction with their jobs and working conditions. </blockquote>
 	<span class="header3">Education</span>
 	<blockquote>Many colleges and universities have programs
-leading to a degree in personnel, human resources, or labor
+leading to a bachelor's degree in personnel, human resources, or labor
 relations. Some offer degree programs in human resources
 administration or human resources management, training and
 development, or compensation and benefits.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of human resources
-managers was $106,910 in May 2016. </blockquote>
+managers was $116,720 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -367,10 +362,11 @@ almost all entry-level engineering jobs. A civil engineer must get a
 license from the state to offer services directly to the public. A
 license requires four years of relevant work experience and passing
 an exam. Beginning engineers often work under an experienced
-engineer to get their required work experience..</blockquote>
+engineer to get their required work experience. A master's degree may 
+be needed to be a candidate for promotions. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of civil engineers was
-$83,540 in May 2016. </blockquote>
+$87,060 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -392,7 +388,7 @@ is accredited by the National Commission for Certifying Agencies.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of fitness workers was
-$38,160 in May 2016. </blockquote>
+$40,390 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -401,8 +397,8 @@ Specialist</span><br /><br />
 		<span class="header3">Job Description</span>
 	<blockquote>Computer support specialists provide technical
 assistance, support, and advice to customers and other users. This
-occupational group includes technical support specialists and help-
-desk technicians. These troubleshooters interpret problems and
+occupational group includes technical support specialists and 
+help-desk technicians. These troubleshooters interpret problems and
 provide technical support for hardware, software, and systems. They
 answer telephone calls, analyze problems by using automated
 diagnostic programs, and resolve recurring
@@ -417,18 +413,19 @@ associate degree. And for some jobs, relevant computer experience
 and certifications may substitute for formal education. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of computer support
-specialists was $52,160 in May 2016. </blockquote>
+specialists was $54,760 in May 2019. </blockquote>
 
 <hr size="1" />
 
 <span class="header1">NATURE/WILDLIFE SERVICES</span>
-<p>If you want to work outdoors and enjoy working with others, these
+<p>If you want to work outdoors, enjoy working with others, 
+and want to serve the public, these
 occupations may be for you.</p>
 
 <hr size="1" />
 
 	<span
-class="header2">Urban/Regional Planner</span><br /><br />
+class="header2">Urban and Regional Planner</span><br /><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Urban and regional planners develop long- and
 short-term plans for the use of land and the growth and
@@ -444,7 +441,7 @@ holders may find positions, but advancement opportunities are
 limited.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of urban planners was
-$70,020 in May 2016. </blockquote>
+$74,350 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -464,27 +461,14 @@ adequate for a few entry-level positions, but environmental
 scientists increasingly need a master's degree in environmental
 science, hydrology, or a related natural science. A master's degree
 also is the minimum educational requirement for most entry-level
-applied research positions in private industry, in state and federal
-agencies, and at state geological surveys. A doctoral degree
-generally is necessary for college teaching and most research
-positions. </blockquote>
+applied research positions in private industry and in state and federal
+agencies. A doctoral degree
+is generally necessary for college-level teaching and research. 
+</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of environmental
-scientists was $68,910 in May 2016. </blockquote>
+scientists was $71,360 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/08/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 22, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 22, 2020). </blockquote>

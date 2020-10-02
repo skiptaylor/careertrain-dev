@@ -237,18 +237,18 @@ width="100" height="100" border="0" alt="Community Relations
 Manager" />
 	<span class="header3">Job Description</span>
 	<blockquote>If you understand technical information, and you
-communicate well, you might become a community relations manager.
-In this job you would work for a manufacturer.  You would tell
+communicate well, you might become a community or public relations manager.
+In this job you might work for a manufacturer.  You would tell
 people who live near the factory about any risks the factory might
 pose to them.  You would also report any emergencies in the plant
 that could cause harm to its neighbors.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You need a bachelor's degree in communications,
-public relations, or journalism to become a community relations
+public relations, or journalism to become a community or public relations
 manager.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of community relations
-managers was $64,680 in May 2016.
+	<blockquote>The median annual wage of public relations
+managers was $116,180 in May 2019.
 </blockquote>
 
 <hr  size="1" />
@@ -261,12 +261,10 @@ for manufacturers, government agencies, or consulting firms. You
 might set safety standards for products. You might also inspect
 products to see that they meet these standards.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need at least a bachelor's degree to become
-a safety engineer. Many employers prefer a master's
-degree.</blockquote>
+	<blockquote>To become a safety engineer, you need at least a bachelor's degree in environmental health and safety or in an area of engineering. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of safety engineers was
-$86,720 in May 2016.</blockquote>
+$91,410 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -282,12 +280,10 @@ you would use special equipment to be sure that factories do not
 emit too much pollution into the air. You would also conduct
 laboratory experiments and pollution inspections.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need an associate degree or completion of a
-1-year certification program to be trained as a technician. Some
-companies will want you to have some college education.</blockquote>
+	<blockquote>You typically need an associate's degree and on-the-job training to work as an air quality control technician. Many employers prefer a bachelor's degree. c</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of air quality control
-technicians was $44,190 in May 2016.</blockquote>
+technicians was $46,540 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -316,7 +312,7 @@ management, agriculture, biology, or environmental science.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of land and water
-conservationists was $60,610 in May 2016.
+conservationists was $62,410 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -331,10 +327,10 @@ water and soil samples to check for pollutants.</blockquote>
         <span class="header3">Education</span>
         <blockquote>Most science technicians
 need an associate degree or a certificate in applied science or
-science-related technology.</blockquote>
+science-related technology, as well as related work experience.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of conservation
-technicians was $44,190 in May 2016. </blockquote>
+technicians was $45,500 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -353,7 +349,7 @@ other positions, you need only a high school diploma.  You must be
 interested in the park or museum where you want to work and have a
 pleasant disposition.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of tour guides was $24,920 in May 2016.
+	<blockquote>The median annual wage of tour guides was $27,600 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -381,7 +377,7 @@ technologists. To become licensed or certified, you must pass a
 state test.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of veterinary technicians
-was $32,490 in May 2016.</blockquote>
+was $35,320 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -398,7 +394,7 @@ You might even bathe them.</blockquote>
 for employees.  No college degree is required.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of animal caretakers was
-$22,230 in May 2016.</blockquote>
+$24,990 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -414,23 +410,13 @@ groom, and play with the pet(s).</blockquote>
 	<blockquote>No college degree or high school diploma is
 required for this position.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the online O*Net Resource Center, onetonline.org,
-the median annual wage of pet sitters (nonfarm animal caretakers)
-was 21,990 in February 2018.
+	<blockquote>The median annual wage of pet sitters (non-farm animal caretakers)
+was 24,780 in May 2019.
 </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 9, 2020). </blockquote>
 
 
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/01/2018. </blockquote>
+

@@ -1,7 +1,7 @@
 <span class="header1">Clerical/Administrative paired with
 Science/Mathematics (DH)</span>
 
-<p>If you scored high in categories "D" and "E," you naturally
+<p>If you scored high in categories "D" and "H," you naturally
 understand that there are always ways to improve a situation.  You
 can probably handle several tasks at one time. People like you have
 made important contributions in business. You are an excellent
@@ -41,7 +41,7 @@ career opportunities in this area.</p>
 		<td>
 			Business Math<br />
 			Communications<br />
-			Foreign Language<br />
+			World Languages<br />
 			Public Relations
 		</td>
 		<td>
@@ -114,10 +114,9 @@ what you want to do when you are an adult.</p>
 			Libraries<br />
 			Medical Offices<br />
 			Electronic Stores<br />
-			Veterinary Offices
+			Libraries<br />
 		</td>
 		<td>
-			Libraries<br />
 			Restaurants<br />
 			Data Entry<br />
 			Landscaping Firms<br />
@@ -283,7 +282,7 @@ have become Registered Health Information Technicians (RHIT).
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of medical records and
-health information technicians was $38,040 in May 2016. </blockquote>
+health information technicians was $42,630 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -306,7 +305,7 @@ skills also are important. Certification is required in some states.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of pharmacy technicians
-was $30,920 in May 2016. </blockquote>
+was $33,950 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -326,7 +325,7 @@ nurse sees him/her.</blockquote>
 but many complete one-year or two-year programs.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of medical assistants was
-$31,540 in May 2016. </blockquote>
+$34,800 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -347,7 +346,7 @@ requires eight years of education beyond high school and three to
 eight additional years of internship and residency.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of medical doctors was
-$208,000 in May 2016. </blockquote>
+$208,000 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -356,7 +355,7 @@ $208,000 in May 2016. </blockquote>
 width="100" height="100" border="0" alt="Dental Hygienist" />
 	<span class="header3">Job Description</span>
 	<blockquote>As a dental hygienist, you would teach your
-patients how to care for their teeth. You would clean your patient's
+patients how to care for their teeth. You would clean their
 teeth and take x-rays. Also, you would be an extra set of hands if
 the dentist needed help.</blockquote>
 	<span class="header3">Education</span>
@@ -367,7 +366,7 @@ certificate in dental hygiene is generally required for practice in
 a private dental office.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of dental hygienists was
-$72,910 in May 2016. </blockquote>
+$76,220 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -387,7 +386,7 @@ available from community colleges, vocational schools, elder care
 programs, and home health care agencies.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of home health aides was
-$22,170 in May 2016. </blockquote>
+$25,280 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -407,7 +406,7 @@ the detailed instructions, called programs, that computers follow to
 perform their functions. Programmers also conceive, design, and test
 logical structures for solving problems by computer.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>A bachelor's degree commonly is required for
+	<blockquote>A bachelor's degree is commonly required for
 computer programming jobs, although a two-year degree or certificate
 may be adequate for some positions. Employers favor applicants who
 already have relevant programming skills and experience. Skilled
@@ -415,7 +414,7 @@ workers who keep up to date with the latest technology usually have
 good opportunities for advancement. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of computer programmers
-was $79,840 in May 2016. </blockquote>
+was $86,550 in May 2019. </blockquote>
 
 
 <hr size="1" />
@@ -432,15 +431,15 @@ design. Some researchers work on multidisciplinary projects, such as
 developing and advancing uses of virtual reality, extending human-
 computer interaction, or designing robots. </blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Most computer scientist positions require a
-Ph.D. degree as their main job function is research. Computer
-scientists having only a bachelor's or master's degree are generally
+	<blockquote>Most computer scientist positions require a master's 
+degree or Ph.D. degree. Computer
+scientists having only a bachelor's degree are generally
 limited in their ability to advance. Technological advances come so
 rapidly in the computer field that continuous study is necessary to
 keep one's skills up to date.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of computer scientists
-was $111,840 in May 2016. </blockquote>
+was $122,840 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -449,7 +448,7 @@ Collector</span><br /><br />
 	<img class="job_pic" src="/images/icons/DH/43335.jpg"
 width="100" height="100" border="0" alt="Bill & Account Collector" />
 	<span class="header3">Job Description</span>
-	<blockquote>As a bill and account collector you would make
+	<blockquote>As a bill and account collector, you would make
 sure that customers paid their overdue bills.  You might work for a
 collection agency, bank, or department store.  Your job would be to
 contact customers who had not paid their bills.  You would work with
@@ -461,20 +460,8 @@ experience. Employers usually provide on-the-job training to new
 employees.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of bill and account
-collectors was $35,350 in May 2016. </blockquote>
+collectors was $37,000 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/08/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 21, 2020). </blockquote>

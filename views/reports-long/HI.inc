@@ -53,9 +53,9 @@ opportunities in this area.</p>
 
 <p><strong>Extracurricular/volunteer activities or organizations
 that you may find interesting:</strong><br />
-If you have time for afterschool activities or part-time jobs, make
+If you have time for after-school activities or part-time jobs, make
 them count. You will enjoy any club or activity where you can share
-your love for nature and use your people skills.</p>
+your love for math and science and use your people skills.</p>
 
 <table cellpadding="10" cellspacing="10">
 	<tr valign="top">
@@ -108,7 +108,7 @@ what you want to do when you are an adult.</p>
 			Construction Companies<br />
 			Graphic Design Firms<br />
 			Libraries<br />
-			Photographic Studios<br />
+			Photography Studios<br />
 			Recreation Departments
 		</td>
 
@@ -356,7 +356,7 @@ administration by completing a master's or doctoral
 degree.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of education
-administrators was $92,510 in May 2016. </blockquote>
+administrators was $95,410 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -364,16 +364,15 @@ administrators was $92,510 in May 2016. </blockquote>
 	<img class="job_pic" src="/images/icons/DI/43007.jpg"
 width="100" height="100" border="0" alt="Clergy" />
 	<span class="header3">Job Description</span>
-	<blockquote>Conduct religious worship and perform other
+	<blockquote>Clergies lead religious worship and perform other
 spiritual functions associated with beliefs and practices of
-religious faith or denomination. Provide spiritual and moral
+religious faith or denomination. They also provide spiritual and moral
 guidance and assistance to members.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You need at least a bachelor's degree to enter
 this occupation.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job-search website indeed.com,
-the median annual wage of clery was $45,740 in May 2016.</blockquote>
+	<blockquote>The median annual wage of clergies was $55,190 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -395,7 +394,7 @@ teacher assistants or provide additional training for current
 teacher assistants.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of teacher assistants
-was $25,410 in May 2016. </blockquote>
+was $27,920 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -417,11 +416,11 @@ is a lot of paperwork involved in being a social worker. There are
 many different types of social workers as well.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>A bachelor's degree is needed for an entry level
-job.  Those with more responsible positions must have a master's
-degree.</blockquote>
+job. Those with positions with the most responsibilities must have a master's
+degree and certification of a licensed social worker.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of social workers was
-$46,890 in May 2016. </blockquote>
+$50,470 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -449,7 +448,7 @@ degree and one-year certificate programs which primarily are
 intended for technicians. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of occupational health and
-safety specialists was $66,820 in May 2016. </blockquote>
+safety specialists was $70,480 in May 2019. </blockquote>
 
 <hr size="1" />
 	<span class="header2">Psychologist</span><br /><br />
@@ -458,7 +457,7 @@ width="100" height="100" border="0" alt="Psychologist" />
 	<span class="header3">Job Description</span>
 	<blockquote>There are different kinds of psychologists.
 Some focus on testing students. These are educational psychologists
-who might test a student's IQ, or to see if a student has a learning
+who might measure a student's abilities to see if a student has a learning
 disability. Some psychologists focus on helping people who are
 having psychological problems. These are clinical psychologists who
 help their clients to talk about and work through any problems they
@@ -480,14 +479,13 @@ centers, vocational rehabilitation offices, and correctional
 programs. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of psychologists was
-$75,230 in May 2016. </blockquote>
+$80,370 in May 2019. </blockquote>
 
 <hr size="1" />
 
 <span class="header2">Funeral Director</span><br /><br />
 	<span class="header3">Job Description</span>
-	<blockquote>A funeral director helps a family make funeral
-plans when a family member has died. If you were a funeral
+	<blockquote>A funeral director helps a family make funeral plans when a family member has died. If you were a funeral
 director, you would handle the details of the funeral service and
 burial. You would put a notice in the newspaper. You would also
 order flowers and contact people to speak at the
@@ -500,7 +498,7 @@ apprenticeship, and pass an examination. College programs in
 mortuary science usually last from two to four years. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of funeral directors was
-$50,090 in May 2016. </blockquote>
+$76,350 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -522,7 +520,7 @@ requires eight years of education beyond high school and three to
 eight additional years of internship and residency.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of  medical doctors was
-$208,000 in May 2016. </blockquote>
+$208,000 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -549,7 +547,7 @@ state.  A state exam must be passed and an internship served in
 order to become licensed.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of pharmacists was
-$122,230 in May 2016. </blockquote>
+$128,090 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -570,7 +568,7 @@ bachelor's degree. Licensure, certification, or registration
 requirements vary by state.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of
-dietitians/nutritionists was $58,920 in May 2016. </blockquote>
+dietitians/nutritionists was $61,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -594,8 +592,8 @@ ecologist.  Most employers look for a master's degree and
 experience.  To get experience, volunteer with groups who work to
 protect the environment.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of ecologists was $68,910
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of ecologists was $71,360
+in May 2019. </blockquote>
 
 
 <hr size="1" />
@@ -611,11 +609,12 @@ under the ocean's surface.  You might focus on what lies on the
 ocean floor.  The oceans still hold many mysteries.  As an
 oceanographer, you would search for what is unknown.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>A master's degree is the primary educational
-requirement for most entry-level positions.</blockquote>
+	<blockquote>A bachelor's degree is the primary educational
+requirement for most entry-level positions, but many begin with 
+a master's degree. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of oceanographers was
-$89,780 in May 2016. </blockquote>
+$92,040 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -640,7 +639,7 @@ statistics or mathematics for this job.  To get a promotion, you
 must have a master's degree or a Ph.D.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of statisticians was
-$81,950 in May 2016. </blockquote>
+$92,030 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -661,7 +660,7 @@ become a CPA, you must have a bachelor's degree. You must also pass
 a written exam.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of accountants was
-$68,150 in May 2016. </blockquote>
+$71,550 in May 2019. </blockquote>
 
 
 <hr size="1" />
@@ -683,21 +682,8 @@ at least a bachelor's degree in computer science, information
 science, or management information systems. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of computer systems
-analysts was $87,220 in May 2016. </blockquote>
+analysts was $90,920 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/09/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 24, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 24, 2020). </blockquote>

@@ -5,8 +5,7 @@ Clerical/Administrative (BD)</span>
 work on creative projects and you enjoy their completion. You have a
 balance of characteristics that will allow you to be creative and
 efficient. Others know that they can count on you.</p>
-<p>Most occupations in this pairing require a bachelor's degree.
-Many require some post high school courses be taken.</p>
+<p>Most occupations in this pairing require at least some post high school courses be taken. Many require a bachelor's degree.</p>
 <p><strong>Courses you might want to take in high
 school.</strong><br />
 In high school you will want to take courses that allow you to
@@ -25,8 +24,8 @@ practical side.</p>
 		<td>
 			Computer Programming<br />
 			Graphic Arts<br />
-			Foreign Language<br />
-			Speech/Communications
+			World Languages<br />
+			Speech/Communications/
 			Music<BR
 		</td>
 		<td>
@@ -99,7 +98,7 @@ what you want to do when you are an adult.</p>
 			Data Entry/Processing<br />
 			Advertising Agencies<br />
 			Radio/TV Studios<br />
-			Photographic Studios
+			Photography Studios
 		</td>
 		<td>
 			Libraries<br />
@@ -255,7 +254,7 @@ or English for this job.  Any experience you have had at a newspaper
 or broadcast studio will also help.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of newswriters was
-$37,820 in May 2016. </blockquote>
+$46,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -277,15 +276,15 @@ communications, journalism, or English for this job.  Often, editors
 are people who were writers first.  Your work experience will be
 very important to finding a job.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of editors was $57,210 in
-May 2016. </blockquote>
+	<blockquote>The median annual wage of editors was $61,370 in
+May 2019. </blockquote>
 
 <hr size="1" />
 
 	<span class="header2">Editorial Assistant</span><br /><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As an editorial assistant you would work closely
-with an editor.  You would check to be sure that the grammar,
+with an editor.  You would check to be sure that writers' grammar,
 spelling, and sentence structure were correct.   You would also be
 sure that any facts, dates and other information were
 correct.</blockquote>
@@ -295,9 +294,8 @@ communications, journalism, or English for this job.  You can gain
 writing and editing experience by working on yearbooks, school
 newspapers, etc.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job-search website indeed.com,
-the median annual wage of editorial assistants was $31,395 in
-February 2018.</blockquote>
+	<blockquote>The median annual wage of editorial assistants was $41,951 in
+May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -327,7 +325,7 @@ journalism, or public relations for this job.  Work experience will
 be important, too.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of public relations
-specialists was $58,020 in May 2016. </blockquote>
+specialists was $61,150 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -342,15 +340,15 @@ paralegal, you would do a lot of research to find background
 information for the lawyer. You would also help the lawyer prepare
 for court.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>In the past, paralegals usually received
-training in a paralegal program.  More and more, lawyers want to
+	<blockquote>Paralegals often receive 
+training in a paralegal certification program, and many have an associate's degree. More and more, lawyers want to
 hire paralegals who have a bachelor's degree in humanities or the
 social sciences.  You will find a job more easily if you learn as
 much about the law as you can. It is also helpful to work in a law
 office, if possible.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of paralegals was $49,500
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of paralegals was $51,740
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -361,10 +359,9 @@ width="100" height="100" border="0" alt="Real Estate Agent" />
 	<blockquote>If you enjoy working with people and want to
 help them buy housing or land, you might become a real estate agent.
 As a real estate agent, you would work with people who want to sell
-their home.  You would show this home to people who wanted to buy
+their home.  You would show this home to people who want to buy
 it.  You would help these would-be buyers get a loan.  You would
-need to be independent and a good problem solver.  You must also be
-able to communicate well.</blockquote>
+need to be independent and a good problem solver.  You must also communicate well.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You need at least a high school diploma to be a
 real estate agent. More and more employers want you to have a
@@ -373,13 +370,13 @@ in which they work.  To get this license, you must take courses in
 real estate law and practices and pass an exam.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of real estate agents was
-$46,410 in May 2016. </blockquote>
+$48,930 in May 2019. </blockquote>
 
 <hr size="1" />
 
 <span class="header1">CREATIVE PRODUCTION</span>
 <p>The occupations in this field need people who are outgoing and
-creative.  Here are three examples.</p>
+creative.  Here are two examples.</p>
 
 <hr size="1" />
 
@@ -398,8 +395,8 @@ they are promoted to this job.</blockquote>
 	<blockquote>You need a college degree in English,
 literature, or journalism for this job.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of managing editors was $57,210
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of managing editors was $61,370
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -424,27 +421,8 @@ local library would give you experience.  You might also volunteer
 in your school media center.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of media specialists was
-$57,680 in May 2016. </blockquote>
+$59,500 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/07/2018. </blockquote>
-
-
-Additional average salary information acquired from job search
-website indeed.com in February 2018. The Indeed Salary Search data
-is based on an index of salary information extracted from over 50
-million job postings from thousands of unique sources over the
-previous year.
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 11, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 11, 2020). </blockquote>

@@ -173,12 +173,12 @@ Designer<br /><br />
 
 	Buyer/Merchandiser<br /><br />
 
-	Restaurateur<br /><br />
+	Hair Stylist<br /><br />
 						Wedding
 Consultant<br /><br />
 						Fashion
 Coordinator<br /><br />
-						Hair Designer</em>
+						Restaurateur</em>
 					</td>
 					<td width="33%">
 						<span
@@ -261,8 +261,8 @@ not train at a culinary institute are put through a tough on-the-job
 training program while working in a kitchen at another
 job.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of chefs was $43,180 in
-May 2016. </blockquote>
+	<blockquote>The median annual wage of chefs was $51,530 in
+May 2019. </block quote>
 
 <hr size="1" />
 
@@ -282,8 +282,7 @@ other organizations hire illustrators too.</blockquote>
 courses. A bachelor's degree from a college, university, or an art
 school is a definite advantage.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job search website, indeed.com, the
-	median annual wage of illustrators was $46,844 in February 2018. </blockquote>
+	<blockquote>The median annual wage of illustrators was $50,550 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -298,12 +297,11 @@ businesses.  In this job, you would decorate rooms working within a
 budget. To do this, you would have to know the best prices on
 furniture, drapes, and room accessories.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need to complete a three to four-year
-program in interior designing.  You may want to join a
+	<blockquote>You typically need a bachelor's degree, with a focus on interior design for this occupation. You may want to join a
 professional association to find a job.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of interior designers was
-$49,810 in May 2016. </blockquote>
+$56,040 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -332,7 +330,7 @@ news reporter. The more experience you have around a studio, the
 better your chances to do "on air" work.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of news reporters was
-$38,870 in May 2016. </blockquote>
+$46,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -341,18 +339,14 @@ Manager/Specialist</span><br /><br />
 	<img class="job_pic" src="/images/icons/BC/C1737_31.jpg"
 width="100" height="100" border="0" alt="Advertising Copywriter" />
 	<span class="header3">Job Description</span>
-	<blockquote>If you like the idea of writing TV commercials
-or creating ads for magazines, you might become a Public Relations
-Manager or Specialist.  You need to love to write and be good at
-it.  You also need to work well under pressure.  Studios are fast
-paced.  You must be able to work in a hectic atmosphere.</blockquote>
+	<blockquote>Companies want customers and others to see them in a positive way. As a public relations specialist, you would let people know about the good things your company has done. To do this, you would create press releases, social media campaigns and TV and radio announcements. It would be important that you were enthusiastic about the company. You would also need to be able to write and speak clearly.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You need a bachelor's degree in public
 relations, journalism, communications, English, or business to
 become a Public Relations Manager/Specialist.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of Public Relations
-Manager/Specialist was $58,020 in May 2016.</blockquote>
+	<blockquote>The median annual wage of public relations
+manager/specialist was $61,150 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -377,77 +371,32 @@ administration or accounting for this job.  Some entertainers prefer
 a master's degree. You also need to know what the public wants to
 see and be able to search out opportunities.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the online O*Net Resource Center, onetonline.org, the
-	median annual wage of talent agents was $62,080 in February 2018. </blockquote>
+	<blockquote>The median annual wage of talent agents was $73,740 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Performing Arts
-Administrator</span><br /><br />
+	<span class="header2">Theater Director</span><br /><br />
 	<span class="header3">Job Description</span>
 	<blockquote>When you go to a theater to see a play, you see
 the actors working. You do not see others working behind the stage
-to make sure that things go smoothly.  A performing arts
-administrator is responsible for the entire production.  As a
-performing arts administrator, you would oversee the staff and make
-sure they performed their duties.  You would handle the production's
-money.  You would also oversee the day-to-day running of an acting
-company or theater.  It takes a long time to become a performing
-arts administrator.  Most performing arts administrator begin their
-career in the theater as actors, directors, or
-producers.</blockquote>
+to make sure that things go smoothly. A theater director is responsible for the entire production. As a theater director, you would be involved with scripts, rehearsals, and overseeing the cast and crew. </blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Most performing arts administrators have a
-master's degree or a Ph.D.  Experience in the theater will be very
-important to getting a job.</blockquote>
+	<blockquote>Most theater directors have a
+bachelor's degree and several years of theater-related experience.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of performing arts
-administrators was $70,950 in May 2016. </blockquote>
+	<blockquote>The median annual wage of theater directors was $74,420 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Assistant Director</span><br /><br />
+	<span class="header2">Set and Exhibit Designer</span><br /><br />
 	<span class="header3">Job Description</span>
-	<blockquote>It takes many people to put a television program
-on the air. An assistant director is one of these people.  Assistant
-directors (or first and second assistants) help directors with such
-details as handling the transportation of equipment, arranging for
-food and accommodations, and hiring performers who appear a the
-film, but have no lines. This is where many people begin their
-careers behind the
-camera.</blockquote>
+	<blockquote>It takes many people to create movies, TV programs, plays and exhibits. A set and exhibit designer is one of these people. They work behind the scenes. They study scripts and do research in order to create a design that will be used to construct an appropriate exhibit or set.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>In addition to colleges and technical schools,
-many independent centers offer training programs on various aspects
-of filmmaking, such as screenwriting, film editing, directing, and
-acting. For example, the American Film Institute offers training in
-directing, production, cinematography, screenwriting, editing, and
-production design.
-
-</blockquote>
+many independent centers, such as the American Film Institute, offer training programs on screenwriting, film editing, directing, acting, and production design. Many set and exhibit designers have 4-year degrees and job-related experience.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job search website, indeed.com, the median
-	annual wage of assistant directors was $55,792 in February 2018. </blockquote>
+	<blockquote>The median annual wage of set and exhibit designers was $54,600 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/07/2018. </blockquote>
-
-
-Additional average salary information acquired from job search
-website indeed.com in February 2018. The Indeed Salary Search data
-is based on an index of salary information extracted from over 50
-million job postings from thousands of unique sources over the
-previous year.
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 10, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 10, 2020). </blockquote>

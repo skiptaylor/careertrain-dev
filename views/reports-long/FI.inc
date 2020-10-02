@@ -5,7 +5,7 @@
 characteristics that are useful to people.  You will be highly
 valued in the work force.  In addition, you  have the potential to
 make a real difference in the world.  You have an interest in
-technology, the outdoors, and other people.  Your strengths will be
+technology and in other people.  Your strengths will be
 useful in many different occupations.</p>
 <p>Most occupations in this pairing require at least a bachelor's
 degree.  It is helpful to have a master's degree or Ph.D. if you
@@ -111,7 +111,7 @@ what you want to do when you are an adult.</p>
 			Libraries
 		</td>
 		<td>
-			Photographic Studios<br />
+			Photography Studios<br />
 			Printing Companies<br />
 			Newspaper Offices
 		</td>
@@ -283,7 +283,7 @@ some employers may require candidates to be Certified Health
 Education Specialists.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of health educators was
-$44,390 in May 2016. </blockquote>
+$46,910 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -306,7 +306,7 @@ often encouraged or required by their employers to become certified.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of fitness workers was
-$38,160 in May 2016. </blockquote>
+$40,390 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -328,7 +328,7 @@ bachelor's degree. Licensure, certification, or registration
 requirements vary by state.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of
-dietitian/nutritionists was $58,920 in May 2016. </blockquote>
+dietitian/nutritionists was $61,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -361,7 +361,7 @@ Physicians' offices and some other facilities hire those with on-the-
 job experience instead of formal education.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of medical and health
-services managers was $96,540 in May 2016. </blockquote>
+services managers was $100,980 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -379,14 +379,14 @@ into responsible adults.</blockquote>
 school teacher involves completing a bachelor's degree from a
 teacher education program and then obtaining a license. However,
 most states now offer alternative routes to licensure for those who
-have a college degree in other fields. Private school teachers do
+have a college degree in other fields. Private school teachers may
 not have to be licensed but still need a bachelor's degree. A
 bachelor's degree may not be needed by preschool teachers and
 vocational education teachers; they need experience in their field
 rather than a specific degree.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of teachers was $56,750
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of teachers (kindergarten 
+through high school) was $60,247 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -408,7 +408,7 @@ colleges offer programs for those who want to enter this
 occupation.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of barbers or
-cosmetologists was $24,300 in May 2016. </blockquote>
+cosmetologists was $26,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -432,12 +432,12 @@ could do research in this area.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>Most veterinary colleges require students to
 first obtain a bachelor's degree. A Doctor of Veterinary Medicine
-degree takes about four years to complete. Veterinaries must be
+degree takes about four years to complete. Veterinarians must be
 licensed by their state. There is keen competition for admission to
 veterinary school. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of veterinarians was
-$88,770 in May 2016. </blockquote>
+$95,460 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -460,7 +460,7 @@ programs offered by community and junior colleges, trade schools,
 technical institutes, or the Armed Forces.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of dental assistants was
-$36,940 in May 2016. </blockquote>
+$40,080 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -483,20 +483,8 @@ program. Individuals then must complete a national licensing
 examination in order to obtain a nursing license.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of registered nurses was
-$68,450 in May 2016. </blockquote>
+$73,300 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/09/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 22, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 22, 2020). </blockquote>

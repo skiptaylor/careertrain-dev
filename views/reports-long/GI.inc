@@ -20,7 +20,7 @@ for possible career opportunities in this area.</p>
 	<tr valign="top">
 		<td>
 			Government/Civics<br />
-			Foreign Language<br />
+			World Languages<br />
 			Home Economics<br />
 			Nutrition/Health
 		</td>
@@ -52,9 +52,9 @@ for possible career opportunities in this area.</p>
 
 <p><strong>Extracurricular/volunteer activities or organizations you
 may find interesting:</strong><br />
-If you have time for afterschool activities or part-time jobs, make
+If you have time for after-school activities or part-time jobs, make
 them count.  You will enjoy any club or activity where you can share
-your love for nature and use your people skills.</p>
+your love for helping others and use your people skills.</p>
 
 <table cellpadding="10" cellspacing="10">
 	<tr valign="top">
@@ -164,7 +164,7 @@ Education<br /><br />
 Academy<br /><br />
 
 	Instructor<br /><br />
-						Guidance
+						School
 Counselor<br /><br />
 						Training
 Specialist<br /><br />
@@ -265,14 +265,14 @@ make lesson plans, find materials, and present lectures.</blockquote>
 school teacher involves completing a bachelor's degree from a
 teacher education program and then obtaining a license. However,
 most states now offer alternative routes to licensure for those who
-have a college degree in other fields. Private school teachers do
+have a college degree in other fields. Private school teachers may
 not have to be licensed but still need a bachelor's degree. A
 bachelor's degree may not be needed by preschool teachers and
 vocational education teachers; they need experience in their field
 rather than a specific degree.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of social studies
-teachers was $56,750 in May 2016. </blockquote>
+teachers was $60,247 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -294,7 +294,7 @@ degree. Some states require school counselors to be licensed, which
 generally requires continuing education credits.  </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of school counselors was
-$54,560 in May 2016. </blockquote>
+$57,040 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -314,14 +314,14 @@ libraries may hire individuals with only a high school diploma.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of library technicians
-was $28,440 in May 2016. </blockquote>
+was $30,560 in May 2019. </blockquote>
 
 <hr size="1" />
 
 <span class="header1">SOCIAL SERVICE</span>
 <p>The field of social service can be challenging.  It taps into a
-person's resourcefulness. It also demands that he/she be
-involved.</p>
+person's resourcefulness. It also demands that he/she be very
+involved with people.</p>
 
 <hr size="1" />
 
@@ -348,7 +348,7 @@ licensure, certification, or registration requirement, but the
 regulations vary.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of public health social
-workers was $46,890 in May 2016. </blockquote>
+workers was $59,300 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -357,16 +357,17 @@ workers was $46,890 in May 2016. </blockquote>
 	<img class="job_pic" src="/images/icons/EI/43007.jpg"
 width="100" height="100" border="0" alt="Chaplain" />
 	<span class="header3">Job Description</span>
-	<blockquote>Conduct religious worship and perform other
+	<blockquote>Clergies lead religious worship and perform other
 spiritual functions associated with beliefs and practices of
-religious faith or denomination. Provide spiritual and moral
+religious faith or denomination. They also provide spiritual and moral
 guidance and assistance to members.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You need a master's degree in theology to become
 a clergy. In addition, you would be "ordained" by a religious
 denomination.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of clergy was $45,740 in May 2016.</blockquote>
+	<blockquote>The median annual wage of clergies was $55,190 
+in May 2019.</blockquote>
 
 
 <hr size="1" />
@@ -391,7 +392,7 @@ administration or human resources management, training and
 development, or compensation and benefits.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of human resources
-managers was $106,910 in May 2016. </blockquote>
+managers was $116,720 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -419,8 +420,8 @@ social sciences.  You will find a job more easily if you learn as
 much about the law as you can. It is also helpful to work in a law
 office, if possible.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of paralegals was $49,500
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of paralegals was $51,740
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -433,16 +434,15 @@ responding to calls for service. They may direct traffic at the
 scene of an accident, investigate a burglary, or give first aid to
 an accident victim.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Law enforcement agencies encourage applicants to
-take courses or training related to law enforcement subjects after
-high school. Many entry-level applicants for police jobs have
-completed some formal postsecondary education, and a significant
+	<blockquote>Many entry-level applicants for police jobs have
+completed some formal postsecondary education in law enforcement, and a significant
 number are college graduates. Many junior colleges, colleges, and
 universities offer programs in law enforcement or administration of
-justice. </blockquote>
+justice. Police officers also receive training from a police training 
+academy. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of police officers was
-$61,600 in May 2016. </blockquote>
+$65,170 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -466,7 +466,7 @@ interact comfortably with strangers and remain calm under
 duress.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of flight attendants was
-$48,500 in May 2016. </blockquote>
+$56,640 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -499,9 +499,8 @@ hygiene or a related subject is required. There also are associate
 degree and one-year certificate programs which primarily are
 intended for technicians. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job-search website, indeed.com,
-the median annual wage of occupational health and safety specialists
-was $66,820 in May 2016. </blockquote>
+	<blockquote>The median annual wage of occupational health 
+and safety specialists was $74,100 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -526,7 +525,7 @@ usually must graduate from an accredited educational program,
 complete an internship, and pass a written examination. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of rehabilitation
-counselors was $34,670 in May 2016. </blockquote>
+counselors was $35,950 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -552,20 +551,8 @@ completion of a practical nurse program and passing an examination
 are required to become licensed.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of licensed practical/
-licensed vocational nurses was $44,090 in May 2016. </blockquote>
+licensed vocational nurses was $47,480 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/09/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 23, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 23, 2020). </blockquote>

@@ -6,7 +6,7 @@ understand that there are always ways to improve a situation. You
 can probably handle several tasks at one time. People like you have
 made important contributions in business. You are an excellent
 thinker.  You are also likely to be a no-nonsense kind of person.
-You are mentally creative and like to ask the question, "Why?"
+You are creative and like to ask the question, "Why?"
 Because of this, you will look for new business ventures.</p>
 <p>Most occupations in this pairing require at least a bachelor's
 degree or some post high school courses. For some jobs, it may be
@@ -45,7 +45,7 @@ this area.</p>
 			Political Science
 		</td>
 		<td>
-			Foreign Language<br />
+			World Languages<br />
 			Technology Education<br />
 			Government/Civics<br />
 			Environmental Sciences
@@ -256,7 +256,7 @@ Developer<br /><br />
 
 <span class="header1">FINANCE</span>
 <p>The occupations in this field are for people who are able to
-investigate and are good at numbers. If you would like to work with
+investigate and are good with numbers. If you would like to work with
 finances, these occupations might be for you.</p>
 
 <hr size="1" />
@@ -278,7 +278,7 @@ become a CPA you must have a bachelor's degree. You must also pass
 a written exam.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of accountants was
-$68,150 in May 2016. </blockquote>
+$71,550 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -286,7 +286,7 @@ $68,150 in May 2016. </blockquote>
 	<img class="job_pic" src="/images/icons/CH/C1618_03.jpg"
 width="100" height="100" border="0" alt="Statistician" />
 	<span class="header3">Job Description</span>
-	<blockquote>As a statistician, you would gather information
+	<blockquote>As a statistician, you would gather and analyze information
 in numbers. For example, Major League Baseball players have their
 batting averages determined by statisticians. If you worked in a
 business, you would look at certain numbers to see how well the
@@ -298,7 +298,7 @@ statistics or mathematics for this job.  To get a promotion, you
 must have a master's degree or a Ph.D.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of statisticians was
-$81,950 in May 2016. </blockquote>
+$91,160 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -320,7 +320,7 @@ lending, or sales experience is also highly valued by employers.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of loan officers was
-$63,650 in May 2016. </blockquote>
+$63,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -337,18 +337,17 @@ Manager</span><br /><br />
 	<blockquote>As a medical and health services manager, you
 would be
 responsible for the day-to-day running of a health care facility
-such as a hospital, clinic or hospice. You would be in charge of
+such as a hospital, clinic or nursing home. You would be in charge of
 hiring employees and budgeting money. You might also help to raise
 money to keep the facility going. To do well in this job, you need
 business skills.  You also need leadership and people
 skills.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need a master's degree for this job. This
-degree might be in hospital or health administration. It might also
-be in public health.</blockquote>
+	<blockquote>You need a bachelor's degree for this job. This
+degree might be in hospital or health administration or in public health. Many people in this field also have master's degrees. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of medical and health
-service managers was $96,540 in May 2016. </blockquote>
+service managers was $100,980 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -362,14 +361,14 @@ are well cared for. An important part of your duties would be to
 oversee the employees who care for the elderly. Another important
 duty is to run the home so that it earns a profit.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>All people who work as health care
-administrators must have a master's degree. Some health care
+	<blockquote>Many people who work as health care
+administrators, such as nursing home directors, must have a master's degree. Some health care
 administrators have degrees in public health.  Others have a degree
 in public administration.  Still others have a degree in business
 administration.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of nursing home directors
-was $96,540 in May 2016. </blockquote>
+was $100,980 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -389,7 +388,7 @@ you will need to complete an associate degree program with an
 emphasis in polysomnography. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of polysomnographic
-technologists or medical technologists was $50,930 in May 2016.
+technologists or medical technologists was $53,120 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -416,8 +415,8 @@ if you are naturally curious and enjoy a challenge.</blockquote>
 job. Many employers will want you to have a Ph.D. Education is very
 important.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of economists was $101,050
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of economists was $105,020
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -425,8 +424,7 @@ in May 2016. </blockquote>
 	<img class="job_pic" src="/images/icons/CH/43326.jpg"
 width="100" height="100" border="0" alt="Market Researcher" />
 	<span class="header3">Job Description</span>
-	<blockquote>A market researcher works for a company that
-makes a product sold to the public. As a researcher, you might work
+	<blockquote>A market researcher (or market research analyst) works for a company that makes a product sold to the public. As a researcher, you might work
 for a toy manufacturer or a retail store. You would collect
 information about what customers want to buy and give your results
 to the company.  If you are curious and understand business, this
@@ -437,7 +435,7 @@ Market researchers start out in entry-level jobs, then they are
 promoted to this job.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of market researchers was
-$62,560 in May 2016. </blockquote>
+$63,790 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -458,7 +456,7 @@ at least a bachelor's degree in computer science, information
 science, or management information systems. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of computer systems
-analyists was $87,220 in May 2016. </blockquote>
+analyists was $90,920 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -485,7 +483,7 @@ experience. Museum technicians often start work with a bachelor's
 degree. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of life science museum
-directors was $47,230 in May 2016.
+directors was $49,850 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -506,7 +504,7 @@ level jobs, but a master's degree is often needed for advancement.
 A Ph.D is necessary for independant research jobs.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of zoologists was
-$60,520 in May 2016. </blockquote>
+$63,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -532,20 +530,8 @@ for farmers and ranchers who expect to make a living at farming.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of farmers/ranchers was
-$66,360 in May 2016. </blockquote>
+$71,160 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/08/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 15, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 15, 2020). </blockquote>

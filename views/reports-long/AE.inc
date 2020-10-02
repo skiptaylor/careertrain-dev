@@ -1,7 +1,7 @@
 <span class="header1">Outdoor paired with Protective/Military
 Service (AE)</span>
 
-<p>If you scored high in categories "A" and "E" you have a strong
+<p>If you scored high in categories "A" and "E," you have a strong
 interest in nature and you are an adventurous spirit. You like to
 explore new possibilities.  You also know how to  get things done.
 You are willing to be a leader and to get your hands dirty.</p>
@@ -250,7 +250,7 @@ other military education programs as you advance in your career.  It
 takes about 16 years to become a high-ranking command
 pilot.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The yearly salary you recieve in the Military is
+	<blockquote>The yearly salary you receive in the Military is
 based on your rank, years of service and occupational
 specialty.</blockquote>
 
@@ -273,9 +273,8 @@ missile sites.</blockquote>
 from the military for this job. Courses in algebra, geometry, and
 geography will be helpful to you.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the online O*Net Resource Center, onetonline.org,
-the median annual wage of intelligence specialists was $78,120 in
-Febrary 2018.</blockquote>
+	<blockquote>The median annual wage of intelligence specialists was $83,170 in
+May 2019.</blockquote>
 
 	<span class="header2">Blasting Specialist</span><br /><br />
 	<img class="job_pic" src="/images/icons/AE/M15-0974.jpg"
@@ -294,9 +293,7 @@ also need to attend a special training program.  It is important to
 understand chemistry so that you can handle explosives
 safely.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job-search website indeed.com,
-the median annual wage of of blasting specialists was $48,632 in January 2018.
-</blockquote>
+	<blockquote>The median annual wage of of blasting specialists was $46,250 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -309,8 +306,8 @@ Outdoors."</p>
 
 	<span class="header2">Marine Surveyor</span><br /><br />
 	<span class="header3">Job Description</span>
-	<blockquote>Marine surveyors explore the land under the
-world's oceans and seas.  As a marine surveyor you would use
+	<blockquote>Marine surveyors (or marine engineers) explore the land under the
+world's oceans and seas.  As a marine surveyor, you would use
 different equipment to find out how deep the water is and what kind
 of land lies under it.  You would not work alone.  Instead, you
 would be part of a team. You must be very precise and detail
@@ -321,16 +318,15 @@ with other people.</blockquote>
 photogrammetrists have a bachelor's degree in surveying or a related
 field. Every state requires that surveyors be licensed.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job-search website indeed.com,
-the median annual wage of marine surveyors was $62,750
-in February 2018.</blockquote>
+	<blockquote>The median annual wage of marine surveyors was $92,400
+in May 2019.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Park Ranger</span><br /><br />
 	<img class="job_pic" src="/images/icons/AE/C585042.jpg"
 width="100" height="100" border="0" alt="Park Ranger" />
 	<span class="header3">Job Description</span>
-	<blockquote>A park ranger makes sure that visitors and
+	<blockquote>A park ranger (or park naturalists) makes sure that visitors and
 wildlife are safe in state and national parks. As a park ranger you
 would patrol the park.  You would also collect fees, provide
 information about the park, and enforce park rules and
@@ -341,7 +337,7 @@ bachelor's degree in forestry, environmental science, range
 management, or a related discipline.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of park rangers was
-$60,610 in May 2016.
+$62,660 in May 2019.
 </blockquote>
 <hr size="1" />
 
@@ -357,11 +353,11 @@ zoologists work on research teams with other scientists and
 technicians.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>Zoologists need a bachelor's degree for entry-
-level jobs, but a master's degree in often needed for advancement.
+level jobs, but a master's degree is often needed for advancement.
 A Ph.D is necessary for most independant research jobs.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of zoologists was
-$60,520 in May 2016.</blockquote>
+$63,270 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -392,7 +388,7 @@ special license or certification, so it is important to check with
 the appropriate state agency. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of building inspectors
-was $58,480 in May 2016. </blockquote>
+was $60,710 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -400,7 +396,7 @@ was $58,480 in May 2016. </blockquote>
 	<span class="header3">Job Description</span>
 	<blockquote>As a meter reader you would drive through
 neighborhoods, stopping at utility meters.  You would check these
-meters to see how much water, electricity, or natural gas each
+meters to see how much water, electricity or natural gas each
 household has used.  You would record these figures and report them
 to the utility company.  The company would send a bill to each
 customer based on these figures.</blockquote>
@@ -408,9 +404,8 @@ customer based on these figures.</blockquote>
 	<blockquote>You need a high school diploma and good writing
 and math skills for this job.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job-search website indeed.com,
-the median annual wage of meter reader was $24,595
-in January 2018. </blockquote>
+	<blockquote>The median annual wage of meter reader was $42,280
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -431,31 +426,9 @@ But you must understand basic math and be able to read mechanical
 drawings.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of construction workers
-was $32,230 in May 2016.</blockquote>
+was $36,000 in May 2019.</blockquote>
 
 <hr size="1" />
 
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/1/2018. </blockquote>
-
-
-
-
-
-Additional average salary information acquired from job search
-website indeed.com in January 2018. The Indeed Salary Search data
-is based on an index of salary information extracted from over 50
-million job postings from thousands of unique sources over the
-previous year.
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 9, 2020). </blockquote>

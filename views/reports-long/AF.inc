@@ -2,7 +2,7 @@
 
 <p>With an "AF" interest, you will want to combine your interest in
 open-air occupations with your interest in technologies. You like to
-conduct research, employ change and apply what you know,  to work
+conduct research, employ change and apply what you know to work
 settings of the technologies and outdoors.</p>
 <p>Many of the occupations in this pairing require that you have
 specialized and/or technical training after high school. Many
@@ -241,12 +241,10 @@ healthier. You could also work to develop safer pesticides and find
 better ways to protect water and soil.  For this work, you need a
 strong background in biology and other sciences.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need at least a Bachelor's Degree to assist
-an agricultural scientist.  You need a Master's Degree or a Ph.D. to
-be an agricultural scientist.</blockquote>
+	<blockquote>You need at least a bachelor's degree to be an agricultural scientist. Many earn advanced degrees.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of agriculture scientists
-was $62,920 in May 2016.
+was $65,160 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -267,7 +265,7 @@ level jobs, but a master's degree is often needed for advancement.
 A Ph.D is necessary for most independant research jobs.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of zoologists was
-$60,520 in May 2016. </blockquote>
+$63,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -284,7 +282,7 @@ for employees. No college degree is required. There is a need for
 more animal caretakers.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of animal caretakers was
-$22,230 in May 2016. </blockquote>
+$28,590 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -307,13 +305,13 @@ are used to warn  people of severe or dangerous weather.  This
 information is important to everybody.  It can help to save lives.
 It can also help to save property.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need a degree in meteorology, or in a
+	<blockquote>You need a bachelor's degree in meteorology, or in a
 related field such as physics or earth science.  If you want to
 teach meteorology or conduct research, you would need a Master's
 Degree or Ph.D.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of meteorologists was
-$92,460 in May 2016. </blockquote>
+$95,380 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -333,7 +331,7 @@ associate degree or a certificate in applied science or science-
 related technology.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of agriculture
-technicians was $37,550 in May 2016.</blockquote>
+technicians was $41,230 in May 2019.</blockquote>
 
 
 <hr size="1" />
@@ -355,7 +353,7 @@ such as landscape design, horticulture, or business management.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of landscapers was
-$26,830 in May 2016.</blockquote>
+$30,440 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -375,11 +373,11 @@ ground.  If you were a petroleum engineer, you would find and
 retrieve this petroleum and natural gas. You would need to know
 about rocks and minerals and retrieval methods.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need at least a Bachelor's Degree to become
+	<blockquote>You need at least a bachelor's degree to become
 a petroleum engineer. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of Petroleum Engineers
-was $128,230 in May 2016.</blockquote>
+	<blockquote>The median annual wage of petroleum engineers
+was $137,720 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -400,7 +398,7 @@ You are more likely to get a job running expensive equipment if you
 have taken courses at a vocational school.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of construction equipment
-operators was $45,040 in May 2016.</blockquote>
+operators was $48,160 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -418,21 +416,7 @@ and detailed in performing your duties.</blockquote>
 equipment specialist.  Shop mechanics and the sciences are high
 school courses that will help you to get this job.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of survival equipment
-specialists was 42,630 in May 2016.</blockquote>
+	<blockquote>The yearly salary you receive in the Military isbased on your rank, years of service and occupationalspecialty.</blockquote>
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/2/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 9, 2020). </blockquote>

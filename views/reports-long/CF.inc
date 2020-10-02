@@ -8,8 +8,7 @@ the technology industries. The field of business is becoming more
 technical and fast-paced. This means that you will have many
 opportunities to find the occupation that suits you. You will be
 happiest in an occupation that allows you to use your ability to
-understand how things work and gives you a chance to make important
-transactions.</p>
+understand how things work and solve problems.</p>
 <p>Many of the occupations in this pairing require some sort of
 specialized and/or technical training after high school. Some
 require college degrees or college level courses.</p>
@@ -92,7 +91,7 @@ what you want to do when you are an adult.</p>
 		<td>
 			Appliance Repair<br />
 			Newspapers<br />
-			Photographic Studios<br />
+			Photography Studios<br />
 			Small Engine Repair
 		</td>
 		<td>
@@ -267,7 +266,7 @@ universities offer programs in law enforcement or administration of
 justice. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of police officers was
-$61,600 in May 2016. </blockquote>
+$65,170 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -283,8 +282,8 @@ officers to work toward degrees in criminal justice, police science,
 administration of justice, or public administration and pay higher
 salaries to those who earn such a degree. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of detectives was $61,600
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of detectives was $65,170
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -308,7 +307,7 @@ credits, but law enforcement or military experience may be
 substituted to fulfill this requirement.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of corrections officers
-was $42,820 in May 2016.
+was $45,180 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -339,7 +338,7 @@ management technician. You would also participate in a training
 program offered by your company.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of waste management
-technicians was $44,190 in May 2016.
+technicians was $43,900 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -359,7 +358,7 @@ bachelor's degree in forestry, environmntal science, range
 management, or a related discipline.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of park rangers was
-$60,610 in May 2016. </blockquote>
+$62,660 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -376,13 +375,11 @@ research and oversee work crews. This is not an easy job. You must
 be willing to work hard and be outside in all kinds of weather.
 </blockquote>
 	<span class="header3">Education</span>
-	<blockquote>To become a forestry technician, you need a
-bachelor's degree from one of the 47 schools that specialize in
-forestry.
+	<blockquote>To become a forestry technician, you typically need some training in a vocational school or an associate's degree.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of forestry technicians
-was $58,700 in May 2016.
+was $45,500 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -416,14 +413,14 @@ degrees blend technical subjects with business, accounting, and
 communications courses.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of computer and
-information system managers was $135,800 in May 2016. </blockquote>
+information system managers was $146,360 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Computer Software
+	<span class="header2">Computer Software 
 Engineer</span><br /><br />
 	<span class="header3">Job Description</span>
-	<blockquote>Computer software engineers apply the principles
+	<blockquote>Computer software (or hardware) engineers apply the principles
 of computer science and mathematical analysis to the design,
 development, testing, and evaluation of the software and systems
 that make computers work.</blockquote>
@@ -433,7 +430,7 @@ least a bachelor's degree and experience with a variety of computer
 systems and technologies. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of computer software
-engineers was $102,280 in May 2016.
+engineers was $117,220 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -456,21 +453,9 @@ the military, a vocational school, or an equipment manufacturer.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of computer service
-technicians was $52,160 in May 2016.
+technicians was $54,760 in May 2019.
 </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/07/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 14, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 14, 2020). </blockquote>

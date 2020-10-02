@@ -42,7 +42,7 @@ opportunities in this area.</p>
 		</td>
 		<td>
 			Health<br />
-			Foreign Language<br />
+			World Languages<br />
 			Psychology<br />
 			Life Science
 		</td>
@@ -334,7 +334,7 @@ competitive job market. In small museums, curatorial positions may
 be available to individuals with a bachelor's degree.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of museum directors was
-$47,230 in May 2016. </blockquote>
+$49,850 in May 2019. </blockquote>
 
 		<hr size="1" />
 
@@ -357,7 +357,7 @@ needs very educated people.  Those who have a bachelor's degree work
 as assistants to archeologists.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of archeologists was
-$63,190 in May 2016. </blockquote>
+$63,670 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -378,7 +378,7 @@ also pursue a master's degree to increase their employment
 opportunities.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of industrial designers
-was $67,790 in May 2016.
+was $68,890 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -409,8 +409,8 @@ law school to become a lawyer. Also a lawyer must pass an exam known
 as the bar. A lawyer must be very sharp and continue to learn about
 the law, because laws often change.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of lawyers was $118,160
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of lawyers was $122,960
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -430,8 +430,8 @@ newspapers or broadcasting stations, and internships with news
 organizations.
 </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of Broadcast News
-Analysts was $38,870 in May 2016.</blockquote>
+	<blockquote>The median annual wage of broadcast news
+analysts was $46,270 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -454,7 +454,7 @@ or English.  You need to combine writing courses and as much
 experience as possible to prepare for this work.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of biographers was
-$61,240 in May 2016.</blockquote>
+$63,200 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -481,7 +481,7 @@ certification requirements also exist, but vary by
 State.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of speech pathologists
-was $74,680 in May 2016. </blockquote>
+was $79,120 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -505,8 +505,8 @@ information.</blockquote>
 science to apply for this job.  Volunteer or work in a library to
 get experience with the way information is organized.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of librarians was $57,680
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of librarians was $59,500
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -536,7 +536,7 @@ Civil engineers can work in several specialty fields.  Each has its
 own education requirements.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of civil engineers was
-$83,540 in May 2016. </blockquote>
+$87,060 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -546,13 +546,13 @@ width="100" height="100" border="0" alt="Photographer" />
 	<span class="header3">Job Description</span>
 	<blockquote>If you like taking pictures and have a
 good "eye", you might become a professional photographer. A
-photographer combines communications skills and technology.  In this
+photographer combines communication skills and technology.  In this
 job, you would take pictures of people, things, or events. You must
 be creative.  Your goal is to show people something they might not
 have seen otherwise.  You must understand the technical aspects of
-the camera. You must also know how to process film. Many
-photographers work for themselves, so it is helpful to understand
-how a small business works.</blockquote>
+the camera. You must also know how to use computer software to edit, 
+organize and publish pictures. Many photographers work for themselves, 
+so it is helpful to understand how a small business works.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>A bachelor's degree in photography or the visual
 arts can develop your basic skills.  But, you also need to be
@@ -563,17 +563,18 @@ learn more about using your camera to capture successful
 photographs.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of photographers was
-$34,070 in May 2016. </blockquote>
+$36,280 in May 2019. </blockquote>
 
 <hr size="1" />
 
 	<span class="header2">Dental Technician</span><br /><br />
 	<span class="header3">Job Description</span>
-	<blockquote>A dental technician makes equipment used by the
-dentist in treating patients.  As a dental technician you would make
+	<blockquote>A dental technician makes appliances and devices used by the
+dentist in treating patients. As a dental technician you would make
 crowns, bridges, and dentures for people's mouths.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Dental laboratory technicians begin by learning
+	<blockquote>Dental laboratory technicians typically need a high 
+school diploma and on-the-job training. They begin by learning
 simple tasks, such as pouring plaster into an impression, and
 progress to more complex procedures, such as making porcelain crowns
 and bridges. Becoming a fully trained technician requires an average
@@ -582,21 +583,9 @@ ambition, but it may take a few years more to become an accomplished
 technician. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of dental technicians was
-$34,630 in May 2016. </blockquote>
+$37,370 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 11, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 11, 2020). </blockquote>
 
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/07/2018. </blockquote>

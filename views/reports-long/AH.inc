@@ -50,7 +50,7 @@ will also help prepare you for a possible career in this field.</p>
 <p><strong>Extracurricular / volunteer activities or organizations
 you may find interest:</strong><br />
 If you have time for after-school activities or part-time jobs, make
-them count. You will especially enjoy club or activity where you can
+them count. You may especially enjoy a club or activity where you can
 share your love for nature and use your thinking skills.</p>
 
 <table cellpadding="10" cellspacing="10">
@@ -202,7 +202,7 @@ class="header2">Nature Sciences</span><br /><br />
 
 	<li>Wildlife</li>
 							</ul>
-						Political Scientist
+						Political Scientist<br /><br />
 Climatologist<br /><br />
 
 	Firefighter<br /><br />
@@ -291,8 +291,7 @@ Scientist<br /><br />
 
 <span class="header1">MEDICAL</span>
 <p>Your ability to reason and your no-nonsense approach to science
-can help you to become an expert in this field.  Observation is very
-important in this field. Problem solving is important too. Here are
+can help you to become an expert in this field.  Observation and problem solving are very important. Here are
 three occupations found in this field.</p>
 
 <hr size="1" />
@@ -315,7 +314,7 @@ common, associate's, master's, or doctoral degrees are also
 available.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of recreational
-therapists was $46,410 in May 2016.</blockquote>
+therapists was $48,220 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -336,7 +335,7 @@ in biology or one of its subfields to work in research or
 development positions.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of animal scientists was
-$62,920 in May 2016. </blockquote>
+$60,300 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -350,15 +349,10 @@ hospitals and clinics.  In this job, you would work closely with
 veterinarians.  You would help conduct laboratory tests.  You would
 also help dress wounds and prepare animals for surgery.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>There are primarily two levels of education and
-training for entry to this occupation: a 2-year program for
-veterinary technicians and a 4-year program for veterinary
-technologists. However, many states require that you be licensed or
-certified.  To become licensed or certified, you must take a
-specific course(s) and pass a written test.</blockquote>
+	<blockquote>To be a veterinary technician, you will need an associate degree, vocational training or on-the-job training.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of veterinary technicians
-was $32,490 in May 2016.</blockquote>
+was $35,320 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -385,7 +379,7 @@ oceanographer, you would search for what is unknown.</blockquote>
 requirement for most entry-level positions.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of oceanographers was
-$89,780 in May 2016.</blockquote>
+$92,040 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -407,7 +401,7 @@ jobs and extracurricular activities may play an important role in
 your job prospects.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of soil conservationists
-was $60,610 in May 2016.</blockquote>
+was $62,660 in May 2019.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Climatologist</span><br /><br />
@@ -427,7 +421,7 @@ a climatologist.  In this occupation, the more education you have,
 the better off you will be.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of climatologists was
-$92,460 in May 2016.</blockquote>
+$95,380 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -446,27 +440,24 @@ areas of flowers and trees. During construction, these areas are
 nothing more than mud or dirt. The person who plans the landscaping
 around a new building is a landscape architect. As a landscape
 architect, you would look over the area surrounding a project or
-building site.  You would think of a way to change the ugliness into
-a beautiful natural looking environment. To succeed in this job, you
+building site.  You would think of a way to create a beautiful natural looking environment. To succeed in this job, you
 must appreciate nature and have an "eye" for beauty.  You must also
 have the technical skills to draw up plans that can be followed
 easily.  Finally, you must be able to "see" how the area will look
 after your plans are followed before the project begins.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You need a bachelor's degree in landscape
-architect for this profession.  Some programs require 5 years of
-study for this degree.  Also, you must get an architect's
-license.</blockquote>
+architecture. You must also pass an exam to earn licensure.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of landscape architects
-was $63,480 in May 2016.</blockquote>
+was $69,360 in May 2019.</blockquote>
 
 <hr size="1" />
 
 	<span class="header2">Environmental Health
 Inspector</span><br /><br />
 	<span class="header3">Job Description</span>
-	<blockquote>Environmental health inspectors usually work for
+	<blockquote>Environmental health inspectors (sometimes called occupational health and safety specialists) usually work for
 a state government.  In this job, you would work to keep our food,
 water and air clean and safe.  You would monitor factories,
 businesses, and hospitals to be sure that they obeyed government
@@ -474,11 +465,10 @@ safety regulations that help to keep our environment
 safe.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>Most states agencies prefer hiring people who
-have bachelor's degrees. Many states require a license as well. To
-apply for a license, you must pass a written exam.</blockquote>
+have bachelor's degrees, and many encourage employees to pass a certification exam.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of environmental health
-inspectors was $66,820 in May 2016.</blockquote>
+inspectors was $74,100 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -505,7 +495,7 @@ work in this area.  You need good math skills too.</blockquote>
 a Ph.D. is required.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of astrophysicists was
-$114,870 in May 2016. </blockquote>
+$122,220 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -519,10 +509,10 @@ would chart, study, measure, and map the earth's surface. This
 occupation requires someone who is detailed and precise.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>In most states, a surveyor needs a four-year
-degree in surveying or civil engineering.</blockquote>
+degree in surveying or civil engineering. To provide services to the public, a license is required.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of surveyors was $59,390
-in May 2016.</blockquote>
+	<blockquote>The median annual wage of surveyors was $63,420
+in May 2019.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Mapping Technician</span><br /><br />
@@ -532,27 +522,17 @@ mapping technician, you would work with a team headed by a
 surveyor.  You would handle and use the surveying instruments used
 to measure distance and altitude.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You can get on-the-job training.  But it is
+	<blockquote>You can get on-the-job training; however, it is
 easier to get a job if you complete a vocational tech program.
 There are one-year, two-year, and three-year programs for those who
 want to study mapping technology.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of mapping technicians
-was $42,450 in May 2016. </blockquote>
+was $45,010 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online</i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 9, 2020). </blockquote>
 
 
 
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/7/2018. </blockquote>

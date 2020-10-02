@@ -34,7 +34,7 @@ and sociology may interest you.</p>
 			Computer Sciences<br />
 			Government/Civics<br />
 			Bookkeeping<br />
-			Foreign Language
+			World Languages
 		</td>
 		<td>
 			History<br />
@@ -286,7 +286,7 @@ job.  Those with more responsible positions must have a master's
 degree.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of social workers was
-$46,890 in May 2016. </blockquote>
+$50,470 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -308,7 +308,7 @@ teacher assistants or provide additional training for current
 teacher assistants.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of teacher assistants was
-$25,410 in May 2016. </blockquote>
+$27,920 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -331,7 +331,7 @@ succeed, many interpreters and translators grew up speaking two
 languages. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of
-interpreters/translators was $46,120 in May 2016. </blockquote>
+interpreters/translators was $51,830 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -356,12 +356,12 @@ employees.</blockquote>
 	<blockquote>In filling entry-level jobs, many employers seek
 college graduates who have majored in  business administration,
 business management, finance, or a related field. Many employers
-prefer to hire managers who have a master?s degree, particularly one
+prefer to hire managers who have a master's degree, particularly one
 with a concentration in human resources management, finance, or
 business administration (MBA). </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of Compensations and
-Benefits Managers was $116,240 in May 2016. </blockquote>
+Benefits Managers was $122,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -385,8 +385,8 @@ work closely with top executives. A degree related to the business
 or industry in which a person is seeking employment may provide the
 job seeker with an advantage in the application process.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the online O*Net Resource Center, onetonline.org, the
-median annual wage of executive assistants was $55,860 in February 2018. </blockquote>
+	<blockquote>Themedian annual wage of executive assistants 
+was $62,920 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -407,7 +407,7 @@ prepared the papers correctly.</blockquote>
 job.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of insurance processing
-clerks was $38,080 in May 2016. </blockquote>
+clerks was $42,150 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -426,8 +426,8 @@ what is said in the courtroom during a trial or hearing. The person
 who does this is a court reporter. As a court reporter, you would
 use a stenotype machine which is a type of computer that allows you
 to key in every word that the judge, lawyers, and witnesses say.
-Some reporters work within the courtroom. Other reporters are self-
-employed and they work in different locations.</blockquote>
+Some reporters work within the courtroom. Other reporters are 
+self-employed and they work in different locations.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>There are special schools where you can earn a
 degree in court reporting. These schools offer two or four year
@@ -435,7 +435,7 @@ programs. You might also have to pass a written test to become
 certified by the state in which you work.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of court reporters was
-$51,320 in May 2016. </blockquote>
+$60,130 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -456,7 +456,7 @@ paralegal in the civilian courts.</blockquote>
 	<blockquote>You need at least a high school diploma to join
 the military.  On-the-job training is provided.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The yearly salary you recieve in the Military is
+	<blockquote>The yearly salary you receive in the military is
 based on your rank, years of service and occupational
 specialty.</blockquote>
 
@@ -473,22 +473,9 @@ files.  You would use a computer to do your job.</blockquote>
 <blockquote>You need a high school diploma to join the
 military.  On-the-job training is provided.</blockquote>
 <span class="header3">Salary</span>
-<blockquote>The median annual wage of administrative support
-specialists was $37,230 in May 2016. </blockquote>
+<blockquote>The median annual wage of civilian administrative support
+specialists was $34,040 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/08/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 18, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 18, 2020). </blockquote>

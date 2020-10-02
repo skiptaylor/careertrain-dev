@@ -92,7 +92,7 @@ what you want to do when you are an adult.</p>
 		<td>
 			Environmental Services<br />
 			Landscaping/Lawn Care<br />
-			Photographic Studios<br />
+			Photography Studios<br />
 			Park Services
 		</td>
 		<td>
@@ -251,7 +251,7 @@ field must have detail oriented people who have technical skills.</p>
 	<img class="job_pic" src="/images/icons/DF/43285.jpg"
 width="100" height="100" border="0" alt="Graphic Artist" />
 	<span class="header3">Job Description</span>
-	<blockquote>Graphic designers - or graphic artists - plan,
+	<blockquote>Graphic designers (or graphic artists) plan,
 analyze, and create visual solutions to communication problems.
 They find the most effective way to get messages across in print,
 electronic, and film media using a variety of methods such as color,
@@ -266,11 +266,11 @@ designers must keep up with new and updated software on their own
 or through software training programs.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of graphic designers was
-$47,640 in May 2016. </blockquote>
+$52,110 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Dispensing Optician</span><br /><br />
+	<span class="header2">Optician</span><br /><br />
 	<span class="header3">Job Description</span>
 	<blockquote>In this job you would work with the two types
 of eye doctors, ophthalmologists and optometrists. Your duties would
@@ -279,15 +279,15 @@ would help patients pick out frames as well.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>A high school diploma is all that is required to
 get into this occupation, but most workers have completed at least
-some college courses or a degree. Twenty-one states require
+some college courses or a degree. About half the states require
 individuals to pass one or more of the following for licensure: a
 state practical examination, a state written examination, and
 certification examinations offered by the American Board of
 Opticianry (ABO) and the National Contact Lens Examiners (NCLE).
 </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of dispensing opticians
-was $35,530 in May 2016. </blockquote>
+	<blockquote>The median annual wage of opticians
+was $37,840 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -303,14 +303,13 @@ developing and advancing uses of virtual reality, extending human-
 computer interaction, or designing robots. </blockquote>
 	<span class="header3">Education</span>
 	<blockquote>Most computer scientist positions require a
-Ph.D. degree, as their main job function is research. Computer
-scientists having only a bachelor's or master's degree are generally
-limited in their ability to advance. Technological advances come so
-rapidly in the computer field that continuous study is necessary to
-keep one's skills up to date.</blockquote>
+master's degree or Ph.D. Computer scientists having only a bachelor's 
+degree are generally limited in their ability to advance. Technological 
+advances come so rapidly in the computer field that continuous  
+study is necessary to keep one's skills up to date.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of computer scientists
-was $111,840 in May 2016. </blockquote>
+was $122,840 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -333,16 +332,12 @@ courtroom. Other reporters are self-employed and they work in
 different locations.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>The amount of training required to become a
-court reporter varies with the type of reporting chosen. It can take
-less than a year to become a novice voice writer, at least two years
-to become proficient at real-time voice writing, and about three
-years to become a real-time stenotypist. Skills can be learned on
-the
-job or through postsecondary vocational and technical school and
-college programs. </blockquote>
+court reporter varies with the type of reporting chosen. Typically, 
+you need an associate's degree to be a court reporter. Many states 
+require licensure or certification. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of court reporters was
-$51,320 in May 2016. </blockquote>
+$60,130 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -362,7 +357,7 @@ many in these occupations do not have a college degree, most
 companies prefer to hire college graduates. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of insurance claims
-adjusters was $63,670 in May 2016. </blockquote>
+adjusters was $66,540 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -395,7 +390,7 @@ service technicians still learn the trade solely by assisting and
 learning from experienced workers. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of automotive service
-technicians was $38,470 in May 2016. </blockquote>
+technicians was $42,090 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -409,7 +404,7 @@ the detailed instructions, called programs, that computers follow to
 perform their functions. Programmers also conceive, design, and test
 logical structures for solving problems by computer.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>A bachelor's degree commonly is required for
+	<blockquote>A bachelor's degree is commonly required for
 computer programming jobs, although a two-year degree or certificate
 may be adequate for some positions. Employers favor applicants who
 already have relevant programming skills and experience. Skilled
@@ -417,29 +412,29 @@ workers who keep up to date with the latest technology usually have
 good opportunities for advancement. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of computer programmers
-was $79,840 in May 2016. </blockquote>
+was $86,550 in May 2019. </blockquote>
 
 <hr size="1" />
 
 
-	<span class="header2">Telecommunications Specialist
-</span><br /><br />
+	<span class="header2">Telecommunications Engineering 
+Specialist </span><br /><br />
 	<span class="header3">Job Description</span>
-	<blockquote>Telecommunications specialists focus on the
+	<blockquote>Telecommunications engineering specialists focus on the
 interaction between computer and communications equipment. These
 workers design voice and data communication systems, supervise the
 installation of the systems, and provide maintenance and other
 services to clients after the systems are installed. </blockquote>
 	<span class="header3">Education</span>
 	<blockquote>While there is no universally accepted way to
-prepare for a job as a network systems analyst, computer scientist,
-or database administrator, most employers place a premium on some
-formal college education. A bachelor's degree is a prerequisite for
-many jobs; however, some jobs may require only a two-year degree.
-Relevant work experience also is very important.</blockquote>
+prepare for a job as a telecommunications engineering specialist, most employers 
+place a premium on some formal college education. A bachelor's degree 
+is a prerequisite for some jobs; however, some may require only 
+a two-year degree. Relevant work experience also is very important.
+</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of telecommunications
-specialists was $87,220 in May 2016. </blockquote>
+engineering specialists was $112,690 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -451,7 +446,7 @@ Technician" />
 	<span class="header3">Job Description</span>
 	<blockquote>Repairing and maintaining watches, cameras,
 musical instruments, medical equipment, and other precision
-instruments requires a high level of skill and attention to
+instruments require a high level of skill and attention to
 detail.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>For most precision equipment repairers, the most
@@ -461,20 +456,8 @@ is required, an internship or apprenticeship is generally required
 before a technician is fully qualified.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of precision equipment
-repairers was $48,070 in May 2016. </blockquote>
+repairers was $58,060 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/08/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 18, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 18, 2020). </blockquote>

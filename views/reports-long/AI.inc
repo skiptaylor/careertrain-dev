@@ -246,24 +246,23 @@ the environment with helping others.</p>
 
 <hr size="1" />
 
-	<span class="header2">Recreation Therapist</span><br /><br />
+	<span class="header2">Recreational Therapist</span><br /><br />
 	<img class="job_pic" src="/images/icons/AI/18272.jpg"
 width="100" height="100" border="0" alt="Recreation Therapist" />
 	<span class="header3">Job Description</span>
 	<blockquote>If you want to make a difference in people's
-lives, you might become a recreation therapist.  Recreation
+lives, you might become a recreational therapist.  Recreational
 therapists work as members of a medical team. They use nature,
 dance, art, games, and music to help patients keep their spirits up
 as they go through a serious illness or trauma.  They help them to
-regain self-confidence as they are getting well.</blockquote>
+regain self-confidence as they recover.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need a bachelor's degree to work in a
-medical facility. Some employers want certified therapists only. To
+	<blockquote>You need a bachelor's degree to work as a recreational therapist. Some employers want certified therapists only. To
 be certified you need to pass the required state or board
 exam.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of recreation therapists
-was $46,410 in May 2016.
+	<blockquote>The median annual wage of recreational therapists
+was $48,220 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -283,7 +282,7 @@ college degree, but a high school diploma is required. Also a
 written exam must be passed.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of postal workers was
-$56,790 in May 2016. </blockquote>
+$52,060 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -303,8 +302,8 @@ must follow to become a bus driver. Most states require drivers to
 pass several written exams and to have a high school
 diploma.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of bus drivers was
-$31,920 in May 2016. </blockquote>
+	<blockquote>The median annual wage of city bus drivers was
+$43,030 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -332,7 +331,7 @@ area.</blockquote>
 a Doctor of Veterinary Medicine degree.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of veterinarians was
-$88,770 in May 2016. </blockquote>
+$95,460 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -350,8 +349,8 @@ ecologist.  Most employers look for a master's degree and
 experience.  To get experience, volunteer with groups who work to
 protect the environment.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of ecologists was $68,910
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of ecologists was $71,360
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -366,12 +365,12 @@ samples from animals to assess their levels of nutrition. Most
 zoologists work on research teams with other scientists and
 technicians. </blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Zoologists need a bachelor?s degree for entry-
-level jobs, but a master?s degree is often needed for advancement. A
+	<blockquote>Zoologists need a bachelor's degree for entry-
+level jobs, but a master's degree is often needed for advancement. A
 Ph.D. is necessary for most independent research jobs.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of zoologists was $60,520
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of zoologists was $63,270
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -399,13 +398,12 @@ Civil engineers can work in several specialty fields.  Each has its
 own education requirements.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of civil engineers was
-$83,540 in May 2016.
+$87,060 in May 2019.
 </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Hazardous Waste Management
-Professional</span><br /><br />
+	<span class="header2">Hazardous Substance Engineer</span><br /><br />
 	<img class="job_pic" src="/images/icons/AI/43020.jpg"
 width="100" height="100" border="0" alt="Hazardous Waste Management
 Professional" />
@@ -413,12 +411,12 @@ Professional" />
 	<blockquote>Hazardous waste has become a problem. Factories
 and manufacturing plants discard harmful waste materials.  These
 materials get into the environment.  They  poison plants and
-animals.  Environmental scientists and hydrologists use their
+animals.  Hazardous Substance Engineers (also called environmental engineers) use their
 knowledge of the physical makeup and history of the Earth to protect
 the environment, study the properties of underground and surface
 waters, locate water and energy resources, predict water-related
 geologic hazards, and provide environmental site assessments and
-advice on indoor air quality and hazardous-waste-site remediation.
+advice on hazardous-waste-site remediation.
 
 </blockquote>
 	<span class="header3">Education</span>
@@ -428,7 +426,7 @@ important in this line of work. The more you have, the better your
 chances for getting a job.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of hazardous waste
-management professionals was $80,480 in May 2016. </blockquote>
+management professionals was $88,860 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -439,38 +437,18 @@ width="100" height="100" border="0" alt="Emergency Management
 Specialist" />
 	<span class="header3">Job Description</span>
 	<blockquote>Emergency management specialists work for the 
-military.  If you were a specialist, you would develop and oversee
+military, other government organizations, hospitals and private companies.  If you were a specialist, you would develop and oversee
 plans for disaster relief if there should be a national, regional or
 state emergency. You would train others to provide this relief.  You
 would also tell people what to do if there was an
 emergency.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>The military provides training to people who
-want to work in this occupation.</blockquote>
+want to work in this occupation. On the other hand, if you are a civilian, you typically need a bachelor's degree to work as an emergency management specialist. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of emergency management
-	specialists was $70,500 in May 2016. </blockquote>
+	specialists was $74,590 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/7/2018. </blockquote>
-
-
-Additional average salary information acquired from job search
-website indeed.com in February 2018. The Indeed Salary Search data
-is based on an index of salary information extracted from over 50
-million job postings from thousands of unique sources over the
-previous year.
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 9, 2020). </blockquote>

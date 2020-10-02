@@ -47,7 +47,7 @@ that help you to understand others and the world of business.</p>
 			Accounting
 		</td>
 		<td>
-			Foreign Language<br />
+			World Languages<br />
 			Business Math<br />
 			Bookkeeping
 		</td>
@@ -275,7 +275,7 @@ have been successful in other types of work.  A state license is
 required.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of insurance agents was
-$49,990 in May 2016. </blockquote>
+$50,940 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -295,13 +295,13 @@ of a traveler.</blockquote>
 becoming a travel agent is a high school diploma or equivalent. Much
 of the training is provided on the job, a significant part of which
 consists of instruction on how to use reservation systems. Training
-specific to becoming a travel agent is available at the many
+specific to becoming a travel agent is available at many
 vocational schools, online, and in community colleges. A few
 colleges offer bachelor's or master's degrees in travel and tourism.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of travel agents was
-$36,460 in May 2016. </blockquote>
+$40,660 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -319,8 +319,8 @@ receipts in the machine.</blockquote>
 	<blockquote>If you were a cashier you would be given on-the-
 job training.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of cashiers was $20,180
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of cashiers was $23,650
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -353,7 +353,7 @@ employers look for college graduates with a technical or business
 background or a well-rounded liberal arts education.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of human resources
-managers was $106,910 in May 2016.
+managers was $116,720 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -371,18 +371,11 @@ to use these benefits to their advantage. As an employee benefits
 manager, you would need to be well organized. You would also need to
 enjoy working with people.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote> College graduates who have earned certification
-should have the best job opportunities. The International Foundation
-of Employee Benefit Plans confers a designation in three distinct
-areas of specialization - group benefit, retirement, and
-compensation - to persons who complete a series of college-level
-courses and pass
-exams. Candidates can earn a designation in each of the specialty
-tracks and, simultaneously, receive credit toward becoming a
-Certified Employee Benefits Specialist (CEBS). </blockquote>
+	<blockquote> College graduates who have earned certification from professional organizations such as the International Foundation of Employee Benefit Plans
+should have the best job opportunities. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of employee benefits
-managers was $116,240 in May 2016.
+managers was $122,270 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -411,7 +404,7 @@ more complicated financial records are especially likely to require
 a college degree. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of brokerage clerks was
-$38,080 in May 2016. </blockquote>
+$40,540 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -435,12 +428,12 @@ process the loan.  If not, you would help them to understand why
 they did not get the loan.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>Loan officers usually need a bachelor's degree
-in finance, economics, or a related field. Previous banking,
+in finance, economics, or a related field. Those who work with home loans must be licensed. Previous banking,
 lending, or sales experience is also highly valued by
 employers.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of loan officers was
-$63,650 in May 2016. </blockquote>
+$63,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -460,7 +453,7 @@ and computer science from a vocational school can help you to get a
 job.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of bookkeepers was
-$38,390 in May 2016. </blockquote>
+$41,230 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -478,20 +471,8 @@ records.</blockquote>
 teller. A teller is given on-the-job training.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of bank tellers was
-$27,260 in May 2016. </blockquote>
+$31,230 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/07/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 10, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 10, 2020). </blockquote>

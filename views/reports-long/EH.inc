@@ -286,7 +286,7 @@ podiatric college program, and passing scores on national and state
 examinations.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of podiatrists was
-$124,830 in May 2016. </blockquote>
+$126,240 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -306,7 +306,7 @@ four year programs. The majority of technologists complete a two-
 year junior or community college program, but four-year programs are
 increasingly available.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The yearly salary you recieve in the Military is
+	<blockquote>The yearly salary you receive in the military is
 based on your rank, years of service and occupational specialty.
 </blockquote>
 
@@ -336,19 +336,20 @@ program in urban or regional planning or a related field, such as
 urban design or geography. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of urban planners was
-$70,020 in May 2016. </blockquote>
+$74,350 in May 2019. </blockquote>
 
 <hr size="1" />
 
 
 	<span class="header2">
-Engineer</span><br /><br />
+Geotechnical Engineer</span><br /><br />
 	<img class="job_pic" src="/images/icons/EH/1151.jpg"
 width="100" height="100" border="0" alt="Geotechnical Engineer" />
 	<span class="header3">Job Description</span>
 	<blockquote>Tunnels through mountains are possible because
-geotechnical engineers have been hard at work. In this job, you
-would make and oversee plans for structures above or below ground.
+geotechnical engineers have been hard at work. Geotechnics is a 
+branch of civil engineering. In this job, you would make and 
+oversee plans for structures above or below ground.
 You might build tunnels through mountains or under bodies of
 water.</blockquote>
 	<span class="header3">Education</span>
@@ -361,8 +362,8 @@ engineering, humanities, and social sciences. In the last two years,
 most courses are in engineering, usually with a concentration in one
 specialty. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of engineers was $97,300
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of civil engineers was $87,060
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -382,11 +383,10 @@ health, safety, or a related field such as engineering, biology, or
 chemistry. For some positions, a master's degree in industrial
 hygiene or a related subject is required. There also are associate
 degree and one-year certificate programs, which primarily are
-intended
-for technicians. </blockquote>
+intended for technicians. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of occupational health and safety specialists
-was $66,820 in May 2016. </blockquote>
+was $74,100 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -412,8 +412,8 @@ mathematics, statistics, and general business. They generally have a
 bachelor's degree and are required to pass a series of exams in
 order to become certified.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of actuaries was $100,610
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of actuaries was $108,350
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -425,12 +425,13 @@ financial reports, direct investment activities, and implement cash
 management strategies. Managers also develop strategies and
 implement the long-term goals of their organization.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Most financial managers need a bachelor's
-degree, and many have a master's degree or professional
-certification. </blockquote>
+	<blockquote>Financial managers need a bachelor's
+degree. Many have a master's degree or professional
+certification and several years of experience in a related 
+occupation such as accounting. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of financial managers was
-$121,750 in May 2016. </blockquote>
+$129,890 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -452,20 +453,8 @@ although a few enter these positions after working as technicians.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of cartographers was
-$62,750 in May 2016. </blockquote>
+$65,470 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/08/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 21, 2020). </blockquote>

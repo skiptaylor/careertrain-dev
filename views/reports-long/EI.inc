@@ -34,7 +34,7 @@ opportunities in this area.</p>
 		<td>
 			Health/Nutrition<br />
 			Physical Education<br />
-			Foreign Language<br />
+			World Languages<br />
 		</td>
 		<td>
 			Sociology<br />
@@ -98,7 +98,7 @@ what you want to do when you are an adult.</p>
 		<td>
 			Advertising Agencies<br />
 			Graphic Design Firm<br />
-			Photographic Studios
+			Photography Studios
 		</td>
 		<td>
 			Company Offices<br />
@@ -265,16 +265,16 @@ possibilities.</p>
 	<img class="job_pic" src="/images/icons/EI/43007.jpg"
 width="100" height="100" border="0" alt="Chaplain" />
 	<span class="header3">Job Description</span>
-	<blockquote>Conduct religious worship and perform other
+	<blockquote>Clergy conduct religious worship and perform other
 spiritual functions associated with beliefs and practices of
-religious faith or denomination. Provide spiritual and moral
+religious faith or denomination. They also provide spiritual and moral
 guidance and assistance to members.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You need a master's degree in theology to become
 a clergy. In addition, you would be "ordained" by a religious
 denomination.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of clergy was $45,740 in May 2016.</blockquote>
+	<blockquote>The median annual wage of clergy was $55,190 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -292,8 +292,7 @@ his/her students.</blockquote>
 	<blockquote>You need a college degree for this job.  Some
 training would be provided by the military.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of military trainers was $59,020 in
-May 2016.</blockquote>
+	<blockquote>The yearly salary you receive in the military isbased on your rank, years of service and occupationalspecialty.</blockquote>
 
 <hr size="1" />
 
@@ -311,8 +310,7 @@ also speak to high school and community groups.</blockquote>
 recruiting specialist. Courses in English, social studies, and
 public speaking are valuable.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of recruiting specialists
-was $62,080 in May 2016. </blockquote>
+	<blockquote>The yearly salary you receive in the military isbased on your rank, years of service and occupationalspecialty. </blockquote>
 
 <hr size="1" />
 
@@ -336,11 +334,11 @@ helpful.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>Chiropractors must be licensed, which requires
 two to four years of undergraduate education, the completion of a
-four-year chiropractic college course, and passing scores on
+four-year chiropractic college program, and passing scores on
 national and state examinations.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of chiropractors was
-$67,520 in May 2016. </blockquote>
+$70,340 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -348,7 +346,7 @@ $67,520 in May 2016. </blockquote>
 Assistant</span><br /><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Under the direction and supervision of physical
-therapists, they provide part of a patient's treatment. This might
+therapists, physical therapy assistants help with patients' treatment. This might
 involve exercises, massages, electrical stimulation, paraffin baths,
 hot and cold packs, traction, and ultrasound. Physical therapist
 assistants record the patient's responses to treatment and report
@@ -360,7 +358,7 @@ program. Some states require licensing for physical therapist
 assistants.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of physical therapy
-assistants was $45,290 in May 2016. </blockquote>
+assistants was $48,990 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -381,7 +379,7 @@ degree. Some states require school counselors to be licensed, which
 generally requires continuing education credits.  </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of school counselors was
-$54,560 in May 2016. </blockquote>
+$57,040 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -409,12 +407,12 @@ law enforcement agencies, and experience with local, state or
 federal court systems to include the protection of court personnel,
 jurors and witnesses.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to usmarshals.gov, the median annual wage of
-U.S marshalls was $45,371 in February 2018. </blockquote>
+	<blockquote>The median annual wage of
+U.S marshals varies depending on location, performance and years of service. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">U.S. Customs and Border Patrol
+	<span class="header2">U.S. Customs and Border Protection 
 Agent</span><br /><br />
 	<img class="job_pic" src="/images/icons/EI/25032.jpg"
 width="100" height="100" border="0" alt="Customs Agent" />
@@ -428,11 +426,10 @@ laws. You might be assigned to inspect goods coming into the
 country. You would make sure taxes were paid and that nothing
 illegal was being brought in.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need a bachelor's degree or three years of
-work experience for this job.</blockquote>
+	<blockquote>You typically need at least an associate degree and related work experience for this job.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of U.S Customs agent was $61,600
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of U.S Customs agent was $83,170
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -447,24 +444,10 @@ facility. You would provide traffic control when needed. You might
 also make arrests.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>On-the-job training is provided for
-M.P.'s.</blockquote>
+military police.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of military police was
-$61,600 in May 2016.</blockquote>
+	<blockquote>The yearly salary you receive in the military isbased on your rank, years of service and occupationalspecialty. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/08/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 22, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 22, 2020). </blockquote>

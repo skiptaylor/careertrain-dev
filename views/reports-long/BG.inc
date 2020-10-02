@@ -36,7 +36,7 @@ science and sociology will be of particular interest to you.</p>
 			Political Science
 		</td>
 		<td>
-			Foreign Language<br />
+			World Languages<br />
 			Geography<br />
 			Computer Technology<br />
 			Sociology
@@ -54,7 +54,7 @@ science and sociology will be of particular interest to you.</p>
 you may find interesting:</strong><br />
 If you have time for afterschool activities or part-time jobs, make
 them count. Any club or activity where communicating with others
-and/or working in a team.</p>
+and/or working in a team will be valuable.</p>
 
 <table cellpadding="10" cellspacing="10">
 	<tr valign="top">
@@ -278,7 +278,7 @@ and experience in a related occupation, such as teaching or
 admissions counseling.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of education
-administrators was $92,510 in May 2016. </blockquote>
+administrators was $95,410 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -302,7 +302,7 @@ interact comfortably with strangers and remain calm under
 duress.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of flight attendants was
-$48,500 in May 2016. </blockquote>
+$56,640 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -324,7 +324,7 @@ information. Good customer service skills and the ability to work
 quickly are important. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of ticket agents was
-$32,920 in May 2016. </blockquote>
+$23,500 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -358,7 +358,7 @@ competitive job market. In small museums, curatorial positions may
 be available to individuals with a bachelor's degree.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of museum directors was
-$47,230 in May 2016. </blockquote>
+$54,570 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -378,7 +378,7 @@ a successful career as a musician.  Most conductors have played in
 several orchestras before they gain this position.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of orchestra conductors
-was $50,110 in May 2016. </blockquote>
+was $51,670 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -399,7 +399,7 @@ for high school graduates who have creativity, a flair for arranging
 flowers, and a desire to learn.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of floral designers was
-$28,850 in May 2016. </blockquote>
+$28,040 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -425,7 +425,7 @@ program director. It will be important to have experience
 too.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of radio program
-directors was $70,950 in May 2016.
+directors was $74,420 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -448,7 +448,7 @@ years.  Only then are they given the chance to write their
 opinions.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of editorial writers was
-$38,870 in May 2016. </blockquote>
+$46,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -459,7 +459,7 @@ Agent</span><br /><br />
 specialist, handles the publicity
 for plays.  It is this person who lets people know when a new play
 opens in your city or town.  As a theatrical press agent, you would
-supervise the creation of posters, newspaper advertisements, and
+supervise the creation of posters, social media and newspaper advertisements, and
 radio and television commercials.  You would also contact the
 newspapers, the television station, and radio stations to have the
 advertisements run.  This is an influential job.  Without a
@@ -472,21 +472,9 @@ another communications-related field with a studies in theatre.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of theatrical press
-agents was $58,020 in May 2016.
+agents was $61,150 in May 2019.
 </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/07/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 11, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 11, 2020). </blockquote>

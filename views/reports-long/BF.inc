@@ -6,7 +6,7 @@ rapidly changing technology field. Almost all technology is in one
 way or another concerned with communication of change. You enjoy the
 mechanics of technology and you can use it to express your thoughts
 and feelings. The technical changes in the technology field offers a
-fast paced, visual, interchange of ideas and knowledge.</p>
+fast paced, visual interchange of ideas and knowledge.</p>
 <p>Many of the occupations in this pairing require some sort of
 specialized and/or technical training after high school. Many
 require college degrees or college level courses.</p>
@@ -24,9 +24,12 @@ as well.</p>
 			Computer Programming
 		</td>
 		<td>
-			Foreign Language<br />
+			World Languages<br />
 			Drafting<br />
-			Psychology
+			Psychology			Appliance Repair<br />
+			Printing Companies<br />
+			Lumberyards<br />
+			Newspaper Offic
 		</td>
 		<td>
 			Photography<br />
@@ -85,10 +88,7 @@ what you want to do when you are an adult.</p>
 <table cellpadding="10" cellspacing="10">
 	<tr valign="top">
 		<td>
-			Appliance Repair<br />
-			Printing Companies<br />
-			Lumberyards<br />
-			Newspaper Offices
+es
 		</td>
 		<td>
 			Delivery Services<br />
@@ -105,7 +105,7 @@ what you want to do when you are an adult.</p>
 			Forestry<br />
 			Equipment Repair Shops<br />
 			Farming<br />
-			Photographic Studios
+			Photography Studios
 		</td>
 		<td>
 			Park Services<br />
@@ -268,7 +268,7 @@ another communications-related field with a public relations
 internship or other related work experience.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of public relations
-specialists was $58,020 in May 2016. </blockquote>
+specialists was $61,150 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -285,12 +285,12 @@ understand.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>Most jobs in this occupation require a college
 degree preferably in communications, journalism, or English, but a
-degree in a technical subject may be useful for technical writing
+degree in a technical subject may also be useful for technical writing
 positions. For example, writers who work on computer manuals usually
 have a degree in computer science.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of technical writers was
-$69,850 in May 2016. </blockquote>
+$72,850 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -312,9 +312,7 @@ acting conservatory or a university program, generally is necessary
 for these jobs, but some people successfully enter the field without
 it. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job-search website, indeed.com,
-the median annual wage of actors/actresses was $64,949 in February
-2018. </blockquote>
+	<blockquote>The median wage of actors/actresses was $20.43 per hour in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -335,8 +333,7 @@ photographer combines communications skills and technology.  In this
 job, you would take pictures of people, things, or events. You must
 be creative.  Your goal is to show people something they might
 otherwise not have seen.  You must understand the technical aspects
-of the camera.  You must know how to process film too. Many
-photographers work for themselves.  So, it is helpful to understand
+of the camera.  You must also know how to produce finished images and prints using computer software. Many photographers work for themselves. So, it is helpful to understand
 how a small business works.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>A bachelor's degree in photography or the visual
@@ -348,7 +345,7 @@ learn more about using your camera to capture successful
 photographs.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of photographers was
-$34,070 in May 2016. </blockquote>
+$36,280 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -363,7 +360,7 @@ creativity to piece together the footage of a film or program. You
 would have two goals.  You would want to be sure the audience could
 understand the story.  You also want to edit the film so that the
 audience could "feel" the movie.  You would use video equipment to
-make the movie seem exciting, dramatic, funny, or scary.</blockquote>
+make the movie seems exciting, dramatic, funny, or scary.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>Television, video, and motion picture camera
 operators and editors usually acquire their skills through formal
@@ -375,7 +372,7 @@ imagination, and creativity, as well as a good technical
 understanding of how the camera operates. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of video editors was
-$59,040 in May 2016. </blockquote>
+$63,780 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -387,11 +384,12 @@ items that will be printed or put online. They collect the text,
 graphics, and other materials they will need and then format them
 into a finished product.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>On-the-job training is provided for employees.
+	<blockquote>On-the-job training is provided for employees. Many desktop 
+publishers need an associate's degree.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of desktop publishers was
-$41,090 in May 2016. </blockquote>
+$45,390 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -404,7 +402,7 @@ using technology.</p>
 
 	<span class="header2">Lighting Designer</span><br /><br />
 	<span class="header3">Job Description</span>
-	<blockquote>A lighting designer is a part of the stage crew
+	<blockquote>A lighting designer is a part of the set design stage crew
 that helps the actors look better on stage.  If you would like to be
 a part of a drama production, but not want to be an actor or
 director, this may be a job for you.  As a lighting designer, you
@@ -419,8 +417,8 @@ Sometimes, lighting designers serve as an apprentice before becoming
 a designer. An apprentice is someone who is learning a trade by
 working on the job with an experienced person.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of lighting designers was $50,918
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of lighting designers was $54,600
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -440,7 +438,7 @@ community college, or college training in broadcast technology,
 electronics, or computer networking.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of  sound engineering
-technicians was $42,550 in May 2016. </blockquote>
+technicians was $45,510 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -460,30 +458,10 @@ problems during a tour and to handle a thousand details.</blockquote>
 manager. You must have experience working with people and solving
 problems.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the job search website, indeed.com, the
-	median annual wage of road managers was $62,918 in February 2018. </blockquote>
+	<blockquote>According to the job search website, indeed.com, the median annual wage of road managers was $40,952 in September 2020. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 10, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 10, 2020). </blockquote>
 
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/07/2018. </blockquote>
-
-
-
-
-Additional average salary information acquired from job search
-website indeed.com in February 2018. The Indeed Salary Search data
-is based on an index of salary information extracted from over 50
-million job postings from thousands of unique sources over the
-previous year.
+<blockquote>Indeed.com. On the Internet at <a href="http://www/indeed.com">http://www/indeed.com</a> (visited September 10, 2020). </blockquote>

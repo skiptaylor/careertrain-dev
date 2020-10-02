@@ -94,7 +94,7 @@ what you want to do when you are an adult.</p>
 		</td>
 		<td>
 			Day Care Centers<br />
-			Photographic Studios<br />
+			Photography Studios<br />
 			Preschool Programs<br />
 			Special Olympics
 		</td>
@@ -106,7 +106,7 @@ what you want to do when you are an adult.</p>
 		<td>
 			Restaurants<br />
 			Camp Programs<br />
-			Recreation
+			Recreational programs
 		</td>
 	</tr>
 </table>
@@ -267,7 +267,7 @@ in the field of education. Teaching experience is required as
 well.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of education
-administrators was $92,510 in May 2016.</blockquote>
+administrators was $92,150 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -280,7 +280,7 @@ width="100" height="100" border="0" alt="Computer Trainer" />
 specialists conduct and supervise training and development programs
 for employees. Increasingly, management recognizes that training
 offers a way of developing skills, enhancing productivity and
-quality of work, and building worker loyalty to the firm, and most
+quality of work, building worker loyalty to the firm, and most
 importantly, increasing individual and organizational performance to
 achieve business results.</blockquote>
 	<span class="header3">Education</span>
@@ -291,7 +291,7 @@ administration or human resources management, training and
 development, or compensation and benefits. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of training and
-developement managers was $105,830 in May 2016. </blockquote>
+development managers was $113,350 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -311,7 +311,7 @@ however, can be learned with only a short period of on-the-job
 training.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of recreation workers was
-$23,870 in May 2016. </blockquote>
+$26,350 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -331,10 +331,10 @@ religious faith or denomination. Provide spiritual and moral
 guidance and assistance to members.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You need at least a bachelor's degree to enter
-this occupation.</blockquote>
+this occupation. A master degree or Ph.D. is often required. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of clergy was $45,740 in
-May 2016.</blockquote>
+	<blockquote>The median annual wage of clergy was $50,400 in
+May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -356,7 +356,7 @@ nursing are a bachelor's degree, an associate degree, and a diploma
 from an approved nursing program.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of registered nurses was
-$68,450 in May 2016. </blockquote>
+$73,300 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -375,7 +375,7 @@ job.  Many employers want to hire people who have experience working
 with children.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of child care workers was
-$21,170 in May 2016. </blockquote>
+$24,230 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -391,7 +391,7 @@ Technician</span><br /><br />
 width="100" height="100" border="0" alt="Medical Record
 Technician" />
 	<span class="header3">Job Description</span>
-	<blockquote>Pharmacy technicians help licensed Pharmacists
+	<blockquote>Pharmacy technicians help licensed pharmacists
 provide medication and other health care products to patients.
 Technicians usually perform routine tasks to help prepare prescribed
 medication such as counting tablets and labeling bottles. They also
@@ -405,7 +405,7 @@ skills also are important. Certification is required in some states.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of pharmacy technicians
-was $30,920 in May 2016. </blockquote>
+was $33,950 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Human Resources
@@ -424,7 +424,7 @@ tests and explain the company's rules.</blockquote>
 diploma or a G.E.D. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of human resources
-assistants was $32,920 in May 2016. </blockquote>
+assistants was $41,430 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -446,20 +446,8 @@ employers prefer to hire people who earn a bachelor's degree.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of computer support
-specialists was $52,160 in May 2016. </blockquote>
+specialists was $54,760 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/08/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 21, 2020). </blockquote>

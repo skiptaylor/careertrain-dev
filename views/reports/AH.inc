@@ -69,7 +69,8 @@
 					<li>Soil</li>
 					<li>Wildlife</li>
 				</ul></p>
-			<p>Political Scientist Climatologist</p>
+			<p>Political Scientist</p>
+			<p>Climatologist</p>
 			<p>Firefighter</p>
 			<p>TreeFarmer</p>
 			<p>PlanetariumTechnician</em>

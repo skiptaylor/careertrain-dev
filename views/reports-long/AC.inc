@@ -251,8 +251,8 @@ Economist</span><br /><br />
 	<img class="job_pic" src="/images/icons/AC/1142.jpg"
 width="100" height="100" border="0" alt="Agricultural Economist" />
 	<span class="header3">Job Description</span>
-	<blockquote>If you become an agricultural economist, you
-would help in growing, pricing, and selling of farm products. You
+	<blockquote>If you become an agricultural economist (also known as environmental economist), you
+would help in growing, pricing, and selling farm products. You
 would find out what customers want, and tell farmers what to plant,
 and how much they should charge for it.</blockquote>
 	<span class="header3">Education</span>
@@ -262,7 +262,7 @@ least a master's degree to become an agricultural economist.  Many
 in this field have a Ph.D.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of agricultural
-economists was $101,050 in May 2016.
+economists was $105,020 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -284,7 +284,7 @@ with those of the environment.</blockquote>
 degree in range management or range science.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of range managers was
-$60,610 in May 2016. </blockquote>
+$62,660 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -306,7 +306,7 @@ advantage of knowing about the technology used in farming today and
 in the future.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of agricultural managers
-was $66,360 in May 2016. </blockquote>
+was $71,160 in May 2019. </blockquote>
 
 <hr size="1">
 
@@ -333,32 +333,32 @@ technicians.</blockquote>
 level jobs, but a master's degree is often needed for advancement. A
 Ph.D is necessary for most independant research jobs.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of zoologists was $60,520
- in May 2016. </blockquote>
+	<blockquote>The median annual wage of zoologists was $63,270
+ in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Recreation
-Administrator</span><br /><br />
+	<span class="header2">Recreational
+Therapist</span><br /><br />
 	<img class="job_pic" src="/images/icons/AC/C553057.jpg"
-width="100" height="100" border="0" alt="Recreation Administrator" />
+width="100" height="100" border="0" alt="Recreational Therapy" />
 	<span class="header3">Job Description</span>
-	<blockquote>Recreation administrators plan recreational
+	<blockquote>Recreational therapists plan recreational
 activities.  They also see that these activities go smoothly and
-that people who participate have a good time.  As a recreation
-administrator, you might plan a craft class for a group of eight-
+that people who participate have a good time.  As a recreational
+therapist, you might plan a craft class for a group of eight-
 year-olds. You may also plan physical exercise programs or travel
 groups for people of all ages.  You may even work at a beach resort
 or on a cruise ship.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You need at least a bachelor's degree to become
-a recreation administrator.  You also need to be creative and
+a recreational therapist.  You also need to be creative and
 enthusiastic.  To get experience and see if you would like this job,
 get a part-time job as a camp counselor or a youth
 organizer.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of recreation
-administrators was $23,870 in May 2016. </blockquote>
+	<blockquote>The median annual wage of recreational
+therapists was $48,220 in May 2019. </blockquote>
 
 <hr  size="1" />
 
@@ -373,14 +373,12 @@ and get the crop to market for selling.  You would also decide how
 many farm workers were needed and what chores they needed to
 do.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need a bachelor's degree with courses in
-agriculture and business to become a farm manager.  You would need
-practical experience as well.  Consider summer work on a farm to get
+	<blockquote>Farm managers need at least a high school diploma and practical experience.  Consider summer work on a farm to get
 that experience.  Many people want to become farm managers, so you
-must be well prepared.</blockquote>
+must be well prepared. A bachelor's degree with courses in agriculture and business will set you apart when applying for a position as a farm manager. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of farm managers was $66,360
-in May 2016.  </blockquote>
+	<blockquote>The median annual wage of farm managers was $71,160
+in May 2019.  </blockquote>
 
 <hr size="1" />
 
@@ -394,7 +392,7 @@ three occupations that you might find interesting.</p>
 
 <hr size="1" />
 
-	<span class="header2">Environmental Engineers
+	<span class="header2">Environmental Engineer
 </span><br /><br />
 	<img class="job_pic" src="/images/icons/AC/1285.jpg"
 width="100" height="100" border="0" alt="Environmental Engineers " />
@@ -405,12 +403,12 @@ solutions to environmental problems. They are involved in efforts to
 improve recycling, waste disposal, public health, and control of
 water and air pollution.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Environmental engineers must have a bachelor?s
+	<blockquote>Environmental engineers must have a bachelor's
 degree in environmental engineering or a related field, such as
 civil, chemical, or mechanical engineering.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of environmental
-engineers was $84,890 in May 2016.</blockquote>
+engineers was $88,860 in May 2019.</blockquote>
 
 <hr  size="1" />
 
@@ -421,7 +419,7 @@ width="100" height="100" border="0" alt="Waste Management
 Technician" />
 	<span class="header3">Job Description</span>
 	<blockquote>Manufacturing processes can create dangerous
-waste materials.  If you become a waste management technician, you
+waste materials.  If you become a waste management technician (or waste handling technician), you
 might help to remove chemical or nuclear wastes created by these
 processes.  You would wear protective clothing. You would work with
 equipment designed to remove toxic waste from the water and
@@ -429,10 +427,10 @@ soil.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You need a high school diploma to become a waste
 management technician. You would also participate in a training
-program offered by your company.</blockquote>
+program offered by your company or receive training through a technical school.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of a waste management technician was
-$44,190 in May 2016.</blockquote>
+$43,900 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -449,34 +447,16 @@ oversee work crews. This is not an easy job.  You must be willing to
 work hard and be outside in all kinds of weather.</blockquote>
 <span class="header3">Education</span>
 <blockquote>To become a forester, you need a bachelor's
-degree from one of the 47 schools that specialize in
-forestry.</blockquote>
+degree in forestry or a related field.</blockquote>
 <span class="header3">Salary</span>
 <blockquote>The median annual wage of foresters was
-$58,700 in May 2016.</blockquote>
+$61,790 in May 2019.</blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 1/31/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 9, 2020). </blockquote>
 
 
 
 
-Additional average salary information acquired from job search
-website indeed.com in January 2018. The Indeed Salary Search data
-is based on an index of salary information extracted from over 50
-million job postings from thousands of unique sources over the
-previous year.
+

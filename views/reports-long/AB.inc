@@ -36,7 +36,7 @@ possible career opportunities.</p>
 		<td>
 			Advertising<br />
 			Health/Nutrition<br />
-			Foreign Language<br />
+			World Language<br />
 			Industrial Technology
 		</td>
 		<td>
@@ -107,7 +107,7 @@ career.</p>
 			Advertising Agencies<br />
 			Printing Companies<br />
 			Graphic Design Firms<br />
-			Photographic Studios
+			Photography Studios
 		</td>
 		<td>
 			Lawn Care Services<br />
@@ -171,7 +171,7 @@ Administrator<br /><br />
 						Foreign
 Correspondent<br /><br />
 						Parks &
-Recreation<br /><br />
+Recreation Administrator<br /><br />
 						Public Relations
 Specialist<br /><br />
 
@@ -279,11 +279,11 @@ pass the state "bar exam."  To learn about nature sciences and city
 and rural development, volunteer with political action groups
 concerned about the environment.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of lawyers was $118,160
-in May 2016.
+	<blockquote>The median annual wage of lawyers was $122,960
+in May 2019.
 </blockquote>
 
-<hr size="1" /
+<hr size="1" />
 
 	<span class="header2">Writer</span><br /><br />
 	<img class="job_pic" src="/images/icons/AB/1040.jpg"
@@ -305,7 +305,7 @@ can give you valuable experience and improve your skills. Practice
 is important, so take every opportunity to write.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of writers and authors
-was $61,240 in May 2016. </blockquote>
+was $63,200 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -329,14 +329,14 @@ will help you learn more about using your camera to capture
 nature.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of photographers was
-$34,070 in May 2016. </blockquote>
+$36,280 in May 2019. </blockquote>
 
 <hr size="1" />
 
 <span class="header1">ANIMAL AND NATURE SCIENCES</span>
 <p>Occupations in this field are concerned with studying and working
 with plants and animals. They are more "hands on" than occupations
-in the arts and communication fields. People in this field work to
+in the arts and communication field. People in this field work to
 benefit the plants and animals in our environment. They should be
 active and enjoy being in nature and working outdoors.</p>
 
@@ -346,7 +346,7 @@ active and enjoy being in nature and working outdoors.</p>
 	<img class="job_pic" src="/images/icons/AB/1020.jpg"
 width="100" height="100" border="0" alt="Botanist" />
 	<span class="header3">Job Description</span>
-	<blockquote>Botanists study plants and their environments.
+	<blockquote>Botanists (wildlife biologists)study plants and their environments.
 Some study all aspects of plant life, including algae, fungi,
 lichens, mosses, ferns, conifers, and flowering plants; others
 specialize in areas such as identification and classification of
@@ -363,8 +363,8 @@ laboratory of a senior researcher has become common for biological
 scientists who intend to conduct research or teach at the university
 level.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of botanists was $60,520
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of botanists was $63,270
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -386,8 +386,8 @@ or Ph.D.  To find out if you enjoy close contact with animals, you
 might work on a farm, or in a zoo or pet store.  You might also
 volunteer as a veterinarian's assistant.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of zoologists was $60,520
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of zoologists was $63,270
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -404,7 +404,7 @@ and often in remote areas.</blockquote>
 diploma.  You will recieve on-the-job training.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage for logging workers was
-$37,590 in May 2016.</blockquote>
+$41,230 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -412,7 +412,7 @@ $37,590 in May 2016.</blockquote>
 <p>Another good way to combine your interests in nature, the arts,
 and communications is to put your skills to use in design and
 engineering. These occupations are very technical. To do them, you
-must be good at logical thinking and know how to plan. You must also
+must be good at logical thinking and planning. You must also
 be able to demonstrate your plan or create a sample of the new
 product you have developed. Those who enjoy careers in these fields
 are very precise people. They like detailed work and are willing to
@@ -441,7 +441,7 @@ volunteer with groups that work to make their city a better place to
 live.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage for urban
-planners was $70,020 in May 2016.</blockquote>
+planners was $74,350 in May 2019.</blockquote>
 
 <hr size="1">
 
@@ -465,7 +465,7 @@ setting, if possible.  Find a way to be around people who can teach
 you informally how to think about products.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage for industrial designers
-was $67,790 in May 2016. </blockquote>
+was $68,890 in May 2019. </blockquote>
 
 <hr  size="1" />
 
@@ -479,27 +479,17 @@ two to four people to measure land and map out property boundaries.
 Construction crews cannot start building until the land has been
 surveyed.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You don't need a college degree to get a job
-as a surveyor. But those who have a degree earn more money and get
-promotions.  Some vocational/technical schools offer programs for
-land surveying.  A part-time job with a surveying company could help
-you to see if you would like to become a land surveyor.</blockquote>
+	<blockquote>Most surveyors have a bachelor's degree. Licensure is required to offer surveying services to the public.  A part-time job with a surveying company could help
+you determine if you would like to become a land surveyor.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage for land surveyors was
-$59,390 in May 2016. </blockquote>
+$63,420 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 1/31/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p>
+ 
+<blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote>
+ 
+<blockquote>National Center for O*NET Development, <i> O*NET Online</i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 9, 2020). </blockquote>
+ 

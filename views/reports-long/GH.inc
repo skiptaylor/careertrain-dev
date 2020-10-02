@@ -44,7 +44,7 @@ possible career opportunities in this area.</p>
 		</td>
 		<td>
 			Business Education<br />
-			Foreign Language<br />
+			World Languages<br />
 			Criminal Justice<br />
 			Political Science
 		</td>
@@ -55,7 +55,7 @@ possible career opportunities in this area.</p>
 may find interesting:</strong><br />
 If you have time for afterschool activities or part-time jobs, make
 them count. You will enjoy any club or activity where you can share
-your love for nature and use your thinking skills.</p>
+your love for helping your community and use your thinking skills.</p>
 
 <table cellpadding="10" cellspacing="10">
 	<tr valign="top">
@@ -278,7 +278,7 @@ degree and one-year certificate programs which primarily are
 intended for technicians. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of occupational health and safety specialists
-was $66,820 in May 2016. </blockquote>
+was $70,480 in May 2019. </blockquote>
 
 
 <hr size="1" />
@@ -295,12 +295,11 @@ an accident victim.</blockquote>
 take courses or training related to law enforcement subjects after
 high school. Many entry-level applicants for police jobs have
 completed some formal postsecondary education and a significant
-number are college graduates. Many junior colleges, colleges, and
-universities offer programs in law enforcement or administration of
-justice. </blockquote>
+number are college graduates. Police officers are also typically trained
+at a police academy. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of police officers was
-$61,600 in May 2016. </blockquote>
+$65,170 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -318,7 +317,7 @@ building.</blockquote>
 You also need a valid driver's license.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of security guards was
-$25,840 in May 2016. </blockquote>
+$29,710 in May 2019. </blockquote>
 
 
 <hr size="1" />
@@ -342,17 +341,15 @@ children's teeth, straighten teeth, and repair fractured teeth. They
 also perform corrective surgery on gums and supporting bones to
 treat gum diseases.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Dental schools require a minimum of two years of
-college-level pre-dental education prior to admittance. Most dental
+	<blockquote>Most dental
 students have at least a bachelor's degree before entering dental
 school, although a few applicants are accepted to dental school
 after two or three years of college and complete their bachelor's
 degree while attending dental school. Dental school usually lasts
-four academic years. All 50 states and the District of Columbia
-require dentists to be licensed.</blockquote>
+four academic years, ending with a doctoral degree. All 50 states and the District of Columbia require dentists to be licensed.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of dentists was $159,770
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of dentists was $159,200
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -368,7 +365,7 @@ requires eight years of education beyond high school and three to
 eight additional years of internship and residency.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of medical doctors was
-$208,000 in May 2016. </blockquote>
+$208,000 in May 2019. </blockquote>
 
 
 <hr size="1" />
@@ -396,7 +393,7 @@ licensure, certification, or registration requirement, but the
 regulations vary.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of public health social
-workers was $46,890 in May 2016. </blockquote>
+workers was $59,300 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -410,13 +407,14 @@ research and explore nature.</p>
 	<img class="job_pic" src="/images/icons/BH/43286.jpg"
 width="100" height="100" border="0" alt="Lawyer" />
 	<span class="header3">Job Description</span>
-	<blockquote>Lawyers give legal advice and assistance to
-people.  They represent their clients in court and in other legal
-matters.  There are many kinds of lawyers.  Some work with people
+	<blockquote>Lawyers, such as those that work in environmental 
+law, give legal advice and assistance to people. They represent their 
+clients in court and in other legal
+matters.  There are many kinds of lawyers. Some work with people
 who have been arrested and represent them in court.  There are also
 corporate lawyers who take care of any legal issues that are related
 to running a business.  There are real estate lawyers, family
-lawyers, and environmental lawyers as well.  What these jobs have in
+lawyers, and environmental lawyers as well. What these jobs have in
 common is that the lawyer is responsible for helping his/her clients
 in matters that relate to the law.</blockquote>
 	<span class="header3">Education</span>
@@ -425,8 +423,8 @@ law school to become a lawyer. Also a lawyer must pass an exam known
 as the bar. A lawyer must be very sharp and continue to learn about
 the law, because laws often change.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of lawyers was $118,160
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of lawyers was $122,960
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -439,13 +437,13 @@ computer skills, this may be a good job for you.  As an
 environmentalist, you would conduct field studies.  You would also
 work in laboratories.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need a bachelor's degree to become an
-ecologist.  Most employers look for a master's degree and
+	<blockquote>You need at least a bachelor's degree to become an
+ecologist.  Most employers look for a master's or doctoral degree and
 experience.  To get experience, volunteer with groups who work to
 protect the environment.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of ecologists was $68,910
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of ecologists was $71,360
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -468,7 +466,7 @@ teach meteorology or conduct research, you would need a master's
 degree or Ph.D.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of meteorologists was
-$92,460 in May 2016. </blockquote>
+$95,380 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -496,7 +494,7 @@ program. Individuals then must complete a national licensing
 examination in order to obtain a nursing license.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of registered nurses was
-$68,450 in May 2016. </blockquote>
+$73,300 in May 2019. </blockquote>
 
 
 <hr size="1" />
@@ -518,7 +516,7 @@ bachelor's degree. Licensure, certification, or registration
 requirements vary by state.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of
-dietitians/nutritionists was $58,920 in May 2016. </blockquote>
+dietitians/nutritionists was $61,270 in May 2019. </blockquote>
 
 
 <hr size="1" />
@@ -544,20 +542,8 @@ education prepares the graduate to take the NREMT examination and
 become certified as a Paramedic. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of paramedics/EMTs was
-$32,670 in May 2016. </blockquote>
+$35,400 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/09/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 23, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 23, 2020). </blockquote>

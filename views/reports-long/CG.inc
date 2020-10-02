@@ -12,7 +12,7 @@ a Ph.D.</p>
 and beyond (in addition to English & Math):</strong><br />
 In high school you should take courses that help you to understand
 business practices and people. Social studies courses such as
-political science and sociology will be of interest to you.</p>
+political science and sociology may be of interest to you.</p>
 
 <table cellpadding="10" cellspacing="10">
 	<tr valign="top">
@@ -35,7 +35,7 @@ political science and sociology will be of interest to you.</p>
 			Graphic Arts
 		</td>
 		<td>
-			Foreign Languages<br />
+			World Languages<br />
 			Psychology<br />
 			Criminal Justice<br />
 			Accounting
@@ -260,8 +260,7 @@ to provide some sort of service to the community.</p>
 width="100" height="100" border="0" alt="School Principal" />
 	<span class="header3">Job Description</span>
 	<blockquote>A school principal is responsible for the day-to-
-day management of the school. As a principal, you would work very
-closely with teachers to make sure that students were being taught
+day management of the school. As a principal, you would oversee the staff and student body and work closely with teachers to make sure that students were being taught
 well. You would also work to keep students' parents and the members
 of the community satisfied.  The school board would hire the
 teachers and other employees, but you would interview them and make
@@ -273,8 +272,8 @@ degree in education administration or educational leadership. Some
 principals and central office administrators have a doctorate or
 specialized degree in education administration.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of school principals was $92,510 in
-May 2016.</blockquote>
+	<blockquote>The median annual wage of school principals was $96,400 in
+May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -297,7 +296,7 @@ planning. They also prefer legislators who can negotiate and
 motivate other people.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of Government
-legislators/elected officials was $23,470 in May 2016.
+legislators/elected officials was $29,270 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -307,19 +306,19 @@ legislators/elected officials was $23,470 in May 2016.
 	<blockquote>As a police detective, you would investigate
 crimes. You would try to find out what happened and who was
 involved. This is an exciting occupation. But it can be a dangerous
-job too.  To do this job well you must be able to look at a crime
+job too.  To do this job well, you must be able to look at a crime
 scene and take in as much information as possible. You also must be
 a good listener so that you can take in information while a witness
 or suspect is talking.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>Applicants usually must have at least a high
-school education and some departments require one or two years of
+school education. Some departments require one or two years of
 college coursework or, in some cases, a college degree. Most police
 and detectives learn much of what they need to know on the job,
 often in their agency's police academy.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of police detectives was
-$61,600 in May 2016. </blockquote>
+$65,170 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -334,18 +333,17 @@ Manager</span><br /><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As a medical and health services manager, you
 would be responsible for the day-to-day running of a health care
-facility such as a hospital, clinic or hospice. You would be in
+facility such as a hospital, clinic or nursing home. You would be in
 charge of hiring employees and budgeting money. You might also help
 to raise money to keep the facility going. To do well in this job
 you need business skills.  You also need leadership and people
 skills.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need a master's degree for this job. This
-degree might be in hospital or health administration. It might also
+	<blockquote>You need at least a bachelor's degree for this job. Many have a master's degree. This degree might be in hospital or health administration. It might also
 be in public health.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of medical and health
-services managers was $96,540 in May 2016.
+services managers was $100,980 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -367,13 +365,13 @@ hospitality management for management trainee positions; however, a
 liberal arts degree coupled with experience in the hospitality field
 may be sufficient. At other hotels, especially those with fewer
 services, employers look for applicants with an associate degree or
-certificate in hotel, restaurant, or hospitality management along
+certificate in hotel, restaurant, or hospitality management, along
 with experience. Formal internships or part-time or summer work in a
 hotel are an asset. Most degree programs include work-study
 opportunities. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of lodging managers was
-$51,840 in May 2016.</blockquote>
+	<blockquote>The median annual wage of hotel managers was
+$54,430 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -400,7 +398,7 @@ computer science. Some programs combine classroom and on-the-job
 experience. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of food service managers
-was $50,820 in May 2016. </blockquote>
+was $55,320 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -426,18 +424,18 @@ clients.</blockquote>
 plus three years of law school.  Lawyers must pass a written test
 known as the "bar exam" also.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of corporate lawyers was
-$118,160 in May 2016. </blockquote>
+	<blockquote>The median annual wage of lawyers was
+$122,960 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Management
-Consultant</span><br /><br />
+	<span class="header2">Employment
+Recruiter</span><br /><br />
 	<img class="job_pic" src="/images/icons/CG/1370.jpg"
 width="100" height="100" border="0" alt="Placement Specialist" />
 	<span class="header3">Job Description</span>
 	<blockquote>If you enjoy helping people in practical ways,
-you might become a placement specialist (employment recruiter). You
+you might become an employment recruiter (or placement specialist). You
 would find job opportunities in the community.  You would then
 find people within the community to fill these jobs. You would
 interview the person to be hired.  You might also test the person
@@ -447,8 +445,8 @@ took.</blockquote>
 	<blockquote>You need a bachelor's degree for this
 job.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of management consultants
-was $81,330 in May 2016.
+	<blockquote>The median annual wage of employment recruiters
+was $61,920 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -470,21 +468,8 @@ job. They may require special knowledge for people who want to work
 in technical sales positions.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of retail salespersons
-was $22,900 in May 2016. </blockquote>
+was $25,440 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/08/2018. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 14, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 14, 2020). </blockquote>

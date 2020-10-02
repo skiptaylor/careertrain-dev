@@ -1,6 +1,6 @@
 <span class="header1">Outdoor paired with Public Service (AG)</span>
 
-<p>If you scored high in the "A" and "G" categories you are
+<p>If you scored high in the "A" and "G" categories, you are
 concerned about your planet and the people, animals, and plants that
 live on it.  You have a "no-nonsense" approach that ensures that
 things get done. You enjoy working on a team, but you can work
@@ -40,7 +40,7 @@ and beyond (in addition to English & Math):</strong></p>
 			Industrial Technology
 		</td>
 		<td>
-			Foreign Language<br />
+			World Languages<br />
 			Health/Nutrition<br />
 			History
 		</td>
@@ -48,7 +48,7 @@ and beyond (in addition to English & Math):</strong></p>
 </table>
 
 <p>If you have time for after-school activities or part-time jobs,
-make them count. You will especially enjoy or activity that involves
+make them count. You will especially enjoy an activity that involves
 working with others and/or sharing a love for nature.</p>
 <p><strong>Extracurricular / volunteer activities or organizations
 that you may find interesting:</strong></p>
@@ -99,7 +99,7 @@ what you want to do when you are an adult.</p>
 		</td>
 		<td>
 			Lumberyards<br />
-			Youth coaching
+			Youth Coaching
 		</td>
 		<td>
 			Hospitals<br />
@@ -249,7 +249,7 @@ Administrator</span><br /><br />
 	<img class="job_pic" src="/images/icons/AG/C553057.jpg"
 width="100" height="100" border="0" alt="Recreation Administrator" />
 	<span class="header3">Job Description</span>
-	<blockquote>Recreation administrators plan recreational
+	<blockquote>Recreation administrators (also called recreation coordinators or activity directors) plan recreational
 activities.  They also see that these activities go smoothly and
 that people who participate have a good time.  As a recreation
 administrator, you might plan a craft class for a group of eight-
@@ -264,7 +264,7 @@ get a part-time job as a camp counselor or a youth
 organizer.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of recreation
-administrators was $23,870 in May 2016.</blockquote>
+administrators was $26,350 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -272,7 +272,7 @@ administrators was $23,870 in May 2016.</blockquote>
 	<img class="job_pic" src="/images/icons/AG/C585042.jpg"
 width="100" height="100" border="0" alt="Park Ranger" />
 	<span class="header3">Job Description</span>
-	<blockquote>A park ranger makes sure that visitors and
+	<blockquote>A park ranger (or park naturalist) makes sure that visitors and
 wildlife are safe in state and national parks. As a park ranger, you
 would patrol the park to make sure that all is well. You would also
 do other things such as collect fees, give park information, and
@@ -283,7 +283,7 @@ bachelor's degree in forestry, environmental science, range
 management, or a related discipline.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of park rangers was
-$60,610 in May 2016.
+$62,660 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -306,7 +306,7 @@ of physical strength.  Firefighters need to understand chemistry, as
 certain chemical mixtures can cause a fire or explosion.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of firefighters was
-$48,030 in May 2016.
+$50,850 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -320,7 +320,7 @@ Community Service field. They help nature and people.</p>
 	<span class="header2">Rangeland Specialist</span><br /><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Rangelands are special types of environments
-found in the United States. A rangeland specialist works to keep the
+found in the United States. A rangeland specialist (also known as a conservationist or range manager) works to keep the
 delicate rangeland ecosystem safe. As a rangeland specialist, you
 would have two tasks.  You would plan programs that allowed visitors
 to understand and enjoy the rangeland.  You would see that these
@@ -330,8 +330,8 @@ programs did not disturb the wildlife.</blockquote>
 a rangeland specialist.  Having a Master's Degree will help you to
 get a job.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of rangeland specialists was $60,610
-in May 2016.
+	<blockquote>The median annual wage of rangeland specialists was $62,660
+in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -354,7 +354,7 @@ farming.  Participate in agricultural clubs or work in plant
 nurseries or on a farm to gain this experience.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of organic farmers was
-$66,360 in May 2016.</blockquote>
+$71,160 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -372,7 +372,7 @@ you may do any of these jobs.</blockquote>
 logger. You do need to be strong and a hard worker.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of forestry workers was
-$26,940 in May 2016.</blockquote>
+$31,770 in May 2019.</blockquote>
 <hr size="1" />
 
 <span class="header1">ENVIRONMENT</span>
@@ -394,11 +394,11 @@ authorities and help to eliminate any problems.  You must have a
 broad understanding of chemistry and biology to do this job
 well.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Most medical scientists need a Ph.D. in a
+	<blockquote>Most medical scientists, such as toxicologists, need a Ph.D. in a
 biological science; some hold a medical degree.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of toxicologists was
-$80,530 in May 2016.</blockquote>
+$88,790 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -415,7 +415,7 @@ skills.</blockquote>
 treatment plant operator.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of water treatment plant
-operators was $45,760 in May 2016.
+operators was $47,760 in May 2019.
 </blockquote>
 
 <hr size="1" />
@@ -430,24 +430,12 @@ important part of your job would be making sure the correct voltage
 is flowing through the machines. When incorrect voltage flows
 through the machines, it causes a blackout.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>You need a high school diploma to become a power
+	<blockquote>You need a high school diploma and extensive on-the-job training to become a power
 plant operator.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of power plant operators
-was $78,370 in May 2016.</blockquote>
+was $85,950 in May 2019.</blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/2/18. </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 9, 2020). </blockquote>

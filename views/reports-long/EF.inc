@@ -43,7 +43,7 @@ your mind. You will want to take technical courses too.</p>
 		<td>
 			Drafting<br />
 			Business Math<br />
-			Foreign Language<br />
+			World Languages<br />
 			Political Science
 		</td>
 	</tr>
@@ -51,7 +51,7 @@ your mind. You will want to take technical courses too.</p>
 
 <p><strong>Extracurricular / volunteer activities or organizations
 you may find interesting:</strong><br />
-If you have time for afterschool activities or part-time jobs, make
+If you have time for after-school activities or part-time jobs, make
 them count. Any club or activity where you are mentally and
 physically challenged will be valuable. You will also want
 technology to be a part of the activities.</p>
@@ -96,7 +96,7 @@ what you want to do when you are an adult.</p>
 			Appliance Repair<br />
 			Environmental Services<br />
 			Newspaper Offices<br />
-			Photographic Studios<br />
+			Photography Studios<br />
 			Small Engine Repair
 		</td>
 		<td>
@@ -284,8 +284,9 @@ to become certified as professional air traffic controllers. Those
 who have served in the military are exempted from some of the
 requirements. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of air traffic
-controllers was $122,410 in May 2016. </blockquote>
+	<blockquote>The median annual wage of civilian air traffic
+controllers was $122,990 in May 2019. The yearly salary you receive 
+in the military is based on your rank, years of service and occupationalspecialty. </blockquote>
 
 <hr size="1" />
 
@@ -315,8 +316,8 @@ recurrent training and simulator checks once or twice a year
 throughout their career. Most pilots have a college degree. Many
 pilots have served and been trained in the military. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of pilots was $105,720 in
-May 2016. </blockquote>
+	<blockquote>The median annual wage of pilots was $121,430 in
+May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -342,7 +343,7 @@ although a few enter these positions after working as technicians.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of cartographers was
-$62,750 in May 2016. </blockquote>
+$65,470 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -353,9 +354,9 @@ width="100" height="100" border="0" alt="Truck Driver" />
 	<blockquote>As a truck driver, you would take loads of goods
 and produce across the country to be sold. You would be responsible
 for whatever you were hauling in your truck until you delivered it
-to its drop-off.</blockquote>
+to its drop-off location.</blockquote>
 	<span class="header3">Education</span>
-	<blockquote>Federal Motor Carrier Safety Regulations require
+	<blockquote>The Department of Transportation requires
 truck drivers to be at least 21 years old, have at least 20/40
 vision and good hearing, and be able to read and speak English. They
 also must have good driving records and a commercial driver's
@@ -367,7 +368,7 @@ programs that prospective drivers attend. Other companies assign
 experienced drivers to teach and mentor newer drivers.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of truck drivers was
-$41,340 in May 2016. </blockquote>
+$45,260 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -379,7 +380,7 @@ $41,340 in May 2016. </blockquote>
 ground crew in the loading, unloading, securing, and staging of
 aircraft cargo or baggage. They determine the quantity and
 orientation of cargo and compute aircraft center of gravity. The
-Cargo and Freight Agent may accompany aircraft as a
+cargo and freight agent may accompany aircraft as a
 member of a flight crew and monitor and handle cargo in flight, and
 assist and brief passengers on safety and emergency
 procedures.</blockquote>
@@ -389,9 +390,8 @@ from work experience rather than from post-secondary training. It
 will be important to be a good leader to be successful in this
 job.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>According to the online O*Net Resource Center, onetonline.org,
-the median annual wage of Cargo and Freight Agents was $41,920 in
-February 2018.</blockquote>
+	<blockquote>The median annual wage of Cargo and Freight Agents 
+was $446,070 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -424,7 +424,7 @@ and private vocational-technical schools, and in the Armed Forces.
 </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of environmental
-engineering technicians was $49,170 in May 2016. </blockquote>
+engineering technicians was $50,620 in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -448,8 +448,8 @@ the apprentice's skill. Trade, vocational schools, and community
 colleges offer further trade-related training for those who plan to
 become carpenters. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of carpenters was $43,600
-in May 2016. </blockquote>
+	<blockquote>The median annual wage of carpenters was $48,330
+in May 2019. </blockquote>
 
 <hr size="1" />
 
@@ -469,27 +469,15 @@ Therapists also teach patients to use assistive and adaptive
 devices such as crutches, prostheses, and wheelchairs. </blockquote>
 	<span class="header3">Education</span>
 	<blockquote>Individuals pursuing a career as a physical
-therapist usually need a master's degree from an accredited physical
-therapy program and a state license requiring passing scores on
+therapist need a Doctor of Physical Therapy (DPT) degree and a state 
+license requiring passing scores on
 national and state examinations. </blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of physical therapists
-was $84,400 in  May 2016. </blockquote>
+was $89,440 in  May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>Looking for more information on specific careers? Visit
-the <em>Occupational Outlook Handbook</em>:</strong> <a
-href="http://www.bls.gov/ooh">www.bls.gov/ooh</a></p>
-
-<p><strong>You may also want to try the <em>Occupational Information
-Network</em> Web site:</strong> <a
-href="http://online.onetcenter.org/gen_search_page">online.onetcenter
-.org/gen_search_page</a></p>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 21, 2020). </blockquote>
 
 
-
-
-<blockquote>Salary data from Bureau of Labor Statistics, U.S.
-Department of Labor, <i>Occupational Outlook Handbook, 2016-17
-Edition, </i> visited 2/08/2018. </blockquote>
