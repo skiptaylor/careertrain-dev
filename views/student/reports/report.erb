@@ -42,15 +42,15 @@
 					
 					<tr>
 						<!-- <th style="text-align: left;">Date</th> -->
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;">A</th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;">B</th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;">C</th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;">D</th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;">E</th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;">F</th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;">G</th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;">H</th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;">I</th>
+						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>A</em></th>
+						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>B</em></th>
+						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>C</em></th>
+						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>D</em></th>
+						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>E</em></th>
+						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>F</em></th>
+						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>G</em></th>
+						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>H</em></th>
+						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>I</em></th>
 					</tr>
 				
 				<% @student.exercises(order: [:created_at.desc], limit: 1).each do |e|  %>
@@ -73,7 +73,7 @@
 				<h5>Your Highest Score - <em><strong><%= @student.score1 %></strong></em></h5>
 				<h5>Your 2nd Highest Score - <em><strong><%= @student.score2 %></strong></em></h5>
 				<br />
-				<a href="/student/reports/<%= @student.id %>/scores" style="margin-bottom: 9px;" class="btn btn-success">View short Report</a> &nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="/student/reports/<%= @student.id %>/scores" style="margin-bottom: 9px;" class="btn btn-success">View short Report</a> &nbsp;&nbsp;
 				
 				<a href="/student/reports/<%= @student.id %>/scores_full" style="margin-bottom: 9px;" class="btn btn-success">Download full Report</a>
 			</form>
@@ -116,14 +116,14 @@
 						</select>
 						<span style="margin: 7px 0 0 12px"><strong>2nd Highest Score</strong></span>
 				</div>
-					<p style="margin-top: 24px;">
-						<input type="submit" class="btn" value="Save Example Scores" />
+					<p style="margin: 14px 0 24px 0;">
+						<input type="submit" class="btn btn-primary btn-small" value="Save Sample Scores" />
 					</p>
 				</form>
 				
-				<a href="/student/reports/<%= @student.id %>/ex_scores" style="margin-bottom: 9px;" class="btn btn-info">View short Report</a> &nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="/student/reports/<%= @student.id %>/ex_scores" style="margin-bottom: 9px;" class="btn btn-info">View short Report - <span style="color: black;"><em><strong><%= @student.ex_score1 %><%= @student.ex_score2 %></strong></em></span></a> &nbsp;&nbsp;
 				
-				<a href="/student/reports/<%= @student.id %>/ex_scores_full" style="margin-bottom: 9px;" class="btn btn-info">View full Report</a>
+				<a href="/student/reports/<%= @student.id %>/ex_scores_full" style="margin-bottom: 9px;" class="btn btn-info">View full Report - <span style="color: black;"><em><strong><%= @student.ex_score1 %><%= @student.ex_score2 %></strong></em></span></a>
 				
 			</div>
 	

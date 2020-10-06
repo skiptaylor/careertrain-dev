@@ -390,8 +390,7 @@ from work experience rather than from post-secondary training. It
 will be important to be a good leader to be successful in this
 job.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of Cargo and Freight Agents 
-was $446,070 in May 2019.</blockquote>
+	<blockquote>The median annual wage of cargo and freight agents was $46,070 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -478,6 +477,6 @@ was $89,440 in  May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 21, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 21, 2020). </blockquote>
 
 

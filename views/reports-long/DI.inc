@@ -327,13 +327,13 @@ width="100" height="100" border="0" alt="Clergy" />
 	<span class="header3">Job Description</span>
 	<blockquote>Conduct religious worship and perform other
 spiritual functions associated with beliefs and practices of
-religious faith or denomination. Provide spiritual and moral
+religious faith and denomination. They also provide spiritual and moral
 guidance and assistance to members.</blockquote>
 	<span class="header3">Education</span>
 	<blockquote>You need at least a bachelor's degree to enter
 this occupation. A master degree or Ph.D. is often required. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of clergy was $50,400 in
+	<blockquote>The median annual wage of clergies was $50,400 in
 May 2019.</blockquote>
 
 <hr size="1" />
@@ -450,4 +450,4 @@ specialists was $54,760 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 21, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 21, 2020). </blockquote>

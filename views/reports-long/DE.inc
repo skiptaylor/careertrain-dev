@@ -54,12 +54,7 @@ If you have time for afterschool activities or part-time jobs, make
 them count. You will enjoy any club or activity that involves taking
 on challenges.</p>
 
-<table cellpadding="10" cellspacing="10">p>
-
 <table cellpadding="10" cellspacing="10">
-	<tr valign="top">
-		<td>
-			Construction Sites<
 	<tr valign="top">
 		<td>
 			Athletics<br />
@@ -91,7 +86,12 @@ on challenges.</p>
 <p><strong>Workplaces that you may wish to consider for a part-time
 job:</strong><br />
 These places may offer valuable opportunities to help you decide
-what you want to do when you are an adult.</br />
+what you want to do when you are an adult.</p>
+
+<table cellpadding="10" cellspacing="10">
+	<tr valign="top">
+		<td>
+			Construction Sites<br />
 			Radio/TV Stations<br />
 			Printing Companies
 		</td>
@@ -295,8 +295,7 @@ postsecondary school training in drafting, which is offered by
 technical institutes, community colleges, and some 4-year colleges
 and universities. </blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of drafters was $53,480
-in May 2016.</blockquote>
+	<blockquote>The median annual wage of drafters was $56,830 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -461,4 +460,4 @@ was $54,430 in May 2019. Military pay depends on rank and years of service. </bl
 <hr size="1" />
 
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 15, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 15, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 15, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 15, 2020). </blockquote>

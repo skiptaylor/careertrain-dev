@@ -346,7 +346,7 @@ active and enjoy being in nature and working outdoors.</p>
 	<img class="job_pic" src="/images/icons/AB/1020.jpg"
 width="100" height="100" border="0" alt="Botanist" />
 	<span class="header3">Job Description</span>
-	<blockquote>Botanists (wildlife biologists)study plants and their environments.
+	<blockquote>Botanists (wildlife biologists) study plants and their environments.
 Some study all aspects of plant life, including algae, fungi,
 lichens, mosses, ferns, conifers, and flowering plants; others
 specialize in areas such as identification and classification of
@@ -491,5 +491,5 @@ $63,420 in May 2019. </blockquote>
  
 <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote>
  
-<blockquote>National Center for O*NET Development, <i> O*NET Online</i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 9, 2020). </blockquote>
+<blockquote>National Center for O*NET Development, <i> O*NET Online</i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 9, 2020). </blockquote>
  

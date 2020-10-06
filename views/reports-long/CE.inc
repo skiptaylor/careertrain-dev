@@ -84,10 +84,8 @@ working with others as a part of a team.</p>
 	</tr>
 </table>
 
-<p><strong>Workplaces that you may wish to consider for a part-time
-job:</strong><br />
-These places may offer valuable opportunities to help you decide
-what you want to do when you are an adult.</p>
+<p><strong>Workplaces that you may wish to consider for a part-time job:</strong><br />
+These places may offer valuable opportunities to help you decide what you want to do when you are an adult.</p>
 
 <table cellpadding="10" cellspacing="10">
 	<tr valign="top">
@@ -99,8 +97,7 @@ what you want to do when you are an adult.</p>
 			Photography Studios<br />
 		</td>
 		<td>
-			Temporary Agencies<banager</span><br /><br />
-	<img class="job_pic" src="/images/icor />
+			Temporary Agencies<br />
 			Camp Counseling<br />
 			Equipment Operation<br />
 			Radio Stations
@@ -281,7 +278,8 @@ was $55,320 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Construction Mns/CE/1140.jpg"
+	<span class="header2">Construction Manager</span><br /><br /> 
+	<img class="job_pic" src="/images/icons/CE/1140.jpg"
 width="100" height="100" border="0" alt="Construction Manager" />
 	<span class="header3">Job Description</span>
 	<blockquote>A construction manager works at a building site
@@ -306,8 +304,7 @@ was $95,260 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Collision Repair
-Technician</span><br /><br />
+	<span class="header2">Collision Repair Technician</span><br /><br />
 	<img class="job_pic" src="/images/icons/CE/C29095.jpg"
 width="100" height="100" border="0" alt="Collision Repair
 Technician" />
@@ -379,8 +376,7 @@ For some entry-level positions, a bachelor's degree is sufficient.
 For others, a master's degree, specialized expertise, or both is
 required.</blockquote>
 	<span class="header3">Salary</span>
-	<blockquote>The median annual wage of management analysts
-was $81,330 in May 2016. </blockquote>
+	<blockquote>The median annual wage of management analysts was $85,260 in May 2019.</blockquote>
 
 <hr size="1" />
 
@@ -481,4 +477,4 @@ protection specialists was $71,360 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 14, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetcenter.org">http://www.onetcenter.org</a> (visited September 14, 2020). </blockquote><blockquote>U.S. Department of State, <i> 2020 Foreign Service Salary Schedule </i>, On the Internet at <a href="http://www/state.com">http://www/state.com</a> (visited September 14, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 14, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 14, 2020). </blockquote>
