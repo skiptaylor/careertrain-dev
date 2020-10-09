@@ -29,9 +29,6 @@ end
 post '/contact_us/?' do
   if params[:email_name] == ""
     
-    
-    
-    
 	Pony.mail(
    headers: { 'Content-Type' => 'text/html' },
    to: 'info@careertrain.com, tayloraid@gmail.com',
