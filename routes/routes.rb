@@ -32,7 +32,7 @@ post '/contact_us/?' do
 	Pony.mail(
    headers: { 'Content-Type' => 'text/html' },
    to: 'info@careertrain.com, tayloraid@gmail.com',
-   from: 'contactUs@careertrain.com',
+   from: 'contactUs@eCareerDirection.com',
    subject: "#{params[:subject]}",
    body: "#{markdown params[:msg]}<hr />#{params[:name]}<br />#{params[:email]}"
    )
