@@ -62,7 +62,6 @@
 						<table cellpadding="10" cellspacing="0" class="side" style="margin: -9px;">
 						<tr>
 							<th style="text-align: left; font-size: 14px;"><strong><span class="logo-e">e</span>CD</strong> Exercise Scores</th>
-							<!-- <th style="text-align: left; font-size: 14px;">Date</th> -->
 							<th style="text-align: center; font-size: 14px;">A</th>
 							<th style="text-align: center; font-size: 14px;">B</th>
 							<th style="text-align: center; font-size: 14px;">C</th>
@@ -73,23 +72,20 @@
 							<th style="text-align: center; font-size: 14px;">H</th>
 							<th style="text-align: center; font-size: 14px;">I</th>
 						</tr>
-					<% student.exercises.each do |e| %>
-					<% if e == student.exercises.last %>
+					
 						<tr>
 							<td style="line-height: 0.8em; text-align: left;"> &nbsp; </td> 
-							<!-- <td style="line-height: 0.8em; text-align: left;"><%= format_day(e.created_at) %></td> -->
-							<td style="line-height: 0.8em; text-align: center;"><%= e.score_a %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= e.score_b %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= e.score_c %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= e.score_d %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= e.score_e %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= e.score_f %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= e.score_g %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= e.score_h %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= e.score_i %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= student.score_a %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= student.score_b %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= student.score_c %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= student.score_d %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= student.score_e %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= student.score_f %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= student.score_g %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= student.score_h %></td>
+							<td style="line-height: 0.8em; text-align: center;"><%= student.score_i %></td>
 						</tr>
-					<% end %>
-					<% end %>
+					
 					</table>
 						</form>
 					<strong>Future Plans:</strong>&nbsp;&nbsp;&nbsp;<% if student.future1 == "on" %>&nbsp;Enter technical college/trade school&nbsp;&nbsp;&nbsp;<% end %> <% if student.future2 == "on" %>&nbsp;Work full-time&nbsp;&nbsp;&nbsp;<% end %> <% if student.future3 == "on" %>&nbsp;Work part-time&nbsp;&nbsp;&nbsp;<% end %> <% if student.future4 == "on" %>&nbsp;Enter the military&nbsp;&nbsp;&nbsp;<% end %> <% if student.future5 == "on" %>&nbsp;Go to college&nbsp;&nbsp;&nbsp;<% end %> <% if student.future6 == "on" %>&nbsp;I have money to pay for education&nbsp;&nbsp;&nbsp;<% end %> <% if student.future7 == "on" %>&nbsp;Counting on parents for money for education&nbsp;&nbsp;&nbsp;<% end %> <% if student.future8 == "on" %>&nbsp;Considering sources of financial aid or scholarships&nbsp;&nbsp;&nbsp;<% end %>
