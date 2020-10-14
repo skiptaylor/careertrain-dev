@@ -1,7 +1,128 @@
 	<div class="row">
 		<div class="col-md-12">
 			<p class="lead">Arts/Communications paired with Business/Management (BC)</p>
-			<p>Here are some career possibilities for you to explore:</p>
+			
+			<div class="inter">
+			
+			<p>A "BC" pairing indicates that you are a "fun" person. You are
+			able to work with many different types of people and, more than
+			likely, they enjoy working with you. One of your assets is your
+			ability to appreciate others for who they are and what they add to a
+			project. You also can work on several tasks at one time. You don't
+			need much direction on how to complete a task or assignment because
+			you combine creativity with the ability to get things done. You are
+			likely to be very dedicated to your work.</p>
+			<p>Most occupations in this pairing require at least a bachelor's
+			degree. Some require post high school courses.</p>
+			<p><strong>Courses you may want to consider taking in high school
+			and beyond (in addition to Math & English):</strong><br />
+			In high school you will want to take classes that will help you
+			express yourself better and help you understand others. Writing
+			courses will be appropriate. Also, you might consider taking public
+			speaking. Some business courses will help you learn how to get
+			things done quickly.</p>
+
+			<table cellpadding="10" cellspacing="10" class="side">
+				<tr valign="top">
+					<td>
+						Accounting<br />
+						Speech & Communication<br />
+						Art/Music<br />
+						Economics
+					</td>
+					<td>
+						Business Law<br />
+						Advertising<br />
+						Computer Science<br />
+						Government/Civics
+					</td>
+					<td>
+						Computer Technology<br />
+						Marketing & Advertising<br />
+						Graphic Arts<br />
+						Logic
+					</td>
+					<td>
+						Language<br />
+						Psychology<br />
+						Public Relations<br />
+						Political Science
+					</td>
+					<td>
+						Photography<br />
+						Sociology<br />
+						History<br />
+						Business Education
+					</td>
+				</tr>
+			</table>
+
+			<p><strong>Extracurricular / volunteer activities or organizations
+			you may find interesting:</strong><br />
+			Experience is an important thing! If you are looking for a fun
+			activity or a part-time job, consider places where communicating
+			with others is a focus. Don't forget to find a place where you can
+			show how responsible you are.</p>
+
+			<table cellpadding="10" cellspacing="10" class="side">
+				<tr valign="top">
+					<td>
+						Drama/Theatre<br />
+						Debate Team<br />
+						Junior Achievement<br />
+						Yearbook
+					</td>
+					<td>
+						Band/Chorus<br />
+						Photography Club<br />
+						Class Officer<br />
+						Radio/TV Activities
+					</td>
+					<td>
+						Newspaper/Yearbook<br />
+						Audio/Visual Services<br />
+						Computer Activities<br />
+						Future Business Leaders
+					</td>
+					<td>
+						Language Club<br />
+						Exchange Programs<br />
+						Community Volunteer
+					</td>
+				</tr>
+			</table>
+
+			<p><strong>Workplaces that you may wish to consider for a part-time
+			job.</strong><br />
+			These places may offer valuable opportunities to help you decide
+			what you want to do when you are an adult.</p>
+
+			<table cellpadding="10" cellspacing="10" class="side">
+				<tr valign="top">
+					<td>
+						Accounting Firms<br />
+						Advertising Agencies<br />
+						Office Temporary Services<br />
+					</td>
+					<td>
+						Libraries<br />
+						Newspaper Publisher<br />
+						Repair Services
+					</td>
+					<td>
+						Radio/TV Studios<br />
+						Receptionist<br />
+						Graphic Design Firms
+					</td>
+					<td>
+						Restaurant<br />
+						Telephone Sales
+					</td>
+				</tr>
+			</table>
+		</div>
+			
+			<p><strong>Here are some career possibilities for you to explore:</strong></p>
 			<div style="width: 100%; background-color: #1abd9c; color: white;">
 				<p style="text-align: center; padding: 3px 0;"><strong>BC Career Possibilities</strong></p>
 			</div>
@@ -17,7 +138,8 @@
 			<div style="background-color: #defff5; text-align: center; padding: 3px 3px 3px 6px;">
 				<table>
 					<tr>
-						<td>
+						<td style="text-align: center;">
+							<br /><br />
 							<img src="/img/icons/caret-up-fill.svg" alt="" width="22" height="22" title="">
 							<br /><br /><br />
 							Education
@@ -29,6 +151,7 @@
 							Required
 							<br /><br /><br />
 							<img src="/img/icons/caret-down-fill.svg" alt="" width="22" height="22" title="">
+							<br /><br /><br /><br />
 						</td>
 					</tr>
 				</table>

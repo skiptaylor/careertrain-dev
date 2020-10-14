@@ -136,7 +136,7 @@ get '/arng/schools/:id/ind_report/?' do
   auth_recruiter
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
-  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
+  @students = Student.all
   
  
   

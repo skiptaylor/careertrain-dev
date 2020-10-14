@@ -88,7 +88,10 @@ what you want to do when you are an adult.</p>
 <table cellpadding="10" cellspacing="10">
 	<tr valign="top">
 		<td>
-es
+			Appliance Repair<br />
+			Printing Companies<br />
+			Lumberyards<br />
+			Newspaper Offices
 		</td>
 		<td>
 			Delivery Services<br />

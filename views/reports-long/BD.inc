@@ -26,7 +26,7 @@ practical side.</p>
 			Graphic Arts<br />
 			World Languages<br />
 			Speech/Communications/
-			Music<BR
+			Music<br />
 		</td>
 		<td>
 			Office Administration<br />

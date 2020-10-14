@@ -1,7 +1,129 @@
 	<div class="row">
 		<div class="col-md-12">
 			<p class="lead">Outdoor paired with Social/Helping (AI)</p>
-			<p>Here are some career possibilities for you to explore:</p>
+			
+			<div class="inter">
+			
+			<p>Your high scores in "A" and "I" show that you have several
+			characteristics that can help promote the welfare of people. You are
+			practical, curious, and people-oriented with a love of the outdoors.
+			You like to offer support to people who are having difficulties in
+			learning and adjusting to new and different situations. You also
+			have an interest in teaching, consulting and counseling for improved
+			ways to become healthier physically and mentally. You promote a
+			safer and cleaner environment and have respect for those
+			environments and individuals.</p>
+			<p>Most occupations in this pairing require at least a bachelor's
+			degree.  It is helpful to have a master's degree or a Ph.D. in some
+			of the occupations.</p>
+			<p><strong>Courses you may want to consider taking in high school
+			and beyond (in addition to English & Math):</strong><br />
+			In high school you should take courses that help you understand
+			people. Any courses that deal with the outdoors and nature will be
+			of great interest to you and will help prepare you for possible
+			career opportunities in this area.</p>
+
+			<table cellpadding="10" cellspacing="10" class="side">
+				<tr valign="top">
+					<td>
+						Agriculture<br />
+						Religion<br />
+						Psychology<br />
+						Sociology
+					</td>
+					<td>
+						Computer Sciences<br />
+						Speech & Communications<br />
+						Economics<br />
+						Environmental Science
+					</td>
+					<td>
+						Health/Nutrition<br />
+						Biology<br />
+						Home Economics<br />
+						Early Childhood
+						Education<br />
+					</td>
+					<td>
+						Law<br />
+						Education<br />
+						Business Ed.<br />
+						Logic
+					</td>
+					<td>
+						Physical Education<br />
+						History<br />
+						Public Relations<br />
+						Life Science
+					</td>
+				</tr>
+			</table>
+
+			<p><strong>Extracurricular / volunteer activities or organizations
+			that you might find interesting:</strong><br />
+			If you have time for after-school activities or part-time jobs, make
+			them count. You will especially enjoy any club or activity where you
+			can share your love for nature and use your people skills.</p>
+
+			<table cellpadding="10" cellspacing="10" class="side">
+				<tr valign="top">
+					<td>
+						Adopt-a-Mile<br />
+						Habitat for Humanity<br />
+						Tutoring<br />
+						Animal Care
+					</td>
+					<td>
+						Athletics<br />
+						Childcare/Eldercare<br />
+						Church Activities<br />
+						Future Farmers of America
+					</td>
+					<td>
+						Scouts<br />
+						Hospital Volunteer<br />
+						Teaching Assistant<br />
+						Camp Counselor
+					</td>
+					<td>
+						Parks/Recreation<br />
+						Peer Counselor<br />
+						ROTC<br />
+						Martial Arts
+					</td>
+				</tr>
+			</table>
+
+			<p><strong>Workplaces that you may wish to consider for a part-time
+			job:</strong><br />
+			These places may offer valuable opportunities to help you decide
+			what you want to do when you are an adult.</p>
+
+			<table cellpadding="10" cellspacing="10" class="side">
+				<tr valign="top">
+					<td>
+						Day Care Centers<br />
+						Recreation Departments<br />
+						Life Guard
+					</td>
+					<td>
+						Park Services<br />
+						Summer Camps<br />
+						Retirement Homes
+					</td>
+					<td>
+						Special Olympic<br />
+						Landscaping/Lawn Care
+					</td>
+					<td>
+						Farming<br />
+						Lumberyard
+					</td>
+				</tr>
+			</table>
+		</div>
+			
+			<p><strong>Here are some career possibilities for you to explore:</strong></p>
 			<div style="width: 100%; background-color: #1abd9c; color: white;">
 				<p style="text-align: center; padding: 3px 0;"><strong>AI Career Possibilities</strong></p>
 			</div>
@@ -14,10 +136,11 @@
 	<div class="d-none d-sm-none d-md-block">
 	<div class="row">
 		<div class="col-auto">
-			<div style="background-color: #defff5; text-align: center; height: 100%; padding: 3px 3px 3px 6px;">
+			<div style="background-color: #defff5; text-align: center; padding: 3px 3px 3px 6px;">
 				<table>
 					<tr>
-						<td>
+						<td style="text-align: center;">
+							<br /><br />
 							<img src="/img/icons/caret-up-fill.svg" alt="" width="22" height="22" title="">
 							<br /><br /><br />
 							Education
@@ -29,11 +152,13 @@
 							Required
 							<br /><br /><br />
 							<img src="/img/icons/caret-down-fill.svg" alt="" width="22" height="22" title="">
+							<br /><br /><br /><br />
 						</td>
 					</tr>
 				</table>
 			</div>
 		</div>
+	
 		<div class="col" style="margin-bottom: 20px;">
 			<h5>Community Service</h5>
 			<p><em>Teacher

@@ -1,7 +1,123 @@
 	<div class="row">
 		<div class="col-md-12">
 			<p class="lead">Arts/Communications paired with	Clerical/Administrative (BD)</p>
-			<p>Here are some career possibilities for you to explore:</p>
+			
+			<div class="inter">
+			
+			<p>If you had a high score in categories "B" and "D" you like to
+			work on creative projects and you enjoy their completion. You have a
+			balance of characteristics that will allow you to be creative and
+			efficient. Others know that they can count on you.</p>
+			<p>Most occupations in this pairing require at least some post high school courses be taken. Many require a bachelor's degree.</p>
+			<p><strong>Courses you might want to take in high
+			school.</strong><br />
+			In high school you will want to take courses that allow you to
+			express your thoughts and ideas through writing, speaking, or visual
+			media. You also will want to take courses that appeal to your
+			practical side.</p>
+
+			<table cellpadding="10" cellspacing="10" class="side">
+				<tr valign="top">
+					<td>
+						Advertising/Marketing<br />
+						History<br />
+						Computer Technology<br />
+						Sociology
+					</td>
+					<td>
+						Computer Programming<br />
+						Graphic Arts<br />
+						World Languages<br />
+						Speech/Communications/
+						Music<br />
+					</td>
+					<td>
+						Office Administration<br />
+						Photography<br />
+						Technology Education
+					</td>
+					<td>
+						Business Education<br />
+						Psychology<br />
+						Bookkeeping<br />
+					</td>
+					<td>
+						Art<br />
+						Business Math<br />
+						Geography<br />
+					</td>
+				</tr>
+			</table>
+
+			<p><strong>Extracurricular / volunteer activities or organizations
+			you may find interesting:</strong><br />
+			Experience is an important thing! When you are looking for a fun
+			activity or a part-time job, think about working in places where
+			communication is the focus. Don't forget to find a place where you
+			can show others how dependable you are.</p>
+
+			<table cellpadding="10" cellspacing="10" class="side">
+				<tr valign="top">
+					<td>
+						Drama/Theatre<br />
+						Debate Team<br />
+						Office Assistant<br />
+						Music Lessons
+					</td>
+					<td>
+						Band/Chorus<br />
+						Photography Club<br />
+						Teaching Assistant<br />
+						Radio/TV Activities
+					</td>
+					<td>
+						Newspaper/Yearbook<br />
+						Audio-Visual Services<br />
+						Class Officer<br />
+						Community Volunteer
+					</td>
+					<td>
+						Language Club<br />
+						Library Assistant<br />
+						Future Business Leaders
+					</td>
+				</tr>
+			</table>
+
+			<p><strong>Workplaces that you may wish to consider for a part-time
+			job:</strong><br />
+			These places may offer valuable opportunities to help you decide
+			what you want to do when you are an adult.</p>
+
+			<table cellpadding="10" cellspacing="10" class="side">
+				<tr valign="top">
+					<td>
+						Accounting Firms<br />
+						Theaters<br />
+						Receptionist<br />
+						Retail Stores
+					</td>
+					<td>
+						Data Entry/Processing<br />
+						Advertising Agencies<br />
+						Radio/TV Studios<br />
+						Photography Studios
+					</td>
+					<td>
+						Libraries<br />
+						Temporary Agencies<br />
+						Clerical Offices
+					</td>
+					<td>
+						Printing Companies<br />
+						Newspaper Publishers<br />
+						Graphic Design Firms
+					</td>
+				</tr>
+			</table>
+		</div>
+			
+			<p><strong>Here are some career possibilities for you to explore:</strong></p>
 			<div style="width: 100%; background-color: #1abd9c; color: white;">
 				<p style="text-align: center; padding: 3px 0;"><strong>BD Career Possibilities</strong></p>
 			</div>
@@ -14,10 +130,11 @@
 	<div class="d-none d-sm-none d-md-block">
 	<div class="row">
 		<div class="col-auto">
-			<div style="background-color: #defff5; text-align: center; height: 100%; padding: 3px 3px 3px 6px;">
+			<div style="background-color: #defff5; text-align: center; padding: 3px 3px 3px 6px;">
 				<table>
 					<tr>
-						<td>
+						<td style="text-align: center;">
+							<br /><br />
 							<img src="/img/icons/caret-up-fill.svg" alt="" width="22" height="22" title="">
 							<br /><br /><br />
 							Education
@@ -29,6 +146,7 @@
 							Required
 							<br /><br /><br />
 							<img src="/img/icons/caret-down-fill.svg" alt="" width="22" height="22" title="">
+							<br /><br /><br /><br />
 						</td>
 					</tr>
 				</table>

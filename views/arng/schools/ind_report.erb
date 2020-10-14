@@ -11,7 +11,8 @@
 
 <style>
 	p	{
-		line-height: 1.1em;
+		line-height: 1.15em;
+		
 	}
 	
 	h5	{
@@ -23,7 +24,11 @@
 	}
 	td {
 	  height: 275px;
-	  vertical-align: bottom;
+	  vertical-align: middle;
+	}
+	
+	.lead	{
+		font-weight: 600;
 	}
 	
 	table.side tr td	{
@@ -38,6 +43,11 @@
 		/*display: none;*/
 	}
 	
+	div.inter p	{
+		margin: 3px;
+	}
+	
+	
 	@media print {
 	  .pager {page-break-after: always;}
 	}
@@ -48,15 +58,16 @@
 		<div class="row">  
 			<div class="col-md-12">
 				
-				<% if @school.students.each do |student| %>
+				<% if @school.students.sort_by(&:middle_name).each do |student| %>
 				<% if student.created_on == @school.class_date %>
 				
-				<br />	
+				<br />
+					
 				<div style="float: right;"><strong>Date:</strong> &nbsp;&nbsp;<%= Time.now.strftime("%m/%d/%Y") %></div>
 				<h6><strong><span class="logo-e">e</span>CD</strong> Inventory Student Planning Report</h6>
 				
 				<p><strong>School: &nbsp;&nbsp;<%= @school.school_name %></strong> - <%= @school.school_address1 %> <%= @school.school_address2 %>, <%= @school.school_city %>, <%= @school.school_state %> &nbsp;<%= @school.school_zip %> &nbsp;&nbsp;- &nbsp;&nbsp;<strong>Rep:</strong> <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %></p>
-				<p><strong>Student:</strong> &nbsp;&nbsp;<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Grade:</strong> &nbsp;&nbsp;<%= student.grade %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Email:</strong>&nbsp;&nbsp;<%= student.email %> <% if student.phone %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Phone:</strong>&nbsp;&nbsp;<%= student.phone %><% end %></p>
+				<p><strong>Student:</strong> &nbsp;&nbsp;<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Grade:</strong> &nbsp;&nbsp;<%= student.grade %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Email:</strong>&nbsp;&nbsp;<%= student.email %> <% if student.phone %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Phone:</strong>&nbsp;&nbsp;<%= student.phone %><% end %> <% if student.score1 %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>High Scores:</strong>&nbsp;&nbsp;<%= student.score1 %><%= student.score2 %><% end %></p>
 					
 						<form method="post" id="exercise">
 						<table cellpadding="10" cellspacing="0" class="side" style="margin: -9px;">
@@ -95,22 +106,22 @@
 			    <% if student.score1 && student.score2 && File.exists?("./views/reports/#{student.score1}#{student.score2}.inc") %>
 			    	<%= @report1 = File.read("./views/reports/#{student.score1}#{student.score2}.inc") %>
 			    <% elsif student.score1 && @tudent.score2 && File.exists?("./views/reports/#{student.score2}#{student.score1}.inc") %>
-			    	<%= @report1 = File.read("./views/reports/#{student.score2}#{student.score1}.inc") %>
-			    <%  end %>
+			    	<%= @report1 = File.read("./views/reports/#{student.score1}#{student.score2}.inc") %>
+			    <% end %>
 				
   		    	<% end %>
 				
-					<div class="pager"><hr /></div>
-				<hr />
-				
+				<div class="pager"><hr /></div>
 				<% end %>
 				
 				
 				<% end %>
+				
 			
 			</div>
-				  
+			
 		</div>
+		
 	</div> <!-- /container -->
 
 
