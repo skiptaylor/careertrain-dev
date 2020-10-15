@@ -263,8 +263,8 @@ get "/student/reports/:id/scores/?" do
   
   if @student.score1 && @student.score2 && File.exists?("./views/reports/#{@student.score1}#{@student.score2}.inc")
     @report1 = File.read("./views/reports/#{@student.score1}#{@student.score2}.inc")
-  elsif @student.score1 && @tudent.score2 && File.exists?("./views/reports/#{student.score2}#{student.score1}.inc")
-    @report1 = File.read("./views/reports/#{student.score2}#{student.score1}.inc")
+  elsif @student.score1 && @student.score2 && File.exists?("./views/reports/#{@student.score2}#{@student.score1}.inc")
+    @report1 = File.read("./views/reports/#{@student.score2}#{@student.score1}.inc")
   end
 
   if @student.score1 && @student.score3 && File.exists?("./views/reports/#{@student.score1}#{@student.score3}.inc")
@@ -308,7 +308,7 @@ get "/student/reports/:id/ex_scores/?" do
   if @student.ex_score1 && @student.ex_score2 && File.exists?("./views/reports/#{@student.ex_score1}#{@student.ex_score2}.inc")
     @report1 = File.read("./views/reports/#{@student.ex_score1}#{@student.ex_score2}.inc")
   elsif @student.ex_score1 && @student.ex_score2 && File.exists?("./views/reports/#{@student.ex_score2}#{@student.ex_score1}.inc")
-    @report1 = File.read("./views/reports/#{@student.ex_score1}#{@student.ex_score2}.inc")
+    @report1 = File.read("./views/reports/#{@student.ex_score2}#{@student.ex_score1}.inc")
   end
 
  # -------------------- show report ---------------------

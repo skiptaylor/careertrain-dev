@@ -10,6 +10,9 @@ require 'sendgrid-ruby'
 include SendGrid
 require 'json'
 
+require 'pdfkit'
+use PDFKit::Middleware
+
 disable :protection
 enable :sessions
 set :session_secret, 'secret123'
