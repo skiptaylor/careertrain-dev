@@ -138,12 +138,15 @@ get '/arng/schools/:id/ind_report/?' do
   @recruiter = Recruiter.get(params[:recruiter_id])
   @students = Student.all
   
+  kit = PDFKit.new(html, :page_size => 'Letter')
+  config.middleware.use PDFKit::Middleware, {}, :disposition => 'attachment; filename=Individual_Reports.pdf'
  
   
  
    erb :'arng/schools/ind_report', layout: false
  
- 
+   
+   
  
 end
 

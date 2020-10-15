@@ -382,10 +382,13 @@ get "/student/reports/:id/scores_full/?" do
   
 end
 
+
+
 post "/student/reports/:id/scores_full/?" do
-  email.fullreport
+  Email.fullreport
   redirect "/student/reports/report"
 end
+
 
 
 get "/student/reports/:id/ex_scores_full/?" do
