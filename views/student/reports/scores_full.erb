@@ -140,20 +140,14 @@
 
 <body>
 	<div id="container">
-		<form id="fullreport">
+		<form method="post" id="fullreport">
+			<a href="/student/reports/<%= @student.id %>/scores_full">Download PDF</a>
+		
 		
 		<img src="/img/arng_4cp_cta_camo.png" style="float: right; margin: 12px 24px;" width="80px">
 		
-		
-		
 		<span class="d-none d-sm-none d-md-block"><img src="/img/eCareerDirection-logo-black.svg" style="margin-top:42px;" width="240px"></span>
 		
-		
-		
-		<!-- <p style="margin-top: 24px;">
-			<img src="/img/arng_4cp_cta_camo.png" width="82px" style="float: right;">
-			<img src="/img/eCareerDirection-logo-black.svg" width="300px">
-		</p> -->
 		<hr />
 		
 		<p class="lead">Report for <%= @student.first_name %> <%= @student.last_name %> at <%= @student.school.school_name %></p>

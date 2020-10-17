@@ -34,34 +34,24 @@ class Email
     )
   end
   
-  def self.fullreport
-    mail = SendGrid::Mail.new
-    mail.from = Email.new(email: 'no-reply@eCareerDirection.com')
-    mail.subject = 'eCD Full Report'
+  def self.fullreport(to, email)
+    body = ""
+    body << "<p>eCareerDirection Account</p>"
+    body << "<p>Your eCD Full Report</p>"
     
-    personalization = Personalization.new
-    personalization.add_to(Email.new(email: '#{@student.email}', name: '#{@student.first_name}, #{@student.last_name}'))
     
-    attachment = Attachment.new
-    attachment.content = 'https://ecareerdirection.com/student/reports/<%= @student.id %>/scores_full'
-    attachment.type = 'application/pdf'
-    attachment.filename = 'COG Report.pdf'
-    attachment.disposition = 'attachment'
-    attachment.content_id = 'Report'
-    mail.add_attachment(attachment)
-    
-    sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
-    response = sg.client.mail._('send').post(request_body: mail.to_json)
-    puts response.status_code
-    puts response.body
-    puts response.headers
-    
+    Pony.mail(headers: { 'Content-Type' => 'text/html' },
+      to: to,
+      from: 'no-reply@eCareerDirection.com',
+      subject: 'Your eCD Full Report',
+      body: body
+    )
+        
   end
   
 end
 
-
-# def fullreport
+# def self.fullreport
 #   mail = SendGrid::Mail.new
 #   mail.from = Email.new(email: 'no-reply@eCareerDirection.com')
 #   mail.subject = 'eCD Full Report'
@@ -70,7 +60,7 @@ end
 #   personalization.add_to(Email.new(email: '#{@student.email}', name: '#{@student.first_name}, #{@student.last_name}'))
 #
 #   attachment = Attachment.new
-#   attachment.content = 'https://ecareerdirection.com/student/reports/<%= @student.id %>/scores_full'
+#   attachment.content = 'https://ecareerdirection.com/student/reports/#{student.id}/scores_full'
 #   attachment.type = 'application/pdf'
 #   attachment.filename = 'COG Report.pdf'
 #   attachment.disposition = 'attachment'

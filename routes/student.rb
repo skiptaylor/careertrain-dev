@@ -375,7 +375,6 @@ get "/student/reports/:id/scores_full/?" do
  
  # -------------------- show report ---------------------
  if @student.score1 && @student.score2
-   Email.fullreport
    erb :'student/reports/scores_full', layout: false
  else
    erb :'student/reports/report'
@@ -383,10 +382,11 @@ get "/student/reports/:id/scores_full/?" do
   
 end
 
-
-
 post "/student/reports/:id/scores_full/?" do
-  Email.fullreport
+  school = School.all
+  exercise = Exercise.get(params[:exercise_id])
+  student = Student.get(params[:id])
+  Email.fullreport(student.email)
   redirect "/student/reports/report"
 end
 
