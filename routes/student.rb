@@ -386,7 +386,7 @@ post "/student/reports/:id/scores_full/?" do
   school = School.all
   exercise = Exercise.get(params[:exercise_id])
   student = Student.get(params[:id])
-  Email.fullreport(student.email)
+  Email.fullreport(student.email, student.id)
   redirect "/student/reports/report"
 end
 
