@@ -39,6 +39,17 @@ class Email
     body << "<p>eCareerDirection Account</p>"
     body << "<p>Your eCD Full Report</p>"
     
+    personalization = Personalization.new
+    personalization.add_to(Email.new(email: '#{@student.email}', name: '#{@student.first_name}, #{@student.last_name}'))
+    
+    attachment = Attachment.new
+    attachment.content = 'https://ecareerdirection.com/student/reports/#{student.id}/scores_full'
+    attachment.type = 'application/pdf'
+    attachment.filename = 'COG Report.pdf'
+    attachment.disposition = 'attachment'
+    attachment.content_id = 'Report'
+    mail.add_attachment(attachment)
+    
     
     Pony.mail(headers: { 'Content-Type' => 'text/html' },
       to: to,
