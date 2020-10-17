@@ -51,26 +51,3 @@ class Email
   
 end
 
-# def self.fullreport
-#   mail = SendGrid::Mail.new
-#   mail.from = Email.new(email: 'no-reply@eCareerDirection.com')
-#   mail.subject = 'eCD Full Report'
-#
-#   personalization = Personalization.new
-#   personalization.add_to(Email.new(email: '#{@student.email}', name: '#{@student.first_name}, #{@student.last_name}'))
-#
-#   attachment = Attachment.new
-#   attachment.content = 'https://ecareerdirection.com/student/reports/#{student.id}/scores_full'
-#   attachment.type = 'application/pdf'
-#   attachment.filename = 'COG Report.pdf'
-#   attachment.disposition = 'attachment'
-#   attachment.content_id = 'Report'
-#   mail.add_attachment(attachment)
-#
-#   sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
-#   response = sg.client.mail._('send').post(request_body: mail.to_json)
-#   puts response.status_code
-#   puts response.body
-#   puts response.headers
-#
-# end
