@@ -387,8 +387,16 @@ post "/student/reports/:id/scores_full/?" do
   exercise = Exercise.get(params[:exercise_id])
   student = Student.get(params[:id])
   Email.fullreport(student.email, student.id)
-  redirect "/student/reports/report"
+  redirect request.referrer
 end
+
+
+
+
+
+
+
+
 
 
 
