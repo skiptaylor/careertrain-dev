@@ -46,7 +46,7 @@ class Email
       from: 'no-reply@eCareerDirection.com',
       subject: 'Your eCD Full Report',
       body: body,
-      attachments: { "CDTRII.pdf" => File.read("../downloads/CDTRII.pdf") }
+      attachments: { "CDTRII.pdf" => File.read("/downloads/CDTRII.pdf") }
     )
         
   end
