@@ -45,8 +45,7 @@ class Email
       to: to,
       from: 'no-reply@eCareerDirection.com',
       subject: 'Your eCD Full Report',
-      body: body,
-      attachments: { "CDTRII.pdf" => File.read("https://careertrain.s3.amazonaws.com/RRNCO+Sheet+print.pdf") }
+      body: body
     )
         
   end
