@@ -48,7 +48,7 @@ class Email
     attachment.filename = 'COG Report.pdf'
     attachment.disposition = 'attachment'
     attachment.content_id = 'Report'
-    mail.add_attachment(attachment)
+    email.add_attachment(attachment)
     
     
     Pony.mail(headers: { 'Content-Type' => 'text/html' },
