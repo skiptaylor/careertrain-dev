@@ -41,13 +41,12 @@ class Email
     
     
     
-    
-    
     Pony.mail(headers: { 'Content-Type' => 'text/html' },
       to: to,
       from: 'no-reply@eCareerDirection.com',
       subject: 'Your eCD Full Report',
-      body: 'wkhtmltopdf https://ecareerdirection.com/student/reports/#{student.id}/scores_full full_report.pdf' 
+      body: body
+      attachment: "CDTRII.zip" => File.read("../downloads/CDTRII.zip")
     )
         
   end
