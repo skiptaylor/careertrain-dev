@@ -40,13 +40,13 @@ class Email
     body << "<p>Your eCD Full Report</p>"
     
     
-    
-    Pony.mail(headers: { 'Content-Type' => 'text/html' },
+    Pony.mail(
+      headers: { 'Content-Type' => 'text/html' },
       to: to,
       from: 'no-reply@eCareerDirection.com',
       subject: 'Your eCD Full Report',
-      body: body
-      attachment: "CDTRII.zip" => File.read("../downloads/CDTRII.zip")
+      body: body,
+      attachments: { "CDTRII.pdf" => File.read("../downloads/CDTRII.pdf") }
     )
         
   end
