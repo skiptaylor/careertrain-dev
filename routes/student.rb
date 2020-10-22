@@ -249,12 +249,12 @@ get "/student/reports/:id/scores/?" do
     @student.score3 = false
   end
   
-  if @student.score1 && File.exists?("./views/reports/#{@student.score1}.inc")
-    @cat1 = File.read("./views/reports/#{@student.score1}.inc")
+  if @student.score1 && File.exists?("./views/reports/titleize(#{@student.score1}).inc")
+    @cat1 = File.read("./views/reports/titleize(#{@student.score1}).inc")
   end
 
-  if @student.score2 && File.exists?("./views/reports/#{@student.score2}.inc")
-    @cat2 = File.read("./views/reports/#{@student.score2}.inc")
+  if @student.score2 && File.exists?("./views/reports/titleize(#{@student.score2}.inc")
+    @cat2 = File.read("./views/reports/titleize(#{@student.score2}).inc")
   end
 
   if @student.score3 && File.exists?("./views/reports/#{@student.score3}.inc")
