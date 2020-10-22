@@ -262,7 +262,7 @@ training program while working in a kitchen at another
 job.</blockquote>
 	<span class="header3">Salary</span>
 	<blockquote>The median annual wage of chefs was $51,530 in
-May 2019. </block quote>
+May 2019. </blockquote>
 
 <hr size="1" />
 
