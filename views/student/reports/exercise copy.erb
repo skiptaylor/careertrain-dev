@@ -8,20 +8,31 @@
 				
 							
 					
-			
-			
-			<iframe id="hapyak-player-157199-8825" marginwidth="0" marginheight="0" frameborder="no" scrolling="no" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" src="//www.hapyak.com/embed?key=dce19ce18c6b4f53aece&amp;project=364251&amp;native_controls=false" width="720" height="442" class="hapyak-embed hapyak-responsive"></iframe>
-			<script type="text/javascript" src="//d2qrdklrsxowl2.cloudfront.net/js/hapyak.js"></script>
-			<script type="text/javascript" src="//d2qrdklrsxowl2.cloudfront.net/js/hapyak.api.js"></script>
-			
-			
-			<!-- <a href="https://www.hapyak.com/portal/viewer/edf9abd329f7fec4d28652604bef795f">The Exercise!!!!</a> -->
-			
 			<form method="post" id="exercise">
 			
-			<br />	<br />
+			<table class="table table-striped table-condensed">
+				<h3>As part of my job, I would enjoy...</h3>
+			<% @ie.sort_by(&:position_number).each do |ie| %>
+				<tr>
+					<td style="text-align: center;"><%= ie.position_number %></td>
+					<td><%= ie.item %></td>
+					<td>
+						<label class="radio inline checker" for="<%= ie.position_number %>" style="margin-top: 4px;">YES
+  						 	<input type="radio" name="<%= ie.position_number %>" id="<%= ie.position_number %>" value="true" />
+							<span class="checkmark"style="margin-top: -2px;"></span>
+						</label>
+					</td>
+					<td>
+						<label class="radio inline checker" style="margin-top: 4px;">NO
+  						 	<input type="radio" name="<%= ie.position_number %>" id="<%= ie.id %> + 100" value="false"  />
+							<span class="checkmark" style="margin-top: -2px;"></span>
+						</label>
+					</td>
+				</tr>
+			<% end %>
+		</table>
  			<input class="btn btn-success pull-right" style="margin-left: 2em;margin-top:-0.3em" type="submit" value="Scores"/>
-			<h5 class="pull-right">Go to your scores when finished</h5>
+			<h5 class="pull-right">Go your scores</h5>
 			</div>
 			</form>
 		</div>
