@@ -74,9 +74,7 @@
 			
 				<% if @student.score1 && @student.score2 %>
 				<a href="/student/reports/<%= @student.id %>/scores" style="margin: 12px 0 19px 0;" class="btn btn-success">View short Report</a> &nbsp;&nbsp;
-				<form method="get" id="fullreport">
-					<button type="submit">Download PDF</button>
-				</form>
+				
 				<a href="/student/reports/<%= @student.id %>/scores_full" style="margin: 12px 0 19px 0;" class="btn btn-success">Download full Report</a>
 				
 				<% else %>
