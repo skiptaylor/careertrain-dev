@@ -79,8 +79,8 @@ post "/student/reports/:id/report/?" do
   
   unless params[:ex_score1] == params[:ex_score2]
     student.update(
-      :ex_score1     => params[:ex_score1],
-      :ex_score2     => params[:ex_score2]
+      :ex_score1      => params[:ex_score1],
+      :ex_score2      => params[:ex_score2]
       )
   else
     flash[:alert] = '1st Highest and 2nd Highest Scores cannot be the same.'
