@@ -71,7 +71,16 @@ class Student
   
   has n, :exercises, :constraint => :destroy
   
+  def score1= new_score1
+      super new_score1.upcase
+  end
+  
+  def score2= new_score2
+      super new_score2.upcase
+  end
+   
 end
+
 
 
 # delete from students where email IS NULL;
