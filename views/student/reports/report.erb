@@ -68,8 +68,10 @@
 				</table>
 					</form>
 					
-				<h5>Your Highest Score - <em><strong><%= @student.score1 %></strong></em></h5>
-				<h5>Your 2nd Highest Score - <em><strong><%= @student.score2 %></strong></em></h5>
+				<p>Your Highest Score: <br />
+				<span style="font-size: 1.3em; color: #08287a;"><% if @student.score1 == 'a' %><strong><em>A</em> - Outdoor</strong><% end %><% if @student.score1 == 'b' %><strong><em>B</em> - Arts/Communications</strong><% end %><% if @student.score1 == 'c' %><strong><em>C</em> - Business/Management</strong><% end %><% if @student.score1 == 'd' %><strong><em>D</em> - Clerical/Administrative</strong><% end %><% if @student.score1 == 'e' %><strong><em>E</em> - Protective/Military Service</strong><% end %><% if @student.score1 == 'f' %><strong><em>F</em> - Technology</strong><% end %><% if @student.score1 == 'g' %><strong><em>G</em> - Public Service</strong><% end %><% if @student.score1 == 'h' %><strong><em>H</em> - Science/Mathematics</strong><% end %><% if @student.score1 == 'i' %><strong><em>I</em> - Social/Helping</strong><% end %></span></p>
+				<p>Your 2nd Highest Score: <br />
+				<span style="font-size: 1.3em; color: #08287a;"><% if @student.score2 == 'a' %><strong><em>A</em> - Outdoor</strong><% end %><% if @student.score2 == 'b' %><strong><em>B</em> - Arts/Communications</strong><% end %><% if @student.score2 == 'c' %><strong><em>C</em> - Business/Management</strong><% end %><% if @student.score2 == 'd' %><strong><em>D</em> - Clerical/Administrative</strong><% end %><% if @student.score2 == 'e' %><strong><em>E</em> - Protective/Military Service</strong><% end %><% if @student.score2 == 'f' %><strong><em>F</em> - Technology</strong><% end %><% if @student.score2 == 'g' %><strong><em>G</em> - Public Service</strong><% end %><% if @student.score2 == 'h' %><strong><em>H</em> - Science/Mathematics</strong><% end %><% if @student.score2 == 'i' %><strong><em>I</em> - Social/Helping</strong><% end %></span></p>
 				
 			
 				<% if @student.score1 && @student.score2 %>
@@ -92,32 +94,32 @@
 				<p>You may have more than two “high” scores or ties. To see additional reports, enter the letters of the other categories. Example: if you scored high in A, B, and C, you may want to view the A/B report, the A/C report, and the B/C report.</p>
 				<form method="post" id="report">
 				<div class="form-group row">
-						<select type="text" class="form-control pull-left" name="ex_score1" id="ex_score1" style="width: 100px; margin-left: 12px;" >
+						<select type="text" class="form-control pull-left" name="ex_score1" id="ex_score1" style="width: 240px; margin-left: 12px;" >
 							<option>&nbsp;</option>
-							<option <%= 'selected' if @student.ex_score1 == 'a' %> value="a">A</option>
-							<option <%= 'selected' if @student.ex_score1 == 'b' %> value="b">B</option>
-							<option <%= 'selected' if @student.ex_score1 == 'c' %> value="c">C</option>
-							<option <%= 'selected' if @student.ex_score1 == 'd' %> value="d">D</option>
-							<option <%= 'selected' if @student.ex_score1 == 'e' %> value="e">E</option>
-							<option <%= 'selected' if @student.ex_score1 == 'f' %> value="f">F</option>
-							<option <%= 'selected' if @student.ex_score1 == 'g' %> value="g">G</option>
-							<option <%= 'selected' if @student.ex_score1 == 'h' %> value="h">H</option>
-							<option <%= 'selected' if @student.ex_score1 == 'i' %> value="i">I</option>
+							<option <%= 'selected' if @student.ex_score1 == 'a' %> value="a">A - Outdoor</option>
+							<option <%= 'selected' if @student.ex_score1 == 'b' %> value="b">B - Arts/Communications</option>
+							<option <%= 'selected' if @student.ex_score1 == 'c' %> value="c">C - Business/Management</option>
+							<option <%= 'selected' if @student.ex_score1 == 'd' %> value="d">D - Clerical/Administrative</option>
+							<option <%= 'selected' if @student.ex_score1 == 'e' %> value="e">E - Protective/Military Service</option>
+							<option <%= 'selected' if @student.ex_score1 == 'f' %> value="f">F - Technology</option>
+							<option <%= 'selected' if @student.ex_score1 == 'g' %> value="g">G - Public Service</option>
+							<option <%= 'selected' if @student.ex_score1 == 'h' %> value="h">H - Science/Mathematics</option>
+							<option <%= 'selected' if @student.ex_score1 == 'i' %> value="i">I - Social/Helping</option>
 						</select>
 						<span style="margin: 7px 0 0 12px"><strong>1st Highest Score</strong></span>
 				</div>
 				<div class="form-group row">
-						<select type="text" class="form-control pull-left" name="ex_score2" id="ex_score2" style="width: 100px; margin-left: 12px;" >
+						<select type="text" class="form-control pull-left" name="ex_score2" id="ex_score2" style="width: 240px; margin-left: 12px;" >
 							<option>&nbsp;</option>
-							<option <%= 'selected' if @student.ex_score2 == 'a' %> value="a">A</option>
-							<option <%= 'selected' if @student.ex_score2 == 'b' %> value="b">B</option>
-							<option <%= 'selected' if @student.ex_score2 == 'c' %> value="c">C</option>
-							<option <%= 'selected' if @student.ex_score2 == 'd' %> value="d">D</option>
-							<option <%= 'selected' if @student.ex_score2 == 'e' %> value="e">E</option>
-							<option <%= 'selected' if @student.ex_score2 == 'f' %> value="f">F</option>
-							<option <%= 'selected' if @student.ex_score2 == 'g' %> value="g">G</option>
-							<option <%= 'selected' if @student.ex_score2 == 'h' %> value="h">H</option>
-							<option <%= 'selected' if @student.ex_score2 == 'i' %> value="i">I</option>
+							<option <%= 'selected' if @student.ex_score2 == 'a' %> value="a">A - Outdoor</option>
+							<option <%= 'selected' if @student.ex_score2 == 'b' %> value="b">B - Arts/Communications</option>
+							<option <%= 'selected' if @student.ex_score2 == 'c' %> value="c">C - Business/Management</option>
+							<option <%= 'selected' if @student.ex_score2 == 'd' %> value="d">D - Clerical/Administrative</option>
+							<option <%= 'selected' if @student.ex_score2 == 'e' %> value="e">E - Protective/Military Service</option>
+							<option <%= 'selected' if @student.ex_score2 == 'f' %> value="f">F - Technology</option>
+							<option <%= 'selected' if @student.ex_score2 == 'g' %> value="g">G - Public Service</option>
+							<option <%= 'selected' if @student.ex_score2 == 'h' %> value="h">H - Science/Mathematics</option>
+							<option <%= 'selected' if @student.ex_score2 == 'i' %> value="i">I - Social/Helping</option>
 						</select>
 						<span style="margin: 7px 0 0 12px"><strong>2nd Highest Score</strong></span>
 				</div>
@@ -126,7 +128,7 @@
 					</p>
 				</form>
 				<div>
-				<a href="/student/reports/<%= @student.id %>/ex_scores" style="margin-bottom: 2px;" class="btn btn-info inline">View short Report - <span style="color: black;"><em><strong><%= @student.ex_score1 %><%= @student.ex_score2 %></strong></em></span></a> &nbsp;&nbsp; <a href="/student/reports/<%= @student.id %>/ex_scores_full" style="margin-bottom: 0px;" class="btn btn-info d-none d-lg-inline">View full Report - <span style="color: black;"><em><strong><%= @student.ex_score1 %><%= @student.ex_score2 %></strong></em></span></a>
+				<a href="/student/reports/<%= @student.id %>/ex_scores" style="margin-bottom: 2px;" class="btn btn-info inline">View short Report - <span style="color: black;"><em><strong><%= titleize(@student.ex_score1) %><%= titleize(@student.ex_score2) %></strong></em></span></a> &nbsp;&nbsp; <a href="/student/reports/<%= @student.id %>/ex_scores_full" style="margin-bottom: 0px;" class="btn btn-info d-none d-lg-inline">View full Report - <span style="color: black;"><em><strong><%= titleize(@student.ex_score1) %><%= titleize(@student.ex_score2) %></strong></em></span></a>
 				</div>
 			</div>
 	
