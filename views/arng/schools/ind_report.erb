@@ -70,37 +70,23 @@
 				<p><strong>Student:</strong> &nbsp;&nbsp;<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Grade:</strong> &nbsp;&nbsp;<%= student.grade %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Email:</strong>&nbsp;&nbsp;<%= student.email %> <% if student.phone %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Phone:</strong>&nbsp;&nbsp;<%= student.phone %><% end %> <% if student.score1 %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>High Scores:</strong>&nbsp;&nbsp;<%= titleize(student.score1) %><%= titleize(student.score2) %><% end %></p>
 					
 						<form method="post" id="exercise">
-						<table cellpadding="10" cellspacing="0" class="side" style="margin: -9px;">
+						<table cellpadding="0" cellspacing="0" class="side">
 						<tr>
 							<th style="text-align: left; font-size: 14px;"><strong><span class="logo-e">e</span>CD</strong> Exercise Scores</th>
-							<th style="text-align: center; font-size: 14px;">A</th>
-							<th style="text-align: center; font-size: 14px;">B</th>
-							<th style="text-align: center; font-size: 14px;">C</th>
-							<th style="text-align: center; font-size: 14px;">D</th>
-							<th style="text-align: center; font-size: 14px;">E</th>
-							<th style="text-align: center; font-size: 14px;">F</th>
-							<th style="text-align: center; font-size: 14px;">G</th>
-							<th style="text-align: center; font-size: 14px;">H</th>
-							<th style="text-align: center; font-size: 14px;">I</th>
+							<th style="text-align: center; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A - <%= student.score_a %></th>
+							<th style="text-align: center; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B - <%= student.score_b %></th>
+							<th style="text-align: center; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C - <%= student.score_c %></th>
+							<th style="text-align: center; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D - <%= student.score_d %></th>
+							<th style="text-align: center; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E - <%= student.score_e %></th>
+							<th style="text-align: center; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F - <%= student.score_f %></th>
+							<th style="text-align: center; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G - <%= student.score_g %></th>
+							<th style="text-align: center; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H - <%= student.score_h %></th>
+							<th style="text-align: center; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I - <%= student.score_i %></th>
 						</tr>
-					
-						<tr>
-							<td style="line-height: 0.8em; text-align: left;"> &nbsp; </td> 
-							<td style="line-height: 0.8em; text-align: center;"><%= student.score_a %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= student.score_b %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= student.score_c %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= student.score_d %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= student.score_e %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= student.score_f %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= student.score_g %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= student.score_h %></td>
-							<td style="line-height: 0.8em; text-align: center;"><%= student.score_i %></td>
-						</tr>
-					
-					</table>
+						</table>
 						</form>
-					<strong>Future Plans:</strong>&nbsp;&nbsp;&nbsp;<% if student.future1 == "on" %>&nbsp;Enter technical college/trade school&nbsp;&nbsp;&nbsp;<% end %> <% if student.future2 == "on" %>&nbsp;Work full-time&nbsp;&nbsp;&nbsp;<% end %> <% if student.future3 == "on" %>&nbsp;Work part-time&nbsp;&nbsp;&nbsp;<% end %> <% if student.future4 == "on" %>&nbsp;Enter the military&nbsp;&nbsp;&nbsp;<% end %> <% if student.future5 == "on" %>&nbsp;Go to college&nbsp;&nbsp;&nbsp;<% end %> <% if student.future6 == "on" %>&nbsp;I have money to pay for education&nbsp;&nbsp;&nbsp;<% end %> <% if student.future7 == "on" %>&nbsp;Counting on parents for money for education&nbsp;&nbsp;&nbsp;<% end %> <% if student.future8 == "on" %>&nbsp;Considering sources of financial aid or scholarships&nbsp;&nbsp;&nbsp;<% end %>
-					<br />
+					<p><strong>Future Plans:</strong>&nbsp;&nbsp;&nbsp;<% if student.future1 == "on" %>&nbsp;Enter technical college/trade school&nbsp;&nbsp;&nbsp;<% end %> <% if student.future2 == "on" %>&nbsp;Work full-time&nbsp;&nbsp;&nbsp;<% end %> <% if student.future3 == "on" %>&nbsp;Work part-time&nbsp;&nbsp;&nbsp;<% end %> <% if student.future4 == "on" %>&nbsp;Enter the military&nbsp;&nbsp;&nbsp;<% end %> <% if student.future5 == "on" %>&nbsp;Go to college&nbsp;&nbsp;&nbsp;<% end %> <% if student.future6 == "on" %>&nbsp;I have money to pay for education&nbsp;&nbsp;&nbsp;<% end %> <% if student.future7 == "on" %>&nbsp;Counting on parents for money for education&nbsp;&nbsp;&nbsp;<% end %> <% if student.future8 == "on" %>&nbsp;Considering sources of financial aid or scholarships&nbsp;&nbsp;&nbsp;<% end %></p>
+					
 					<p style="margin-top: 9px;">This report is based on the pairing of the two occupational categories in which you scored highest. Listed below is a general description of the personality type common to people who have your interests. It will help you better understand your unique personality. Next the report lists courses of study, extracurricular activities, and part-time jobs that may be right for you. This information should help you make appropriate decisions as you plan your future. Remember, you are just exploring your future right now and you can look at as many job possibilities as you want. If you want more information on jobs that interest you, ask your school Counselor for additional sources.</p>
 					
 			    <% if student.score1 && student.score2 && File.exists?("./views/reports/#{student.score1}#{student.score2}.inc") %>
