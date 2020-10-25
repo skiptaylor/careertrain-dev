@@ -105,7 +105,7 @@
 					
 			    <% if student.score1 && student.score2 && File.exists?("./views/reports/#{student.score1}#{student.score2}.inc") %>
 			    	<%= @report1 = File.read("./views/reports/#{student.score1}#{student.score2}.inc") %>
-			    <% elsif student.score1 && @tudent.score2 && File.exists?("./views/reports/#{student.score2}#{student.score1}.inc") %>
+			    <% elsif student.score1 && tudent.score2 && File.exists?("./views/reports/#{student.score2}#{student.score1}.inc") %>
 			    	<%= @report1 = File.read("./views/reports/#{student.score1}#{student.score2}.inc") %>
 			    <% end %>
 				
