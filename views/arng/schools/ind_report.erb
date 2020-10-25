@@ -67,7 +67,7 @@
 				<h6><strong><span class="logo-e">e</span>CD</strong> Inventory Student Planning Report</h6>
 				
 				<p><strong>School: &nbsp;&nbsp;<%= @school.school_name %></strong> - <%= @school.school_address1 %> <%= @school.school_address2 %>, <%= @school.school_city %>, <%= @school.school_state %> &nbsp;<%= @school.school_zip %> &nbsp;&nbsp;- &nbsp;&nbsp;<strong>Rep:</strong> <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %></p>
-				<p><strong>Student:</strong> &nbsp;&nbsp;<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Grade:</strong> &nbsp;&nbsp;<%= student.grade %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Email:</strong>&nbsp;&nbsp;<%= student.email %> <% if student.phone %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Phone:</strong>&nbsp;&nbsp;<%= student.phone %><% end %> <% if student.score1 %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>High Scores:</strong>&nbsp;&nbsp;<%= student.score1 %><%= student.score2 %><% end %></p>
+				<p><strong>Student:</strong> &nbsp;&nbsp;<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Grade:</strong> &nbsp;&nbsp;<%= student.grade %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Email:</strong>&nbsp;&nbsp;<%= student.email %> <% if student.phone %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Phone:</strong>&nbsp;&nbsp;<%= student.phone %><% end %> <% if student.score1 %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>High Scores:</strong>&nbsp;&nbsp;<%= titleize(student.score1) %><%= titleize(student.score2) %><% end %></p>
 					
 						<form method="post" id="exercise">
 						<table cellpadding="10" cellspacing="0" class="side" style="margin: -9px;">
@@ -105,7 +105,7 @@
 					
 			    <% if student.score1 && student.score2 && File.exists?("./views/reports/#{student.score1}#{student.score2}.inc") %>
 			    	<%= @report1 = File.read("./views/reports/#{student.score1}#{student.score2}.inc") %>
-			    <% elsif student.score1 && tudent.score2 && File.exists?("./views/reports/#{student.score2}#{student.score1}.inc") %>
+			    <% elsif student.score1 && student.score2 && File.exists?("./views/reports/#{student.score2}#{student.score1}.inc") %>
 			    	<%= @report1 = File.read("./views/reports/#{student.score1}#{student.score2}.inc") %>
 			    <% end %>
 				
