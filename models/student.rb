@@ -25,8 +25,8 @@ class Student
   property :birth_date, Date, :default => Chronic.parse('1900-01-01')
   property :school_password, String
   property :sub_code, String
-  property :score1, String
-  property :score2, String
+  property :score1, String, default: "a"
+  property :score2, String, default: "b"
   property :score3, String
   
   property :ex_score1, String
