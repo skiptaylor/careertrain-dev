@@ -128,7 +128,7 @@
 					</p>
 				</form>
 				<div>
-				<a href="/student/reports/<%= @student.id %>/ex_scores" style="margin-bottom: 2px;" class="btn btn-info inline">View short Report - <span style="color: black;"><em><strong><%= titleize(@student.ex_score1) %><%= titleize(@student.ex_score2) %></strong></em></span></a> &nbsp;&nbsp; <a href="/student/reports/<%= @student.id %>/ex_scores_full" style="margin-bottom: 0px;" class="btn btn-info d-none d-lg-inline">View full Report - <span style="color: black;"><em><strong><%= titleize(@student.ex_score1) %><%= titleize(@student.ex_score2) %></strong></em></span></a>
+				<a href="/student/reports/<%= @student.id %>/ex_scores" style="margin-bottom: 2px;" class="btn btn-info inline">View short Report - <span style="color: black;"><em><strong><%= @student.ex_score1 %><%= @student.ex_score2 %></strong></em></span></a> &nbsp;&nbsp; <a href="/student/reports/<%= @student.id %>/ex_scores_full" style="margin-bottom: 0px;" class="btn btn-info d-none d-lg-inline">View full Report - <span style="color: black;"><em><strong><%= @student.ex_score1 %><%= @student.ex_score2 %></strong></em></span></a>
 				</div>
 			</div>
 	
