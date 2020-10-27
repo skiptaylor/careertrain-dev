@@ -149,7 +149,7 @@
 	
 		<div class="d-none d-sm-none d-md-block">
 		<div class="row">
-			<div class="col-auto">
+			<div class="col-auto" style="width: 110px;">
 				<div style="background-color: #defff5; text-align: center; padding: 3px 3px 3px 6px;">
 					<table>
 						<tr>
