@@ -1,5 +1,5 @@
-<span class="header1">Technology paired with Public Service (FG)
-</span>
+<div class="header1">Technology paired with Public Service (FG)
+</div>
 
 <p>You will be a valued member of the work force. You are very
 community minded and prefer a "hands-on" approach. You want to make
@@ -58,7 +58,7 @@ technology.</p>
 
 <table cellpadding="10" cellspacing="10">
 	<tr valign="top">
-		<td>
+		<td valign="top">
 			Church Activities<br />
 			Hospital Volunteer<br />
 			Computer Club<br />
@@ -124,7 +124,7 @@ what you want to do when you are an adult.</p>
 <p><strong>Here are some career possibilities for you to
 explore.</strong></p>
 
-<table width="100%" cellpadding="20" cellspacing="0" border="0">
+<table width="100%" cellpadding="10" cellspacing="0" border="0">
 	<tr>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
@@ -146,11 +146,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 	<tr>
 		<td bgcolor="#D3EEF5" align="center" width="50">
 			<table border="0" cellpadding="0"
-cellspacing="0" height="400">
+cellspacing="0" height="">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
+height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong><br /><br /><br /><br /><br /></td></tr>
 				<tr align="center"
 height="33%"><td><strong><br />Less</strong></td></tr>
 			</table>
@@ -238,6 +238,8 @@ Developer<br /><br />
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -472,3 +474,5 @@ scientists was $71,360 in May 2019. </blockquote>
 <hr size="1" />
 
 <p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 22, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 22, 2020). </blockquote>
+
+</div>

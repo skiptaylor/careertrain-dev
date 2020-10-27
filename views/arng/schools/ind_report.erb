@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
    <link href="/css/bootstrap.min.css" rel="stylesheet">
   	<link href="/css/bootstrap-reboot.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-grid.min.css" rel="stylesheet">
@@ -8,11 +11,23 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome-ie7.min.css" />
 	<link type="text/css" rel="stylesheet" href="/css/buttons_altered.css" />
-
+	
 <style>
 	p	{
 		line-height: 1.15em;
-		
+		margin-bottom: 6px;
+	}
+	
+	.header1	{
+		font-size: 18px;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 6px;
+	}
+	
+	.header2	{
+		font-size: 15px;
+		font-weight: 600;
 	}
 	
 	h5	{
@@ -23,24 +38,33 @@
 		margin-bottom: 1px;
 	}
 	td {
-	  height: 275px;
-	  vertical-align: bottom;
+		margin-top: 0px;
 	}
 	
 	.lead	{
 		font-weight: 600;
 	}
 	
+	table tr td	{
+		font-size: 13px;
+		line-height: 16px;
+		height: 0px;
+		margin-top: 0;
+		padding-top: 0;
+	}
+	
 	table.side tr td	{
 		font-size: 12px;
 		height: 0px;
-		vertical-align: top;
-		padding-top: 0;
 		
 	}
 	
-	div.inter	{
-		/*display: none;*/
+	tr	{
+		
+	}
+	
+	div.inner	{
+		display: none;
 	}
 	
 	div.inter p	{
@@ -52,6 +76,10 @@
 	  .pager {page-break-after: always; margin: 0;}
 	}
 </style>
+
+</head>
+
+<body>
 
 	<div class="container">	
 		<div class="row">  
@@ -84,14 +112,14 @@
 						</tr>
 						</table>
 						</form>
-					<p><strong>Future Plans:</strong>&nbsp;&nbsp;&nbsp;<% if student.future1 == "on" %>&nbsp;Enter technical college/trade school&nbsp;&nbsp;&nbsp;<% end %> <% if student.future2 == "on" %>&nbsp;Work full-time&nbsp;&nbsp;&nbsp;<% end %> <% if student.future3 == "on" %>&nbsp;Work part-time&nbsp;&nbsp;&nbsp;<% end %> <% if student.future4 == "on" %>&nbsp;Enter the military&nbsp;&nbsp;&nbsp;<% end %> <% if student.future5 == "on" %>&nbsp;Go to college&nbsp;&nbsp;&nbsp;<% end %> <% if student.future6 == "on" %>&nbsp;I have money to pay for education&nbsp;&nbsp;&nbsp;<% end %> <% if student.future7 == "on" %>&nbsp;Counting on parents for money for education&nbsp;&nbsp;&nbsp;<% end %> <% if student.future8 == "on" %>&nbsp;Considering sources of financial aid or scholarships&nbsp;&nbsp;&nbsp;<% end %></p>
+					<p style="margin-top: 6px;"><strong>Future Plans:</strong>&nbsp;&nbsp;&nbsp;<% if student.future1 == "on" %>&nbsp;Enter technical college/trade school&nbsp;&nbsp;&nbsp;<% end %> <% if student.future2 == "on" %>&nbsp;Work full-time&nbsp;&nbsp;&nbsp;<% end %> <% if student.future3 == "on" %>&nbsp;Work part-time&nbsp;&nbsp;&nbsp;<% end %> <% if student.future4 == "on" %>&nbsp;Enter the military&nbsp;&nbsp;&nbsp;<% end %> <% if student.future5 == "on" %>&nbsp;Go to college&nbsp;&nbsp;&nbsp;<% end %> <% if student.future6 == "on" %>&nbsp;I have money to pay for education&nbsp;&nbsp;&nbsp;<% end %> <% if student.future7 == "on" %>&nbsp;Counting on parents for money for education&nbsp;&nbsp;&nbsp;<% end %> <% if student.future8 == "on" %>&nbsp;Considering sources of financial aid or scholarships&nbsp;&nbsp;&nbsp;<% end %></p>
 					
 					<p style="margin-top: 9px;">This report is based on the pairing of the two occupational categories in which you scored highest. Listed below is a general description of the personality type common to people who have your interests. It will help you better understand your unique personality. Next the report lists courses of study, extracurricular activities, and part-time jobs that may be right for you. This information should help you make appropriate decisions as you plan your future. Remember, you are just exploring your future right now and you can look at as many job possibilities as you want. If you want more information on jobs that interest you, ask your school Counselor for additional sources.</p>
 					
-			    <% if student.score1 && student.score2 && File.exists?("./views/reports/#{student.score1}#{student.score2}.inc") %>
-			    	<%= @report1 = File.read("./views/reports/#{student.score1}#{student.score2}.inc") %>
-			    <% elsif student.score1 && student.score2 && File.exists?("./views/reports/#{student.score2}#{student.score1}.inc") %>
-			    	<%= @report1 = File.read("./views/reports/#{student.score1}#{student.score2}.inc") %>
+			    <% if student.score1 && student.score2 && File.exists?("./views/reports-long/#{student.score1}#{student.score2}.inc") %>
+			    	<%= @report1 = File.read("./views/reports-long/#{student.score1}#{student.score2}.inc") %>
+			    <% elsif student.score1 && student.score2 && File.exists?("./views/reports-long/#{student.score2}#{student.score1}.inc") %>
+			    	<%= @report1 = File.read("./views/reports-long/#{student.score1}#{student.score2}.inc") %>
 			    <% end %>
 				
   		    	<% end %>
@@ -109,4 +137,5 @@
 		
 	</div> <!-- /container -->
 
-
+</body>
+</html>
