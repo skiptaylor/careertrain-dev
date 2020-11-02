@@ -138,16 +138,38 @@ get '/arng/schools/:id/ind_report/?' do
   @recruiter = Recruiter.get(params[:recruiter_id])
   @students = Student.all
   
-  
- 
-  
- 
-   erb :'arng/schools/ind_report', layout: false
- 
-   
-   
+  erb :'arng/schools/ind_report', layout: false
  
 end
+
+
+post '/arng/schools/:id/ind_report/?' do
+  auth_recruiter
+  @school = School.get(params[:id])
+  @recruiter = Recruiter.get(params[:recruiter_id])
+  @students = Student.all
+  
+  PDFKit.configure do |config|
+    config.default_options = {
+      :print_media_type => true,
+      :page_size     => 'Letter',
+      :margin_top    => '0.5in',
+      :margin_right  => '0.5in',
+      :margin_bottom => '0.5in',
+      :margin_left   => '0.5in',
+      :javascript_delay => 1000
+    }
+  end
+  
+  content_type 'application/pdf'
+  
+  kit = PDFKit.new("http://localhost:4567/arng/schools/#{@school.id}/ind_report")
+  
+  pdf = kit.to_pdf
+  
+end
+
+
 
 
 

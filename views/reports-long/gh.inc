@@ -1,5 +1,5 @@
-<span class="header1">Public Service paired with Science/Mathematics
-(GH)</span>
+<p class="header1">Public Service paired with Science/Mathematics
+(GH)</p>
 
 <p>If your scored high in the "G" and "H" categories, you understand
 that there are always ways to improve a situation. You have the
@@ -123,19 +123,18 @@ what you want to do when you are an adult.</p>
 <p><strong>Here are some career possibilities for you to
 explore:</strong></p>
 
-<table width="100%" cellpadding="20" cellspacing="0" border="0">
+<table width="100%" cellpadding="10" cellspacing="0" border="0">
 	<tr>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
-			<span class="header1">GH Career
-Possibilities</span><br /><br />
+			<span class="header1">GH Career Possibilities</span>
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -144,45 +143,45 @@ align="right"><strong>More Technical Oriented</strong></td>
 	</tr>
 	<tr>
 		<td bgcolor="#D3EEF5" align="center" width="50">
-			<table border="0" cellpadding="0"
-cellspacing="0" height="400">
-				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
-				<tr align="center"
-height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
-				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
-			</table>
+						<table border="0" cellpadding="0"
+			cellspacing="0" height="">
+							<tr align="center"
+			height="33%"><td class="side"><strong>More<br /><br /><br /><br /><br /></strong></td></tr>
+							<tr align="center"
+			height="33%"><td class="side"><strong>Education<br />or<br />Training<br />Required</strong><br /><br /><br /><br /></td></tr>
+							<tr align="center"
+			height="33%"><td class="side"><strong><br />Less</strong></td></tr>
+						</table>
 		</td>
 		<td valign="top">
 			<table border="0" cellspacing="3"
 cellpadding="0" width="100%">
-				<tr valign="top">
+				<tr valign="top" class="main">
 					<td width="25%">
 						<span
-class="header2">Public Service</span><br /><br />
+class="header2">Public Service</span><br />
 						<em>Military Medical
-Officer<br /><br />
+Officer<br />
 						Political
-Scientist<br /><br />
+Scientist<br />
 						Fire
-Chief<br /><br />
+Chief<br />
 						Health
-Inspector<br /><br />
-						Lobbyist<br /><br />
+Inspector<br />
+						Lobbyist<br />
 						Peace Corp
-Worker<br /><br />
+Worker<br />
 						Foreign Service
-Officer<br /><br />
+Officer<br />
 						Police
-Officer<br /><br />
+Officer<br />
 
-	Investigator<br /><br />
+	Investigator<br />
 						Security Guard</em>
 					</td>
 					<td width="25%">
 						<span
-class="header2">Social/Mental</span><br /><br />
+class="header2">Social/Mental</span><br />
 						<em>Public Health
 							<ul>
 
@@ -191,52 +190,52 @@ class="header2">Social/Mental</span><br /><br />
 	<li>Dental</li>
 							</ul>
 
-	Epidemiologist<br /><br />
+	Epidemiologist<br />
 
-	Psychologist<br /><br />
+	Psychologist<br />
 						Health Services
-Administrator<br /><br />
+Administrator<br />
 						Social
-Worker<br /><br />
+Worker<br />
 						Public Health Field
 Worker</em>
 					</td>
 					<td width="25%">
 						<span
-class="header2">Environmental</span><br /><br />
+class="header2">Environmental</span><br />
 						<em>Environmental
-Lawyer<br /><br />
+Lawyer<br />
 						Chemical
-Engineer<br /><br />
-						Ecologist<br /><br />
+Engineer<br />
+						Ecologist<br />
 						Environmental Health
-Inspector<br /><br />
+Inspector<br />
 
-	Meteorologist<br /><br />
+	Meteorologist<br />
 						Meteorologist
-Technician<br /><br />
+Technician<br />
 						Energy Management
-Technician<br /><br />
+Technician<br />
 						Waste Management
 Technician</em>
 					</td>
 					<td width="25%">
 						<span
-class="header2">Science/Medical</span><br /><br />
+class="header2">Science/Medical</span><br />
 						<em>Biological
-Scientist<br /><br />
+Scientist<br />
 
-	Optometrist<br /><br />
+	Optometrist<br />
 						Public Health
-Nurse<br /><br />
+Nurse<br />
 
-	Chiropractor<br /><br />
-						Dietitian<br /><br />
+	Chiropractor<br />
+						Dietitian<br />
 						Dental
-Hygienist<br /><br />
-						Paramedic<br /><br />
+Hygienist<br />
+						Paramedic<br />
 						Nurse's
-Aide<br /><br />
+Aide<br />
 						Ophthalmic Lab
 Technician</em>
 					</td>
@@ -245,6 +244,8 @@ Technician</em>
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -255,7 +256,7 @@ enthusiastic and who do not mind hard work.</p>
 <hr size="1" />
 
 <span class="header2">Occupational Health and Safety
-Specialist or Technician</span><br /><br />
+Specialist or Technician</span><br />
 	<img class="job_pic" src="/images/icons/GI/md000590.jpg"
 width="100" height="100" border="0" alt="Public Health Care
 Investigator" />
@@ -283,7 +284,7 @@ was $70,480 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<span class="header2">Police Officer</span><br /><br />
+<span class="header2">Police Officer</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Uniformed police officers have general law
 enforcement duties, including maintaining regular patrols and
@@ -303,7 +304,7 @@ $65,170 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Security Guard</span><br /><br />
+	<span class="header2">Security Guard</span><br />
 	<img class="job_pic" src="/images/icons/EG/43109.jpg"
 width="100" height="100" border="0" alt="Security Guard" />
 	<span class="header3">Job Description</span>
@@ -329,7 +330,7 @@ community well-being.</p>
 
 <hr size="1" />
 
-	<span class="header2">Dentist</span><br /><br />
+	<span class="header2">Dentist</span><br />
 	<img class="job_pic" src="/images/icons/GH/C506031.jpg"
 width="100" height="100" border="0" alt="Dentist" />
 	<span class="header3">Job Description</span>
@@ -353,7 +354,7 @@ in May 2019. </blockquote>
 
 <hr size="1" />
 
-<span class="header2">Medical Doctor</span><br /><br />
+<span class="header2">Medical Doctor</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Physicians and surgeons diagnose illnesses and
 prescribe and administer treatment for people suffering from injury
@@ -371,7 +372,7 @@ $208,000 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Public Health Social
-Worker</span><br /><br />
+Worker</span><br />
 	<img class="job_pic" src="/images/icons/EG/1212.jpg"
 width="100" height="100" border="0" alt="Public Health Social
 Worker" />
@@ -403,7 +404,7 @@ research and explore nature.</p>
 
 <hr size="1" />
 
-	<span class="header2">Lawyer</span><br /><br />
+	<span class="header2">Lawyer</span><br />
 	<img class="job_pic" src="/images/icons/BH/43286.jpg"
 width="100" height="100" border="0" alt="Lawyer" />
 	<span class="header3">Job Description</span>
@@ -428,7 +429,7 @@ in May 2019. </blockquote>
 
 <hr size="1" />
 
-		<span class="header2">Ecologist</span><br /><br />
+		<span class="header2">Ecologist</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>An ecologist is a scientist who studies the
 effect that people and animals have on the earth's environment.  If
@@ -447,7 +448,7 @@ in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Meteorologist</span><br /><br />
+	<span class="header2">Meteorologist</span><br />
 	<img class="job_pic" src="/images/icons/AF/1265.jpg"
 width="100" height="100" border="0" alt="Meteorologist" />
 	<span class="header3">Job Description</span>
@@ -475,7 +476,7 @@ $95,380 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Registered Nurse</span><br /><br />
+	<span class="header2">Registered Nurse</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Registered nurses (RNs), regardless of specialty
 or work setting, treat patients, educate patients and the public
@@ -499,7 +500,7 @@ $73,300 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<span class="header2">Dietitian/Nutritionist</span><br /><br />
+<span class="header2">Dietitian/Nutritionist</span><br />
 	<img class="job_pic" src="/images/icons/FI/18272.jpg"
 width="100" height="100" border="0" alt="Recreation Therapist" />
 		<span class="header3">Job Description</span>
@@ -522,7 +523,7 @@ dietitians/nutritionists was $61,270 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Paramedic / Emergency Medical
-Technician</span><br /><br />
+Technician</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>People's lives often depend on the quick
 reaction and competent care of emergency medical technicians (EMTs)
@@ -546,4 +547,6 @@ $35,400 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 23, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 23, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 23, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 23, 2020). </blockquote>
+
+</div>

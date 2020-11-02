@@ -44,11 +44,12 @@
 						<!-- <p><a href="<%= request.url %><%= params.count > 0 ? '&export=true' : '?export=true' %>" class="btn btn-success" >Export</a>
 						</p> -->
 					</div>
+					<form method="post">
 					<div class="col">
 						<p><strong>Individual Reports</strong></p>
 						<p><a href="/arng/schools/<%= @school.id %>/ind_report" class="btn btn-success" >Export</a></p>
 					</div>
-				
+					</form>
 				</div>
 			</div>
 		</div>

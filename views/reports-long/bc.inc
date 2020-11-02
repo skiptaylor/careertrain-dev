@@ -1,5 +1,5 @@
-<span class="header1">Arts/Communications paired with
-Business/Management (BC)</span>
+<p class="header1">Arts/Communications paired with
+Business/Management (BC)</p>
 
 <p>A "BC" pairing indicates that you are a "fun" person. You are
 able to work with many different types of people and, more than
@@ -121,19 +121,19 @@ what you want to do when you are an adult.</p>
 <p><strong>Here are some career possibilities for you to
 explore:</strong></p>
 
-<table width="100%" cellpadding="20" cellspacing="0" border="0">
+<table width="100%" cellpadding="10" cellspacing="0" border="0">
 	<tr>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">BC Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
-				<tr bgcolor="#FFF9D8">
+				<tr bgcolor="#FFF9D8" border="0">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -142,82 +142,65 @@ align="right"><strong>More Technical Oriented</strong></td>
 	</tr>
 	<tr>
 		<td bgcolor="#D3EEF5" align="center" width="50">
-			<table border="0" cellpadding="0"
-cellspacing="0" height="400">
-				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
-				<tr align="center"
-height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
-				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
-			</table>
+						<table border="0" cellpadding="0" cellspacing="0" height="">
+							<tr align="center" height="33%"><td align="center"><strong>More<br /><br /><br /></strong></td></tr>
+							<tr align="center" height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong><br /><br />  </td></tr>
+							<tr align="center" height="33%"><td><strong><br />Less</strong></td></tr>
+						</table>
 		</td>
 		<td valign="top">
-			<table border="0" cellspacing="3"
-cellpadding="0" width="100%">
-				<tr valign="top">
+			<table border="0" cellspacing="3" cellpadding="0" width="100%">
+				<tr valign="top" class="main">
 					<td width="33%">
 						<span
-class="header2">Creative Business</span><br /><br />
-						<em>Art
-Director<br /><br />
-						Chef<br /><br />
-
-	Illustrator<br /><br />
-						Graphic
-Artist<br /><br />
-						Art
-Dealer<br /><br />
-						Interior
-Designer<br /><br />
-
-	Buyer/Merchandiser<br /><br />
-
-	Hair Stylist<br /><br />
-						Wedding
-Consultant<br /><br />
-						Fashion
-Coordinator<br /><br />
+class="header2">Creative Business</span><br />
+						<em>Art Director<br />
+						Chef<br />
+						Illustrator<br />
+						Graphic Artist<br />
+						Art Dealer<br />
+						Interior Designer<br />
+						Buyer/Merchandiser<br />
+						Hair Stylist<br />
+						Wedding Consultant<br />
+						Fashion Coordinator<br />
 						Restaurateur</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Communications Business</span><br /><br />
+class="header2">Communications Business</span><br />
 						<em>Public Relations
-Specialist<br /><br />
+Specialist<br />
 						Publicist/Press
-Agent<br /><br />
+Agent<br />
 						Television
-Broadcaster<br /><br />
+Broadcaster<br />
 						Advertising
-Production Manager<br /><br />
+Production Manager<br />
 						Media Production
-Specialist<br /><br />
+Specialist<br />
 						Advertising
-Copywriter<br /><br />
+Copywriter<br />
 						Talk Show
-Host<br /><br />
+Host<br />
 						Disc
-Jockey<br /><br />
+Jockey<br />
 						Radio/TV Traffic
-Manager<br /><br />
+Manager<br />
 						Photographer</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Entertainment Business</span><br /><br />
+class="header2">Entertainment Business</span><br />
 						<em>Book Publishing
-Professional<br /><br />
+Professional<br />
 						Media
-Specialist<br /><br />
+Specialist<br />
 
-	Photojournalist<br /><br />
-						Television Set
-Director<br /><br />
-						Video Production
-Assistant<br /><br />
-						Crossword Puzzle
-Maker<br /><br />
+	Photojournalist<br />
+						Television Set	Director<br />
+						Video Production Assistant<br />
+						Crossword Puzzle	Maker<br />
 						Technician
 							<ul>
 
@@ -227,14 +210,18 @@ Maker<br /><br />
 
 	<li>Stage</li>
 							</ul>
-						Production
-Assistant</em>
+						Production Assistant</em>
 					</td>
 				</tr>
 			</table>
 		</td>
 	</tr>
 </table>
+
+
+<div class="inner">
+	
+	
 
 <hr size="1" />
 
@@ -245,7 +232,7 @@ talent with practical business sense.</p>
 
 <hr size="1" />
 
-	<span class="header2">Chef</span><br /><br />
+	<span class="header2">Chef</span><br />
 	<img class="job_pic" src="/images/icons/BC/43009.jpg"
 width="100" height="100" border="0" alt="Chef" />
 	<span class="header3">Job Description</span>
@@ -266,7 +253,7 @@ May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Illustrator</span><br /><br />
+	<span class="header2">Illustrator</span><br />
 	<img class="job_pic" src="/images/icons/BC/43312.jpg"
 width="100" height="100" border="0" alt="Illustrator" />
 	<span class="header3">Job Description</span>
@@ -286,7 +273,7 @@ school is a definite advantage.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Interior Designer</span><br /><br />
+	<span class="header2">Interior Designer</span><br />
 	<img class="job_pic" src="/images/icons/BC/43032.jpg"
 width="100" height="100" border="0" alt="Interior Designer" />
 	<span class="header3">Job Description</span>
@@ -313,7 +300,7 @@ Here are three examples.</p>
 
 <hr size="1" />
 
-	<span class="header2">News Reporter</span><br /><br />
+	<span class="header2">News Reporter</span><br />
 	<img class="job_pic" src="/images/icons/BC/C506027.jpg"
 width="100" height="100" border="0" alt="News Reporter" />
 	<span class="header3">Job Description</span>
@@ -335,7 +322,7 @@ $46,270 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Public Relations
-Manager/Specialist</span><br /><br />
+Manager/Specialist</span><br />
 	<img class="job_pic" src="/images/icons/BC/C1737_31.jpg"
 width="100" height="100" border="0" alt="Advertising Copywriter" />
 	<span class="header3">Job Description</span>
@@ -357,7 +344,7 @@ understand business and have good people skills.</p>
 
 <hr size="1" />
 
-	<span class="header2">Talent Agent</span><br /><br />
+	<span class="header2">Talent Agent</span><br />
 	<img class="job_pic" src="/images/icons/BC/43321.jpg"
 width="100" height="100" border="0" alt="Talent Agent" />
 	<span class="header3">Job Description</span>
@@ -375,7 +362,7 @@ see and be able to search out opportunities.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Theater Director</span><br /><br />
+	<span class="header2">Theater Director</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>When you go to a theater to see a play, you see
 the actors working. You do not see others working behind the stage
@@ -388,7 +375,7 @@ bachelor's degree and several years of theater-related experience.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Set and Exhibit Designer</span><br /><br />
+	<span class="header2">Set and Exhibit Designer</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>It takes many people to create movies, TV programs, plays and exhibits. A set and exhibit designer is one of these people. They work behind the scenes. They study scripts and do research in order to create a design that will be used to construct an appropriate exhibit or set.</blockquote>
 	<span class="header3">Education</span>
@@ -399,4 +386,6 @@ many independent centers, such as the American Film Institute, offer training pr
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 10, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 10, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 10, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 10, 2020). </blockquote>
+
+</div>

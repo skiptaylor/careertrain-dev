@@ -1,5 +1,5 @@
-<span class="header1">Public Service paired with Social/Helping (GI)
-</span>
+<p class="header1">Public Service paired with Social/Helping (GI)
+</p>
 
 <p>Your high scores in "G" and "I" show that you are headed for a
 rewarding career.  You will be highly valued in the work force.  You
@@ -118,12 +118,12 @@ what you want to do when you are an adult.</p>
 <p><strong>Here are some career possibilities for you to
 explore:</strong></p>
 
-<table width="100%" cellpadding="20" cellspacing="0" border="0">
+<table width="100%" cellpadding="10" cellspacing="0" border="0">
 	<tr>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">GI Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
@@ -139,41 +139,41 @@ align="right"><strong>More Technical Oriented</strong></td>
 	</tr>
 	<tr>
 		<td bgcolor="#D3EEF5" align="center" width="50">
-			<table border="0" cellpadding="0"
-cellspacing="0" height="400">
-				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
-				<tr align="center"
-height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
-				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
-			</table>
+						<table border="0" cellpadding="0"
+			cellspacing="0" height="">
+							<tr align="center"
+			height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
+							<tr align="center"
+			height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong><br /><br /><br /></td></tr>
+							<tr align="center"
+			height="33%"><td><strong><br />Less</strong></td></tr>
+						</table>
 		</td>
 		<td valign="top">
 			<table border="0" cellspacing="3"
 cellpadding="0" width="100%">
-				<tr valign="top">
+				<tr valign="top" class="main">
 					<td width="25%">
 						<span
-class="header2">Education</span><br /><br />
+class="header2">Education</span><br />
 
-	<em>Teacher<br /><br />
+	<em>Teacher<br />
 						Public Health
-Education<br /><br />
+Education<br />
 						Police
-Academy<br /><br />
+Academy<br />
 
-	Instructor<br /><br />
+	Instructor<br />
 						School
-Counselor<br /><br />
+Counselor<br />
 						Training
-Specialist<br /><br />
+Specialist<br />
 						Library
 Technician</em>
 					</td>
 					<td width="25%">
 						<span
-class="header2">Social Service</span><br /><br />
+class="header2">Social Service</span><br />
 						<em>Social Worker
 							<ul>
 
@@ -203,7 +203,7 @@ Worker</em>
 					</td>
 					<td width="25%">
 						<span
-class="header2">Public Service</span><br /><br />
+class="header2">Public Service</span><br />
 						<em>Lawyer
 							<ul>
 
@@ -211,31 +211,31 @@ class="header2">Public Service</span><br /><br />
 
 	<li>Judge</li>
 							</ul>
-						Paralegal<br /><br />
+						Paralegal<br />
 						Police
-Officer<br /><br />
+Officer<br />
 
-	Firefighter<br /><br />
+	Firefighter<br />
 						Political Campaign
-Worker<br /><br />
+Worker<br />
 						Flight Attendant</em>
 					</td>
 					<td width="25%">
 						<span
-class="header2">Health Care</span><br /><br />
+class="header2">Health Care</span><br />
 						<em>Public Health
-Investigator<br /><br />
+Investigator<br />
 						Rehabilitation
-Counselor<br /><br />
-						Paramedic<br /><br />
+Counselor<br />
+						Paramedic<br />
 						Community Health
-Nurse<br /><br />
+Nurse<br />
 						Medical
-Assistant<br /><br />
+Assistant<br />
 						Patient
-Representative<br /><br />
+Representative<br />
 						Nursing
-Aide<br /><br />
+Aide<br />
 						Home Health Aide</em>
 					</td>
 				</tr>
@@ -243,6 +243,8 @@ Aide<br /><br />
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -252,7 +254,7 @@ as schools or colleges.</p>
 
 <hr size="1" />
 
-<span class="header2">Social Studies Teacher</span><br /><br />
+<span class="header2">Social Studies Teacher</span><br />
 		<span class="header3">Job Description</span>
 	<blockquote>A teacher shares information with
 others.  As a social studies teacher, you would use your knowledge
@@ -277,7 +279,7 @@ teachers was $60,247 in May 2019. </blockquote>
 <hr size="1" />
 
 
-<span class="header2">School Counselor</span><br /><br />
+<span class="header2">School Counselor</span><br />
 		<span class="header3">Job Descriptions</span>
 	<blockquote>School counselors assist students of all levels,
 from elementary school to postsecondary education. They advocate for
@@ -298,7 +300,7 @@ $57,040 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Library Technician</span><br /><br />
+	<span class="header2">Library Technician</span><br />
 	<img class="job_pic" src="/images/icons/GI/43282.jpg"
 width="100" height="100" border="0" alt="Library Technician" />
 	<span class="header3">Job Description</span>
@@ -326,7 +328,7 @@ involved with people.</p>
 <hr size="1" />
 
 <span class="header2">Public Health Social
-Worker</span><br /><br />
+Worker</span><br />
 	<img class="job_pic" src="/images/icons/EG/1212.jpg"
 width="100" height="100" border="0" alt="Public Health Social
 Worker" />
@@ -353,7 +355,7 @@ workers was $59,300 in May 2019. </blockquote>
 <hr size="1" />
 
 <span class="header2">Clergy (Pastor, Priest, Rabbi)
-</span><br /><br />
+</span><br />
 	<img class="job_pic" src="/images/icons/EI/43007.jpg"
 width="100" height="100" border="0" alt="Chaplain" />
 	<span class="header3">Job Description</span>
@@ -373,7 +375,7 @@ in May 2019.</blockquote>
 <hr size="1" />
 
 <span class="header2">Human Resources Manager
-</span><br /><br />
+</span><br />
 	<img class="job_pic" src="/images/icons/FG/43222.jpg"
 width="100" height="100" border="0" alt="Industrial Labor Relations
 Specialist" />
@@ -402,7 +404,7 @@ managers was $116,720 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<span class="header2">Paralegal</span><br /><br />
+<span class="header2">Paralegal</span><br />
 	<img class="job_pic" src="/images/icons/BD/43286.jpg"
 width="100" height="100" border="0" alt="Paralegal" />
 	<span class="header3">Job Description</span>
@@ -426,7 +428,7 @@ in May 2019. </blockquote>
 <hr size="1" />
 
 
-<span class="header2">Police Officer</span><br /><br />
+<span class="header2">Police Officer</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Uniformed police officers have general law
 enforcement duties, including maintaining regular patrols and
@@ -446,7 +448,7 @@ $65,170 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Flight Attendant</span><br /><br />
+	<span class="header2">Flight Attendant</span><br />
 	<img class="job_pic" src="/images/icons/BG/1216.jpg"
 width="100" height="100" border="0" alt="Flight Attendant" />
 	<span class="header3">Job Description</span>
@@ -477,7 +479,7 @@ by providing health care.</p>
 <hr size="1" />
 
 	<span class="header2">Occupational Health and Safety
-Specialist or Technician</span><br /><br />
+Specialist or Technician</span><br />
 	<img class="job_pic" src="/images/icons/GI/md000590.jpg"
 width="100" height="100" border="0" alt="Public Health Care
 Investigator" />
@@ -505,7 +507,7 @@ and safety specialists was $74,100 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Rehabilitation
-Counselor</span><br /><br />
+Counselor</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As a rehabilitation counselor, you would help a
 patient who has had a severe injury or trauma to deal with his/her
@@ -531,7 +533,7 @@ counselors was $35,950 in May 2019. </blockquote>
 
 
 	<span class="header2">Licensed Practical / Licensed
-Vocational Nurse</span><br /><br />
+Vocational Nurse</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>LPNs care for patients in many ways. Often, they
 provide basic bedside care. Many LPNs measure and record patients'
@@ -555,4 +557,6 @@ licensed vocational nurses was $47,480 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 23, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 23, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 23, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 23, 2020). </blockquote>
+
+</div>

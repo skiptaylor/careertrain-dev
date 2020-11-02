@@ -34,5 +34,7 @@ gem 'rack-recaptcha', require: 'rack/recaptcha'
 
 gem 'pdfkit', '~> 0.8.4.3.1'
 gem 'wkhtmltopdf-binary', '~> 0.12.6.2'
+gem 'wkhtmltopdf-heroku', '~> 2.12', '>= 2.12.6.0'
 
 gem 'sendgrid-ruby'
+

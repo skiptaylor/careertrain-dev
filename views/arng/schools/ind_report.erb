@@ -16,81 +16,118 @@
 	p	{
 		line-height: 1.15em;
 		margin-bottom: 6px;
+		font-weight: 300;
+		font-family: helvetica;
 	}
 	
-	.header1	{
-		font-size: 18px;
-		font-weight: 600;
-		text-align: center;
-		margin-bottom: 6px;
+	.headsm	{
+		font-weight: 900;
+		margin-bottom: 3px;
 	}
-	
-	.header2	{
-		font-size: 15px;
-		font-weight: 600;
-	}
-	
 	h5	{
 		font-size: 18px;
-		font-weight: 600;
+		font-weight: 900;
+	}
+	strong	{
+		font-weight: 900;
 	}
 	ul	{
 		margin-bottom: 1px;
 	}
+	ul li	{
+		font-family: helvetica;
+		padding: 0;
+		margin-top: 1px;
+		font-weight: 300;
+	}
+	
+	tr.main td	{
+		font-family: helvetica;
+		line-height: 24px;
+		font-weight: 300;
+	}
+	tr.main td ul li	{
+		line-height: 18px;
+		font-weight: 300;
+	}
 	td {
+		border: 0;
+		font-family: helvetica;
 		margin-top: 0px;
 	}
 	
 	.lead	{
-		font-weight: 600;
+		font-family: helvetica;
+		font-weight: 900;
+		text-align: center;
 	}
 	
 	table tr td	{
-		font-size: 13px;
+		border: 0;
+		font-family: helvetica;
+		font-size: 14px;
 		line-height: 16px;
 		height: 0px;
 		margin-top: 0;
 		padding-top: 0;
+		font-weight: 300;
 	}
 	
 	table.side tr td	{
+		border: 0;
+		background-color: white;
+		font-family: helvetica;
 		font-size: 12px;
 		height: 0px;
-		
+		font-weight: 300;
 	}
 	
-	tr	{
-		
+	table.side tr th	{
+		background-color: white;
+		font-family: helvetica;
+		font-size: 12px;
+		height: 0px;
+		font-weight: 600;
 	}
 	
 	div.inner	{
 		display: none;
 	}
 	
-	div.inter p	{
-		margin: 3px;
+	.header1	{
+		font-family: helvetica;
+		font-size: 18px;
+		font-weight: 900;
+		text-align: center;
+		margin-bottom: 6px;
 	}
 	
-	
-	@media print {
-	  .pager {page-break-after: always; margin: 0;}
+	.header2	{
+		font-family: helvetica;
+		font-size: 15px;
+		font-weight: 900;
 	}
+	
 </style>
 
 </head>
 
 <body>
-
+	<!-- <form method="post">
+	<button type="submit">Export</button>
+	</form> -->
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				
+				 
 				<% if @school.students.sort_by(&:middle_name).each do |student| %>
 				<% if student.created_on == @school.class_date %>
 				
-				<br />
+				<div style="page-break-after: always;">
 					
-				<div style="float: right;"><strong>Date:</strong> &nbsp;&nbsp;<%= Time.now.strftime("%m/%d/%Y") %></div>
+				<div style="float: right;"><form method="post">
+	<button type="submit">Export</button>
+	</form><strong>Date:</strong> &nbsp;&nbsp;<%= Time.now.strftime("%m/%d/%Y") %></div>
 				<h6><strong><span class="logo-e">e</span>CD</strong> Inventory Student Planning Report</h6>
 				
 				<p><strong>School: &nbsp;&nbsp;<%= @school.school_name %></strong> - <%= @school.school_address1 %> <%= @school.school_address2 %>, <%= @school.school_city %>, <%= @school.school_state %> &nbsp;<%= @school.school_zip %> &nbsp;&nbsp;- &nbsp;&nbsp;<strong>Rep:</strong> <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %></p>
@@ -123,19 +160,14 @@
 			    <% end %>
 				
   		    	<% end %>
+				</div>
 				
-				<div class="pager"><hr /></div>
 				<% end %>
 				
 				
 				<% end %>
 				
 			
-			</div>
-			
-		</div>
-		
-	</div> <!-- /container -->
-
+</div></div></div>
 </body>
 </html>

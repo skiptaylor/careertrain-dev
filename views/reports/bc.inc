@@ -1,3 +1,4 @@
+
 	<div class="row">
 		<div class="col-md-12">
 			<p class="lead">Arts/Communications paired with Business/Management (BC)</p>
@@ -12,10 +13,11 @@
 			need much direction on how to complete a task or assignment because
 			you combine creativity with the ability to get things done. You are
 			likely to be very dedicated to your work.</p>
+			
 			<p>Most occupations in this pairing require at least a bachelor's
 			degree. Some require post high school courses.</p>
-			<p><strong>Courses you may want to consider taking in high school
-			and beyond (in addition to Math & English):</strong><br />
+			
+			<p><strong>Courses you may want to consider taking in high school and beyond (in addition to Math & English):</strong><br />
 			In high school you will want to take classes that will help you
 			express yourself better and help you understand others. Writing
 			courses will be appropriate. Also, you might consider taking public

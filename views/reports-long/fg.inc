@@ -1,5 +1,4 @@
-<div class="header1">Technology paired with Public Service (FG)
-</div>
+<p class="header1">Technology paired with Public Service (FG)</p>
 
 <p>You will be a valued member of the work force. You are very
 community minded and prefer a "hands-on" approach. You want to make
@@ -9,9 +8,8 @@ and tools.</p>
 <p>Most occupations in this pairing require at least a bachelor's
 degree. It is helpful to have a master's degree or Ph.D. if you hope
 to work in some of these occupations.</p>
-<p><strong>Courses you may want to take in high school and beyond
-(in addition to English & Math):</strong><br />
-In high school you should take courses that will help you
+<p class="headsm">Courses you may want to take in high school and beyond (in addition to English & Math):</p>
+<p>In high school you should take courses that will help you
 understand people, machines, and tools. Technology courses such as
 computer science and programming will be of interest to you.</p>
 
@@ -129,7 +127,7 @@ explore.</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">FG Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
@@ -148,9 +146,9 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="">
 				<tr align="center"
-height="33%"><td><strong>More<br /><br /><br /><br /><br /><br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong><br /><br /><br /><br /><br /></td></tr>
+height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong><br /><br /><br /></td></tr>
 				<tr align="center"
 height="33%"><td><strong><br />Less</strong></td></tr>
 			</table>
@@ -158,10 +156,10 @@ height="33%"><td><strong><br />Less</strong></td></tr>
 		<td valign="top">
 			<table border="0" cellspacing="3"
 cellpadding="0" width="100%">
-				<tr valign="top">
+				<tr valign="top" class="main">
 					<td width="33%">
 						<span
-class="header2">Community Service</span><br /><br />
+class="header2">Community Service</span><br />
 						<em>Inspector
 							<ul>
 
@@ -170,26 +168,26 @@ class="header2">Community Service</span><br /><br />
 	<li>Public Works</li>
 							</ul>
 						Land
-Surveyor<br /><br />
+Surveyor<br />
 						Environmental Grass
-Roots Coordinator<br /><br />
+Roots Coordinator<br />
 						Police
-Officer<br /><br />
+Officer<br />
 						Immigration
-Inspector<br /><br />
+Inspector<br />
 
-	Firefighter<br /><br />
+	Firefighter<br />
 						Recreation
-Worker<br /><br />
+Worker<br />
 						Bus
-Driver<br /><br />
+Driver<br />
 						Subway Operator</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Technical Service</span><br /><br />
+class="header2">Technical Service</span><br />
 						<em>Industrial Labor
-Relations Specialist<br /><br />
+Relations Specialist<br />
 						Engineer
 							<ul>
 
@@ -200,37 +198,37 @@ Relations Specialist<br /><br />
 	<li>Structural</li>
 							</ul>
 						Hazardous Waste
-Management<br /><br />
+Management<br />
 						Plant Safety
-Specialist<br /><br />
+Specialist<br />
 						Equipment
-Specialist<br /><br />
+Specialist<br />
 						Tour Boat
-Captain<br /><br />
+Captain<br />
 						Broadcast
-Technician<br /><br />
+Technician<br />
 						Waste Management
 Technician</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Nature/Wildlife Service</span><br /><br />
+class="header2">Nature/Wildlife Service</span><br />
 
-	<em>Environmentalist<br /><br />
+	<em>Environmentalist<br />
 						Environmental
-Protection Specialist<br /><br />
+Protection Specialist<br />
 						Historic
-Preservationist<br /><br />
+Preservationist<br />
 						Park
-Ranger<br /><br />
+Ranger<br />
 						Recreation
-Administrator<br /><br />
+Administrator<br />
 						Nature
-Interpreter<br /><br />
+Interpreter<br />
 						Zoo
-Keeper<br /><br />
+Keeper<br />
 						Recreations Site
-Developer<br /><br />
+Developer<br />
 						Ranger Aide</em>
 					</td>
 				</tr>
@@ -252,7 +250,7 @@ technology, these may be good occupations for you.</p>
 <hr size="1" />
 
 	<span class="header2">Construction and Building
-Inspector</span><br /><br />
+Inspector</span><br />
 	<img class="job_pic" src="/images/icons/FG/43241.jpg"
 width="100" height="100" border="0" alt="Building Inspector" />
 	<span class="header3">Job Description</span>
@@ -276,7 +274,7 @@ was $60,710 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Land Surveyor</span><br /><br />
+	<span class="header2">Land Surveyor</span><br />
 	<img class="job_pic" src="/images/icons/FG/43169.jpg"
 width="100" height="100" border="0" alt="Land Surveyor" />
 	<span class="header3">Job Description</span>
@@ -298,7 +296,7 @@ $63,420 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Firefighter</span><br /><br />
+	<span class="header2">Firefighter</span><br />
 	<img class="job_pic" src="/images/icons/FG/1392.jpg"
 width="100" height="100" border="0" alt="Firefighter" />
 	<span class="header3">Job Description</span>
@@ -326,7 +324,7 @@ and industry.</p>
 <hr size="1" />
 
 	<span class="header2">Human Resources Manager
-</span><br /><br />
+</span><br />
 	<img class="job_pic" src="/images/icons/FG/43222.jpg"
 width="100" height="100" border="0" alt="Industrial Labor Relations
 Specialist" />
@@ -349,7 +347,7 @@ managers was $116,720 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Civil Engineer</span><br /><br />
+	<span class="header2">Civil Engineer</span><br />
 	<img class="job_pic" src="/images/icons/FG/43243.jpg"
 width="100" height="100" border="0" alt="Civil Engineer" />
 	<span class="header3">Job Description</span>
@@ -372,7 +370,7 @@ $87,060 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Fitness Worker</span><br /><br />
+	<span class="header2">Fitness Worker</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Fitness workers lead, instruct, and motivate
 individuals or groups in exercise activities including
@@ -395,7 +393,7 @@ $40,390 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Computer Support
-Specialist</span><br /><br />
+Specialist</span><br />
 		<span class="header3">Job Description</span>
 	<blockquote>Computer support specialists provide technical
 assistance, support, and advice to customers and other users. This
@@ -427,7 +425,7 @@ occupations may be for you.</p>
 <hr size="1" />
 
 	<span
-class="header2">Urban and Regional Planner</span><br /><br />
+class="header2">Urban and Regional Planner</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Urban and regional planners develop long- and
 short-term plans for the use of land and the growth and
@@ -448,7 +446,7 @@ $74,350 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Environmental Scientist
-</span><br /><br />
+</span><br />
 	<img class="job_pic" src="/images/icons/FG/1285.jpg"
 width="100" height="100" border="0" alt="Environmental Scientist" />
 	<span class="header3">Job Description</span>

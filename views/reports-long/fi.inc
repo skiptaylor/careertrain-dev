@@ -1,5 +1,5 @@
-<span class="header1">Technology paired with Social/Helping (FI)
-</span>
+<p class="header1">Technology paired with Social/Helping (FI)
+</p>
 
 <p>Your high scores in "F" and "I" show that you have
 characteristics that are useful to people.  You will be highly
@@ -121,12 +121,12 @@ what you want to do when you are an adult.</p>
 <p><strong>Here are some career possibilities for you to
 explore:</strong></p>
 
-<table width="100%" cellpadding="20" cellspacing="0" border="0">
+<table width="100%" cellpadding="10" cellspacing="0" border="0">
 	<tr>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">FI Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
@@ -142,26 +142,25 @@ align="right"><strong>More Technical Oriented</strong></td>
 	</tr>
 	<tr>
 		<td bgcolor="#D3EEF5" align="center" width="50">
-			<table border="0" cellpadding="0"
-cellspacing="0" height="400">
-				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
-				<tr align="center"
-height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
-				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
-			</table>
+						<table border="0" cellpadding="0"
+			cellspacing="0" height="">
+							<tr align="center"
+			height="33%"><td><strong>More<br /><br /><br /><br /><br /></strong></td></tr>
+							<tr align="center"
+			height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong><br /><br /><br /><br /></td></tr>
+							<tr align="center"
+			height="33%"><td><strong><br />Less</strong></td></tr>
+						</table>
 		</td>
 		<td valign="top">
-			<table border="0" cellspacing="3"
-cellpadding="0" width="100%">
-				<tr valign="top">
+			<table border="0" cellspacing="3" cellpadding="0" width="100%">
+				<tr valign="top" class="main">
 					<td width="33%">
 
 						<span
-class="header2">Education & Instruction</span><br /><br />
+class="header2">Education & Instruction</span><br />
 						<em>College
-Professor<br /><br />
+Professor<br />
 						Teacher
 							<ul>
 
@@ -176,8 +175,8 @@ Professor<br /><br />
 	<li>Physical Education</li>
 							</ul>
 						Sports & Fitness
-Trainer<br /><br />
-						Coach<br /><br />
+Trainer<br />
+						Coach<br />
 						Instructor
 							<ul>
 
@@ -194,42 +193,42 @@ Trainer<br /><br />
 					</td>
 					<td width="33%">
 						<span
-class="header2">Social Helping</span><br /><br />
+class="header2">Social Helping</span><br />
 						<em>Public Health
-Administrator<br /><br />
+Administrator<br />
 						Environmental
-Lawyer<br /><br />
+Lawyer<br />
 						Social
-Worker<br /><br />
-						Nurse<br /><br />
+Worker<br />
+						Nurse<br />
 						Recreational
-Therapist<br /><br />
+Therapist<br />
 						Dental
-Hygienist<br /><br />
-						Paramedic<br /><br />
+Hygienist<br />
+						Paramedic<br />
 						Police
-Officer<br /><br />
+Officer<br />
 						Military
-Police<br /><br />
+Police<br />
 						Flight
-Attendant<br /><br />
+Attendant<br />
 						Barber</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Technology Helping</span><br /><br />
+class="header2">Technology Helping</span><br />
 
-	<em>Veterinarian<br /><br />
+	<em>Veterinarian<br />
 						Medical Equipment
-Designer<br /><br />
+Designer<br />
 						Park
-Ranger<br /><br />
+Ranger<br />
 
-	Firefighter<br /><br />
+	Firefighter<br />
 						Military Teletype
-Operator<br /><br />
+Operator<br />
 						Computer
-Trainer<br /><br />
+Trainer<br />
 						Craftsperson
 							<ul>
 
@@ -242,7 +241,7 @@ Trainer<br /><br />
 	<li>Air Conditioning</li>
 							</ul>
 						Appliance Repair
-Technician<br /><br />
+Technician<br />
 						Electronics
 Technician</em>
 					</td>
@@ -251,6 +250,8 @@ Technician</em>
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -261,7 +262,7 @@ technology and to help other people.</p>
 <hr size="1" />
 
 	<span class="header2">Health Educator
-</span><br /><br />
+</span><br />
 	<img class="job_pic" src="/images/icons/FI/1076.jpg"
 width="100" height="100" border="0" alt="Physical Education
 Teacher" />
@@ -287,7 +288,7 @@ $46,910 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Fitness Worker</span><br /><br />
+	<span class="header2">Fitness Worker</span><br />
 	<img class="job_pic" src="/images/icons/FI/C1207_25.jpg"
 width="100" height="100" border="0" alt="Aerobic Exercise
 Instructor" />
@@ -311,7 +312,7 @@ $40,390 in May 2019. </blockquote>
 <hr size="1" />
 
 
-<span class="header2">Dietitian/Nutritionist</span><br /><br />
+<span class="header2">Dietitian/Nutritionist</span><br />
 	<img class="job_pic" src="/images/icons/FI/18272.jpg"
 width="100" height="100" border="0" alt="Recreation Therapist" />
 		<span class="header3">Job Description</span>
@@ -339,7 +340,7 @@ helpful, and outgoing.</p>
 <hr size="1" />
 
 	<span class="header2">Medical and Health Services
-Manager</span><br /><br />
+Manager</span><br />
 	<img class="job_pic" src="/images/icons/FI/C506006.jpg"
 width="100" height="100" border="0" alt="Public Health
 Administrator" />
@@ -365,7 +366,7 @@ services managers was $100,980 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<span class="header2">Teacher</span><br /><br />
+<span class="header2">Teacher</span><br />
 		<span class="header3">Job Description</span>
 	<blockquote>Teachers play an important role in fostering the
 intellectual and social development of children during their
@@ -391,7 +392,7 @@ through high school) was $60,247 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Barber or
-Cosmetologist</span><br /><br />
+Cosmetologist</span><br />
 	<img class="job_pic" src="/images/icons/FI/43008.jpg"
 width="100" height="100" border="0" alt="Barber or Cosmetologist" />
 	<span class="header3">Job Description</span>
@@ -418,7 +419,7 @@ animals and people.</p>
 
 <hr size="1" />
 
-	<span class="header2">Veterinarian</span><br /><br />
+	<span class="header2">Veterinarian</span><br />
 	<img class="job_pic" src="/images/icons/FI/43132.jpg"
 width="100" height="100" border="0" alt="Veterinarian" />
 	<span class="header3">Job Description</span>
@@ -441,7 +442,7 @@ $95,460 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Dental Assistant</span><br /><br />
+	<span class="header2">Dental Assistant</span><br />
 		<span class="header3">Job Description</span>
 	<blockquote>Dental assistants sterilize and disinfect
 instruments and equipment, prepare and lay out the instruments and
@@ -464,7 +465,7 @@ $40,080 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Registered Nurse</span><br /><br />
+	<span class="header2">Registered Nurse</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Registered nurses (RNs), regardless of specialty
 or work setting, treat patients, educate patients and the public
@@ -487,4 +488,6 @@ $73,300 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 22, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 22, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 22, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 22, 2020). </blockquote>
+
+</div>
