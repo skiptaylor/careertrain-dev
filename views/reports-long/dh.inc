@@ -134,14 +134,14 @@ explore:</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">DH Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -153,11 +153,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -166,9 +166,9 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Administrative Services</span><br /><br />
+class="header2">Administrative Services</span><br />
 						<em>Medical Record
-Administrator<br /><br />
+Administrator<br />
 						Medical
 							<ul>
 
@@ -181,58 +181,58 @@ Administrator<br /><br />
 	<li>Receptionist</li>
 							</ul>
 						Pharmacist's
-Assistant<br /><br />
+Assistant<br />
 						Research
-Assistant<br /><br />
+Assistant<br />
 						Laboratory/Clinic
-Manager<br /><br />
+Manager<br />
 						Medical Office
-Manager<br /><br />
+Manager<br />
 						Human Service
-Worker<br /><br />
+Worker<br />
 						Medical Coding
 Specialist</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Medical Services</span><br /><br />
+class="header2">Medical Services</span><br />
 						<em>Geriatric
-Assessment Coordinator<br /><br />
+Assessment Coordinator<br />
 						Physician's
-Assistant<br /><br />
+Assistant<br />
 						Nurse
-Supervisor<br /><br />
+Supervisor<br />
 						Research
-Analyst<br /><br />
+Analyst<br />
 						Medical
-Librarian<br /><br />
+Librarian<br />
 						Dental
-Hygienist<br /><br />
+Hygienist<br />
 						Science
-Technician<br /><br />
+Technician<br />
 						Laboratory
-Technologist<br /><br />
+Technologist<br />
 						Licensed Practical
-Nurse<br /><br />
+Nurse<br />
 						Outpatient
-Coordinator<br /><br />
+Coordinator<br />
 						Home Health Aide</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Math Services</span><br /><br />
+class="header2">Math Services</span><br />
 
-	<em>Accountant<br /><br />
+	<em>Accountant<br />
 						Bio-
-statistician<br /><br />
+statistician<br />
 						Public Health
-Program Specialist<br /><br />
+Program Specialist<br />
 
-	Researcher<br /><br />
+	Researcher<br />
 
-	Bookkeeper<br /><br />
+	Bookkeeper<br />
 						Purchasing
-Agent<br /><br />
+Agent<br />
 						Computer
 							<ul>
 
@@ -257,6 +257,8 @@ Agent<br /><br />
 	</tr>
 </table>
 
+<div class="inner">
+
 <hr size="1" />
 
 <span class="header1">ADMINISTRATIVE SERVICES</span>
@@ -267,7 +269,7 @@ laboratory.</p>
 <hr size="1" />
 
 	<span class="header2">Medical Records and Health Information Technician
-</span><br /><br />
+</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Technicians assemble patients' health
 information making sure that patients' initial medical charts are
@@ -286,7 +288,7 @@ health information technicians was $42,630 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Pharmacy Technician</span><br /><br />
+	<span class="header2">Pharmacy Technician</span><br />
 	<img class="job_pic" src="/images/icons/DH/1374.jpg"
 width="100" height="100" border="0" alt="Medical Record
 Technician" />
@@ -309,7 +311,7 @@ was $33,950 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Medical Assistant</span><br /><br />
+	<span class="header2">Medical Assistant</span><br />
 	<img class="job_pic" src="/images/icons/DH/43148.jpg"
 width="100" height="100" border="0" alt="Medical Assistant" />
 	<span class="header3">Job Description</span>
@@ -334,7 +336,7 @@ $34,800 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Medical Doctor</span><br /><br />
+	<span class="header2">Medical Doctor</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Physicians and surgeons diagnose illnesses and
 prescribe and administer treatment for people suffering from injury
@@ -350,7 +352,7 @@ $208,000 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Dental Hygienist</span><br /><br />
+	<span class="header2">Dental Hygienist</span><br />
 	<img class="job_pic" src="/images/icons/DH/C506012.jpg"
 width="100" height="100" border="0" alt="Dental Hygienist" />
 	<span class="header3">Job Description</span>
@@ -370,7 +372,7 @@ $76,220 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Home Health Aide</span><br /><br />
+	<span class="header2">Home Health Aide</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Demand for home health aides is growing because
 more sick and elderly people prefer to stay home to recover from
@@ -397,7 +399,7 @@ abilities.</p>
 
 <hr size="1" />
 
-	<span class="header2">Computer Programmer</span><br /><br />
+	<span class="header2">Computer Programmer</span><br />
 	<img class="job_pic" src="/images/icons/DF/43290.jpg"
 width="100" height="100" border="0" alt="Computer Programme" />
 	<span class="header3">Job Description</span>
@@ -420,7 +422,7 @@ was $86,550 in May 2019. </blockquote>
 <hr size="1" />
 
 
-	<span class="header2">Computer Scientist</span><br /><br />
+	<span class="header2">Computer Scientist</span><br />
 	<img class="job_pic" src="/images/icons/DF/43219.jpg"
 width="100" height="100" border="0" alt="Computer Scientist" />
 	<span class="header3">Job Description</span>
@@ -444,7 +446,7 @@ was $122,840 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Bill & Account
-Collector</span><br /><br />
+Collector</span><br />
 	<img class="job_pic" src="/images/icons/DH/43335.jpg"
 width="100" height="100" border="0" alt="Bill & Account Collector" />
 	<span class="header3">Job Description</span>
@@ -464,4 +466,6 @@ collectors was $37,000 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 21, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 21, 2020). </blockquote>
+
+</div>

@@ -128,14 +128,14 @@ explore.</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">CG Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;<br /></strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -147,11 +147,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -160,84 +160,84 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Public Service</span><br /><br />
+class="header2">Public Service</span><br />
 						<em>College
-President/Administrator<br /><br />
-						Publisher<br /><br />
+President/Administrator<br />
+						Publisher<br />
 						City
-Manager<br /><br />
+Manager<br />
 						Social Work Agency
-Director<br /><br />
+Director<br />
 						Hospital Marketing
-Director<br /><br />
+Director<br />
 						Police
-Chief<br /><br />
+Chief<br />
 						Elected Public
-Official<br /><br />
+Official<br />
 						Director of
-Security<br /><br />
+Security<br />
 						Continuing Education
-Coordinator<br /><br />
-						Detective<br /><br />
+Coordinator<br />
+						Detective<br />
 						Bank
-Teller<br /><br />
+Teller<br />
 						Security Guard</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Management</span><br /><br />
+class="header2">Management</span><br />
 						<em>Airport
-Manager<br /><br />
+Manager<br />
 						Hospital
-Administrator<br /><br />
+Administrator<br />
 						Public School
-Administrator<br /><br />
+Administrator<br />
 						Hotel
-Manager<br /><br />
+Manager<br />
 						Shopping Mall
-Manager<br /><br />
+Manager<br />
 						Trade Show
-Coordinator<br /><br />
+Coordinator<br />
 						Military
-Officer<br /><br />
+Officer<br />
 						Press
-Secretary<br /><br />
+Secretary<br />
 						Plant
-(Manufacturing) Manager<br /><br />
+(Manufacturing) Manager<br />
 						Postal
-Supervisor<br /><br />
+Supervisor<br />
 						Retail Sales
-Manager<br /><br />
+Manager<br />
 						Assistant Restaurant
 Manager</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Business & Industry</span><br /><br />
+class="header2">Business & Industry</span><br />
 						<em>Corporate
-Lawyer<br /><br />
+Lawyer<br />
 						Patent
-Lawyer<br /><br />
+Lawyer<br />
 						Industrial
-Psychologist<br /><br />
+Psychologist<br />
 						City Housing
-Director<br /><br />
+Director<br />
 						Personnel
-Director<br /><br />
+Director<br />
 						Marketing
-Director<br /><br />
+Director<br />
 						Mortgage Loan
-Officer<br /><br />
+Officer<br />
 						Financial
-Manager<br /><br />
+Manager<br />
 						Corporate
-Trainer<br /><br />
+Trainer<br />
 						Land
-Developer<br /><br />
+Developer<br />
 						Personnel
-Consultant<br /><br />
+Consultant<br />
 
-	Auctioneer<br /><br />
+	Auctioneer<br />
 						Retail
 Salesperson</em>
 					</td>
@@ -247,6 +247,8 @@ Salesperson</em>
 	</tr>
 </table>
 
+<div class="inner">
+
 <hr size="1" />
 
 <span class="header1">PUBLIC SERVICE</span>
@@ -255,7 +257,7 @@ to provide some sort of service to the community.</p>
 
 <hr size="1" />
 
-	<span class="header2">School Principal</span><br /><br />
+	<span class="header2">School Principal</span><br />
 	<img class="job_pic" src="/images/icons/CG/1387.jpg"
 width="100" height="100" border="0" alt="School Principal" />
 	<span class="header3">Job Description</span>
@@ -278,7 +280,7 @@ May 2019.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Government
-Legislator - Elected Official</span><br /><br />
+Legislator - Elected Official</span><br />
 	<img class="job_pic" src="/images/icons/CG/1403.jpg"
 width="100" height="100" border="0" alt="Government Legislator" />
 	<span class="header3">Job Description</span>
@@ -301,7 +303,7 @@ legislators/elected officials was $29,270 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Police Detective</span><br /><br />
+	<span class="header2">Police Detective</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As a police detective, you would investigate
 crimes. You would try to find out what happened and who was
@@ -329,7 +331,7 @@ the work of others.</p>
 <hr size="1" />
 
 	<span class="header2">Medical and Health Services
-Manager</span><br /><br />
+Manager</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As a medical and health services manager, you
 would be responsible for the day-to-day running of a health care
@@ -348,7 +350,7 @@ services managers was $100,980 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Hotel Manager</span><br /><br />
+	<span class="header2">Hotel Manager</span><br />
 	<img class="job_pic" src="/images/icons/CG/43096.jpg"
 width="100" height="100" border="0" alt="Hotel Manager" />
 	<span class="header3">Job Description</span>
@@ -375,7 +377,7 @@ $54,430 in May 2019.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Food Service Manager</span><br /><br />
+	<span class="header2">Food Service Manager</span><br />
 	<img class="job_pic" src="/images/icons/CG/43129.jpg"
 width="100" height="100" border="0" alt="Assistant Restaurant
 Manager" />
@@ -409,7 +411,7 @@ who are good at solving problems.</p>
 
 <hr size="1" />
 
-	<span class="header2">Corporate Lawyer</span><br /><br />
+	<span class="header2">Corporate Lawyer</span><br />
 	<img class="job_pic" src="/images/icons/CG/1366.jpg"
 width="100" height="100" border="0" alt="Corporate Lawyer" />
 	<span class="header3">Job Description</span>
@@ -430,7 +432,7 @@ $122,960 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Employment
-Recruiter</span><br /><br />
+Recruiter</span><br />
 	<img class="job_pic" src="/images/icons/CG/1370.jpg"
 width="100" height="100" border="0" alt="Placement Specialist" />
 	<span class="header3">Job Description</span>
@@ -451,7 +453,7 @@ was $61,920 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Retail Salesperson</span><br /><br />
+	<span class="header2">Retail Salesperson</span><br />
 	<img class="job_pic" src="/images/icons/CG/1302.jpg"
 width="100" height="100" border="0" alt="Retail Salesperson" />
 	<span class="header3">Job Description</span>
@@ -472,4 +474,6 @@ was $25,440 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 14, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 14, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 14, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 14, 2020). </blockquote>
+
+</div>

@@ -122,14 +122,14 @@ explore.</strong><p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">CI Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -141,11 +141,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -154,75 +154,75 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Social Helping</span><br /><br />
+class="header2">Social Helping</span><br />
 						<em>Religious
-Activities Director<br /><br />
+Activities Director<br />
 						Health Services
-Administrator<br /><br />
-						Clergy<br /><br />
+Administrator<br />
+						Clergy<br />
 						Occupational Social
-Worker<br /><br />
+Worker<br />
 						Public Health Social
-Worker<br /><br />
+Worker<br />
 						Adult Education
-Teacher (Business Courses)<br /><br />
+Teacher (Business Courses)<br />
 						Human Services
-Worker<br /><br />
+Worker<br />
 						Homeless Shelter
-Director<br /><br />
+Director<br />
 						Parole
-Officer<br /><br />
+Officer<br />
 						Home Health Aide</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Business Helping</span><br /><br />
+class="header2">Business Helping</span><br />
 						<em>Personnel
-Consultant<br /><br />
+Consultant<br />
 						Corporate
-Trainer<br /><br />
+Trainer<br />
 						Employment
-Interviewer<br /><br />
+Interviewer<br />
 						Property
-Manager<br /><br />
+Manager<br />
 						Real Estate
-Agent<br /><br />
+Agent<br />
 						Insurance
-Agent<br /><br />
+Agent<br />
 						Sales
-Occupation<br /><br />
+Occupation<br />
 						Service
-Occupation<br /><br />
+Occupation<br />
 						Bank
-Teller<br /><br />
+Teller<br />
 
-	Receptionist<br /><br />
+	Receptionist<br />
 						Computer
-Salesperson<br /><br />
+Salesperson<br />
 						Retail
 Salesperson</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Business Management</span><br /><br />
+class="header2">Business Management</span><br />
 						<em>Hospital
-Administrator<br /><br />
+Administrator<br />
 						Financial
-Planner<br /><br />
+Planner<br />
 						Geriatric Care
-Manager<br /><br />
+Manager<br />
 						Human Resources
-Manager<br /><br />
+Manager<br />
 						Funeral
-Director<br /><br />
+Director<br />
 						Hotel
-Manager<br /><br />
+Manager<br />
 						Benefits
-Administrator<br /><br />
+Administrator<br />
 						Retirement
-Manager<br /><br />
+Manager<br />
 						Restaurant
-Manager<br /><br />
+Manager<br />
 						Travel Agency
 Manager</em>
 					</td>
@@ -231,6 +231,8 @@ Manager</em>
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -241,7 +243,7 @@ occupations are associated with social work.</p>
 
 <hr size="1" />
 
-	<span class="header2">Social Worker</span><br /><br />
+	<span class="header2">Social Worker</span><br />
 	<img class="job_pic" src="/images/icons/CI/1212.jpg"
 width="100" height="100" border="0" alt="Public Health Social
 Worker" />
@@ -261,7 +263,7 @@ $50,470 in May 2019. </blockquote>
 
 <hr size="1" />
 
-Substance Abuse Social Worker </span><br /><br />
+Substance Abuse Social Worker </span><br />
 	<img class="job_pic" src="/images/icons/CI/7240.jpg"
 width="100" height="100" border="0" alt="Occupational Social
 Worker" />
@@ -283,7 +285,7 @@ substance abuse social workers was $46,650 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Social and Human Service
-Assistants</span><br /><br />
+Assistants</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Social and human service assistants provide
 services to clients to help them improve their quality of life. They
@@ -312,7 +314,7 @@ this field allow you to provide a service to customers.</p>
 <hr size="1" />
 
 	<span class="header2">Property, Real Estate, or Community
-Association Manager</span><br /><br />
+Association Manager</span><br />
 	<img class="job_pic" src="/images/icons/CI/1319.jpg"
 width="100" height="100" border="0" alt="Property Manager" />
 	<span class="header3">Job Description</span>
@@ -336,7 +338,7 @@ or community association managers was $58,760 in May 2019.
 <hr size="1" />
 
 
-	<span class="header2">Real Estate Agent</span><br /><br />
+	<span class="header2">Real Estate Agent</span><br />
 	<img class="job_pic" src="/images/icons/CI/C526017.jpg"
 width="100" height="100" border="0" alt="Real Estate Agent" />
 	<span class="header3">Job Description</span>
@@ -359,7 +361,7 @@ $48,930 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Bank Teller</span><br /><br />
+	<span class="header2">Bank Teller</span><br />
 	<img class="job_pic" src="/images/icons/CI/1371.jpg"
 width="100" height="100" border="0" alt="Bank Teller" />
 	<span class="header3">Job Description</span>
@@ -384,7 +386,7 @@ how to handle business.</p>
 
 <hr size="1" />
 
-	<span class="header2">Funeral Director</span><br /><br />
+	<span class="header2">Funeral Director</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>A funeral director helps a family make funeral
 plans when a family member has died. If you were a funeral
@@ -405,7 +407,7 @@ $58,310 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Hotel or
-Lodging Manager</span><br /><br />
+Lodging Manager</span><br />
 	<img class="job_pic" src="/images/icons/CG/43096.jpg"
 width="100" height="100" border="0" alt="Hotel Manager" />
 	<span class="header3">Job Description</span>
@@ -432,7 +434,7 @@ $54,430 in May 2019.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Food Service Manager</span><br /><br />
+	<span class="header2">Food Service Manager</span><br />
 	<img class="job_pic" src="/images/icons/CG/43129.jpg"
 width="100" height="100" border="0" alt="Assistant Restaurant
 Manager" />
@@ -458,4 +460,6 @@ experience. </blockquote>
 was $55,320 in May 2019. </blockquote>
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 15, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 15, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 15, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 15, 2020). </blockquote>
+
+</div>

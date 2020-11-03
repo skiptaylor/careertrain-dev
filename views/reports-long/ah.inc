@@ -117,14 +117,14 @@ explore:</strong><p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">AH Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -136,11 +136,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -149,16 +149,16 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="25%">
 						<span
-class="header2">Medical</span><br /><br />
+class="header2">Medical</span><br />
 
-	<em>Professor<br /><br />
-						Coroner<br /><br />
+	<em>Professor<br />
+						Coroner<br />
 						Sports
-Psychologist<br /><br />
+Psychologist<br />
 
-	Veterinarian<br /><br />
+	Veterinarian<br />
 						Horticultural
-Therapist<br /><br />
+Therapist<br />
 						Scientist
 							<ul>
 
@@ -171,18 +171,18 @@ Therapist<br /><br />
 	<li>Food</li>
 							</ul>
 						Recreational
-Therapist<br /><br />
+Therapist<br />
 
-	Researcher<br /><br />
+	Researcher<br />
 						Meat Inspector</em>
 					</td>
 					<td width="25%">
 						<span
-class="header2">Nature Sciences</span><br /><br />
+class="header2">Nature Sciences</span><br />
 
-	<em>Microbiologist<br /><br />
+	<em>Microbiologist<br />
 
-	Archaeologist<br /><br />
+	Archaeologist<br />
 						Geoscientist
 							<ul>
 
@@ -194,7 +194,7 @@ class="header2">Nature Sciences</span><br /><br />
 
 	<li>Oceanographer</li>
 							</ul>
-						Ecologist<br /><br />
+						Ecologist<br />
 						Conservationist
 							<ul>
 
@@ -202,18 +202,18 @@ class="header2">Nature Sciences</span><br /><br />
 
 	<li>Wildlife</li>
 							</ul>
-						Political Scientist<br /><br />
-Climatologist<br /><br />
+						Political Scientist<br />
+Climatologist<br />
 
-	Firefighter<br /><br />
+	Firefighter<br />
 						Tree
-Farmer<br /><br />
+Farmer<br />
 						Planetarium
 Technician</em>
 					</td>
 					<td width="25%">
 						<span
-class="header2">Environment</span><br /><br />
+class="header2">Environment</span><br />
 						<em>Engineer
 							<ul>
 
@@ -228,25 +228,25 @@ class="header2">Environment</span><br /><br />
 	<li>Waste Management</li>
 							</ul>
 						Hazardous Materials
-Specialist<br /><br />
+Specialist<br />
 						Landscape
-Architect<br /><br />
+Architect<br />
 						Environmental Health
-Inspector<br /><br />
+Inspector<br />
 						Coast
-Guard<br /><br />
-						Surveyor<br /><br />
+Guard<br />
+						Surveyor<br />
 						Water Treatment
-Plant Operator<br /><br />
+Plant Operator<br />
 						Engineering
-Technician<br /><br />
+Technician<br />
 						Mining</em>
 					</td>
 					<td width="25%">
 						<span
-class="header2">Math</span><br /><br />
+class="header2">Math</span><br />
 
-	<em>Astronomer<br /><br />
+	<em>Astronomer<br />
 							<ul>
 
 	<li>Astrophysicist</li>
@@ -261,18 +261,18 @@ class="header2">Math</span><br /><br />
 	<li>Industrial</li>
 							</ul>
 						Financial
-Officer<br /><br />
+Officer<br />
 						Military Budget
-Officer<br /><br />
+Officer<br />
 						Bio-
-statistician<br /><br />
+statistician<br />
 
-	Statistician<br /><br />
-						Surveyor<br /><br />
+	Statistician<br />
+						Surveyor<br />
 						Mapping
-Scientist<br /><br />
+Scientist<br />
 
-	Researcher<br /><br />
+	Researcher<br />
 						Technician
 							<ul>
 
@@ -287,6 +287,8 @@ Scientist<br /><br />
 	</tr>
 </table>
 
+<div class="inner">
+
 <hr size="1" />
 
 <span class="header1">MEDICAL</span>
@@ -297,7 +299,7 @@ three occupations found in this field.</p>
 <hr size="1" />
 
 	<span class="header2">Recreational
-Therapist</span><br /><br />
+Therapist</span><br />
 	<img class="job_pic" src="/images/icons/AH/43033.jpg"
 width="100" height="100" border="0" alt="Recreational Therapist" />
 	<span class="header3">Job Description</span>
@@ -318,7 +320,7 @@ therapists was $48,220 in May 2019.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Animal Scientist</span><br /><br />
+	<span class="header2">Animal Scientist</span><br />
 	<img class="job_pic" src="/images/icons/AH/1009.jpg"
 width="100" height="100" border="0" alt="Animal Scientist" />
 	<span class="header3">Job Description</span>
@@ -340,7 +342,7 @@ $60,300 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Veterinary
-Technician</span><br /><br />
+Technician</span><br />
 	<img class="job_pic" src="/images/icons/AH/43131.jpg"
 width="100" height="100" border="0" alt="Veterinary Technician" />
 	<span class="header3">Job Description</span>
@@ -364,7 +366,7 @@ like finding answers.</p>
 
 <hr size="1" />
 
-	<span class="header2">Oceanographer</span><br /><br />
+	<span class="header2">Oceanographer</span><br />
 	<img class="job_pic" src="/images/icons/AH/C511037.jpg"
 width="100" height="100" border="0" alt="Oceanographer" />
 	<span class="header3">Job Description</span>
@@ -383,7 +385,7 @@ $92,040 in May 2019.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Soil Conservationist</span><br /><br />
+	<span class="header2">Soil Conservationist</span><br />
 	<img class="job_pic" src="/images/icons/AH/43173.jpg"
 width="100" height="100" border="0" alt="Soil Conservationist" />
 	<span class="header3">Job Description</span>
@@ -404,7 +406,7 @@ your job prospects.</blockquote>
 was $62,660 in May 2019.</blockquote>
 <hr size="1" />
 
-	<span class="header2">Climatologist</span><br /><br />
+	<span class="header2">Climatologist</span><br />
 	<img class="job_pic" src="/images/icons/AH/1053.jpg"
 width="100" height="100" border="0" alt="Climatologist" />
 	<span class="header3">Job Description</span>
@@ -431,7 +433,7 @@ in these occupations.</p>
 
 <hr size="1" />
 
-	<span class="header2">Landscape Architect</span><br /><br />
+	<span class="header2">Landscape Architect</span><br />
 	<img class="job_pic" src="/images/icons/AH/43236.jpg"
 width="100" height="100" border="0" alt="Landscape Architect" />
 	<span class="header3">Job Description</span>
@@ -455,7 +457,7 @@ was $69,360 in May 2019.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Environmental Health
-Inspector</span><br /><br />
+Inspector</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Environmental health inspectors (sometimes called occupational health and safety specialists) usually work for
 a state government.  In this job, you would work to keep our food,
@@ -480,7 +482,7 @@ might find interesting.</p>
 <hr size="1" />
 
 	<span class="header2">Astrophysicist/Solar
-Astronomer</span><br /><br />
+Astronomer</span><br />
 	<img class="job_pic" src="/images/icons/AH/1277.jpg"
 width="100" height="100" border="0" alt="Astrophysicist/Solar
 Astronomer" />
@@ -499,7 +501,7 @@ $122,220 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Surveyor</span><br /><br />
+	<span class="header2">Surveyor</span><br />
 	<img class="job_pic" src="/images/icons/AH/43169.jpg"
 width="100" height="100" border="0" alt="Surveyor" />
 	<span class="header3">Job Description</span>
@@ -515,7 +517,7 @@ degree in surveying or civil engineering. To provide services to the public, a l
 in May 2019.</blockquote>
 <hr size="1" />
 
-	<span class="header2">Mapping Technician</span><br /><br />
+	<span class="header2">Mapping Technician</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>A mapping technician helps a surveyor. As a
 mapping technician, you would work with a team headed by a
@@ -534,5 +536,5 @@ was $45,010 in May 2019. </blockquote>
 
 <p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online</i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 9, 2020). </blockquote>
 
-
+</div>
 

@@ -128,14 +128,14 @@ explore:</strong><p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">BI Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -147,11 +147,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -160,7 +160,7 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Creative Education</span><br /><br />
+class="header2">Creative Education</span><br />
 						<em>Clergy
 							<ul>
 
@@ -196,23 +196,23 @@ class="header2">Creative Education</span><br /><br />
 	<li>Writing</li>
 							</ul>
 						Teacher's
-Aide<br /><br />
+Aide<br />
 						Library
 Assistant</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Creative Helping</span><br /><br />
+class="header2">Creative Helping</span><br />
 
-	<em>Psychologist<br /><br />
+	<em>Psychologist<br />
 						Public Relations
-Counselor<br /><br />
+Counselor<br />
 						Marriage
-Counselor<br /><br />
+Counselor<br />
 						Art/Music
-Therapy<br /><br />
+Therapy<br />
 						Interior
-Designer<br /><br />
+Designer<br />
 						Cosmetologist
 							<ul>
 
@@ -221,20 +221,20 @@ Designer<br /><br />
 	<li>Barber</li>
 							</ul>
 						Massage
-Therapist<br /><br />
+Therapist<br />
 						Audiovisual
-Librarian<br /><br />
+Librarian<br />
 						Advertising
-Production Specialist<br /><br />
+Production Specialist<br />
 						Adventure Travel
-Coordinator<br /><br />
-						Caterer<br /><br />
+Coordinator<br />
+						Caterer<br />
 						Retail
 Salesperson</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Creative Performance</span><br /><br />
+class="header2">Creative Performance</span><br />
 						<em>Writer
 							<ul>
 
@@ -250,18 +250,18 @@ class="header2">Creative Performance</span><br /><br />
 
 	<li>Travel</li>
 							</ul>
-						Chef<br /><br />
+						Chef<br />
 
-	Photographer<br /><br />
+	Photographer<br />
 						Radio/TV Talk Show
-Host<br /><br />
+Host<br />
 						Police
-Artist<br /><br />
+Artist<br />
 
-	Actress/Actors<br /><br />
-						Musician<br /><br />
-						Singer<br /><br />
-						Model<br /><br />
+	Actress/Actors<br />
+						Musician<br />
+						Singer<br />
+						Model<br />
 						Comedian</em>
 					</td>
 				</tr>
@@ -269,6 +269,8 @@ Artist<br /><br />
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -279,7 +281,7 @@ occupations that may interest you.</p>
 
 <hr size="1" />
 
-	<span class="header2">Art Teacher</span><br /><br />
+	<span class="header2">Art Teacher</span><br />
 	<img class="job_pic" src="/images/icons/BI/C2126_01.jpg"
 width="100" height="100" border="0" alt="Art Teacher" />
 	<span class="header3">Job Description</span>
@@ -302,7 +304,7 @@ in elementary and middle schools was $59,420. High school teachers' salary was $
 <hr size="1" />
 
 	<span class="header2">Special Education
-Teacher</span><br /><br />
+Teacher</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>A special education teacher works with students
 who have learning, physical, mental, or emotional disabilities.  As a special
@@ -324,7 +326,7 @@ teachers was $61,030 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Teacher
-Assistant/Paraprofessional</span><br /><br />
+Assistant/Paraprofessional</span><br />
 	<img class="job_pic" src="/images/icons/BI/Ph43319.jpg"
 width="100" height="100" border="0" alt="Teacher's
 Aide/Paraprofessional" />
@@ -357,7 +359,7 @@ may interest you.</p>
 
 <hr size="1" />
 
-	<span class="header2">Psychologist</span><br /><br />
+	<span class="header2">Psychologist</span><br />
 	<img class="job_pic" src="/images/icons/BI/43119.jpg"
 width="100" height="100" border="0" alt="Psychologist" />
 	<span class="header3">Job Description</span>
@@ -389,7 +391,7 @@ $80,370 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Interior Designer</span><br /><br />
+	<span class="header2">Interior Designer</span><br />
 	<img class="job_pic" src="/images/icons/BI/43032.jpg"
 width="100" height="100" border="0" alt="Interior Designer" />
 	<span class="header3">Job Description</span>
@@ -411,7 +413,7 @@ $56,040 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Retail Salesperson</span><br /><br />
+	<span class="header2">Retail Salesperson</span><br />
 	<img class="job_pic" src="/images/icons/BI/1302.jpg"
 width="100" height="100" border="0" alt="Retail Salesperson" />
 	<span class="header3">Job Description</span>
@@ -441,7 +443,7 @@ that might interest you.</p>
 
 <hr size="1" />
 
-	<span class="header2">Screenwriter</span><br /><br />
+	<span class="header2">Screenwriter</span><br />
 	<img class="job_pic" src="/images/icons/BI/43336.jpg"
 width="100" height="100" border="0" alt="Screenwriter">
 	<span class="header3">Job Description</span>
@@ -468,7 +470,7 @@ in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Chef</span><br /><br />
+	<span class="header2">Chef</span><br />
 	<img class="job_pic" src="/images/icons/BI/43009.jpg"
 width="100" height="100" border="0" alt="Chef" />
 	<span class="header3">Job Description</span>
@@ -489,7 +491,7 @@ May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Musician</span><br /><br />
+	<span class="header2">Musician</span><br />
 	<img class="job_pic" src="/images/icons/BI/C1926_03.jpg"
 width="100" height="100" border="0" alt="Musician" />
 	<span class="header3">Job Description</span>
@@ -516,3 +518,4 @@ in a music conservatory. </blockquote>
 
 <p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 10, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 10, 2020). </blockquote>
 
+</div>

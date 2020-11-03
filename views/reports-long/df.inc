@@ -116,14 +116,14 @@ explore.</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">DF Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -135,11 +135,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -148,47 +148,47 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Technical Administration</span><br /><br />
+class="header2">Technical Administration</span><br />
 
-	<em>Publisher<br /><br />
+	<em>Publisher<br />
 						Graphic
-Artist<br /><br />
+Artist<br />
 						Technical
-Proofreader<br /><br />
+Proofreader<br />
 						Graphics
-Specialist<br /><br />
+Specialist<br />
 						Medical Record
-Administrator<br /><br />
+Administrator<br />
 						Computer
-Programmer<br /><br />
+Programmer<br />
 						Airline Ticket
-Agent<br /><br />
+Agent<br />
 						Dispensing
-Optician<br /><br />
+Optician<br />
 
-	Stenographer<br /><br />
+	Stenographer<br />
 						Work
-Processor<br /><br />
+Processor<br />
 						Switchboard
 Operator</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Clerical Services</span><br /><br />
+class="header2">Clerical Services</span><br />
 						<em>Court
-Reporter<br /><br />
+Reporter<br />
 						Recreation
-Administrator<br /><br />
+Administrator<br />
 						Library Technical
-Assistant<br /><br />
+Assistant<br />
 						Insurance Claims
-Examiner<br /><br />
+Examiner<br />
 						Directory Assistance
-Operator<br /><br />
+Operator<br />
 						Mail
-Carrier<br /><br />
+Carrier<br />
 						Construction
-Secretary<br /><br />
+Secretary<br />
 						Clerk
 							<ul>
 
@@ -203,27 +203,27 @@ Secretary<br /><br />
 					</td>
 					<td width="33%">
 						<span
-class="header2">Technical Operation</span><br /><br />
+class="header2">Technical Operation</span><br />
 
-	<em>Surveyor<br /><br />
+	<em>Surveyor<br />
 						Parks &
-Recreation<br /><br />
+Recreation<br />
 						Public Relations
-Assistant<br /><br />
+Assistant<br />
 						Database
-Administrator<br /><br />
+Administrator<br />
 						Computer
-Programmer<br /><br />
+Programmer<br />
 						Flight Operations
-Specialist<br /><br />
+Specialist<br />
 						Computer Service
-Technician<br /><br />
+Technician<br />
 						Shoe
-Repairer<br /><br />
+Repairer<br />
 						Corrections
-Officer<br /><br />
+Officer<br />
 						Security
-Guard<br /><br />
+Guard<br />
 						Parts Clerk
 							<ul>
 
@@ -238,6 +238,8 @@ Guard<br /><br />
 	</tr>
 </table>
 
+<div class="inner">
+
 <hr size="1" />
 
 <span class="header2">TECHNICAL ADMINISTRATION</span>
@@ -247,7 +249,7 @@ field must have detail oriented people who have technical skills.</p>
 
 <hr size="1" />
 
-	<span class="header2">Graphic Designer</span><br /><br />
+	<span class="header2">Graphic Designer</span><br />
 	<img class="job_pic" src="/images/icons/DF/43285.jpg"
 width="100" height="100" border="0" alt="Graphic Artist" />
 	<span class="header3">Job Description</span>
@@ -270,7 +272,7 @@ $52,110 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Optician</span><br /><br />
+	<span class="header2">Optician</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>In this job you would work with the two types
 of eye doctors, ophthalmologists and optometrists. Your duties would
@@ -291,7 +293,7 @@ was $37,840 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Computer Scientist</span><br /><br />
+	<span class="header2">Computer Scientist</span><br />
 	<img class="job_pic" src="/images/icons/DF/43219.jpg"
 width="100" height="100" border="0" alt="Computer Scientist" />
 	<span class="header3">Job Description</span>
@@ -320,7 +322,7 @@ they may interest you.</p>
 
 <hr size="1" />
 
-	<span class="header2">Court Reporter</span><br /><br />
+	<span class="header2">Court Reporter</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Courts are required to have somebody "record"
 what is said in the courtroom during a trial or hearing. The person
@@ -342,7 +344,7 @@ $60,130 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Insurance Claims
-Adjuster</span><br /><br />
+Adjuster</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Sometimes accidents occur and property is
 damaged or destroyed. If the property has been insured, it is
@@ -370,7 +372,7 @@ you.</p>
 
 
 	<span class="header2">Automotive Service
-Technician</span><br /><br />
+Technician</span><br />
 	<img class="job_pic" src="/images/icons/DF/C1737_20.jpg"
 width="100" height="100" border="0" alt="Shipping Clerk" />
 	<span class="header3">Job Description</span>
@@ -395,7 +397,7 @@ technicians was $42,090 in May 2019. </blockquote>
 <hr size="1" />
 
 
-	<span class="header2">Computer Programmer</span><br /><br />
+	<span class="header2">Computer Programmer</span><br />
 	<img class="job_pic" src="/images/icons/DF/43290.jpg"
 width="100" height="100" border="0" alt="Computer Programme" />
 	<span class="header3">Job Description</span>
@@ -418,7 +420,7 @@ was $86,550 in May 2019. </blockquote>
 
 
 	<span class="header2">Telecommunications Engineering 
-Specialist </span><br /><br />
+Specialist </span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Telecommunications engineering specialists focus on the
 interaction between computer and communications equipment. These
@@ -439,7 +441,7 @@ engineering specialists was $112,690 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Precision Equipment
-Repairer</span><br /><br />
+Repairer</span><br />
 	<img class="job_pic" src="/images/icons/DF/1234.jpg"
 width="100" height="100" border="0" alt="Computer Service
 Technician" />
@@ -460,4 +462,6 @@ repairers was $58,060 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 18, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 18, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 18, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 18, 2020). </blockquote>
+
+</div>

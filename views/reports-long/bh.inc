@@ -132,14 +132,14 @@ explore:</strong><p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">BH Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -151,11 +151,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -164,16 +164,16 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="25%">
 						<span
-class="header2">Design</span><br /><br />
+class="header2">Design</span><br />
 						<em>Museum
-Curator<br /><br />
-						Architect<br /><br />
+Curator<br />
+						Architect<br />
 
-	Archeologist<br /><br />
+	Archeologist<br />
 
-	Gemologist<br /><br />
+	Gemologist<br />
 						Advertising Layout
-Artist<br /><br />
+Artist<br />
 						Designer
 							<ul>
 
@@ -192,16 +192,16 @@ Artist<br /><br />
 	<li>Lighting</li>
 							</ul>
 						Watch
-Maker<br /><br />
+Maker<br />
 						Inventor</em>
 					</td>
 					<td width="25%">
 						<span
-class="header2">Communications</span><br /><br />
+class="header2">Communications</span><br />
 
-	<em>Lawyer<br /><br />
+	<em>Lawyer<br />
 						Technical &
-Scientific Publications Editor<br /><br />
+Scientific Publications Editor<br />
 						Teacher
 							<ul>
 
@@ -212,7 +212,7 @@ Scientific Publications Editor<br /><br />
 	<li>Communications</li>
 							</ul>
 						Broadcast News
-Analyst<br /><br />
+Analyst<br />
 						Writer
 							<ul>
 
@@ -230,23 +230,23 @@ Analyst<br /><br />
 					</td>
 					<td width="25%">
 						<span
-class="header2">Analysis</span><br /><br />
+class="header2">Analysis</span><br />
 
-	<em>Dentist<br /><br />
+	<em>Dentist<br />
 
-	Psychologist<br /><br />
+	Psychologist<br />
 						Speech
-Pathologist<br /><br />
+Pathologist<br />
 
-	Audiologist<br /><br />
+	Audiologist<br />
 						Physical
-Therapist<br /><br />
+Therapist<br />
 						Marketing
-Director<br /><br />
+Director<br />
 						Military
-Officer<br /><br />
+Officer<br />
 						Art
-Therapist<br /><br />
+Therapist<br />
 						Librarian
 							<ul>
 
@@ -266,7 +266,7 @@ Therapist<br /><br />
 					</td>
 					<td width="25%">
 						<span
-class="header2">Technology</span><br /><br />
+class="header2">Technology</span><br />
 						<em>Engineer
 							<ul>
 
@@ -284,16 +284,16 @@ class="header2">Technology</span><br /><br />
 	<li>Nature</li>
 							</ul>
 						Medical
-Illustrator<br /><br />
+Illustrator<br />
 						Landscape
-Designer<br /><br />
+Designer<br />
 						Computer
-Artist<br /><br />
+Artist<br />
 
-	Cartographer<br /><br />
+	Cartographer<br />
 						Dental
-Technician<br /><br />
-						Optician<br /><br />
+Technician<br />
+						Optician<br />
 						Game Inventor</em>
 					</td>
 				</tr>
@@ -301,6 +301,8 @@ Technician<br /><br />
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -311,7 +313,7 @@ consider the following occupations.</p>
 
 <hr size="1" />
 
-	<span class="header2">Museum Director</span><br /><br />
+	<span class="header2">Museum Director</span><br />
 	<img class="job_pic" src="/images/icons/BG/43054.jpg"
 width="100" height="100" border="0" alt="Museum Director" />
 	<span class="header3">Job Description</span>
@@ -338,7 +340,7 @@ $49,850 in May 2019. </blockquote>
 
 		<hr size="1" />
 
-	<span class="header2">Archeologist</span><br /><br />
+	<span class="header2">Archeologist</span><br />
 	<img class="job_pic" src="/images/icons/BH/1325.jpg"
 width="100" height="100" border="0" alt="Archeologist" />
 	<span class="header3">Job Description</span>
@@ -361,7 +363,7 @@ $63,670 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Industrial Designer</span><br /><br />
+	<span class="header2">Industrial Designer</span><br />
 	<img class="job_pic" src="/images/icons/BH/C0777_50.jpg"
 width="100" height="100" border="0" alt="Industrial Designer" />
 	<span class="header3">Job Description</span>
@@ -390,7 +392,7 @@ these occupations like to tell others what they have discovered.</p>
 
 <hr size="1" />
 
-	<span class="header2">Lawyer</span><br /><br />
+	<span class="header2">Lawyer</span><br />
 	<img class="job_pic" src="/images/icons/BH/43286.jpg"
 width="100" height="100" border="0" alt="Lawyer" />
 	<span class="header3">Job Description</span>
@@ -415,7 +417,7 @@ in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Broadcast News
-Analyst</span><br /><br />
+Analyst</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>If you like to share your opinions and want to
 persuade others to think as you do, you might become a broadcast
@@ -435,7 +437,7 @@ analysts was $46,270 in May 2019.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Biographer</span><br /><br />
+	<span class="header2">Biographer</span><br />
 	<img class="job_pic" src="/images/icons/BH/43219.jpg"
 width="100" height="100" border="0" alt="Biographer" />
 	<span class="header3">Job Description</span>
@@ -464,7 +466,7 @@ curious and can use the scientific method to solve problems.</p>
 
 <hr size="1" />
 
-	<span class="header2">Speech Pathologist</span><br /><br />
+	<span class="header2">Speech Pathologist</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>A speech pathologist helps people who have
 trouble speaking.  As a speech pathologist, you would teach your
@@ -486,7 +488,7 @@ was $79,120 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Health Science
-Librarian</span><br /><br />
+Librarian</span><br />
 	<img class="job_pic" src="/images/icons/BH/43282.jpg"
 width="100" height="100" border="0" alt="Health Science Librarian" />
 	<span class="header3">Job Description</span>
@@ -519,7 +521,7 @@ details.</p>
 
 <hr size="1" />
 
-	<span class="header2">Civil Engineer</span><br /><br />
+	<span class="header2">Civil Engineer</span><br />
 	<img class="job_pic" src="/images/icons/BH/43243.jpg"
 width="100" height="100" border="0" alt="Civil Engineer" />
 	<span class="header3">Job Description</span>
@@ -540,7 +542,7 @@ $87,060 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Photographer</span><br /><br />
+	<span class="header2">Photographer</span><br />
 	<img class="job_pic" src="/images/icons/BH/43060.jpg"
 width="100" height="100" border="0" alt="Photographer" />
 	<span class="header3">Job Description</span>
@@ -567,7 +569,7 @@ $36,280 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Dental Technician</span><br /><br />
+	<span class="header2">Dental Technician</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>A dental technician makes appliances and devices used by the
 dentist in treating patients. As a dental technician you would make
@@ -589,3 +591,4 @@ $37,370 in May 2019. </blockquote>
 
 <p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 11, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 11, 2020). </blockquote>
 
+</div>

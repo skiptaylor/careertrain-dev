@@ -140,14 +140,14 @@ explore:</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">HI Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -159,11 +159,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -172,11 +172,11 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="20%">
 						<span
-class="header2">Education</span><br /><br />
+class="header2">Education</span><br />
 						<em>College
-Professor<br /><br />
+Professor<br />
 						Education
-Administrator<br /><br />
+Administrator<br />
 						Teacher
 							<ul>
 
@@ -203,17 +203,17 @@ Administrator<br /><br />
 
 	<li>Minister</li>
 							</ul>
-						Librarian<br /><br />
+						Librarian<br />
 						Teacher's Aide</em>
 					</td>
 					<td width="20%">
 						<span
-class="header2">Social Service</span><br /><br />
+class="header2">Social Service</span><br />
 
-	<em>Psychologist<br /><br />
+	<em>Psychologist<br />
 						Health Services
-Administrator<br /><br />
-						Economist<br /><br />
+Administrator<br />
+						Economist<br />
 						Social Worker
 							<ul>
 
@@ -224,7 +224,7 @@ Administrator<br /><br />
 	<li>Geriatric</li>
 							</ul>
 
-	Psychotherapist<br /><br />
+	Psychotherapist<br />
 						Counselor
 							<ul>
 
@@ -235,37 +235,37 @@ Administrator<br /><br />
 	<li>Drugs & Alcohol</li>
 							</ul>
 
-	Researcher<br /><br />
+	Researcher<br />
 						Psychiatric
 Technician</em>
 					</td>
 					<td width="20%">
 						<span
-class="header2">Medicine</span><br /><br />
+class="header2">Medicine</span><br />
 
-	<em>Physician<br /><br />
-						Dentist<br /><br />
+	<em>Physician<br />
+						Dentist<br />
 
-	Veterinarian<br /><br />
+	Veterinarian<br />
 
-	Pharmacist<br /><br />
+	Pharmacist<br />
 						Physical
-Therapist<br /><br />
-						Nurse<br /><br />
-						Dietitian<br /><br />
+Therapist<br />
+						Nurse<br />
+						Dietitian<br />
 						Dental
-Hygienist<br /><br />
+Hygienist<br />
 						Lab/Medical
-Technologist<br /><br />
+Technologist<br />
 						Dental/Veterinary
-Assistant<br /><br />
+Assistant<br />
 						Dental/Veterinary
-Technician<br /><br />
+Technician<br />
 						Home Health Aide</em>
 					</td>
 					<td width="20%">
 						<span
-class="header2">Environment</span><br /><br />
+class="header2">Environment</span><br />
 						<em>Earth Scientist
 							<ul>
 
@@ -277,7 +277,7 @@ class="header2">Environment</span><br /><br />
 
 	<li>Meteorologist</li>
 							</ul>
-						Zoologist<br /><br />
+						Zoologist<br />
 						Engineer
 							<ul>
 
@@ -286,20 +286,20 @@ class="header2">Environment</span><br /><br />
 	<li>Chemical</li>
 							</ul>
 
-	Astronomer<br /><br />
-						Forester<br /><br />
+	Astronomer<br />
+						Forester<br />
 						Parks & Recreation
-Manager<br /><br />
+Manager<br />
 						Zoo
-Keeper<br /><br />
+Keeper<br />
 						Meteorological
-Technician<br /><br />
+Technician<br />
 						Research
 Assistant</em>
 					</td>
 					<td width="20%">
 						<span
-class="header2">Mathematics</span><br /><br />
+class="header2">Mathematics</span><br />
 						<em>Social Scientist
 							<ul>
 
@@ -308,17 +308,17 @@ class="header2">Mathematics</span><br /><br />
 	<li>Sociologist</li>
 							</ul>
 
-	Accountant<br /><br />
+	Accountant<br />
 
-	Statistician<br /><br />
+	Statistician<br />
 						Computer Systems
-Analyst<br /><br />
+Analyst<br />
 						Computer
-Trainer<br /><br />
+Trainer<br />
 						Puzzle
-Inventor<br /><br />
+Inventor<br />
 						Research
-Assistant<br /><br />
+Assistant<br />
 						Clerk
 							<ul>
 
@@ -333,6 +333,8 @@ Assistant<br /><br />
 	</tr>
 </table>
 
+<div class="inner">
+
 <hr size="1" />
 
 <span class="header1">EDUCATION</span>
@@ -342,7 +344,7 @@ sharing knowledge.</p>
 <hr size="1" />
 
 	<span class="header2">Education
-Administrator</span><br /><br />
+Administrator</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Successful operation of an educational
 institution requires competent administrators. Education
@@ -360,7 +362,7 @@ administrators was $95,410 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<span class="header2">Clergy</span><br /><br />
+<span class="header2">Clergy</span><br />
 	<img class="job_pic" src="/images/icons/DI/43007.jpg"
 width="100" height="100" border="0" alt="Clergy" />
 	<span class="header3">Job Description</span>
@@ -377,7 +379,7 @@ this occupation.</blockquote>
 <hr size="1" />
 
 		<span class="header2">Teacher Assistant or
-Paraprofessional</span><br /><br />
+Paraprofessional</span><br />
 	<img class="job_pic" src="/images/icons/DG/43319.jpg"
 width="100" height="100" border="0" alt="Teacher's Aide or
 Paraprofessional" />
@@ -404,7 +406,7 @@ use information to help others.</p>
 
 <hr size="1" />
 
-	<span class="header2">Social Worker</span><br /><br />
+	<span class="header2">Social Worker</span><br />
 	<img class="job_pic" src="/images/icons/DG/1212.jpg"
 width="100" height="100" border="0" alt="Social Worker" />
 	<span class="header3">Job Description</span>
@@ -425,7 +427,7 @@ $50,470 in May 2019. </blockquote>
 <hr size="1" />
 
 <span class="header2">Occupational Health and Safety
-Specialist or Technician</span><br /><br />
+Specialist or Technician</span><br />
 	<img class="job_pic" src="/images/icons/HI/7240.jpg"
 width="100" height="100" border="0" alt="Occupational Social
 Worker" />
@@ -451,7 +453,7 @@ intended for technicians. </blockquote>
 safety specialists was $70,480 in May 2019. </blockquote>
 
 <hr size="1" />
-	<span class="header2">Psychologist</span><br /><br />
+	<span class="header2">Psychologist</span><br />
 	<img class="job_pic" src="/images/icons/BI/43119.jpg"
 width="100" height="100" border="0" alt="Psychologist" />
 	<span class="header3">Job Description</span>
@@ -483,7 +485,7 @@ $80,370 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<span class="header2">Funeral Director</span><br /><br />
+<span class="header2">Funeral Director</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>A funeral director helps a family make funeral plans when a family member has died. If you were a funeral
 director, you would handle the details of the funeral service and
@@ -508,7 +510,7 @@ science and to help others.</p>
 
 <hr size="1" />
 
-	<span class="header2">Medical Doctor</span><br /><br />
+	<span class="header2">Medical Doctor</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Physicians and surgeons diagnose illnesses and
 prescribe and administer treatment for people suffering from injury
@@ -524,7 +526,7 @@ $208,000 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Pharmacist</span><br /><br />
+	<span class="header2">Pharmacist</span><br />
 	<img class="job_pic" src="/images/icons/HI/C506087.jpg"
 width="100" height="100" border="0" alt="Pharmacist" />
 	<span class="header3">Job Description</span>
@@ -551,7 +553,7 @@ $128,090 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<span class="header2">Dietitian/Nutritionist</span><br /><br />
+<span class="header2">Dietitian/Nutritionist</span><br />
 	<img class="job_pic" src="/images/icons/FI/18272.jpg"
 width="100" height="100" border="0" alt="Recreation Therapist" />
 		<span class="header3">Job Description</span>
@@ -578,7 +580,7 @@ preserve the earth's resources.</p>
 
 <hr size="1" />
 
-	<span class="header2">Ecologist</span><br /><br />
+	<span class="header2">Ecologist</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>An ecologist is a scientist who studies the
 effect that people and animals have on the earth's environment.  If
@@ -598,7 +600,7 @@ in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Oceanographer</span><br /><br />
+	<span class="header2">Oceanographer</span><br />
 	<img class="job_pic" src="/images/icons/AH/C511037.jpg"
 width="100" height="100" border="0" alt="Oceanographer" />
 	<span class="header3">Job Description</span>
@@ -623,7 +625,7 @@ $92,040 in May 2019. </blockquote>
 numbers.</p>
 
 <hr size="1" />
-	<span class="header2">Statistician</span><br /><br />
+	<span class="header2">Statistician</span><br />
 	<img class="job_pic" src="/images/icons/CH/C1618_03.jpg"
 width="100" height="100" border="0" alt="Statistician" />
 	<span class="header3">Job Description</span>
@@ -643,7 +645,7 @@ $92,030 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Accountant</span><br /><br />
+	<span class="header2">Accountant</span><br />
 	<img class="job_pic" src="/images/icons/CH/1287.jpg"
 width="100" height="100" border="0" alt="Accountant" />
 	<span class="header3">Job Description</span>
@@ -666,7 +668,7 @@ $71,550 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Computer Systems
-Analyst</span><br /><br />
+Analyst</span><br />
 	<img class="job_pic" src="/images/icons/CH/43166.jpg"
 width="100" height="100" border="0" alt="Computer Systems Analyst" />
 	<span class="header3">Job Description</span>
@@ -686,4 +688,6 @@ analysts was $90,920 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 24, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 24, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 24, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 24, 2020). </blockquote>
+
+</div>

@@ -127,14 +127,14 @@ explore:</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">BG Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -146,11 +146,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -159,13 +159,13 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Community Support Services</span><br /><br />
+class="header2">Community Support Services</span><br />
 						<em>Community
-College Administrator<br /><br />
+College Administrator<br />
 						City Zoning
-Director<br /><br />
+Director<br />
 						Continuing Education
-Coordinator<br /><br />
+Coordinator<br />
 						Teacher
 							<ul>
 
@@ -176,73 +176,73 @@ Coordinator<br /><br />
 	<li>Broadcasting</li>
 							</ul>
 						Chamber of Commerce
-Representative<br /><br />
+Representative<br />
 						Visitors Bureau
-Representative<br /><br />
+Representative<br />
 						TV/Radio Public
-Affairs Producer<br /><br />
-						Lobbyist<br /><br />
-						Clergy<br /><br />
+Affairs Producer<br />
+						Lobbyist<br />
+						Clergy<br />
 						Church Youth
-Director<br /><br />
+Director<br />
 						Reservation/Ticket
 Agent</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Art and Design</span><br /><br />
+class="header2">Art and Design</span><br />
 						<em>Ballet/Symphony
-Director<br /><br />
+Director<br />
 						Ballet/Symphony
-Manager<br /><br />
+Manager<br />
 						Museum
-Director<br /><br />
+Director<br />
 						City
-Planner<br /><br />
+Planner<br />
 						Orchestra
-Conductor<br /><br />
+Conductor<br />
 						Historic
-Preservationist<br /><br />
+Preservationist<br />
 						Performing Arts
-Personnel Director<br /><br />
+Personnel Director<br />
 						Landscape
-Designer<br /><br />
+Designer<br />
 						Arts Festival
-Coordinator<br /><br />
+Coordinator<br />
 						Exhibit
-Designer<br /><br />
+Designer<br />
 
-	Photographer<br /><br />
-						Cook<br /><br />
+	Photographer<br />
+						Cook<br />
 						Floral Designer</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Communication Services</span><br /><br />
+class="header2">Communication Services</span><br />
 						<em>Copyright
-Attorney<br /><br />
+Attorney<br />
 						Public Relations
-Specialist<br /><br />
+Specialist<br />
 						Community Affairs
-Director<br /><br />
+Director<br />
 						TV/Radio Talk Show
-Host<br /><br />
+Host<br />
 						College Marketing
-Specialist<br /><br />
+Specialist<br />
 						Cultural Marketing
-Specialist<br /><br />
+Specialist<br />
 
-	Broadcaster<br /><br />
+	Broadcaster<br />
 						Editorial
-Writer<br /><br />
+Writer<br />
 						Documentary Film
-Maker<br /><br />
+Maker<br />
 
-	Interpreter<br /><br />
+	Interpreter<br />
 						Product
-Spokesperson<br /><br />
+Spokesperson<br />
 						Theatrical Press
-Agent<br /><br />
+Agent<br />
 						Market
 Researcher</em>
 					</td>
@@ -251,6 +251,8 @@ Researcher</em>
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -263,7 +265,7 @@ creative, here are three occupations to consider.</p>
 <hr size="1" />
 
 	<span class="header2">Education
-Administrator</span><br /><br />
+Administrator</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>If you like the idea of helping others to
 improve their education, you may choose to become an education
@@ -282,7 +284,7 @@ administrators was $95,410 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Flight Attendant</span><br /><br />
+	<span class="header2">Flight Attendant</span><br />
 	<img class="job_pic" src="/images/icons/BG/1216.jpg"
 width="100" height="100" border="0" alt="Flight Attendant" />
 	<span class="header3">Job Description</span>
@@ -306,7 +308,7 @@ $56,640 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Ticket Agent</span><br /><br />
+	<span class="header2">Ticket Agent</span><br />
 	<img class="job_pic" src="/images/icons/BG/43274.jpg"
 width="100" height="100" border="0" alt="Ticket Agent" />
 	<span class="header3">Job Description</span>
@@ -335,7 +337,7 @@ Creativity is important as well.</p>
 
 <hr size="1" />
 
-	<span class="header2">Museum Director</span><br /><br />
+	<span class="header2">Museum Director</span><br />
 	<img class="job_pic" src="/images/icons/BG/43054.jpg"
 width="100" height="100" border="0" alt="Museum Director" />
 	<span class="header3">Job Description</span>
@@ -362,7 +364,7 @@ $54,570 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Orchestra Conductor</span><br /><br />
+	<span class="header2">Orchestra Conductor</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>An orchestra conductor leads a group of
 musicians who play different instruments.  As a conductor, you would
@@ -382,7 +384,7 @@ was $51,670 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Floral Designer</span><br /><br />
+	<span class="header2">Floral Designer</span><br />
 	<img class="job_pic" src="/images/icons/BG/43094.jpg"
 width="100" height="100" border="0" alt="Floral Designer" />
 	<span class="header3">Job Description</span>
@@ -411,7 +413,7 @@ skills are valuable assets to these occupations.</p>
 <hr size="1" />
 
 	<span class="header2">Radio Program
-Director</span><br /><br />
+Director</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Program directors are in charge of on-air
 programming in radio stations. Program directors decide what type of
@@ -430,7 +432,7 @@ directors was $74,420 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Editorial Writer</span><br /><br />
+	<span class="header2">Editorial Writer</span><br />
 	<img class="job_pic" src="/images/icons/BG/43276.jpg"
 width="100" height="100" border="0" alt="Editorial Writer" />
 	<span class="header3">Job Description</span>
@@ -453,7 +455,7 @@ $46,270 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Theatrical Press
-Agent</span><br /><br />
+Agent</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>A theatrical press agent or public relations
 specialist, handles the publicity
@@ -477,4 +479,6 @@ agents was $61,150 in May 2019.
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 11, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 11, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 11, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 11, 2020). </blockquote>
+
+</div>

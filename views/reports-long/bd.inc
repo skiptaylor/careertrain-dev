@@ -121,14 +121,14 @@ explore:</strong><p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">BD Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -140,11 +140,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -153,16 +153,16 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Creative Arts/Communication</span><br /><br />
+class="header2">Creative Arts/Communication</span><br />
 
-	<em>Publisher<br /><br />
+	<em>Publisher<br />
 						Marketing
-Administrator<br /><br />
-						Editor<br /><br />
+Administrator<br />
+						Editor<br />
 						Press
-Secretary<br /><br />
+Secretary<br />
 						Media
-Planner<br /><br />
+Planner<br />
 						Writer
 							<ul>
 
@@ -172,46 +172,46 @@ Planner<br /><br />
 
 	<li>Technical</li>
 							</ul>
-						Critic<br /><br />
+						Critic<br />
 						Editorial
-Assistant<br /><br />
+Assistant<br />
 						Tour Coordinator</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Creative Clerical/Administrative</span><br /><br />
+class="header2">Creative Clerical/Administrative</span><br />
 						<em>Computer Graphic
-Designer<br /><br />
+Designer<br />
 						Public Relations
-Specialist<br /><br />
+Specialist<br />
 						Library
-Assistant<br /><br />
-						Paralegal<br /><br />
+Assistant<br />
+						Paralegal<br />
 
-	Proofreader<br /><br />
+	Proofreader<br />
 
-	Marketing/Advertising Account Executive<br /><br />
+	Marketing/Advertising Account Executive<br />
 						Real Estate
-Agent<br /><br />
+Agent<br />
 						Radio/Television
-Traffic Continuity Specialist<br /><br />
+Traffic Continuity Specialist<br />
 						Telemarketer</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Creative Production</span><br /><br />
+class="header2">Creative Production</span><br />
 						<em>Book Publishing
-Professional<br /><br />
+Professional<br />
 						Media
-Specialist<br /><br />
+Specialist<br />
 
-	Photojournalist<br /><br />
+	Photojournalist<br />
 						Television Set
-Decorator<br /><br />
+Decorator<br />
 						Video Production
-Assistant<br /><br />
+Assistant<br />
 						Crossword Puzzle
-Maker<br /><br />
+Maker<br />
 						Technician
 							<ul>
 
@@ -230,6 +230,8 @@ Assistant</em>
 	</tr>
 </table>
 
+<div class="inner">
+
 <hr size="1" />
 
 <span class="header1">CREATIVE ARTS/COMMUNICATION</span>
@@ -239,7 +241,7 @@ to consider.</p>
 
 <hr size="1" />
 
-	<span class="header2">Newswriter</span><br /><br />
+	<span class="header2">Newswriter</span><br />
 	<img class="job_pic" src="/images/icons/BD/43336.jpg"
 width="100" height="100" border="0" alt="Newswriter" />
 	<span class="header3">Job Description</span>
@@ -258,7 +260,7 @@ $46,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Editor</span><br /><br />
+	<span class="header2">Editor</span><br />
 	<img class="job_pic" src="/images/icons/BD/C506006.jpg"
 width="100" height="100" border="0" alt="Editor" />
 	<span class="header3">Job Description</span>
@@ -281,7 +283,7 @@ May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Editorial Assistant</span><br /><br />
+	<span class="header2">Editorial Assistant</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As an editorial assistant you would work closely
 with an editor.  You would check to be sure that writers' grammar,
@@ -307,7 +309,7 @@ originality.  Here are three occupations for you to consider.</p>
 <hr size="1" />
 
 	<span class="header2">Public Relations
-Specialist</span><br /><br />
+Specialist</span><br />
 	<img class="job_pic" src="/images/icons/BD/1369.jpg"
 width="100" height="100" border="0" alt="Public Relations
 Specialist" />
@@ -329,7 +331,7 @@ specialists was $61,150 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Paralegal</span><br /><br />
+	<span class="header2">Paralegal</span><br />
 	<img class="job_pic" src="/images/icons/BD/43286.jpg"
 width="100" height="100" border="0" alt="Paralegal" />
 	<span class="header3">Job Description</span>
@@ -352,7 +354,7 @@ in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Real Estate Agent</span><br /><br />
+	<span class="header2">Real Estate Agent</span><br />
 	<img class="job_pic" src="/images/icons/BD/C526017.jpg"
 width="100" height="100" border="0" alt="Real Estate Agent" />
 	<span class="header3">Job Description</span>
@@ -380,7 +382,7 @@ creative.  Here are two examples.</p>
 
 <hr size="1" />
 
-	<span class="header2">Managing Editor</span><br /><br />
+	<span class="header2">Managing Editor</span><br />
 	<img class="job_pic" src="/images/icons/BD/43333.jpg"
 width="100" height="100" border="0" alt="Managing Editor" />
 	<span class="header3">Job Description</span>
@@ -400,7 +402,7 @@ in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Media Specialist</span><br /><br />
+	<span class="header2">Media Specialist</span><br />
 	<img class="job_pic" src="/images/icons/BD/43278.jpg"
 width="100" height="100" border="0" alt="Media Specialist" />
 	<span class="header3">Job Description</span>
@@ -425,4 +427,6 @@ $59,500 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 11, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 11, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 11, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 11, 2020). </blockquote>
+
+</div>

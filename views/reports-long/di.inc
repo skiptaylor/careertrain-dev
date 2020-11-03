@@ -119,14 +119,14 @@ explore.</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">DI Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -138,11 +138,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br />br />br />br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br/>Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br />br />br />br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -151,9 +151,9 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Education</span><br /><br />
+class="header2">Education</span><br />
 						<em>Education
-Administrator<br /><br />
+Administrator<br />
 						Teacher
 							<ul>
 
@@ -168,72 +168,72 @@ Administrator<br /><br />
 	<li>Physical Education</li>
 							</ul>
 						Nursing
-Instructor<br /><br />
+Instructor<br />
 						Career
-Counselor<br /><br />
+Counselor<br />
 						Library
-Technician<br /><br />
+Technician<br />
 						Pre-school
-Coordinator<br /><br />
+Coordinator<br />
 						Computer
-Trainer<br /><br />
+Trainer<br />
 						Camp
 Counselor</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Social Helping</span><br /><br />
+class="header2">Social Helping</span><br />
 						<em>Assistant
-Hospital Administrator<br /><br />
+Hospital Administrator<br />
 
-	Clergy<br /><br />
+	Clergy<br />
 						Social Care
-Worker<br /><br />
+Worker<br />
 						Marriage &
 Family
-Therapist<br /><br />
+Therapist<br />
 						Retirement
 Facility
-Administrator<br /><br />
+Administrator<br />
 						Traffic Safety
-Administrator<br /><br />
+Administrator<br />
 						Flight
-Attendant<br /><br />
+Attendant<br />
 						Cruise Ship
-Activities Director<br /><br />
+Activities Director<br />
 						Convention
-Coordinator<br /><br />
+Coordinator<br />
 						Meeting & Events
-Planner<br /><br />
+Planner<br />
 						Nursery School
 Child-
 Care Provider</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Administrative Helping</span><br /><br />
+class="header2">Administrative Helping</span><br />
 						<em>Bank Branch
-Manager<br /><br />
+Manager<br />
 						Contract
-Administrator<br /><br />
+Administrator<br />
 						Loan
-Officer<br /><br />
+Officer<br />
 						Office
-Manager<br /><br />
+Manager<br />
 						Insurance Sales
-Agent<br /><br />
+Agent<br />
 						Hotel Desk
-Clerk<br /><br />
+Clerk<br />
 						Customer Service
-Representative<br /><br />
+Representative<br />
 						Claims
-Adjuster<br /><br />
+Adjuster<br />
 						Personnel
-Clerk<br /><br />
+Clerk<br />
 						Hospital
-Receptionist<br /><br />
+Receptionist<br />
 
-	Secretary<br /><br />
+	Secretary<br />
 						Bank Teller</em>
 					</td>
 				</tr>
@@ -241,6 +241,8 @@ Receptionist<br /><br />
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -251,7 +253,7 @@ more.</p>
 <hr size="1" />
 
 	<span class="header2">Education
-Administrator</span><br /><br />
+Administrator</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Even in a school or college, somebody must be in
 charge. An education administrator oversees the activities that go
@@ -272,7 +274,7 @@ administrators was $92,150 in May 2019.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Training and Development
-Manager</span><br /><br />
+Manager</span><br />
 	<img class="job_pic" src="/images/icons/DI/1378.jpg"
 width="100" height="100" border="0" alt="Computer Trainer" />
 	<span class="header3">Job Description</span>
@@ -295,7 +297,7 @@ development managers was $113,350 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<span class="header2">Recreation Worker</span><br /><br />
+<span class="header2">Recreation Worker</span><br />
 	<img class="job_pic" src="/images/icons/DI/C557003.jpg"
 width="100" height="100" border="0" alt="Camp Counselor" />
 	<span class="header3">Job Description</span>
@@ -321,7 +323,7 @@ encouragement to those in need.</p>
 
 <hr size="1" />
 
-	<span class="header2">Clergy</span><br /><br />
+	<span class="header2">Clergy</span><br />
 	<img class="job_pic" src="/images/icons/DI/43007.jpg"
 width="100" height="100" border="0" alt="Clergy" />
 	<span class="header3">Job Description</span>
@@ -338,7 +340,7 @@ May 2019.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Registered Nurse</span><br /><br />
+	<span class="header2">Registered Nurse</span><br />
 	<img class="job_pic" src="/images/icons/DI/43148.jpg"
 width="100" height="100" border="0" alt="Medical Assistant" />
 	<span class="header3">Job Description</span>
@@ -360,7 +362,7 @@ $73,300 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Child Care Worker</span><br /><br />
+	<span class="header2">Child Care Worker</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>A childcare worker has to enjoy being around
 small children because they take care of children ages five and
@@ -386,7 +388,7 @@ support and help in a company.</p>
 <hr size="1" />
 
 <span class="header2">Pharmacy
-Technician</span><br /><br />
+Technician</span><br />
 	<img class="job_pic" src="/images/icons/DH/1374.jpg"
 width="100" height="100" border="0" alt="Medical Record
 Technician" />
@@ -409,7 +411,7 @@ was $33,950 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Human Resources
-Assistant</span><br /><br />
+Assistant</span><br />
 	<img class="job_pic" src="/images/icons/DI/43302.jpg"
 width="100" height="100" border="0" alt="Office Manager" />
 	<span class="header3">Job Description</span>
@@ -429,7 +431,7 @@ assistants was $41,430 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Computer Support
-Specialist</span><br /><br />
+Specialist</span><br />
 	<img class="job_pic" src="/images/icons/DI/43328.jpg"
 width="100" height="100" border="0" alt="Personnel Clerk" />
 	<span class="header3">Job Description</span>
@@ -450,4 +452,6 @@ specialists was $54,760 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 21, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 21, 2020). </blockquote>
+
+</div>

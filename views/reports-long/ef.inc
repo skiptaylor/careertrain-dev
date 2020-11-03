@@ -130,14 +130,14 @@ explore.</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">EF Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -149,11 +149,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -162,58 +162,58 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Military</span><br /><br />
+class="header2">Military</span><br />
 						<em>Transportation
-Director<br /><br />
+Director<br />
 						Military
-Strategist<br /><br />
+Strategist<br />
 						Air Traffic
-Controller<br /><br />
+Controller<br />
 						Communications
-Manager<br /><br />
+Manager<br />
 						Ship
-Captain<br /><br />
+Captain<br />
 						Space Systems
-Specialist<br /><br />
-						Recruiter<br /><br />
+Specialist<br />
+						Recruiter<br />
 						Flight Crew
-Member<br /><br />
+Member<br />
 						Recreation
-Scout<br /><br />
+Scout<br />
 						Flight Operations
-Specialist<br /><br />
+Specialist<br />
 						Radar
-Operator<br /><br />
+Operator<br />
 						Aircraft
 Technician</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Technology Operations</span><br /><br />
+class="header2">Technology Operations</span><br />
 
-	<em>Archeologist<br /><br />
-						Geologist<br /><br />
+	<em>Archeologist<br />
+						Geologist<br />
 
-	Cartographer<br /><br />
+	Cartographer<br />
 						Physical Education
-Teacher<br /><br />
+Teacher<br />
 						Alcohol, Tobacco,
-and Firearms Agent<br /><br />
+and Firearms Agent<br />
 						Sports
-Coordinator<br /><br />
+Coordinator<br />
 						Professional
-Athlete<br /><br />
+Athlete<br />
 						State
-Trooper<br /><br />
+Trooper<br />
 						Truck
-Driver<br /><br />
-						Plumber<br /><br />
+Driver<br />
+						Plumber<br />
 						Heavy Equipment
 Operator</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Technology</span><br /><br />
+class="header2">Technology</span><br />
 						<em>Engineer
 							<ul>
 
@@ -228,19 +228,19 @@ class="header2">Technology</span><br /><br />
 	<li>Waste Management</li>
 							</ul>
 						Aircraft
-Pilot<br /><br />
+Pilot<br />
 
-	Millwright<br /><br />
+	Millwright<br />
 
-	Electrician<br /><br />
+	Electrician<br />
 						Computer Service
-Technician<br /><br />
+Technician<br />
 						Mechanical
-Engineering Technician<br /><br />
+Engineering Technician<br />
 						Aircraft
-Technician<br /><br />
+Technician<br />
 						Computer
-Operator<br /><br />
+Operator<br />
 						Machinist</em>
 					</td>
 				</tr>
@@ -248,6 +248,8 @@ Operator<br /><br />
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -259,7 +261,7 @@ liking.</p>
 <hr size="1" />
 
 	<span class="header2">Air Traffic
-Controller</span><br /><br />
+Controller</span><br />
 	<img class="job_pic" src="/images/icons/EF/43161.jpg"
 width="100" height="100" border="0" alt="Air Traffic Controller" />
 	<span class="header3">Job Description</span>
@@ -290,7 +292,7 @@ in the military is based on your rank, years of service and occupationalspecial
 
 <hr size="1" />
 
-	<span class="header2">Pilot </span><br /><br />
+	<span class="header2">Pilot </span><br />
 	<img class="job_pic" src="/images/icons/EF/M041.jpg"
 width="100" height="100" border="0" alt="Air Crew Member" />
 	<span class="header3">Job Description</span>
@@ -329,7 +331,7 @@ you, you might want to work in this field.</p>
 <hr size="1" />
 
 	<span class="header2">Cartographer or
-Photogrammetrist</span><br /><br />
+Photogrammetrist</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Cartographers and photogrammetrists collect,
 analyze, interpret, and map geographic information from surveys and
@@ -347,7 +349,7 @@ $65,470 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Truck Driver</span><br /><br />
+	<span class="header2">Truck Driver</span><br />
 	<img class="job_pic" src="/images/icons/EF/1168.jpg"
 width="100" height="100" border="0" alt="Truck Driver" />
 	<span class="header3">Job Description</span>
@@ -373,7 +375,7 @@ $45,260 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2"> Cargo and Freight Agent
-</span><br /><br />
+</span><br />
 
 	<span class="header3">Job Description</span>
 	<blockquote>A Cargo and Freight Agent directs
@@ -401,7 +403,7 @@ occupations in this field.</p>
 <hr size="1" />
 
 	<span class="header2">Environmental Engineering Technician
-</span><br /><br />
+</span><br />
 	<img class="job_pic" src="/images/icons/EF/C0936_02.jpg"
 width="100" height="100" border="0" alt="Electronic Engineer" />
 	<span class="header3">Job Description</span>
@@ -427,7 +429,7 @@ engineering technicians was $50,620 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Carpenter</span><br /><br />
+	<span class="header2">Carpenter</span><br />
 	<img class="job_pic" src="/images/icons/EF/C1610_07.jpg"
 width="100" height="100" border="0" alt="Millwright" />
 	<span class="header3">Job Description</span>
@@ -452,7 +454,7 @@ in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Physical Therapist</span><br /><br />
+	<span class="header2">Physical Therapist</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Physical therapists provide services that help
 restore function, improve mobility, relieve pain, and prevent or
@@ -479,4 +481,5 @@ was $89,440 in  May 2019. </blockquote>
 
 <p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 21, 2020). </blockquote>
 
+</div>
 

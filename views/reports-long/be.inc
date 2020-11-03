@@ -126,14 +126,14 @@ explore.</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">BE Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -145,11 +145,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -158,70 +158,70 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Written & Oral Communication</span><br /><br />
+class="header2">Written & Oral Communication</span><br />
 
-	<em>Lawyer<br /><br />
+	<em>Lawyer<br />
 						Public Relations
-Manager<br /><br />
+Manager<br />
 						Foreign
-Correspondent<br /><br />
+Correspondent<br />
 						Scientific &
-Technical Publications Editor<br /><br />
+Technical Publications Editor<br />
 						International News
-Correspondent<br /><br />
-						Historian<br /><br />
+Correspondent<br />
+						Historian<br />
 						Radio
-Announcer<br /><br />
+Announcer<br />
 						Editorial
-Assistant<br /><br />
-						Reporter<br /><br />
+Assistant<br />
+						Reporter<br />
 						Interpreter</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Communication Technologies</span><br /><br />
+class="header2">Communication Technologies</span><br />
 						<em>Communications
-Manager<br /><br />
+Manager<br />
 						Traffic
-Engineer<br /><br />
+Engineer<br />
 						Film
-Editor<br /><br />
+Editor<br />
 						Sonar & Radar
-Technician<br /><br />
+Technician<br />
 						Radio
-Operator<br /><br />
+Operator<br />
 						Sound & Recording
-Engineer<br /><br />
+Engineer<br />
 						Engineering
-Technician<br /><br />
+Technician<br />
 						Broadcast
-Technician<br /><br />
+Technician<br />
 						Instrument
-Mechanic<br /><br />
+Mechanic<br />
 						Teletype
 Operator</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Visual Product</span><br /><br />
+class="header2">Visual Product</span><br />
 						<em>Television
-Program Director<br /><br />
+Program Director<br />
 						Broadcast
-Journalist<br /><br />
+Journalist<br />
 						Industrial
-Designer<br /><br />
+Designer<br />
 
-	Photojournalist<br /><br />
+	Photojournalist<br />
 						Movie
-Director<br /><br />
+Director<br />
 						Graphic
-Designer<br /><br />
+Designer<br />
 
-	Photographer<br /><br />
+	Photographer<br />
 						Motion Picture
-Camera Operator<br /><br />
+Camera Operator<br />
 						Drafting
-Technician<br /><br />
+Technician<br />
 						Photographic Process
 Worker</em>
 					</td>
@@ -230,6 +230,8 @@ Worker</em>
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -241,7 +243,7 @@ the occupations in this field may be appropriate.</p>
 <hr size="1" />
 
 	<span class="header2">Scientific or Technical Publications
-Writer</span><br /><br />
+Writer</span><br />
 	<img class="job_pic" src="/images/icons/BE/43289.jpg"
 width="100" height="100" border="0" alt="Scientific or Technical
 Publications Writer" />
@@ -261,7 +263,7 @@ technical publications writers was $72,850 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Editorial Assistant</span><br /><br />
+	<span class="header2">Editorial Assistant</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As an editorial assistant you would work closely
 with an editor.  You would check to be sure that writers' grammar,
@@ -278,7 +280,7 @@ May 2019.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Reporter</span><br /><br />
+	<span class="header2">Reporter</span><br />
 	<img class="job_pic" src="/images/icons/BE/43293.jpg"
 width="100" height="100" border="0" alt="Reporter" />
 	<span class="header3">Job Description</span>
@@ -304,7 +306,7 @@ people.</p>
 
 <hr size="1" />
 
-	<span class="header2">Traffic Engineer</span><br /><br />
+	<span class="header2">Traffic Engineer</span><br />
 	<img class="job_pic" src="/images/icons/BE/1099.jpg"
 width="100" height="100" border="0" alt="Traffic Engineer" />
 	<span class="header3">Job Description</span>
@@ -322,7 +324,7 @@ works.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Radio Operator</span><br /><br />
+	<span class="header2">Radio Operator</span><br />
 	<img class="job_pic" src="/images/icons/BE/M100.jpg"
 width="100" height="100" border="0" alt="Radio Operator" />
 	<span class="header3">Job Description</span>
@@ -340,7 +342,7 @@ military will train you in radio operation.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Broadcast Technician</span><br /><br />
+	<span class="header2">Broadcast Technician</span><br />
 	<img class="job_pic" src="/images/icons/BE/1102.jpg"
 width="100" height="100" border="0" alt="Broadcast Technician" />
 	<span class="header3">Job Description</span>
@@ -369,7 +371,7 @@ interesting as well.  Here are three examples.</p>
 
 <hr size="1" />
 
-	<span class="header2">Broadcast Journalist</span><br /><br />
+	<span class="header2">Broadcast Journalist</span><br />
 	<img class="job_pic" src="/images/icons/BE/43067.jpg"
 width="100" height="100" border="0" alt="Audiovisual Production
 Director" />
@@ -392,7 +394,7 @@ was $46,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Graphic Designer</span><br /><br />
+	<span class="header2">Graphic Designer</span><br />
 	<img class="job_pic" src="/images/icons/BE/43312.jpg"
 width="100" height="100" border="0" alt="Graphic Designer" />
 	<span class="header3">Job Description</span>
@@ -414,7 +416,7 @@ $52,110 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Photojournalist</span><br /><br />
+	<span class="header2">Photojournalist</span><br />
 	<img class="job_pic" src="/images/icons/BE/43060.jpg"
 width="100" height="100" border="0" alt="Photojournalist" />
 	<span class="header3">Job Description</span>
@@ -436,4 +438,6 @@ $36,280 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 10, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 10, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 10, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 10, 2020). </blockquote>
+
+</div>

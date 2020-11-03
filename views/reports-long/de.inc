@@ -125,14 +125,14 @@ explore:</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">DE Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -144,11 +144,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -157,24 +157,24 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Staff Support Services</span><br /><br />
+class="header2">Staff Support Services</span><br />
 						<em>Assistant Sports
-Coach<br /><br />
-						Paralegal<br /><br />
+Coach<br />
+						Paralegal<br />
 						Airline Ticket
-Agent<br /><br />
+Agent<br />
 						Executive
-Assistant<br /><br />
+Assistant<br />
 						Drafting
-Technician<br /><br />
+Technician<br />
 						Court
-Reporter<br /><br />
+Reporter<br />
 						Data
-Reporter<br /><br />
+Reporter<br />
 
-	Receptionist<br /><br />
+	Receptionist<br />
 						City Maintenance
-Worker<br /><br />
+Worker<br />
 						Clerk
 							<ul>
 
@@ -187,23 +187,23 @@ Worker<br /><br />
 					</td>
 					<td width="33%">
 						<span
-class="header2">Office Administration</span><br /><br />
+class="header2">Office Administration</span><br />
 						<em>Operations
-Manager<br /><br />
+Manager<br />
 						Computer Systems
-Analyst<br /><br />
+Analyst<br />
 						Human Resources
-Representative<br /><br />
+Representative<br />
 						Office
-Manager<br /><br />
+Manager<br />
 						Purchasing
-Agent<br /><br />
+Agent<br />
 						Clerical
-Supervisor<br /><br />
+Supervisor<br />
 						Software
-Technician<br /><br />
+Technician<br />
 						Office Machine
-Repair Technician<br /><br />
+Repair Technician<br />
 						Accounting Clerk
 							<ul>
 
@@ -216,25 +216,25 @@ Repair Technician<br /><br />
 					</td>
 					<td width="33%">
 						<span
-class="header2">Military</span><br /><br />
+class="header2">Military</span><br />
 						<em>Religious
-Program Specialist<br /><br />
+Program Specialist<br />
 						Recruiting
-Specialist<br /><br />
+Specialist<br />
 						Administrative
-Support Services<br /><br />
+Support Services<br />
 						Lodging
-Specialist<br /><br />
+Specialist<br />
 						Legal
-Technician<br /><br />
+Technician<br />
 						Transportation
-Specialist<br /><br />
+Specialist<br />
 						Computer
-Operator<br /><br />
+Operator<br />
 						Optometric
-Technician<br /><br />
+Technician<br />
 
-	Stenographer<br /><br />
+	Stenographer<br />
 						Stock & Inventory
 Specialist</em>
 					</td>
@@ -243,6 +243,8 @@ Specialist</em>
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -255,7 +257,7 @@ correctly.</p>
 
 <hr size="1" />
 
-	<span class="header2">Executive Assistant</span><br /><br />
+	<span class="header2">Executive Assistant</span><br />
 	<img class="job_pic" src="/images/icons/DE/1206.jpg"
 width="100" height="100" border="0" alt="Executive Secretary" />
 	<span class="header3">Job Description</span>
@@ -279,7 +281,7 @@ was $39,850 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Drafter</span><br /><br />
+	<span class="header2">Drafter</span><br />
 	<img class="job_pic" src="/images/icons/DE/43138.jpg"
 width="100" height="100" border="0" alt="Drafting Technician" />
 	<span class="header3">Job Description</span>
@@ -299,7 +301,7 @@ and universities. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Accounting Clerk</span><br /><br />
+	<span class="header2">Accounting Clerk</span><br />
 	<img class="job_pic" src="/images/icons/DE/1203.jpg"
 width="100" height="100" border="0" alt="Accounting Clerk" />
 	<span class="header3">Job Description</span>
@@ -328,7 +330,7 @@ were completed.</p>
 <hr size="1" />
 
 	<span class="header2">Cardiovascular
-Technician</span><br /><br />
+Technician</span><br />
 	<img class="job_pic" src="/images/icons/DE/1387.jpg"
 width="100" height="100" border="0" alt="Purchasing Agent" />
 	<span class="header3">Job Description</span>
@@ -353,7 +355,7 @@ technicians was $59,600 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Supervisor of Office Support Workers</span><br /><br />
+	<span class="header2">Supervisor of Office Support Workers</span><br />
 	<img class="job_pic" src="/images/icons/DE/43302.jpg"
 width="100" height="100" border="0" alt="Clerical Supervisor" />
 	<span class="header3">Job Description</span>
@@ -377,7 +379,7 @@ was $56,620 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Office Machine Repair
-Technician</span><br /><br />
+Technician</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Office machines must be kept in good running
 order.  As an office machine repair technician, you would be
@@ -401,7 +403,7 @@ details and who are efficient.</p>
 <hr size="1" />
 
 	<span class="header2">Optometric
-Technician</span><br /><br />
+Technician</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Optometry is the science of vision and eye care.
 Service members must have good vision. As an optometric technician (or optician)
@@ -421,7 +423,7 @@ was $37,840 in May 2019. Military pay depends on rank and years of service. </bl
 <hr size="1" />
 
 	<span class="header2">Transportation
-Specialist</span><br /><br />
+Specialist</span><br />
 	<img class="job_pic" src="/images/icons/DE/400067.jpg"
 width="100" height="100" border="0" alt="Transportation
 Specialist" />
@@ -441,7 +443,7 @@ years of service. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Lodging Specialist</span><br /><br />
+	<span class="header2">Lodging Specialist</span><br />
 	<img class="job_pic" src="/images/icons/DE/43099.jpg"
 width="100" height="100" border="0" alt="Lodging Specialist" />
 	<span class="header3">Job Description</span>
@@ -460,4 +462,6 @@ was $54,430 in May 2019. Military pay depends on rank and years of service. </bl
 <hr size="1" />
 
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 15, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 15, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 15, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 15, 2020). </blockquote>
+
+</div>

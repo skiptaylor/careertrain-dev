@@ -116,14 +116,14 @@ explore:</strong><p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">AG Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -135,11 +135,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -148,85 +148,85 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Community Service</span><br /><br />
+class="header2">Community Service</span><br />
 
-	<em>Veterinarian<br /><br />
+	<em>Veterinarian<br />
 						Urban
-Planner<br /><br />
+Planner<br />
 						Recreation
-Administrator<br /><br />
+Administrator<br />
 
-	Preservationist<br /><br />
+	Preservationist<br />
 						Land
-Developer<br /><br />
+Developer<br />
 						Park
-Ranger<br /><br />
+Ranger<br />
 						Public Utilities
-Manager<br /><br />
+Manager<br />
 						Police
-Officer<br /><br />
+Officer<br />
 
-	Firefighter<br /><br />
+	Firefighter<br />
 
-	Recyclist<br /><br />
+	Recyclist<br />
 						Security
-Guard<br /><br />
+Guard<br />
 						Postal
-Worker<br /><br />
+Worker<br />
 						Public
 Transportation Operator</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Nature</span><br /><br />
+class="header2">Nature</span><br />
 
-	<em>Horticulturist<br /><br />
+	<em>Horticulturist<br />
 						Rangeland
-Specialist<br /><br />
+Specialist<br />
 
-	Toxicologist<br /><br />
+	Toxicologist<br />
 
-	Surveyor<br /><br />
+	Surveyor<br />
 						Tugboat
-Captain<br /><br />
+Captain<br />
 						Range
-Inspector<br /><br />
+Inspector<br />
 						Park
-Inspector<br /><br />
+Inspector<br />
 						Organic
-Farmer<br /><br />
+Farmer<br />
 						Survival
-Trainer<br /><br />
+Trainer<br />
 						Grounds
 Maintenance
-Supervisor<br /><br />
+Supervisor<br />
 						Nursery
-Manager<br /><br />
+Manager<br />
 						Animal
 Caretaker</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Environment</span><br /><br />
+class="header2">Environment</span><br />
 
 	<em>Environmental
-Lawyer<br /><br />
+Lawyer<br />
 
-	Geologist<br /><br />
+	Geologist<br />
 						Civil
-Engineer<br /><br />
+Engineer<br />
 						Pollution
-Engineer<br /><br />
+Engineer<br />
 
-	Environmentalist<br /><br />
+	Environmentalist<br />
 						Waste Management
-Technician<br /><br />
+Technician<br />
 						Water Treatment
-Plant Operator<br /><br />
+Plant Operator<br />
 						Power Plant
-Operator<br /><br />
+Operator<br />
 						Forestry
-Technician<br /><br />
+Technician<br />
 						Forestry
 Worker</em>
 					</td>
@@ -235,6 +235,8 @@ Worker</em>
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr  size="1" />
 
@@ -245,7 +247,7 @@ will allow you to serve your community.  Here are some examples.</p>
 <hr  size="1" />
 
 	<span class="header2">Recreation
-Administrator</span><br /><br />
+Administrator</span><br />
 	<img class="job_pic" src="/images/icons/AG/C553057.jpg"
 width="100" height="100" border="0" alt="Recreation Administrator" />
 	<span class="header3">Job Description</span>
@@ -268,7 +270,7 @@ administrators was $26,350 in May 2019.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Park Ranger</span><br /><br />
+	<span class="header2">Park Ranger</span><br />
 	<img class="job_pic" src="/images/icons/AG/C585042.jpg"
 width="100" height="100" border="0" alt="Park Ranger" />
 	<span class="header3">Job Description</span>
@@ -288,7 +290,7 @@ $62,660 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Firefighter</span><br /><br />
+	<span class="header2">Firefighter</span><br />
 	<img class="job_pic" src="/images/icons/AG/1392.jpg"
 width="100" height="100" border="0" alt="Firefighter" />
 	<span class="header3">Job Description</span>
@@ -317,7 +319,7 @@ Community Service field. They help nature and people.</p>
 
 <hr size="1" />
 
-	<span class="header2">Rangeland Specialist</span><br /><br />
+	<span class="header2">Rangeland Specialist</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Rangelands are special types of environments
 found in the United States. A rangeland specialist (also known as a conservationist or range manager) works to keep the
@@ -336,7 +338,7 @@ in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Organic Farmer</span><br /><br />
+	<span class="header2">Organic Farmer</span><br />
 	<img class="job_pic" src="/images/icons/AG/1336.jpg"
 width="100" height="100" border="0" alt="Organic Farmer" />
 	<span class="header3">Job Description</span>
@@ -358,7 +360,7 @@ $71,160 in May 2019.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Forestry Worker</span><br /><br />
+	<span class="header2">Forestry Worker</span><br />
 	<img class="job_pic" src="/images/icons/AG/1345.jpg"
 width="100" height="100" border="0" alt="Logger" />
 	<span class="header3">Job Description</span>
@@ -381,7 +383,7 @@ nature, you will want to consider the occupations in this field.</p>
 
 <hr size="1" />
 
-	<span class="header2">Toxicologist</span><br /><br />
+	<span class="header2">Toxicologist</span><br />
 	<img class="job_pic" src="/images/icons/AG/43142.jpg"
 width="100" height="100" border="0" alt="Toxicologist" />
 	<span class="header3">Job Description</span>
@@ -403,7 +405,7 @@ $88,790 in May 2019.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Water Treatment Plant
-Operator</span><br /><br />
+Operator</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As a water treatment plant operator, you would
 use equipment to remove pollutants from water.  Then you would see
@@ -420,7 +422,7 @@ operators was $47,760 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Power Plant Operator</span><br /><br />
+	<span class="header2">Power Plant Operator</span><br />
 	<!-- <img class="job_pic" src="/images/icons/AG/1345.jpg"
 width="100" height="100" border="0" alt="Power Plant Operator" /> -->
 	<span class="header3">Job Description</span>
@@ -438,4 +440,6 @@ was $85,950 in May 2019.</blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 9, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 9, 2020). </blockquote>
+
+</div>

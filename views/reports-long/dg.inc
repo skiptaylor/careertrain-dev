@@ -132,14 +132,14 @@ explore.</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">DG Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -151,11 +151,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -164,7 +164,7 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Community Services</span><br /><br />
+class="header2">Community Services</span><br />
 						<em>Social Worker
 							<ul>
 
@@ -175,45 +175,45 @@ class="header2">Community Services</span><br /><br />
 	<li>Human Services</li>
 							</ul>
 						Vocational
-Rehabilitation Counselor<br /><br />
+Rehabilitation Counselor<br />
 						Postal
-Inspector<br /><br />
+Inspector<br />
 						Teacher
-Aide<br /><br />
+Aide<br />
 						Real Estate
-Broker<br /><br />
+Broker<br />
 						Flight
-Attendant<br /><br />
+Attendant<br />
 						Church
-Attendant<br /><br />
+Attendant<br />
 						Postal
-Worker<br /><br />
+Worker<br />
 						Hospital
 Outpatient
 Coordinator</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Administrative Services</span><br /><br />
+class="header2">Administrative Services</span><br />
 						<em>Government
-Office Administrator<br /><br />
+Office Administrator<br />
 						Literary
-Agent<br /><br />
+Agent<br />
 						Human Resources
 Job
-Analyst<br /><br />
+Analyst<br />
 						Insurance Claims
-Examiner<br /><br />
+Examiner<br />
 						Medical Record
-Administrator<br /><br />
+Administrator<br />
 						Executive
-Assistant<br /><br />
+Assistant<br />
 						Transportation
-Ticket Agent<br /><br />
+Ticket Agent<br />
 						Fire Department
-Secretary<br /><br />
+Secretary<br />
 
-	Receptionist<br /><br />
+	Receptionist<br />
 						Clerk
 							<ul>
 
@@ -227,31 +227,31 @@ Secretary<br /><br />
 					</td>
 					<td width="33%">
 						<span
-class="header2">Legal/Military Services</span><br /><br />
+class="header2">Legal/Military Services</span><br />
 						<em>Law
-Librarian<br /><br />
+Librarian<br />
 
-	Paralegal<br /><br />
+	Paralegal<br />
 						Court
-Reporter<br /><br />
+Reporter<br />
 						Legal
-Secretary<br /><br />
+Secretary<br />
 						Flight
 Operations
-Specialist<br /><br />
+Specialist<br />
 						Legal
-Technician<br /><br />
+Technician<br />
 						Personnel
-Specialist<br /><br />
+Specialist<br />
 						Deputy
-Sheriff<br /><br />
+Sheriff<br />
 						Real Estate
 Closing
-Secretary<br /><br />
+Secretary<br />
 						Law Enforcement
-Dispatcher<br /><br />
+Dispatcher<br />
 						911
-Operator<br /><br />
+Operator<br />
 						Administrative
 Support Specialist</em>
 					</td>
@@ -260,6 +260,8 @@ Support Specialist</em>
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -270,7 +272,7 @@ live, think about the occupations in this field.</p>
 
 <hr size="1" />
 
-	<span class="header2">Social Worker</span><br /><br />
+	<span class="header2">Social Worker</span><br />
 	<img class="job_pic" src="/images/icons/DG/1212.jpg"
 width="100" height="100" border="0" alt="Social Worker" />
 	<span class="header3">Job Description</span>
@@ -291,7 +293,7 @@ $50,470 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Teacher Assistant or
-Paraprofessional</span><br /><br />
+Paraprofessional</span><br />
 	<img class="job_pic" src="/images/icons/DG/43319.jpg"
 width="100" height="100" border="0" alt="Teacher's Aide or
 Paraprofessional" />
@@ -313,7 +315,7 @@ $27,920 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span
-class="header2">Interpreter/Translator</span><br /><br />
+class="header2">Interpreter/Translator</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Interpreters and translators enable the cross-
 cultural communication necessary in today's society by converting
@@ -343,7 +345,7 @@ to do these jobs.</p>
 <hr size="1" />
 
 	<span class="header2">Compensation and Benefits
-Manager</span><br /><br />
+Manager</span><br />
 	<img class="job_pic" src="/images/icons/DG/1364.jpg"
 width="100" height="100" border="0" alt="Job Analyst" />
 	<span class="header3">Job Description</span>
@@ -366,7 +368,7 @@ Benefits Managers was $122,270 in May 2019. </blockquote>
 <hr size="1" />
 
 		<span class="header2">Executive
-Assistant</span><br /><br />
+Assistant</span><br />
 	<img class="job_pic" src="/images/icons/DE/1206.jpg"
 width="100" height="100" border="0" alt="Executive Secretary" />
 	<span class="header3">Job Description</span>
@@ -391,7 +393,7 @@ was $62,920 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Insurance Processing
-Clerk</span><br /><br />
+Clerk</span><br />
 	<img class="job_pic" src="/images/icons/DG/C506006.jpg"
 width="100" height="100" border="0" alt="Insurance Processing
 Clerk" />
@@ -419,7 +421,7 @@ you may want to look at occupations in this field.</p>
 
 <hr size="1" />
 
-	<span class="header2">Court Reporter</span><br /><br />
+	<span class="header2">Court Reporter</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Courts are required to have somebody "record"
 what is said in the courtroom during a trial or hearing. The person
@@ -440,7 +442,7 @@ $60,130 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Military Legal
-Technician</span><br /><br />
+Technician</span><br />
 	<img class="job_pic" src="/images/icons/DG/43286.jpg"
 width="100" height="100" border="0" alt="Military Legal
 Technician" />
@@ -462,7 +464,7 @@ specialty.</blockquote>
 
 <hr size="1" />
 <span class="header2">Administrative Support
-Specialist</span><br /><br />
+Specialist</span><br />
 <span class="header3">Job Description</span>
 <blockquote>An administrative support specialist helps an
 administrator do his/her job. In this job you would help with the
@@ -478,4 +480,6 @@ specialists was $34,040 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 18, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 18, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 18, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 18, 2020). </blockquote>
+
+</div>

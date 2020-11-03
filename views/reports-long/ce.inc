@@ -125,14 +125,14 @@ explore:</strong><p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">CE Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -144,11 +144,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -157,84 +157,84 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Management</span><br /><br />
+class="header2">Management</span><br />
 						<em>Education
-Director<br /><br />
+Director<br />
 						Operations
-Manager<br /><br />
+Manager<br />
 						Urban
-Planner<br /><br />
+Planner<br />
 						Food Service
-Manager<br /><br />
+Manager<br />
 						Air Traffic
-Controller<br /><br />
+Controller<br />
 						Funeral
-Director<br /><br />
+Director<br />
 						Officer's Club
-Manager<br /><br />
+Manager<br />
 						Construction
-Manager<br /><br />
+Manager<br />
 						Store
-Manager<br /><br />
+Manager<br />
 						Aircraft Sales
-Representative<br /><br />
+Representative<br />
 						Theater
-Director<br /><br />
+Director<br />
 						Auto Detailer</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Finance & Business Development</span><br /><br />
+class="header2">Finance & Business Development</span><br />
 
-	<em>Auditor<br /><br />
+	<em>Auditor<br />
 						Management
-Consultant<br /><br />
+Consultant<br />
 						Benefits
-Administrator<br /><br />
+Administrator<br />
 						Financial Aid
-Officer<br /><br />
+Officer<br />
 						Financial
-Planner<br /><br />
+Planner<br />
 						Organizational
-Developer<br /><br />
+Developer<br />
 						Contract
-Administrator<br /><br />
+Administrator<br />
 						Revenue
-Officer<br /><br />
+Officer<br />
 						Bank
-Examiner<br /><br />
+Examiner<br />
 						Job Development
-Specialist<br /><br />
+Specialist<br />
 						Stock
-Broker<br /><br />
+Broker<br />
 						Payroll
 Specialist</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Law & Civil Service</span><br /><br />
+class="header2">Law & Civil Service</span><br />
 
-	<em>Attach&eacute;<br /><br />
+	<em>Attach&eacute;<br />
 						Foreign Service
-Officer<br /><br />
+Officer<br />
 						Environmental
-Project Manager<br /><br />
+Project Manager<br />
 						Communications
-Manager<br /><br />
+Manager<br />
 						Environmental
-Protection Specialist<br /><br />
+Protection Specialist<br />
 						Secret Service
-Agent<br /><br />
-						FBI Agent<br /><br />
+Agent<br />
+						FBI Agent<br />
 						Police
-Agent<br /><br />
+Agent<br />
 						Fire
-Chief<br /><br />
+Chief<br />
 						Intelligence
-Officer<br /><br />
-						Recruiter<br /><br />
+Officer<br />
+						Recruiter<br />
 						Safety
-Engineer<br /><br />
+Engineer<br />
 						Firefighter</em>
 					</td>
 				</tr>
@@ -242,6 +242,8 @@ Engineer<br /><br />
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -253,7 +255,7 @@ examples.</p>
 
 <hr size="1" />
 
-	<span class="header2">Food Service Manager</span><br /><br />
+	<span class="header2">Food Service Manager</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>A food service manager oversees the operation of
 a kitchen or dining hall.  As a food service manager, you would plan
@@ -278,7 +280,7 @@ was $55,320 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Construction Manager</span><br /><br /> 
+	<span class="header2">Construction Manager</span><br /> 
 	<img class="job_pic" src="/images/icons/CE/1140.jpg"
 width="100" height="100" border="0" alt="Construction Manager" />
 	<span class="header3">Job Description</span>
@@ -304,7 +306,7 @@ was $95,260 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Collision Repair Technician</span><br /><br />
+	<span class="header2">Collision Repair Technician</span><br />
 	<img class="job_pic" src="/images/icons/CE/C29095.jpg"
 width="100" height="100" border="0" alt="Collision Repair
 Technician" />
@@ -339,7 +341,7 @@ field.</p>
 <hr size="1" />
 
 	<span class="header2">Management
-Consultant</span><br /><br />
+Consultant</span><br />
 	<img class="job_pic" src="/images/icons/CE/1126.jpg"
 width="100" height="100" border="0" alt="Management Consultant" />
 	<span class="header3">Job Description</span>
@@ -360,7 +362,7 @@ was $85,260 in May 2019. </blockquote>
 
 
 	<span class="header2">Management Analyst
-</span><br /><br />
+</span><br />
 	<img class="job_pic" src="/images/icons/CE/1249.jpg"
 width="100" height="100" border="0" alt="Management Analyst" />
 	<span class="header3">Job Description</span>
@@ -381,7 +383,7 @@ required.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Financial Aid
-Officer</span><br /><br />
+Officer</span><br />
 	<img class="job_pic" src="/images/icons/CE/1202.jpg"
 width="100" height="100" border="0" alt="Financial Aid Officer" />
 	<span class="header3">Job Description</span>
@@ -411,7 +413,7 @@ the occupations in this field.</p>
 
 <hr size="1" />
 
-	<span class="header2">Military Attach&eacute;</span><br /><br />
+	<span class="header2">Military Attach&eacute;</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>A military attach&eacute; works for the military. In
 this job, you would collect information about the military forces of
@@ -435,7 +437,7 @@ specialty.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Foreign Service
-Officer</span><br /><br />
+Officer</span><br />
 	<img class="job_pic" src="/images/icons/CE/1113.jpg"
 width="100" height="100" border="0" alt="Foreign Service Officer" />
 	<span class="header3">Job Description</span>
@@ -458,7 +460,7 @@ very educated. Knowledge of other countries is a must.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Environmental Protection
-Specialist</span><br /><br />
+Specialist</span><br />
 	<img class="job_pic" src="/images/icons/CE/1285.jpg"
 width="100" height="100" border="0" alt="Environmental Protection
 Specialist" />
@@ -478,3 +480,5 @@ protection specialists was $71,360 in May 2019. </blockquote>
 <hr size="1" />
 
 <p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 14, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 14, 2020). </blockquote>
+
+</div>

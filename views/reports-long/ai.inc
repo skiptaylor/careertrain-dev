@@ -126,14 +126,14 @@ explore:</strong><p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">AI Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -145,11 +145,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br/>Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -158,7 +158,7 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Community Service</span><br /><br />
+class="header2">Community Service</span><br />
 						<em>Teacher
 							<ul>
 
@@ -171,64 +171,64 @@ class="header2">Community Service</span><br /><br />
 	<li>Physical Education</li>
 							</ul>
 						Horticultural
-Therapist<br /><br />
+Therapist<br />
 						Recreation
-Therapist<br /><br />
+Therapist<br />
 						Peace Corp
-Worker<br /><br />
+Worker<br />
 						Postal
-Worker<br /><br />
+Worker<br />
 						Real Estate
-Appraiser<br /><br />
+Appraiser<br />
 						Bus Driver</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Nature</span><br /><br />
+class="header2">Nature</span><br />
 
-	<em>Veterinarian<br /><br />
+	<em>Veterinarian<br />
 						Pet
-Psychologist<br /><br />
+Psychologist<br />
 
-	Ecologist<br /><br />
+	Ecologist<br />
 						Zoo
-Manager<br /><br />
+Manager<br />
 
-	Forester<br /><br />
+	Forester<br />
 						Wildlife
-Rehabilitator<br /><br />
+Rehabilitator<br />
 						Recreational
-Therapist<br /><br />
+Therapist<br />
 						Park
-Ranger<br /><br />
+Ranger<br />
 						Nature
-Guide<br /><br />
+Guide<br />
 
-	Forestry<br /><br />
+	Forestry<br />
 						Animal Lab
 Technician</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Environment</span><br /><br />
+class="header2">Environment</span><br />
 						<em>Civil
-Engineer<br /><br />
+Engineer<br />
 						City
-Planner<br /><br />
+Planner<br />
 
-	Surveyor<br /><br />
+	Surveyor<br />
 						Hazardous Waste
-Management Professional<br /><br />
+Management Professional<br />
 						Environmental
 Heath
-Specialist<br /><br />
+Specialist<br />
 
-	Firefighter<br /><br />
+	Firefighter<br />
 						Emergency
 Management
-Specialist<br /><br />
+Specialist<br />
 						Recreation
-Specialist<br /><br />
+Specialist<br />
 						Sanitation
 Engineer</em>
 					</td>
@@ -238,6 +238,8 @@ Engineer</em>
 	</tr>
 </table>
 
+<div class="inner">
+
 <hr size="1" />
 
 <span class="header1">COMMUNITY SERVICE</span>
@@ -246,7 +248,7 @@ the environment with helping others.</p>
 
 <hr size="1" />
 
-	<span class="header2">Recreational Therapist</span><br /><br />
+	<span class="header2">Recreational Therapist</span><br />
 	<img class="job_pic" src="/images/icons/AI/18272.jpg"
 width="100" height="100" border="0" alt="Recreation Therapist" />
 	<span class="header3">Job Description</span>
@@ -267,7 +269,7 @@ was $48,220 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Postal Worker</span><br /><br />
+	<span class="header2">Postal Worker</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Anyone who works at the post office is a postal
 worker. As a postal worker, there would be many jobs that you can
@@ -286,7 +288,7 @@ $52,060 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Bus Driver</span><br /><br />
+	<span class="header2">Bus Driver</span><br />
 	<!-- <img class="job_pic" src="/images/icons/AI/C512076.jpg"
 width="100" height="100" border="0" alt="Bus Driver" /> -->
 	<span class="header3">Job Description</span>
@@ -314,7 +316,7 @@ science. Here are three occupations for you to consider.</p>
 
 <hr size="1" />
 
-	<span class="header2">Veterinarian</span><br /><br />
+	<span class="header2">Veterinarian</span><br />
 	<img class="job_pic" src="/images/icons/AI/43132.jpg"
 width="100" height="100" border="0" alt="Veterinarian" />
 	<span class="header3">Job Description</span>
@@ -335,7 +337,7 @@ $95,460 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Ecologist</span><br /><br />
+	<span class="header2">Ecologist</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>An ecologist is a scientist who studies the
 effect that people and animals have on the earth's environment.  If
@@ -354,7 +356,7 @@ in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Zoologist</span><br /><br />
+	<span class="header2">Zoologist</span><br />
 	<img class="job_pic" src="/images/icons/AI/1270.jpg"
 width="100" height="100" border="0" alt="Wildlife Manager" />
 	<span class="header3">Job Description</span>
@@ -381,7 +383,7 @@ safe.</p>
 
 <hr size="1" />
 
-	<span class="header2">Civil Engineer</span><br /><br />
+	<span class="header2">Civil Engineer</span><br />
 	<img class="job_pic" src="/images/icons/AI/43243.jpg"
 width="100" height="100" border="0" alt="Civil Engineer" />
 	<span class="header3">Job Description</span>
@@ -403,7 +405,7 @@ $87,060 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Hazardous Substance Engineer</span><br /><br />
+	<span class="header2">Hazardous Substance Engineer</span><br />
 	<img class="job_pic" src="/images/icons/AI/43020.jpg"
 width="100" height="100" border="0" alt="Hazardous Waste Management
 Professional" />
@@ -431,7 +433,7 @@ management professionals was $88,860 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Emergency Management
-Specialist</span><br /><br />
+Specialist</span><br />
 	<img class="job_pic" src="/images/icons/AI/M34.jpg"
 width="100" height="100" border="0" alt="Emergency Management
 Specialist" />
@@ -451,4 +453,6 @@ want to work in this occupation. On the other hand, if you are a civilian, you t
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 9, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 9, 2020). </blockquote>
+
+</div>

@@ -128,14 +128,14 @@ explore:</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">CD Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -147,11 +147,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br />v</strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -160,17 +160,17 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Business Sales</span><br /><br />
+class="header2">Business Sales</span><br />
 						<em>Computer Sales
-Representative<br /><br />
+Representative<br />
 						Business Machine
-Sales Representative<br /><br />
+Sales Representative<br />
 						Insurance Sales
-Agent<br /><br />
+Agent<br />
 						Real Estate
-Agent/Broker<br /><br />
+Agent/Broker<br />
 						Personnel
-Consultant<br /><br />
+Consultant<br />
 						Analyst
 							<ul>
 
@@ -179,56 +179,56 @@ Consultant<br /><br />
 	<li>Stock</li>
 							</ul>
 						Sales Account
-Supervisor<br /><br />
+Supervisor<br />
 						Travel
-Agent<br /><br />
+Agent<br />
 						Sales
-Support<br /><br />
+Support<br />
 						Cashier</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Business Administrative</span><br /><br />
+class="header2">Business Administrative</span><br />
 						<em>Personnel
-Director<br /><br />
+Director<br />
 						Human Resources
-Manager<br /><br />
+Manager<br />
 						Data Processing
-Manager<br /><br />
+Manager<br />
 						Facilities
-Manager<br /><br />
+Manager<br />
 						Office
-Manager<br /><br />
+Manager<br />
 						Retail
-Buyer<br /><br />
+Buyer<br />
 						Employee Benefits
-Manager<br /><br />
+Manager<br />
 						Executive
-Secretary<br /><br />
+Secretary<br />
 
-	Underwriter<br /><br />
+	Underwriter<br />
 						Stock Transfer
-Clerk<br /><br />
+Clerk<br />
 						Personnel Clerk</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Business Financial</span><br /><br />
+class="header2">Business Financial</span><br />
 						<em>Chief Financial
-Officer<br /><br />
+Officer<br />
 
-	Statistician<br /><br />
+	Statistician<br />
 						Economic
-Researcher<br /><br />
+Researcher<br />
 						Financial
-Planner<br /><br />
+Planner<br />
 						Bank Loan
-Officer<br /><br />
-						Auditor<br /><br />
+Officer<br />
+						Auditor<br />
 
-	Bookkeeper<br /><br />
+	Bookkeeper<br />
 						Tax
-Preparer<br /><br />
+Preparer<br />
 						Clerk
 							<ul>
 
@@ -244,6 +244,8 @@ Preparer<br /><br />
 	</tr>
 </table>
 
+<div class="inner">
+
 <hr size="1" />
 
 <span class="header1">BUSINESS SALES</span>
@@ -254,7 +256,7 @@ in this field.</p>
 
 <hr size="1" />
 
-	<span class="header2">Insurance Agent</span><br /><br />
+	<span class="header2">Insurance Agent</span><br />
 	<img class="job_pic" src="/images/icons/CD/C506005.jpg"
 width="100" height="100" border="0" alt="Insurance Agent" />
 	<span class="header3">Job Description</span>
@@ -279,7 +281,7 @@ $50,940 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Travel Agent</span><br /><br />
+	<span class="header2">Travel Agent</span><br />
 	<img class="job_pic" src="/images/icons/CD/1216.jpg"
 width="100" height="100" border="0" alt="Travel Agent">
 	<span class="header3">Job Description</span>
@@ -305,7 +307,7 @@ $40,660 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Cashier</span><br /><br />
+	<span class="header2">Cashier</span><br />
 	<img class="job_pic" src="/images/icons/CD/1142.jpg"
 width="100" height="100" border="0" alt="Cashier">
 	<span class="header3">Job Description</span>
@@ -333,7 +335,7 @@ occupations in this field.  Here are three examples.</p>
 <hr size="1" />
 
 	<span class="header2">Human Resources
-Manager</span><br /><br />
+Manager</span><br />
 	<img class="job_pic" src="/images/icons/CD/1372.jpg"
 width="100" height="100" border="0" alt="Human Resource Manager">
 	<span class="header3">Job Description</span>
@@ -359,7 +361,7 @@ managers was $116,720 in May 2019.
 <hr size="1" />
 
 	<span class="header2">Employee Benefits
-Manager</span><br /><br />
+Manager</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Companies often provide their employees with
 benefits such as paid vacation time and health insurance. These are
@@ -380,7 +382,7 @@ managers was $122,270 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Brokerage Clerk</span><br /><br />
+	<span class="header2">Brokerage Clerk</span><br />
 	<img class="job_pic" src="/images/icons/CD/43328.jpg"
 width="100" height="100" border="0" alt="Brokerage Clerk">
 	<span class="header3">Job Description</span>
@@ -415,7 +417,7 @@ details.</p>
 
 <hr size="1" />
 
-	<span class="header2">Loan Officer</span><br /><br />
+	<span class="header2">Loan Officer</span><br />
 	<img class="job_pic" src="/images/icons/CD/C506008.jpg"
 width="100" height="100" border="0" alt="Loan Officer">
 	<span class="header3">Job Description</span>
@@ -437,7 +439,7 @@ $63,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Bookkeeper</span><br /><br />
+	<span class="header2">Bookkeeper</span><br />
 	<img class="job_pic" src="/images/icons/CD/1287.jpg"
 width="100" height="100" border="0" alt="Bookkeeper">
 	<span class="header3">Job Description</span>
@@ -457,7 +459,7 @@ $41,230 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Bank Teller</span><br /><br />
+	<span class="header2">Bank Teller</span><br />
 	<img class="job_pic" src="/images/icons/CD/1371.jpg"
 width="100" height="100" border="0" alt="Bank Teller">
 	<span class="header3">Job Description</span>
@@ -476,3 +478,5 @@ $31,230 in May 2019. </blockquote>
 <hr size="1" />
 
 <p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 10, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 10, 2020). </blockquote>
+
+</div>

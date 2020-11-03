@@ -117,7 +117,7 @@ cellspacing="0" width="100%">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -129,11 +129,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -142,31 +142,31 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Biotechnology Environmental</span><br /><br />
+class="header2">Biotechnology Environmental</span><br />
 
-	<em>Veterinarian<br /><br />
+	<em>Veterinarian<br />
 						Aquatic
-Biologist<br /><br />
-						Ecologist<br /><br />
+Biologist<br />
+						Ecologist<br />
 
-	Geneticist<br /><br />
+	Geneticist<br />
 
-	Microbiologist<br /><br />
+	Microbiologist<br />
 
-	Physiologist<br /><br />
+	Physiologist<br />
 						Geological
-Oceanographer<br /><br />
+Oceanographer<br />
 
-	Seismologist<br /><br />
+	Seismologist<br />
 						Stratigrapher</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Information</span><br /><br />
+class="header2">Information</span><br />
 						<em>Urban
-Planner<br /><br />
+Planner<br />
 						Systems
-Analyst<br /><br />
+Analyst<br />
 						Computer
 							<ul>
 
@@ -179,37 +179,37 @@ Analyst<br /><br />
 	<li>Systems Programmer</li>
 							</ul>
 						Information Systems
-Mgr.<br /><br />
+Mgr.<br />
 						Applications
-Programmer<br /><br />
+Programmer<br />
 						User Support
-Analyst<br /><br />
+Analyst<br />
 						Recording
 Engineer</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Engineering</span><br /><br />
+class="header2">Engineering</span><br />
 
-	<em>Engineer<br /><br />
+	<em>Engineer<br />
 						Electrical
-Engineer<br /><br />
+Engineer<br />
 						Mechanical
-Engineer<br /><br />
+Engineer<br />
 						Civil
-Engineer<br /><br />
+Engineer<br />
 						Chemical
-Engineer<br /><br />
+Engineer<br />
 						Industrial
-Engineer<br /><br />
+Engineer<br />
 						Metallurgical
-Engineer<br /><br />
+Engineer<br />
 						Materials
-Engineer<br /><br />
+Engineer<br />
 						Medical
-Scientist<br /><br />
+Scientist<br />
 						Waste
-Management<br /><br />
+Management<br />
 						Water Quality
 Technologist</em>
 					</td>
@@ -218,6 +218,8 @@ Technologist</em>
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -230,7 +232,7 @@ nature because they work closely in it.</p>
 <hr size="1" />
 
 	<span class="header2">Agricultural
-Scientist</span><br /><br />
+Scientist</span><br />
 	<img class="job_pic" src="/images/icons/AF/43207.jpg"
 width="100" height="100" border="0" alt="Agricultural Scientist" />
 	<span class="header3">Job Description</span>
@@ -249,7 +251,7 @@ was $65,160 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Zoologist</span><br /><br />
+	<span class="header2">Zoologist</span><br />
 	<img class="job_pic" src="/images/icons/AF/1270.jpg"
 width="100" height="100" border="0" alt="Zoologist" />
 	<span class="header3">Job Description</span>
@@ -269,7 +271,7 @@ $63,270 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Animal Caretaker</span><br /><br />
+	<span class="header2">Animal Caretaker</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>An animal caretaker works with non-farm
 animals.  If you were an animal caretaker, you would work in a zoo,
@@ -292,7 +294,7 @@ interest in technology.  Here are three examples.</p>
 
 <hr size="1" />
 
-	<span class="header2">Meteorologist</span><br /><br />
+	<span class="header2">Meteorologist</span><br />
 	<img class="job_pic" src="/images/icons/AF/1265.jpg"
 width="100" height="100" border="0" alt="Meteorologist" />
 	<span class="header3">Job Description</span>
@@ -316,7 +318,7 @@ $95,380 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Agricultural
-Technician</span><br /><br />
+Technician</span><br />
 	<img class="job_pic" src="/images/icons/AF/1194.jpg"
 width="100" height="100" border="0" alt="Agricultural Technician" />
 	<span class="header3">Job Description</span>
@@ -336,7 +338,7 @@ technicians was $41,230 in May 2019.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Landscaper</span><br /><br />
+	<span class="header2">Landscaper</span><br />
 	<img class="job_pic" src="/images/icons/AF/43190.jpg"
 width="100" height="100" border="0" alt="Landscaper" />
 	<span class="header3">Job Description</span>
@@ -364,7 +366,7 @@ field.</p>
 
 <hr size="1" />
 
-	<span class="header2">Petroleum Engineer</span><br /><br />
+	<span class="header2">Petroleum Engineer</span><br />
 	<img class="job_pic" src="/images/icons/AF/1323.jpg"
 width="100" height="100" border="0" alt="Petroleum Engineer" />
 	<span class="header3">Job Description</span>
@@ -382,7 +384,7 @@ was $137,720 in May 2019.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Construction Equipment
-Operator</span><br /><br />
+Operator</span><br />
 	<img class="job_pic" src="/images/icons/AF/1396.jpg"
 width="100" height="100" border="0" alt="Equipment Operator" />
 	<span class="header3">Job Description</span>
@@ -403,7 +405,7 @@ operators was $48,160 in May 2019.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Survival Equipment Specialist of the
-Armed Forces (Military)</span><br /><br />
+Armed Forces (Military)</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>A survival equipment specialist makes sure that
 equipment such as parachutes, rafts, fire extinguishers, and oxygen
@@ -419,4 +421,6 @@ school courses that will help you to get this job.</blockquote>
 	<blockquote>The yearly salary you receive in the Military isbased on your rank, years of service and occupationalspecialty.</blockquote>
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 9, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 9, 2020). </blockquote>
+
+</div>

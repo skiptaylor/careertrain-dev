@@ -126,14 +126,14 @@ explore:</strong><p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">BF Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -145,11 +145,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -158,79 +158,79 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Communications</span><br /><br />
+class="header2">Communications</span><br />
 						<em>Medial
-Specialist<br /><br />
+Specialist<br />
 						Public Relations
-Specialist<br /><br />
-						Editor<br /><br />
+Specialist<br />
+						Editor<br />
 						Technical
-Writer<br /><br />
+Writer<br />
 						Public Relations
-Assistant<br /><br />
+Assistant<br />
 
-	Sportscaster<br /><br />
+	Sportscaster<br />
 						Desktop
-Publisher<br /><br />
+Publisher<br />
 						Tour
-Publicist<br /><br />
+Publicist<br />
 						Interpretive
-Naturalist<br /><br />
-						Musician<br /><br />
-						Actor<br /><br />
+Naturalist<br />
+						Musician<br />
+						Actor<br />
 						Cruise Ship
 Entertainer</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Creative Technology</span><br /><br />
+class="header2">Creative Technology</span><br />
 						<em>Industrial
-Designer<br /><br />
+Designer<br />
 						Graphic
-Artist<br /><br />
+Artist<br />
 
-	Photographer<br /><br />
+	Photographer<br />
 						Camera
-Operator<br /><br />
+Operator<br />
 						Lighting
-Designer<br /><br />
+Designer<br />
 						Video
-Editor<br /><br />
+Editor<br />
 						Drafting
-Technician<br /><br />
+Technician<br />
 						Metal
-Artist/Fabricator<br /><br />
+Artist/Fabricator<br />
 						Model
-Maker<br /><br />
+Maker<br />
 						Airbrush
-Artist<br /><br />
+Artist<br />
 						Tattoo Artist</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Technology</span><br /><br />
+class="header2">Technology</span><br />
 						<em>Exhibit
-Builder<br /><br />
+Builder<br />
 						Theater Lighting
-Designer<br /><br />
+Designer<br />
 						Sound
-Mixer<br /><br />
+Mixer<br />
 						Radio/TV Service
-Technician<br /><br />
+Technician<br />
 						Book
-Binder<br /><br />
+Binder<br />
 						Road
-Manager<br /><br />
+Manager<br />
 						Roller Coaster
-Technician<br /><br />
+Technician<br />
 						Tile
-Setter<br /><br />
-						Painter<br /><br />
+Setter<br />
+						Painter<br />
 						Printer
-Developer<br /><br />
-						Carpenter<br /><br />
+Developer<br />
+						Carpenter<br />
 						Landscape
-Gardener<br /><br />
+Gardener<br />
 						Entertainer Body
 Guard</em>
 					</td>
@@ -239,6 +239,8 @@ Guard</em>
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -251,7 +253,7 @@ people.</p>
 <hr size="1" />
 
 	<span class="header2">Public Relations
-Specialist</span><br /><br />
+Specialist</span><br />
 	<img class="job_pic" src="/images/icons/BF/1369.jpg"
 width="100" height="100" border="0" alt="Public Relations
 Specialist" />
@@ -275,7 +277,7 @@ specialists was $61,150 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Technical Writer</span><br /><br />
+	<span class="header2">Technical Writer</span><br />
 	<img class="job_pic" src="/images/icons/BF/43289.jpg"
 width="100" height="100" border="0" alt="Technical Writer" />
 	<span class="header3">Job Description</span>
@@ -297,7 +299,7 @@ $72,850 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Actor/Actress</span><br /><br />
+	<span class="header2">Actor/Actress</span><br />
 	<img class="job_pic" src="/images/icons/BF/C575061.jpg"
 width="100" height="100" border="0" alt="Actor/Actress" />
 	<span class="header3">Job Description</span>
@@ -326,7 +328,7 @@ interest in technology will help you to succeed in this field.</p>
 
 <hr size="1" />
 
-	<span class="header2">Photographer</span><br /><br />
+	<span class="header2">Photographer</span><br />
 	<img class="job_pic" src="/images/icons/BF/43060.jpg"
 width="100" height="100" border="0" alt="Photographer" />
 	<span class="header3">Job Description</span>
@@ -352,7 +354,7 @@ $36,280 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Video Editor</span><br /><br />
+	<span class="header2">Video Editor</span><br />
 	<img class="job_pic" src="/images/icons/BF/C506027.jpg"
 width="100" height="100" border="0" alt="Video Editor" />
 	<span class="header3">Job Description</span>
@@ -379,7 +381,7 @@ $63,780 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Desktop Publisher</span><br /><br />
+	<span class="header2">Desktop Publisher</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Desktop publishers use computer software to
 design page layouts for newspapers, books, brochures, and other
@@ -403,7 +405,7 @@ using technology.</p>
 
 <hr size="1" />
 
-	<span class="header2">Lighting Designer</span><br /><br />
+	<span class="header2">Lighting Designer</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>A lighting designer is a part of the set design stage crew
 that helps the actors look better on stage.  If you would like to be
@@ -426,7 +428,7 @@ in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Sound Engineering
-Technician</span><br /><br />
+Technician</span><br />
 	<img class="job_pic" src="/images/icons/BF/43158.jpg"
 width="100" height="100" border="0" alt="Sound Mixer" />
 	<span class="header3">Job Description</span>
@@ -446,7 +448,7 @@ technicians was $45,510 in May 2019. </blockquote>
 <hr size="1" />
 
 
-	<span class="header2">Road Manager</span><br /><br />
+	<span class="header2">Road Manager</span><br />
 	<img class="job_pic" src="/images/icons/BF/43239.jpg"
 width="100" height="100" border="0" alt="Road Manager" />
 	<span class="header3">Job Description</span>
@@ -468,3 +470,5 @@ problems.</blockquote>
 <p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 10, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 10, 2020). </blockquote>
 
 <blockquote>Indeed.com. On the Internet at <a href="http://www/indeed.com">http://www/indeed.com</a> (visited September 10, 2020). </blockquote>
+
+</div>

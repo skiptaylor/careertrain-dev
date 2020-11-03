@@ -120,14 +120,14 @@ explore:</strong><p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">CF Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -139,11 +139,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -152,86 +152,86 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Business & Community Service</span><br /><br />
+class="header2">Business & Community Service</span><br />
 						<em>Athletic
-Director<br /><br />
+Director<br />
 						Safety
-Engineer<br /><br />
+Engineer<br />
 						Police
-Chief<br /><br />
-						Sheriff<br /><br />
+Chief<br />
+						Sheriff<br />
 						Deputy
-Sheriff<br /><br />
+Sheriff<br />
 						Youth Services
-Director<br /><br />
+Director<br />
 						Fitness Club
-Manager<br /><br />
+Manager<br />
 						Aircraft Sales
-Representative<br /><br />
+Representative<br />
 						Professional
-Athlete<br /><br />
+Athlete<br />
 						Real Estate
-Agent<br /><br />
-						Machinist<br /><br />
+Agent<br />
+						Machinist<br />
 						Corrections
-Officer<br /><br />
+Officer<br />
 						Cleaning Service
 Owner</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Business & Environment</span><br /><br />
+class="header2">Business & Environment</span><br />
 						<em>Environmental
-Risk Manager<br /><br />
+Risk Manager<br />
 						Land Acquisition
-Professional<br /><br />
+Professional<br />
 						Solid Waste
-Management<br /><br />
+Management<br />
 						Environmental
-Protection Specialist<br /><br />
+Protection Specialist<br />
 						Environmental
-Project Manager<br /><br />
+Project Manager<br />
 						Fire
-Chief<br /><br />
+Chief<br />
 						Park
-Ranger<br /><br />
+Ranger<br />
 						Park & Recreation
-Manager<br /><br />
+Manager<br />
 						Forestry
-Technician<br /><br />
+Technician<br />
 
-	Firefighter<br /><br />
-						Rancher<br /><br />
+	Firefighter<br />
+						Rancher<br />
 						Logging
 Supervisor</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Business & Technology</span><br /><br />
+class="header2">Business & Technology</span><br />
 						<em>Information
-Manager<br /><br />
+Manager<br />
 						Computer
-Specialist<br /><br />
+Specialist<br />
 						Database
-Manager<br /><br />
+Manager<br />
 						Air Traffic
-Controller<br /><br />
+Controller<br />
 						Construction
-Manager<br /><br />
+Manager<br />
 						Building
-Contractor<br /><br />
+Contractor<br />
 						Computer Sales
-Representative<br /><br />
+Representative<br />
 						Software Sales
-Representative<br /><br />
+Representative<br />
 						Computer
-Engineer<br /><br />
+Engineer<br />
 						Industrial
-Production Manager<br /><br />
+Production Manager<br />
 						Computer Store
-Manager<br /><br />
+Manager<br />
 						Public Service
-Technician<br /><br />
+Technician<br />
 						Truck Driver</em>
 					</td>
 				</tr>
@@ -239,6 +239,8 @@ Technician<br /><br />
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -249,7 +251,7 @@ To enjoy them you must like adventure.</p>
 
 <hr size="1" />
 
-	<span class="header2">Police Officer</span><br /><br />
+	<span class="header2">Police Officer</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Uniformed police officers have general law
 enforcement duties, including maintaining regular patrols and
@@ -270,7 +272,7 @@ $65,170 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Detective</span><br /><br />
+	<span class="header2">Detective</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Detectives are plain-clothes investigators who
 gather facts and collect evidence for criminal cases. </blockquote>
@@ -287,7 +289,7 @@ in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Corrections Officer</span><br /><br />
+	<span class="header2">Corrections Officer</span><br />
 	<img class="job_pic" src="/images/icons/CF/so000174.jpg"
 width="100" height="100" border="0" alt="Corrections Officer" />
 	<span class="header3">Job Description</span>
@@ -321,7 +323,7 @@ examples.</p>
 <hr size="1" />
 
 	<span class="header2">Waste Management
-Technician</span><br /><br />
+Technician</span><br />
 	<img class="job_pic" src="/images/icons/AC/43020.jpg"
 width="100" height="100" border="0" alt="Waste Management
 Technician" />
@@ -343,7 +345,7 @@ technicians was $43,900 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Park Ranger</span><br /><br />
+	<span class="header2">Park Ranger</span><br />
 	<img class="job_pic" src="/images/icons/CF/C585042.jpg"
 width="100" height="100" border="0" alt="Park Ranger" />
 	<span class="header3">Job Description</span>
@@ -362,7 +364,7 @@ $62,660 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Forestry Technician</span><br /><br />
+	<span class="header2">Forestry Technician</span><br />
 	<img class="job_pic" src="/images/icons/CF/43168.jpg"
 width="100" height="100" border="0" alt="Forestry Technician" />
 	<span class="header3">Job Description</span>
@@ -393,7 +395,7 @@ equipment or machines, this field may be for you.</p>
 <hr size="1" />
 
 	<span class="header2">Computer and Information Systems
-Manager</span><br /><br />
+Manager</span><br />
 	<img class="job_pic" src="/images/icons/CF/43334.jpg"
 width="100" height="100" border="0" alt="Computer and Information
 Systems " />
@@ -418,7 +420,7 @@ information system managers was $146,360 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Computer Software 
-Engineer</span><br /><br />
+Engineer</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Computer software (or hardware) engineers apply the principles
 of computer science and mathematical analysis to the design,
@@ -436,7 +438,7 @@ engineers was $117,220 in May 2019.
 <hr size="1" />
 
 	<span class="header2">Computer Service
-Technician</span><br /><br />
+Technician</span><br />
 	<!-- <img class="job_pic" src="/images/icons/CF/1234.jpg"
 width="100" height="100" border="0" alt="Computer Service
 Technician" /> -->
@@ -458,4 +460,6 @@ technicians was $54,760 in May 2019.
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 14, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 14, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 14, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 14, 2020). </blockquote>
+
+</div>

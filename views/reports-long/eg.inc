@@ -128,14 +128,14 @@ explore.</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">EG Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -147,11 +147,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -160,7 +160,7 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Community</span><br /><br />
+class="header2">Community</span><br />
 						<em>Social Worker
 							<ul>
 
@@ -171,62 +171,62 @@ class="header2">Community</span><br /><br />
 	<li>Public Health</li>
 							</ul>
 						Public Health
-Consultant<br /><br />
+Consultant<br />
 						Public Affairs
-Officer<br /><br />
+Officer<br />
 						Postal Service
-Administrator<br /><br />
+Administrator<br />
 
-	Firefighter<br /><br />
+	Firefighter<br />
 						Postal Service
-Personnel<br /><br />
+Personnel<br />
 						Religious Program
-Specialist<br /><br />
+Specialist<br />
 						Public Health Field
 Worker</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Legal</span><br /><br />
+class="header2">Legal</span><br />
 
-	<em>Lawyer<br /><br />
+	<em>Lawyer<br />
 						Labor Relations
-Specialist<br /><br />
+Specialist<br />
 						Police
-Chief<br /><br />
+Chief<br />
 						County
-Sheriff<br /><br />
-						FBI Agent<br /><br />
+Sheriff<br />
+						FBI Agent<br />
 						Investigator
-Detective<br /><br />
+Detective<br />
 						Police
-Officer<br /><br />
+Officer<br />
 						Legal
-Technician<br /><br />
+Technician<br />
 						Customs
-Agent<br /><br />
+Agent<br />
 						Security Guard</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Military</span><br /><br />
+class="header2">Military</span><br />
 
-	<em>Chaplain<br /><br />
-						Engineer<br /><br />
+	<em>Chaplain<br />
+						Engineer<br />
 						Military
-Officer<br /><br />
+Officer<br />
 						Transportation
-Manager<br /><br />
+Manager<br />
 						Military
-Police<br /><br />
+Police<br />
 						Recruiting
-Specialist<br /><br />
+Specialist<br />
 						Interpreter &
-Translator<br /><br />
+Translator<br />
 						Military
-Trainer<br /><br />
+Trainer<br />
 						Emergency Management
-Specialist<br /><br />
+Specialist<br />
 						Medic</em>
 					</td>
 				</tr>
@@ -234,6 +234,8 @@ Specialist<br /><br />
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -245,7 +247,7 @@ and/or happier.</p>
 <hr size="1" />
 
 	<span class="header2">Public Health Social
-Worker</span><br /><br />
+Worker</span><br />
 	<img class="job_pic" src="/images/icons/EG/1212.jpg"
 width="100" height="100" border="0" alt="Public Health Social
 Worker" />
@@ -272,7 +274,7 @@ workers was $59,300 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header1">Medical and Health Services
-Managers</span><br /><br />
+Managers</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Medical and health services managers, also
 referred to as health care executives or health care administrators,
@@ -302,7 +304,7 @@ of questions and can keep up with details.</p>
 width="100" height="100" border="0" alt="Industrial Labor Relations
 Specialist" />
 	<span class="header2">Industrial Labor Relations
-Specialist</span><br /><br />
+Specialist</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Labor relations managers and their staffs
 implement industrial labor relations programs. Labor relations
@@ -323,7 +325,7 @@ relations specialists was $69,020 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Police Detective</span><br /><br />
+	<span class="header2">Police Detective</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As a police detective, you would investigate
 crimes to find out what happened and who was involved. This is an
@@ -348,7 +350,7 @@ $65,170 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Security Guard</span><br /><br />
+	<span class="header2">Security Guard</span><br />
 	<img class="job_pic" src="/images/icons/EG/43109.jpg"
 width="100" height="100" border="0" alt="Security Guard" />
 	<span class="header3">Job Description</span>
@@ -373,7 +375,7 @@ communities. The occupations in this field do this.</p>
 <hr size="1" />
 
 	<span class="header2">Recruiting
-Specialist</span><br /><br />
+Specialist</span><br />
 	<img class="job_pic" src="/images/icons/EG/M37.jpg"
 width="100" height="100" border="0" alt="Recruiting Specialist" />
 	<span class="header3">Job Description</span>
@@ -391,7 +393,7 @@ public speaking are valuable.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Emergency Management
-Specialist</span><br /><br />
+Specialist</span><br />
 	<img class="job_pic" src="/images/icons/EG/M002.jpg"
 width="100" height="100" border="0" alt="Emergency Management
 Specialist" />
@@ -409,7 +411,7 @@ want to work in this occupation.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Military Trainer</span><br /><br />
+	<span class="header2">Military Trainer</span><br />
 	<img class="job_pic" src="/images/icons/EG/M99.jpg"
 width="100" height="100" border="0" alt="Military Trainer" />
 	<span class="header3">Job Description</span>
@@ -427,4 +429,6 @@ training would be provided by the military.</blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 21, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 21, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 21, 2020). </blockquote>
+
+</div>

@@ -116,14 +116,14 @@ explore:</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">AE Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><---------------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -135,11 +135,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br/>Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -148,32 +148,32 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Military</span><br /><br />
+class="header2">Military</span><br />
 
-	<em>Pilot<br /><br />
+	<em>Pilot<br />
 						Intelligence
-Specialist<br /><br />
+Specialist<br />
 						Graphic
 Information
-Specialist<br /><br />
+Specialist<br />
 						Aircraft Launch
 &
-Recovery Specialist<br /><br />
+Recovery Specialist<br />
 						Artillery Crew
-Member<br /><br />
+Member<br />
 						Military
-Police<br /><br />
+Police<br />
 						Platoon/Squad
-Leader<br /><br />
+Leader<br />
 						Mapping
-Technician<br /><br />
+Technician<br />
 						Explosive
 Blasting
 Specialist</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Environmental</span><br /><br />
+class="header2">Environmental</span><br />
 						<em>Nature
 Scientist
 							<ul>
@@ -183,37 +183,37 @@ Scientist
 	<li>Marine Biologist</li>
 							</ul>
 						Agricultural
-Scientist<br /><br />
+Scientist<br />
 						Marine
-Surveyor<br /><br />
+Surveyor<br />
 						Wildlife
-Manager<br /><br />
+Manager<br />
 						Park
-Ranger<br /><br />
+Ranger<br />
 						Waste Management
-Technician<br /><br />
+Technician<br />
 						Cartographer
 Technician</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Outdoor Service</span><br /><br />
+class="header2">Outdoor Service</span><br />
 						<em>Homeland
-Security Officer<br /><br />
+Security Officer<br />
 						Immigration
-Specialist<br /><br />
+Specialist<br />
 						Public Safety
-Officer<br /><br />
+Officer<br />
 						Construction
-Equipment Operator<br /><br />
+Equipment Operator<br />
 
-	Firefighter<br /><br />
+	Firefighter<br />
 						Heavy Equipment
-Mechanic<br /><br />
+Mechanic<br />
 						Security
-Guard<br /><br />
+Guard<br />
 						Construction
-Worker<br /><br />
+Worker<br />
 
 	Groundskeeper</em>
 					</td>
@@ -223,6 +223,8 @@ Worker<br /><br />
 	</tr>
 </table>
 
+<div class="inner">
+
 <hr size="1" />
 
 <span class="header1">MILITARY</span>
@@ -231,7 +233,7 @@ body, consider the occupations in this field.</p>
 
 <hr size="1" />
 
-	<span class="header2">Military Pilot</span><br /><br />
+	<span class="header2">Military Pilot</span><br />
 	<img class="job_pic" src="/images/icons/AE/43025.jpg"
 width="100" height="100" border="0" alt="Military Pilot" />
 	<span class="header3">Job Description</span>
@@ -257,7 +259,7 @@ specialty.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Intelligence
-Specialist</span><br /><br />
+Specialist</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>You have probably seen movies about government
 spies who provide information on an opposing government. These are
@@ -276,7 +278,7 @@ geography will be helpful to you.</blockquote>
 	<blockquote>The median annual wage of intelligence specialists was $83,170 in
 May 2019.</blockquote>
 
-	<span class="header2">Blasting Specialist</span><br /><br />
+	<span class="header2">Blasting Specialist</span><br />
 	<img class="job_pic" src="/images/icons/AE/M15-0974.jpg"
 width="100" height="100" border="0" alt="Blasting Specialist" />
 	<span class="header3">Job Description</span>
@@ -304,7 +306,7 @@ Outdoors."</p>
 
 <hr size="1" />
 
-	<span class="header2">Marine Surveyor</span><br /><br />
+	<span class="header2">Marine Surveyor</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Marine surveyors (or marine engineers) explore the land under the
 world's oceans and seas.  As a marine surveyor, you would use
@@ -322,7 +324,7 @@ field. Every state requires that surveyors be licensed.</blockquote>
 in May 2019.</blockquote>
 <hr size="1" />
 
-	<span class="header2">Park Ranger</span><br /><br />
+	<span class="header2">Park Ranger</span><br />
 	<img class="job_pic" src="/images/icons/AE/C585042.jpg"
 width="100" height="100" border="0" alt="Park Ranger" />
 	<span class="header3">Job Description</span>
@@ -341,7 +343,7 @@ $62,660 in May 2019.
 </blockquote>
 <hr size="1" />
 
-	<span class="header2">Zoologist</span><br /><br />
+	<span class="header2">Zoologist</span><br />
 	<img class="job_pic" src="/images/icons/AE/1270.jpg"
 width="100" height="100" border="0" alt="Wildlife Manager" />
 	<span class="header3">Job Description</span>
@@ -367,7 +369,7 @@ allow them to stay "on the go."  These next occupations do this.</p>
 
 <hr size="1" />
 
-	<span class="header2">Building Inspector</span><br /><br />
+	<span class="header2">Building Inspector</span><br />
 	<img class="job_pic" src="/images/icons/AE/43241.jpg"
 width="100" height="100" border="0" alt="Building Inspector" />
 	<span class="header3">Job Description</span>
@@ -392,7 +394,7 @@ was $60,710 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Meter Reader</span><br /><br />
+	<span class="header2">Meter Reader</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As a meter reader you would drive through
 neighborhoods, stopping at utility meters.  You would check these
@@ -409,7 +411,7 @@ in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Construction Worker</span><br /><br />
+	<span class="header2">Construction Worker</span><br />
 	<img class="job_pic" src="/images/icons/AE/43191.jpg"
 width="100" height="100" border="0" alt="Construction Worker" />
 	<span class="header3">Job Description</span>
@@ -431,4 +433,6 @@ was $36,000 in May 2019.</blockquote>
 <hr size="1" />
 
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 9, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 9, 2020). </blockquote>
+
+</div>

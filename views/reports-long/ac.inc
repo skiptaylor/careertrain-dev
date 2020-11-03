@@ -123,14 +123,14 @@ explore:</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">AC Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -142,11 +142,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -155,75 +155,75 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Business</span><br /><br />
+class="header2">Business</span><br />
 						<em>Agricultural
-Economist<br /><br />
+Economist<br />
 						Museum
-Director<br /><br />
+Director<br />
 						Agribusiness
-Consultant<br /><br />
+Consultant<br />
 						Range
-Manager<br /><br />
+Manager<br />
 						Union
-Leader<br /><br />
+Leader<br />
 						Farm
-Broker<br /><br />
+Broker<br />
 						Factory
-Manager<br /><br />
+Manager<br />
 						Warehouse
-Supervisor<br /><br />
+Supervisor<br />
 
-	Auctioneer<br /><br />
+	Auctioneer<br />
 						Pet Shop
 Owner/Worker</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Outdoor Management</span><br /><br />
+class="header2">Outdoor Management</span><br />
 						<em>Nature Scientist
 							<ul>
 
 	<li>Horticulturist</li>
 							</ul>
 						Wildlife
-Manager<br /><br />
+Manager<br />
 						Recreation
-Administrator<br /><br />
+Administrator<br />
 						Resort
-Manager<br /><br />
+Manager<br />
 						Farm
-Manager<br /><br />
-						Rancher<br /><br />
+Manager<br />
+						Rancher<br />
 						Orchard
-Manager<br /><br />
+Manager<br />
 						County Fair
-Organizer<br /><br />
+Organizer<br />
 						Nursery
 Manager/Worker</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Environment</span><br /><br />
+class="header2">Environment</span><br />
 						<em>Regional
-Planner<br /><br />
+Planner<br />
 
-	Environmentalist<br /><br />
+	Environmentalist<br />
 						Environmental Health
-Inspector<br /><br />
+Inspector<br />
 						Environmental Risk
-Manager<br /><br />
+Manager<br />
 						Wetlands
-Manager<br /><br />
+Manager<br />
 						Safety/Traffic
-Engineer<br /><br />
+Engineer<br />
 						Logging
-Supervisor<br /><br />
+Supervisor<br />
 						Water Quality
-Technologist<br /><br />
+Technologist<br />
 						Agricultural
-Technician<br /><br />
+Technician<br />
 						Waste Management
-Technician<br /><br />
+Technician<br />
 						Forestry
 Technician</em>
 					</td>
@@ -232,6 +232,8 @@ Technician</em>
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <p>Keep reading to learn more about some of the occupations shown
 above.</p>
@@ -247,7 +249,7 @@ of our growing population.</p>
 <hr size="1" />
 
 	<span class="header2">Agricultural
-Economist</span><br /><br />
+Economist</span><br />
 	<img class="job_pic" src="/images/icons/AC/1142.jpg"
 width="100" height="100" border="0" alt="Agricultural Economist" />
 	<span class="header3">Job Description</span>
@@ -267,7 +269,7 @@ economists was $105,020 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Range Manager</span><br /><br />
+	<span class="header2">Range Manager</span><br />
 	<img class="job_pic" src="/images/icons/AC/1023.jpg"
 width="100" height="100" border="0" alt="Range Manager" />
 	<span class="header3">Job Description</span>
@@ -288,7 +290,7 @@ $62,660 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Agricultural Manager</span><br /><br />
+	<span class="header2">Agricultural Manager</span><br />
 	<img class="job_pic" src="/images/icons/AC/43204.jpg"
 width="100" height="100" border="0" alt="Agricultural Manager" />
 	<span class="header3">Job Description</span>
@@ -318,7 +320,7 @@ are three occupations which may interest you.</p>
 
 <hr size="1" />
 
-	<span class="header2">Zoologist</span><br /><br />
+	<span class="header2">Zoologist</span><br />
 	<img class="job_pic" src="/images/icons/AC/1270.jpg"
 width="100" height="100" border="0" alt="Wildlife Manager" />
 	<span class="header3">Job Description</span>
@@ -339,7 +341,7 @@ Ph.D is necessary for most independant research jobs.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Recreational
-Therapist</span><br /><br />
+Therapist</span><br />
 	<img class="job_pic" src="/images/icons/AC/C553057.jpg"
 width="100" height="100" border="0" alt="Recreational Therapy" />
 	<span class="header3">Job Description</span>
@@ -362,7 +364,7 @@ therapists was $48,220 in May 2019. </blockquote>
 
 <hr  size="1" />
 
-	<span class="header2">Farm Manager</span><br /><br />
+	<span class="header2">Farm Manager</span><br />
 	<img class="job_pic" src="/images/icons/AC/1028.jpg"
 width="100" height="100" border="0" alt="Farm Manager" />
 	<span class="header3">Job Description</span>
@@ -393,7 +395,7 @@ three occupations that you might find interesting.</p>
 <hr size="1" />
 
 	<span class="header2">Environmental Engineer
-</span><br /><br />
+</span><br />
 	<img class="job_pic" src="/images/icons/AC/1285.jpg"
 width="100" height="100" border="0" alt="Environmental Engineers " />
 	<span class="header3">Job Description</span>
@@ -413,7 +415,7 @@ engineers was $88,860 in May 2019.</blockquote>
 <hr  size="1" />
 
 	<span class="header2">Waste Management
-Technician</span><br /><br />
+Technician</span><br />
 	<img class="job_pic" src="/images/icons/AC/43020.jpg"
 width="100" height="100" border="0" alt="Waste Management
 Technician" />
@@ -434,7 +436,7 @@ $43,900 in May 2019.</blockquote>
 
 <hr size="1" />
 
-<span class="header2">Forester</span><br /><br />
+<span class="header2">Forester</span><br />
 <img class="job_pic" src="/images/icons/AC/1042.jpg" width="100"
 height="100" border="0" alt="Forester" />
 <span class="header3">Job Description</span>
@@ -457,6 +459,6 @@ $61,790 in May 2019.</blockquote>
 <p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 9, 2020). </blockquote>
 
 
-
+</div>
 
 

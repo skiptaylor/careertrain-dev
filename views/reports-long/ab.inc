@@ -134,12 +134,12 @@ career.</p>
 	<tr>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
-			<span class="header1">AB Career Possibilities</span><br /><br />
+			<span class="header1">AB Career Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%" align="left"><strong>More People Oriented</strong></td>
-					<td width="33%" align="center"><strong><----------></strong></td>
+					<td width="33%" align="center"><strong>&nbsp;</strong></td>
 					<td width="33%" align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
 			</table>
@@ -150,11 +150,11 @@ cellspacing="0" width="100%">
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -163,33 +163,33 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Arts/Communications</span><br /><br />
+class="header2">Arts/Communications</span><br />
 						<em>Environmental
-Lawyer<br /><br />
+Lawyer<br />
 						Public
-Administrator<br /><br />
+Administrator<br />
 						Foreign
-Correspondent<br /><br />
+Correspondent<br />
 						Parks &
-Recreation Administrator<br /><br />
+Recreation Administrator<br />
 						Public Relations
-Specialist<br /><br />
+Specialist<br />
 
-	Recreation\Coach<br /><br />
+	Recreation\Coach<br />
 
-	Cartoonist<br /><br />
+	Cartoonist<br />
 						Nature
-Writer<br /><br />
+Writer<br />
 						Documentary
-Writer<br /><br />
+Writer<br />
 						Nature
-Photographer<br /><br />
+Photographer<br />
 						Fund
-Raiser<br /><br /></em>
+Raiser<br /></em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Out of Doors</span><br /><br />
+class="header2">Out of Doors</span><br />
 						<em>Nature Scientist
 							<ul>
 
@@ -198,42 +198,42 @@ class="header2">Out of Doors</span><br /><br />
 	<li>Zoologist</li>
 							</ul>
 						Agricultural
-Scientist<br /><br />
-						Geologist<br /><br />
+Scientist<br />
+						Geologist<br />
 
-	Petrologist<br /><br />
+	Petrologist<br />
 
-	Hydrologist<br /><br />
+	Hydrologist<br />
 						Athletic
-Coach<br /><br />
+Coach<br />
 						Professional
-Athlete<br /><br />
+Athlete<br />
 						Soil
-Technician<br /><br />
+Technician<br />
 						Parks and Recreation
-Manager<br /><br />
+Manager<br />
 						Dog
-Trainer<br /><br /></em>
+Trainer<br /></em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Designing/Engineering</span><br /><br />
+class="header2">Designing/Engineering</span><br />
 
-	<em>Designing/Engineering<br /><br />
-						Architect<br /><br />
+	<em>Designing/Engineering<br />
+						Architect<br />
 						Urban
-Planner<br /><br />
+Planner<br />
 
-	Engineer/Designer<br /><br />
-						Pilot<br /><br />
+	Engineer/Designer<br />
+						Pilot<br />
 
-	Meteorologist<br /><br />
-						Stevedore<br /><br />
-						Plumber<br /><br />
+	Meteorologist<br />
+						Stevedore<br />
+						Plumber<br />
 						Sculptor (concrete,
-lawn)<br /><br />
+lawn)<br />
 						Pest Control
-Worker<br /><br />
+Worker<br />
 						Developer
 							<ul>
 
@@ -250,6 +250,8 @@ Worker<br /><br />
 	</tr>
 </table>
 
+<div class="inner">
+
 <hr size="1" />
 
 <span class="header1">ARTS AND COMMUNICATIONS</span>
@@ -260,7 +262,7 @@ interest to you.</p>
 
 <hr size="1" />
 
-	<span class="header2">Environmental Lawyer</span><br /><br />
+	<span class="header2">Environmental Lawyer</span><br />
 	<img class="job_pic" src="/images/icons/AB/1360.jpg"
 width="100" height="100" border="0" alt="Environmental Lawyer" />
 	<span class="header3">Job Description</span>
@@ -285,7 +287,7 @@ in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Writer</span><br /><br />
+	<span class="header2">Writer</span><br />
 	<img class="job_pic" src="/images/icons/AB/1040.jpg"
 width="100" height="100" border="0" alt="Writer" />
 	<span class="header3">Job Description</span>
@@ -309,7 +311,7 @@ was $63,200 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Nature Photographer</span><br /><br />
+	<span class="header2">Nature Photographer</span><br />
 	<img class="job_pic" src="/images/icons/AB/43060.jpg"
 width="100" height="100" border="0" ALT="Nature Photographer" />
 	<span class="header3">Job Description</span>
@@ -342,7 +344,7 @@ active and enjoy being in nature and working outdoors.</p>
 
 <hr size="1" />
 
-	<span class="header2">Botanist</span><br /><br />
+	<span class="header2">Botanist</span><br />
 	<img class="job_pic" src="/images/icons/AB/1020.jpg"
 width="100" height="100" border="0" alt="Botanist" />
 	<span class="header3">Job Description</span>
@@ -368,7 +370,7 @@ in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Zoologist</span><br /><br />
+	<span class="header2">Zoologist</span><br />
 	<img class="job_pic" src="/images/icons/AB/1079.jpg"
 width="100" height="100" border="0" alt="Zoologist" />
 	<span class="header3">Job Description</span>
@@ -392,7 +394,7 @@ in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Logging Worker</span>
-	<br /><br />
+	<br />
 	<span class="header3">Job Description</span>
 	<blockquote>Logging workers harvest timber from forests to
 provide the raw material for consumer and industrial products.
@@ -421,7 +423,7 @@ spend time ensuring that things are done right.</p>
 
 <hr size="1" />
 
-	<span class="header2">Urban Planner</span><br /><br />
+	<span class="header2">Urban Planner</span><br />
 	<img class="job_pic" src="/images/icons/AB/43137.jpg"
 width="100" height="100" border="0" alt="Urban Planner" />
 	<span class="header3">Job Description</span>
@@ -445,7 +447,7 @@ planners was $74,350 in May 2019.</blockquote>
 
 <hr size="1">
 
-	<span class="header2">Industrial Designer</span><br /><br />
+	<span class="header2">Industrial Designer</span><br />
 	<img class="job_pic" src="/images/icons/AB/C0777_50.jpg"
 width="100" height="100" border="0" alt="Industrial Designer" />
 	<span class="header3">Job Description</span>
@@ -469,7 +471,7 @@ was $68,890 in May 2019. </blockquote>
 
 <hr  size="1" />
 
-	<span class="header2">Land Surveyor</span><br /><br />
+	<span class="header2">Land Surveyor</span><br />
 	<img class="job_pic" src="/images/icons/AB/43169.jpg"
 width="100" height="100" border="0" alt="Land Surveyor" />
 	<span class="header3">Job Description</span>
@@ -492,4 +494,6 @@ $63,420 in May 2019. </blockquote>
 <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote>
  
 <blockquote>National Center for O*NET Development, <i> O*NET Online</i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 9, 2020). </blockquote>
+
+</div>
  

@@ -117,14 +117,14 @@ explore:</strong></p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">AD Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -136,11 +136,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br/>or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -149,53 +149,53 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="33%">
 						<span
-class="header2">Outdoor Technical Environments</span><br /><br />
+class="header2">Outdoor Technical Environments</span><br />
 						<em>Air Traffic
-Controller<br /><br />
+Controller<br />
 						Army
-Officer<br /><br />
+Officer<br />
 						Community
 Relations
-Manager<br /><br />
+Manager<br />
 						Military
 Enlisted
-Personnel<br /><br />
+Personnel<br />
 						Aerial
-Photographer<br /><br />
+Photographer<br />
 						Safety
-Engineer<br /><br />
+Engineer<br />
 						Travel
-Agent<br /><br />
+Agent<br />
 						Air Quality
 Control
-Technician<br /><br />
+Technician<br />
 						Telephone Cable
-Installer<br /><br />
+Installer<br />
 						Highway
 Maintenance</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Nature/Office Environments</span><br /><br />
+class="header2">Nature/Office Environments</span><br />
 
 	<em>Administrative
-Assistant<br /><br />
+Assistant<br />
 						Land & Water
-Conservationist<br /><br />
+Conservationist<br />
 						Title
-Searcher<br /><br />
+Searcher<br />
 						Tour
-Guide<br /><br />
+Guide<br />
 
-	Receptionist<br /><br />
+	Receptionist<br />
 						Ticket Agent-
 Wildlife Tours Agent</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Nature/Animal Environments</span><br /><br />
+class="header2">Nature/Animal Environments</span><br />
 						<em>Livestock
-Auction Coordinator<br /><br />
+Auction Coordinator<br />
 						Veterinary
 Clinic/Hospital
 							<ul>
@@ -209,9 +209,9 @@ Clinic/Hospital
 	<li>Records/Billing Clerk</li>
 							</ul>
 						Secretary- Zoo,
-Farm, Ranch<br /><br />
+Farm, Ranch<br />
 						Pet Store
-Clerk/Caretaker<br /><br />
+Clerk/Caretaker<br />
 						Pet Sitter</em>
 					</td>
 				</tr>
@@ -219,6 +219,8 @@ Clerk/Caretaker<br /><br />
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -231,7 +233,7 @@ preserve our future.</p>
 <hr size="1" />
 
 	<span class="header2">Community Relations
-Manager</span><br /><br />
+Manager</span><br />
 	<img class="job_pic" src="/images/icons/AD/1369.jpg"
 width="100" height="100" border="0" alt="Community Relations
 Manager" />
@@ -253,7 +255,7 @@ managers was $116,180 in May 2019.
 
 <hr  size="1" />
 
-	<span class="header2">Safety Engineer</span><br /><br />
+	<span class="header2">Safety Engineer</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>A safety engineer works to make products safer
 and easier to use.  If you become a safety engineer, you would work
@@ -269,7 +271,7 @@ $91,410 in May 2019.</blockquote>
 <hr size="1" />
 
 	<span class="header2">Air Quality Control
-Technician</span><br /><br />
+Technician</span><br />
 	<img class="job_pic" src="/images/icons/AD/C1259_02.jpg"
 width="100" height="100" border="0" alt="Air Quality Control
 Technician" />
@@ -295,7 +297,7 @@ occupations.</p>
 <hr size="1" />
 
 	<span class="header2">Land and Water
-Conservationist</span><br /><br />
+Conservationist</span><br />
 	<img class="job_pic" src="/images/icons/AD/1231.jpg"
 width="100" height="100" border="0" alt="Land and Water
 Conservationist" />
@@ -318,7 +320,7 @@ conservationists was $62,410 in May 2019.
 <hr size="1" />
 
 	<span class="header2">Conservation
-Technician</span><br /><br />
+Technician</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As a conservation technician, you
 would work with conservationists.  You will help them to protect
@@ -334,7 +336,7 @@ technicians was $45,500 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Tour Guide</span><br /><br />
+	<span class="header2">Tour Guide</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>If you like to teach others about our
 environment, you might become a wildlife guide. People often tour
@@ -360,7 +362,7 @@ following occupations.</p>
 
 <hr size="1" />
 
-	<span class="header2">Veterinary Technician</span><br /><br />
+	<span class="header2">Veterinary Technician</span><br />
 	<img class="job_pic" src="/images/icons/AD/PH43131.jpg"
 width="100" height="100" border="0" alt="Veterinary Technician" />
 	<span class="header3">Job Description</span>
@@ -381,7 +383,7 @@ was $35,320 in May 2019.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Animal Caretaker</span><br /><br />
+	<span class="header2">Animal Caretaker</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>An animal caretaker does for animals many of the
 things that a practical nurse does for people.  As an animal
@@ -398,7 +400,7 @@ $24,990 in May 2019.</blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Pet Sitter</span><br /><br />
+	<span class="header2">Pet Sitter</span><br />
 	<img class="job_pic" src="/images/icons/AD/43130.jpg"
 width="100" height="100" border="0" alt="Pet Sitter" />
 	<span class="header3">Job Description</span>
@@ -419,4 +421,4 @@ was 24,780 in May 2019.
 <p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 9, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 9, 2020). </blockquote>
 
 
-
+</div>

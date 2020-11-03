@@ -126,14 +126,14 @@ explore:</strong><p>
 		<td></td>
 		<td bgcolor="#FFF9D8" align="center" height="50">
 			<span class="header1">CH Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
 					<td width="33%"
 align="left"><strong>More People Oriented</strong></td>
 					<td width="33%"
-align="center"><strong><----------></strong></td>
+align="center"><strong>&nbsp;</strong></td>
 					<td width="33%"
 align="right"><strong>More Technical Oriented</strong></td>
 				</tr>
@@ -145,11 +145,11 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /></strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
-height="33%"><td><strong><br />Less</strong></td></tr>
+height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
@@ -158,13 +158,13 @@ cellpadding="0" width="100%">
 				<tr valign="top">
 					<td width="25%">
 						<span
-class="header2">Finance</span><br /><br />
+class="header2">Finance</span><br />
 						<em>Chief Financial
-Officer<br /><br />
+Officer<br />
 						Financial
-Advisor<br /><br />
+Advisor<br />
 
-	Accountant<br /><br />
+	Accountant<br />
 						Auditor
 							<ul>
 
@@ -173,77 +173,77 @@ Advisor<br /><br />
 	<li>Federal Reserve</li>
 							</ul>
 
-	Stockbroker<br /><br />
+	Stockbroker<br />
 
-	Statistician<br /><br />
+	Statistician<br />
 						Loan
-Officer<br /><br />
+Officer<br />
 						Accounting
-Clerk<br /><br />
+Clerk<br />
 						Cashier</em>
 					</td>
 					<td width="25%">
 						<span
-class="header2">Medical</span><br /><br />
+class="header2">Medical</span><br />
 						<em>Public Health
-Administrator<br /><br />
-						Physician<br /><br />
+Administrator<br />
+						Physician<br />
 						Hospital
-Administrator<br /><br />
+Administrator<br />
 
-	Epidemiologist<br /><br />
+	Epidemiologist<br />
 						Medical
-Officer<br /><br />
+Officer<br />
 						Nursing Home
-Director<br /><br />
+Director<br />
 
-	Pharmacist<br /><br />
-						Optician<br /><br />
+	Pharmacist<br />
+						Optician<br />
 						Patient
 Representative</em>
 					</td>
 					<td width="25%">
 						<span
-class="header2">Analysis/Research</span><br /><br />
+class="header2">Analysis/Research</span><br />
 
-	<em>Economist<br /><br />
+	<em>Economist<br />
 						Marketing
-Director<br /><br />
+Director<br />
 
-	Entrepreneur<br /><br />
+	Entrepreneur<br />
 						Financial
-Analyst<br /><br />
+Analyst<br />
 						Market
-Researcher<br /><br />
+Researcher<br />
 						Insurance Planner &
-Analyst<br /><br />
+Analyst<br />
 						Medical
-Economist<br /><br />
+Economist<br />
 						Computer Systems
 Analyst</em>
 					</td>
 					<td width="25%">
 						<span
-class="header2">Nature</span><br /><br />
+class="header2">Nature</span><br />
 						<em>Zoo
-Administrator<br /><br />
+Administrator<br />
 						Science Museum
-Director<br /><br />
+Director<br />
 						Historic
-Preservationist<br /><br />
+Preservationist<br />
 						Fishery
-Manager/Technician<br /><br />
+Manager/Technician<br />
 						Wildlife
-Manager/Technician<br /><br />
+Manager/Technician<br />
 						Refuge
-Manager<br /><br />
-						Lobbyist<br /><br />
+Manager<br />
+						Lobbyist<br />
 						Grass Roots
-Coordinator<br /><br />
+Coordinator<br />
 						Fund
-Raiser<br /><br />
+Raiser<br />
 						Real Estate
-Developer<br /><br />
+Developer<br />
 						Nursery Manager</em>
 					</td>
 				</tr>
@@ -251,6 +251,8 @@ Developer<br /><br />
 		</td>
 	</tr>
 </table>
+
+<div class="inner">
 
 <hr size="1" />
 
@@ -261,7 +263,7 @@ finances, these occupations might be for you.</p>
 
 <hr size="1" />
 
-	<span class="header2">Accountant</span><br /><br />
+	<span class="header2">Accountant</span><br />
 	<img class="job_pic" src="/images/icons/CH/1287.jpg"
 width="100" height="100" border="0" alt="Accountant" />
 	<span class="header3">Job Description</span>
@@ -282,7 +284,7 @@ $71,550 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Statistician</span><br /><br />
+	<span class="header2">Statistician</span><br />
 	<img class="job_pic" src="/images/icons/CH/C1618_03.jpg"
 width="100" height="100" border="0" alt="Statistician" />
 	<span class="header3">Job Description</span>
@@ -302,7 +304,7 @@ $91,160 in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Loan Officer</span><br /><br />
+	<span class="header2">Loan Officer</span><br />
 	<img class="job_pic" src="/images/icons/CH/C506008.jpg"
 width="100" height="100" border="0" alt="Loan Officer" />
 	<span class="header3">Job Description</span>
@@ -332,7 +334,7 @@ physical well-being of others.</p>
 <hr size="1" />
 
 <span class="header2">Medical and Health Services
-Manager</span><br /><br />
+Manager</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As a medical and health services manager, you
 would be
@@ -352,7 +354,7 @@ service managers was $100,980 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Nursing Home
-Director</span><br /><br />
+Director</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As a nursing home director, you would make sure
 that the building and equipment are kept in good condition.  You
@@ -373,7 +375,7 @@ was $100,980 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Polysomnographic
-Technologist or Medical Technologist</span><br /><br />
+Technologist or Medical Technologist</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Polysomnographic technologists monitor
 the activity of adults and children in sleep laboratories.
@@ -402,7 +404,7 @@ money.</p>
 
 <hr size="1" />
 
-	<span class="header2">Economist</span><br /><br />
+	<span class="header2">Economist</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>If you enjoy finding clues and drawing
 conclusions, you might become an economist. An economist looks at
@@ -420,7 +422,7 @@ in May 2019. </blockquote>
 
 <hr size="1" />
 
-	<span class="header2">Market Researcher</span><br /><br />
+	<span class="header2">Market Researcher</span><br />
 	<img class="job_pic" src="/images/icons/CH/43326.jpg"
 width="100" height="100" border="0" alt="Market Researcher" />
 	<span class="header3">Job Description</span>
@@ -440,7 +442,7 @@ $63,790 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Computer Systems
-Analyst</span><br /><br />
+Analyst</span><br />
 	<img class="job_pic" src="/images/icons/CH/43166.jpg"
 width="100" height="100" border="0" alt="Computer Systems Analyst" />
 	<span class="header3">Job Description</span>
@@ -468,7 +470,7 @@ enjoy life sciences and understand business.</p>
 <hr size="1" />
 
 	<span class="header2">Life Science Museum
-Director</span><br /><br />
+Director</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>If you enjoy helping others know about the
 environment and nature, you might become a life science museum
@@ -488,7 +490,7 @@ directors was $49,850 in May 2019.
 
 <hr size="1" />
 
-	<span class="header2">Zoologist</span><br /><br />
+	<span class="header2">Zoologist</span><br />
 	<img class="job_pic" src="/images/icons/CH/1270.jpg"
 width="100" height="100" border="0" alt="Zoologist" />
 	<span class="header3">Job Description</span>
@@ -509,7 +511,7 @@ $63,270 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Farmer, Rancher, Agricultural
-Manager</span><br /><br />
+Manager</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Crop farmers and managers determine the best
 time to plant seed, apply fertilizer and chemicals, and harvest and
@@ -534,4 +536,6 @@ $71,160 in May 2019. </blockquote>
 
 <hr size="1" />
 
-<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 15, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 15, 2020). </blockquote>
+<p><strong>To learn more about specific careers, please visit the websites below. These sources of information were used to create this report.</strong></p> <blockquote>Bureau of Labor Statistics, U.S. Department of Labor, <i> Occupational Outlook Handbook </i>, on the Internet at <a href="http://www.bls.gov/ooh">http://www.bls.gov/ooh</a> (visited September 15, 2020). </blockquote> <blockquote>National Center for O*NET Development, <i> O*NET Online </i>, on the Internet at <a href="http://www.onetonline.org">http://www.onetonline.org</a> (visited September 15, 2020). </blockquote>
+
+</div>

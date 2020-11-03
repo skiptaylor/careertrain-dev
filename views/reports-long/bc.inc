@@ -143,9 +143,9 @@ align="right"><strong>More Technical Oriented</strong></td>
 	<tr>
 		<td bgcolor="#D3EEF5" align="center" width="50">
 						<table border="0" cellpadding="0" cellspacing="0" height="">
-							<tr align="center" height="33%"><td align="center"><strong>More<br /><br /><br /></strong></td></tr>
-							<tr align="center" height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong><br /><br />  </td></tr>
-							<tr align="center" height="33%"><td><strong><br />Less</strong></td></tr>
+							<tr align="center" height="33%"><td align="center"><strong>More<br /><br /><br /><br /></strong></td></tr>
+							<tr align="center" height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong><br /><br /></td></tr>
+							<tr align="center" height="33%"><td><strong><br /><br />Less</strong></td></tr>
 						</table>
 		</td>
 		<td valign="top">
@@ -221,8 +221,6 @@ Specialist<br />
 
 <div class="inner">
 	
-	
-
 <hr size="1" />
 
 <span class="header1">CREATIVE BUSINESS</span>
