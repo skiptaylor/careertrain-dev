@@ -148,9 +148,9 @@ cellspacing="0" width="100%">
 	<tr>
 		<td bgcolor="#D3EEF5" align="center" width="50">
 			<table border="0" cellpadding="0" cellspacing="0" height="" class="side">
-				<tr height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
-				<tr height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
-				<tr height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
+				<tr align="center" height="33%"><td><strong>More<br /><br /><br /><br /><br /></strong></td></tr>
+				<tr align="center" height="33%"><td><strong>Education<br />or<br/>Training<br />Required</strong></td></tr>
+				<tr align="center" height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">

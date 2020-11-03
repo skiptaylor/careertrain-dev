@@ -137,14 +137,10 @@ align="center"><strong>&nbsp;</strong></td>
 	</tr>
 	<tr>
 		<td bgcolor="#D3EEF5" align="center" width="50">
-			<table border="0" cellpadding="0"
-cellspacing="0" height="" class="side">
-				<tr align="center"
-height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
-				<tr align="center"
-height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
-				<tr align="center"
-height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
+			<table border="0" cellpadding="0" cellspacing="0" height="" class="side">
+				<tr align="center" height="33%"><td><strong>More<br /><br /><br /><br /><br /></strong></td></tr>
+				<tr align="center" height="33%"><td><strong>Education<br />or<br/>Training<br />Required</strong></td></tr>
+				<tr align="center" height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 			</table>
 		</td>
 		<td valign="top">
