@@ -122,18 +122,15 @@ explore:</strong></p>
 <table width="100%" cellpadding="20" cellspacing="0" border="0">
 	<tr>
 		<td></td>
-		<td bgcolor="#FFF9D8" align="center" height="50">
+		<td bgcolor="#FFF9D8" height="50" style="text-align: center;">
 			<span class="header1">EH Career
-Possibilities</span><br /><br />
+Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
-					<td width="33%"
-align="left"><strong>More People Oriented</strong></td>
-					<td width="33%"
-align="center"><strong>&nbsp;</strong></td>
-					<td width="33%"
-align="right"><strong>More Technical Oriented</strong></td>
+					<td width="33%" align="left"><strong>More People Oriented</strong></td>
+					<td width="33%" align="center"><strong>&nbsp;</strong></td>
+					<td width="33%" style="text-align: right;"><strong>More Technical Oriented</strong></td>
 				</tr>
 			</table>
 		</td>
@@ -156,25 +153,25 @@ cellpadding="0" width="100%">
 				<tr valign="top" class="main">
 					<td width="33%">
 						<span
-class="header2">Medical Sciences</span><br /><br />
+class="header2">Medical Sciences</span><br />
 
-<em>Physician<br /><br />
+<em>Physician<br />
 						Military Medical
-Officer<br /><br />
+Officer<br />
 						Sports
-Psychologist<br /><br />
+Psychologist<br />
 						Exercise
-Physiologist<br /><br />
+Physiologist<br />
 						Hospital
-Administrators<br /><br />
+Administrators<br />
 						Health Sciences
-Librarian<br /><br />
+Librarian<br />
 
-	Dietitian/Nutritionist<br /><br />
+	Dietitian/Nutritionist<br />
 						Recreation
-Therapist<br /><br />
-						Nurse<br /><br />
-						Paramedic<br /><br />
+Therapist<br />
+						Nurse<br />
+						Paramedic<br />
 						Technician
 							<ul>
 
@@ -187,13 +184,13 @@ Therapist<br /><br />
 					</td>
 					<td width="33%">
 						<span
-class="header2">Environmental</span><br /><br />
+class="header2">Environmental</span><br />
 
-	<em>Archeologist<br /><br />
+	<em>Archeologist<br />
 						Urban/Regional
-Planner<br /><br />
+Planner<br />
 						Marine
-Biologist<br /><br />
+Biologist<br />
 						Engineer
 							<ul>
 
@@ -204,9 +201,9 @@ Biologist<br /><br />
 	<li>Nuclear</li>
 							</ul>
 						Environmental Risk
-Manager<br /><br />
+Manager<br />
 
-	Meteorologist<br /><br />
+	Meteorologist<br />
 						Military
 							<ul>
 
@@ -217,20 +214,20 @@ Manager<br /><br />
 	<li>Environmental Health Specialist</li>
 							</ul>
 						Land
-Surveyor<br /><br />
+Surveyor<br />
 						Waste Management
 Technician</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Math/Analyst</span><br /><br />
+class="header2">Math/Analyst</span><br />
 
-	<em>Economist<br /><br />
+	<em>Economist<br />
 
-	Mathematician<br /><br />
-						Actuary<br /><br />
+	Mathematician<br />
+						Actuary<br />
 
-	Statistician<br /><br />
+	Statistician<br />
 						Military
 							<ul>
 
@@ -250,7 +247,7 @@ class="header2">Math/Analyst</span><br /><br />
 	<li>Computer Systems</li>
 							</ul>
 						Computer Security
-Specialist<br /><br />
+Specialist<br />
 						Mapping
 Technician</em>
 					</td>
@@ -271,7 +268,7 @@ may be for you.</p>
 
 <hr size="1" />
 
-	<span class="header2">Podiatrist</span><br /><br />
+	<span class="header2">Podiatrist</span><br />
 	<img class="job_pic" src="/images/icons/EH/40210.jpg"
 width="100" height="100" border="0" alt="Podiatrist" />
 	<span class="header3">Job Description</span>
@@ -293,7 +290,7 @@ $126,240 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Military Cardiopulmonary & EEG
-Technician</span><br /><br />
+Technician</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>As a military cardiopulmonary & EEG technician,
 you would do medical tests on a patient's heart and lungs.  You
@@ -320,7 +317,7 @@ help protect the environment.</p>
 
 <hr size="1" />
 
-	<span class="header2">Urban Planner</span><br /><br />
+	<span class="header2">Urban Planner</span><br />
 	<img class="job_pic" src="/images/icons/EH/43137.jpg"
 width="100" height="100" border="0" alt="Urban Planner" />
 	<span class="header3">Job Description</span>
@@ -344,7 +341,7 @@ $74,350 in May 2019. </blockquote>
 
 
 	<span class="header2">
-Geotechnical Engineer</span><br /><br />
+Geotechnical Engineer</span><br />
 	<img class="job_pic" src="/images/icons/EH/1151.jpg"
 width="100" height="100" border="0" alt="Geotechnical Engineer" />
 	<span class="header3">Job Description</span>
@@ -370,7 +367,7 @@ in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Occupational Health and
-Safety Specialist</span><br /><br />
+Safety Specialist</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Occupational health and safety specialists
 analyze work environments and design programs to control, eliminate,
@@ -399,7 +396,7 @@ you might find them interesting.</p>
 
 <hr size="1" />
 
-	<span class="header2">Actuary</span><br /><br />
+	<span class="header2">Actuary</span><br />
 	<img class="job_pic" src="/images/icons/EH/1287.jpg"
 width="100" height="100" border="0" alt="Actuary" />
 	<span class="header3">Job Description</span>
@@ -420,7 +417,7 @@ in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Financial
-Manager</span><br /><br />
+Manager</span><br />
 	<span class="header3">Job Description</span>
 	<blockquote>Financial managers oversee the preparation of
 financial reports, direct investment activities, and implement cash
@@ -438,7 +435,7 @@ $129,890 in May 2019. </blockquote>
 <hr size="1" />
 
 	<span class="header2">Cartographer/Photogrammetrist
-</span><br /><br />
+</span><br />
 	<img class="job_pic" src="/images/icons/EH/43169.jpg"
 width="100" height="100" border="0" alt="Mapping Technician" />
 	<span class="header3">Job Description</span>

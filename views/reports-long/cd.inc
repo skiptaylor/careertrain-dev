@@ -126,18 +126,15 @@ explore:</strong></p>
 <table width="100%" cellpadding="20" cellspacing="0" border="0">
 	<tr>
 		<td></td>
-		<td bgcolor="#FFF9D8" align="center" height="50">
+		<td bgcolor="#FFF9D8" height="50" style="text-align: center;">
 			<span class="header1">CD Career
 Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0"
 cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8">
-					<td width="33%"
-align="left"><strong>More People Oriented</strong></td>
-					<td width="33%"
-align="center"><strong>&nbsp;</strong></td>
-					<td width="33%"
-align="right"><strong>More Technical Oriented</strong></td>
+					<td width="33%" align="left"><strong>More People Oriented</strong></td>
+					<td width="33%" align="center"><strong>&nbsp;</strong></td>
+					<td width="33%" style="text-align: right;"><strong>More Technical Oriented</strong></td>
 				</tr>
 			</table>
 		</td>
@@ -147,7 +144,7 @@ align="right"><strong>More Technical Oriented</strong></td>
 			<table border="0" cellpadding="0"
 cellspacing="0" height="400">
 				<tr align="center"
-height="33%"><td><strong>More<br /><br /><br /><br />v</strong></td></tr>
+height="33%"><td><strong>More<br /><br /><br /><br /></strong></td></tr>
 				<tr align="center"
 height="33%"><td><strong>Education<br />or<br />Training<br />Required</strong></td></tr>
 				<tr align="center"
