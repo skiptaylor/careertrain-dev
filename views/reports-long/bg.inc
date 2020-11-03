@@ -156,7 +156,7 @@ height="33%"><td><strong><br /><br /><br /><br />Less</strong></td></tr>
 		<td valign="top">
 			<table border="0" cellspacing="3"
 cellpadding="0" width="100%">
-				<tr valign="top">
+				<tr valign="top" class="main">
 					<td width="33%">
 						<span
 class="header2">Community Support Services</span><br />
