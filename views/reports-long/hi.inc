@@ -22,34 +22,37 @@ opportunities in this area.</p>
 		<td>
 			Business Law<br />
 			Drafting<br />
-			Environmental Sciences<br />
+			Environmental&nbsp;Sciences<br />
 			Health<br />
-			Math<br />
-			Political Science
+			Math
 		</td>
 
 		<td>
-			Religion
-			Computer Sciences<br />
-			Education<br />
+			Political Science<br />
+			Religion<br />
+			Computer&nbsp;Sciences<br />
+			Education
+		</td>
+
+		<td>
 			Government<br />
-			Home Economics
-		</td>
-
-		<td>
+			Home Economics<br />
 			Nutrition<br />
-			Psychology<br />
-			Sociology<br />
-			Computer Technology<br />
-			English
+			Psychology
 		</td>
 
 		<td>
-			Graphic Arts<br />
+			Sociology<br />
+			Computer&nbsp;Technology<br />
+			English<br />
+			Graphic Arts
+		</td>
+
+		<td>
 			Law<br />
 			Physical Education<br />
 			Public Relations<br />
-			Speech & Communications
+			Speech&nbsp;&&nbsp;Communications
 		</td>
 	</tr>
 </table>
@@ -67,34 +70,37 @@ your love for math and science and use your people skills.</p>
 			Church Activities<br />
 			Debate Teams<br />
 			Hospice Volunteer<br />
-			Junior Achievement<br />
-			Pen Pals<br />
-			School Newspaper
+			Junior&nbsp;Achievement<br />
+			Pen Pals
 		</td>
 
 		<td>
+			School&nbsp;Newspaper<br />
 			School TV<br />
 			Tutoring<br />
 			Cheerleading<br />
-			Class Officer<br />
-			Eldercare<br />
-			Hospital Volunteer<br />
-			Parks & Recreation
+			Class Officer
 		</td>
 
 		<td>
+			Eldercare<br />
+			Hospital Volunteer<br />
+			Parks&nbsp;&&nbsp;Recreation<br />
 			Photography Clubs<br />
-			School Radio<br />
+			School Radio
+		</td>
+
+		<td>
 			Scouts<br />
 			Youth Groups<br />
 			Childcare<br />
-			Community Volunteer
+			Community&nbsp;Volunteer<br />
+			Exchange Programs
 		</td>
 
 		<td>
-			Exchange Programs<br />
 			Language Clubs<br />
-			Peer Counselor<br />
+			Peer&nbsp;Counselor<br />
 			School Monitor<br />
 			School Sales<br />
 			Social Clubs
@@ -111,31 +117,34 @@ what you want to do when you are an adult.</p>
 	<tr valign="top">
 		<td>
 			Advertising Agencies<br />
-			Construction Companies<br />
+			Construction&nbsp;Companies<br />
 			Graphic Design Firms<br />
-			Libraries<br />
-			Photography Studios
+			Libraries
 		</td>
 
 		<td>
-			Recreation Departments<br />
+			Photography Studios<br />
+			Recreation&nbsp;Departments<br />
 			Camp Programs<br />
-			Church Programs<br />
+			Church Programs
+		</td>
+
+		<td>
 			Hospice Activities<br />
-			Life Guarding
+			Life Guarding<br />
+			Preschool&nbsp;Programs<br />
+			Restaurants
 		</td>
 
 		<td>
-			Preschool Programs<br />
-			Restaurants<br />
 			Company Offices<br />
-			Day Care Centers
+			Day Care Centers<br />
+			Hospital&nbsp;Volunteer
 		</td>
 
 		<td>
-			Hospital Volunteer<br />
 			Newspaper Offices<br />
-			Printing Companies<br />
+			Printing&nbsp;Companies<br />
 			Special Olympics
 		</td>
 	</tr>

@@ -152,12 +152,12 @@ post '/arng/schools/:id/ind_report/?' do
   PDFKit.configure do |config|
     config.default_options = {
       :print_media_type => true,
-      :page_size     => 'Letter',
-      :margin_top    => '0.5in',
-      :margin_right  => '0.5in',
-      :margin_bottom => '0.5in',
-      :margin_left   => '0.5in',
-      :javascript_delay => 3000
+      :page_size        => 'Letter',
+      :margin_top       => '0.25in',
+      :margin_right     => '0.25in',
+      :margin_bottom    => '0.25in',
+      :margin_left      => '0.25in',
+      :javascript_delay => 2000
     }
   end
   
