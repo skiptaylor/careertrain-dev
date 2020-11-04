@@ -23,7 +23,7 @@ things done quickly.</p>
 	<tr valign="top">
 		<td>
 			Accounting<br />
-			Speech & Communication<br />
+			Speech&nbsp;&&nbsp;Communication<br />
 			Art/Music<br />
 			Economics
 		</td>
@@ -35,7 +35,7 @@ things done quickly.</p>
 		</td>
 		<td>
 			Computer Technology<br />
-			Marketing & Advertising<br />
+			Marketing&nbsp;&&nbsp;Advertising<br />
 			Graphic Arts<br />
 			Logic
 		</td>
@@ -103,13 +103,13 @@ what you want to do when you are an adult.</p>
 		</td>
 		<td>
 			Libraries<br />
-			Newspaper Publisher<br />
+			Newspaper&nbsp;Publisher<br />
 			Repair Services
 		</td>
 		<td>
 			Radio/TV Studios<br />
 			Receptionist<br />
-			Graphic Design Firms
+			Graphic&nbsp;Design&nbsp;Firms
 		</td>
 		<td>
 			Restaurant<br />

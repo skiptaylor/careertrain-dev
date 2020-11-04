@@ -25,23 +25,26 @@ opportunities in this area.</p>
 			Environmental Sciences<br />
 			Health<br />
 			Math<br />
-			Political Science<br />
-			Religion
+			Political Science
 		</td>
 
 		<td>
+			Religion
 			Computer Sciences<br />
 			Education<br />
 			Government<br />
-			Home Economics<br />
-			Nutrition<br />
-			Psychology<br />
-			Sociology
+			Home Economics
 		</td>
 
 		<td>
+			Nutrition<br />
+			Psychology<br />
+			Sociology<br />
 			Computer Technology<br />
-			English<br />
+			English
+		</td>
+
+		<td>
 			Graphic Arts<br />
 			Law<br />
 			Physical Education<br />
@@ -66,26 +69,29 @@ your love for math and science and use your people skills.</p>
 			Hospice Volunteer<br />
 			Junior Achievement<br />
 			Pen Pals<br />
-			School Newspaper<br />
-			School TV<br />
-			Tutoring
+			School Newspaper
 		</td>
 
 		<td>
+			School TV<br />
+			Tutoring<br />
 			Cheerleading<br />
 			Class Officer<br />
 			Eldercare<br />
 			Hospital Volunteer<br />
-			Parks & Recreation<br />
-			Photography Clubs<br />
-			School Radio<br />
-			Scouts<br />
-			Youth Groups
+			Parks & Recreation
 		</td>
 
 		<td>
+			Photography Clubs<br />
+			School Radio<br />
+			Scouts<br />
+			Youth Groups<br />
 			Childcare<br />
-			Community Volunteer<br />
+			Community Volunteer
+		</td>
+
+		<td>
 			Exchange Programs<br />
 			Language Clubs<br />
 			Peer Counselor<br />
@@ -108,22 +114,25 @@ what you want to do when you are an adult.</p>
 			Construction Companies<br />
 			Graphic Design Firms<br />
 			Libraries<br />
-			Photography Studios<br />
-			Recreation Departments
+			Photography Studios
 		</td>
 
 		<td>
+			Recreation Departments<br />
 			Camp Programs<br />
 			Church Programs<br />
 			Hospice Activities<br />
-			Life Guarding<br />
-			Preschool Programs<br />
-			Restaurants
+			Life Guarding
 		</td>
 
 		<td>
+			Preschool Programs<br />
+			Restaurants<br />
 			Company Offices<br />
-			Day Care Centers<br />
+			Day Care Centers
+		</td>
+
+		<td>
 			Hospital Volunteer<br />
 			Newspaper Offices<br />
 			Printing Companies<br />
