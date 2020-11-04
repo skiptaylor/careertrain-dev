@@ -125,11 +125,9 @@ explore:</strong></p>
 	<tr>
 		<td></td>
 		<td bgcolor="#FFF9D8" height="50" style="text-align: center;">
-			<span class="header1">BC Career
-Possibilities</span><br />
-			<table bgcolor="0" cellpadding="0"
-cellspacing="0" width="100%">
-				<tr bgcolor="#FFF9D8">
+			<span class="header1">BC Career Possibilities</span><br />
+			<table bgcolor="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr bgcolor="#FFF9D8" border="none">
 					<td width="33%" align="left"><strong>More People Oriented</strong></td>
 					<td width="33%" align="center"><strong>&nbsp;</strong></td>
 					<td width="33%" style="text-align: right;"><strong>More Technical Oriented</strong></td>
