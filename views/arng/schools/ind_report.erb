@@ -14,7 +14,7 @@
 	
 <style>
 	p	{
-		font-size: 13px;
+		font-size: 12px;
 		line-height: 1.15em;
 		margin-bottom: 6px;
 		font-weight: 300;
@@ -36,7 +36,7 @@
 		margin-bottom: 1px;
 	}
 	ul li	{
-		font-size: 13px;
+		font-size: 12px;
 		font-family: helvetica;
 		padding: 0;
 		margin-top: 1px;
@@ -55,7 +55,7 @@
 		border: none;
 	}
 	td {
-		font-size: 13px;
+		font-size: 12px;
 		border: 0;
 		font-family: helvetica;
 		margin-top: 0px;
@@ -71,7 +71,7 @@
 	table tr td	{
 		border-color: #fff;
 		font-family: helvetica;
-		font-size: 13px;
+		font-size: 12px;
 		line-height: 16px;
 		margin-top: 3px;
 		padding-top: 0;
@@ -133,22 +133,22 @@
 				</div>
 				<h6><strong><span class="logo-e">e</span>CD</strong> Inventory Student Planning Report</h6>
 				
-				<p><strong>Student:</strong> &nbsp;&nbsp;<%= student.first_name %> <%= student.last_name %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Grade:</strong> &nbsp;&nbsp;<%= student.grade %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Email:</strong>&nbsp;&nbsp;<%= student.email %> <% if student.phone %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Phone:</strong>&nbsp;&nbsp;<%= student.phone %><% end %> <% if student.score1 %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>High Scores:</strong>&nbsp;&nbsp;<%= titleize(student.score1) %><%= titleize(student.score2) %><% end %></p>
-				<p><strong>School:</strong> &nbsp;&nbsp;<%= @school.school_name %>  &nbsp;&nbsp;- &nbsp;&nbsp;<strong>Rep:</strong> <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %></p>
+				<p><strong>Student:</strong> &nbsp;<%= student.first_name %> <%= student.last_name %> &nbsp;&nbsp;&bull;&nbsp;&nbsp; <strong>Grade:</strong> &nbsp;<%= student.grade %> &nbsp;&nbsp;&bull;&nbsp;&nbsp; <strong>Email:</strong>&nbsp; <%= student.email %> <% if student.phone %> &nbsp;&nbsp;-&nbsp;&nbsp; <strong>Phone:</strong>&nbsp; <%= student.phone %><% end %> <% if student.score1 %> &nbsp;&nbsp;&bull;&nbsp;&nbsp; <strong>High Scores:</strong>&nbsp;&nbsp;<%= titleize(student.score1) %><%= titleize(student.score2) %><% end %></p>
+				<p><strong>School:</strong> &nbsp;<%= @school.school_name %>  &nbsp;&nbsp;&bull;&nbsp;&nbsp; <strong>Rep:</strong> &nbsp;<%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %></p>
 					
 						<form method="post" id="exercise">
 						<table cellpadding="0" cellspacing="0" class="side">
 						<tr>
 							<!-- <td style="text-align: left; font-size: 14px;"><strong><span class="logo-e">e</span>CD</strong> Exercise Scores</td> -->
-							<td style="text-align: center; font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>A:</strong> Outdoor</td>
-							<td style="text-align: center; font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>B:</strong> Arts/Com.</td>
-							<td style="text-align: center; font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>C:</strong> Bus/Mgt.</td>
-							<td style="text-align: center; font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>D:</strong> Clerical/Adm.</td>
-							<td style="text-align: center; font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>E:</strong> Protect/Military</td>
-							<td style="text-align: center; font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>F:</strong> Technology</td>
-							<td style="text-align: center; font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>G:</strong> Public Service</td>
-							<td style="text-align: center; font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>H:</strong> Science/Math</td>
-							<td style="text-align: center; font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>I:</strong> Social GHelping</td>
+							<td style="text-align: center; font-size: 11px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>A:</strong> Outdoor</td>
+							<td style="text-align: center; font-size: 11px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>B:</strong> Arts/Com.</td>
+							<td style="text-align: center; font-size: 11px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>C:</strong> Bus/Mgt.</td>
+							<td style="text-align: center; font-size: 11px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>D:</strong> Clerical/Adm.</td>
+							<td style="text-align: center; font-size: 11px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>E:</strong> Protect/Military</td>
+							<td style="text-align: center; font-size: 11px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>F:</strong> Technology</td>
+							<td style="text-align: center; font-size: 11px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>G:</strong> Public Service</td>
+							<td style="text-align: center; font-size: 11px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>H:</strong> Science/Math</td>
+							<td style="text-align: center; font-size: 11px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>I:</strong> Social GHelping</td>
 						</tr>
 						<tr>
 							<!-- <th style="text-align: left; font-size: 14px;"><strong><span class="logo-e">e</span>CD</strong> Exercise Scores</th> -->
