@@ -154,10 +154,12 @@ post '/arng/schools/:id/summary_report/?' do
   
   content_type 'application/pdf'
   
-  # kit = PDFKit.new("https://www.ecareerdirection.com/arng/schools/#{@school.id}/summary_report")
-  
-  kit = PDFKit.new("http://localhost:4567/arng/schools/#{@school.id}/summary_report")
-  
+  if settings.development?
+    kit = PDFKit.new("http://localhost:4567/arng/schools/#{@school.id}/summary_report")
+  elsif settings.production?
+    kit = PDFKit.new("https://www.ecareerdirection.com/arng/schools/#{@school.id}/summary_report")
+  end
+    
   pdf = kit.to_pdf
   
 end
@@ -194,10 +196,12 @@ post '/arng/schools/:id/ind_report/?' do
   
   content_type 'application/pdf'
   
-  # kit = PDFKit.new("https://www.ecareerdirection.com/arng/schools/#{@school.id}/ind_report")
-  
-  kit = PDFKit.new("http://localhost:4567/arng/schools/#{@school.id}/ind_report")
-  
+  if settings.development?
+    kit = PDFKit.new("http://localhost:4567/arng/schools/#{@school.id}/ind_report")
+  elsif settings.production?
+    kit = PDFKit.new("https://www.ecareerdirection.com/arng/schools/#{@school.id}/ind_report")
+  end
+   
   pdf = kit.to_pdf
   
 end
