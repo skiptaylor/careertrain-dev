@@ -100,35 +100,66 @@ get '/arng/schools/:id/summary_report/?' do
   @recruiter = Recruiter.get(params[:recruiter_id])
   @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
   
-  content_type 'application/pdf'
-
-  pdf = Prawn::Document.new
-  pdf = Prawn::Document.new(page_size: "LETTER", page_layout: :portrait)
-  pdf.font "Helvetica"
-  pdf.font_size 10
-     
-  pdf.move_down(0)
-     pdf.text "<b><font size='11px'>Summary Report</font></b>",
-     :inline_format => true, :leading => 1, :align => :center
-     pdf.text "<b>#{@school.school_name}</b>, #{@school.school_city} #{@school.school_state}, <b>Class Date:</b> #{format_american_day(@school.class_date)}",
-     :inline_format => true, :leading => 1, :align => :center
-
-  pdf.move_down(23)
-
-     @school.students.each do |student|
-       if student.created_on == @school.class_date
-         
-			  pdf.move_down(3)
-				pdf.text "<b>#{student.first_name} #{student.middle_name} #{student.last_name}</b> - #{student.address}, #{student.address2}, #{student.city}, #{student.state} #{student.zip} - #{student.email} - <b>High Scores:</b> #{student.score1} #{student.score2}",
-        :inline_format => true, :leading => 1
-        pdf.text "#{student.future1}, #{student.future2}, #{student.future3}, #{student.future4}, #{student.future5}, #{student.future6}, #{student.future7}, #{student.future8}",
-        :inline_format => true, :leading => 1, :font_size => 8
-				
-      end
-			end
-		
-    pdf.render
+  erb :'arng/schools/summary_report', layout: false
+  
+  # content_type 'application/pdf'
+#
+#   pdf = Prawn::Document.new
+#   pdf = Prawn::Document.new(page_size: "LETTER", page_layout: :portrait)
+#   pdf.font "Helvetica"
+#   pdf.font_size 10
+#
+#   pdf.move_down(0)
+#      pdf.text "<b><font size='11px'>Summary Report</font></b>",
+#      :inline_format => true, :leading => 1, :align => :center
+#      pdf.text "<b>#{@school.school_name}</b>, #{@school.school_city} #{@school.school_state}, <b>Class Date:</b> #{format_american_day(@school.class_date)}",
+#      :inline_format => true, :leading => 1, :align => :center
+#
+#   pdf.move_down(23)
+#
+#      @school.students.each do |student|
+#        if student.created_on == @school.class_date
+#
+#         pdf.move_down(3)
+#         pdf.text "<b>#{student.first_name} #{student.middle_name} #{student.last_name}</b> - #{student.address}, #{student.address2}, #{student.city}, #{student.state} #{student.zip} - #{student.email} - <b>High Scores:</b> #{student.score1} #{student.score2}",
+#         :inline_format => true, :leading => 1
+#         pdf.text "#{student.future1}, #{student.future2}, #{student.future3}, #{student.future4}, #{student.future5}, #{student.future6}, #{student.future7}, #{student.future8}",
+#         :inline_format => true, :leading => 1, :font_size => 8
+#
+#       end
+#       end
+#
+#     pdf.render
  
+end
+
+post '/arng/schools/:id/summary_report/?' do
+  
+  auth_recruiter
+  @school = School.get(params[:id])
+  @recruiter = Recruiter.get(params[:recruiter_id])
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
+  
+  PDFKit.configure do |config|
+    config.default_options = {
+      :print_media_type => true,
+      :page_size        => 'Letter',
+      :margin_top       => '0.25in',
+      :margin_right     => '0.25in',
+      :margin_bottom    => '0.25in',
+      :margin_left      => '0.25in',
+      :javascript_delay => 2000
+    }
+  end
+  
+  content_type 'application/pdf'
+  
+  # kit = PDFKit.new("https://www.ecareerdirection.com/arng/schools/#{@school.id}/summary_report")
+  
+  kit = PDFKit.new("http://localhost:4567/arng/schools/#{@school.id}/summary_report")
+  
+  pdf = kit.to_pdf
+  
 end
 
 get '/arng/schools/:id/ind_report/?' do
