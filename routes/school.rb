@@ -154,9 +154,9 @@ post '/arng/schools/:id/summary_report/?' do
   
   content_type 'application/pdf'
   
-  # kit = PDFKit.new("https://www.ecareerdirection.com/arng/schools/#{@school.id}/summary_report")
+  kit = PDFKit.new("https://www.ecareerdirection.com/arng/schools/#{@school.id}/summary_report")
   
-  kit = PDFKit.new("http://localhost:4567/arng/schools/#{@school.id}/summary_report")
+  # kit = PDFKit.new("http://localhost:4567/arng/schools/#{@school.id}/summary_report")
   
   pdf = kit.to_pdf
   
