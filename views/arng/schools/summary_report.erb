@@ -110,6 +110,12 @@
 		font-weight: 900;
 	}
 	
+	@media print {
+	  .hidden-print {
+	    display: none !important;
+	  }
+	}
+	
 </style>
 
 </head>
@@ -120,7 +126,7 @@
 		<div class="row">  
 			<div class="col-md-12">
 				<form method="post">
-				<button type="submit" style="float: right;">Export</button>
+				<button type="submit" class="hidden-print" style="float: right;">Export</button>
 				</form>
 				<p class="header1">Summary Report</p>
 				<p style="text-align: center; font-size: 16px;"><strong><%= @school.school_name %></strong> &nbsp; <%= @school.school_city %> <%= @school.school_state %> &nbsp;&bull;&nbsp; <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %> &nbsp;&bull;&nbsp; <b>Class Date:</b> <%= format_american_day(@school.class_date) %></p>
