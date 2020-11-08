@@ -1,5 +1,3 @@
-
-
 get '/arng/schools/schools/?' do
   auth_recruiter
 	@school = School.all(order: [:updated_at.desc], limit: 300)
@@ -66,9 +64,6 @@ post '/arng/schools/new/?' do
   
   redirect "/arng/schools/#{school.id}/school"
 end
-
-
-
 
 get '/arng/schools/:id/school_report/?' do
   auth_recruiter
@@ -174,7 +169,6 @@ get '/arng/schools/:id/ind_report/?' do
   erb :'arng/schools/ind_report', layout: false
  
 end
-
 
 post '/arng/schools/:id/ind_report/?' do
   auth_recruiter

@@ -323,8 +323,7 @@ get "/student/reports/:id/ex_scores/?" do
 end
 
 get "/student/reports/:id/scores_full/?" do
-  @school = School.all
-  @exercise = Exercise.get(params[:exercise_id])
+  @school = School.get(params[:school_id])
   @student = Student.get(params[:id])
     
   if @student.score1 && @student.score1 != ''
@@ -338,12 +337,6 @@ get "/student/reports/:id/scores_full/?" do
   else
     @student.score2 = false
   end
-
-  if @student.score3 && @student.score3 != ''
-    
-  else
-    @student.score3 = false
-  end
   
   if @student.score1 && File.exists?("./views/reports-long/#{@student.score1}.inc")
     @cat1 = File.read("./views/reports-long/#{@student.score1}.inc")
@@ -353,26 +346,10 @@ get "/student/reports/:id/scores_full/?" do
     @cat2 = File.read("./views/reports-long/#{@student.score2}.inc")
   end
 
-  if @student.score3 && File.exists?("./views/reports-long/#{@student.score3}.inc")
-    @cat3 = File.read("./views/reports-long/#{@student.score3}.inc")
-  end
-  
   if @student.score1 && @student.score2 && File.exists?("./views/reports-long/#{@student.score1}#{@student.score2}.inc")
     @report1 = File.read("./views/reports-long/#{@student.score1}#{@student.score2}.inc")
   elsif @student.score1 && @student.score2 && File.exists?("./views/reports-long/#{@student.score2}#{@student.score1}.inc")
     @report1 = File.read("./views/reports-long/#{@student.score2}#{@student.score1}.inc")
-  end
-
-  if @student.score1 && @student.score3 && File.exists?("./views/reports-long/#{@student.score1}#{@student.score3}.inc")
-    @report2 = File.read("./views/reports-long/#{@student.score1}#{@student.score3}.inc")
-  elsif @student.score1 && @student.score3 && File.exists?("./views/reports-long/#{@student.score3}#{@student.score1}.inc")
-    @report2 = File.read("./views/reports-long/#{@student.score3}#{@student.score1}.inc")
-  end
-
-  if @student.score2 && @student.score3 && File.exists?("./views/reports-long/#{@student.score2}#{@student.score3}.inc")
-    @report3 = File.read("./views/reports-long/#{@student.score2}#{@student.score3}.inc")
-  elsif @student.score2 && @student.score3 && File.exists?("./views/reports-long/#{@student.score3}#{@student.score2}.inc")
-    @report3 = File.read("./views/reports-long/#{@student.score3}#{@student.score2}.inc")
   end
  
  # -------------------- show report ---------------------
@@ -385,13 +362,32 @@ get "/student/reports/:id/scores_full/?" do
 end
 
 post "/student/reports/:id/scores_full/?" do
-  school = School.all
-  exercise = Exercise.get(params[:exercise_id])
+  school = School.get(params[:school_id])
   student = Student.get(params[:id])
-  Email.fullreport
-  redirect request.referrer
+  
+  PDFKit.configure do |config|
+    config.default_options = {
+      :print_media_type => true,
+      :page_size        => 'Letter',
+      :margin_top       => '0.25in',
+      :margin_right     => '0.25in',
+      :margin_bottom    => '0.25in',
+      :margin_left      => '0.25in',
+      :javascript_delay => 1000
+    }
+  end
+  
+  content_type 'application/pdf'
+  
+  if settings.development?
+    kit = PDFKit.new("http://localhost:4567/student/reports/#{student.id}/scores_full")
+  elsif settings.production?
+    kit = PDFKit.new("https://www.ecareerdirection.com/student/reports/#{student.id}/scores_full")
+  end
+    
+  pdf = kit.to_pdf
+ 
 end
-
 
 
 

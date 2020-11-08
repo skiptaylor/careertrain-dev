@@ -3,7 +3,19 @@
 	<head>
 	  	<meta charset="utf-8" />
 	  	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-	  	<title>eCareerDirection</title>
+	  	<title>eCD Full Report</title>
+		
+	   <link href="/css/bootstrap.min.css" rel="stylesheet">
+	  	<link href="/css/bootstrap-reboot.min.css" rel="stylesheet">
+		<link href="/css/bootstrap-grid.min.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="/css/resume-style.css" />
+		<link type="text/css" rel="stylesheet" href="/css/datetimepicker.css" />
+		<link type="text/css" rel="stylesheet" href="/css/resume-content.css" />
+		<link type="text/css" rel="stylesheet" href="/css/theme.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome-ie7.min.css" />
+		<link type="text/css" rel="stylesheet" href="/css/buttons_altered.css" />
+		
 			<style type="text/css">
 			
 			
@@ -11,19 +23,22 @@
 				margin: 0;
 				padding: 0;
 			}
+			
+			.container	{
+				font-family: 'helvetica', helvetica, sans-serif;
+			}
 
-			#container {
+			/*.container {
 				margin-left: auto;
 				margin-bottom: 18px;
 				margin-right: auto;
 				margin-top: 18px;
 				font-family: 'helvetica', helvetica, sans-serif;
-				display: block;
 				padding: 0px;
 				width: 940px;
 				line-height: 21px;
 				font-size: 14px;
-			}
+			}*/
 		
 			hr	{
 				border: none;
@@ -40,19 +55,24 @@
 				margin: 0;
 				padding: 6px 0 6px 0;
 				text-align: left;
+				font-family: 'helvetica', helvetica, sans-serif;
 			}
 		
 			.lead	{
 				font-weight: 300;
 				font-size: 1.5em;
-				line-height: 1.3em;
+				line-height: 1em;
+				font-family: 'helvetica', helvetica, sans-serif;
 			}
 		
 			.small	{
-				font-size: 0.8em;
+				font-family: 'helvetica', helvetica, sans-serif;
+				font-size: 0.85em;
+				line-height: 0.85em;
 			}
 	
 			table  {
+				font-family: 'helvetica', helvetica, sans-serif;
 				margin: 0px;
 				padding: 0px;
 			}
@@ -69,14 +89,39 @@
 				margin: 0;
 				padding: 4px 9px;
 			}
+			
+			tr.main td	{
+				font-family: helvetica;
+				line-height: 24px;
+				font-weight: 300;
+				border: none;
+			}
+			tr.main td ul li	{
+				line-height: 18px;
+				font-weight: 300;
+				border: none;
+			}
 							
-			ul, ol	{
+			ul	{
+				font-family: 'helvetica', helvetica, sans-serif;
 				margin: 0 0 12px 12px;
 			}
 			
-			ul li, ol li	{
+			ul li	{
 				margin: 0;
 				padding: 0;
+				font-family: 'helvetica', helvetica, sans-serif;
+			}
+			
+			ol	{
+				font-family: 'helvetica', helvetica, sans-serif;
+				margin: 0 0 12px 12px;
+			}
+			
+			ol li	{
+				margin: 0 0 9px 0;
+				padding: 0;
+				font-family: 'helvetica', helvetica, sans-serif;
 			}
 			
 			h1 	{
@@ -85,6 +130,7 @@
 			}
 			
 			.header1	{
+				font-family: 'helvetica', helvetica, sans-serif;
 				font-weight: 700;
 				font-size: 1.7em;
 				line-height: 1.2em;
@@ -92,18 +138,21 @@
 			}
 			
 			.header2	{
+				font-family: 'helvetica', helvetica, sans-serif;
 				font-weight: 700;
 				font-size: 1.3em;
 				line-height: 1.2em;
 			}
 			
 			.header3	{
+				font-family: 'helvetica', helvetica, sans-serif;
 				font-weight: 600;
 				font-size: 1.1em;
 				line-height: 1.3em;
 			}
 			
 			.semi-bold	{
+				font-family: 'helvetica', helvetica, sans-serif;
 				font-weight: 600;
 			}
 
@@ -133,21 +182,57 @@
 			a.button:hover	{
 				background-color: black;
 			}
+			
+			.logo-e	{
+				font-style: italic;
+				color: #1abd9c;
+			}
+			
+			blockquote	{
+				border: none;
+				padding: 0 0 0 24px;
+				margin: 9px 0 9px 0;
+			}
+			
+			@media print {
+			  .hidden-print {
+			    display: none !important;
+			  }
+			}
+			
+			table.side tr td	{
+				border: 0;
+				text-align: center;
+				font-family: 'helvetica', helvetica, sans-serif;
+				font-size: 12px;
+				font-weight: 600;
+			}
+	
+			table.side tr th	{
+				font-family: 'helvetica', helvetica, sans-serif;
+				font-size: 12px;
+				font-weight: 600;
+			}
 
 			</style>
 
 		</head>
 
 <body>
-	<div id="container">
-		<!-- <form method="post" id="fullreport">
-			<button type="submit">Download PDF</button>
-		</form> -->
+	<div class="container">	
+		<div class="row">  
+			<div class="col-md-12">
 		
+		<div style="page-break-after: always;">
+			
+			<form method="post">
+			<button type="submit" class="hidden-print" style="float: right;">Export</button>
+			</form>
+			
 		<img src="/img/arng_4cp_cta_camo.png" style="float: right; margin: 12px 24px;" width="80px">
 		
-		<span class="d-none d-sm-none d-md-block"><img src="/img/eCareerDirection-logo-black.svg" style="margin-top:42px;" width="240px"></span>
-		
+		<img src="/img/eCareerDirection-logo-black.svg" style="margin-top:42px;" width="240px">
+		  
 		<hr />
 		
 		<p class="lead">Report for <%= @student.first_name %> <%= @student.last_name %> at <%= @student.school.school_name %></p>
@@ -156,21 +241,21 @@
 		<p><small>Support Manual for</small><br />
 		<strong><span class="logo-e">e</span>CD</strong>, <strong><span class="logo-e">e</span>CareerDirection</strong> and <em><strong>FUTURE</strong>FOCUS</em>
 		<br />
-		<small>Version 6.0</small>
-		<p><small>
-		<span class="semi-bold">James C. Shafe</span>, President, Career Training Concepts, Inc.<BR>
-		<span class="semi-bold">Gary L. Arthur, Ed.D.</span>, Professor, Counseling & Psychological Services, Georgia State University<BR>
-		<span class="semi-bold">Matthew Morgan, A.B.J.</span>, Editor & Research Specialist, Career Training Concepts, Inc.<BR>
-		<span class="semi-bold">Edward M. Buckner, Ph.D.</span>, Educational Consultant, The Research Group, Inc.<BR>
-		<span class="semi-bold">Amy Shaye, Ed.S.</span>, The Research Group, Inc.<BR>
-		<span class="semi-bold">Jeff Porterfield, Ph.D.</span>, Associate Professor, Clark Atlanta University<BR>
-		<span class="semi-bold">John Hutcheson Jr., Ph.D.</span>, The Research Group, Inc.<BR>
-		<span class="semi-bold">Amy Smith, Ph.D.</span>, Educational Consultant, Career Training Concepts, Inc.<BR>
-		</small></p>
+		<small>Version 6.0</small></p>
+		<p>
+		<strong>James C. Shafe</strong>, President, Career Training Concepts, Inc.<br />
+		<strong>Gary L. Arthur, Ed.D.</strong>, Professor, Counseling & Psychological Services, Georgia State University<br />
+		<strong>Matthew Morgan, A.B.J.</strong>, Editor & Research Specialist, Career Training Concepts, Inc.<br />
+		<strong>Edward M. Buckner, Ph.D.</strong>, Educational Consultant, The Research Group, Inc.<br />
+		<strong>Amy Shaye, Ed.S.</strong>, The Research Group, Inc.<br />
+		<strong>Jeff Porterfield, Ph.D.</strong>, Associate Professor, Clark Atlanta University<br />
+		<strong>John Hutcheson Jr., Ph.D.</strong>, The Research Group, Inc.<br />
+		<strong>Amy Smith, Ph.D.</strong>, Educational Consultant, Career Training Concepts, Inc.
+		</p>
 
 		<p><strong>Career Training Concepts, Inc.</strong><br />
-		<small>Toll Free: 888-326-9229 &nbsp; www.careertrain.com</small> <br />
-		<small>© <%= Time.now.strftime("%Y") %> Career Training Concepts, Inc. All Rights Reserved.</small>
+		Toll Free: 888-326-9229 &nbsp; www.careertrain.com<br />
+		© <%= Time.now.strftime("%Y") %> Career Training Concepts, Inc. All Rights Reserved.
 		</p>
 		
 		<hr />
@@ -183,7 +268,7 @@
 			<li> determine the education and training required to meet your career goals. </li> 
 		</ul>
 
-		<p>Your <B> <I> COG </B> </i> Report is based on your interests and 
+		<p>Your <strong><em>COG</em></strong> Report is based on your interests and 
 		provides suggestions in the following areas:</p>
 		<ul> 
 			<li> high school courses</li>
@@ -194,8 +279,8 @@
 		</ul>
 
 		<p>Remember, you are just exploring right now. You can create other 
-		<B> <I>COG </i> </b> reports using different career category 
-		combinations too.</P>
+		<strong><em>COG</em></strong> reports using different career category 
+		combinations too.</p>
 
 		<p>You might want to share the information with your parents, your 
 		teacher, or a friend. This information will help you make good 
@@ -204,64 +289,47 @@
 		<p>Before you begin, it will help you to understand some words used 
 		in this report.</p>
 
-		<OL> 
-			<li> <B>Technical, Trade, Vocational and Business Colleges</b> - in two years or less, these schools prepare you for job entry into specific trades, professions, or career fields. </li>
-			<li> <B>Two-year Junior or Community Colleges</b> - these colleges award an Associate's Degree. You can take freshman and sophomore level classes at a Junior College and then transfer to a four-year institution. </li>
-			<li> <B>Four-year College or University</b> - these are schools where you can earn a Bachelor's Degree and high level degrees such as a Master's or Ph.D.</li>
-			<li> <B>Master's Degree</b> - awarded for completing a one or two year program of study beyond a Bachelor's degree.</li>
-			<li> <B>Doctorate Degree (e.g., Ph.D., Ed.D., or M.D.)</b> - awarded for completing a program of study that is often lengthy and that requires some type of original research, as well as written and oral examinations. </li>
+		<ol> 
+			<li> <strong>Technical, Trade, Vocational and Business Colleges</strong> - in two years or less, these schools prepare you for job entry into specific trades, professions, or career fields. </li>
+			<li> <strong>Two-year Junior or Community Colleges</strong> - these colleges award an Associate's Degree. You can take freshman and sophomore level classes at a Junior College and then transfer to a four-year institution. </li>
+			<li> <strong>Four-year College or University</strong> - these are schools where you can earn a Bachelor's Degree and high level degrees such as a Master's or Ph.D.</li>
+			<li> <strong>Master's Degree</strong> - awarded for completing a one or two year program of study beyond a Bachelor's degree.</li>
+			<li> <strong>Doctorate Degree (e.g., Ph.D., Ed.D., or M.D.)</strong> - awarded for completing a program of study that is often lengthy and that requires some type of original research, as well as written and oral examinations. </li>
 		</ol>
 
-		<p>Are you ready to explore your future career possibilities? Let's get started!
+		<p>Are you ready to explore your future career possibilities? Let's get started!</p>
 		
-		<hr />
-		<center><a href="http://www.nationalguard.com/education" target="blank"><img src="/img/ads/EducationBenefits.gif" /></a></center>
+		<!-- <hr />
+		<center><a href="http://www.nationalguard.com/education" target="blank"><img src="/img/ads/EducationBenefits.gif" /></a></center> -->
     <% if @cat1 %>
-      <hr />
+      <hr class="divider" />
 		  <%= @cat1 %>
     <% end %>
     <% if @cat2 %>
       <hr />
 		  <%= @cat2 %>
     <% end %>
-    <% if @cat3 %>
-      <hr />
-		  <%= @cat3 %>
-    <% end %>
-		<hr />
-		<center><a href="http://www.nationalguard.com/careers" target="blank"><img src="/img/ads/CareerOpportunities.gif" /></a></center>
+    
+		<!-- <hr />
+		<center><a href="http://www.nationalguard.com/careers" target="blank"><img src="/img/ads/CareerOpportunities.gif" /></a></center> -->
     <% if @report1 %>
-		  <hr class="divider" /><br />
+		  <hr class="divider" />
 		  <%= @report1 %>
 		  <hr />
     <% end %>
-		<!-- <center><a href="http://www.nationalguard.com/events/citizen-soldier" target="blank"><img src="/img/ads/Patriotism.gif" /></a></center>
-    <% if @report2 %>
-		  <hr class="divider" /><br />
-		  <%= @report2 %>
-		  <hr />
-    <% end %>
-		<center><a href="http://www.nationalguard.com/life/fitness" target="blank"><img src="/img/ads/Leadership.gif" /></a></center>
-    <% if @report3 %>
-		  <hr class="divider" /><br />
-		  <%= @report3 %>
-		  <hr />
-    <% end %>
-		<center><a href="http://www.nationalguard.com/benefits" target="blank"><img src="/img/ads/FindAdventure.gif" /></a></center> -->
+
 		<br />
 		<center><a href="http://www.nationalguard.com/benefits/enlistment-options" target="blank"><img src="/img/ads/guard1.gif" /></a></center>
 		<br />
-		<center><a href="http://www.nationalguard.com" target="blank"><img src="/img/arng_4cp_cta_camo.png" width="160px" /></a></center>
+		<center><a href="http://www.nationalguard.com" target="blank"><img src="/img/arng_4cp_cta_camo.png" width="120px" /></a></center>
 		<br />
 		<center><img src="/img/ads/guard3.gif" /></center>
 		
-		<hr />
-		<p><center><small>&copy; <%= Time.now.strftime("%Y") %> Career Training Concepts Inc.</small></center></p>
+		<!-- <hr />
+		<p><center><small>&copy; <%= Time.now.strftime("%Y") %> Career Training Concepts Inc.</small></center></p> -->
 
-
-		
-		<form>
-
+		</div></div></div>
 	</div>
 </body>
+
 </html>
