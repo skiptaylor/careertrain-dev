@@ -128,9 +128,9 @@ explore:</strong></p>
 			<span class="header1">BC Career Possibilities</span><br />
 			<table bgcolor="0" cellpadding="0" cellspacing="0" width="100%">
 				<tr bgcolor="#FFF9D8" border="none">
-					<td width="33%" align="left"><strong>More People Oriented</strong></td>
-					<td width="33%" align="center"><strong>&nbsp;</strong></td>
-					<td width="33%" style="text-align: right;"><strong>More Technical Oriented</strong></td>
+					<td width="33%" border="0" align="left"><strong>More People Oriented</strong></td>
+					<td width="33%" border="0" align="center"><strong>&nbsp;</strong></td>
+					<td width="33%" border="none" style="text-align: right;"><strong>More Technical Oriented</strong></td>
 				</tr>
 			</table>
 		</td>

@@ -59,9 +59,9 @@
 				  <div class="dropdown-menu pic-border" aria-labelledby="dropdown1">
 					  
 					  <% unless session[:student] %>
-					  <a class="dropdown-item <%= active 'student/report' %>" href="/student/report">Student Account</a>
+					  <a class="dropdown-item <%= active 'student/report' %>" href="/student/report"><i class="icon-user"> </i> &nbsp;Student Account</a>
 					  <% else %>
-					  <a class="dropdown-item <%= active 'student/reports' %>" href="/student/reports/report/report_profile">Student Account</a>
+					  <a class="dropdown-item <%= active 'student/reports' %>" href="/student/reports/report/report_profile"><i class="icon-user"> </i> &nbsp;Student Account</a>
 					  <% end %>
 					  <a class="dropdown-item <%= active 'student/student' %>" href="/student/student">About <em>e</em>CD</a>
 					  <a class="dropdown-item <%= active 'student/feedback' %>" href="/student/feedback">Student Feedback</a>
@@ -86,7 +86,7 @@
 					  <% if session[:recruiter] %>
 					  <a class="dropdown-item <%= active 'arng/leads' %>" href="/arng/leads">Generate Leads</a>
 					  <a class="dropdown-item <%= active 'arng/register' %>" href="/arng/register">Register Your School</a>
-					  <a class="dropdown-item <%= active 'recruiters' %>" href="/recruiters/<%= session[:recruiter] %>/profile">Recruiter Profile</a>
+					  <a class="dropdown-item <%= active 'recruiters' %>" href="/recruiters/<%= session[:recruiter] %>/profile"><i class="icon-user"> </i> &nbsp;Recruiter Account</a>
 					  <a class="dropdown-item <%= active 'arng/practices' %>" href="/arng/practices">Best Practices</a>
 					  <a class="dropdown-item <%= active 'arng/downloads' %>" href="/arng/downloads">Downloads</a>
 					  <a class="dropdown-item <%= active 'arng/faq' %>" href="/arng/faq">FAQ</a>

@@ -10,9 +10,9 @@ class Presentation
   property :number_students, Integer
   
   property :recruiter_id,  Integer
-  property :school_password, String
+  property :school_id, Integer
   
-  belongs_to :recruiter, required: false
+  belongs_to :school, required: false
   has n, :students
   
 end

@@ -24,6 +24,7 @@ get "/student/reports/create/?" do
   @subscription = Subscription.all
   @school = School.all
   @state = State.all
+  @presentation = Presentation.all
   erb :'student/reports/create'
 end
 
@@ -31,6 +32,7 @@ post '/student/reports/create/?' do
   subscription = Subscription.all
   school = School.all
   state = State.all
+  presentation = Presentation.all
   
   params[:email].strip!
   params[:password].strip!
@@ -72,8 +74,7 @@ post '/student/reports/create/?' do
             :future5          => params[:future5],
             :future6          => params[:future6],
             :future7          => params[:future7],
-            :future8          => params[:future8],
-            :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}"),
+            :future8          => params[:future8]
             )
             
             session[:student] = @student.id
@@ -210,8 +211,7 @@ post '/student/reports/:id/edit/?' do
     :future5          => params[:future5],
     :future6          => params[:future6],
     :future7          => params[:future7],
-    :future8          => params[:future8],
-    :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
+    :future8          => params[:future8]
   )
   
   redirect("/student/reports/report/report_profile")
@@ -479,13 +479,13 @@ post '/student/resume/create/?' do
             :future5          => params[:future5],
             :future6          => params[:future6],
             :future7          => params[:future7],
-            :future8          => params[:future8],
-            :birth_date   => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}"),
+            :future8          => params[:future8]
             )
             
             session[:student] = @student.id
             
             @student.school_id = school.id
+            @school.class_date = created_on
             @student.save
             
             flash[:alert] = 'Welcome to the Online Resume Tool. You are now signed in.'
@@ -737,8 +737,7 @@ post '/student/resume/:id/edit/?' do
     :future5          => params[:future5],
     :future6          => params[:future6],
     :future7          => params[:future7],
-    :future8          => params[:future8],
-    :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
+    :future8          => params[:future8]
   )
     
   redirect "/student/resume/index"
@@ -786,8 +785,7 @@ post '/student/resume/edit/?' do
     :future5          => params[:future5],
     :future6          => params[:future6],
     :future7          => params[:future7],
-    :future8          => params[:future8],
-    :birth_date       => Chronic.parse("#{params[:birth_date_year]}-#{params[:birth_date_month]}-#{params[:birth_date_day]}")
+    :future8          => params[:future8]
   )
   
   redirect "/student/resume/index"

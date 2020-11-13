@@ -13,7 +13,6 @@ post '/recruiter/school/:id/presentation/new/?' do
   presentation = Presentation.create(
     :recruiter_id         => session[:recruiter_id],
     :school_password      => params[:school_password],
-    :class_code           => params[:class_code],
     :class_date           => params[:class_date]
   )
   redirect "/recruiters/profile"
@@ -42,7 +41,6 @@ post '/recruiters/school/presentations/:id/edit/?' do
   presentation.update(
   :recruiter_id         => session[:recruiter_id],
   :school_password      => params[:school_password],
-  :class_code           => params[:class_code],
   :class_date           => params[:class_date]
   )
   redirect "/student/resume/index"
