@@ -225,7 +225,7 @@ end
 
 
 get "/student/reports/:id/report/?" do
-  @school = School.get(params[:school_id])
+  @school = School.all
   @student = Student.get(params[:id])
   
   Email.fullreport
@@ -234,7 +234,7 @@ get "/student/reports/:id/report/?" do
 end
 
 post "/student/reports/:id/report/?" do
-  school = School.get(params[:school_id])
+  school = School.all
   student = Student.get(params[:id])
   
   unless params[:ex_score1] == params[:ex_score2]
