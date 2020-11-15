@@ -40,11 +40,12 @@ class Email
     subject = 'This is your eCD full report'
     content = Content.new(type: 'text/plain', value: 'This is your Full COG Report')
     mail = SendGrid::Mail.new(from, subject, to, content)
-    # attachment = Attachment.new
+    
     
     mail.add_content(Content.new(type: 'text/html', value: '<html><body><h1>Welcome <%= @student.first_name %></h1><br />Here is your <b>Full COG Report.</b> <br /><br /></body></html>'))
     
-    # attachment.content = Base64.strict_encode64(File.open('/Users/Skip/Sites/careertrain-dev/ABcopy.pdf', 'rb').read)
+    # attachment = Attachment.new
+#     attachment.content = File.open('http://localhost:4567/arng/schools/#{@school.id}/summary_report', 'rb').read
 #     attachment.type = 'application/pdf'
 #     attachment.filename = 'AB Full Report.pdf'
 #     attachment.disposition = 'attachment'
@@ -61,6 +62,5 @@ class Email
   
 end
 
-# @student.first_name
 
-# /Users/Skip/Sites/careertrain-dev/AB.pdf
+

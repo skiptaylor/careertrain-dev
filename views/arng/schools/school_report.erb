@@ -3,7 +3,7 @@
 			<div class="col-md-12">
 				
 				<% if session[:recruiter] %>
-					 <a href="/recruiters/<%= session[:recruiter] %>/profile" style="margin-top: 12px;" class="btn pull-right">Recruiter Profile</a>
+					 <a href="/recruiters/<%= session[:recruiter] %>/profile" style="margin-top: 12px;" class="btn pull-right">Recruiter Account</a>
 				<% end %>
 				
 				
@@ -23,12 +23,18 @@
 					</p>
 			</div>		
 			<div class=" col-md-7">
-				<form method="get">
+				<form method="get" id="school_report">
 				<p>
 					<strong>Select class date</strong>
+					<select type="text" id="student" name="student" class="form-control" value="<%= @student %>">
+						<option value=""></option>
+						<% @school.students.uniq(&:created_on).each do |student| %>
+						<option value="<%= student.created_on %>" <%= 'selected' if student.created_on == "" %>><%= student.created_on %></option>
+						<% end %>
+					</select>
+					<button type="submit" class="btn btn-primary pull-left" style="margin-left: 6px; margin-top: 2px;">Show</button>
 				</p>
 				<p>
-					<span style="float:left;"><%= date_to_field('start', @start) %></span><button type="submit" class="btn btn-primary pull-left" style="margin-left: 6px; margin-top: 2px;">Show</button>
 				</p>
 				</form>
 				<p class="clear-both">&nbsp;<br /><br /></p>
@@ -64,8 +70,7 @@
 							<th>School Password</th>
 							<th>Class Date</th>
 						</tr>
-					
-						<% @school.students.sort_by(&:created_on).reverse.each do |student| %>
+						<% @school.students.sort_by(&:last_name).each do |student| %>
 						
 						<tr>
 							<td>
@@ -75,14 +80,14 @@
 								<%= student.school_password %>
 							</td>
 							<td> 
-								<%= format_american_day(student.created_on) %>
+								<%= format_american_day(student.created_on) %> - <%= format_american_day(@school.class_date) %>
 							</td>
 						
 						</tr>
 						
 						<% end %>
 					</table>
-				
+				<%= session[:flash] = params.inspect %>
 			</div>
 		</div>
 		

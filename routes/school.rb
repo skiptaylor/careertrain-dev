@@ -70,16 +70,11 @@ get '/arng/schools/:id/school_report/?' do
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
   
-	if params[:start_month] && params[:start_day] && params[:start_year]
-    @start = Chronic.parse("#{params[:start_year]}-#{params[:start_month]}-#{params[:start_day]}")
-  else
-    @start = Chronic.parse('January 1, 2020')
-  end
   
-  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :created_on => @start)
-  
-  @school.class_date = @start
+  params[:created_on] == @school.class_date
   @school.save
+  
+@school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
   
   erb :"/arng/schools/school_report"
 end
@@ -143,7 +138,7 @@ post '/arng/schools/:id/summary_report/?' do
       :margin_right     => '0.25in',
       :margin_bottom    => '0.25in',
       :margin_left      => '0.25in',
-      :javascript_delay => 2000
+      :javascript_delay => 200
     }
   end
   
@@ -184,7 +179,7 @@ post '/arng/schools/:id/ind_report/?' do
       :margin_right     => '0.25in',
       :margin_bottom    => '0.25in',
       :margin_left      => '0.25in',
-      :javascript_delay => 2000
+      :javascript_delay => 200
     }
   end
   
