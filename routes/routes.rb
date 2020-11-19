@@ -36,7 +36,6 @@ post '/contact_us/?' do
    body: "#{markdown params[:msg]}<hr />#{params[:name]}<br />#{params[:email]}"
    )
 	
-  end
 end
 
 get '/thanks/?' do
