@@ -27,16 +27,15 @@ get '/contact_us/?' do
 end
 
 post '/contact_us/?' do
-  if params[:email_name] == ""
     
 	Pony.mail(
    headers: { 'Content-Type' => 'text/html' },
-   to: 'info@careertrain.com, tayloraid@gmail.com',
+   to: 'info@careertrain.com, skip@recountant.com',
    from: 'contactUs@eCareerDirection.com',
    subject: "#{params[:subject]}",
    body: "#{markdown params[:msg]}<hr />#{params[:name]}<br />#{params[:email]}"
    )
-	redirect '/thanks'
+	
   end
 end
 
