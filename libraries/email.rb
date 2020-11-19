@@ -12,7 +12,7 @@ class Email
                  body: body)
   end
 
-  def self.requestcd2 school_name, school_address1, school_address2, school_city, school_state, school_zip, first_name, last_name, email, phone, fax
+  def self.requestcd2(school_name, school_address1, school_address2, school_city, school_state, school_zip, first_name, last_name, email, phone, fax)
 
     body = ''
     body << "<h4>Request CD2 Program from Educator</h4>"
@@ -27,7 +27,7 @@ class Email
 
     Pony.mail(
       headers: { 'Content-Type' => 'text/html' },
-      to: 'info@careertrain.com, tayloraid@gmail.com',
+      to: 'info@ecareertrain.com, skip@recountant.com',
       from: 'no-reply@eCareerDirection.com',
       subject: 'Request eCD Program from Educator',
       body: body
@@ -41,13 +41,12 @@ class Email
     content = Content.new(type: 'text/plain', value: 'This is your Full COG Report')
     mail = SendGrid::Mail.new(from, subject, to, content)
     
-    
-    mail.add_content(Content.new(type: 'text/html', value: '<html><body><h1>Welcome <%= @student.first_name %></h1><br />Here is your <b>Full COG Report.</b> <br /><br /></body></html>'))
+    mail.add_content(Content.new(type: 'text/html', value: '<html><body><h1>Welcome #{student.first_name}</h1><br />Here is your <b>Full COG Report.</b> <br /><br /></body></html>'))
     
     # attachment = Attachment.new
-#     attachment.content = File.open('http://localhost:4567/arng/schools/#{@school.id}/summary_report', 'rb').read
+#     attachment.content = Base64.strict_encode64(File.read('http://localhost:4567/student/reports/18182/scores_full.pdf'))
 #     attachment.type = 'application/pdf'
-#     attachment.filename = 'AB Full Report.pdf'
+#     attachment.filename = 'COG Full Report.pdf'
 #     attachment.disposition = 'attachment'
 #     attachment.content_id = 'Full Report'
 #     mail.add_attachment(attachment)
@@ -61,6 +60,4 @@ class Email
   end
   
 end
-
-
 
