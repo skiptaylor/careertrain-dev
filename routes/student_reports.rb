@@ -41,11 +41,11 @@ post '/student/reports/create/?' do
     
     if school = School.first(:school_password => params[:school_password]) 
       
-      if subscription = Subscription.first(:sub_code => params[:sub_code])
+      # if subscription = Subscription.first(:sub_code => params[:sub_code])
         
-      unless student = Student.first(:sub_code => params[:sub_code])
+      # unless student = Student.first(:sub_code => params[:sub_code])
         
-        if params[:sub_code] == params[:sub_code2]
+        # if params[:sub_code] == params[:sub_code2]
 
         unless student = Student.first(:email => params[:email])
           unless params[:password] == ''
@@ -90,20 +90,20 @@ post '/student/reports/create/?' do
           erb :"student/reports/create"
         end
         
-      else
-        flash[:alert] = 'This Student Access Codes must match. Try typing them again.'
-        erb :"student/reports/create"
-      end
+      # else
+#         flash[:alert] = 'This Student Access Codes must match. Try typing them again.'
+#         erb :"student/reports/create"
+#       end
     
-    else
-      flash[:alert] = 'This Student Access Codes has already been used. Try typing it again.'
-      erb :"student/reports/create"
-    end
+    # else
+#       flash[:alert] = 'This Student Access Codes has already been used. Try typing it again.'
+#       erb :"student/reports/create"
+#     end
         
-      else
-        flash[:alert] = 'This Student Access Code is incorrect. Try typing it again.'
-        erb :"student/reports/create"
-      end
+      # else
+#         flash[:alert] = 'This Student Access Code is incorrect. Try typing it again.'
+#         erb :"student/reports/create"
+#       end
       
     else
       flash[:alert] = 'That is not a valid school password.'
@@ -228,7 +228,12 @@ get "/student/reports/:id/report/?" do
   @school = School.all
   @student = Student.get(params[:id])
   
-  Email.fullreport
+  if @student.class_date == nil
+    Email.fullreport
+  
+    @student.class_date = @student.created_on
+    @student.save
+  end
   
   erb :"/student/reports/report"
 end

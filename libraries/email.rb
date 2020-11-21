@@ -41,7 +41,7 @@ class Email
     content = Content.new(type: 'text/plain', value: 'This is your Full COG Report')
     mail = SendGrid::Mail.new(from, subject, to, content)
     
-    mail.add_content(Content.new(type: 'text/html', value: '<html><body><h1>Welcome #{student.first_name}</h1><br />Here is your <b>Full COG Report.</b> <br /><br /></body></html>'))
+    mail.add_content(Content.new(type: 'text/html', value: '<html><body><h1>Welcome #{first_name}</h1><br />Here is your <b>Full COG Report.</b> <br /><br /></body></html>'))
     
     # attachment = Attachment.new
 #     attachment.content = Base64.strict_encode64(File.read('http://localhost:4567/student/reports/18182/scores_full.pdf'))
