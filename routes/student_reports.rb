@@ -251,8 +251,11 @@ post "/student/reports/:id/report/?" do
     flash[:alert] = '1st Highest and 2nd Highest Scores cannot be the same.'
     redirect "/student/reports/#{params[:id]}/report"
   end
-
-  redirect "/student/reports/#{params[:id]}/report"
+  if value="Short Example Report"
+   redirect "/student/reports/#{params[:id]}/ex_scores"
+ else
+   redirect "/student/reports/#{params[:id]}/ex_scores_full"
+ end
 end
 
 
@@ -348,7 +351,7 @@ get "/student/reports/:id/ex_scores/?" do
 
  # -------------------- show report ---------------------
  if @student.ex_score1 && @student.ex_score2
-   erb :'student/reports/scores'
+   erb :'student/reports/ex_scores'
  else
    erb :'student/reports/report'
  end

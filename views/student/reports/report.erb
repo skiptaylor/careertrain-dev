@@ -76,12 +76,12 @@
 				<% if @student.score1 && @student.score2 %>
 				<a href="/student/reports/<%= @student.id %>/scores" style="margin: 12px 0 19px 0;" class="btn btn-success">View short Report</a> &nbsp;&nbsp;
 				
-				<a href="/student/reports/<%= @student.id %>/scores_full" style="margin: 12px 0 19px 0;" class="btn btn-success">Download full Report</a>
+				<!-- <a href="/student/reports/<%= @student.id %>/scores_full" style="margin: 12px 0 19px 0;" class="btn btn-success">Download full Report</a> -->
 				
 				<% else %>
-				<a href="" style="margin: 12px 0 19px 0;" class="btn btn-success">View short Report</a> &nbsp;&nbsp;
+				<a href="" style="margin: 12px 0 19px 0;" class="btn btn-success mutted">View short Report</a> &nbsp;&nbsp;
 				
-				<a href="" style="margin: 12px 0 19px 0;" class="btn btn-success">Download full Report</a>
+				<!-- <a href="" style="margin: 12px 0 19px 0;" class="btn btn-success mutted">Download full Report</a> -->
 				<% end %>
 			</form>
 			
@@ -124,12 +124,12 @@
 						<span style="margin: 7px 0 0 12px"><strong>2nd Highest Score</strong></span>
 				</div>
 					<p style="margin: 14px 0 24px 0;">
-						<input type="submit" class="btn btn-primary btn-small" value="Save Sample Scores" />
+						<input type="submit" class="btn btn-success" value="Short Example Report" />
 					</p>
 				</form>
-				<div>
-				<a href="/student/reports/<%= @student.id %>/ex_scores" style="margin-bottom: 2px;" class="btn btn-info inline">View short Report - <span style="color: black;"><em><strong><%= @student.ex_score1 %><%= @student.ex_score2 %></strong></em></span></a> &nbsp;&nbsp; <a href="/student/reports/<%= @student.id %>/ex_scores_full" style="margin-bottom: 0px;" class="btn btn-info d-none d-lg-inline">View full Report - <span style="color: black;"><em><strong><%= @student.ex_score1 %><%= @student.ex_score2 %></strong></em></span></a>
-				</div>
+				<!-- <div>
+				<a href="/student/reports/<%= @student.id %>/ex_scores" style="margin-bottom: 2px;" class="btn btn-info inline">View short Report</a> &nbsp;&nbsp; <a href="/student/reports/<%= @student.id %>/ex_scores_full"  style="margin-bottom: 0px;" class="btn btn-info d-none d-lg-inline">View full Report</a>
+				</div> -->
 			</div>
 	
 		</div>
