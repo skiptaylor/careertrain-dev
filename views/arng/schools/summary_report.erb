@@ -132,7 +132,7 @@
 				<p style="text-align: center; font-size: 16px;"><strong><%= @school.school_name %></strong> &nbsp; <%= @school.school_city %> <%= @school.school_state %> &nbsp;&bull;&nbsp; <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %> &nbsp;&bull;&nbsp; <b>Class Date:</b> <%= format_american_day(@school.class_date) %></p>
 				 
 				<% if @school.students.sort_by(&:last_name).each do |student| %>  
-				<% if student.created_on == @school.class_date %>	
+				<% if student.created_on == @start %> -->	
 				
 				<hr style="margin: 6px 0 6px 0;" />
 				

@@ -70,12 +70,17 @@ get '/arng/schools/:id/school_report/?' do
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
   
+  if params[:start_month] && params[:start_day] && params[:start_year]
+    @start = Chronic.parse("#{params[:start_year]}-#{params[:start_month]}-#{params[:start_day]}")
+  else
+    @start = Chronic.parse('June 1, 2012')
+  end
   
-  params[:created_on] == @school.class_date
-  @school.save
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :created_on => @start)
   
-@school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
-  
+  # @school.class_date = @start
+ #  @school.save
+   
   erb :"/arng/schools/school_report"
 end
 
@@ -92,35 +97,6 @@ get '/arng/schools/:id/summary_report/?' do
   
   erb :'arng/schools/summary_report', layout: false
   
-  # content_type 'application/pdf'
-#
-#   pdf = Prawn::Document.new
-#   pdf = Prawn::Document.new(page_size: "LETTER", page_layout: :portrait)
-#   pdf.font "Helvetica"
-#   pdf.font_size 10
-#
-#   pdf.move_down(0)
-#      pdf.text "<b><font size='11px'>Summary Report</font></b>",
-#      :inline_format => true, :leading => 1, :align => :center
-#      pdf.text "<b>#{@school.school_name}</b>, #{@school.school_city} #{@school.school_state}, <b>Class Date:</b> #{format_american_day(@school.class_date)}",
-#      :inline_format => true, :leading => 1, :align => :center
-#
-#   pdf.move_down(23)
-#
-#      @school.students.each do |student|
-#        if student.created_on == @school.class_date
-#
-#         pdf.move_down(3)
-#         pdf.text "<b>#{student.first_name} #{student.middle_name} #{student.last_name}</b> - #{student.address}, #{student.address2}, #{student.city}, #{student.state} #{student.zip} - #{student.email} - <b>High Scores:</b> #{student.score1} #{student.score2}",
-#         :inline_format => true, :leading => 1
-#         pdf.text "#{student.future1}, #{student.future2}, #{student.future3}, #{student.future4}, #{student.future5}, #{student.future6}, #{student.future7}, #{student.future8}",
-#         :inline_format => true, :leading => 1, :font_size => 8
-#
-#       end
-#       end
-#
-#     pdf.render
- 
 end
 
 post '/arng/schools/:id/summary_report/?' do

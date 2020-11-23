@@ -23,20 +23,17 @@
 					</p>
 			</div>		
 			<div class=" col-md-7">
-				<form method="get" id="school_report">
-				<p>
-					<strong>Select class date</strong>
-					<select type="text" id="student" name="student" class="form-control" value="<%= @student %>">
-						<option value=""></option>
-						<% @school.students.uniq(&:created_on).each do |student| %>
-						<option value="<%= student.created_on %>" <%= 'selected' if student.created_on == "" %>><%= student.created_on %></option>
-						<% end %>
-					</select>
-					<button type="submit" class="btn btn-primary pull-left" style="margin-left: 6px; margin-top: 2px;">Show</button>
-				</p>
-				<p>
-				</p>
-				</form>
+				
+				<form method="get">
+					<p>
+						<strong>Select class date</strong>
+					</p>
+					<p>
+						<span style="float:left;"><%= date_to_field('start', @start) %></span><button type="submit" class="btn btn-primary pull-left" style="margin-left: 6px; margin-top: 2px;">Show</button>
+					</p>
+				</form>				
+				
+				
 				<p class="clear-both">&nbsp;<br /><br /></p>
 				
 				
@@ -63,31 +60,58 @@
 			<div class="col-md-12">	
 				
 				<br />
-
+				
 				<table class="table table-sm table-striped table-condensed table-hover">
+					<tr class="table-success">
+						<th>Student &nbsp;&nbsp;<small>[ <%= @school.students.count %> ]</small></th>
+						<th>School Password</th>
+						<th>Class Date</th>
+					</tr>
+					
+					<% @school.students.sort_by(&:created_on).reverse.each do |student| %>
+						
+					<tr>
+						<td>
+							<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %>
+						</td>
+						<td>
+							<%= student.school_password %>
+						</td>
+						<td> 
+							<%= format_american_day(student.created_on) %>
+						</td>
+						
+					</tr>
+						
+					<% end %>
+				</table>
+
+				<!-- <table class="table table-sm table-striped table-condensed table-hover">
 						<tr class="table-success">
 							<th>Student &nbsp;&nbsp;<small>[ <%= @school.students.count %> ]</small></th>
 							<th>School Password</th>
 							<th>Class Date</th>
 						</tr>
 						<% @school.students.sort_by(&:last_name).each do |student| %>
-						
+						<% if @school.class_date = params[:class_date] %>
+
 						<tr>
 							<td>
 								<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %>
 							</td>
 							<td>
-								<%= student.school_password %>
+								<%= student.school_password %> - <%= student.class_date %>
 							</td>
-							<td> 
-								<%= format_american_day(student.created_on) %> - <%= format_american_day(@school.class_date) %>
+							<td>
+								<%= student.created_on %> - <%= @school.class_date %>
 							</td>
-						
+
 						</tr>
-						
+
 						<% end %>
-					</table>
-				<%= session[:flash] = params.inspect %>
+						<% end %>
+					</table> -->
+				<!-- <%= session[:flash] = params.inspect %> -->
 			</div>
 		</div>
 		
