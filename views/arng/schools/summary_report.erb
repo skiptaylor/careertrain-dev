@@ -132,7 +132,7 @@
 				<p style="text-align: center; font-size: 16px;"><strong><%= @school.school_name %></strong> &nbsp; <%= @school.school_city %> <%= @school.school_state %> &nbsp;&bull;&nbsp; <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %> &nbsp;&bull;&nbsp; <b>Class Date:</b> <%= format_american_day(@school.class_date) %></p>
 				 
 				<% if @school.students.sort_by(&:last_name).each do |student| %>  
-				<% if student.created_on == @start %> -->	
+				
 				
 				<hr style="margin: 6px 0 6px 0;" />
 				
@@ -163,7 +163,7 @@
 						
 					<strong>Future Plans:</strong>&nbsp;<% if student.future1 == "on" %>&nbsp;Enter technical college/trade school&nbsp;&nbsp;<% end %><% if student.future2 == "on" %>&nbsp;Work full-time&nbsp;&nbsp;<% end %><% if student.future3 == "on" %>&nbsp;Work part-time&nbsp;&nbsp;<% end %><% if student.future4 == "on" %>&nbsp;Enter the military&nbsp;&nbsp;<% end %><% if student.future5 == "on" %>&nbsp;Go to college&nbsp;&nbsp;<% end %><% if student.future6 == "on" %>&nbsp;I have money to pay for education&nbsp;&nbsp;<% end %><% if student.future7 == "on" %>&nbsp;Counting on parents for money for education&nbsp;&nbsp;<% end %><% if student.future8 == "on" %>&nbsp;Considering sources of financial aid or scholarships&nbsp;&nbsp;<% end %></p>
 					
-  		    	<% end %>
+  		    	
 				
 				<% end %>
 				

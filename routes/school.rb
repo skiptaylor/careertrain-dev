@@ -65,6 +65,12 @@ post '/arng/schools/new/?' do
   redirect "/arng/schools/#{school.id}/school"
 end
 
+
+
+
+
+# ----------------  Recruiter Reportas (2)  --------------------
+
 get '/arng/schools/:id/school_report/?' do
   auth_recruiter
   @school = School.get(params[:id])
@@ -73,27 +79,23 @@ get '/arng/schools/:id/school_report/?' do
   if params[:start_month] && params[:start_day] && params[:start_year]
     @start = Chronic.parse("#{params[:start_year]}-#{params[:start_month]}-#{params[:start_day]}")
   else
-    @start = Chronic.parse('June 1, 2012')
+    @start = Chronic.parse('September 1, 2020')
   end
   
-  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :created_on => @start)
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :class_date => @start)
   
-  # @school.class_date = @start
- #  @school.save
+  @school.class_date = @start
+  @school.save
    
   erb :"/arng/schools/school_report"
 end
-
-
-
-
 
 get '/arng/schools/:id/summary_report/?' do
   
   auth_recruiter
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
-  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :class_date => @school.class_date)
   
   erb :'arng/schools/summary_report', layout: false
   
@@ -175,7 +177,7 @@ end
 
 
 
-
+#  -------------------  ARNG Schools ---------------------
 
 get '/arng/schools/:id/?' do
   auth_recruiter
@@ -301,6 +303,8 @@ get '/arng/schools/:id/delete/?' do
   school.destroy
   redirect "/arng/schools/schools"
 end
+
+# -----------------  ARNG Pages  --------------------
 
 get '/arng/arng/?' do
   
