@@ -3,7 +3,7 @@ get "/student/reports/:id/exercise/?"  do
   @student = Student.get(session[:student])
   @ie = Ie.all
   @exercise = Exercise.new
-  erb :"/student/reports/exercise", layout: false
+  erb :"/student/reports/exercise"
 end
 
 post  "/student/reports/:id/exercise/?"  do
