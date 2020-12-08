@@ -53,6 +53,8 @@ class Student
   property  :future7, String
   property  :future8, String
   property  :future9, String
+  
+  property  :presentation_id, Integer, default: 0
 
   belongs_to :school, required: false
   belongs_to :presentation, required: false

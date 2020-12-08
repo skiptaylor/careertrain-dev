@@ -71,12 +71,21 @@ post '/student/reports/create/?' do
             :future5          => params[:future5],
             :future6          => params[:future6],
             :future7          => params[:future7],
-            :future8          => params[:future8]
+            :future8          => params[:future8],
+            :presentation_id  => params[:presentation_id]
             )
             
             session[:student] = @student.id
             
             @student.school_id = school.id
+            
+            @presentation = Presentation.create(
+            :school_id  => @student.school_id,
+            :class_date  => @student.created_on
+            )
+            
+            @presentation.save
+            
             @student.save
             
             flash[:alert] = 'Welcome to the Occupations Guide. You are now signed in.'
@@ -252,11 +261,9 @@ post "/student/reports/:id/report/?" do
     redirect "/student/reports/#{params[:id]}/report"
   end
   
-  
    redirect "/student/reports/#{params[:id]}/ex_scores"
 
    # redirect "/student/reports/#{params[:id]}/ex_scores_full"
-
 
 end
 
@@ -268,8 +275,6 @@ get "/student/reports/:id/scores/?" do
   @school = School.all
   @exercise = Exercise.get(params[:exercise_id])
   @student = Student.get(params[:id])
-  
-
     
   if @student.score1 && @student.score1 != ''
     

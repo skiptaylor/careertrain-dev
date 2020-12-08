@@ -126,6 +126,7 @@
 	  }
 	}
 	
+	
 </style>
 
 </head>
@@ -133,19 +134,24 @@
 <body>
 	
 	<div class="container">	
-		<div class="row">  
+		<div class="row">
 			<div class="col-md-12">
+				
+				<div style="float: right;" class="hidden-print">
+					<form method="post">
+					<button type="submit">Export</button>
+					</form>
+				</div>
 				 
-				<% if @school.students.sort_by(&:last_name).each do |student| %>  
-				<% if student.created_on == @school.class_date %>	
+				<% if @school.students.sort_by(&:last_name).each do |student| %> 
+				
 				
 				<div style="page-break-after: always;">
 					
-				<div style="float: right;">
-					<form method="post">
-					<button type="submit" class="hidden-print">Export</button>
-					</form>
-					<strong>Class Date:</strong> &nbsp;&nbsp;<%= student.created_on.strftime("%m/%d/%Y") %>
+				<div style="float: right; clear: all;">
+
+					<strong>Class Date:</strong> &nbsp;&nbsp;<%= student.class_date.strftime("%m/%d/%Y") %>
+					<!-- <strong>Class Date:</strong> &nbsp;&nbsp;<%= @school.class_date.strftime("%m/%d/%Y") %> -->
 					<!-- <strong>Date:</strong> &nbsp;&nbsp;<%= Time.now.strftime("%m/%d/%Y") %> -->
 				</div>
 				<h6><strong><span class="logo-e">e</span>CD</strong> Inventory Student Planning Report</h6>
@@ -195,7 +201,7 @@
 				
 				</div> <!-- /page break -->
 				
-				<% end %>
+				
 				
 				<% end %>
 				
