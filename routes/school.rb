@@ -74,19 +74,17 @@ end
 get '/arng/schools/:id/school_report/?' do
   auth_recruiter
   @school = School.get(params[:id])
+  @presentation = Presentation.all
   @recruiter = Recruiter.get(params[:recruiter_id])
   
-  if params[:start_month] && params[:start_day] && params[:start_year]
-    @start = Chronic.parse("#{params[:start_year]}-#{params[:start_month]}-#{params[:start_day]}")
-  else
-    @start = Chronic.parse('September 1, 2020')
-  end
+  # if params[:class_date]
+#     params[:class_date] = @school.class_date
+#     @school.save
+#   end
   
-  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :class_date => @start)
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :class_date => params[:presentation])
   
-  @school.class_date = @start
-  @school.save
-   
+  
   erb :"/arng/schools/school_report"
 end
 
@@ -137,7 +135,7 @@ get '/arng/schools/:id/ind_report/?' do
   auth_recruiter
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
-  @students = Student.all
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :class_date => @school.class_date)
   
   erb :'arng/schools/ind_report', layout: false
  
@@ -147,7 +145,7 @@ post '/arng/schools/:id/ind_report/?' do
   auth_recruiter
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
-  @students = Student.all
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
   
   PDFKit.configure do |config|
     config.default_options = {

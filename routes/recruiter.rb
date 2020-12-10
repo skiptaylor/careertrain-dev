@@ -118,7 +118,7 @@ end
 
 get '/recruiters/:id/profile/?' do
   auth_recruiter
-  @school = School.all(order: [:updated_at.desc], limit:50)
+  @school = School.all
   @state = State.all
   @recruiter = Recruiter.get(params[:id])
    

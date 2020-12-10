@@ -15,6 +15,8 @@
 					<p><%= @school.school_address1 %> <%= @school.school_address2 %>
 						<br />
 						<%= @school.school_city %>, <%= @school.school_state %> &nbsp;<%= @school.school_zip %>
+						<br />
+						<%= @school.class_date %>
 					</p>
 					<p>
 						<strong>School Password:</strong> &nbsp; <%= @school.school_password %><br />
@@ -24,13 +26,20 @@
 			</div>		
 			<div class=" col-md-7">
 				
-				<form method="get">
+				<form method="get" id="school_report">
+					<p><strong>Select class date</strong></p>
 					<p>
-						<strong>Select class date</strong>
+					<select type="text" id="presentation" name="presentation" class="form-control col-sm-6" value="<%=  %>">
+						<option value=""></option>
+							<% @presentation.each do |pres| %>
+							<% if params[:id] = pres.school_id %>
+						<option value="<%= pres.class_date %>" <%= 'selected' if params[:presentation] = pres.class_date %>><%= format_american_day(pres.class_date) %> - <%= pres.school_id %> - <%= params[:id] %></option>
+							<% end %>
+							<% end %>
+					</select>
+						<button type="submit" class="btn btn-primary pull-left" style="margin-left: 6px; margin-top: 14px;">Show</button>
 					</p>
-					<p>
-						<span style="float:left;"><%= date_to_field('start', @start) %></span><button type="submit" class="btn btn-primary pull-left" style="margin-left: 6px; margin-top: 2px;">Show</button>
-					</p>
+
 				</form>				
 				
 				
@@ -68,21 +77,25 @@
 						<th>Class Date</th>
 					</tr>
 					
-					<% @school.students.sort_by(&:created_on).reverse.each do |student| %>
-						
+					<% @school.students.each do |student| %>
+					
+					<% if params[:presentation] = student.class_date %>
 					<tr>
 						<td>
-							<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %>
+							<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %> - <%= student.created_on %>
 						</td>
 						<td>
-							<%= student.school_password %> - <%= student.email %>
+							<%= student.school_password %> - <%= student.school_id %> - <%= params[:presentation] %>
 						</td>
 						<td> 
-							<%= format_american_day(student.created_on) %>
+							<!-- <% unless student.class_date == nil %> -->
+								<%= format_american_day(student.class_date) %> - <%= @start %>
+							<!-- <% end %> -->
 						</td>
 						
 					</tr>
-						
+					<% end %>
+					
 					<% end %>
 				</table>
 
@@ -111,7 +124,7 @@
 						<% end %>
 						<% end %>
 					</table> -->
-				<!-- <%= session[:flash] = params.inspect %> -->
+				<%= session[:flash] = params.inspect %>
 			</div>
 		</div>
 		

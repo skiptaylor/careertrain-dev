@@ -79,12 +79,16 @@ post '/student/reports/create/?' do
             
             @student.school_id = school.id
             
+            if @student.presentation_id = nil || @student.presentation_id = ""
+            
             @presentation = Presentation.create(
             :school_id  => @student.school_id,
             :class_date  => @student.created_on
             )
-            
+            @presentation.id = @student.presentation_id
             @presentation.save
+            
+            end
             
             @student.save
             
@@ -235,6 +239,7 @@ end
 
 get "/student/reports/:id/report/?" do
   @school = School.all
+  @presentation = Presentation.all
   @student = Student.get(params[:id])
   
   if @student.class_date == nil
@@ -249,6 +254,7 @@ end
 
 post "/student/reports/:id/report/?" do
   school = School.all
+  presentation = Presentation.all
   student = Student.get(params[:id])
   
   unless params[:ex_score1] == params[:ex_score2]
