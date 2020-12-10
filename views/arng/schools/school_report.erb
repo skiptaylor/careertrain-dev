@@ -105,7 +105,7 @@
 							<th>School Password</th>
 							<th>Class Date</th>
 						</tr>
-						<% @school.students.sort_by(&:last_name).each do |student| %>
+						<% @school.students.each do |student| %>
 						<% if @school.class_date = params[:class_date] %>
 
 						<tr>
