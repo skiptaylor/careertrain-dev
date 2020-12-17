@@ -19,7 +19,7 @@
 						<%= @school.class_date %>
 					</p>
 					<p>
-						<strong>School Password:</strong> &nbsp; <%= @school.school_password %><br />
+						<strong>School Password:</strong> &nbsp; <%= @school.school_password %> - <%= @school.id %> - <%= params[:id] %><br />
 
 						<strong>Recruiter:</strong> &nbsp; <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %><br />
 					</p>
@@ -29,11 +29,11 @@
 				<form method="get" id="school_report">
 					<p><strong>Select class date</strong></p>
 					<p>
-					<select type="text" id="presentation" name="presentation" class="form-control col-sm-6" value="<%=  %>">
+					<select type="text" id="presentation" name="presentation" class="form-control col-sm-6" value="<%= @presentation %>">
 						<option value=""></option>
-							<% @presentation.each do |pres| %>
-							<% if params[:id] = pres.school_id %>
-						<option value="<%= pres.class_date %>" <%= 'selected' if params[:presentation] = pres.class_date %>><%= format_american_day(pres.class_date) %> - <%= pres.school_id %> - <%= params[:id] %></option>
+							<% @school.presentations.each do |pres| %>
+							<% if pres.school_id = params[:id] %>
+						<option value="<%= pres.class_date %>" <%= 'selected' if params[:presentation] = pres.class_date %>><%= format_american_day(pres.class_date) %> - <%= pres.school_id %> - <%= params[:id] %> - <%= @start %></option>
 							<% end %>
 							<% end %>
 					</select>
@@ -89,7 +89,7 @@
 						</td>
 						<td> 
 							<!-- <% unless student.class_date == nil %> -->
-								<%= format_american_day(student.class_date) %> - <%= @start %>
+								<%= format_american_day(student.class_date) %>
 							<!-- <% end %> -->
 						</td>
 						

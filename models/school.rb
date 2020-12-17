@@ -36,6 +36,7 @@ class School
   property :cd_before,          Boolean, :default => false
   
   has n, :students
+  has n, :presentations
   belongs_to :recruiter, required: false
  
   before :create do |s|

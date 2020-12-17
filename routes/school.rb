@@ -74,16 +74,12 @@ end
 get '/arng/schools/:id/school_report/?' do
   auth_recruiter
   @school = School.get(params[:id])
-  @presentation = Presentation.all
   @recruiter = Recruiter.get(params[:recruiter_id])
-  
-  # if params[:class_date]
-#     params[:class_date] = @school.class_date
-#     @school.save
-#   end
+  @school.presentations = Presentation.all(:school_id => @school.id)
+ 
+ 
   
   @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :class_date => params[:presentation])
-  
   
   erb :"/arng/schools/school_report"
 end

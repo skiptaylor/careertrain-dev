@@ -43,80 +43,82 @@ post '/student/reports/create/?' do
       
       if subscription = Subscription.first(:sub_code => params[:sub_code])
         
-      unless student = Student.first(:sub_code => params[:sub_code])
+        unless student = Student.first(:sub_code => params[:sub_code])
         
-        if params[:sub_code] == params[:sub_code2]
+          if params[:sub_code] == params[:sub_code2]
 
-        unless student = Student.first(:email => params[:email])
-          unless params[:password] == ''
-            @student = Student.create(
-            :email            => params[:email],
-            :password         => params[:password],
-            :name             => params[:name],
-            :first_name       => params[:first_name],
-            :middle_name      => params[:middle_name],
-            :last_name        => params[:last_name],
-            :address          => params[:address],
-            :city             => params[:city],
-            :state            => params[:state],
-            :zip              => params[:zip],
-            :phone            => params[:phone],
-            :school_password  => params[:school_password],
-            :sub_code         => params[:sub_code],
-            :grade            => params[:grade],
-            :future1          => params[:future1],
-            :future2          => params[:future2],
-            :future3          => params[:future3],
-            :future4          => params[:future4],
-            :future5          => params[:future5],
-            :future6          => params[:future6],
-            :future7          => params[:future7],
-            :future8          => params[:future8],
-            :presentation_id  => params[:presentation_id]
-            )
+          unless student = Student.first(:email => params[:email])
+            unless params[:password] == ''
+              @student = Student.create(
+              :email            => params[:email],
+              :password         => params[:password],
+              :name             => params[:name],
+              :first_name       => params[:first_name],
+              :middle_name      => params[:middle_name],
+              :last_name        => params[:last_name],
+              :address          => params[:address],
+              :city             => params[:city],
+              :state            => params[:state],
+              :zip              => params[:zip],
+              :phone            => params[:phone],
+              :school_password  => params[:school_password],
+              :school_id        => params[:school_id],
+              :sub_code         => params[:sub_code],
+              :grade            => params[:grade],
+              :future1          => params[:future1],
+              :future2          => params[:future2],
+              :future3          => params[:future3],
+              :future4          => params[:future4],
+              :future5          => params[:future5],
+              :future6          => params[:future6],
+              :future7          => params[:future7],
+              :future8          => params[:future8],
+              :presentation_id  => params[:presentation_id]
+              )
             
-            session[:student] = @student.id
+              session[:student] = @student.id
             
-            @student.school_id = school.id
-            
-            if @student.presentation_id = nil || @student.presentation_id = ""
-            
-            @presentation = Presentation.create(
-            :school_id  => @student.school_id,
-            :class_date  => @student.created_on
-            )
-            @presentation.id = @student.presentation_id
-            @presentation.save
-            
+              @student.school_id = school.id
+              @student.save
+                
+               unless @presentation = Presentation.first(:school_password => params[:school_password]) 
+                 unless @presentation = Presentation.first(:class_date => params[:class_date])
+                 
+                  @presentation = Presentation.create(
+                  :school_id  => @student.school_id,
+                  :class_date  => @student.created_on,
+                  :school_password  => @student.school_password
+                  )
+                  @presentation.id = @student.presentation_id
+                end  
+              end 
+                        
+              flash[:alert] = 'Welcome to the Occupations Guide. You are now signed in.'
+              redirect '/student/reports/report/report_profile'
+            else
+              flash[:alert] = 'Please create a personal password that will be used to sign into your account.'
+              erb :"student/reports/create"
             end
-            
-            @student.save
-            
-            flash[:alert] = 'Welcome to the Occupations Guide. You are now signed in.'
-            redirect '/student/reports/report/report_profile'
+          
           else
-            flash[:alert] = 'Please create a personal password that will be used to sign into your account.'
+            flash[:alert] = 'This email already exists. Maybe you need to sign in.'
             erb :"student/reports/create"
           end
-        else
-          flash[:alert] = 'This email already exists. Maybe you need to sign in.'
-          erb :"student/reports/create"
-        end
         
-      else
-         flash[:alert] = 'This Student Access Codes must match. Try typing them again.'
-         erb :"student/reports/create"
-       end
+        else
+           flash[:alert] = 'This Student Access Codes must match. Try typing them again.'
+           erb :"student/reports/create"
+         end
     
-    else
-       flash[:alert] = 'This Student Access Codes has already been used. Try typing it again.'
-       erb :"student/reports/create"
-    end
+      else
+         flash[:alert] = 'This Student Access Codes has already been used. Try typing it again.'
+         erb :"student/reports/create"
+      end
         
      else
          flash[:alert] = 'This Student Access Code is incorrect. Try typing it again.'
         erb :"student/reports/create"
-      end
+     end
       
     else
       flash[:alert] = 'That is not a valid school password.'
@@ -201,27 +203,30 @@ post '/student/reports/:id/edit/?' do
   )
   
   student = Student.get(params[:id]).update(
-    :email            => params[:email],
-    :password         => params[:password],
-    :name             => params[:name],
-    :first_name       => params[:first_name],
-    :middle_name      => params[:middle_name],
-    :last_name        => params[:last_name],
-    :address          => params[:address],
-    :city             => params[:city],
-    :state            => params[:state],
-    :zip              => params[:zip],
-    :phone            => params[:phone],
-    :school_password  => params[:school_password],
-    :grade            => params[:grade],
-    :future1          => params[:future1],
-    :future2          => params[:future2],
-    :future3          => params[:future3],
-    :future4          => params[:future4],
-    :future5          => params[:future5],
-    :future6          => params[:future6],
-    :future7          => params[:future7],
-    :future8          => params[:future8]
+  :email            => params[:email],
+  :password         => params[:password],
+  :name             => params[:name],
+  :first_name       => params[:first_name],
+  :middle_name      => params[:middle_name],
+  :last_name        => params[:last_name],
+  :address          => params[:address],
+  :city             => params[:city],
+  :state            => params[:state],
+  :zip              => params[:zip],
+  :phone            => params[:phone],
+  :school_password  => params[:school_password],
+  :school_id        => params[:school_id],
+  :sub_code         => params[:sub_code],
+  :grade            => params[:grade],
+  :future1          => params[:future1],
+  :future2          => params[:future2],
+  :future3          => params[:future3],
+  :future4          => params[:future4],
+  :future5          => params[:future5],
+  :future6          => params[:future6],
+  :future7          => params[:future7],
+  :future8          => params[:future8],
+  :presentation_id  => params[:presentation_id]
   )
   
   redirect("/student/reports/report/report_profile")
@@ -243,7 +248,7 @@ get "/student/reports/:id/report/?" do
   @student = Student.get(params[:id])
   
   if @student.class_date == nil
-    Email.fullreport
+    # Email.fullreport
   
     @student.class_date = @student.created_on
     @student.save
