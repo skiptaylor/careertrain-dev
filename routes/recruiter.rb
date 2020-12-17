@@ -118,7 +118,7 @@ end
 
 get '/recruiters/:id/profile/?' do
   auth_recruiter
-  @school = School.all
+  @school = School.all(:recruiter_id => params[:id])
   @state = State.all
   @recruiter = Recruiter.get(params[:id])
    
