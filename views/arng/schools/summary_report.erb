@@ -129,14 +129,14 @@
 				<button type="submit" class="hidden-print" style="float: right;">Export</button>
 				</form>
 				<p class="header1">Summary Report</p>
-				<p style="text-align: center; font-size: 16px;"><strong><%= @school.school_name %></strong> &nbsp; <%= @school.school_city %> <%= @school.school_state %> &nbsp;&bull;&nbsp; <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %> &nbsp;&bull;&nbsp; <b>Class Date:</b> <%= format_american_day(@school.class_date) %></p>
+				<p style="text-align: center; font-size: 16px;"><strong><%= @school.school_name %></strong> &nbsp; <%= @school.school_city %> <%= @school.school_state %> &nbsp;&bull;&nbsp; <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %> &nbsp;&bull;&nbsp; <b>Class Date:</b> <%= @school.class_date %></p>
 				 
-				<% if @school.students.sort_by(&:last_name).each do |student| %>  
+				<% if @school.students.each do |student| %>  
 				
 				
 				<hr style="margin: 6px 0 6px 0;" />
 				
-				<p><strong>Student:</strong>&nbsp;<%= student.first_name %> <%= student.last_name %>&nbsp;&bull;&nbsp;<strong>Grade:</strong>&nbsp;<%= student.grade %>&nbsp;&bull;&nbsp;<strong>Email:</strong>&nbsp;<%= student.email %><% if student.phone %>&nbsp;&bull;&nbsp;<strong>Phone:</strong>&nbsp; <%= student.phone %><% end %></p>
+				<p><strong>Student:</strong>&nbsp;<%= student.first_name %> <%= student.last_name %>&nbsp;&bull;&nbsp;<strong>Grade:</strong>&nbsp;<%= student.grade %>&nbsp;&bull;&nbsp;<strong>Email:</strong>&nbsp;<%= student.email %><% if student.phone %>&nbsp;&bull;&nbsp;<strong>Phone:</strong>&nbsp; <%= student.phone %><% end %>Class Date:</b> <%= params[:presentation] %></p>
 					
 					
 					<p style="margin-top: 6px;">

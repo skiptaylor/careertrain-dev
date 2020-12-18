@@ -76,19 +76,16 @@ get '/arng/schools/:id/school_report/?' do
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
   @school.presentations = Presentation.all(:school_id => @school.id)
- 
- 
-  
   @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :class_date => params[:presentation])
   
   erb :"/arng/schools/school_report"
 end
 
 get '/arng/schools/:id/summary_report/?' do
-  
   auth_recruiter
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
+  @school.presentations = Presentation.all(:school_id => @school.id)
   @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :class_date => @school.class_date)
   
   erb :'arng/schools/summary_report', layout: false
@@ -100,7 +97,8 @@ post '/arng/schools/:id/summary_report/?' do
   auth_recruiter
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
-  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
+  @school.presentations = Presentation.all(:school_id => @school.id)
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :class_date => @school.class_date)
   
   PDFKit.configure do |config|
     config.default_options = {
