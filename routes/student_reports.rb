@@ -248,7 +248,7 @@ get "/student/reports/:id/report/?" do
   @student = Student.get(params[:id])
   
   if @student.class_date == nil
-    Email.fullreport
+    Email.fullreport(to, first_name, last_name)
   
     @student.class_date = @student.created_on
     @student.save
