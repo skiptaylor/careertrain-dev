@@ -34,14 +34,13 @@ class Email
     )
   end
   
-  def self.fullreport
-    from = Email.new(email: 'no-reply@eCareerDirection.com')
-    to = Email.new(email: 'skip@recountant.com')
-    subject = 'This is your eCD full report'
-    content = Content.new(type: 'text/plain', value: 'This is your Full COG Report')
-    mail = SendGrid::Mail.new(from, subject, to, content)
+  def self.fullreport(to, first_name, last_name)
+    body = ""
+    body << "<p>Welcome #{first_name} #{last_name} to eCareerDirecrion</p>"
+    body << "<p>Here is your Full COG Report.</p>"
+    body << "<p>We wish you the best!</p>"
     
-    mail.add_content(Content.new(type: 'text/html', value: '<html><body><h1>Welcome #{first_name}</h1><br />Here is your <b>Full COG Report.</b> <br /><br /></body></html>'))
+    
     
     # attachment = Attachment.new
 #     attachment.content = Base64.strict_encode64(File.read('http://localhost:4567/student/reports/18182/scores_full.pdf'))
@@ -51,11 +50,13 @@ class Email
 #     attachment.content_id = 'Full Report'
 #     mail.add_attachment(attachment)
     
-    sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
-    response = sg.client.mail._('send').post(request_body: mail.to_json)
-    puts response.status_code
-    puts response.body
-    puts response.headers
+  Pony.mail(
+    headers: { 'Content-Type' => 'text/html' },
+    to: to,
+    from: 'Welcome@eCareerDirection.com',
+    subject: 'Welcome. This is your eCD full report',
+    body: body
+  )
         
   end
   
