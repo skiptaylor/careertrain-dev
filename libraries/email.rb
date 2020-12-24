@@ -48,8 +48,7 @@ class Email
     to: '#{email}',
     from: 'Welcome@eCareerDirection.com',
     subject: 'Welcome. This is your eCD full report',
-    body: body,
-    attachments: {"scores.pdf" => File.read('https://ecareerdirection.com/student/reports/#{student_id}/scores_full.pdf'}
+    body: body
   )
         
   end
