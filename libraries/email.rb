@@ -34,28 +34,22 @@ class Email
     )
   end
   
-  def self.fullreport(to, first_name, last_name)
+  def self.fullreport(email, first_name, last_name)
     body = ""
     body << "<p>Welcome #{first_name} #{last_name} to eCareerDirecrion</p>"
     body << "<p>Here is your Full COG Report.</p>"
     body << "<p>We wish you the best!</p>"
     
     
-    
-    # attachment = Attachment.new
-#     attachment.content = Base64.strict_encode64(File.read('http://localhost:4567/student/reports/18182/scores_full.pdf'))
-#     attachment.type = 'application/pdf'
-#     attachment.filename = 'COG Full Report.pdf'
-#     attachment.disposition = 'attachment'
-#     attachment.content_id = 'Full Report'
-#     mail.add_attachment(attachment)
+
     
   Pony.mail(
     headers: { 'Content-Type' => 'text/html' },
-    to: to,
+    to: '#{email}',
     from: 'Welcome@eCareerDirection.com',
     subject: 'Welcome. This is your eCD full report',
-    body: body
+    body: body,
+    attachments: {"scores.pdf" => File.read('https://ecareerdirection.com/student/reports/#{student_id}/scores_full.pdf'}
   )
         
   end
