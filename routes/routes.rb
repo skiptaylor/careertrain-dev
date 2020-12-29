@@ -27,15 +27,31 @@ get '/contact_us/?' do
 end
 
 post '/contact_us/?' do    
-	Pony.mail(
-   headers: { 'Content-Type' => 'text/html' },
-   to: 'info@careertrain.com, skip@recountant.com',
-   from: 'contactUs@eCareerDirection.com',
-   subject: "#{params[:subject]}",
-   body: "#{markdown params[:msg]}<hr />#{params[:name]}<br />#{params[:email]}"
-   )
-	redirect '/thanks'
+  from = Email.new(email: 'contactUs@eCareerDirection.com')
+  to = Email.new(email: 'skip@recountant.com')
+  subject = "#{params[:subject]}"
+  content = Content.new(type: 'text/html', value: '#{markdown params[:msg]}<hr />#{params[:name]}<br />#{params[:email]}')
+  mail = Mail.new(from, subject, to, content)
+
+  sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
+  response = sg.client.mail._('send').post(request_body: mail.to_json)
+  puts response.status_code
+  puts response.body
+  puts response.headers
+  
+  redirect '/thanks'
 end
+
+# post '/contact_us/?' do
+#   Pony.mail(
+#    headers: { 'Content-Type' => 'text/html' },
+#    to: 'info@careertrain.com, skip@recountant.com',
+#    from: 'contactUs@eCareerDirection.com',
+#    subject: "#{params[:subject]}",
+#    body: "#{markdown params[:msg]}<hr />#{params[:name]}<br />#{params[:email]}"
+#    )
+#   redirect '/thanks'
+# end
 
 get '/thanks/?' do
 	erb :'/thanks'
