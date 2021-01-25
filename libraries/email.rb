@@ -15,8 +15,8 @@ class Email
   def self.requestcd2(school_name, school_address1, school_address2, school_city, school_state, school_zip, first_name, last_name, email, phone, fax)
 
     body = ''
-    body << "<h4>Request CD2 Program from Educator</h4>"
-    body << "<p>School Name: #{school_name}</p>"
+    body << "<h3>Request eCD Program from Educator (School not yet active)</h3>"
+    body << "<p>School Name: <b>#{school_name}</b></p>"
     body << "<p>#{school_address1}</p>"
     body << "<p>#{school_address2}</p>"
     body << "<p>#{school_city} #{school_state} #{school_zip}</p>"
