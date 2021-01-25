@@ -11,7 +11,7 @@ class Email
               subject: 'Resume Tool Account Password',
                  body: body)
   end
-
+  
   def self.requestcd2(school_name, school_address1, school_address2, school_city, school_state, school_zip, first_name, last_name, email, phone, fax)
 
     body = ''
@@ -27,8 +27,8 @@ class Email
 
     Pony.mail(
       headers: { 'Content-Type' => 'text/html' },
-      to: 'info@ecareertrain.com, skip@recountant.com',
-      from: 'no-reply@eCareerDirection.com',
+      to: 'skip@recountant.com',
+      from: 'eCD_Educator_Request@eCareerDirection.com',
       subject: 'Request eCD Program from Educator',
       body: body
     )
@@ -40,9 +40,6 @@ class Email
     body << "<p>Here is your Full COG Report.</p>"
     body << "<p>We wish you the best!</p>"
     
-    
-
-    
   Pony.mail(
     headers: { 'Content-Type' => 'text/html' },
     to: '#{email}',
@@ -50,8 +47,31 @@ class Email
     subject: 'Welcome. This is your eCD full report',
     body: body
   )
-        
   end
+  
+  # def self.studentreport
+#     from = Email.new(email: 'Welcome@eCareerDirection.com')
+#     to = Email.new(to: @student.email)
+#     subject = 'This is your eCD full report'
+#     content = Content.new(type: 'text/plain', value: 'This is your Full COG Report')
+#     mail = SendGrid::Mail.new(from, subject, to, content)
+#
+#     mail.add_content(Content.new(type: 'text/html', value: '<html><body><h1>Welcome #{first_name}</h1><br />Here is your <b>Full COG Report.</b> <br /><br /></body></html>'))
+#
+#     attachment = Attachment.new
+#     attachment.content = Base64.strict_encode64(File.read('http://localhost:4567/student/reports/18182/scores_full.pdf'))
+#     attachment.type = 'application/pdf'
+#     attachment.filename = 'COG Full Report.pdf'
+#     attachment.disposition = 'attachment'
+#     attachment.content_id = 'Full Report'
+#     mail.add_attachment(attachment)
+#
+#     sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
+#     response = sg.client.mail._('send').post(request_body: mail.to_json)
+#     puts response.status_code
+#     puts response.body
+#     puts response.headers
+#   end
   
 end
 
