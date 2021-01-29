@@ -77,12 +77,12 @@ post '/student/reports/create/?' do
               )
             
               session[:student] = @student.id
-            
+              
               @student.school_id = school.id
               @student.save
-                
-               unless @presentation = Presentation.first(:school_password => params[:school_password]) 
-                 unless @presentation = Presentation.first(:class_date => params[:class_date])
+            
+              unless @presentation = Presentation.first(:school_password => params[:school_password]) 
+                unless @presentation = Presentation.first(:class_date => params[:class_date])
                  
                   @presentation = Presentation.create(
                   :school_id  => @student.school_id,
@@ -247,12 +247,12 @@ get "/student/reports/:id/report/?" do
   @presentation = Presentation.all
   @student = Student.get(params[:id])
   
-  if @student.class_date == nil
-    Email.fullreport(@student.email, @student.first_name, @student.last_name)
-  
-    @student.class_date = @student.created_on
-    @student.save
-  end
+  # if @student.class_date == nil
+#     Email.fullreport(@student.email, @student.first_name, @student.last_name)
+#
+#     @student.class_date = @student.created_on
+#     @student.save
+#   end
   
   erb :"/student/reports/report"
 end
