@@ -247,12 +247,12 @@ get "/student/reports/:id/report/?" do
   @presentation = Presentation.all
   @student = Student.get(params[:id])
   
-  # if @student.class_date == nil
-#     Email.fullreport(@student.email, @student.first_name, @student.last_name)
-#
-#     @student.class_date = @student.created_on
-#     @student.save
-#   end
+ if @student.class_date == nil
+   Email.fullreport(@student.email, @student.first_name, @student.last_name)
+
+   @student.class_date = @student.created_on
+   @student.save
+ end
   
   erb :"/student/reports/report"
 end
