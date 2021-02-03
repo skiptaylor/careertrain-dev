@@ -7,6 +7,7 @@
 			<div class="col-md-6">
 				<h3>
 					<%= @recruiter.rank %> <%= @recruiter.first_name %> <%= @recruiter.middle_name %> <%= @recruiter.last_name %><br />
+
 				</h3>
 				<p><span class="badge badge-info"><% if @recruiter.recruiter_status == true %>RRC<% end %></span></p>
 				<p>
@@ -23,9 +24,41 @@
 				<span style="color: #919191;"><strong>PROTECT YOUR PRIVACY.</strong>
 				If you are using a public or shared device <strong>sign out</strong> when finished.</span> <br /><br />
 			</div>
+			
+			
+			
+			
 			<div class="col-md-6">	
-				
+				<h5>Fiind School for your account.</h5>
+				<p>
+					<form method="get" class="form-search form-inline">
+					  <input type="text" name="zip" class="form-control search-query" placeholder="School Zip"/>  &nbsp;  
+					  <input type="submit" class="btn btn-success" />
+					</form>
+		  		</p>
+				<% if @results %>
+				<p>
+					<% @results.each do |c| %>
+						<hr />
+						<span style="font-size: 1.2rem;"><%= c.school_name %></span> &nbsp; <small><%= "(Not Activated)" unless c.active %></small><br />
+						<%= c.school_city %> <%= c.school_state %> &nbsp;<%= c.school_zip %> &nbsp; &nbsp; &nbsp; <% unless c.active %><% else %><br />
+						School Password &nbsp;&nbsp;<span class="password-show"><%= c.school_password %></span><% end %>
+					<% end %>
+				</p> 
+				<% end %>
+				<% if (@results.count < 1) && (params[:zip] != '') %>
+					<hr />
+					<span class="password-show">NO SCHOOL FOUND FOR <%= params[:zip] %></span>
+				<% end %>
+					<hr />
+				<p style="line-height: 1.3em;">If the school is <strong>not listed above</strong> or listed as <strong>Not Activated</strong>, please call 888-326-9229.</p>
 			</div>
+		
+		
+		
+		
+		
+		
 		</div>
 		<div class="row">	
 		

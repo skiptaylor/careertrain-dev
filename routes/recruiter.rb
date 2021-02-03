@@ -12,13 +12,11 @@ get "/recruiters/new/?"  do
 end
 
 post  "/recruiters/new/?"  do 
-  
-  if (params[:email].strip.downcase.include?('.mil'))
     
   state = State.all
   recruiter = Recruiter.create(
     :email            => params[:email],
-    :password         => params[:password],
+    :password         => params[:password], 
     :last_activity    => params[:last_activity],
     :rank             => params[:rank],
     :first_name       => params[:first_name],
@@ -35,11 +33,11 @@ post  "/recruiters/new/?"  do
     
   session[:recruiter] = recruiter.id
   
-  redirect "/arng/arng"
-  
+  if (params[:email].strip.downcase.include?('.mil'))
+    redirect "/recruiters/#{recruiter.id}/profile"
   else
-    flash[:alert] = 'Oops! You must use a .mil email address.'
-    erb :"/arng/arng"
+    flash[:alert] = 'Oops! You must use a valid .mil email address.'
+    redirect "/recruiters/#{recruiter.id}/edit"
   end
 
 end
@@ -121,6 +119,13 @@ get '/recruiters/:id/profile/?' do
   @school = School.all(:recruiter_id => params[:id])
   @state = State.all
   @recruiter = Recruiter.get(params[:id])
+  
+  unless params[:zip]
+    @results = []
+  else
+    @results = School.all(school_zip: params[:zip].strip.downcase)
+  end
+  
    
   erb :"/recruiter/recprofile"
 end

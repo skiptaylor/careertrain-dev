@@ -72,15 +72,23 @@
 						<input type="text" name="phone" id="phone" class="form-control" value="<%= @recruiter.phone %>" />
 					</div>
 				</div>
+				
+				
+				<% if session[:admin ]%>
 				<div class="form-row">
 					<div class="form-group col-md-12">
 						<label class="checkbox">&nbsp;</label>
+						
 						<input type="checkbox" name="active" id="active" <%= 'checked="checked"' if @recruiter.active  %> />&nbsp;&nbsp;&nbsp;<strong>Active Recruiter</strong>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
 		 				<input type="checkbox" name="recruiter_status" id="recruiter_status" <%= 'checked="checked"' if @recruiter.recruiter_status  %> /><strong>&nbsp;&nbsp;&nbsp;RRC</strong><label class="checkbox">
 						
 					</div>
 				</div>
+				<% end %>
+				
+				
 				<div class="form-row">
 					<div class="form-group col-md-12">
 						<p style="margin-top:14px;"><input class="btn btn-primary" type="submit" value="Save" /> &nbsp; <a onclick="goBack()" class="btn btn-secondary" style="color: white;">Cancel</a> &nbsp; <a class="delete btn btn-warning" href="/recruiters/<%= @recruiter.id %>/delete">Delete</a></p>

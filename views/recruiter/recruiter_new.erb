@@ -5,16 +5,24 @@
 			</div>
 		</div>
 		
-		<form method="post" id="create_rec">
+		<form method="post" id="create_rec" class="needs-validation" novalidate>
 					
 		<div class="form-row">
 			<div class="form-group col-md-6">
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email" class="form-control" value="<%= @recruiter.email %>" />
+				<label for="validationEmail">Email</label>
+				
+				<input type="email" name="email" id="validationEmail" class="form-control" placeholder="You must use a valid .mil email" value="<%= @recruiter.email %>" required />
+				<div class="invalid-feedback">
+				  Please enter a valid .mil email.
+				</div>
+				
 			</div>
 			<div class="form-group col-md-6">
 			<label for="password">Password</label>
-				<input type="password" name="password" id="password" class="form-control" value="<%= @recruiter.password %>" />
+				<input type="password" name="password" id="password" class="form-control" placeholder="Password" value="<%= @recruiter.password %>" required />
+				<div class="invalid-feedback">
+					Please select a password.
+				</div>
 			</div>
 		</div>	
 		<!-- <div class="form-row">
@@ -27,56 +35,83 @@
 		</div>	 -->	
 		<div class="form-row">
 			<div class="form-group col-md-1">
-				<label for="rank">Rank</label>
-				<input type="text" name="rank" id="rank" class="form-control" value="<%= @recruiter.rank %>" />
+				<label for="validationRank">Rank</label>
+				<input type="text" name="rank" id="validationRank" class="form-control" placeholder="Rank" value="<%= @recruiter.rank %>" required />
+				<div class="invalid-feedback">
+				   Rank
+				</div>
 			</div>
 			<div class="form-group col-md-4">
 				<label for="first_name">Fist name</label>
-				<input type="text" name="first_name" id="first_name" class="form-control" value="<%= @recruiter.first_name %>" />
+				<input type="text" name="first_name" id="first_name" class="form-control" placeholder="First name" value="<%= @recruiter.first_name %>" required />
+				<div class="invalid-feedback">
+				   Please enter your first name.
+				</div>
 			</div>
 			<div class="form-group col-md-3">
 				<label for="middle_name">Middle name</label>
-				<input type="text" name="middle_name" id="middle_name" class="form-control" value="<%= @recruiter.middle_name %>" />
+				<input type="text" name="middle_name" id="middle_name" class="form-control" placeholder="Middle initial" value="<%= @recruiter.middle_name %>" required />
+				<div class="invalid-feedback">
+				   Please enter your middle initial.
+				</div>
 			</div>
 			<div class="form-group col-md-4">
 				<label for="last_name">Last name</label>
-				<input type="text" name="last_name" id="last_name" class="form-control" value="<%= @recruiter.last_name %>" />
+				<input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last name" value="<%= @recruiter.last_name %>" required />
+				<div class="invalid-feedback">
+				   Please enter your last name.
+				</div>
 			</div>
 		</div>
 		
 		<div class="form-row">
 			<div class="form-group col-md-6">
 				<label for="address1">Address</label>
-				<input type="text" name="address1" id="address1" class="form-control" value="<%= @recruiter.address1 %>" />
+				<input type="text" name="address1" id="address1" class="form-control" placeholder="Address" value="<%= @recruiter.address1 %>" required />
+				<div class="invalid-feedback">
+				   Please enter your address
+				</div>
 			</div>
 			<div class="form-group col-md-6">
 				<label for="address2">&nbsp;</label>
-				<input type="text" name="address2" id="address2" class="form-control" value="<%= @recruiter.address2 %>" />
+				<input type="text" name="address2" id="address2 " class="form-control" placeholder="Address" value="<%= @recruiter.address2 %>" />
+				<div class="valid-feedback">Not required</div>
+				
 			</div>
 		</div>
 		<div class="form-row">
 			<div class="form-group col-md-6">
 				<label for="city">City</label>
-				<input type="text" name="city" id="city" class="form-control" value="<%= @recruiter.city %>" />
+				<input type="text" name="city" id="city" class="form-control" placeholder="City" value="<%= @recruiter.city %>" required />
+				<div class="invalid-feedback">
+				   Please enter your city.
+				</div>
 			</div>
 			<div class="control-group col-md-2">
 				<label for="state">State</label>
-				<select type="text" class="form-control" id="state" name="state" value="<%= @recruiter.state %>">
-						<option value=""></option>
+				<select type="text" class="form-control custom-select" id="state" name="state" value="<%= @recruiter.state %>"  required>
+						<option value="">State</option>
 					<% @state.sort{|a,b| a.abbr <=> b.abbr}.each do |state| %>
 						<option value="<%= state.abbr %>" <%= 'selected' if state.abbr == @recruiter.state %>><%= state.abbr %></option>
 					<% end %>
 				</select>
+				<div class="invalid-feedback">State</div>
 			</div>
 			<div class="control-group col-md-3">
 				<label for="zip">ZIP</label>
-				<input type="text" name="zip" id="zip" class="form-control" value="<%= @recruiter.zip %>" />
+				<input type="text" name="zip" id="zip" class="form-control" placeholder="Zip" value="<%= @recruiter.zip %>" required />
+				<div class="invalid-feedback">
+				   ZIP
+				</div>
 			</div>
 		</div>
 		<div class="form-row">
 			<div class="form-group col-md-6">
 				<label for="phone">Phone</label>
-				<input type="text" name="phone" id="phone" class="form-control" value="<%= @recruiter.phone %>" />
+				<input type="text" name="phone" id="phone" class="form-control" placeholder="Phone" value="<%= @recruiter.phone %>" required />
+				<div class="invalid-feedback">
+				   Please enter your phone number.
+				</div>
 			</div>
 			<!-- <div class="form-group col-md-3">
 				<label for="ssnl4">SSN last 4 digits only</label>
@@ -102,17 +137,23 @@
 		</div> <!-- /row -->
 	</div> <!-- /container -->
 	
-	<script  type="text/javascript">
-		var frmvalidator = new Validator("create_rec");
-		frmvalidator.addValidation("email","req","Please enter your Email");
-		frmvalidator.addValidation("password","req","Please enter a password");
-		frmvalidator.addValidation("first_name","req","Please enter your First Name");
-		frmvalidator.addValidation("last_name","req","Please create your Last Name");
-		frmvalidator.addValidation("address","req","Please enter your Address");
-		frmvalidator.addValidation("city","req","Please enter your City");
-		frmvalidator.addValidation("state","req","Please enter your State");
-		frmvalidator.addValidation("zip","req","Please enter your Zip");
-		frmvalidator.addValidation("phone","req","Please enter your Phone");
+	<script>
+		(function() {
+	  'use strict';
+	  window.addEventListener('load', function() {
+		  var forms = document.getElementsByClassName('needs-validation');
+	    // Loop over them and prevent submission
+	    var validation = Array.prototype.filter.call(forms, function(form) {
+	      form.addEventListener('submit', function(event) {
+	        if (form.checkValidity() === false) {
+	          event.preventDefault();
+	          event.stopPropagation();
+	        }
+	        form.classList.add('was-validated');
+	      }, false);
+	    });
+	  }, false);
+	})();
 	</script>
-	
+
 	
