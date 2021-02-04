@@ -6,14 +6,18 @@
 			
 			<div style="max-width: 720px; display: block; margin-right: auto; margin-left: auto;">
 			
-			<iframe id="hapyak-player-157199-8825" marginwidth="0" marginheight="0" frameborder="no" scrolling="no" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" src="//www.hapyak.com/embed?key=0cbace8d372842738a0c&amp;project=375932&amp;native_controls=false" width="720" height="442" class="hapyak-embed hapyak-responsive"></iframe>
+			
+			<iframe id="hapyak-player-157199-8825" marginwidth="0" marginheight="0" frameborder="no" scrolling="no" allowfullscreen="yes" webkitallowfullscreen="yes" mozallowfullscreen="yes" src="//www.hapyak.com/embed?key=0cbace8d372842738a0c&amp;project=375932&amp;native_controls=false" width="720" height="442" class="hapyak-embed hapyak-responsive"></iframe>
 			<script type="text/javascript" src="//d2qrdklrsxowl2.cloudfront.net/js/hapyak.js"></script>
 			<script type="text/javascript" src="//d2qrdklrsxowl2.cloudfront.net/js/hapyak.api.js"></script>
+			
 			
 			</div>
 			<div  style="max-width: 720px; display: block; margin-right: auto; margin-left: auto; text-align: center;">
 			<form method="post" id="exercise">
+				<% if @student.score1 == 'null' %>
  			<input  class="btn btn-success" style="color: white; background-color: #1abd9c; font-size: 18px; padding: 6px 12px;" type="submit" value="Account"/>
+				<% end %>
 			</form>
 			</div>
 			
