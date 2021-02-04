@@ -54,13 +54,7 @@ post '/arng/schools/new/?' do
   params[:ff] 					    ? school.update(:ff => true)        : school.update(:ff => false)
   params[:cd_before] 				? school.update(:cd_before => true) : school.update(:cd_before => false)
   
-  if school.recruiter_id = nil
-    school.recruiter_id = session[:recruiter]
-    school.save
-  else
-    flash[:alert] = 'That school is being serviced by another rep. Contact your RRC for assistance.'
-    redirect "/arng/schools/#{school.id}/school"
-  end
+  
   
   redirect "/arng/schools/#{school.id}/school"
 end
@@ -273,9 +267,6 @@ post '/arng/schools/:id/edit/?' do
   params[:ff] 					    ? school.update(:ff => true)        : school.update(:ff => false)
   params[:cd_before] 				? school.update(:cd_before => true) : school.update(:cd_before => false)
   
-  
-  school.recruiter_id = session[:recruiter]
-  school.save
   redirect "/arng/schools/#{params[:id]}/school"
   
 end

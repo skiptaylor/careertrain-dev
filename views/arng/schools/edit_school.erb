@@ -91,7 +91,7 @@
 			
 			<div class="col-md-4">
 				
-				<p style="font-size: 1.1em; margin: 1em 0 1.5em 0;"><strong>ARNG Rep</strong></p>
+				
 				
 				<!-- <div class="control-group">
 					<label class="control-label" for="ng_rep">National Guard Rep</label>
@@ -172,18 +172,7 @@
 						<input type="text" class="form-control" name="school_password" id="school_password" value="<%= @school.school_password %>" />
 					</div>
 				</div> -->
-				<div class="form-row">
-					<div class="control-group">
-						<label for="recruiter_id">Recruiter</label>
-						<select type="text" id="recruiter_id" name="recruiter_id" class="form-control" value="<%= @school.recruiter_id %>">
-								<option value="None"></option>
-							<% @recruiter.each do |recruiter| %>
-								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter_id %>><%= recruiter.state %> - <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %> - <%= recruiter.id %></option>
-							<% end %>
-						</select>
-					</div>
-				</div>
-				<br />
+				
 				<div class="form-row">
 					<div class="control-group">		
 						<label for="active"></label>
@@ -198,18 +187,35 @@
 					<h6 style="color: #b5011c;"><%= @school.school_password %></h6>
 				<% else %>
 					<h5 class="muted">SCHOOL NOT ACTIVATED</h5>
-				<% end %>	
+				<% end %>
 				 </div>
+				 
+				 
+				 <!-- <p style="font-size: 1.1em; margin: 1em 0 1em 0;"><strong>ARNG Rep</strong></p> -->
+ 				<div class="form-row">
+					
+ 					<div class="control-group">
+ 						<label for="recruiter_id">Recruiter</label>
+ 						<select type="text" id="recruiter_id" name="recruiter_id" class="form-control" value="<%= @school.recruiter_id %>">
+ 								<!-- <option value="None"></option> -->
+ 							<% @recruiter.each do |recruiter| %>
+ 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter_id %>><%= recruiter.state %> - <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %> - <%= recruiter.id %></option>
+ 							<% end %>
+ 						</select>
+ 					</div>
+ 				</div>
+ 				<br /><br />
+				
  				<div class="control-group">
  				    <div class="controls" style="text-align: center;">
- 						 <input class="btn btn-success" type="submit" value="Save" />&nbsp;&nbsp;&nbsp;<a onclick="goBack()" class="btn">Cancel</a>&nbsp;&nbsp;&nbsp;<a href="/arng/schools/<%= @school.id %>/delete" class="delete btn btn-warning"><i class="icon-trash"></i></a>
+ 						 <input class="btn btn-success" type="submit" value="Save" />&nbsp;&nbsp;&nbsp;<a onclick="goBack()" class="btn">Cancel</a>
  					 </div>
  				 </div>
 			 	</form>
 			</div>
 			
 		</div>
-		<!-- <%= session[:admin] %> / <%= session[:recruiter] %> // <%= @school.recruiter_id %> -->
+		
 	</div> <!-- /container -->
 
 <script  type="text/javascript">
@@ -227,5 +233,5 @@
 	frmvalidator.addValidation("mail_state","req","Please enter your state");
 	frmvalidator.addValidation("mail_zip","req","Please enter your zip");
 	frmvalidator.addValidation("phone","req","Please enter your phone");
-	rmvalidator.addValidation("phone","req","Please enter your phone");
+	frmvalidator.addValidation("active","req","Active must be checked");
 </script>

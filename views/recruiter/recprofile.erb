@@ -41,8 +41,8 @@
 					<% @results.each do |c| %>
 						<hr />
 						<span style="font-size: 1.2rem;"><%= c.school_name %></span> &nbsp; <small><%= "(Not Activated)" unless c.active %></small><br />
-						<%= c.school_city %> <%= c.school_state %> &nbsp;<%= c.school_zip %> &nbsp; &nbsp; &nbsp; <% unless c.active %><% else %><br />
-						School Password &nbsp;&nbsp;<span class="password-show"><%= c.school_password %></span><% end %>
+						<%= c.school_city %> <%= c.school_state %> &nbsp;<%= c.school_zip %> &nbsp; &nbsp; &nbsp;<a href="/arng/schools/<%= c.id %>/edit"><i class="icon-edit"></i></a> <% unless c.active %><% else %><br />
+						School Password &nbsp;&nbsp;<span class="password-show"><%= c.school_password %></span> &nbsp; &nbsp; &nbsp; <% end %>
 					<% end %>
 				</p> 
 				<% end %>
@@ -51,7 +51,12 @@
 					<span class="password-show">NO SCHOOL FOUND FOR <%= params[:zip] %></span>
 				<% end %>
 					<hr />
-				<p style="line-height: 1.3em;">If the school is <strong>not listed above</strong> or listed as <strong>Not Activated</strong>, please call 888-326-9229.</p>
+					<p style="line-height: 1.3em;" class="semi-bold"><a href="/arng/schools/new" style="margin: 2px 0 12px 12px;" class="btn btn-success pull-right">Register</a>After submitting your school's zip, if your school is not listed above, you can register a new school now.
+					<hr />
+					
+					
+				<p style="line-height: 1.3em;">If your school is listed as <strong>Not Activated</strong>, use the edit button next to school to finish registration. Call 888-326-9229 with problems.</p>
+				<p>Once your school is active and you are selected as recruiter it will show in the School Accounts list below.</p>
 			</div>
 		
 		
