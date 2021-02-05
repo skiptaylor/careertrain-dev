@@ -28,7 +28,7 @@ class Email
     Pony.mail(
       headers: { 'Content-Type' => 'text/html' },
       to: 'skip@recountant.com',
-      from: 'eCD_Educator_Request',
+      from: 'no-reply@eCareerDirection.com',
       subject: 'Request eCD Program from Educator',
       body: body
     )
