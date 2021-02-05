@@ -12,7 +12,7 @@ class Email
                  body: body)
   end
   
-  def self.requestcd2(school_name, school_address1, school_address2, school_city, school_state, school_zip, first_name, last_name, email, phone, fax)
+  def self.requestcd2(school_name, school_address1, school_address2, school_city, school_state, school_zip, first_name, last_name, email, phone)
 
     body = ''
     body << "<h3>Request eCD Program from Educator</h3>"
@@ -24,7 +24,6 @@ class Email
     body << "<p><b>Contact:</b> <b>#{first_name} #{last_name}</p>"
     body << "<p><b>Email:</b> <b>#{email}<</p>"
     body << "<p><b>Phone:</b> <b>#{phone}</p>"
-    body << "<p><b>Fax:</b> <b>#{fax}</p>"
 
     Pony.mail(
       headers: { 'Content-Type' => 'text/html' },
