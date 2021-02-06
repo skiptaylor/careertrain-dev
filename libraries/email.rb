@@ -22,7 +22,7 @@ class Email
     body << "<p>#{school_address2}</p>"
     body << "<p>#{school_city} #{school_state} #{school_zip}</p>"
     body << "<p><b>Contact:</b> <b>#{first_name} #{last_name}</p>"
-    body << "<p><b>Email:</b> <b>#{email}<</p>"
+    body << "<p><b>Email:</b> <b>#{email}</p>"
     body << "<p><b>Phone:</b> <b>#{phone}</p>"
 
     Pony.mail(
