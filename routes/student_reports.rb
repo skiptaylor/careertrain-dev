@@ -247,8 +247,8 @@ get "/student/reports/:id/report/?" do
   @presentation = Presentation.all
   @student = Student.get(params[:id])
   
- if @student.score3 == ''
-   Email.welcome(@student.email, @student.first_name, @student.last_name)
+ if @student.class_date == ''
+   # Email.welcome(@student.email, @student.first_name, @student.last_name)
 
    @student.class_date = @student.created_on
    @student.save
