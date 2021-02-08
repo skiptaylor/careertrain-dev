@@ -117,7 +117,7 @@
 	
 </div>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 function myFunction() {
   var x = document.getElementById("sub_code");
   if (x.type === "password") {
@@ -136,7 +136,7 @@ function ourFunction() {
     x.type = "password";
   }
 }
-</script>
+</script> -->
 
 <script type="text/javascript">
 	EnableSubmit = function(val) {
@@ -150,7 +150,7 @@ function ourFunction() {
 	}
 </script>
 
-<script>
+<!-- <script>
 	window.onload = function() {
 		const sub_code = document.getElementById('sub_code');
 		sub_code.onpaste = function(e) {
@@ -161,12 +161,12 @@ function ourFunction() {
 			g.preventDefault();
 		}
 	}
-</script>
+</script> -->
 
 <script  type="text/javascript">
 	var frmvalidator = new Validator("student_report");
 	frmvalidator.addValidation("school_password","req","Please enter your School's Password");
-	frmvalidator.addValidation("sub_code","req","Please enter your Student Access Code");
+	// frmvalidator.addValidation("sub_code","req","Please enter your Student Access Code");
 	frmvalidator.addValidation("email","req","Please enter your Personal Email");
 	frmvalidator.addValidation("password","req","Please create a Personal Password");
 	frmvalidator.addValidation("first_name","req","Please enter your First Name");
