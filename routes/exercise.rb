@@ -1,13 +1,13 @@
 
 get "/student/reports/:id/exercise/?"  do
-  @student = Student.get(session[:student])
+  @student = Student.get(params[:id])
 #   @ie = Ie.all
 #   @exercise = Exercise.new
   erb :"/student/reports/exercise"
 end
 
 post  "/student/reports/:id/exercise/?"  do
-  student = Student.get(session[:student])
+  student = Student.get(params[:id])
 #   ie = Ie.all
 #
 #   exercise = Exercise.create(

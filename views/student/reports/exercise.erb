@@ -13,13 +13,16 @@
 			
 			
 			</div>
+			
+			<% unless @student.score1 == nil %>
 			<div  style="max-width: 720px; display: block; margin-right: auto; margin-left: auto; text-align: center;">
 			<form method="post" id="exercise">
-				
+			
  			<input  class="btn btn-success" style="color: white; background-color: #1abd9c; font-size: 18px; padding: 6px 12px;" type="submit" value="Account"/>
 				
 			</form>
 			</div>
+			<% end %>
 			
 			</div>
 			
@@ -27,9 +30,7 @@
 	</div>
 
 
-<!-- <% if @student.score1 == 'null' %> -->
-	
-<!-- <% end %> -->	
+
 					
 <!-- <style>
 .checker {
