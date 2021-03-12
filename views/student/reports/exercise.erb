@@ -1,46 +1,273 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<!-- <a onclick="goBack()" class="btn btn-small pull-right" style="margin-top: 6px;">Back</a>
-				<h1 class="page-header"><strong><span class="logo-e">e</span>CareerDirection</strong> Exercise</h1> -->
+				<a onclick="goBack()" class="btn btn-small pull-right" style="margin-top: 12px;">Back</a>
+				<h1 class="page-header"><strong><span class="logo-e">e</span>CareerDirection</strong> Exercise</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-10 offset-lg-1" style="text-align: center;">	
+				<div id="video-player">
+				<video width="98%"  id="video1" class="video2" playsinline>
+					<source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/eCDquiz.mp4" type="video/mp4">
+				</video>
 			
-			<div style="max-width: 720px; display: block; margin-right: auto; margin-left: auto;">
-			
-			
-			<iframe id="hapyak-player-157199-8825" marginwidth="0" marginheight="0" frameborder="no" scrolling="no" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" src="//www.hapyak.com/embed?key=0cbace8d372842738a0c&amp;project=375932&amp;native_controls=false" width="720" height="442" class="hapyak-embed hapyak-responsive"></iframe>
-			<script type="text/javascript" src="//d2qrdklrsxowl2.cloudfront.net/js/hapyak.js"></script>
-			<script type="text/javascript" src="//d2qrdklrsxowl2.cloudfront.net/js/hapyak.api.js"></script>
-			
-			
+				<p class="shadder">
+					<tr>
+
+						<td>
+							<label class="radio inline checker" style="margin-top: 4px;">YES
+	  						 	<input type="radio" value="true" />
+								<span class="checkmark"style="margin-top: -2px;"></span>
+							</label>
+						</td>
+						<td>
+							<label class="radio inline checker" style="margin-top: 4px;">NO
+	  						 	<input type="radio" value="false"  />
+								<span class="checkmark" style="margin-top: -2px;"></span>
+							</label>
+						</td>
+					</tr>
+					<button id="quest" class="btn btn-success">Start</button></p>
 			</div>
 			
-			<% unless @student.score1 == nil %>
+			<!-- <% unless @student.score1 == nil %>
 			<div  style="max-width: 720px; display: block; margin-right: auto; margin-left: auto; text-align: center;">
 			<form method="post" id="exercise">
-			
+
  			<input  class="btn btn-success" style="color: white; background-color: #1abd9c; font-size: 18px; padding: 6px 12px;" type="submit" value="Account"/>
-				
+
 			</form>
 			</div>
-			<% end %>
+			<% end %> -->
 			
 			</div>
 			
 		</div>
 	</div>
+	
+<script type="text/javascript">
+	var $video = $('#video1');
+	var video = $video.get(0);
 
+	video.addEventListener('timeupdate', function() {
+	  var lastCheckedAt = $video.data('lastcheck') || 0;
+	  $video.data('lastcheck', this.currentTime);
+  
+	  if (this.currentTime >= 0 && lastCheckedAt < 0) {
+		  this.play();
+	    $('#quest').show();
+	  } else if (this.currentTime >= 3.8 && lastCheckedAt < 3.8) {
+		  this.pause();
+	    $('#quest').text('Submit 2').show();
+	  } else if (this.currentTime >= 8.2 && lastCheckedAt < 8.2) {
+		  this.pause();
+	    $('#quest').text('Submit 3').show();
+	  } else if (this.currentTime >= 12.36 && lastCheckedAt < 12.36) {
+		  this.pause();
+	    $('#quest').text('Submit 4').show();
+	  } else if (this.currentTime >= 16.8 && lastCheckedAt < 16.8) {
+		  this.pause();
+	    $('#quest').text('Submit 5').show();
+	  } else if (this.currentTime >= 21 && lastCheckedAt < 21) {
+	    this.pause();
+	    $('#quest').text('Submit 6').show();
+	  } else if (this.currentTime >= 25.44 && lastCheckedAt < 25.44) {
+		  this.pause();
+	    $('#quest').text('Submit 7').show();
+	  } else if (this.currentTime >= 30 && lastCheckedAt < 30) {
+		  this.pause();
+	    $('#quest').text('Submit 8').show();
+	  } else if (this.currentTime >= 34.4 && lastCheckedAt < 34.4) {
+		  this.pause();
+	    $('#quest').text('Submit 9').show();
+	  } else if (this.currentTime >= 38.45 && lastCheckedAt < 38.45) {
+		  this.pause();
+	    $('#quest').text('Submit 10').show();
+	  } else if (this.currentTime >= 42.72 && lastCheckedAt < 42.72) {
+		  this.pause();
+	    $('#quest').text('Submit 11').show();
+	 } else if (this.currentTime >= 47.12 && lastCheckedAt < 47.12) {
+	    this.pause();
+	    $('#quest').text('Submit 12').show();
+	  } else if (this.currentTime >= 51.4 && lastCheckedAt < 51.4) {
+		  this.pause();
+	    $('#quest').text('Submit 13').show();
+	  } else if (this.currentTime >= 56 && lastCheckedAt < 56) {
+		  this.pause();
+	    $('#quest').text('Submit 14').show();
+	  } else if (this.currentTime >= 60.12 && lastCheckedAt < 60.12) {
+		  this.pause();
+	    $('#quest').text('Submit 15').show();
+	  } else if (this.currentTime >= 64.38 && lastCheckedAt < 64.38) {
+		  this.pause();
+	    $('#quest').text('Submit 16').show();
+	  } else if (this.currentTime >= 69 && lastCheckedAt < 69) {
+		  this.pause();
+	    $('#quest').text('Submit 17').show();
+	  } else if (this.currentTime >= 73.22 && lastCheckedAt < 73.22) {
+		  this.pause();
+	    $('#quest').text('Submit 18').show();
+	  } else if (this.currentTime >= 77.38 && lastCheckedAt < 77.38) {
+		  this.pause();
+	    $('#quest').text('Submit 19').show();
+	  } else if (this.currentTime >= 82 && lastCheckedAt < 82) {
+		  this.pause();
+	    $('#quest').text('Submit 20').show();
+	  } else if (this.currentTime >= 86.14 && lastCheckedAt < 86.14) {
+		  this.pause();
+	    $('#quest').text('Submit 21').show();
+	  } else if (this.currentTime >= 90.40 && lastCheckedAt < 90.40) {
+		  this.pause();
+	    $('#quest').text('Submit 22').show();
+	  } else if (this.currentTime >= 94.6 && lastCheckedAt < 94.6) {
+		  this.pause();
+	    $('#quest').text('Submit 23').show();
+	  } else if (this.currentTime >= 99.20 && lastCheckedAt < 99.20) {
+		  this.pause();
+	    $('#quest').text('Submit 24').show();
+	  } else if (this.currentTime >= 103.36 && lastCheckedAt < 103.36) {
+		  this.pause();
+	    $('#quest').text('Submit 25').show();
+	  } else if (this.currentTime >= 108 && lastCheckedAt < 108) {
+		  this.pause();
+	    $('#quest').text('Submit 26').show();
+	  } else if (this.currentTime >= 112.18 && lastCheckedAt < 112.18) {
+		  this.pause();
+	    $('#quest').text('Submit 27').show();
+	  } else if (this.currentTime >= 116.36 && lastCheckedAt < 116.36) {
+		  this.pause();
+	    $('#quest').text('Submit 28').show();
+	  } else if (this.currentTime >= 120.54 && lastCheckedAt < 120.54) {
+	    this.pause();
+	    $('#quest').text('Submit 29').show();
+	  } else if (this.currentTime >= 125.22 && lastCheckedAt < 125.22) {
+	    this.pause();
+	    $('#quest').text('Submit 30').show();
+	  } else if (this.currentTime >= 129.36 && lastCheckedAt < 129.36) {
+	    this.pause();
+	    $('#quest').text('Submit 31').show();
+	  } else if (this.currentTime >= 134 && lastCheckedAt < 134) {
+	    this.pause();
+	    $('#quest').text('Submit 32').show();
+	 } else if (this.currentTime >= 138.24 && lastCheckedAt < 138.24) {
+	    this.pause();
+	    $('#quest').text('Submit 33').show();
+	  } else if (this.currentTime >= 142.48 && lastCheckedAt < 142.48) {
+	    this.pause();
+	    $('#quest').text('Submit 34').show();
+	  } else if (this.currentTime >= 147 && lastCheckedAt < 147) {
+	    this.pause();
+	    $('#quest').text('Submit 35').show();
+	  } else if (this.currentTime >= 151.2 && lastCheckedAt < 151.2) {
+	    this.pause();
+	    $('#quest').text('Submit 36').show();
+	  } else if (this.currentTime >= 155.38 && lastCheckedAt < 155.38) {
+	    this.pause();
+	    $('#quest').text('Submit 37').show();
+	  } else if (this.currentTime >= 160 && lastCheckedAt < 160) {
+	    this.pause();
+	    $('#quest').text('Submit 38').show();
+	  } else if (this.currentTime >= 164.2 && lastCheckedAt < 164.2) {
+	    this.pause();
+	    $('#quest').text('Submit 39').show();
+	  } else if (this.currentTime >= 168.38 && lastCheckedAt < 168.38) {
+	    this.pause();
+	    $('#quest').text('Submit 40').show();
+	  } else if (this.currentTime >= 173.14 && lastCheckedAt < 173.14) {
+	    this.pause();
+	    $('#quest').text('Submit 41').show();
+	  } else if (this.currentTime >=177.28 && lastCheckedAt < 177.28) {
+	    this.pause();
+	    $('#quest').text('Submit 42').show();
+	  } else if (this.currentTime >= 181.44 && lastCheckedAt < 181.44) {
+	    this.pause();
+	    $('#quest').text('Submit 43').show();
+	  } else if (this.currentTime >= 186 && lastCheckedAt < 186) {
+	    this.pause();
+	    $('#quest').text('Submit 44').show();
+	  } else if (this.currentTime >= 190.2 && lastCheckedAt < 190.2) {
+	    this.pause();
+	    $('#quest').text('Submit 45').show();
+	  } else if (this.currentTime >= 194.48 && lastCheckedAt < 194.48) {
+	    this.pause();
+	    $('#quest').text('Submit 46').show();
+	  } else if (this.currentTime >= 199 && lastCheckedAt < 199) {
+	    this.pause();
+	    $('#quest').text('Submit 47').show();
+	  } else if (this.currentTime >= 203.22 && lastCheckedAt < 203.22) {
+	    this.pause();
+	    $('#quest').text('Submit 48').show();
+	  } else if (this.currentTime >= 207.42 && lastCheckedAt < 207.42) {
+	    this.pause();
+	    $('#quest').text('Submit 49').show();
+	  } else if (this.currentTime >= 212.2 && lastCheckedAt < 212.2) {
+	    this.pause();
+	    $('#quest').text('Submit 50').show();
+	  } else if (this.currentTime >= 216.24 && lastCheckedAt < 216.24) {
+	    this.pause();
+	    $('#quest').text('Submit 51').show();
+	  } else if (this.currentTime >= 220.42 && lastCheckedAt < 220.42) {
+	    this.pause();
+	    $('#quest').text('Submit 52').show();
+	 } else if (this.currentTime >= 225 && lastCheckedAt < 225) {
+	    this.pause();
+	    $('#quest').text('Submit 53').show();
+	  } else if (this.currentTime >= 229.24 && lastCheckedAt < 229.24) {
+	    this.pause();
+	    $('#quest').text('Submit 54').show();
+	  } else if (this.currentTime >= 233.48 && lastCheckedAt < 233.48) {
+	    this.pause();
+	    $('#quest').text('Submit 55').show();
+	  } else if (this.currentTime >= 238 && lastCheckedAt < 238) {
+	    this.pause();
+	    $('#quest').text('Submit 56').show();
+	  } else if (this.currentTime >= 242.24 && lastCheckedAt < 242.24) {
+	    this.pause();
+	    $('#quest').text('Submit 57').show();
+	  } else if (this.currentTime >= 246.48 && lastCheckedAt < 246.48) {
+	    this.pause();
+	    $('#quest').text('Submit 58').show();
+	  } else if (this.currentTime >= 251 && lastCheckedAt < 251) {
+	    this.pause();
+	    $('#quest').text('Submit 59').show();
+	  } else if (this.currentTime >= 255.24 && lastCheckedAt < 255.24) {
+	    this.pause();
+	    $('#quest').text('Submit 60').show();
+	  } else if (this.currentTime >= 259.48 && lastCheckedAt < 259.48) {
+	    this.pause();
+	    $('#quest').text('Submit 61').show();
+	  } else if (this.currentTime >= 264 && lastCheckedAt < 264) {
+	    this.pause();
+	    $('#quest').text('Submit 62').show();
+	  } else if (this.currentTime >= 268.24 && lastCheckedAt < 268.24) {
+	    this.pause();
+	    $('#quest').text('Submit 63').show();
+	  } else if (this.currentTime >= 272.48 && lastCheckedAt < 272.48) {
+	    this.pause();
+	    $('#quest').text('Gp To Account').show();
+	 }
+  
+	});
+
+	$('button').click(function() {
+	  video.play();
+	  $('button').hide();
+	});
+</script>
 
 
 					
-<!-- <style>
+<style>
 .checker {
-  display: block;
+  display: bloc;
   position: relative;
   padding-left: 30px;
-  margin-bottom: 0px;
+  margin-right: 30px;
   color: gray;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 16px;
+  font-weight: bold;
   line-height: 1em;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -86,10 +313,10 @@
 }
 
 /* Show the indicator (dot/circle) when checked */
-.checker input:checked ~ .checkmark:after {
+/*.checker input:checked ~ .checkmark:after {
   display: block;
 }
-
+*/
 /* Style the indicator (dot/circle) */
 .checker .checkmark:after {
  	top: 6px;
@@ -99,4 +326,22 @@
 	border-radius: 50%;
 	background: white;
 }
-</style>	 -->			
+
+.video2	{
+	border: 1px solid #999;
+   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+           box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.shadder	{
+	display: block;
+	position: relative;
+	text-align: center; 
+	top: -60px;
+   -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+           transition: all .3s ease-in-out;
+}
+
+</style>		
