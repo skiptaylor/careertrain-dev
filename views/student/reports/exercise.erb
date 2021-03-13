@@ -1,5 +1,7 @@
 <link href="/css/bootstrap.min.css" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="/css/buttons_altered.css" />
+<link type="text/css" rel="stylesheet" href="/css/theme.css" />
+
 <script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
 
 	<!-- <div class="container">
@@ -11,13 +13,41 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-10 offset-lg-1" style="text-align: center;"> -->	
-				<div id="video-player">
-				<video id="video1" class="video2" poster="/img/eCD-poster.jpg" playsinline>
-					<source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/eCDquiz.mp4" type="video/mp4">
+				<!-- <div id="video-player"> -->
+				
+				
+				<div class="shadder">
+					
+				<video id="video1" class="video2" playsinline>
+					<source src="/img/ecd-video.mp4" type="video/mp4">
 				</video>
-			
-				<p class="shadder">
-					<tr>
+				
+				<tr>
+
+					<td>
+						<label class="radio inline checker" style="margin-top: 4px;">YES
+  						 	<input type="radio" value="true" />
+							<span class="checkmark"style="margin-top: -2px;"></span>
+						</label>
+					</td>
+					<td>
+						<label class="radio inline checker" style="margin-top: 4px;">NO
+  						 	<input type="radio" value="false"  />
+							<span class="checkmark" style="margin-top: -2px;"></span>
+						</label>
+					</td>
+				</tr>
+				<button id="quest" class="btn btn-success">Start</button>
+				
+				</div>
+				
+				
+				
+				<!-- <div class="container" style="z-index: 1024; ">
+						<div class="row">
+							<div class="col-md-12">
+
+					<tr style="text-align: center;">
 
 						<td>
 							<label class="radio inline checker" style="margin-top: 4px;">YES
@@ -32,8 +62,8 @@
 							</label>
 						</td>
 					</tr>
-					<button id="quest" class="btn btn-success">Start</button>
-				</p>
+					<button id="quest" class="btn btn-success">Start</button> -->
+				
 			<!-- </div> -->
 			
 			<!-- <% unless @student.score1 == nil %>
@@ -46,12 +76,18 @@
 			</div>
 			<% end %> -->
 			
-			<!-- </div>   
+			<!-- </div>
 
 		</div>
 	</div> -->
 	
+	
+	
 <script type="text/javascript">
+	
+	function hideURLbar() {	if (window.location.hash.indexOf('#') == -1) {		window.scrollTo(0, 1);	}}if (navigator.userAgent.indexOf('iPhone') != -1 || navigator.userAgent.indexOf('Android') != -1) {    addEventListener("load", function() {            setTimeout(hideURLbar, 0);    }, false);}
+	
+	
 	var $video = $('#video1');
 	var video = $video.get(0);
 
@@ -339,7 +375,7 @@
 	  width: 100%;
 	  height: 100%; 
 	  overflow: hidden;
-
+	  margin-bottom: 12px;
 }
 
 .video2 video	{
@@ -351,13 +387,8 @@
 }
 
 .shadder	{
-	display: block;
-	position: relative;
-	text-align: center; 
-	top: -60px;
-   -webkit-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-           transition: all .3s ease-in-out;
+	margin-top: -60px;
+	text-align: center;
 }
 
 </style>		
