@@ -30,16 +30,16 @@
 						<source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/ecd-quiz.mp4" type="video/mp4">
 					</video>
 					
-					<div class="col-sm-8 offset-sm-2" style="text-align: center; margin-top: -34px;">
+					<div class="col-sm-12" style="text-align: center; margin-top: -60px;">
 							
 					<tr>
 						<td>
-							<label class="radio inline checker" style="margin-top: 4px;">YES
+							<label class="radio inline checker" style="margin-top: 4px;" >YES
   							 	<input type="radio" value="true" />
 								<span class="checkmark"style="margin-top: -2px;"></span>
 							</label>
 						</td>
-						<td>
+						<td >
 							<label class="radio inline checker" style="margin-top: 4px;">NO
   							 	<input type="radio" value="false"  />
 								<span class="checkmark" style="margin-top: -2px;"></span>
@@ -47,7 +47,7 @@
 						</td>
 					</tr>
 					
-					<button id="quest" class="btn btn-success">Start</button>
+					<button id="quest" class="btn btn-large btn-success" style="margin-top: -12;">Start</button>
 					
 					</div>
 				
@@ -316,11 +316,11 @@
 .checker {
   display: bloc;
   position: relative;
-  padding-left: 30px;
-  margin-right: 30px;
-  color: gray;
+  padding-left: 35px;
+  margin-right: 35px;
+  color: silver;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 28px;
   font-weight: bold;
   line-height: 1em;
   -webkit-user-select: none;
@@ -341,8 +341,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   background-color: white;
   border: 1px solid gray;
   border-radius: 50%;
@@ -386,6 +386,7 @@
 	top: 0;
 	bottom: 0;
 	width: 100%;
+	height: auto;
 	overflow: hidden;
 }
 
@@ -393,6 +394,10 @@
 	min-width: 100%;
 	width: auto;
 	height: auto;
+	}
+	
+label	{
+	font-size: 2em;
 }
 
 
