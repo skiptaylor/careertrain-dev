@@ -4,77 +4,71 @@
 
 <script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
 
-
-
-	
-
 				<!-- <a onclick="goBack()" class="btn btn-small pull-right" style="margin-top: 12px;">Back</a> -->
 		
+<div class="container-fluid">	
+	<div class="row">
+		<div class="col-md-12" style="text-align: center;">
+			
+			<video id="video1" class="video2" height=" 94%" width="auto" playsinline poster="https://ecareerdirection.s3.us-east-2.amazonaws.com/eCD-poster.jpg">
+				<source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/ecd-quiz.mp4" type="video/mp4">
+			</video>
+			
+			<div id="submit-area">
+			
+				<div class="col-sm-12" style="text-align: center; margin-top: -72px;">
+						
+				<!-- <tr id="quest1">
+					<td>
+						<label class="radio inline checker" style="margin-top: 4px;" hidden>YES
+  						 	<input type="radio" value="true" />
+							<span class="checkmark" style="margin-top: -2px;"></span>
+						</label>
+					</td>
+					<td >
+						<label class="radio inline checker" style="margin-top: 4px;" hidden>NO
+  						 	<input type="radio" value="false"  />
+							<span class="checkmark" style="margin-top: -2px;"></span>
+						</label>
+					</td>
+				</tr> -->
 				
-
 				
-		<div class="container-fluid">	
-			<div class="row">
-				<div class="col-md-12" style="text-align: center; margin-top: 12px;">
-					
-					
-					<video id="video1" class="video2" playsinline poster="https://ecareerdirection.s3.us-east-2.amazonaws.com/eCD-poster.jpg">
-						<source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/ecd-quiz.mp4" type="video/mp4">
-					</video>
-					
-					<div class="col-sm-12 quest" style="text-align: center; margin-top: -72px;">
-							
-					<tr id="quest1">
+				
+				<% @ie.sort_by(&:position_number).each do |ie| %>
+				
+					<tr>
+						<td style="text-align: center;"><%= ie.position_number %></td>
+						<td><%= ie.item %></td>
 						<td>
-							<label class="radio inline checker" style="margin-top: 4px;" >YES
-  							 	<input type="radio" value="true" />
+							<label class="radio inline checker" for="<%= ie.position_number %>" style="margin-top: 4px;">YES
+	  						 	<input type="radio" name="<%= ie.position_number %>" id="<%= ie.position_number %>" value="true" />
 								<span class="checkmark"style="margin-top: -2px;"></span>
 							</label>
 						</td>
-						<td >
+						<td>
 							<label class="radio inline checker" style="margin-top: 4px;">NO
-  							 	<input type="radio" value="false"  />
+	  						 	<input type="radio" name="<%= ie.position_number %>" id="<%= ie.id %> + 100" value="false"  />
 								<span class="checkmark" style="margin-top: -2px;"></span>
 							</label>
 						</td>
 					</tr>
-					
-					<button id="quest" class="btn btn-large btn-success" style="margin-top: -14; font-size: 2em;">Start</button>
-					
-					
+				
+				<% end %>
+				
+				<button id="quest" class="btn btn-large btn-success" type="submit" style="margin-top: -14; font-size: 2em;">Start</button>
 				
 				</div>
-
-			</div>
-		</div>		
-				
-
-				
-				<!-- <div class="container" style="z-index: 1024; ">
-						<div class="row">
-							<div class="col-md-12">
-
-					<tr style="text-align: center;">
-
-						<td>
-							<label class="radio inline checker" style="margin-top: 4px;">YES
-	  						 	<input type="radio" value="true" />
-								<span class="checkmark"style="margin-top: -2px;"></span>
-							</label>
-						</td>
-						<td>
-							<label class="radio inline checker" style="margin-top: 4px;">NO
-	  						 	<input type="radio" value="false"  />
-								<span class="checkmark" style="margin-top: -2px;"></span>
-							</label>
-						</td>
-					</tr>
-					<button id="quest" class="btn btn-success">Start</button> -->
-				
-			<!-- </div> -->
 			
+			</div>
+			
+		</div>
+
+	</div>
+</div>		
+				
 			<!-- <% unless @student.score1 == nil %>
-			<div  style="max-width: 720px; display: block; margin-right: auto; margin-left: auto; text-align: center;">
+
 			<form method="post" id="exercise">
 
  			<input  class="btn btn-success" style="color: white; background-color: #1abd9c; font-size: 18px; padding: 6px 12px;" type="submit" value="Account"/>
@@ -83,10 +77,6 @@
 			</div>
 			<% end %> -->
 			
-			
-	
-	
-	
 <script type="text/javascript">
 	
 	
@@ -105,37 +95,37 @@
 	    $('#quest').show();
 	  } else if (this.currentTime >= 3.8 && lastCheckedAt < 3.8) {
 		  this.pause();
-	    $('#quest').text('Submit 2').show();
+	    $('#quest').text('Submit 1').show();
 	  } else if (this.currentTime >= 8.2 && lastCheckedAt < 8.2) {
 		  this.pause();
-	    $('#quest').text('Submit 3').show();
+	    $('#quest').text('Submit 2').show();
 	  } else if (this.currentTime >= 12.36 && lastCheckedAt < 12.36) {
 		  this.pause();
-	    $('#quest').text('Submit 4').show();
+	    $('#quest').text('Submit 3').show();
 	  } else if (this.currentTime >= 16.8 && lastCheckedAt < 16.8) {
 		  this.pause();
-	    $('#quest').text('Submit 5').show();
+	    $('#quest').text('Submit 4').show();
 	  } else if (this.currentTime >= 21 && lastCheckedAt < 21) {
 	    this.pause();
-	    $('#quest').text('Submit 6').show();
+	    $('#quest').text('Submit 5').show();
 	  } else if (this.currentTime >= 25.44 && lastCheckedAt < 25.44) {
 		  this.pause();
-	    $('#quest').text('Submit 7').show();
+	    $('#quest').text('Submit 6').show();
 	  } else if (this.currentTime >= 30 && lastCheckedAt < 30) {
 		  this.pause();
-	    $('#quest').text('Submit 8').show();
+	    $('#quest').text('Submit 7').show();
 	  } else if (this.currentTime >= 34.4 && lastCheckedAt < 34.4) {
 		  this.pause();
-	    $('#quest').text('Submit 9').show();
+	    $('#quest').text('Submit 8').show();
 	  } else if (this.currentTime >= 38.45 && lastCheckedAt < 38.45) {
 		  this.pause();
-	    $('#quest').text('Submit 10').show();
+	    $('#quest').text('Submit 9').show();
 	  } else if (this.currentTime >= 42.72 && lastCheckedAt < 42.72) {
 		  this.pause();
-	    $('#quest').text('Submit 11').show();
+	    $('#quest').text('Submit 10').show();
 	 } else if (this.currentTime >= 47.12 && lastCheckedAt < 47.12) {
 	    this.pause();
-	    $('#quest').text('Submit 12').show();
+	    $('#quest').text('Submit 11').show();
 	  } else if (this.currentTime >= 51.4 && lastCheckedAt < 51.4) {
 		  this.pause();
 	    $('#quest').text('Submit 13').show();
@@ -302,96 +292,94 @@
 	});
 </script>
 
-
 					
 <style>
-.checker {
-  display: bloc;
-  position: relative;
-  padding-left: 40px;
-  margin-right: 40px;
-  color: gray;
-  cursor: pointer;
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 1em;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Hide the browser's default radio button */
-.checker input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 30px;
-  width: 30px;
-  background-color: white;
-  border: 1px solid gray;
-  border-radius: 50%;
-}
-
-/* On mouse-over, add a grey background color */
-.checker:hover input ~ .checkmark {
-  background-color: #e4e4e4;
-}
-
-/* When the radio button is checked, add a blue background */
-.checker input:checked ~ .checkmark {
-  background-color: #2196F3;
-  border: 1px solid #2196F3;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-/*.checker input:checked ~ .checkmark:after {
-  display: block;
-}
-*/
-/* Style the indicator (dot/circle) */
-.checker .checkmark:after {
- 	top: 6px;
-	left: 6px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: white;
-}
-
-.video2	{
-	text-align: center;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-}
-
-.video2 video	{
-	min-width: 100%;
-	width: auto;
-	height: auto;
+	.checker {
+	  display: bloc;
+	  position: relative;
+	  padding-left: 40px;
+	  margin-right: 40px;
+	  color: gray;
+	  cursor: pointer;
+	  font-size: 28px;
+	  font-weight: bold;
+	  line-height: 1em;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
 	}
 	
-label	{
-	font-size: 2em;
-}
-
+	/* Hide the browser's default radio button */
+	.checker input {
+	  position: absolute;
+	  opacity: 0;
+	  cursor: pointer;
+	}
+	
+	/* Create a custom radio button */
+	.checkmark {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 30px;
+	  width: 30px;
+	  background-color: white;
+	  border: 1px solid gray;
+	  border-radius: 50%;
+	}
+	
+	/* On mouse-over, add a grey background color */
+	.checker:hover input ~ .checkmark {
+	  background-color: #e4e4e4;
+	}
+	
+	/* When the radio button is checked, add a blue background */
+	.checker input:checked ~ .checkmark {
+	  background-color: #2196F3;
+	  border: 1px solid #2196F3;
+	}
+	
+	/* Create the indicator (the dot/circle - hidden when not checked) */
+	.checkmark:after {
+	  content: "";
+	  position: absolute;
+	  display: none;
+	}
+	
+	/* Show the indicator (dot/circle) when checked */
+	/*.checker input:checked ~ .checkmark:after {
+	  display: block;
+	}
+	*/
+	/* Style the indicator (dot/circle) */
+	.checker .checkmark:after {
+	 	top: 6px;
+		left: 6px;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: white;
+	}
+	
+	.video2	{
+		text-align: center;
+		bottom: 0;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+	
+	.video2 video	{
+		min-width: 100%;
+		width: auto;
+		height: auto;
+		
+		}
+		
+	label	{
+		font-size: 2em;
+	}
 
 </style>		
 
