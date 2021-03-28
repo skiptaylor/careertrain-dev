@@ -10,7 +10,8 @@ post "/ie/new/?" do
     :position_number  => params[:position_number],
     :item             => params[:item],
     :section          => params[:section],
-    :category         => params[:category]
+    :category         => params[:category],
+    :tr_number        => params[:tr_number]
   )
   
   params[:answer_yes]  ? ie.update(:answer_yes => true) : ie.update(:answer_yes => false)
@@ -38,7 +39,8 @@ post "/ie/:id/edit/?" do
     :position_number  => params[:position_number],
     :item             => params[:item],
     :section          => params[:section],
-    :category         => params[:category]
+    :category         => params[:category],
+    :tr_number        => params[:tr_number]
   )
   
   params[:answer_yes]  ? ie.update(:answer_yes => true) : ie.update(:answer_yes => false)

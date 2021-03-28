@@ -9,7 +9,7 @@ end
 post  "/student/reports/:id/exercise/?"  do
   student = Student.get(params[:id])
   ie = Ie.all
-   
+     
   exercise = Exercise.create(
     :student_id   => session[:student],
     :score_a      => params[:score_a],
@@ -67,6 +67,3 @@ post  "/student/reports/:id/exercise/?"  do
    
   redirect "/student/reports/#{params[:id]}/report"
 end
-
-
-# , layout: false

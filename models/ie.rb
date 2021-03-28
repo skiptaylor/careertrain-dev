@@ -5,6 +5,7 @@ class Ie
 	property   :deleted_at, ParanoidDateTime
 	property 	 :id, 				Serial
 
+  property  :tr_number,         Integer
   property  :item,              String
   property  :category,          String
   property  :position_number,   Integer
