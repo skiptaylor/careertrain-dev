@@ -81,8 +81,7 @@ post '/student/reports/create/?' do
               @student.school_id = school.id
               @student.save
             
-              unless @presentation = Presentation.first(:school_password => params[:school_password]) 
-                unless @presentation = Presentation.first(:class_date => params[:class_date])
+              unless (@presentation = Presentation.first(:school_password => params[:school_password])) && (@presentation = Presentation.first(:class_date => params[:class_date]))
                  
                   @presentation = Presentation.create(
                   :school_id  => @student.school_id,
@@ -90,8 +89,10 @@ post '/student/reports/create/?' do
                   :school_password  => @student.school_password
                   )
                   @presentation.id = @student.presentation_id
-                end  
-              end 
+                  
+              end
+              
+              @student.save
                         
               flash[:alert] = 'Welcome to the Occupations Guide. You are now signed in.'
               redirect '/student/reports/report/report_profile'

@@ -51,18 +51,22 @@
 						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>I</em></th>
 					</tr>
 				
+				<% @student.exercises(order: [:created_at.desc], limit: 1).each do |e|  %>
 				
 					<tr>
-						<td style="text-align: center; color: #08287a;"><strong><%= @student.score_a %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= @student.score_b %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= @student.score_c %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= @student.score_d %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= @student.score_e %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= @student.score_f %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= @student.score_g %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= @student.score_h %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= @student.score_i %></strong></td>
+						
+						<td style="text-align: center; color: #08287a;"><strong><%= e.score_a %></strong></td>
+						<td style="text-align: center; color: #08287a;"><strong><%= e.score_b %></strong></td>
+						<td style="text-align: center; color: #08287a;"><strong><%= e.score_c %></strong></td>
+						<td style="text-align: center; color: #08287a;"><strong><%= e.score_d %></strong></td>
+						<td style="text-align: center; color: #08287a;"><strong><%= e.score_e %></strong></td>
+						<td style="text-align: center; color: #08287a;"><strong><%= e.score_f %></strong></td>
+						<td style="text-align: center; color: #08287a;"><strong><%= e.score_g %></strong></td>
+						<td style="text-align: center; color: #08287a;"><strong><%= e.score_h %></strong></td>
+						<td style="text-align: center; color: #08287a;"><strong><%= e.score_i %></strong></td>
 					</tr>
+					
+				<% end %>
 				
 				</table>
 					</form>

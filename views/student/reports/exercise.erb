@@ -18,7 +18,7 @@
 			
 				<div class="col-6" style="text-align: center; margin-top: -84px;">
 					
-									
+				<form method="post" id="exercise">					
 					
 				<% @ie.sort_by(&:position_number).each do |ie| %>
 				
@@ -52,9 +52,9 @@
 				
 				<div class="col-6" style="text-align: center; margin-top: -72px;">
 					
-				<button id="quest" type="submit" class="btn btn-large btn-success" style="margin-top: -14; font-size: 2em; float:left;">Start</button>
+				<button id="quest" class="btn btn-large btn-success" style="margin-top: -14; font-size: 2em; float:left;">Start</button>
 				
-				<form method="post" id="exercise">	
+				<!-- <form method="post" id="exercise"> -->
 					
 				<input type="submit" id="account" class="btn btn-large btn-success" style="margin-top: -14; font-size: 2em; float:left; display: none;" value="Get Your Scores" />
 				
@@ -89,259 +89,259 @@
 	  
 	  if (this.currentTime >= 0 && lastCheckedAt < 0) {
 		  this.play();
-		  $('#quest').show();
-		  $('#ie.tr_number').hide();
+		  $('button#quest').show();
+		  
   	  } else if (this.currentTime >= 3.8 && lastCheckedAt < 3.8) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 	    $("div#101").show();
   	  } else if (this.currentTime >= 8.2 && lastCheckedAt < 8.2) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 	   $('div#102').show();
   	  } else if (this.currentTime >= 12.36 && lastCheckedAt < 12.36) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 		 $('div#103').show();
   	  } else if (this.currentTime >= 16.8 && lastCheckedAt < 16.8) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 		$('div#104').show();
   	  } else if (this.currentTime >= 21 && lastCheckedAt < 21) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 		 $('div#105').show();
   	  } else if (this.currentTime >= 25.44 && lastCheckedAt < 25.44) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 		 $('div#106').show();
   	  } else if (this.currentTime >= 30 && lastCheckedAt < 30) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 		 $('div#107').show();
   	  } else if (this.currentTime >= 34 && lastCheckedAt < 34) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 		 $('div#108').show();
   	  } else if (this.currentTime >= 38.36 && lastCheckedAt < 38.36) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 		 $('div#109').show();
   	  } else if (this.currentTime >= 42.72 && lastCheckedAt < 42.72) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 		 $('div#110').show();
  	  } else if (this.currentTime >= 47.12 && lastCheckedAt < 47.12) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 		 $('div#111').show();
   	  } else if (this.currentTime >= 51.4 && lastCheckedAt < 51.4) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 		 $('div#112').show();
   	  } else if (this.currentTime >= 55.5 && lastCheckedAt < 55.5) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 		 $('div#113').show();
   	  } else if (this.currentTime >= 60.12 && lastCheckedAt < 60.12) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 		 $('div#114').show();
   	  } else if (this.currentTime >= 64.38 && lastCheckedAt < 64.38) {
 		  this.pause();
-  	    $('#quest').text('Submit').show();
+  	    $('button#quest').text('Submit').show();
 		 $('div#115').show();
   	  } else if (this.currentTime >= 68.8 && lastCheckedAt < 68.8) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#116').show();
 	  } else if (this.currentTime >= 73.22 && lastCheckedAt < 73.22) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#117').show();
 	  } else if (this.currentTime >= 77.2 && lastCheckedAt < 77.2) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#118').show();
 	  } else if (this.currentTime >= 82 && lastCheckedAt < 82) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#119').show();
 	  } else if (this.currentTime >= 86.14 && lastCheckedAt < 86.14) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#120').show();
 	  } else if (this.currentTime >= 90.40 && lastCheckedAt < 90.40) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#121').show();
 	  } else if (this.currentTime >= 95 && lastCheckedAt < 95) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#122').show();
 	  } else if (this.currentTime >= 99.20 && lastCheckedAt < 99.20) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#123').show();
 	  } else if (this.currentTime >= 103.36 && lastCheckedAt < 103.36) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#124').show();
 	  } else if (this.currentTime >= 108 && lastCheckedAt < 108) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#125').show();
 	  } else if (this.currentTime >= 112.18 && lastCheckedAt < 112.18) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#126').show();
 	  } else if (this.currentTime >= 116.36 && lastCheckedAt < 116.36) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#127').show();
 	  } else if (this.currentTime >= 120.54 && lastCheckedAt < 120.54) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#128').show();
 	  } else if (this.currentTime >= 125.22 && lastCheckedAt < 125.22) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#129').show();
 	  } else if (this.currentTime >= 129.36 && lastCheckedAt < 129.36) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#130').show();
 	  } else if (this.currentTime >= 134 && lastCheckedAt < 134) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#131').show();
 	  } else if (this.currentTime >= 138.24 && lastCheckedAt < 138.24) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#132').show();
 	  } else if (this.currentTime >= 142.48 && lastCheckedAt < 142.48) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#133').show();
 	  } else if (this.currentTime >= 146.8 && lastCheckedAt < 146.8) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#134').show();
 	  } else if (this.currentTime >= 151.4 && lastCheckedAt < 151.4) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#135').show();
 	  } else if (this.currentTime >= 155.38 && lastCheckedAt < 155.38) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#136').show();
 	  } else if (this.currentTime >= 159.7 && lastCheckedAt < 159.7) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#137').show();
 	  } else if (this.currentTime >= 164 && lastCheckedAt < 164) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#138').show();
 	  } else if (this.currentTime >= 168.38 && lastCheckedAt < 168.38) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#139').show();
 	  } else if (this.currentTime >= 173 && lastCheckedAt < 173) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#140').show();
 	  } else if (this.currentTime >=177.28 && lastCheckedAt < 177.28) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#141').show();
 	  } else if (this.currentTime >= 181.44 && lastCheckedAt < 181.44) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#142').show();
 	  } else if (this.currentTime >= 186 && lastCheckedAt < 186) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#143').show();
 	  } else if (this.currentTime >= 190.2 && lastCheckedAt < 190.2) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#144').show();
 	  } else if (this.currentTime >= 194.48 && lastCheckedAt < 194.48) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#145').show();
 	  } else if (this.currentTime >= 199 && lastCheckedAt < 199) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#146').show();
 	  } else if (this.currentTime >= 203.22 && lastCheckedAt < 203.22) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#147').show();
 	  } else if (this.currentTime >= 207.5 && lastCheckedAt < 207.5) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#148').show();
 	  } else if (this.currentTime >= 211.8 && lastCheckedAt < 211.8) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#149').show();
 	  } else if (this.currentTime >= 216.24 && lastCheckedAt < 216.24) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#150').show();
 	  } else if (this.currentTime >= 220.42 && lastCheckedAt < 220.42) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#151').show();
 	  } else if (this.currentTime >= 225 && lastCheckedAt < 225) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#152').show();
 	  } else if (this.currentTime >= 229.24 && lastCheckedAt < 229.24) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#153').show();
 	  } else if (this.currentTime >= 233.48 && lastCheckedAt < 233.48) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#154').show();
 	  } else if (this.currentTime >= 237.8 && lastCheckedAt < 237.8) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#155').show();
 	  } else if (this.currentTime >= 242.24 && lastCheckedAt < 242.24) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#156').show();
 	  } else if (this.currentTime >= 246.48 && lastCheckedAt < 246.48) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#157').show();
 	  } else if (this.currentTime >= 251 && lastCheckedAt < 251) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#158').show();
 	  } else if (this.currentTime >= 255.24 && lastCheckedAt < 255.24) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#159').show();
 	  } else if (this.currentTime >= 259.48 && lastCheckedAt < 259.48) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#160').show();
 	  } else if (this.currentTime >= 264 && lastCheckedAt < 264) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#161').show();
 	  } else if (this.currentTime >= 268.24 && lastCheckedAt < 268.24) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#162').show();
 	  } else if (this.currentTime >= 272.48 && lastCheckedAt < 272.48) {
 		  this.pause();
-	    $('#quest').text('Submit').show();
+	    $('button#quest').text('Submit').show();
 		 $('div#163').show();
 	  } else video.addEventListener('ended',function(){
 			$('#account').show();
@@ -350,10 +350,10 @@
 	
 	
 
-	$('#quest').click(function() {
+	$('button#quest').click(function() {
 	  video.play();
-	  $('#quest').hide();
-	  $('div.spoon').hide();
+	  $('button#quest').hide();
+	  $('div.spoon').hide(); return false;
 	});
 	
 </script>
@@ -451,8 +451,4 @@
 </style>		
 
 
-  
- <!-- else video.addEventListener('ended',function(){
- 			location.href = "/student/reports/<%= @student.id %>/report";
-   	  }); -->
 
