@@ -14,14 +14,13 @@
 				<source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/ecd-quiz.mp4" type="video/mp4">
 			</video>
 			
-			<div id="submit-area" style="display: lock;" class="row">
+			<div id="submit-area" class="row">
 			
 				<div class="col-6" style="text-align: center; margin-top: -84px;">
 					
 				<form method="post" id="exercise">					
 					
 				<% @ie.sort_by(&:position_number).each do |ie| %>
-				
 				
 					<div id="<%= ie.tr_number %>" class="spoon" style="display: none; float: right;">
 						<tr>
@@ -45,7 +44,6 @@
 						
 					</div>
 					
-					
 				<% end %>
 				
 			</div>
@@ -53,8 +51,6 @@
 				<div class="col-6" style="text-align: center; margin-top: -72px;">
 					
 				<button id="quest" class="btn btn-large btn-success" style="margin-top: -14; font-size: 2em; float:left;">Start</button>
-				
-				<!-- <form method="post" id="exercise"> -->
 					
 				<input type="submit" id="account" class="btn btn-large btn-success" style="margin-top: -14; font-size: 2em; float:left; display: none;" value="Get Your Scores" />
 				
@@ -69,6 +65,7 @@
 		</div>
 
 	</div>
+	
 </div>		
 				
 			<!-- <% unless @student.score1 == nil %>

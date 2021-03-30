@@ -8,8 +8,14 @@
 				<div>
 					<h6>Take the <strong><span class="logo-e">e</span>CD</strong> Exercise to focus on your future</h6>
 					<p class="lead">Let's take the <strong><span class="logo-e">e</span>CD</strong> Exercise to get your Careers and Occupations Guide Report.</p>
-					<p>This is your own personalized academic and career planning report. You may take the <strong><span class="logo-e">e</span>CD</strong> Exercise twice after which youcan still view your reports and videos.</p>
-					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success"><strong><span class="logo-e">e</span>CD</strong> Exercise Reports</a></p>					
+					<p>This is your own personalized academic and career planning report. You may take the <strong><span class="logo-e">e</span>CD</strong> Exercise twice. After that you can still view your reports and videos.</p>
+					
+					<% if @student.exercises.count < 2 %>
+					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success"><strong><span class="logo-e-white">e</span>CD</strong> Exercise</a></p>
+					<% else %>
+					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/report" class="btn btn-success"><strong><span class="logo-e-white">e</span>CD</strong> Student Account</a></p>	
+					<% end %>
+									
 				</div>
 				
 				<hr style="margin: 20px 0; border-top-color: #1abc9c;" />
@@ -25,9 +31,8 @@
 			<div class="col-md-5">
 				<div class="sign-in" style="padding: 24px 24px;">
 					<h5>
-  						<% unless @student.name == "" || @student.name == nil %><strong><%= @student.name %></strong>
-  						<% else %><strong><%= @student.first_name %> <%= @student.last_name %></strong>
-  						<% end %><br />
+  						<strong><%= @student.first_name %> <%= @student.last_name %></strong>
+  						<br />
 					</h5>
 					<p>	
 						<%= @student.email %><br />

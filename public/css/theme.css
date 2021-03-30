@@ -506,12 +506,14 @@ div#ground	{
 
 
 .logo-e	{
-	
 	font-style: italic;
-	
 	color: #1abd9c;
 }
 
+.logo-e-white	{
+	font-style: italic;
+	color: #ffffff;
+}
 
 .dropdown-item {
   display: block;
