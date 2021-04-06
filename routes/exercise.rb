@@ -87,10 +87,4 @@ post  "/student/reports/:id/exercise/?"  do
   redirect "/student/reports/#{params[:id]}/report"
 end
 
-# get "/student/reports/:id/exe/?"  do
-#   @student = Student.get(params[:id])
-#   @ie = Ie.all
-#   @exercise = Exercise.new
-#   erb :"/student/reports/exe", layout: false
-# end
 
