@@ -20,7 +20,9 @@ post  "/student/reports/:id/exercise/?"  do
     :score_f      => params[:score_f],
     :score_g      => params[:score_g],
     :score_h      => params[:score_h],
-    :score_i      => params[:score_i]
+    :score_i      => params[:score_i],
+    :high1        => params[:high1],
+    :high2        => params[:high2],
   )
    
   exercise.score_a = 0
@@ -32,6 +34,8 @@ post  "/student/reports/:id/exercise/?"  do
   exercise.score_g = 0
   exercise.score_h = 0
   exercise.score_i = 0
+  exercise.high1 = 0
+  exercise.high2 = 0
    
   Ie.each do |ie|
    
@@ -64,6 +68,29 @@ post  "/student/reports/:id/exercise/?"  do
    
   end
   exercise.save
-   
+  
+
+  # h1 = [ ['a', exercise.score_a], ['b', exercise.score_b], ['c', exercise.score_c], ['d', exercise.score_d], ['e', exercise.score_e], ['f', exercise.score_f], ['g', exercise.score_g], ['h', exercise.score_h], ['i', exercise.score_i] ]
+  # h2 = Hash[*h1.flatten]
+  #
+  # h2 = Hash[h1.map {|key, value| (key, value)}]
+  #
+  # h1.sort_by(&:last)
+  #
+  #
+  #
+  # exercise.high1 = h1(8)
+  # exercise.high2 = Hash[fetch(7)]
+  #
+  # exercise.save
+    
   redirect "/student/reports/#{params[:id]}/report"
 end
+
+# get "/student/reports/:id/exe/?"  do
+#   @student = Student.get(params[:id])
+#   @ie = Ie.all
+#   @exercise = Exercise.new
+#   erb :"/student/reports/exe", layout: false
+# end
+

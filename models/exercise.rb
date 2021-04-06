@@ -15,6 +15,9 @@ class Exercise
   property  :score_h,      Integer, default: 0
   property  :score_i,      Integer, default: 0
   
+  property  :high1,        String
+  property  :high2,        String
+  
   belongs_to  :student, required: false
 
 end
