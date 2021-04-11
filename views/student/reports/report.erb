@@ -66,19 +66,21 @@
 						<td style="text-align: center; color: #08287a;"><strong><%= e.score_i %></strong></td>
 					</tr>
 					
-				<% end %>
+				
 				
 				</table>
 					</form>
 					
-
+					
+				
 					
 				<p>Your Highest Score: <br />
-				<span style="font-size: 1.3em; color: #08287a;"><% if @student.score1 == 'a' %><strong><em>A</em> - Outdoor</strong><% end %><% if @student.score1 == 'b' %><strong><em>B</em> - Arts/Communications</strong><% end %><% if @student.score1 == 'c' %><strong><em>C</em> - Business/Management</strong><% end %><% if @student.score1 == 'd' %><strong><em>D</em> - Clerical/Administrative</strong><% end %><% if @student.score1 == 'e' %><strong><em>E</em> - Protective/Military Service</strong><% end %><% if @student.score1 == 'f' %><strong><em>F</em> - Technology</strong><% end %><% if @student.score1 == 'g' %><strong><em>G</em> - Public Service</strong><% end %><% if @student.score1 == 'h' %><strong><em>H</em> - Science/Mathematics</strong><% end %><% if @student.score1 == 'i' %><strong><em>I</em> - Social/Helping</strong><% end %></span></p>
+				<span style="font-size: 1.3em; color: #08287a;"><% if e.high1.include? 'a' %><strong><em>A</em> - Outdoor</strong><% end %><% if e.high1.include? 'b' %><strong><em>B</em> - Arts/Communications</strong><% end %><% if e.high1.include? 'c' %><strong><em>C</em> - Business/Management</strong><% end %><% if e.high1.include? 'd' %><strong><em>D</em> - Clerical/Administrative</strong><% end %><% if e.high1.include? 'e' %><strong><em>E</em> - Protective/Military Service</strong><% end %><% if e.high1.include? 'f' %><strong><em>F</em> - Technology</strong><% end %><% if e.high1.include? 'g' %><strong><em>G</em> - Public Service</strong><% end %><% if e.high1.include? 'h' %><strong><em>H</em> - Science/Mathematics</strong><% end %><% if e.high1.include? 'i' %><strong><em>I</em> - Social/Helping</strong><% end %></span></p>
 				<p>Your 2nd Highest Score: <br />
-				<span style="font-size: 1.3em; color: #08287a;"><% if @student.score2 == 'a' %><strong><em>A</em> - Outdoor</strong><% end %><% if @student.score2 == 'b' %><strong><em>B</em> - Arts/Communications</strong><% end %><% if @student.score2 == 'c' %><strong><em>C</em> - Business/Management</strong><% end %><% if @student.score2 == 'd' %><strong><em>D</em> - Clerical/Administrative</strong><% end %><% if @student.score2 == 'e' %><strong><em>E</em> - Protective/Military Service</strong><% end %><% if @student.score2 == 'f' %><strong><em>F</em> - Technology</strong><% end %><% if @student.score2 == 'g' %><strong><em>G</em> - Public Service</strong><% end %><% if @student.score2 == 'h' %><strong><em>H</em> - Science/Mathematics</strong><% end %><% if @student.score2 == 'i' %><strong><em>I</em> - Social/Helping</strong><% end %></span></p>
+				<span style="font-size: 1.3em; color: #08287a;"><% if e.high2.include? 'a' %><strong><em>A</em> - Outdoor</strong><% end %><% if e.high2.include? 'b' %><strong><em>B</em> - Arts/Communications</strong><% end %><% if e.high2.include? 'c' %><strong><em>C</em> - Business/Management</strong><% end %><% if e.high2.include? 'd' %><strong><em>D</em> - Clerical/Administrative</strong><% end %><% if e.high2.include? 'e' %><strong><em>E</em> - Protective/Military Service</strong><% end %><% if e.high2.include? 'f' %><strong><em>F</em> - Technology</strong><% end %><% if e.high2.include? 'g' %><strong><em>G</em> - Public Service</strong><% end %><% if e.high2.include? 'h' %><strong><em>H</em> - Science/Mathematics</strong><% end %><% if e.high2.include? 'i' %><strong><em>I</em> - Social/Helping</strong><% end %></span></p>
 				
-			
+				<% end %>
+				
 				<% if @student.score1 && @student.score2 %>
 				<a href="/student/reports/<%= @student.id %>/scores" style="margin: 12px 0 19px 0;" class="btn btn-success">View short Report</a> &nbsp;&nbsp;
 				
@@ -89,6 +91,9 @@
 				
 				<!-- <a href="" style="margin: 12px 0 19px 0;" class="btn btn-success mutted">Download full Report</a> -->
 				<% end %>
+				
+				
+				
 			</form>
 			
 			</div>
