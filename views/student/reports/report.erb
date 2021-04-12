@@ -21,85 +21,77 @@
 		}
 	</style>
 	
-	<div class="container">	
-		<div class="row">  
-			<div class="col-md-12">
+<div class="container">	
+	<div class="row">  
+		<div class="col-md-12">
 				<a href="/student/reports/report/report_profile" class="btn btn-small pull-right" style="margin-top: 12px;">My Profile</a>
 				<h1 class="page-header">Careers and Occupations Guide Report</h1>
-			</div>
-		</div>
+		</div>   <!-------	col 12   ------->
+	</div>   <!-------	row   ------->
 
-		<div class="row">	
-			<div class="col-lg-6">
+	<div class="row">	
+		<div class="col-lg-6">
 				
-				<h3><%= @student.first_name %> <%= @student.last_name %></h3>
-				<%= @student.email %><br /><br />
+			<h3><%= @student.first_name %> <%= @student.last_name %></h3>
+			<%= @student.email %><br /><br />
+			
+			<h3 style="margin-bottom: 20px;">Your <strong><span class="logo-e">e</span>CD</strong> Exercise Scores</h3>
+			
+			<!-- <form method="post" id="exercise"> -->
+			<table class="table table-striped table-sm table-bordered">
 				
-					<form method="post" id="exercise">
-					<table class="table table-striped table-sm table-bordered">
-					<h3 style="margin-bottom: 20px;">Your <strong><span class="logo-e">e</span>CD</strong> Exercise Scores</h3>
+				<tr>
+					<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>A</em></th>
+					<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>B</em></th>
+					<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>C</em></th>
+					<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>D</em></th>
+					<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>E</em></th>
+					<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>F</em></th>
+					<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>G</em></th>
+					<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>H</em></th>
+					<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>I</em></th>
+				</tr>
+			
+			<!-- <% @student.exercises(order: [:created_at.desc], limit: 1).each do |e|  %> -->
+			
+				<tr>
 					
-					<tr>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>A</em></th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>B</em></th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>C</em></th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>D</em></th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>E</em></th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>F</em></th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>G</em></th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>H</em></th>
-						<th style="color: #1abd9c;  font-size: 1em; text-align: center;"><em>I</em></th>
-					</tr>
+					<td style="text-align: center; color: #08287a;"><strong><%= @student.score_a %></strong></td>
+					<td style="text-align: center; color: #08287a;"><strong><%= @student.score_b %></strong></td>
+					<td style="text-align: center; color: #08287a;"><strong><%= @student.score_c %></strong></td>
+					<td style="text-align: center; color: #08287a;"><strong><%= @student.score_d %></strong></td>
+					<td style="text-align: center; color: #08287a;"><strong><%= @student.score_e %></strong></td>
+					<td style="text-align: center; color: #08287a;"><strong><%= @student.score_f %></strong></td>
+					<td style="text-align: center; color: #08287a;"><strong><%= @student.score_g %></strong></td>
+					<td style="text-align: center; color: #08287a;"><strong><%= @student.score_h %></strong></td>
+					<td style="text-align: center; color: #08287a;"><strong><%= @student.score_i %></strong></td>
+				</tr>
 				
-				<% @student.exercises(order: [:created_at.desc], limit: 1).each do |e|  %>
+			</table>
+			
+			<p>Your Highest Score: <br />
+			<span style="font-size: 1.3em; color: #08287a;"><% if @student.score1 == 'a' %><strong><em>A</em> - Outdoor</strong><% end %><% if @student.score1 == 'b' %><strong><em>B</em> - Arts/Communications</strong><% end %><% if @student.score1 == 'c' %><strong><em>C</em> - Business/Management</strong><% end %><% if @student.score1 == 'd' %><strong><em>D</em> - Clerical/Administrative</strong><% end %><% if @student.score1 = 'e' %><strong><em>E</em> - Protective/Military Service</strong><% end %><% if @student.score1 == 'f' %><strong><em>F</em> - Technology</strong><% end %><% if @student.score1 == 'g' %><strong><em>G</em> - Public Service</strong><% end %><% if @student.score1 == 'h' %><strong><em>H</em> - Science/Mathematics</strong><% end %><% if @student.score1 == 'i' %><strong><em>I</em> - Social/Helping</strong><% end %></span></p>
+			<p>Your 2nd Highest Score: <br />
+			<span style="font-size: 1.3em; color: #08287a;"><% if @student.score2 == 'a' %><strong><em>A</em> - Outdoor</strong><% end %><% if @student.score2 == 'b' %><strong><em>B</em> - Arts/Communications</strong><% end %><% if @student.score2 == 'c' %><strong><em>C</em> - Business/Management</strong><% end %><% if @student.score2 == 'd' %><strong><em>D</em> - Clerical/Administrative</strong><% end %><% if @student.score2 == 'e' %><strong><em>E</em> - Protective/Military Service</strong><% end %><% if @student.score2 == 'f' %><strong><em>F</em> - Technology</strong><% end %><% if @student.score2 == 'g' %><strong><em>G</em> - Public Service</strong><% end %><% if @student.score2 = 'h' %><strong><em>H</em> - Science/Mathematics</strong><% end %><% if @student.score2 == 'i' %><strong><em>I</em> - Social/Helping</strong><% end %></span></p>
 				
-					<tr>
-						
-						<td style="text-align: center; color: #08287a;"><strong><%= e.score_a %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= e.score_b %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= e.score_c %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= e.score_d %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= e.score_e %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= e.score_f %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= e.score_g %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= e.score_h %></strong></td>
-						<td style="text-align: center; color: #08287a;"><strong><%= e.score_i %></strong></td>
-					</tr>
-					
+			<!-- <% end %> -->
 				
-				
-				</table>
-					</form>
-					
-					
-				
-					
-				<p>Your Highest Score: <br />
-				<span style="font-size: 1.3em; color: #08287a;"><% if e.high1.include? 'a' %><strong><em>A</em> - Outdoor</strong><% end %><% if e.high1.include? 'b' %><strong><em>B</em> - Arts/Communications</strong><% end %><% if e.high1.include? 'c' %><strong><em>C</em> - Business/Management</strong><% end %><% if e.high1.include? 'd' %><strong><em>D</em> - Clerical/Administrative</strong><% end %><% if e.high1.include? 'e' %><strong><em>E</em> - Protective/Military Service</strong><% end %><% if e.high1.include? 'f' %><strong><em>F</em> - Technology</strong><% end %><% if e.high1.include? 'g' %><strong><em>G</em> - Public Service</strong><% end %><% if e.high1.include? 'h' %><strong><em>H</em> - Science/Mathematics</strong><% end %><% if e.high1.include? 'i' %><strong><em>I</em> - Social/Helping</strong><% end %></span></p>
-				<p>Your 2nd Highest Score: <br />
-				<span style="font-size: 1.3em; color: #08287a;"><% if e.high2.include? 'a' %><strong><em>A</em> - Outdoor</strong><% end %><% if e.high2.include? 'b' %><strong><em>B</em> - Arts/Communications</strong><% end %><% if e.high2.include? 'c' %><strong><em>C</em> - Business/Management</strong><% end %><% if e.high2.include? 'd' %><strong><em>D</em> - Clerical/Administrative</strong><% end %><% if e.high2.include? 'e' %><strong><em>E</em> - Protective/Military Service</strong><% end %><% if e.high2.include? 'f' %><strong><em>F</em> - Technology</strong><% end %><% if e.high2.include? 'g' %><strong><em>G</em> - Public Service</strong><% end %><% if e.high2.include? 'h' %><strong><em>H</em> - Science/Mathematics</strong><% end %><% if e.high2.include? 'i' %><strong><em>I</em> - Social/Helping</strong><% end %></span></p>
-				
-				<% end %>
-				
-				<% if @student.score1 && @student.score2 %>
+			<% if @student.score1 && @student.score2 %>
 				<a href="/student/reports/<%= @student.id %>/scores" style="margin: 12px 0 19px 0;" class="btn btn-success">View short Report</a> &nbsp;&nbsp;
 				
 				<!-- <a href="/student/reports/<%= @student.id %>/scores_full" style="margin: 12px 0 19px 0;" class="btn btn-success">Download full Report</a> -->
 				
-				<% else %>
+			<% else %>
 				<a href="" style="margin: 12px 0 19px 0;" class="btn btn-success mutted">View short Report</a> &nbsp;&nbsp;
 				
 				<!-- <a href="" style="margin: 12px 0 19px 0;" class="btn btn-success mutted">Download full Report</a> -->
-				<% end %>
+			<% end %>
 				
+		</div>   <!-------	col 6  ------->
 				
-				
-			</form>
+		<!-- </form> -->
 			
-			</div>
-			
-			<div class="col-lg-5 offset-lg-1">
-				
+		<div class="col-lg-5 offset-lg-1">
 				
 				<h3>Explore Other Categories</h3>
 				<p>You may have more than two “high” scores or ties. To see additional reports, enter the letters of the other categories. Example: if you scored high in A, B, and C, you may want to view the A/B report, the A/C report, and the B/C report.</p>
@@ -141,15 +133,16 @@
 				<!-- <div>
 				<a href="/student/reports/<%= @student.id %>/ex_scores" style="margin-bottom: 2px;" class="btn btn-info inline">View short Report</a> &nbsp;&nbsp; <a href="/student/reports/<%= @student.id %>/ex_scores_full"  style="margin-bottom: 0px;" class="btn btn-info d-none d-lg-inline">View full Report</a>
 				</div> -->
-			</div>
+		</div>   <!-------	col 5   ------->
 	
-		</div>
+	</div>   <!-------	row   ------->
 		
-		<hr style="margin: 20px 0; border-top-color: #1abc9c;" />
-		<div class="row">
-			<div class="col-md-12">
-				<h3 style="margin-bottom: 20px; color: #08287a;">Watch videos for your two or three highest categories.</h3>
-			</div>
+	<hr style="margin: 20px 0; border-top-color: #1abc9c;" />
+	
+	<div class="row">
+		<div class="col-md-12">
+			<h3 style="margin-bottom: 20px; color: #08287a;">Watch videos for your two or three highest categories.</h3>
+		</div>   <!-------	col 12   ------->
 			<div class="col-md-4 vidiv"><a href="https://ecareerdirection.s3.us-east-2.amazonaws.com/outdoor.mp4"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/a-outdoor.jpg" width="99%" /></a><br /><em><strong>A</strong></em> - Outdoor</div>
 			
 			<div class="col-md-4 vidiv"><a href="https://ecareerdirection.s3.us-east-2.amazonaws.com/arts-comms.mp4" style="text-align: center;"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/b-arts-comms.jpg" width="99%x" /></a><br /><em><strong>B</strong></em> - Arts/Communications</div>
@@ -168,8 +161,9 @@
 			
 			<div class="col-md-4 vidiv"><a href="https://ecareerdirection.s3.us-east-2.amazonaws.com/social-helping.mp4" style="text-align: center;"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/i-social-help.jpg"  width="99%x" /></a><br /><em><strong>I</strong></em> - Social/Helping</div>
 			
-		</div>
-	</div>
+		
+	</div>   <!-------	row   ------->
+</div>   <!-------	container   ------->
 
 <script  type="text/javascript">
 	var frmvalidator = new Validator("report");
