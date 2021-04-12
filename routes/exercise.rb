@@ -83,10 +83,6 @@ post  "/student/reports/:id/exercise/?"  do
   }
   
   score = score.sort_by { |k,v| v }
-
-  # puts score.to_h.keys
-  
-  # score.my_hash.keys
   
   exercise.high1 = score.fetch(8)
   exercise.high2 = score.fetch(7)
@@ -143,8 +139,6 @@ post  "/student/reports/:id/exercise/?"  do
     student.score2 = "i"
   end
   
-  # student.score1 = exercise.high1
-#   student.score2 = exercise.high2
   
   student.save
     
@@ -153,51 +147,3 @@ post  "/student/reports/:id/exercise/?"  do
 end
   
   
-# score = [ ['a', exercise.score_a], ['b', exercise.score_b], ['c', exercise.score_c], ['d', exercise.score_d], ['e', exercise.score_e],['f', exercise.score_f], ['g', exercise.score_g], ['h', exercise.score_h], ['i', exercise.score_i] ]
-
-# score = {
-#   "a" => exercise.score_a,
-#   "b" => exercise.score_b,
-#   "c" => exercise.score_c,
-#   "d" => exercise.score_d,
-#   "e" => exercise.score_e,
-#   "f" => exercise.score_f,
-#   "g" => exercise.score_g,
-#   "h" => exercise.score_h,
-#   "i" => exercise.score_i
-# }
-
-
-
-  # score.each_key { |key| puts key }
-
-  
-  ## puts "#{score.invert}"
-  
-  # ------------- array - works --------------
-  
-  # score = [exercise.score_a,exercise.score_b,exercise.score_c,exercise.score_d,exercise.score_e,exercise.score_f,exercise.score_g,exercise.score_h,exercise.score_i]
-  #
-  # score.sort!
-  #
-  # exercise.high1 = score.fetch(8)
-  # exercise.high2 = score.fetch(7)
-  
-  # ------------------------------------------
-    
-
-
-# hash.each_key {|key| puts key }
-
-# score = {
-#   a:exercise.score_a,
-#   b:exercise.score_b,
-#   c:exercise.score_c,
-#   d:exercise.score_d,
-#   e:exercise.score_e,
-#   f:exercise.score_f,
-#   g:exercise.score_g,
-#   h:exercise.score_h,
-#   i:exercise.score_i
-# }
-
