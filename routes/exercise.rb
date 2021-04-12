@@ -103,8 +103,48 @@ post  "/student/reports/:id/exercise/?"  do
   student.score_h = exercise.score_h
   student.score_i = exercise.score_i
   
-  student.score1 = exercise.high1
-  student.score2 = exercise.high2
+  if exercise.high1.include? "a"
+    student.score1 = "a"
+  elsif exercise.high1.include? "b"
+    student.score1 = "b"
+  elsif exercise.high1.include? "c"
+    student.score1 = "c"
+  elsif exercise.high1.include? "d"
+    student.score1 = "d"
+  elsif exercise.high1.include? "e"
+    student.score1 = "e"
+  elsif exercise.high1.include? "f"
+    student.score1 = "f"
+  elsif exercise.high1.include? "g"
+    student.score1 = "g"
+  elsif exercise.high1.include? "h"
+    student.score1 = "h"
+  elsif exercise.high1.include? "i"
+    student.score1 = "i"
+  end
+  
+  if exercise.high2.include? "a"
+    student.score2 = "a"
+  elsif exercise.high2.include? "b"
+    student.score2 = "b"
+  elsif exercise.high2.include? "c"
+    student.score2 = "c"
+  elsif exercise.high2.include? "d"
+    student.score2 = "d"
+  elsif exercise.high2.include? "e"
+    student.score2 = "e"
+  elsif exercise.high2.include? "f"
+    student.score2 = "f"
+  elsif exercise.high2.include? "g"
+    student.score2 = "g"
+  elsif exercise.high2.include? "h"
+    student.score2 = "h"
+  elsif exercise.high2.include? "i"
+    student.score2 = "i"
+  end
+  
+  # student.score1 = exercise.high1
+#   student.score2 = exercise.high2
   
   student.save
     
