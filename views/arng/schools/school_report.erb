@@ -19,7 +19,7 @@
 						<%= @school.class_date %>
 					</p>
 					<p>
-						<strong>School Password:</strong> &nbsp; <%= @school.school_password %> - <%= @school.id %> - <%= params[:id] %><br />
+						<strong>School Password:</strong> &nbsp; <%= @school.school_password %> <br />
 
 						<strong>Recruiter:</strong> &nbsp; <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %><br />
 					</p>
@@ -34,7 +34,6 @@
 							<% @school.presentations.each do |pres| %>
 							<% if pres.school_id = params[:id] %>
 						<option value="<%= pres.class_date %>" <%= 'selected' if params[:presentation] = pres.class_date %>><%= format_american_day(pres.class_date) %> - <%= pres.school_id %> - <%= params[:id] %>
-						
 						
 						<% @school.class_date = pres.class_date %><% @school.save %></option>
 							<% end %>
@@ -82,18 +81,16 @@
 					
 					<% @school.students.each do |student| %>
 					
-					<% if params[:presentation] = student.class_date %>
+					<% if params[:presentation] = student.created_on %>
 					<tr>
 						<td>
-							<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %> - <%= student.created_on %>
+							<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %> <!-- - <%= student.created_on %> -->
 						</td>
 						<td>
-							<%= student.school_password %> - <%= student.school_id %> - <%= params[:presentation] %>
+							<%= student.school_password %> <!-- - <%= student.school_id %> - <%= params[:presentation] %> -->
 						</td>
 						<td> 
-							<!-- <% unless student.class_date == nil %> -->
-								<%= format_american_day(student.class_date) %>
-							<!-- <% end %> -->
+							<%= format_american_day(student.created_on) %>
 						</td>
 						
 					</tr>
@@ -127,7 +124,13 @@
 						<% end %>
 						<% end %>
 					</table> -->
-				<%= session[:flash] = params.inspect %>
+					
+					
+					
+				<!-- <%= session[:flash] = params.inspect %> -->
+				
+				
+				
 			</div>
 		</div>
 		

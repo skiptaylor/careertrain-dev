@@ -24,11 +24,12 @@
 				
 					<div id="<%= ie.tr_number %>" class="spoon" style="display: none; float: right;">
 						<tr>
-							<td style="color: gray;"><%= ie.position_number %></td>
+							<!-- <td style="color: gray;"><%= ie.position_number %></td> -->
 							<!-- <td><%= ie.item %></td> -->
 							<!-- <td><%= ie.id %></td> -->
-							
-							<tr>
+						</tr>
+						<tr>
+							<td>
 								<label class="radio inline checker" for="<%= ie.position_number %>" style="margin-top: 4px;">YES
 	  							 	<input type="radio" name="<%= ie.position_number %>" id="<%= ie.position_number %>" value="true" />
 									<span class="checkmark" style="margin-top: -2px;"></span>
@@ -40,7 +41,14 @@
 									<span class="checkmark" style="margin-top: -2px;"></span>
 								</label>
 							</td>
+								
+							
+							<!-- <td>
+								<button id="quest" class="btn btn-large btn-success" style="margin-top: -14; font-size: 2em; float:left;">Start</button>
+							</td> -->
+							
 						</tr>
+						
 						
 					</div>   <!-------	spoon  ------->
 					
@@ -50,13 +58,17 @@
 				
 				<div class="col-5" style="text-align: center; margin-top: -52px;">
 				
-				<button id="quest" class="btn btn-large btn-success" style="margin-top: -14; font-size: 2em; float:left;">Start</button>
+				 <button id="quest" class="btn btn-large btn-success" style="margin-top: -14; font-size: 2em; float:left;">Start</button>
 
 				<input type="submit" id="account" class="btn btn-large btn-success" style="margin-top: -14; font-size: 2em; float:left; display: none;" value="Get Your Scores" />
 				
 				</form>
 				
+				
+				
 				</div>   <!-------	col 5   ------->
+				
+				<a href="/student/reports/report/report_profile" clas="btn btn-secondary btn-small pull-right" style="margin-top: 14px; margin-left: 50%">Profile</a>
 			
 			</div>   <!-------	row submit   ------->
 		

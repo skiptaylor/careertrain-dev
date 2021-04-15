@@ -36,13 +36,13 @@ class Email
   
   def self.welcome(email, first_name, last_name)
     body = ""
-    body << "<p>Welcome #{first_name} #{last_name} to eCareerDirecrion</p>"
-    body << "<p>Here is your Full COG Report.</p>"
-    body << "<p>We wish you the best!</p>"
+    body << "<p>Welcome #{@student.first_name} #{@student.last_name} to eCareerDirecrion</p>"
+    body << "<p>Here is a link back to your profile page. eCareerDirection.com</p>"
+    body << "<p>See you soon!</p>"
     
   Pony.mail(
     headers: { 'Content-Type' => 'text/html' },
-    to: '#{email}',
+    to: student.email,
     from: 'no-rely@eCareerDirection.com',
     subject: 'Welcome. This is your eCD full report',
     body: body

@@ -249,8 +249,10 @@ get "/student/reports/:id/report/?" do
   @student = Student.get(params[:id])
   
  if @student.class_date == ''
-   # Email.welcome(@student.email, @student.first_name, @student.last_name)
-
+   if settings.production? 
+     Email.welcome(@student.email, @student.first_name, @student.last_name)
+   end
+   
    @student.class_date = @student.created_on
    @student.save
  end

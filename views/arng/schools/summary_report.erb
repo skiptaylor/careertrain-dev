@@ -126,17 +126,18 @@
 		<div class="row">  
 			<div class="col-md-12">
 				<form method="post">
-				<button type="submit" class="hidden-print" style="float: right;">Export</button>
+				<button type="submit" class="hidden-print btn btn-small" style="float: right; margin-top: 6px;">Export</button>
 				</form>
 				<p class="header1">Summary Report</p>
 				<p style="text-align: center; font-size: 16px;"><strong><%= @school.school_name %></strong> &nbsp; <%= @school.school_city %> <%= @school.school_state %> &nbsp;&bull;&nbsp; <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %> &nbsp;&bull;&nbsp; <b>Class Date:</b> <%= @school.class_date %></p>
 				 
 				<% if @school.students.each do |student| %>  
 				
+				<% if params[:presentation] = student.created_on %>
 				
 				<hr style="margin: 6px 0 6px 0;" />
 				
-				<p><strong>Student:</strong>&nbsp;<%= student.first_name %> <%= student.last_name %>&nbsp;&bull;&nbsp;<strong>Grade:</strong>&nbsp;<%= student.grade %>&nbsp;&bull;&nbsp;<strong>Email:</strong>&nbsp;<%= student.email %><% if student.phone %>&nbsp;&bull;&nbsp;<strong>Phone:</strong>&nbsp; <%= student.phone %><% end %>Class Date:</b> <%= params[:presentation] %></p>
+				<p><strong>Student:</strong>&nbsp;<%= student.first_name %> <%= student.last_name %>&nbsp;&bull;&nbsp; <strong>Grade:</strong>&nbsp;<%= student.grade %>&nbsp;&bull;&nbsp;<strong>Email:</strong>&nbsp;<%= student.email %><% if student.phone %>&nbsp;&bull;&nbsp;<strong>Phone:</strong>&nbsp; <%= student.phone %><% end %>Class Date:</b> <%= params[:presentation] %></p>
 					
 					
 					<p style="margin-top: 6px;">
@@ -163,7 +164,7 @@
 						
 					<strong>Future Plans:</strong>&nbsp;<% if student.future1 == "on" %>&nbsp;Enter technical college/trade school&nbsp;&nbsp;<% end %><% if student.future2 == "on" %>&nbsp;Work full-time&nbsp;&nbsp;<% end %><% if student.future3 == "on" %>&nbsp;Work part-time&nbsp;&nbsp;<% end %><% if student.future4 == "on" %>&nbsp;Enter the military&nbsp;&nbsp;<% end %><% if student.future5 == "on" %>&nbsp;Go to college&nbsp;&nbsp;<% end %><% if student.future6 == "on" %>&nbsp;I have money to pay for education&nbsp;&nbsp;<% end %><% if student.future7 == "on" %>&nbsp;Counting on parents for money for education&nbsp;&nbsp;<% end %><% if student.future8 == "on" %>&nbsp;Considering sources of financial aid or scholarships&nbsp;&nbsp;<% end %></p>
 					
-  		    	
+  		    	<% end %>
 				
 				<% end %>
 				
