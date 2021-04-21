@@ -199,7 +199,7 @@
  						<select type="text" id="recruiter_id" name="recruiter_id" class="form-control" value="<%= @school.recruiter_id %>">
  								<!-- <option value="None"></option> -->
  							<% @recruiter.each do |recruiter| %>
- 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter_id %>><%= recruiter.state %> - <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %> - <%= recruiter.id %></option>
+ 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter_id %>><%= recruiter.state %> - <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
  							<% end %>
  						</select>
  					</div>

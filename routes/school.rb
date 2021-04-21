@@ -70,7 +70,7 @@ get '/arng/schools/:id/school_report/?' do
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
   @school.presentations = Presentation.all(:school_id => @school.id)
-  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :class_date => params[:presentation])
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :created_on => params[:presentation])
   
   erb :"/arng/schools/school_report"
 end

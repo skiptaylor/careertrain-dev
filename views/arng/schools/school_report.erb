@@ -33,7 +33,7 @@
 						<option value=""></option>
 							<% @school.presentations.each do |pres| %>
 							<% if pres.school_id = params[:id] %>
-						<option value="<%= pres.class_date %>" <%= 'selected' if params[:presentation] = pres.class_date %>><%= format_american_day(pres.class_date) %> - <%= pres.school_id %> - <%= params[:id] %>
+						<option value="<%= pres.class_date %>" <%= 'selected' if params[:presentation] = pres.class_date %>><%= format_american_day(pres.class_date) %> 
 						
 						<% @school.class_date = pres.class_date %><% @school.save %></option>
 							<% end %>
