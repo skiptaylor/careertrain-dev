@@ -50,7 +50,7 @@
 				
 				<div class="row" style="margin-top: 2em;">
 					<div class="col">
-
+						<form method="post">
 						<p><strong>Summary Report</strong></p>
 						
 						<p><a href="/arng/schools/<%= @school.id %>/summary_report" class="btn btn-success">Export</a></p>
@@ -58,7 +58,7 @@
 						<!-- <p><a href="<%= request.url %><%= params.count > 0 ? '&export=true' : '?export=true' %>" class="btn btn-success" >Export</a>
 						</p> -->
 					</div>
-					<form method="post">
+					
 					<div class="col">
 						<p><strong>Individual Reports</strong></p>
 						<p><a href="/arng/schools/<%= @school.id %>/ind_report" class="btn btn-success" >Export</a></p>
@@ -82,12 +82,13 @@
 					<% @school.students.each do |student| %>
 					
 					<% if params[:presentation] = student.created_on %>
+					
 					<tr>
 						<td>
 							<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %> <!-- - <%= student.created_on %> -->
 						</td>
 						<td>
-							<%= student.school_password %> <!-- - <%= student.school_id %> - <%= params[:presentation] %> -->
+							<%= student.school_password %> - <%= student.school_id %> - <%= params[:presentation] %>
 						</td>
 						<td> 
 							<%= format_american_day(student.created_on) %>

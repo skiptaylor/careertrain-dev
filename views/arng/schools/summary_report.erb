@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+   <meta charset="utf-8" />
+  	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
    <link href="/css/bootstrap.min.css" rel="stylesheet">
   	<link href="/css/bootstrap-reboot.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-grid.min.css" rel="stylesheet">
@@ -131,7 +133,7 @@
 				<p class="header1">Summary Report</p>
 				<p style="text-align: center; font-size: 16px;"><strong><%= @school.school_name %></strong> &nbsp; <%= @school.school_city %> <%= @school.school_state %> &nbsp;&bull;&nbsp; <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %> &nbsp;&bull;&nbsp; <b>Class Date:</b> <%= @school.class_date %></p>
 				 
-				<% if @school.students.each do |student| %>  
+				<% @school.students.each do |student| %>
 				
 				<% if params[:presentation] = student.created_on %>
 				
@@ -168,7 +170,7 @@
 				
 				<% end %>
 				
-				<% end %>
+				
 			
 			</div>
 		</div>
