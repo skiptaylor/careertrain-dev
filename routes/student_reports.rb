@@ -81,14 +81,14 @@ post '/student/reports/create/?' do
               @student.school_id = school.id
               @student.save
             
-              unless (@presentation = Presentation.first(:school_password => params[:school_password])) && (@presentation = Presentation.first(:class_date => params[:class_date]))
-                 
+              unless (@presentation = Presentation.first(:school_password => params[:school_password])) && (@presentation = Presentation.first(:class_date => Date.today.strftime("%Y-%m-%d")))
+                
                   @presentation = Presentation.create(
                   :school_id  => @student.school_id,
                   :class_date  => @student.created_on,
-                  :school_password  => @student.school_password
+                  :school_password  => @student.school_password,
+                  :id => @student.presentation_id
                   )
-                  @presentation.id = @student.presentation_id
                   
               end
               
@@ -200,7 +200,7 @@ post '/student/reports/:id/edit/?' do
   if school = School.first(:school_password => params[:school_password])
     
   student = Student.get(params[:id]).update(
-    :school_id => school.id
+    :school_id => school.id   
   )
   
   student = Student.get(params[:id]).update(
@@ -489,4 +489,4 @@ get "/student/reports/:id/ex_scores_full/?" do
 end
 
 
-
+# Date.today.strftime("%Y-%m-%d")

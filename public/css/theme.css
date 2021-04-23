@@ -493,11 +493,10 @@ div#alert {
 
 
 div#ground	{
-	/*background-image: url("../img/CDe-ground.jpg");*/
 	background-image: url("../img/eCDweb.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: top center;
+	background-position: center center;
 	position: relative;
    -webkit-transition: all .3s ease-in-out;
         -o-transition: all .3s ease-in-out;

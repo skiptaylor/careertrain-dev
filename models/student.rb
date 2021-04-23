@@ -24,6 +24,7 @@ class Student
   property :phone, String
   property :class_date, Date
   property :school_password, String
+  property :school_id, String
   property :sub_code, String
   property :score1, String
   property :score2, String
