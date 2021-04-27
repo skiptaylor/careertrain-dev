@@ -231,14 +231,15 @@
 			<form method="post">
 			<button type="submit" class="hidden-print" style="float: right;">Export</button>
 			</form>
-			
+			<p style="float: right; margin-top:12px;"><a onclick="goBack()" class="button">Back</a></p>
 		<img src="/img/arng_4cp_cta_camo.png" style="float: right; margin: 12px 24px;" width="80px">
 		
 		<img src="/img/eCareerDirection-logo-black.svg" style="margin-top:42px;" width="240px">
+		
 		  
 		<hr />
 		
-		<p class="lead">Report for <%= @student.first_name %> <%= @student.last_name %> at <%= @student.school.school_name %></p>
+		<p class="lead">Report for <%= @student.first_name %> <%= @student.last_name %></p>
 		
 		<h1>Careers and Occupations Guide</h1>
 		<p><small>Support Manual for</small><br />

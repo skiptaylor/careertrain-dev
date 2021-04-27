@@ -199,9 +199,9 @@ post '/student/reports/:id/edit/?' do
   
   if school = School.first(:school_password => params[:school_password])
     
-  student = Student.get(params[:id]).update(
-    :school_id => school.id   
-  )
+  # student = Student.get(params[:id]).update(
+  #   :school_id => school.id
+  # )
   
   student = Student.get(params[:id]).update(
   :email            => params[:email],
