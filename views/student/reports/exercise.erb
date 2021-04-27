@@ -95,17 +95,19 @@
 	  var lastCheckedAt = $video.data('lastcheck') || 0;
 	  $video.data('lastcheck', this.currentTime);
 	  
+	 $("input").on("click", function() {
+	     $("button#quest").attr("disabled", false);
+	 });
+	  
 	  if (this.currentTime >= 0 && lastCheckedAt < 0) {
 		  this.play();
 		  $('button#quest').show();
-		 
 		  
   	  } else if (this.currentTime >= 3.8 && lastCheckedAt < 3.8) {
 		  this.pause();
   	    $('button#quest').text('Submit').show();
 	    $("div#101").show();
-		
-  	  } else if (this.currentTime >= 8.2 && lastCheckedAt < 8.2) {
+	  } else if (this.currentTime >= 8.2 && lastCheckedAt < 8.2) {
 		  this.pause();
   	    $('button#quest').text('Submit').show();
 	   $('div#102').show();
@@ -358,18 +360,16 @@
   	  });
 	});
 	
-	
-
 	$('button#quest').click(function() {
 	  video.play();
 	  
+	  $('div.spoon').hide();
 	  $('button#quest').hide();
-	  $('div.spoon').hide(); return false;
+	  $('button#quest').attr("disabled", true); return false;
+	  
 	});
 	
-	
 </script>
-
 					
 <style>
 	.checker {
