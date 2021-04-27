@@ -251,9 +251,9 @@ get "/student/reports/:id/report/?" do
  if @student.class_date == nil
    @student.class_date = @student.created_on
    @student.save
-   if settings.production? 
-     Email.welcome(student.email, student.first_name, student.last_name)
-   end
+   # if settings.production?
+#      Email.welcome(@student.email, @student.first_name, @student.last_name)
+#    end
 
  end
   
@@ -346,7 +346,7 @@ get "/student/reports/:id/scores/?" do
 end
 
 get "/student/reports/:id/ex_scores/?" do
-  @school = School.all
+  @school = School.get(params[:school_id])
   @exercise = Exercise.get(params[:exercise_id])
   @student = Student.get(params[:id])
     
