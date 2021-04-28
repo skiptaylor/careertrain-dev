@@ -43,7 +43,7 @@
 						<hr />
 						<span style="font-size: 1.2rem;"><%= c.school_name %></span> &nbsp; <small><%= "(Not Activated)" unless c.active %></small><br />
 						<%= c.school_city %> <%= c.school_state %> &nbsp;<%= c.school_zip %> <a href="/arng/schools/<%= c.id %>/edit" class="btn btn-small" style="float: right;">Edit</a> <% unless c.active %><% else %><br />
-						School Password &nbsp;&nbsp;<span class="password-show"><%= c.school_password %></span> &nbsp; &nbsp; &nbsp; <% end %><br />Recruiter: <strong><%= c.recruiter.rank %> <%= c.recruiter.first_name %> <%= c.recruiter.last_name %></strong>
+						School Password &nbsp;&nbsp;<span class="password-show"><%= c.school_password %></span> &nbsp; &nbsp; &nbsp; <% end %><!-- <br />Recruiter: <strong><%= c.recruiter.rank %> <%= c.recruiter.first_name %> <%= c.recruiter.last_name %></strong> -->
 					<% end %>
 				</p> 
 				<% end %>
@@ -57,7 +57,7 @@
 					
 					
 				<!-- <p style="line-height: 1.3em;">If your school is listed as <strong>Not Activated</strong>, use the edit button next to school to finish registration. Call 888-326-9229 with problems.</p> -->
-				<p style="color: #08297b; font-size: 1.15em; font-weight: bold;">Once your school is active and you are selected as recruiter it will show in the School Accounts list below.</p>
+				<p style="color: #08297b; font-size: 1.15em; font-weight: bold;">Once your are selected as recruiter and school is active it will show in the School Accounts list below.</p>
 			</div>
 		
 		
