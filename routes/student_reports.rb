@@ -487,6 +487,3 @@ get "/student/reports/:id/ex_scores_full/?" do
  end
 
 end
-
-
-# Date.today.strftime("%Y-%m-%d")

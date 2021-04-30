@@ -240,7 +240,7 @@ post "/student/resume/reset/?" do
   unless params[:email] == ''
     if student = Student.first(:email => params[:email])
       Email.reset(student.email, student.password)
-      redirect "/student/reports/report/report_profile"
+      redirect "/student/reports/signin"
     else
       flash[:alert] = 'We can\'t find an account with that email address. Maybe you need to create one or try again.'
       erb :"student/resume/reset"
