@@ -70,7 +70,10 @@ get '/arng/schools/:id/school_report/?' do
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
   @school.presentations = Presentation.all(:school_id => @school.id)
-  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :created_on => params[:presentation])
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :class_date => params[:presentation])
+     
+    @school.class_date = params[:presentation]
+    @school.save
   
   erb :"/arng/schools/school_report"
   
@@ -80,7 +83,7 @@ get '/arng/schools/:id/summary_report/?' do
   auth_recruiter
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
-  @school.presentations = Presentation.all(:school_id => @school.id)
+  @school.presentations = Presentation.all(:school_id => @school.id, :class_date => params[:presentation])
   @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
   
   erb :'arng/schools/summary_report', layout: false
@@ -123,6 +126,7 @@ get '/arng/schools/:id/ind_report/?' do
   auth_recruiter
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
+  @school.presentations = Presentation.all(:school_id => @school.id)
   @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
   
   erb :'arng/schools/ind_report', layout: false
@@ -133,7 +137,7 @@ post '/arng/schools/:id/ind_report/?' do
   auth_recruiter
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
-  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '', :class_date => params[:presentation])
   
   PDFKit.configure do |config|
     config.default_options = {

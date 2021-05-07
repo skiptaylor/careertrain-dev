@@ -15,8 +15,7 @@
 					<p><%= @school.school_address1 %> <%= @school.school_address2 %>
 						<br />
 						<%= @school.school_city %>, <%= @school.school_state %> &nbsp;<%= @school.school_zip %>
-						<br />
-						<%= @school.class_date %>
+						
 					</p>
 					<p>
 						<strong>School Password:</strong> &nbsp; <%= @school.school_password %> <br />
@@ -27,17 +26,17 @@
 			<div class=" col-md-7">
 				
 				<form method="get" id="school_report">
-					<p><strong>Select class date</strong></p>
+					<p><strong></strong></p>
 					<p>
 					<select type="text" id="presentation" name="presentation" class="form-control col-sm-6" value="<%= @presentation %>">
-						<option value=""></option>
+						<option value="">Select Class Date</option>
 							<% @school.presentations.each do |pres| %>
-							<% if pres.school_id = params[:id] %>
-						<option value="<%= pres.class_date %>" <%= 'selected' if params[:presentation] = pres.class_date %>><%= format_american_day(pres.class_date) %> 
+							
+						<option value="<%= pres.class_date %>" <%= 'selected' if pres.class_date == @school.class_date %>><%= format_day(pres.class_date) %></option>
 						
-						<% @school.class_date = pres.class_date %><% @school.save %></option>
 							<% end %>
-							<% end %>
+							
+							
 					</select>
 						<button type="submit" class="btn btn-primary pull-left" style="margin-left: 6px; margin-top: 14px;">Show</button>
 					</p>
@@ -45,23 +44,27 @@
 				</form>				
 				
 				
-				<p class="clear-both">&nbsp;<br /><br /></p>
+				<p class="clear-both" style="color: #08297b; font-size: 1.3em; padding-top: 5px;">&nbsp;&nbsp;&nbsp; <br /><br /></p>
 				
 				
 				<div class="row" style="margin-top: 2em;">
 					<div class="col">
 						<form method="post">
+						
+						<% unless params[:presentation] == "" %>
 						<p><strong>Summary Report</strong></p>
-						
 						<p><a href="/arng/schools/<%= @school.id %>/summary_report" class="btn btn-success">Export</a></p>
-						
+						<% end %>
 						<!-- <p><a href="<%= request.url %><%= params.count > 0 ? '&export=true' : '?export=true' %>" class="btn btn-success" >Export</a>
 						</p> -->
 					</div>
 					
 					<div class="col">
+						
+						<% unless params[:presentation] == "" %>
 						<p><strong>Individual Reports</strong></p>
 						<p><a href="/arng/schools/<%= @school.id %>/ind_report" class="btn btn-success" >Export</a></p>
+						<% end %>
 					</div>
 					</form>
 				</div>
@@ -74,14 +77,12 @@
 				
 				<table class="table table-sm table-striped table-condensed table-hover">
 					<tr class="table-success">
-						<th>Student &nbsp;&nbsp;<small>[ <%= @school.students.count %> ]</small></th>
+						<th>Student</th>
 						<th>School Password</th>
 						<th>Class Date</th>
 					</tr>
 					
 					<% @school.students.each do |student| %>
-					
-					<% if params[:presentation] = student.created_on %>
 					
 					<tr>
 						<td>
@@ -95,7 +96,6 @@
 						</td>
 						
 					</tr>
-					<% end %>
 					
 					<% end %>
 				</table>

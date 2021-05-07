@@ -143,14 +143,18 @@
 					</form>
 				</div>
 				 
-				<% if @school.students.sort_by(&:last_name).each do |student| %> 
 				
+				
+				
+				<% @school.students.each do |student| %>
+				
+				<% if student.created_on == @school.class_date %>
 				
 				<div style="page-break-after: always;"> </div> 
 					
 				<div style="float: right; clear: all;">
 
-					<strong>Class Date:</strong> &nbsp;&nbsp;<%= student.created_on.strftime("%m/%d/%Y") %>
+					<strong>Class Date:</strong> &nbsp;&nbsp;<%= format_day(@school.class_date) %>
 					<!-- <strong>Class Date:</strong> &nbsp;&nbsp;<%= @school.class_date.strftime("%m/%d/%Y") %> -->
 					<!-- <strong>Date:</strong> &nbsp;&nbsp;<%= Time.now.strftime("%m/%d/%Y") %> -->
 				</div>
@@ -201,9 +205,9 @@
 				
 				<!-- /page break -->
 				
-				
-				
 				<% end %>
+				
+				
 				
 			
 			</div>
