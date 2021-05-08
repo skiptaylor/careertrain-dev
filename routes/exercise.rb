@@ -71,15 +71,16 @@ post  "/student/reports/:id/exercise/?"  do
   exercise.save
   
   score = {
-    a:exercise.score_a,
-    b:exercise.score_b,
-    c:exercise.score_c,
-    d:exercise.score_d,
-    e:exercise.score_e,
-    f:exercise.score_f,
-    g:exercise.score_g,
+    
+    i:exercise.score_i,
     h:exercise.score_h,
-    i:exercise.score_i
+    g:exercise.score_g,
+    f:exercise.score_f,
+    e:exercise.score_e,
+    d:exercise.score_d,
+    c:exercise.score_c,
+    b:exercise.score_b,
+    a:exercise.score_a
   }
   
   score = score.sort_by { |k,v| v }
