@@ -250,7 +250,7 @@ get "/student/reports/:id/report/?" do
    @student.save
 
     if settings.production?
-      Email.welcome(student.email, student.first_name, student.last_name)
+      Email.welcome(@student.email, @student.first_name, @student.last_name)
     end
 
  end
