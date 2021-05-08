@@ -240,9 +240,6 @@ post '/student/reports/:id/edit/?' do
   end
 end
 
-
-
-
 get "/student/reports/:id/report/?" do
   @school = School.all
   @presentation = Presentation.all
@@ -251,9 +248,10 @@ get "/student/reports/:id/report/?" do
  if @student.class_date == nil
    @student.class_date = @student.created_on
    @student.save
-   # if settings.production?
-#      Email.welcome(@student.email, @student.first_name, @student.last_name)
-#    end
+
+    if settings.production?
+      Email.welcome(student.email, student.first_name, student.last_name)
+    end
 
  end
   
