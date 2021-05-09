@@ -249,10 +249,6 @@ get "/student/reports/:id/report/?" do
    @student.class_date = @student.created_on
    @student.save
 
-    if settings.production?
-      Email.welcome(@student.email, @student.first_name, @student.last_name)
-    end
-
  end
   
   erb :"/student/reports/report"
@@ -262,6 +258,10 @@ post "/student/reports/:id/report/?" do
   school = School.all
   presentation = Presentation.all
   student = Student.get(params[:id])
+  
+  if settings.production?
+    Email.welcome(student.email, student.first_name, student.last_name)
+  end
   
   unless params[:ex_score1] == params[:ex_score2]
     student.update(
