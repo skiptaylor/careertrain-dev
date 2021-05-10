@@ -259,10 +259,6 @@ post "/student/reports/:id/report/?" do
   presentation = Presentation.all
   student = Student.get(params[:id])
   
-  if settings.production?
-    Email.welcome(student.email, student.first_name, student.last_name)
-  end
-  
   unless params[:ex_score1] == params[:ex_score2]
     student.update(
       :ex_score1      => params[:ex_score1],

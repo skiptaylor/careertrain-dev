@@ -140,8 +140,17 @@ post  "/student/reports/:id/exercise/?"  do
     student.score2 = "i"
   end
   
-  
   student.save
+  
+  if settings.production?
+    if student.exercises.count < 2
+      Email.welcome(student.email, student.first_name, student.last_name)
+    end
+  else
+    if student.exercises.count < 2
+      flash[:alert] = 'Email would have been sent.'
+    end
+  end
     
   redirect "/student/reports/#{params[:id]}/report"
   
