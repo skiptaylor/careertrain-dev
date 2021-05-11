@@ -1,13 +1,15 @@
+<script type="text/javascript" src="/js/modal.js"></script>
+
 	<style>
 		div.vidiv {
-			font-size: 17px;
+			font-size: 15px;
 			line-height: 40px;
 			text-align: center;
 			margin: 9px 0 0 0;
 		}
 		div.vidiv a img {
 			opacity: 0.9;
-			border: 1px solid gray;
+			border: 1px solid #bcb5b2;
 		 -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 		    -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 		         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
@@ -23,7 +25,12 @@
 	
 <div class="container">	
 	<div class="row">  
-		<div class="col-md-12">
+		
+		
+		
+	</div>
+	<div class="row">  
+		<div class="col-md-12">	
 				<a href="/student/reports/report/report_profile" class="btn btn-small pull-right" style="margin-top: 12px;">My Profile</a>
 				<h1 class="page-header">Careers and Occupations Guide Report</h1>
 		</div>   <!-------	col 12   ------->
@@ -143,33 +150,261 @@
 		<div class="col-md-12">
 			<h3 style="margin-bottom: 20px; color: #08287a;">Watch videos for your two or three highest categories.</h3>
 		</div>   <!-------	col 12   ------->
-			<div class="col-md-4 vidiv"><a href="https://ecareerdirection.s3.us-east-2.amazonaws.com/outdoor.mp4"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/a-outdoor.jpg" width="99%" /></a><br /><em><strong>A</strong></em> - Outdoor</div>
 			
-			<div class="col-md-4 vidiv"><a href="https://ecareerdirection.s3.us-east-2.amazonaws.com/arts-comms.mp4" style="text-align: center;"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/b-arts-comms.jpg" width="99%x" /></a><br /><em><strong>B</strong></em> - Arts/Communications</div>
-			
-			<div class="col-md-4 vidiv"><a href="https://ecareerdirection.s3.us-east-2.amazonaws.com/business-management.mp4" style="text-align: center;"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/c-bus-manage.jpg" width="99%" /></a><br /><em><strong>C</strong></em> - Business/Management</div>
-			
-			<div class="col-md-4 vidiv"><a href="https://ecareerdirection.s3.us-east-2.amazonaws.com/clerical-administrative.mp4" style="text-align: center;"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/d-clerical-admin.jpg" width="99%" /></a><br /><em><strong>D</strong></em> - Clerical/Administrative</div>
-			
-			<div class="col-md-4 vidiv"><a href="https://ecareerdirection.s3.us-east-2.amazonaws.com/protective-military.mp4" style="text-align: center;"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/e-protect-military.jpg" width="99%" /></a><br /><em><strong>E</strong></em> - Protective/Military Service</div>
+		<div class="col-md-4 vidiv"><a data-toggle="modal" data-target="#vidModal0" data-whatever="" data-backdrop="static" data-keyboard="false"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/a-outdoor.jpg" width="100%" /></a>
+			<p style="text-align: center;"><em><strong>A</strong></em> - Outdoor</p>
+		</div>
+		
+		<div class="col-md-4 vidiv">
+			<a data-toggle="modal" data-target="#vidModal1" data-whatever="" data-backdrop="static" data-keyboard="false"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/b-arts-comms.jpg" width="100%" /></a>
+			<p style="text-align: center;"><em><strong>B</strong></em> - Arts/Communications</p>
+		</div>
+		
+		<div class="col-md-4 vidiv">
+			<a data-toggle="modal" data-target="#vidModal2" data-whatever="" data-backdrop="static" data-keyboard="false"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/c-bus-manage.jpg" width="100%" /></a>
+			<p style="text-align: center;"><em><strong>C</strong></em> - Business/Management</p>
+		</div>
+		
+		<div class="col-md-4 vidiv">
+			<a data-toggle="modal" data-target="#vidModal3" data-whatever="" data-backdrop="static" data-keyboard="false"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/d-clerical-admin.jpg" width="100%" /></a>
+			<p style="text-align: center;"><em><strong>D</strong></em> - Clerical/Administrative</p>
+		</div>
+		
+		<div class="col-md-4 vidiv">
+			<a data-toggle="modal" data-target="#vidModal4" data-whatever="" data-backdrop="static" data-keyboard="false"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/e-protect-military.jpg" width="100%" /></a>
+			<p style="text-align: center;"><em><strong>E</strong></em> - Protective/Military Service</p>
+		</div>
+		
+		<div class="col-md-4 vidiv">
+			<a data-toggle="modal" data-target="#vidModal5" data-whatever="" data-backdrop="static" data-keyboard="false"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/f-tech.jpg" width="100%" /></a>
+			<p style="text-align: center;"><em><strong>F</strong></em> - Technology</p>
+		</div>
+		
+		<div class="col-md-4 vidiv">
+			<a data-toggle="modal" data-target="#vidModal6" data-whatever="" data-backdrop="static" data-keyboard="false"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/g-public-service.jpg" width="100%" /></a>
+			<p style="text-align: center;"><em><strong>G</strong></em> - Public Service</p>
+		</div>
+		
+		<div class="col-md-4 vidiv">
+			<a data-toggle="modal" data-target="#vidModal7" data-whatever="" data-backdrop="static" data-keyboard="false"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/h-science-math.jpg" width="100%" /></a>
+			<p style="text-align: center;"><em><strong>H</strong></em> - Science/Mathematics</p>
+		</div>
+		
+		<div class="col-md-4 vidiv">
+			<a data-toggle="modal" data-target="#vidModal8" data-whatever="" data-backdrop="static" data-keyboard="false"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/i-social-help.jpg" width="100%" /></a>
+			<p style="text-align: center;"><em><strong>I</strong></em> - Social/Helping</p>
+		</div>
+	
+	
+	
+	
+	<div id="vidModal0" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="vidModalLabel">
+	  <div class="modal-dialog modal-xl" role="document">
+		  <div class="modal-content">
+			  <div class="modal-header" style="border: none; font-size: 1.2em; margin-top: 4px;"><em><strong>A</strong></em> - Outdoor
+				  <button aria-hidden="true" class="close" data-dismiss="modal" type="button"><p style="line-height: 9px; margin-top: 4px;">x</p></button>
+			  </div>
+			  <div class="modal-body">
+				  <video id="vid0" width="100%" height="100%" class="border shadow">
+					  <source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/outdoor.mp4" type="video/mp4" id="vid0">
+				  </video>
+			  </div>
+		  </div>
+		</div>
+	</div>
 
-			<div class="col-md-4 vidiv"><a href="https://ecareerdirection.s3.us-east-2.amazonaws.com/technology.mp4" style="text-align: center;"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/f-tech.jpg" width="99%" /></a><br /><em><strong>F</strong></em> - Technology</div>
-			
-			<div class="col-md-4 vidiv"><a href="https://ecareerdirection.s3.us-east-2.amazonaws.com/public-service.mp4" style="text-align: center;"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/g-public-service.jpg" width="99%" /></a><br /><em><strong>G</strong></em> - Public Service</div>
-			
-			<div class="col-md-4 vidiv"><a href="https://ecareerdirection.s3.us-east-2.amazonaws.com/science-math.mp4" style="text-align: center;"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/h-science-math.jpg" width="99%" /></a><br /><em><strong>H</strong></em> - Science/Mathematics</div>
-			
-			<div class="col-md-4 vidiv"><a href="https://ecareerdirection.s3.us-east-2.amazonaws.com/social-helping.mp4" style="text-align: center;"><img src="https://ecareerdirection.s3.us-east-2.amazonaws.com/video-thumbs/i-social-help.jpg"  width="99%x" /></a><br /><em><strong>I</strong></em> - Social/Helping</div>
-			
+	<div class="modal fade" id="vidModal1" tabindex="-1" role="dialog" aria-labelledby="vidModalLabel">
+	  <div class="modal-dialog modal-xl" role="document">
+	    <div class="modal-content">
+		  <div class="modal-header" style="border: none; font-size: 1.2em; margin-top: 4px;"><em><strong>B</strong></em> - Arts/Communications
+			  <button aria-hidden="true" class="close" data-dismiss="modal" type="button"><p style="line-height: 9px; margin-top: 4px;">x</p></button>
+		  </div>
+	      <div class="modal-body">
+			<video id="vid1" width="100%" height="100%" class="border shadow">
+			  <source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/arts-comms.mp4" type="video/mp4">
+			</video>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="modal fade" id="vidModal2" tabindex="-1" role="dialog" aria-labelledby="vidModalLabel">
+	  <div class="modal-dialog modal-xl" role="document">
+	    <div class="modal-content">
+		  <div class="modal-header" style="border: none; font-size: 1.2em; margin-top: 4px;"><em><strong>C</strong></em> - Business/Management
+			  <button aria-hidden="true" class="close" data-dismiss="modal" type="button"><p style="line-height: 9px; margin-top: 4px;">x</p></button>
+		  </div>
+	      <div class="modal-body">
+			<video id="vid2" width="100%" height="100%" class="border shadow">
+			  <source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/business-management.mp4" type="video/mp4">
+			</video>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="modal fade" id="vidModal3" tabindex="-1" role="dialog" aria-labelledby="vidModalLabel">
+	  <div class="modal-dialog modal-xl" role="document">
+	    <div class="modal-content">
+		  <div class="modal-header" style="border: none; font-size: 1.2em; margin-top: 4px;"><em><strong>D</strong></em> - Clerical/Administrative
+			  <button aria-hidden="true" class="close" data-dismiss="modal" type="button"><p style="line-height: 9px; margin-top: 4px;">x</p></button>
+		  </div>
+	      <div class="modal-body">
+			<video id="vid3" width="100%" height="100%" class="border shadow">
+			  <source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/clerical-administrative.mp4" type="video/mp4">
+			</video>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="modal fade" id="vidModal4" tabindex="-1" role="dialog" aria-labelledby="vidModalLabel">
+	  <div class="modal-dialog modal-xl" role="document">
+	    <div class="modal-content">
+		  <div class="modal-header" style="border: none; font-size: 1.2em; margin-top: 4px;"><em><strong>E</strong></em> - Protective/Military Service
+			  <button aria-hidden="true" class="close" data-dismiss="modal" type="button"><p style="line-height: 9px; margin-top: 4px;">x</p></button>
+		  </div>
+	      <div class="modal-body">
+			<video id="vid4" width="100%" height="100%" class="border shadow">
+			  <source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/protective-military.mp4" type="video/mp4">
+			</video>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="modal fade" id="vidModal5" tabindex="-1" role="dialog" aria-labelledby="vidModalLabel">
+	  <div class="modal-dialog modal-xl" role="document">
+	    <div class="modal-content">
+		  <div class="modal-header" style="border: none; font-size: 1.2em; margin-top: 4px;"><em><strong>F</strong></em> - Technology
+			  <button aria-hidden="true" class="close" data-dismiss="modal" type="button"><p style="line-height: 9px; margin-top: 4px;">x</p></button>
+		  </div>
+	      <div class="modal-body">
+			<video id="vid5" width="100%" height="100%" class="border shadow">
+			  <source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/technology.mp4" type="video/mp4">
+			</video>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="modal fade" id="vidModal6" tabindex="-1" role="dialog" aria-labelledby="vidModalLabel">
+	  <div class="modal-dialog modal-xl" role="document">
+	    <div class="modal-content">
+		  <div class="modal-header" style="border: none; font-size: 1.2em; margin-top: 4px;"><em><strong>G</strong></em> - Public Service
+			  <button aria-hidden="true" class="close" data-dismiss="modal" type="button"><p style="line-height: 9px; margin-top: 4px;">x</p></button>
+		  </div>
+	      <div class="modal-body">
+			<video id="vid6" width="100%" height="100%" class="border shadow">
+			  <source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/public-service.mp4" type="video/mp4">
+			</video>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="modal fade" id="vidModal7" tabindex="-1" role="dialog" aria-labelledby="vidModalLabel">
+	  <div class="modal-dialog modal-xl" role="document">
+	    <div class="modal-content">
+		  <div class="modal-header" style="border: none; font-size: 1.2em; margin-top: 4px;"><em><strong>H</strong></em> - Science/Mathematics
+			  <button aria-hidden="true" class="close" data-dismiss="modal" type="button"><p style="line-height: 9px; margin-top: 4px;">x</p></button>
+		  </div>
+	      <div class="modal-body">
+			<video id="vid7" width="100%" height="100%" class="border shadow">
+			  <source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/science-math.mp4" type="video/mp4">
+			</video>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="modal fade" id="vidModal8" tabindex="-1" role="dialog" aria-labelledby="vidModalLabel">
+	  <div class="modal-dialog modal-xl" role="document">
+	    <div class="modal-content">
+		  <div class="modal-header" style="border: none; font-size: 1.2em; margin-top: 4px;"><em><strong>I</strong></em> - Social/Helping
+			  <button aria-hidden="true" class="close" data-dismiss="modal" type="button"><p style="line-height: 9px; margin-top: 4px;">x</p></button>
+		  </div>
+	      <div class="modal-body">
+			<video id="vid8" width="100%" height="100%" class="border shadow">
+			  <source src="https://ecareerdirection.s3.us-east-2.amazonaws.com/social-helping.mp4" type="video/mp4">
+			</video>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+		
 		
 	</div>   <!-------	row   ------->
+	
 </div>   <!-------	container   ------->
 
 <script  type="text/javascript">
 	var frmvalidator = new Validator("report");
 	frmvalidator.addValidation("ex_score1","req","Please enter your 1st highest score");
 	frmvalidator.addValidation("ex_score2","req","Please enter your 2nd highest score");
-</script>
-	
 
+
+	$('#vidModal0').on('shown.bs.modal', function (event) {
+		$('#vid0')[0].play();
+	});
+	$('#vidModal0').on('hidden.bs.modal', function (event) {
+		$('#vid0')[0].pause();
+	});
 	
+	$('#vidModal1').on('shown.bs.modal', function (event) {
+		$('#vid1')[0].play();
+	});
+	$('#vidModal1').on('hidden.bs.modal', function (event) {
+		$('#vid1')[0].pause();
+	});
+	
+	$('#vidModal2').on('shown.bs.modal', function (event) {
+		$('#vid2')[0].play();
+	});
+	$('#vidModal2').on('hidden.bs.modal', function (event) {
+		$('#vid2')[0].pause();
+	});
+	
+	$('#vidModal3').on('shown.bs.modal', function (event) {
+		$('#vid3')[0].play();
+	});
+	$('#vidModal3').on('hidden.bs.modal', function (event) {
+		$('#vid3')[0].pause();
+	});
+	
+	$('#vidModal4').on('shown.bs.modal', function (event) {
+		$('#vid4')[0].play();
+	});
+	$('#vidModal4').on('hidden.bs.modal', function (event) {
+		$('#vid4')[0].pause();
+	});
+	
+	$('#vidModal5').on('shown.bs.modal', function (event) {
+		$('#vid5')[0].play();
+	});
+	$('#vidModal5').on('hidden.bs.modal', function (event) {
+		$('#vid5')[0].pause();
+	});
+	
+	$('#vidModal6').on('shown.bs.modal', function (event) {
+		$('#vid6')[0].play();
+	});
+	$('#vidModal6').on('hidden.bs.modal', function (event) {
+		$('#vid6')[0].pause();
+	});
+	
+	$('#vidModal7').on('shown.bs.modal', function (event) {
+		$('#vid7')[0].play();
+	});
+	$('#vidModal7').on('hidden.bs.modal', function (event) {
+		$('#vid7')[0].pause();
+	});
+	
+	$('#vidModal8').on('shown.bs.modal', function (event) {
+		$('#vid8')[0].play();
+	});
+	$('#vidModal8').on('hidden.bs.modal', function (event) {
+		$('#vid8')[0].pause();
+	});
+	
+</script>	
