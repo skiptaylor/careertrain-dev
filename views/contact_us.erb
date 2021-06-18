@@ -24,8 +24,16 @@
 			<input type="text" class="form-control" id="name" name="name" />
 		</div>
 	</div>
+	
 	<div class="form-row">
-		<div class="form-group col-md-6">
+		<div class="control-group col-md-6" style="margin-left: -1717px;">
+			<label for="email_name" id="email_name">Email name</label>
+			<input type="text" class="input-xlarge" id="email_name" name="email_name" />
+		</div>
+	</div>
+	
+	<div class="form-row">
+		<div class="form-group col-md-6" style="margin-top: -36px;">
 			<label for="email" id="email-group">Email</label>
 			<input type="email" class="form-control" id="email" name="email" />
 		</div>
@@ -59,6 +67,14 @@
 	</form>
 
 </div> <!------- container --------->
+
+<script>
+	document.ready(function() {
+ 		$("eform").submit(function() {
+			$("#email_name").val('');
+		});
+	});
+</script>
 
 <script>
 	document.getElementById("submit").disabled = true;
