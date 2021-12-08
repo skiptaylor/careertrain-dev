@@ -174,10 +174,11 @@
 				</div> -->
 				
 				<div class="form-row">
-					<div class="control-group">		
+					<div class="control-group">	
+						<h5 style="font-weight: 700; color: #e31400;">Box must be checked <br />to create password</h5>	
 						<label for="active"></label>
-						<input type="checkbox" name="active" id="active" <%= 'checked="checked"' if @school.active  %> /> <span style="font-size: 17px; padding: 0 0 0 5px;"><strong>Active</strong></span>
-						<br /><small>(activates school and creates password)</small>
+						<input type="checkbox" name="active" id="active" style="font-size: 2em;" <%= 'checked="checked"' if @school.active  %> /> <span style="font-size: 17px; padding: 0 0 0 5px;"><strong>Active</strong></span>
+						<br />(activates school and creates password)
 					</div>
 				</div>
 				

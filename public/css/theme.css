@@ -503,6 +503,13 @@ div#ground	{
            transition: all .3s ease-in-out;
 }
 
+input	{
+	border: 1px solid #92bd97 !important;
+	outline: 0px solid #92bd97 !important;
+   -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+           outline-radius: 6px;
+}
 
 .logo-e	{
 	font-style: italic;

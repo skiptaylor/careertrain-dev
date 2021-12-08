@@ -18,6 +18,8 @@
 			
 				<div class="col-7" style="text-align: center; margin-top: -76px;">
 					
+					<input type="submit" id="account" class="btn btn-large btn-success" style="margin: -62 -40px 0 0; font-size: 2em;  display: none; text-align: center; float: right;" value="Get Your Scores" />
+					
 				<form method="post" id="exercise">					
 					
 				<% @ie.sort_by(&:position_number).each do |ie| %>
@@ -57,10 +59,12 @@
 				</div>   <!-------	col 7   ------->
 				
 				<div class="col-5" style="text-align: center; margin-top: -52px;">
+					
+					
 				
 				 <button id="quest" class="btn btn-large btn-success" style="margin-top: -26; font-size: 2em; float:left;">Start</button>
 
-				<input type="submit" id="account" class="btn btn-large btn-success" style="margin-top: -26; font-size: 2em; float:left; display: none;" value="Get Your Scores" />
+				
 				
 				</form>
 				

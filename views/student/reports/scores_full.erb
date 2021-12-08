@@ -228,13 +228,17 @@
 		
 		<div style="page-break-after: always;">
 			
+			
 			<form method="post">
-			<button type="submit" class="hidden-print" style="float: right;">Export</button>
+			<button type="submit" class="hidden-print btn btn-success" style="float: right; margin-top: 12px;">Create PDF</button>
 			</form>
-			<p style="float: right; margin-top:12px;"><a onclick="goBack()" class="button">Back</a></p>
-		<img src="/img/arng_4cp_cta_camo.png" style="float: right; margin: 12px 24px;" width="80px">
+			
+			<a onclick="history.back()" class="hidden-print btn" style="float: right; margin: 12px 16px 0 12px;">Back</a>
+			<br /><br />
+			
+		<img src="/img/arng_4cp_cta_camo.png" style="float: right; margin: 16px 0 16px 12px;" width="80px">
 		
-		<img src="/img/eCareerDirection-logo-black.svg" style="margin-top:42px;" width="240px">
+		<img src="/img/eCareerDirection-logo-black.svg" style="margin-top:8px;" width="240px">
 		
 		  
 		<hr />
@@ -250,6 +254,7 @@
 		<strong>James C. Shafe</strong>, President, Career Training Concepts, Inc.<br />
 		<strong>Gary L. Arthur, Ed.D.</strong>, Professor, Counseling & Psychological Services, Georgia State University<br />
 		<strong>Matthew Morgan, A.B.J.</strong>, Editor & Research Specialist, Career Training Concepts, Inc.<br />
+		<strong>Jeff Musumeche, MSHRM,</strong> Program Management, Career Training Concepts<br />
 		<strong>Edward M. Buckner, Ph.D.</strong>, Educational Consultant, The Research Group, Inc.<br />
 		<strong>Amy Shaye, Ed.S.</strong>, The Research Group, Inc.<br />
 		<strong>Jeff Porterfield, Ph.D.</strong>, Associate Professor, Clark Atlanta University<br />
@@ -313,7 +318,7 @@
       <hr />
 		  <%= @cat2 %>
     <% end %>
-    
+	 
 		<!-- <hr />
 		<center><a href="http://www.nationalguard.com/careers" target="blank"><img src="/img/ads/CareerOpportunities.gif" /></a></center> -->
     <% if @report1 %>
