@@ -144,11 +144,11 @@ post  "/student/reports/:id/exercise/?"  do
   
   if settings.production?
     if student.exercises.count == 1
-      Email.welcome(student.email, student.first_name, student.last_name)
+      Email.welcome(student.email, student.first_name, student.last_name, exercise.high1, exercise.high2)
     end
   else
     if student.exercises.count == 1
-      flash[:alert] = 'Email would have been sent.'
+      flash[:alert] = 'Email would have been sent in production mode.'
     end
   end
     
