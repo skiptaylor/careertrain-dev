@@ -144,7 +144,7 @@ post  "/student/reports/:id/exercise/?"  do
   
   if settings.production?
     if student.exercises.count == 1
-      Email.welcome(student.email, student.first_name, student.last_name, exercise.high1, exercise.high2)
+      Email.welcome(student.email, student.first_name, student.last_name, student.score1, student.score2)
     end
   else
     if student.exercises.count == 1
