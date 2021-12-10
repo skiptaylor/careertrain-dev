@@ -283,8 +283,8 @@ input[type="button"].btn-block {
 .btn-secondary {
    color: #ffffff;
    text-shadow: none;
-   background-color: #565e67;
-   border-color: #2e3337;
+   background-color: #909dac;
+   border-color: #909dac;
 }
 
 .btn-secondary:hover,
@@ -294,8 +294,8 @@ input[type="button"].btn-block {
 .btn-secondary.disabled,
 .btn-secondary[disabled] {
   color: #ffffff;
-  background-color: #2e3337;
-  *background-color: #2e3337;
+  background-color: #808c9a;
+  *background-color: #808c9a;
 /*-webkit-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	-moz-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	 	  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);*/
@@ -304,7 +304,7 @@ input[type="button"].btn-block {
 
 .btn-secondary:active,
 .btn-secondary.active {
-  background-color: #565e67 \9;
+  background-color: #7b8693 \9;
 /*-webkit-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	-moz-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	 	  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);*/

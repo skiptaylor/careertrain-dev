@@ -417,6 +417,8 @@ select.year {
            border-radius: 22px;
 }
 
+
+
 .alert	{
 	position: absolute;
 	top: 10%;
@@ -503,7 +505,7 @@ div#ground	{
            transition: all .3s ease-in-out;
 }
 
-input	{
+input, textarea, select	{
 	border: 1px solid #92bd97 !important;
 	outline: 0px solid #92bd97 !important;
    -webkit-border-radius: 6px;

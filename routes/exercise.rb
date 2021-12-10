@@ -143,11 +143,11 @@ post  "/student/reports/:id/exercise/?"  do
   student.save
   
   if settings.production?
-    if student.exercises.count < 2
+    if student.exercises.count == 1
       Email.welcome(student.email, student.first_name, student.last_name)
     end
   else
-    if student.exercises.count < 2
+    if student.exercises.count == 1
       flash[:alert] = 'Email would have been sent.'
     end
   end
