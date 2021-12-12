@@ -304,6 +304,7 @@ input[type="button"].btn-block {
 
 .btn-secondary:active,
 .btn-secondary.active {
+	color: #ffffff;
   background-color: #7b8693 \9;
 /*-webkit-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	-moz-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
