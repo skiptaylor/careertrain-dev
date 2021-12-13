@@ -127,9 +127,12 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<form method="post">
-				<button type="submit" class="hidden-print btn btn-small" style="float: right; margin-top: 6px;">Export</button>
-				</form>
+				
+				<div class="hidden-print" style="margin: 2em 0 2em 0;">
+					<form method="post">
+				<button type="submit" class="hidden-print btn" style="float: right; margin-top: 6px; margin-left: 12px;">Create PDF</button></form><button onclick="history.back()" class="hidden-print btn btn-secondary" style="color: white; float: right; margin-top: 6px;">Back</button><br />
+				</div>
+				
 				<p class="header1">Summary Report</p>
 				<p style="text-align: center; font-size: 16px;"><strong><%= @school.school_name %></strong> &nbsp; <%= @school.school_city %> <%= @school.school_state %> &nbsp;&bull;&nbsp; <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %> &nbsp;&bull;&nbsp; <b>Class Date:</b> <%= @school.class_date %></p>
 				 

@@ -421,8 +421,7 @@ post "/student/reports/:id/scores_full/?" do
       :margin_top       => '0.25in',
       :margin_right     => '0.25in',
       :margin_bottom    => '0.25in',
-      :margin_left      => '0.25in',
-      :javascript_delay => 1000
+      :margin_left      => '0.25in'
     }
   end
   

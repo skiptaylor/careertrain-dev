@@ -146,7 +146,8 @@ post '/arng/schools/:id/ind_report/?' do
       :margin_top       => '0.25in',
       :margin_right     => '0.25in',
       :margin_bottom    => '0.25in',
-      :margin_left      => '0.25in'
+      :margin_left      => '0.25in',
+      :javascript_delay => 001
     }
   end
   
