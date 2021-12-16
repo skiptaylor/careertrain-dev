@@ -120,7 +120,7 @@ what you want to do when you are an adult.</p>
 	</tr>
 </table>
 
-<p><strong>Here are some career possibilities for you to
+<p style="page-break-before: always;"><strong>Here are some career possibilities for you to
 explore:</strong></p>
 
 <table width="100%" cellpadding="20" cellspacing="0" border="0">
