@@ -116,8 +116,8 @@
  					<div class="control-group">
  						<label for="recruiter_id">Recruiter</label>
  						<select type="text" id="recruiter_id" name="recruiter_id" class="form-control" value="<%= @school.recruiter_id %>">
- 								<option value="None"></option>
- 							<% @recruiter.each do |recruiter| %>
+ 								<option>No recruiter selected</option>
+ 							<% @recruiter.sort_by(&:state).each do |recruiter| %>
  								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter_id %>><%= recruiter.state %> - <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
  							<% end %>
  						</select>
