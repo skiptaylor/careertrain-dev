@@ -65,28 +65,134 @@ get '/nac/?' do
 	erb :'/nac'
 end
 
-get '/admin/admin/?' do
-	erb :'/admin/admin'
-end
-
 get '/about/?' do
 	erb :'/about'
 end
 
-get '/admin/admin_edit/?'  do
-  
-  erb :"/admin/admin_edit"
-end
 
-post '/admin/admin/?' do
-  if (params[:password].strip.downcase == 'coconutisland')
-    session[:admin] = true
-    redirect '/admin/admin_edit'
+
+get "/admin/signin/?" do
+  
+  unless session[:admin]
+    
+  # session[:admin] = nil
+  # session.clear
+  @admin = Admin.all
+  
+  erb :"admin/signin"
+  
   else
-    flash[:alert] = 'Yikes! Try typing that again.'
-    redirect '/admin/admin'
+  
+  flash[:alert] = 'You are already signed in.'
+  redirect "/admin/admin_edit"
+
   end
 end
+
+post '/admin/signin/?' do
+  
+  params[:email].strip!
+  params[:password].strip!
+  
+  unless params[:email] == ''
+
+    if admin = Admin.first(:email => params[:email])
+      if (admin.password == params[:password])
+        session[:admin] = admin.id
+        flash[:alert] = 'Welcome back! You are now signed in.'
+        redirect "/admin/admin_edit"
+      else
+        flash[:alert] = 'Your password is incorrect.'
+        erb :"admin/signin"
+      end
+    else
+      flash[:alert] = 'We can\'t find an account with that email address. Maybe you need to create one.'
+      erb :"admin/signin"
+    end
+    
+  else
+    flash[:alert] = 'You must enter a valid email.'
+    erb :"admin/signin"
+  end
+  
+end
+
+
+get '/admin/admin/?' do
+  auth_admin
+  @admin = Admin.all
+  
+	erb :'/admin/admin'
+end
+
+get '/admin/admin_edit/?' do
+  
+  @admin = Admin.all
+  
+	erb :'/admin/admin_edit'
+end
+
+
+get '/admin/new/?'  do
+  auth_admin
+  @admin = Admin.new
+  
+  erb :"/admin/new"
+end
+
+post '/admin/new/?' do
+  auth_admin
+  admin = Admin.create(
+    :email        => params[:email],
+    :password     => params[:password],
+    :first_name   => params[:first_name],
+    :last_name    => params[:last_name],
+    :phone        => params[:phone]
+  )
+
+  redirect "/admin/admin"
+end
+
+get '/admin/:id/edit/?'  do
+  auth_admin
+  @admin = Admin.get(params[:id])
+  
+  erb :"/admin/edit"
+end
+
+post '/admin/:id/edit/?' do
+  auth_admin
+  admin = Admin.get(params[:id])
+  admin.update(
+    :email        => params[:email],
+    :password     => params[:password],
+    :first_name   => params[:first_name],
+    :last_name    => params[:last_name],
+    :phone        => params[:phone]
+  )
+
+  redirect "/admin/admin"
+end
+
+get '/admin/:id/delete?'  do
+  auth_admin
+  admin = Admin.get(params[:id])
+  admin.destroy
+  
+  erb :"/admin/admin"
+end
+
+
+
+# post '/admin/admin/?' do
+#   if (params[:password].strip.downcase == 'coconutisland')
+#     session[:admin] = true
+#     redirect '/admin/admin_edit'
+#   else
+#     flash[:alert] = 'Yikes! Try typing that again.'
+#     redirect '/admin/admin'
+#   end
+# end
 
 get "/admin/signout/?"  do
   session[:admin] = nil

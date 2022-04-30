@@ -119,7 +119,7 @@
 		<div class="container">
 			<div class="row d-block d-md-none">
 				<div class="col-12" style="line-height: 16px;">
-					<p>1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc.<br />All rights reserved. &nbsp; <span class="under-link"><a href="/admin/admin" >&nbsp;Admin&nbsp;</a></span> 
+					<p>1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc.<br />All rights reserved. &nbsp; <span class="under-link"><a href="/admin/signin" >&nbsp;Admin&nbsp;</a></span> 
 						<br >
 					<span style="color: #af4532;"><strong><%= session[:admin] %> / <%= session[:recruiter] %> / <%= session[:student] %></strong></span>
 					</p>
@@ -132,9 +132,9 @@
 					<a href="/about" class="btn">About CTC</a>
 				</div>
 				<div class="col-6" style="line-height: 16px;">
-					<p>1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc.<br />All rights reserved. &nbsp; <span class="under-link"><a href="/admin/admin" >&nbsp;Admin&nbsp;</a></span> 
-					<br >
-					<!-- <span style="color: #af4532;"><strong><%= session[:admin] %> / <%= session[:recruiter] %> / <%= session[:student] %></strong></span> -->
+					<p>1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc.<br />All rights reserved. &nbsp; <span class="under-link"><a href="/admin/signin" >&nbsp;Admin&nbsp;</a></span> 
+					<br /><br />
+					<span style="color: #0432ff; font-size: 1.2em;"><strong><%= session[:admin] %>  <% if session[:recruiter] %>Recruiter: <%= @recruiter.last_name %>(<%= @recruiter.id %>)<% end %>  <% if session[:student] %>Student: <%= @student.last_name %>(<%= @student.id %>)<% end %></strong></span>
 					</p>
 				</div>
 				<div class="col-3" style="text-align: right;">
@@ -161,7 +161,7 @@
 			 			$("div#alert").fadeOut("slow", function () {
 			 			$("div#alert").remove();
 			 	      });
-			 		}, 6000);
+			 		}, 5000);
 			 	});
 		   
 			}).call(this);	
