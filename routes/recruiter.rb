@@ -5,6 +5,16 @@ get "/recruiters/recruiters/?" do
   erb :"/recruiter/recruiters"
 end
 
+
+get "/recruiters/noaccount/?"  do
+  @state = State.all
+  @recruiter = Recruiter.new
+  erb :'/recruiter/noaccount'
+end
+
+
+
+
 get "/recruiters/new/?"  do
   @state = State.all
   @recruiter = Recruiter.new
