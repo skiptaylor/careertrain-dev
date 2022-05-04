@@ -8,7 +8,7 @@ end
 
 get "/recruiters/noaccount/?"  do
   @state = State.all
-  @recruiter = Recruiter.all
+  @recruiter = Recruiter.new
   
   erb :'/recruiter/noaccount'
 end
