@@ -8,11 +8,21 @@ end
 
 get "/recruiters/noaccount/?"  do
   @state = State.all
-  @recruiter = Recruiter.new
+  @recruiter = Recruiter.all
+  
   erb :'/recruiter/noaccount'
 end
 
-
+post "/recruiters/noaccount/?"  do
+  Pony.mail(
+   headers: { 'Content-Type' => 'text/html' },
+   to: "#{params[:email]}",
+   from: 'noreply@eCareerDirection.com',
+   subject: "You email is verified",
+   body: "Thank you. Your email is verified. Go here to continue registrtation. <a href="https://www.ecareerdirection.com/recruiters/new">Register</a>"
+   )
+  # redirect '/recruiters/new'
+end
 
 
 get "/recruiters/new/?"  do
@@ -21,7 +31,7 @@ get "/recruiters/new/?"  do
   erb :'/recruiter/recruiter_new'
 end
 
-post  "/recruiters/new/?"  do 
+post "/recruiters/new/?"  do 
     
   state = State.all
   recruiter = Recruiter.create(
