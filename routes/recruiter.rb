@@ -19,7 +19,7 @@ post "/recruiters/noaccount/?"  do
    to: "#{params[:email]}",
    from: 'noreply@eCareerDirection.com',
    subject: "You email is verified",
-   body: "Thank you. Your email is verified. Go here to continue registrtation. <a href="https://www.ecareerdirection.com/recruiters/new">Register</a>"
+   body: 'Thank you. Your email is verified. Go here to continue registration. <a href="https://www.ecareerdirection.com/recruiters/new">Register</a>'
    )
   # redirect '/recruiters/new'
 end
