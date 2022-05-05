@@ -14,16 +14,39 @@ get "/recruiters/noaccount/?"  do
 end
 
 post "/recruiters/noaccount/?"  do
+  state = State.all
+  recruiter = Recruiter.create(
+    :email            => params[:email]
+  )
+  
   Pony.mail(
-   headers: { 'Content-Type' => 'text/html' },
-   to: "#{params[:email]}",
-   from: 'noreply@eCareerDirection.com',
-   subject: "You email is verified",
-   body: 'Thank you. Your email is verified. Go here to continue registration. <a href="https://www.ecareerdirection.com/recruiters/new">Register</a>'
-   )
-  # redirect '/recruiters/new'
+    headers: { 'Content-Type' => 'text/html' },
+    to: "#{params[:email]}",
+    from: 'noreply@eCareerDirection.com',
+    subject: "Here is your registtration code.",
+    body: '<b>1234</b><br /><br />Thank you. Enter your registratrion code to continue.'
+    )
+    
+  redirect '/recruiters/{recruiter.id}/edit'
 end
 
+get "/recruiters/reg/?"  do
+  @state = State.all
+  @recruiter = Recruiter.get(params[:email])
+  
+  erb :'/recruiter/reg'
+end
+
+post "/recruiters/reg/?"  do
+  
+  recruiter = Recruiter.get(params[:email])
+  
+  if reg_code = '1234'
+    redirect '/recruiters/{recruiter.id}/edit'
+  else
+    flash[:alert] = 'Oops! That code is incorrect.'
+  end
+end
 
 get "/recruiters/new/?"  do
   @state = State.all

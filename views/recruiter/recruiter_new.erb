@@ -14,7 +14,7 @@
 			<div class="form-group col-md-6">
 				<label for="validationEmail">Email <%= params[:email] %></label>
 				
-				<input type="email" name="email" id="validationEmail" class="form-control" placeholder="You must use a valid .mil email" value="<%= @recruiter.email %>" required />
+				<input type="email" name="email" id="validationEmail" class="form-control" placeholder="You must use a valid .mil email" value="<%= params[:email] %>" required />
 				<div class="invalid-feedback">
 				  Please enter a valid .mil email.
 				</div>
