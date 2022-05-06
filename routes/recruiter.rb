@@ -7,16 +7,17 @@ end
 
 
 get "/recruiters/noaccount/?"  do
-  @state = State.all
+  
   @recruiter = Recruiter.new
   
   erb :'/recruiter/noaccount'
 end
 
 post "/recruiters/noaccount/?"  do
-  state = State.all
+ 
   recruiter = Recruiter.create(
-    :email            => params[:email]
+    :email    => params[:email],
+    :reg_code => params[:reg_code]
   )
   
   Pony.mail(
@@ -24,25 +25,29 @@ post "/recruiters/noaccount/?"  do
     to: "#{params[:email]}",
     from: 'noreply@eCareerDirection.com',
     subject: "Here is your registtration code.",
-    body: '<b>1234</b><br /><br />Thank you. Enter your registratrion code to continue.'
-    )
+    body: '<b>y5qz4</b><br /><br />Enter your registratrion code to continue.'
+  )
+  
+  reg_code = "y5qz4"
+  
+  recruiter.id = session[:recruiter]
     
-  redirect '/recruiters/{recruiter.id}/edit'
+  redirect '/recruiters/reg'
 end
 
 get "/recruiters/reg/?"  do
-  @state = State.all
-  @recruiter = Recruiter.get(params[:email])
+  
+  @recruiter = Recruiter.get(params[:id])
   
   erb :'/recruiter/reg'
 end
 
 post "/recruiters/reg/?"  do
   
-  recruiter = Recruiter.get(params[:email])
+  recruiter = Recruiter.get(params[:id])
   
-  if reg_code = '1234'
-    redirect '/recruiters/{recruiter.id}/edit'
+  if reg_code = 'y5qx4'
+    redirect '/recruiters/new'
   else
     flash[:alert] = 'Oops! That code is incorrect.'
   end
