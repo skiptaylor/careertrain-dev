@@ -46,7 +46,7 @@ post "/recruiters/reg/?"  do
   
   recruiter = Recruiter.get(params[:id])
   
-  if reg_code = 'y5qx4'
+  if reg_code == 'y5qx4'
     redirect '/recruiters/new'
   else
     flash[:alert] = 'Oops! That code is incorrect.'
