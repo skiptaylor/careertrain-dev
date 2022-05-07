@@ -19,7 +19,7 @@ class Recruiter
   property :zip, String
   property :phone, String
   property :ssnl4, Integer
-  property :reg_code, String
+  property :reg_code, String, default: "y5qz4"
   property :recruiter_status, Boolean, :default => false
   property :active, Boolean, :default => true
   

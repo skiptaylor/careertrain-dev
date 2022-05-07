@@ -12,9 +12,10 @@
 					
 	<div class="form-row">
 		<div class="form-group col-md-6">
-			<input type="reg_code" name="reg_code" class="form-control" value="1234" required />
+			<input type="reg_code" id="reg_code" name="reg_code" class="form-control" value="" required /><%= params[:reg_code] %>
 		</div>
 	</div>
+	<%= session[:recr] %>
 		
 	<div class="form-row">
 		<div class="form-group col-md-12">

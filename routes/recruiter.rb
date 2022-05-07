@@ -1,3 +1,5 @@
+enable :sessions
+
 get "/recruiters/recruiters/?" do
   auth_admin
   @state = State.all
@@ -8,52 +10,42 @@ end
 
 get "/recruiters/noaccount/?"  do
   
-  @recruiter = Recruiter.new
-  
   erb :'/recruiter/noaccount'
 end
 
 post "/recruiters/noaccount/?"  do
  
-  recruiter = Recruiter.create(
-    :email    => params[:email],
-    :reg_code => params[:reg_code]
-  )
   
-  Pony.mail(
-    headers: { 'Content-Type' => 'text/html' },
-    to: "#{params[:email]}",
-    from: 'noreply@eCareerDirection.com',
-    subject: "Here is your registtration code.",
-    body: '<b>y5qz4</b><br /><br />Enter your registratrion code to continue.'
-  )
+  session[:recr] = params[:email]
   
-  reg_code = "y5qz4"
-  
-  recruiter.id = session[:recruiter]
-    
+  # Pony.mail(
+  #   headers: { 'Content-Type' => 'text/html' },
+  #   to: "#{params[:email]}",
+  #   from: 'noreply@eCareerDirection.com',
+  #   subject: "Here is your registtration code.",
+  #   body: '<b>y5qz4</b><br /><br />Enter your registratrion code to continue.'
+  # )
+        
   redirect '/recruiters/reg'
 end
 
 get "/recruiters/reg/?"  do
-  
-  @recruiter = Recruiter.get(params[:id])
   
   erb :'/recruiter/reg'
 end
 
 post "/recruiters/reg/?"  do
   
-  recruiter = Recruiter.get(params[:id])
-  
-  if reg_code == 'y5qx4'
-    redirect '/recruiters/new'
-  else
-    flash[:alert] = 'Oops! That code is incorrect.'
+  if 
+    params[:reg_code] == "y5qz4" 
+  else 
+    flash[:alert] = 'Code is not valid. Tryt again.'
   end
+    
+  redirect '/recruiters/new'
 end
 
-get "/recruiters/new/?"  do
+get "/recruiters/new/?"  do  
   @state = State.all
   @recruiter = Recruiter.new
   erb :'/recruiter/recruiter_new'
@@ -63,7 +55,7 @@ post "/recruiters/new/?"  do
     
   state = State.all
   recruiter = Recruiter.create(
-    :email            => params[:email],
+    :email            => session[:recr],
     :password         => params[:password], 
     :last_activity    => params[:last_activity],
     :rank             => params[:rank],
@@ -78,15 +70,17 @@ post "/recruiters/new/?"  do
     :phone            => params[:phone],
     :ssnl4            => params[:ssnl4]
   )
-    
+  
+  # if (params[:email].strip.downcase.include?('.mil'))
+#     redirect "/recruiters/#{recruiter.id}/profile"
+#   else
+#     flash[:alert] = 'Oops! You must use a valid .mil email address.'
+#     redirect "/recruiters/#{recruiter.id}/edit"
+#   end
+
   session[:recruiter] = recruiter.id
   
-  if (params[:email].strip.downcase.include?('.mil'))
-    redirect "/recruiters/#{recruiter.id}/profile"
-  else
-    flash[:alert] = 'Oops! You must use a valid .mil email address.'
-    redirect "/recruiters/#{recruiter.id}/edit"
-  end
+  redirect '/arng/leads'
 
 end
 

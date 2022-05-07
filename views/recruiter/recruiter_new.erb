@@ -9,12 +9,12 @@
 		</div>
 		
 		<form method="post" id="create_rec" class="needs-validation" novalidate>
-					
+					<%= session[:recr] %>
 		<div class="form-row">
 			<div class="form-group col-md-6">
-				<label for="validationEmail">Email <%= params[:email] %></label>
+				<label for="validationEmail">Email</label>
 				
-				<input type="email" name="email" id="validationEmail" class="form-control" placeholder="You must use a valid .mil email" value="<%= params[:email] %>" required />
+				<input type="email" name="email" id="email" class="form-control" placeholder="" value="<%= session[:recr] %>" required />
 				<div class="invalid-feedback">
 				  Please enter a valid .mil email.
 				</div>
