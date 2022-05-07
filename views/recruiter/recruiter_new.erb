@@ -9,12 +9,12 @@
 		</div>
 		
 		<form method="post" id="create_rec" class="needs-validation" novalidate>
-					<%= session[:recr] %>
+
 		<div class="form-row">
 			<div class="form-group col-md-6">
 				<label for="validationEmail">Email</label>
 				
-				<input type="email" name="email" id="email" class="form-control" placeholder="" value="<%= session[:recr] %>" required />
+				<input type="email" name="email" id="email" class="form-control" style="color: black;" value="<%= session[:recr] %>" disabled />
 				<div class="invalid-feedback">
 				  Please enter a valid .mil email.
 				</div>
@@ -22,7 +22,7 @@
 			</div>
 			<div class="form-group col-md-6">
 			<label for="password">Password</label>
-				<input type="password" name="password" id="password" class="form-control" placeholder="Create a password" value="<%= @recruiter.password %>" required />
+				<input type="password" name="password" id="password" class="form-control" placeholder="" value="<%= @recruiter.password %>" required />
 				<div class="invalid-feedback">
 					Please select a password.
 				</div>
@@ -39,28 +39,28 @@
 		<div class="form-row">
 			<div class="form-group col-md-1">
 				<label for="validationRank">Rank</label>
-				<input type="text" name="rank" id="validationRank" class="form-control" placeholder="Rank" value="<%= @recruiter.rank %>" required />
+				<input type="text" name="rank" id="validationRank" class="form-control" placeholder="" value="<%= @recruiter.rank %>" required />
 				<div class="invalid-feedback">
 				   Rank
 				</div>
 			</div>
 			<div class="form-group col-md-4">
 				<label for="first_name">Fist name</label>
-				<input type="text" name="first_name" id="first_name" class="form-control" placeholder="First name" value="<%= @recruiter.first_name %>" required />
+				<input type="text" name="first_name" id="first_name" class="form-control" placeholder="" value="<%= @recruiter.first_name %>" required />
 				<div class="invalid-feedback">
 				   Please enter your first name.
 				</div>
 			</div>
 			<div class="form-group col-md-3">
 				<label for="middle_name">Middle initial</label>
-				<input type="text" name="middle_name" id="middle_name" class="form-control" placeholder="Middle initial" value="<%= @recruiter.middle_name %>" />
+				<input type="text" name="middle_name" id="middle_name" class="form-control" placeholder="" value="<%= @recruiter.middle_name %>" />
 				<div class="invalid-feedback">
 				   Not required.
 				</div>
 			</div>
 			<div class="form-group col-md-4">
 				<label for="last_name">Last name</label>
-				<input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last name" value="<%= @recruiter.last_name %>" required />
+				<input type="text" name="last_name" id="last_name" class="form-control" placeholder="" value="<%= @recruiter.last_name %>" required />
 				<div class="invalid-feedback">
 				   Please enter your last name.
 				</div>
@@ -70,14 +70,14 @@
 		<div class="form-row">
 			<div class="form-group col-md-6">
 				<label for="address1">Address</label>
-				<input type="text" name="address1" id="address1" class="form-control" placeholder="Address" value="<%= @recruiter.address1 %>" required />
+				<input type="text" name="address1" id="address1" class="form-control" placeholder="" value="<%= @recruiter.address1 %>" required />
 				<div class="invalid-feedback">
 				   Please enter your address
 				</div>
 			</div>
 			<div class="form-group col-md-6">
 				<label for="address2">&nbsp;</label>
-				<input type="text" name="address2" id="address2 " class="form-control" placeholder="Address" value="<%= @recruiter.address2 %>" />
+				<input type="text" name="address2" id="address2 " class="form-control" placeholder="" value="<%= @recruiter.address2 %>" />
 				<div class="valid-feedback">Not required</div>
 				
 			</div>
@@ -85,7 +85,7 @@
 		<div class="form-row">
 			<div class="form-group col-md-6">
 				<label for="city">City</label>
-				<input type="text" name="city" id="city" class="form-control" placeholder="City" value="<%= @recruiter.city %>" required />
+				<input type="text" name="city" id="city" class="form-control" placeholder="" value="<%= @recruiter.city %>" required />
 				<div class="invalid-feedback">
 				   Please enter your city.
 				</div>
@@ -102,7 +102,7 @@
 			</div>
 			<div class="control-group col-md-3">
 				<label for="zip">ZIP</label>
-				<input type="text" name="zip" id="zip" class="form-control" placeholder="Zip" value="<%= @recruiter.zip %>" required />
+				<input type="text" name="zip" id="zip" class="form-control" placeholder="" value="<%= @recruiter.zip %>" required />
 				<div class="invalid-feedback">
 				   ZIP
 				</div>
@@ -111,7 +111,7 @@
 		<div class="form-row">
 			<div class="form-group col-md-6">
 				<label for="phone">Phone</label>
-				<input type="text" name="phone" id="phone" class="form-control" placeholder="Phone" value="<%= @recruiter.phone %>" required />
+				<input type="text" name="phone" id="phone" class="form-control" placeholder="" value="<%= @recruiter.phone %>" required />
 				<div class="invalid-feedback">
 				   Please enter your phone number.
 				</div>
