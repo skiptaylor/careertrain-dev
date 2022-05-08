@@ -28,7 +28,8 @@ post "/recruiters/noaccount/?"  do
     to: "#{params[:email]}",
     from: 'noreply@eCareerDirection.com',
     subject: "Here is your registtration code.",
-    body: 'Here is your verification code for <b><i>e</i>CareerDirection</b> registration: #{@ver}'
+    body: 'Here is your verification code for <b><i>e</i>CareerDirection</b> registration:',
+    body: '#{params[:new_code]}'
   )
         
   redirect '/recruiters/reg'
