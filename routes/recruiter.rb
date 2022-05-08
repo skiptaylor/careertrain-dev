@@ -21,13 +21,14 @@ post "/recruiters/noaccount/?"  do
   
   session[:verify] = params[:new_code]
   
+  @ver = params[:new_code]
+  
   Pony.mail(
     headers: { 'Content-Type' => 'text/html' },
     to: "#{params[:email]}",
     from: 'noreply@eCareerDirection.com',
     subject: "Here is your registtration code.",
-    body: 'Here is your verification code for <b><i>e</i>CareerDirection</b> registration:'
-    body: '<b>params[:new_code]</b>'
+    body: 'Here is your verification code for <b><i>e</i>CareerDirection</b> registration: #{@ver}'
   )
         
   redirect '/recruiters/reg'
