@@ -4,18 +4,18 @@
 			<h1 class="page-header">New Recruiter</h1>
 		</div>
 		<div class="col-md-12">
-			<p class="lead">Enter your registtration code to continue.</p>
+			<p class="lead">Enter your verification code to continue.</p>
 		</div>
 	</div>
 		
-	<form method="post" id="create_rec" class="needs-validation" novalidate>
+	<form method="post" id="create_rec">
 					
 	<div class="form-row">
 		<div class="form-group col-md-6">
-			<input type="reg_code" id="reg_code" name="reg_code" class="form-control" value="" required /><%= params[:reg_code] %>
+			<input type="text" id="reg_code" name="reg_code" class="form-control" value="<%= params[:reg_code] %>" required />
 		</div>
 	</div>
-		
+		<%= session[:verify] %>
 	<div class="form-row">
 		<div class="form-group col-md-12">
 			<input class="btn btn-success" style="margin-right: 14px;" type="submit" value="Continue" /> &nbsp;<a href="/recruiters/noaccount/" class="btn btn-secondary">Cancel</a> 

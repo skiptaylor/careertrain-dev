@@ -32,3 +32,6 @@ def recruiter_name
   "#{self.rank} #{self.first_name} #{self.middle_name} #{self.last_name}"
 end
 
+def reg_code(number)
+  rand 1000..8000
+end

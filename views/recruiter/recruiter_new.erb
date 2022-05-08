@@ -15,16 +15,14 @@
 				<label for="validationEmail">Email</label>
 				
 				<input type="email" name="email" id="email" class="form-control" style="color: black;" value="<%= session[:recr] %>" disabled />
-				<div class="invalid-feedback">
-				  Please enter a valid .mil email.
-				</div>
+				
 				
 			</div>
 			<div class="form-group col-md-6">
 			<label for="password">Password</label>
 				<input type="password" name="password" id="password" class="form-control" placeholder="" value="<%= @recruiter.password %>" required />
 				<div class="invalid-feedback">
-					Please select a password.
+					Please create a password.
 				</div>
 			</div>
 		</div>	

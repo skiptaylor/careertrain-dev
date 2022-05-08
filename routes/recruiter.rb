@@ -17,13 +17,17 @@ post "/recruiters/noaccount/?"  do
  
   session[:recr] = params[:email]
   
-  Pony.mail(
-    headers: { 'Content-Type' => 'text/html' },
-    to: "#{params[:email]}",
-    from: 'noreply@eCareerDirection.com',
-    subject: "Here is your registtration code.",
-    body: '<b>y5qz4</b><br /><br />Enter this registratrion code to continue.'
-  )
+  params[:new_code] = rand(1000..5000).to_s
+  
+  session[:verify] = params[:new_code]
+  
+  # Pony.mail(
+  #   headers: { 'Content-Type' => 'text/html' },
+  #   to: "#{params[:email]}",
+  #   from: 'noreply@eCareerDirection.com',
+  #   subject: "Here is your registtration code.",
+  #   body: 'Here is your verification code for <b><i>e</i>CareerDirection</b> registration: <b>#{params[:new_code]}</b>'
+  # )
         
   redirect '/recruiters/reg'
 end
@@ -35,8 +39,8 @@ end
 
 post "/recruiters/reg/?"  do
   
-  if 
-    params[:reg_code] == "y5qz4" 
+  if
+    params[:reg_code] === session[:verify]
     redirect '/recruiters/new'
   else 
     flash[:alert] = 'Code is not valid. Try again.'
