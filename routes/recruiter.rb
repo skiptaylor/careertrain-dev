@@ -25,7 +25,7 @@ post "/recruiters/noaccount/?"  do
     headers: { 'Content-Type' => 'text/html' },
     to: "#{params[:email]}",
     from: "noreply@eCareerDirection.com",
-    subject: "Here is your registtration code.",
+    subject: "Here is your eCD verification code.",
     body: "Here is your verification code for <b><i>e</i>CareerDirection</b> registration: <b>#{params[:new_code]}</b>"
   )
         
