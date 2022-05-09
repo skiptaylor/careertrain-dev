@@ -12,7 +12,7 @@
 					
 	<div class="form-row">
 		<div class="form-group col-md-6">
-			<input type="text" id="reg_code" name="reg_code" class="form-control" value="<%= params[:reg_code] %>" required />
+			<input type="text" id="reg_code" name="reg_code" class="form-control" placeholder="<%= session[:verify] %>" value="<%= params[:reg_code] %>" required />
 		</div>
 	</div>
 	<% if settings.development? %>
