@@ -60,9 +60,24 @@
   <div class="container text-center">
 	  <div class="signdiv">
     <form class="form-signin" method="post">
-		  <h1 class="h3 mb-3 font-weight-normal">Sign in</h1>
+		  <h1 class="h3 mb-3 font-weight-normal">Admin sign in</h1>
   <label for="inputEmail" class="sr-only">Email address</label>
-  <input type="email" name="email" id="email" class="form-control" placeholder="Email address" value="<%= params[:email] %>" required autofocus>
+  <input type="email" name="email" id="email" class="form-control" placeholder="Email" value="<%= params[:email] %>" required autofocus>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" name="password" id="password" class="form-control" placeholder="Personal password" value="<%= params[:password] %>" required>
+  <button class="btn btn-lg btn-primary pull-left" type="submit">Sign in</button>
+  <button onclick="goBack()" class="btn btn-secondary pull-right">Cancel</button>
+</form>
+</div>
+</div>
+
+
+  <!-- <div class="container text-center">
+	  <div class="signdiv">
+    <form class="form-signin" method="post">
+		  <h1 class="h3 mb-3 font-weight-normal">Admin sign in</h1>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" name="email" id="email" class="form-control" placeholder="Email" value="<%= params[:email] %>" required autofocus>
   <% if @errors.include? :email_not_found %>
     <span class="help-inline">That email address isn't in our system.</span>
   <% end %>
@@ -75,4 +90,4 @@
   <button onclick="goBack()" class="btn btn-secondary pull-right">Cancel</button>
 </form>
 </div>
-</div>
+</div> -->

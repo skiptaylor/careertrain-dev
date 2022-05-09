@@ -75,8 +75,6 @@ get "/admin/signin/?" do
   
   unless session[:admin]
     
-  # session[:admin] = nil
-  # session.clear
   @admin = Admin.all
   
   erb :"admin/signin"
@@ -90,6 +88,8 @@ get "/admin/signin/?" do
 end
 
 post '/admin/signin/?' do
+  
+  admin = Admin.all
   
   params[:email].strip!
   params[:password].strip!
