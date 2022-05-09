@@ -35,10 +35,7 @@ class Email
   end
   
   def self.welcome(email, first_name, last_name, score1, score2)
-    
-    var a = "Outdoor"
-    var b = "Arts and Entertainment"
-    
+        
     body = ""
     body << "<p>Hello #{first_name} #{last_name}. Welcome to eCareerDirecrion.</p>"
     body << "<p>Your personalized interest report indicates your main interest is <b>#{score1}</b> and your next interest is <b>#{score2}.</b> You can return to your account any time to see your scores and watch videos or take the exercise a second time.</p>"
