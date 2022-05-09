@@ -33,6 +33,7 @@ post "/recruiters/noaccount/?"  do
         subject: "Here is your eCD verification code.",
         body: "Here is your verification code for <b><i>e</i>CareerDirection</b> registration: <b>#{params[:new_code]}</b>"
       )
+      redirect '/recruiters/reg'
     else
       flash[:alert] = 'Email would have been sent in production mode.'
       redirect '/recruiters/reg'
