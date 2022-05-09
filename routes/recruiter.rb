@@ -15,21 +15,34 @@ end
 
 post "/recruiters/noaccount/?"  do
  
-  session[:recr] = params[:email]
+  params[:email].strip!
   
-  params[:new_code] = rand(1000..5000).to_s
+  unless recruiter = Recruiter.first(:email => params[:email])
+
+    session[:recr] = params[:email]
+
+    params[:new_code] = rand(1000..5000).to_s
+
+    session[:verify] = params[:new_code]
   
-  session[:verify] = params[:new_code]
-    
-  Pony.mail(
-    headers: { 'Content-Type' => 'text/html' },
-    to: "#{params[:email]}",
-    from: "noreply@eCareerDirection.com",
-    subject: "Here is your eCD verification code.",
-    body: "Here is your verification code for <b><i>e</i>CareerDirection</b> registration: <b>#{params[:new_code]}</b>"
-  )
-        
-  redirect '/recruiters/reg'
+    if settings.production?
+      Pony.mail(
+        headers: { 'Content-Type' => 'text/html' },
+        to: "#{params[:email]}",
+        from: "noreply@eCareerDirection.com",
+        subject: "Here is your eCD verification code.",
+        body: "Here is your verification code for <b><i>e</i>CareerDirection</b> registration: <b>#{params[:new_code]}</b>"
+      )
+    else
+      flash[:alert] = 'Email would have been sent in production mode.'
+      redirect '/recruiters/reg'
+    end
+
+  else
+    flash[:alert] = 'This email already exists. Maybe you need to sign in.'
+    erb :"/arng/arng"
+  end
+
 end
 
 get "/recruiters/reg/?"  do
