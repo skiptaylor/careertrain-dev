@@ -36,25 +36,25 @@ class Email
   
   def self.welcome(email, first_name, last_name, score1, score2)
     
-    <% if @student.score1 == 'a' %>Outdoor<% end %>
-    <% if @student.score1 == 'b' %>Arts/Communications<% end %>
-    <% if @student.score1 == 'c' %>Business/Management<% end %>
-    <% if @student.score1 == 'd' %>Clerical/Administrativ<% end %>
-    <% if @student.score1 == 'e' %>Protective/Military Service<% end %>
-    <% if @student.score1 == 'f' %>Technology<% end %>
-    <% if @student.score1 == 'g' %>Public Service<% end %>
-    <% if @student.score1 == 'h' %>Science/Mathematics<% end %>
-    <% if @student.score1 == 'i' %>Social/Helping<% end %>
-
-    <% if @student.score2 == 'a' %>Outdoor<% end %>
-    <% if @student.score2 == 'b' %>Arts/Communications<% end %>
-    <% if @student.score2 == 'c' %>Business/Management<% end %>
-    <% if @student.score2 == 'd' %>Clerical/Administrativ<% end %>
-    <% if @student.score2 == 'e' %>Protective/Military Service<% end %>
-    <% if @student.score2 == 'f' %>Technology<% end %>
-    <% if @student.score2 == 'g' %>Public Service<% end %>
-    <% if @student.score2 == 'h' %>Science/Mathematics<% end %>
-    <% if @student.score2 == 'i' %>Social/Helping<% end %>
+    # <% if @student.score1 == 'a' %>Outdoor<% end %>
+    # <% if @student.score1 == 'b' %>Arts/Communications<% end %>
+    # <% if @student.score1 == 'c' %>Business/Management<% end %>
+    # <% if @student.score1 == 'd' %>Clerical/Administrativ<% end %>
+    # <% if @student.score1 == 'e' %>Protective/Military Service<% end %>
+    # <% if @student.score1 == 'f' %>Technology<% end %>
+    # <% if @student.score1 == 'g' %>Public Service<% end %>
+    # <% if @student.score1 == 'h' %>Science/Mathematics<% end %>
+    # <% if @student.score1 == 'i' %>Social/Helping<% end %>
+    #
+    # <% if @student.score2 == 'a' %>Outdoor<% end %>
+    # <% if @student.score2 == 'b' %>Arts/Communications<% end %>
+    # <% if @student.score2 == 'c' %>Business/Management<% end %>
+    # <% if @student.score2 == 'd' %>Clerical/Administrativ<% end %>
+    # <% if @student.score2 == 'e' %>Protective/Military Service<% end %>
+    # <% if @student.score2 == 'f' %>Technology<% end %>
+    # <% if @student.score2 == 'g' %>Public Service<% end %>
+    # <% if @student.score2 == 'h' %>Science/Mathematics<% end %>
+    # <% if @student.score2 == 'i' %>Social/Helping<% end %>
 
     body = ""
     body << "<p>Hello #{first_name} #{last_name}. Welcome to eCareerDirecrion.</p>"
