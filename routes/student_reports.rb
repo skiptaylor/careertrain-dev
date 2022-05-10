@@ -275,6 +275,14 @@ end
 
 
 
+get "/mail_wel/?" do
+  @school = School.all
+  @presentation = Presentation.all
+  @student = Student.get(params[:id])
+  
+  erb :"/student/reports/mail_wel"
+end
+
 
 
 get "/student/reports/:id/scores/?" do
