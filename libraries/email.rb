@@ -43,7 +43,7 @@ class Email
     to: "#{email}",
     from: 'no-rely@eCareerDirection.com',
     subject: 'Welcome to eCareerDirection.',
-    body: ERB.new(File.read('views/mail_wel.erb')).result(context)
+    body: ERB.new(File.read('views/student/reports/#{params[:id]}/mail_wel.erb')).result(context)
   )
   end
   

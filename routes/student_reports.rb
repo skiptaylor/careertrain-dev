@@ -275,7 +275,7 @@ end
 
 
 
-get "/mail_wel/?" do
+get "/student/reports/:id/mail_wel/?" do
   @school = School.all
   @presentation = Presentation.all
   @student = Student.get(params[:id])
