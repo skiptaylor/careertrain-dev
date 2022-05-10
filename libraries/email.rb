@@ -36,18 +36,33 @@ class Email
   
   def self.welcome(email, first_name, last_name, score1, score2)
         
-    body = ""
-    body << "<p>Hello #{first_name} #{last_name}. Welcome to eCareerDirecrion.</p>"
-    body << "<p>Your personalized interest report indicates your main interest is <b>#{score1}</b> and your next interest is <b>#{score2}.</b> You can return to your account any time to see your scores and watch videos or take the exercise a second time.</p>"
-      
+  context = binding
+     
   Pony.mail(
     headers: { 'Content-Type' => 'text/html' },
     to: "#{email}",
     from: 'no-rely@eCareerDirection.com',
     subject: 'Welcome to eCareerDirection.',
-    body: body
+    body: ERB.new(File.read('views/mail_wel.erb')).result(context)
   )
   end
+  
+  
+  # def self.welcome(email, first_name, last_name, score1, score2)
+  #
+  #   body = ""
+  #   body << "<p>Hello #{first_name} #{last_name}. Welcome to eCareerDirecrion.</p>"
+  #   body << "<p>Your personalized interest report indicates your main interest is <b>#{score1}</b> and your next interest is <b>#{score2}.</b> You can return to your account any time to see your scores and watch videos or take the exercise a second time.</p>"
+  #
+  # Pony.mail(
+  #   headers: { 'Content-Type' => 'text/html' },
+  #   to: "#{email}",
+  #   from: 'no-rely@eCareerDirection.com',
+  #   subject: 'Welcome to eCareerDirection.',
+  #   body: body
+  # )
+  # end
+  
   
   # def self.studentreport
 #     from = Email.new(email: 'Welcome@eCareerDirection.com')
