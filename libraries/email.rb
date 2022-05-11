@@ -35,6 +35,8 @@ class Email
   end
   
   def self.welcome(id, email, first_name, last_name, score1, score2)
+    
+  require "erb"  
   
   filename = "views/student/reports/#{id}/mail_wel.erb" 
      
@@ -44,6 +46,7 @@ class Email
     from: 'no-rely@eCareerDirection.com',
     subject: 'Welcome to eCareerDirection.',
     body: ERB.new(filename)
+    erb.render
   )
   end
   
