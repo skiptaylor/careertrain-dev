@@ -46,7 +46,6 @@ class Email
     from: 'no-rely@eCareerDirection.com',
     subject: 'Welcome to eCareerDirection.',
     body: ERB.new(filename)
-    erb.render
   )
   end
   
