@@ -45,7 +45,7 @@ class Email
     to: "#{email}",
     from: 'no-rely@eCareerDirection.com',
     subject: 'Welcome to eCareerDirection.',
-    body: erb(filename)
+    body: ERB.new(filename)
   )
   end
   
