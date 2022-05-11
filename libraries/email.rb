@@ -40,15 +40,17 @@ class Email
   
   filename = "/student/reports/#{id}/mail_wel" 
      
-     
   Pony.mail(
     headers: { 'Content-Type' => 'text/html' },
     to: "#{email}",
     from: 'no-rely@eCareerDirection.com',
     subject: 'Welcome to eCareerDirection.',
-    body: ERB.new(File.read(filename)).result(render())
+    body: erb(filename)
   )
   end
+  
+  # body: ERB.new(File.read(filename)).result(render())
+  
   
   
   # def self.welcome(email, first_name, last_name, score1, score2)
