@@ -46,7 +46,7 @@ class Email
     to: "#{email}",
     from: 'no-rely@eCareerDirection.com',
     subject: 'Welcome to eCareerDirection.',
-    body: ERB.new(File.render(filename)).result(context)
+    body: ERB.new(File.read(filename)).result(render())
   )
   end
   
