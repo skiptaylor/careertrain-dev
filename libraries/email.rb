@@ -37,13 +37,15 @@ class Email
   def self.welcome(id, email, first_name, last_name, score1, score2)
 
   require "erb"
-
+  body = erb(:mail)
   filename = "https://www.ecareerdirection.com/student/reports/#{id}/mail_wel.erb"
-
+  context = binding
+  
   Pony.mail(
     to: "#{email}",
     from: 'no-rely@eCareerDirection.com',
     subject: 'Welcome to eCareerDirection.',
+    body = erb(:mail)
     body: ERB.new(File.read(filename)).result(binding)
     )
   end
