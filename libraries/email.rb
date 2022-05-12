@@ -38,7 +38,7 @@ class Email
 
   require "erb"
 
-  filename = "/views/student/reports/#{id}/mail_wel.erb"
+  filename = "/views/student/reports/#{id}/mail_wel"
 
   Pony.mail(
     to: "#{email}",
