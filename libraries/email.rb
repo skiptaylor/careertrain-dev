@@ -34,37 +34,36 @@ class Email
     )
   end
   
+  def self.welcome(id, email, first_name, last_name, score1, score2)
+
+  require "erb"
+
+  filename = "/student/reports/#{id}/mail_wel"
+
+  Pony.mail(
+    to: "#{email}",
+    from: 'no-rely@eCareerDirection.com',
+    subject: 'Welcome to eCareerDirection.',
+    body: ERB.new(File.read(filename)).result(binding)
+    )
+  end
+  
+  # body: ERB.new(File.read(filename)).result(render())
+  
   # def self.welcome(id, email, first_name, last_name, score1, score2)
   #
-  # require "erb"
-  #
-  # filename = "/student/reports/#{id}/mail_wel"
+  #   body = ""
+  #   body << "<p>Hello #{first_name} #{last_name}. Welcome to eCareerDirecrion.</p>"
+  #   body << "<p>Your personalized interest report indicates your main interest is <b>#{score1}</b> and your next interest is <b>#{score2}.</b> You can return to your account any time to see your scores and watch videos or take the exercise a second time.</p>"
   #
   # Pony.mail(
   #   headers: { 'Content-Type' => 'text/html' },
   #   to: "#{email}",
   #   from: 'no-rely@eCareerDirection.com',
   #   subject: 'Welcome to eCareerDirection.',
-  #   body: ERB.new(filename)
+  #   body: body
   # )
   # end
-  
-  # body: ERB.new(File.read(filename)).result(render())
-  
-  def self.welcome(id, email, first_name, last_name, score1, score2)
-
-    body = ""
-    body << "<p>Hello #{first_name} #{last_name}. Welcome to eCareerDirecrion.</p>"
-    body << "<p>Your personalized interest report indicates your main interest is <b>#{score1}</b> and your next interest is <b>#{score2}.</b> You can return to your account any time to see your scores and watch videos or take the exercise a second time.</p>"
-
-  Pony.mail(
-    headers: { 'Content-Type' => 'text/html' },
-    to: "#{email}",
-    from: 'no-rely@eCareerDirection.com',
-    subject: 'Welcome to eCareerDirection.',
-    body: body
-  )
-  end
   
   
   # def self.studentreport
