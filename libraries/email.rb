@@ -38,14 +38,13 @@ class Email
 
   require "erb"
   body = erb(:mail)
-  filename = "https://www.ecareerdirection.com/student/reports/#{id}/mail_wel.erb"
+  filename = "/student/reports/#{id}/mail_wel.erb"
   context = binding
-  
+  s
   Pony.mail(
     to: "#{email}",
     from: 'no-rely@eCareerDirection.com',
     subject: 'Welcome to eCareerDirection.',
-    body = erb(:mail)
     body: ERB.new(File.read(filename)).result(binding)
     )
   end
