@@ -38,7 +38,7 @@ class Email
 
   require "erb"
 
-  filename = "https://www.ecareerdirection.com/student/reports/#{id}/mail_wel"
+  filename = "https://www.ecareerdirection.com/student/reports/#{id}/mail_wel.erb"
 
   Pony.mail(
     to: "#{email}",
