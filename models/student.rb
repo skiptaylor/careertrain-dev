@@ -30,6 +30,9 @@ class Student
   property :score2, String
   property :score3, String
   
+  property :high1_show, String
+  property :high2_show, String
+  
   property :ex_score1, String
   property :ex_score2, String
   

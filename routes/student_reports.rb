@@ -275,12 +275,12 @@ end
 
 
 
-get "/student/reports/:id/mail_wel/?" do
+get "/student/reports/:id/mail_wel2/?" do
   @school = School.all
   @presentation = Presentation.all
   @student = Student.get(params[:id])
   
-  erb :"/student/reports/mail_wel"
+  erb :"/student/reports/mail_wel2"
 end
 
 
