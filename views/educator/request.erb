@@ -73,7 +73,7 @@
 					<div class="form row">
 						<div class="form-group col-sm-6">
 							<label for="phone">Phone</label>
-							<input type="phone" class="form-control" placeholder="Phone" name="phone" id="phone" value="<%= formatted_number(@school.phone) %>" />
+							<input type="phone" class="form-control" placeholder="Phone" name="phone" id="phone" value="<%= @school.phone %>" />
 						</div>
 						<!-- <div class="form-group col-sm-6">
 							<label for="fax">Fax</label>
@@ -151,7 +151,7 @@
 </script>
 	
 <script>
-	function ValidateEmail(mail) 
+	function ValidateEmail(@school.email) 
 	{
 	 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
 	  {
