@@ -67,13 +67,13 @@
 					<div class="form row">
 						<div class="form-group col-md-12">
 							<label for="email">Email</label>
-							<input type="email" class="form-control" placeholder="Email" name="email" id="email" value="<%= @school.email %>" />
+							<input type="email" class="form-control" placeholder="Email" name="email" id="email" value="<%= ValidateEmail(@school.email) %>" />
 						</div>
 					</div>
 					<div class="form row">
 						<div class="form-group col-sm-6">
 							<label for="phone">Phone</label>
-							<input type="tel" class="form-control" placeholder="Phone" name="phone" id="phone" value="<%= @school.phone %>" />
+							<input type="phone" class="form-control" placeholder="Phone" name="phone" id="phone" value="<%= formatted_number(@school.phone) %>" />
 						</div>
 						<!-- <div class="form-group col-sm-6">
 							<label for="fax">Fax</label>
@@ -116,7 +116,7 @@
 	frmvalidator.addValidation("school_name","req","Please enter school name.");
 	frmvalidator.addValidation("school_address1","req","Please enter school address.");
 	frmvalidator.addValidation("school_city","req","Please enter your school city.");
-	frmvalidator.addValidation("school_zip","req","Please enter your school zip.");
+	// frmvalidator.addValidation("school_zip","req","Please enter your school zip.");
 	frmvalidator.addValidation("first_name","req","Please enter your first name.");
 	frmvalidator.addValidation("last_name","req","Please enter your last name.");
 	frmvalidator.addValidation("email","req","Please enter your email.");
@@ -130,18 +130,45 @@
 </script>
 	
 <script>
-	$(document).ready(function() {
-	    $('#school_zip').bootstrapValidator({
-	        fields: {
-	            postcode: {
-	                validators: {
-	                    regexp: {
-	                        regexp: /^\d{5}$/,
-	                        message: 'The US zipcode must contain 5 digits'
-	                    }
-	                }
-	            }
-	        }
-	    });
-	});
+	function isUSAZipCode(str) 
+	{
+	  return /^\d{5}(-\d{4})?$/.test(str);
+	}
+
+	function validateInput() 
+	{
+	  console.log("validateInput");
+	  let zipCode = document.getElementById("school_zip").value;
+	  let message = "";
+	  if (isUSAZipCode(zipCode)) 
+	  {
+	    message = "Valid Zip Code";
+	  } else {
+	    message = "Invalid Zip Code";
+	  }
+	  document.getElementById("msg").innerHTML = message;
+	}
 </script>
+	
+<script>
+	function ValidateEmail(mail) 
+	{
+	 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+	  {
+	    return (true)
+	  }
+	    alert("You have entered an invalid email address!")
+	    return (false)
+	}
+</script>
+	
+<!-- <script>
+	function formatPhoneNumber(phoneNumberString) {
+	  var cleaned = ('' + phoneNumberString).replace(/\D/g, '');
+	  var match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
+	  if (match) {
+	    return '(' + match[1] + ') ' + match[2] + '-' + match[3];
+	  }
+	  return null;
+	}
+</script> -->
