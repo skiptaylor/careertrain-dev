@@ -15,10 +15,10 @@
 		
 		<div class="form-row">
 			<div class="form-group col-md-5 offset-md-3"> 
-				<label for="sub_code">Student Access Code&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="myFunction()"></label>
-				<input type="password" class="form-control" placeholder="" name="sub_code" id="sub_code" value="<%= params[:sub_code] %>" />
-				<label for="sub_code2" style="margin-top: 7px;">Please Type Access Code Again&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="ourFunction()"></label>
-				<input type="password" class="form-control" placeholder="" name="sub_code2" id="sub_code2" aria-describedby="schoolpasswordHelp" value="<%= params[:sub_code2] %>" />
+				<label for="sub_code">Student Access Code<!-- &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="myFunction()"> --></label>
+				<input type="text" class="form-control" placeholder="" name="sub_code" id="sub_code" value="<%= params[:sub_code] %>" />
+				<label for="sub_code2" style="margin-top: 7px;">Please Type Access Code Again<!-- &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="ourFunction()">&nbsp; <small>Show password</small> --></label>
+				<input type="text" class="form-control" placeholder="" name="sub_code2" id="sub_code2" aria-describedby="schoolpasswordHelp" value="<%= params[:sub_code2] %>" />
 					<small id="schoolpasswordHelp" class="form-text">This code will be furnished by the ARNG Rep.</small>
 					
 			</div>
@@ -32,8 +32,8 @@
 					<small id="emailHelp" class="form-text">You will use your personal email to access your account.</small>
 			</div>
 			<div class="form-group col-md-5 offset-md-3">
-				<label for="password">Personal Password</label>
-				<input type="text" class="form-control" placeholder="" name="password" id="password" aria-describedby="passwordHelp" value="<%= params[:password] %>" />
+				<label for="password">Personal Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" onclick="myFunction()">&nbsp; <small>Show password</small></label>
+				<input type="password" class="form-control" placeholder="" name="password" id="password" aria-describedby="passwordHelp" value="<%= params[:password] %>" />
 					<small id="passwordHelp" class="form-text">This password will be used with your email to access your account.</small>
 			</div>
 		</div>
@@ -117,9 +117,9 @@
 	
 </div>
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 function myFunction() {
-  var x = document.getElementById("sub_code");
+  var x = document.getElementById("password");
   if (x.type === "password") {
     x.type = "text";
   } else {
@@ -127,7 +127,7 @@ function myFunction() {
   }
 }
 </script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 function ourFunction() {
   var x = document.getElementById("sub_code2");
   if (x.type === "password") {
@@ -150,7 +150,7 @@ function ourFunction() {
 	}
 </script>
 
-<!-- <script>
+<script>
 	window.onload = function() {
 		const sub_code = document.getElementById('sub_code');
 		sub_code.onpaste = function(e) {
@@ -161,12 +161,12 @@ function ourFunction() {
 			g.preventDefault();
 		}
 	}
-</script> -->
+</script>
 
 <script  type="text/javascript">
 	var frmvalidator = new Validator("student_report");
 	frmvalidator.addValidation("school_password","req","Please enter your School's Password");
-	// frmvalidator.addValidation("sub_code","req","Please enter your Student Access Code");
+	/frmvalidator.addValidation("sub_code","req","Please enter your Student Access Code");
 	frmvalidator.addValidation("email","req","Please enter your Personal Email");
 	frmvalidator.addValidation("password","req","Please create a Personal Password");
 	frmvalidator.addValidation("first_name","req","Please enter your First Name");

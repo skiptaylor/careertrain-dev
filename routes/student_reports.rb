@@ -33,6 +33,7 @@ post '/student/reports/create/?' do
   
   params[:email].strip!
   params[:password].strip!
+  params[:password].downcase!
   params[:school_password].strip!
   params[:school_password].downcase!
   params[:sub_code].strip!
@@ -162,6 +163,7 @@ post '/student/reports/signin/?' do
   
   params[:email].strip!
   params[:password].strip!
+  params[:password].downcase!
   
   unless params[:email] == ''
 
@@ -196,6 +198,11 @@ get '/student/reports/:id/edit/?' do
 end
 
 post '/student/reports/:id/edit/?' do
+  
+  params[:password].strip!
+  params[:password].downcase!
+  params[:school_password].strip!
+  params[:school_password].downcase!
   
   if school = School.first(:school_password => params[:school_password])
     

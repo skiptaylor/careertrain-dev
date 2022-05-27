@@ -27,6 +27,7 @@
 				<% @ie.sort_by(&:position_number).each do |ie| %>
 				
 					<div id="<%= ie.tr_number %>" class="spoon" style="display: none; float: right;">
+						
 						<tr>
 							<!-- <td style="color: gray;"><%= ie.position_number %></td> -->
 							<!-- <td><%= ie.item %></td> -->
@@ -53,8 +54,10 @@
 							
 						</tr>
 						
+						<div style="color: gray; margin-left: 40%; relative; margin-top: 0.6em; font-size: 1.2em;"><%= ie.position_number %> of 63</div>
 						
 					</div>   <!-------	spoon  ------->
+					
 					
 				<% end %>
 				
@@ -376,13 +379,23 @@
 	});
 	
 </script>
+	
+<script>	
+	$('input').on('keydown', function(event) {
+	   var x = event.which;
+	   if (x === 13) {
+	       event.preventDefault();
+	   }
+	});
+</script>	
+	
 					
 <style>
 	.checker {
 	  display: inl;
 	  position: relative;
-	  padding-left: 60px;
-	  margin-right: 40px;
+	  padding-left: 50px;
+	  margin-right: 30px;
 	  color: gray;
 	  cursor: pointer;
 	  font-size: 28px;
