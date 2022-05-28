@@ -44,7 +44,7 @@
 	  					</div>
 						<div class="form-group col-md-3">
 							<label for="inputZip">Zip</label>
-							<input type="text" class="form-control" placeholder="Zip" name="school_zip" id="school_zip" pattern="^\s*\d{5}(-?\s*\d{4})?\s*$" maxlength="10" minlength="5" value="<%= @school.school_zip %>">
+							<input type="text" class="form-control" placeholder="Zip" name="school_zip" id="school_zip" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" value="<%= @school.school_zip %>">
 						</div>
 					</div>
 					
