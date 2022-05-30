@@ -177,7 +177,7 @@
 					<div class="control-group">	
 						<h5 style="font-weight: 700; color: #e31400;">Box must be checked <br />to create password</h5>	
 						<label for="active"></label>
-						<input type="checkbox" name="active" id="active" style="font-size: 2em;" <%= 'checked="checked"' if @school.active  %> /> <span style="font-size: 17px; padding: 0 0 0 5px;"><strong>Active</strong></span>
+						<input type="checkbox" name="active" id="active" value="<%= @school.active %>" style="font-size: 2em;" <%= 'checked="checked"' if @school.active = "true" %> /> <span style="font-size: 17px; padding: 0 0 0 5px;"><strong>Active</strong></span>
 						<br />(activates school and creates password)
 					</div>
 				</div>
@@ -198,14 +198,18 @@
  					<div class="control-group">
  						<label for="recruiter_id">Recruiter</label>
  						<select type="text" id="recruiter_id" name="recruiter_id" class="form-control">
-							
-								<option>No recruiter selected</option>
- 							<% @recruiter.each do |recruiter| %>
+
+							<% @recruiter.each do |recruiter| %>
 							<% if recruiter.state == @school.school_state %>
- 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter_id %>><%= recruiter.state %> - <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
- 							<% end %>
+							<% if @school.recruiter_id %>
+								<option><%= recruiter.id %> <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
 							<% end %>
-							
+							<% if session[:recruiter] == recruiter.id %>
+								<option><%= recruiter.id %> <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
+							<% end %>
+							<% end %>
+							<% end %>
+								<option><%= @school.recruiter_id %></option>
  						</select>
  					</div>
  				</div>
@@ -296,3 +300,17 @@
 	    return (false)
 	}
 </script>
+	
+	
+	<!-- <select type="text" id="recruiter_id" name="recruiter_id" class="form-control">
+
+			<option>No recruiter selected</option>
+			<option><%= session[:recruiter] %></option>
+		<% @recruiter.each do |recruiter| %>
+		<% if recruiter.state == @school.school_state %>
+
+			<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter_id %>><%= recruiter.state %> - <%= recruiter.id %> <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
+		<% end %>
+		<% end %>
+
+	</select> -->
