@@ -4,7 +4,6 @@ end
 
 get '/educator/request/?' do
   @state = State.all
-  @school = School.new
   erb :"/educator/request"
 end
 
