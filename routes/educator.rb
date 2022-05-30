@@ -11,7 +11,7 @@ end
 post '/educator/request/?' do
   state = State.all
   
- Email.requestcd2(school.school_name, school.school_address1, school.school_address2, school.school_city, school.school_state, school.school_zip, school.first_name, school.last_name, school.email, school.phone)
+ Email.requestcd2(school_name, school_address1, school_address2, school_city, state, school_zip, first_name, last_name, email, phone)
   
   redirect "/educator/thanks"
 end
