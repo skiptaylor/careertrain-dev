@@ -12,27 +12,27 @@ class Email
                  body: body)
   end
   
-  def self.requestcd2(school_name, school_address1, school_address2, school_city, state, school_zip, first_name, last_name, email, phone)
-
-    body = ''
-    body << "<h3>Request eCD Program from Educator</h3>"
-    body << "<p><i>(School not yet active)</i></p>"
-    body << "<p><b>School Name:</b> #{school_name}</p>"
-    body << "<p>#{school_address1}</p>"
-    body << "<p>#{school_address2}</p>"
-    body << "<p>#{school_city} #{state} #{school_zip}</p>"
-    body << "<p><b>Contact:</b> <b>#{first_name} #{last_name}</p>"
-    body << "<p><b>Email:</b> <b>#{email}</p>"
-    body << "<p><b>Phone:</b> <b>#{phone}</p>"
-
-    Pony.mail(
-      headers: { 'Content-Type' => 'text/html' },
-      to: 'skip@recountant.com',
-      from: 'no-reply@eCareerDirection.com',
-      subject: 'Request eCD Program from Educator',
-      body: body
-    )
-  end
+  # def self.requestcd2(school_name, school_address1, school_address2, school_city, state, school_zip, first_name, last_name, email, phone)
+#
+#     body = ''
+#     body << "<h3>Request eCD Program from Educator</h3>"
+#     body << "<p><i>(School not yet active)</i></p>"
+#     body << "<p><b>School Name:</b> #{school_name}</p>"
+#     body << "<p>#{school_address1}</p>"
+#     body << "<p>#{school_address2}</p>"
+#     body << "<p>#{school_city} #{state} #{school_zip}</p>"
+#     body << "<p><b>Contact:</b> <b>#{first_name} #{last_name}</p>"
+#     body << "<p><b>Email:</b> <b>#{email}</p>"
+#     body << "<p><b>Phone:</b> <b>#{phone}</p>"
+#
+#     Pony.mail(
+#       headers: { 'Content-Type' => 'text/html' },
+#       to: 'skip@recountant.com',
+#       from: 'no-reply@eCareerDirection.com',
+#       subject: 'Request eCD Program from Educator',
+#       body: body
+#     )
+#   end
   
   # def self.welcome(id, email, first_name, last_name, score1, score2)
   #

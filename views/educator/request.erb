@@ -35,8 +35,8 @@
 							<input type="text" class="form-control" placeholder="City" name="school_city" id="school_city" />
 						</div>
 	  					<div class="form-group col-md-3">
-	  						<label for="school_state">State</label>
-	  						<select type="text"  class="form-control" id="school_state" name="school_state">
+	  						<label for="state">State</label>
+	  						<select type="text"  class="form-control" id="state" name="state">
 	  								<option value="None"></option>
 	  							<% @state.sort{|a,b| a.id <=> b.id}.each do |state| %>
 	  								<option value="<%= state.abbr %>" <%= 'selected' if state.abbr == state %>><%= state.abbr %></option>
@@ -45,7 +45,7 @@
 	  					</div>
 						<div class="form-group col-md-3">
 							<label for="inputZip">Zip</label>
-							<input onKeyUp="validateInput()" id="school_zip" type="text" class="form-control" placeholder="Zip">
+							<input onKeyUp="validateInput()" id="school_zip" name="school_zip" type="text" class="form-control" placeholder="Zip">
 							<div id="msg"> </div>
 						</div>
 					</div>
@@ -104,7 +104,7 @@
 	frmvalidator.addValidation("school_name","req","Please enter school name.");
 	frmvalidator.addValidation("school_address1","req","Please enter school address.");
 	frmvalidator.addValidation("school_city","req","Please enter your school city.");
-	// frmvalidator.addValidation("school_zip","req","Please enter your school zip.");
+	frmvalidator.addValidation("school_zip","req","Please enter your school zip.");
 	frmvalidator.addValidation("first_name","req","Please enter your first name.");
 	frmvalidator.addValidation("last_name","req","Please enter your last name.");
 	frmvalidator.addValidation("email","req","Please enter your email.");
@@ -161,7 +161,7 @@
 </script>
 	
 <script>
-	function ValidateEmail(@school.email) 
+	function ValidateEmail(email) 
 	{
 	 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
 	  {
