@@ -18,20 +18,20 @@
 				<div class="form-row">
 					<div class="form-group col-md-12">
 						<label for="school_name">School name</label>
-						<input class="form-control" placeholder="School name" name="school_name" id="school_name" />
+						<input class="form-control" placeholder="School name" name="school_name" id="school_name" required />
 					</div>
 				</div>
 				<div class="form-row">
 					<div class="form-group col-md-12">
-						<label for="school_address1">School Address</label>
-						<input class="form-control" placeholder="Street Address" name="school_address1" id="school_address1" />
-						<input class="form-control" placeholder="Street Address" name="school_address2" id="school_address2" />
+						<label for="school_address1">School address</label>
+						<input class="form-control" placeholder="Street address" name="school_address1" id="school_address1" equired />
+						<input class="form-control" placeholder="Street address" name="school_address2" id="school_address2" />
 					</div>
 				</div>	
 				<div class="form-row">
 					<div class="form-group col-md-6">
 						<label for="school_city">City</label>
-						<input type="text" class="form-control" placeholder="City" name="school_city" id="school_city" />
+						<input type="text" class="form-control" placeholder="City" name="school_city" id="school_city" required />
 					</div>
   					<div class="form-group col-md-3">
   						<label for="state">State</label>
@@ -44,7 +44,7 @@
   					</div>
 					<div class="form-group col-md-3">
 						<label for="inputZip">Zip</label>
-						<input onKeyUp="validateInput()" id="school_zip" name="school_zip" type="text" class="form-control" placeholder="Zip">
+						<input onKeyUp="validateInput()" id="school_zip" name="school_zip" type="text" class="form-control" placeholder="Zip" required />
 						<div id="msg"> </div>
 					</div>
 				</div>
@@ -52,7 +52,7 @@
 				<div class="form-row">
 					<div class="form-group col-sm-5">
 						<label for="first_name">Contact</label>
-						<input type="text" class="form-control" placeholder="First name" name="first_name" id="first_name" />
+						<input type="text" class="form-control" placeholder="First name" name="first_name" id="first_name" required />
 					</div>
 					<div class="form-group col-sm-2">
 						<label for="first_name">&nbsp;</label>
@@ -60,25 +60,25 @@
 					</div>
 					<div class="form-group col-sm-5">
 						<label for="last_name">&nbsp;</label>
-						<input type="text" class="form-control" placeholder="Last name" name="last_name" id="last_name" />
+						<input type="text" class="form-control" placeholder="Last name" name="last_name" id="last_name" required />
 					</div>
 				</div>  
 				<div class="form row">
 					<div class="form-group col-md-12">
 						<label for="email">Email</label>
-						<input type="email" class="form-control" placeholder="Email" name="email" id="email" />
+						<input type="email" class="form-control" placeholder="Email" name="email" id="email" required />
 					</div>
 				</div>
 				<div class="form row">
 					<div class="form-group col-sm-6">
 						<label for="phone">Phone</label>
-						<input onkeydown="phoneNumberFormatter()" type="text" class="form-control" placeholder="Phone" name="phone" id="phone" />
+						<input  type="phone" class="form-control" placeholder="Phone" name="phone" id="phone" required />
 					</div>
 				</div>  	
 				<div class="form row">
 					<div class="form-group col-sm-5">
 						<label for="students">Number of students</label>
-						<input type="text" class="form-control" name="students" id="students" />
+						<input type="number" class="form-control" name="students" id="students" />
 					</div>
 				    <div class="col-sm-1"></div>
 				  </div>	
@@ -98,16 +98,16 @@
 	</div> <!-- /container -->
 </div>
 
-<!-- <script  type="text/javascript">
+<!-- <script  type="text/javascript">       onkeydown="phoneNumberFormatter()"
 	var frmvalidator = new Validator("requestcd2");
-	frmvalidator.addValidation("school_name","req","Please enter school name.");
-	frmvalidator.addValidation("school_address1","req","Please enter school address.");
-	frmvalidator.addValidation("school_city","req","Please enter your school city.");
-	frmvalidator.addValidation("school_zip","req","Please enter your school zip.");
-	frmvalidator.addValidation("first_name","req","Please enter your first name.");
-	frmvalidator.addValidation("last_name","req","Please enter your last name.");
-	frmvalidator.addValidation("email","req","Please enter your email.");
-</script> -->
+	frmvalidator.addValidation("school_name","req","Please enter school name."); -->
+	// frmvalidator.addValidation("school_address1","req","Please enter school address.");
+// 	frmvalidator.addValidation("school_city","req","Please enter your school city.");
+// 	frmvalidator.addValidation("school_zip","req","Please enter your school zip.");
+// 	frmvalidator.addValidation("first_name","req","Please enter your first name.");
+// 	frmvalidator.addValidation("last_name","req","Please enter your last name.");
+// 	frmvalidator.addValidation("email","req","Please enter your email.");
+<!-- </script> -->
 
 <!-- <script>
 	document.getElementById("submit").disabled = true;
@@ -116,7 +116,7 @@
 	}
 </script> -->
 	
-<script>
+<!-- <script>
   function formatPhoneNumber(value) {
     if (!value) return value;
     const phoneNumber = value.replace(/[^\d]/g, '');
@@ -136,7 +136,7 @@
     const formattedInputValue = formatPhoneNumber(inputField.value);
     inputField.value = formattedInputValue;
   }
-</script>
+</script> -->
 	
 <script>
 	function isUSAZipCode(str) 
