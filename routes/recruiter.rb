@@ -3,7 +3,15 @@ enable :sessions
 get "/recruiters/recruiters/?" do
   auth_admin
   @state = State.all
-  @recruiter = Recruiter.all
+  
+  
+	@recruiter = Recruiter.all(order: [:updated_at.desc], limit: 50)
+  
+	if params[:search] && !params[:search].nil?
+		@recruiter = Recruiter.all(:last_name.like => "%#{params[:search]}%", limit: 50) 
+	end
+
+  
   erb :"/recruiter/recruiters"
 end
 

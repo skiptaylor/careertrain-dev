@@ -2,7 +2,7 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1 class="page-header">Careers and Occupations Guide School Password</h1>
+				<h1 class="page-header">School</h1>
 			</div>
 			<div class=" col-md-8 offset2 sign-in" style="padding: 24px 12px; margin-bottom: 60px;">
 				<div class="col-md-8">
@@ -37,6 +37,12 @@
 					<% if session[:recruiter] %>
 					<p style="margin: 1rem 0 0 1rem;">
 						<a href="/arng/schools/<%= @school.id %>/edit" class="btn btn-small">Edit School</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/recruiters/<%= session[:recruiter] %>/profile" class="btn btn-small">Recruiter Profile</a>
+					</p>
+					<% end %>
+					
+					<% if session[:admin] %>
+					<p style="margin: 1rem 0 0 1rem;">
+						<a href="/arng/schools/<%= @school.id %>/edit" class="btn btn-small">Edit School</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/recruiters/recruiters" class="btn btn-small">Recruiters</a>
 					</p>
 					<% end %>
 				</div>
