@@ -144,6 +144,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   chassis-datamapper (~> 1.0.1)
