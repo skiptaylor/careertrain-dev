@@ -36,7 +36,7 @@
 					  <button type="submit" class="btn btn-success">Search</button>
 					</form>
 		  		</p>
-				<p style="color: #08297b; font-size: 1.15em; font-weight: bold;">Edit school to add recruiter.</p>
+				<p style="color: #08297b; font-size: 1.15em; font-weight: bold;">Edit school to add to recruiter account.</p>
 				<% if @results %>
 				<p>
 					<% @results.each do |c| %>
@@ -49,7 +49,7 @@
 				<% end %>
 				<% if (@results.count < 1) && (params[:zip] != '') %>
 					<hr />
-					<span class="password-show">NO SCHOOL FOUND FOR <%= params[:zip] %></span>
+					<span class="password-show">NO SCHOOL FOUND <%= params[:zip] %></span>
 				<% end %>
 					<hr />
 					<p style="line-height: 1.3em;" class="semi-bold"><a href="/arng/schools/new" style="margin: 2px 0 12px 12px;" class="btn btn-success pull-right">Register</a>After submitting your school's zip, if your school is not listed above, you can register a new school now.

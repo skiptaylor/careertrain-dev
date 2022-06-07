@@ -1,8 +1,8 @@
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
-				<h1 class="page-header">School Registration</h1>
-				<h5>Register your school to get a password.</h5>
+				<h1 class="page-header">Edit School</h1>
+				
 			</div>
 		</div>
 		<div class="row">
@@ -16,22 +16,9 @@
 				  </label>
 				</p>
 				
-				<p style="font-size: 1.1em; margin: 1em 0 1.5em 0;"><strong>Educator’s Contact Information</strong></p>
+				<p style="font-size: 1.1em; margin: 1em 0 1.5em 0;"><strong>School Information</strong></p>
 				
-				<div class="form-row">
-					<div class="form-group col-md-5">
-						<label for="first_name">Educator’s First name</label>
-						<input type="text" class="form-control" name="first_name" id="first_name" value="<%= @school.first_name %>" /> 
-					</div>
-					<div class="form-group col-md-2">
-						<label for="middle_initial">Initial</label>
-						<input type="text" maxlength="1" class="form-control" name="middle_initial" id="middle_initial" value="<%= @school.middle_initial %>" /> 
-					</div>
-					<div class="form-group col-md-5">
-						<label for="last_name">Educator’s Last name</label>
-						<input type="text" class="form-control" name="last_name" id="last_name" value="<%= @school.last_name %>" /> 
-					</div>
-				</div>
+
 				<div class="form-row">
 					<div class="form-group col-md-10">
 						<label for="school_name">School name</label>
@@ -54,7 +41,7 @@
 						<label for="school_state">State</label>
 						<select type="text"  class="form-control" id="school_state" name="school_state" value="<%= @school.school_state %>">
 								<option value="None"></option>
-							<% @state.sort{|a,b| a.id <=> b.id}.each do |state| %>
+							<% @state.sort{|a,b| a.abbr <=> b.abbr}.each do |state| %>
 								<option value="<%= state.abbr %>" <%= 'selected' if state.abbr == @school.school_state %>><%= state.abbr %></option>
 							<% end %>
 						</select>
@@ -62,16 +49,32 @@
 				<% unless @school.active %>
 					<div class="form-group col-md-4">
 						<label for="school_zip">Zip</label>
-						<input type="text" class="form-control" name="school_zip" id="school_zip" pattern="^\s*\d{5}(-?\s*\d{4})?\s*$" maxlength="10" minlength="5" value="<%= @school.school_zip %>" />
+						<input type="text" class="form-control" name="school_zip" id="school_zip" value="<%= @school.school_zip %>" />
 					</div>
 				<% else %>
 					<div class="form-group col-md-4">
 						<label for="school_zip">Zip</label>
-						<input type="text" class="form-control" name="school_zip" id="school_zip" pattern="^\s*\d{5}(-?\s*\d{4})?\s*$" maxlength="10" minlength="5" value="<%= @school.school_zip %>" />
+						<input type="text" class="form-control" name="school_zip" id="school_zip" value="<%= @school.school_zip %>" />
 					</div>
 				<% end %>
 					
 				
+				</div>
+				<p style="font-size: 1.1em; margin: 1em 0 1.5em 0;"><strong>Educator’s Contact Information</strong></p>
+				
+				<div class="form-row">
+					<div class="form-group col-md-5">
+						<label for="first_name">Educator’s First name</label>
+						<input type="text" class="form-control" name="first_name" id="first_name" value="<%= @school.first_name %>" /> 
+					</div>
+					<div class="form-group col-md-2">
+						<label for="middle_initial">Initial</label>
+						<input type="text" class="form-control" name="middle_initial" id="middle_initial" value="<%= @school.middle_initial %>" /> 
+					</div>
+					<div class="form-group col-md-5">
+						<label for="last_name">Educator’s Last name</label>
+						<input type="text" class="form-control" name="last_name" id="last_name" value="<%= @school.last_name %>" /> 
+					</div>
 				</div>
 				<div class="form-row">
 					<div class="control-group col-md-9">
@@ -92,7 +95,7 @@
 			<div class="col-md-4">
 				
 				
-				<div class="form-row">
+				<div class="form-row" style="display: none;">
 					<div class="control-group">		
 						<label for="active"></label>
 						<input type="checkbox" name="active" id="active" <%= 'checked="checked"' if @school.active  %> /> <span style="font-size: 17px; padding: 0 0 0 5px;"><strong>Active</strong></span>
@@ -101,25 +104,33 @@
 				</div>
 				
 				 <div class="well" style="text-align: center; border-top: 3px solid #1abd9c; border-bottom: 3px solid #1abd9c;">
-				<% if @school.active == true %> 
+				
 					School Password
 					<h6 style="color: #b5011c;"><%= @school.school_password %></h6>
-				<% else %>
-					<h5 class="muted">SCHOOL NOT ACTIVATED</h5>
-				<% end %>	
+	
 				 </div>
 				 
- 				<p style="font-size: 1.1em; margin: 1em 0 1.5em 0;"><strong>ARNG Rep</strong></p>
+ 				
 				
 				
  				<div class="form-row">
  					<div class="control-group">
- 						<label for="recruiter_id">Recruiter</label>
+ 						<label for="recruiter_id">School Recruiter</label>
  						<select type="text" id="recruiter_id" name="recruiter_id" class="form-control" value="<%= @school.recruiter_id %>">
  								<option>No recruiter selected</option>
+								
  							<% @recruiter.sort_by(&:state).each do |recruiter| %>
- 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter_id %>><%= recruiter.state %> - <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
- 							<% end %>
+							
+							<% if recruiter.id == @school.recruiter_id %>
+ 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter.id %>><%= recruiter.id %> <%= recruiter.state %> - <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
+							<% end %>
+							<% unless @school.recruiter_id == session[:recruiter] %>
+							<% if recruiter.id == session[:recruiter] %>
+ 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter.id %>><%= recruiter.id %> <%= recruiter.state %> - <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
+							<% end %>
+							<% end %>	
+							<% end %>
+							
  						</select>
  					</div>
  				</div>
@@ -128,7 +139,7 @@
 				
 				
  				<div class="control-group">
- 				    <div class="controls" style="text-align: center;">
+ 				    <div class="controls" style="text-align: left;">
  						 <input class="btn btn-success" type="submit" value="Save" />&nbsp;&nbsp;&nbsp;<a onclick="goBack()" class="btn">Cancel</a>&nbsp;&nbsp;&nbsp;<a href="/arng/schools/<%= @school.id %>/delete" class="delete btn btn-warning"><i class="icon-trash"></i></a>
  					 </div>
  				 </div>
@@ -139,7 +150,7 @@
 		<!-- <%= session[:admin] %> / <%= session[:recruiter] %> // <%= @school.recruiter_id %> -->
 	</div> <!-- /container -->
 
-<script  type="text/javascript">
+<!-- <script  type="text/javascript">
 	var frmvalidator = new Validator("register-school");
 	frmvalidator.addValidation("first_name","req","Please enter your First Name");
 	frmvalidator.addValidation("last_name","req","Please enter your Last Name");
@@ -155,60 +166,5 @@
 	frmvalidator.addValidation("mail_zip","req","Please enter your zip");
 	frmvalidator.addValidation("phone","req","Please enter your phone");
 	rmvalidator.addValidation("phone","req","Please enter your phone");
-</script>
+</script> -->
 
-
-<script>
-  function formatPhoneNumber(value) {
-    if (!value) return value;
-    const phoneNumber = value.replace(/[^\d]/g, '');
-    const phoneNumberLength = phoneNumber.length;
-    if (phoneNumberLength < 4) return phoneNumber;
-    if (phoneNumberLength < 7) {
-      return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
-    }
-    return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(
-      3,
-      6
-    )}-${phoneNumber.slice(6, 9)}`;
-  }
-
-  function phoneNumberFormatter() {
-    const inputField = document.getElementById('phone');
-    const formattedInputValue = formatPhoneNumber(inputField.value);
-    inputField.value = formattedInputValue;
-  }
-</script>
-	
-<script>
-	function isUSAZipCode(str) 
-	{
-	  return /^\d{5}(-\d{4})?$/.test(str);
-	}
-
-	function validateInput() 
-	{
-	  console.log("validateInput");
-	  let zipCode = document.getElementById("school_zip").value;
-	  let message = "";
-	  if (isUSAZipCode(zipCode)) 
-	  {
-	    message = "Valid Zip Code";
-	  } else {
-	    message = "Invalid Zip Code";
-	  }
-	  document.getElementById("msg").innerHTML = message;
-	}
-</script>
-	
-<script>
-	function ValidateEmail(@school.email) 
-	{
-	 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
-	  {
-	    return (true)
-	  }
-	    alert("You have entered an invalid email address!")
-	    return (false)
-	}
-</script>

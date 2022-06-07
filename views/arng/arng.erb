@@ -12,8 +12,13 @@
 				<div class="sign-in" style="padding: 18px 32px; margin: 48px 0;">
 					<h6>ARNG Section </h6>
 					<div style="padding-right: 18px; float: left; border-right: 1px solid #b2b5bc;">
+						<% if session[:recruiter] %>
+						<p>New Recruiter</p>
+						<p><a href="/recruiters/noaccount" class="btn btn-primary disabled">Create an account</a></p>
+						<% else %>
 						<p>New Recruiter</p>
 						<p><a href="/recruiters/noaccount" class="btn btn-primary">Create an account</a></p>
+						<% end %>
 					</div>
 					<div style="margin-left: 184px;">
 						<% if session[:recruiter] %>

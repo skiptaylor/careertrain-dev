@@ -1,15 +1,37 @@
 get '/arng/schools/schools/?' do
   auth_recruiter
-	@school = School.all(order: [:updated_at.desc], limit: 300)
+	@school = School.all(order: [:updated_at.desc], limit: 100)
   
 	if params[:search] && !params[:search].nil?
 		@school = School.all(:school_zip.like => "%#{params[:search]}%", limit: 30) 
   else
-		@school = School.all(:school_name.not => nil, order: [:updated_at.desc], limit: 300)
+		@school = School.all(:school_name.not => nil, order: [:updated_at.desc], limit: 100)
 	end
   
 	erb :'/arng/schools/schools'
 end
+
+# get '/arng/schools/new_school/?' do
+#   @state = State.all
+#   @school = School.new
+#
+#   erb :'/arng/schools/edit_school'
+# end
+#
+# post '/arng/schools/new_school/?' do
+#   state = State.all
+#   school = School.create(
+#     :school_name       => params[:school_name],
+#     :school_zip        => params[:school_zip],
+#     :school_password        => params[:school_password],
+#     :active       => params[:active]
+#   )
+#
+#   redirect "/arng/schools/#{params[:id]}/school"
+# end
+
+
+
 
 get '/arng/schools/new/?' do
   auth_recruiter
@@ -47,21 +69,27 @@ post '/arng/schools/new/?' do
     :email                  => params[:email],
     :arng_email             => params[:arng_email],
     :number_seniors         => params[:number_seniors],
-    :recruiter_id           => params[:recruiter_id],
-    :active                 => params[:active],
-    :cd                     => params[:cd],
-    :ff                     => params[:ff],
-    :cd_before              => params[:cd_before]
+    :recruiter_id           => params[:recruiter_id]
   )
+  params[:active] 					? school.update(:active => true)    : school.update(:active => false)
+  params[:cd] 					    ? school.update(:cd => true)        : school.update(:cd => false)
+  params[:ff] 					    ? school.update(:ff => true)        : school.update(:ff => false)
+  params[:cd_before] 				? school.update(:cd_before => true) : school.update(:cd_before => false)
   
-  school.save
-  
-  session[:recruiter_id] = school.recruiter_id
+  school.recruiter_id == session[:recruiter]
   school.save
   
   redirect "/arng/schools/#{school.id}/school"
 end
 
+
+get '/arng/schools/:id/school/?' do
+  auth_recruiter
+  @state = State.all
+  @recruiter = Recruiter.get(params[:recruiter_id])
+  @school = School.get(params[:id])
+  erb :"/arng/schools/school"
+end
 
 
 
@@ -172,13 +200,13 @@ end
 
 #  -------------------  ARNG Schools ---------------------
 
-get '/arng/schools/:id/?' do
-  auth_recruiter
-  @recruiter = Recruiter.all
-  @state = State.all
-  @school = School.get(params[:id])
-  erb :"/arng/schools/edit_school"
-end
+# get '/arng/schools/:id/?' do
+#   auth_recruiter
+#   @recruiter = Recruiter.all
+#   @state = State.all
+#   @school = School.get(params[:id])
+#   erb :"/arng/schools/edit_school"
+# end
 
 get '/arng/schools/:id/edit_admin/?' do
   auth_admin
@@ -206,35 +234,26 @@ post '/arng/schools/:id/edit_admin/?' do
     :school_state           => params[:school_state],
     :school_zip             => params[:school_zip],
     :school_password        => params[:school_password],
-    :mail_address1          => params[:mail_address1],
-    :mail_address2          => params[:mail_address2],
-    :mail_city              => params[:mail_city],
-    :mail_state             => params[:mail_state],
-    :mail_zip               => params[:mail_zip],
     :phone                  => params[:phone],
     :fax                    => params[:fax],
     :ng_rep                 => params[:ng_rep],
     :email                  => params[:email],
     :arng_email             => params[:arng_email],
     :number_seniors         => params[:number_seniors],
-    :recruiter_id           => params[:recruiter_id],
-    :active                 => params[:active],
-    :cd                     => params[:cd],
-    :ff                     => params[:ff],
-    :cd_before              => params[:cd_before]
+    :recruiter_id           => params[:recruiter_id]
   )
-  
-  
-  
-  redirect "/arng/schools/schools" 
+  params[:active] 					? school.update(:active => true)    : school.update(:active => false)
+
+  redirect "/arng/schools/#{params[:id]}/school"
 
 end
 
 get '/arng/schools/:id/edit/?' do
   auth_recruiter
-  @recruiter = Recruiter.all
+   @recruiter = Recruiter.all
   @state = State.all
   @school = School.get(params[:id])
+  
   erb :"/arng/schools/edit_school_arng"
 end
 
@@ -256,36 +275,30 @@ post '/arng/schools/:id/edit/?' do
     :school_state           => params[:school_state],
     :school_zip             => params[:school_zip],
     :school_password        => params[:school_password],
-    :mail_address1          => params[:mail_address1],
-    :mail_address2          => params[:mail_address2],
-    :mail_city              => params[:mail_city],
-    :mail_state             => params[:mail_state],
-    :mail_zip               => params[:mail_zip],
     :phone                  => params[:phone],
     :fax                    => params[:fax],
     :ng_rep                 => params[:ng_rep],
     :email                  => params[:email],
     :arng_email             => params[:arng_email],
     :number_seniors         => params[:number_seniors],
-    :recruiter_id           => params[:recruiter_id],
-    :active                 => params[:active],
-    :cd                     => params[:cd],
-    :ff                     => params[:ff],
-    :cd_before              => params[:cd_before]
+    :recruiter_id           => params[:recruiter_id]
   )
+  params[:active] 					? school.update(:active => true)    : school.update(:active => false)
   
   redirect "/arng/schools/#{params[:id]}/school"
   
 end
 
-get '/arng/schools/:id/school/?' do
+get '/arng/register/?' do
   auth_recruiter
-  @state = State.all
-  @recruiter = Recruiter.all
-  @school = School.get(params[:id])
-  erb :"/arng/schools/school"
+  @school = School.all
+  unless params[:zip]
+    @results = []
+  else
+    @results = School.all(school_zip: params[:zip].strip.downcase)
+  end
+  erb :"/arng/register"
 end
-
 
 get '/arng/schools/:id/delete/?' do
   auth_recruiter
@@ -326,25 +339,14 @@ get '/arng/practices/?' do
   erb :"/arng/practices"
 end
 
-get '/arng/register/?' do
-  auth_recruiter
-  @school = School.all
-  unless params[:zip]
-    @results = []
-  else
-    @results = School.all(school_zip: params[:zip].strip.downcase)
-  end
-  erb :"/arng/register"
-end
-
-get '/arng/show_password/?' do
-  auth_recruiter
-  @school = School.all
-  erb :"/arng/show_password"
-end
-
-get '/arng/show_schools/?' do
-  auth_recruiter
-  erb :"/arng/show_schools"
-end
+# get '/arng/show_password/?' do
+#   auth_recruiter
+#   @school = School.all
+#   erb :"/arng/show_password"
+# end
+#
+# get '/arng/show_schools/?' do
+#   auth_recruiter
+#   erb :"/arng/show_schools"
+# end
 
