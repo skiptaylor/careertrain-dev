@@ -70,26 +70,37 @@
 					</div>
 				</div>
 				<div class="form row">
-					<div class="form-group col-sm-6">
+					<div class="form-group col-sm-8">
 						<label for="phone">Phone</label>
 						<input  type="phone" class="form-control" placeholder="Phone" name="phone" id="phone" required />
 					</div>
-				</div>  	
-				<div class="form row">
-					<div class="form-group col-sm-5">
-						<label for="students">Number of students</label>
+
+					<div class="form-group col-sm-3">
+						<label for="students"># Students</label>
 						<input type="number" class="form-control" name="students" id="students" />
 					</div>
-				    <div class="col-sm-1"></div>
-				  </div>	
-				  <div class="form row">
-					  <div class="form-group col-sm-5">
-						  <input type="submit" id="submit" class="btn btn-primary" value="Submit" />
-					  </div>
-				  </div>
+				</div>
+				<div class="form row">
+					<div class="col-sm-12">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="cd_before" id="cd_before"  %>
+							<label class="form-check-label" for="cd_before">
+								We have used Career Direction before?
+							</label>
+						</div>
+					</div>
+				    <div class="col-sm-1">
+				    </div>
+				</div>	
+				<br />
+				<div class="form row">
+					<div class="form-group col-sm-5">
+						<input type="submit" id="submit" class="btn btn-primary" value="Submit" />
+					</div>
+				</div>			  
 					  
 			  </form>
-			
+
 		  </div>
 		  <div class="col-md-5">
 			  <p><img src="/img/eCDcover.jpg" class="pic-border" width="100%" /></p>
@@ -149,27 +160,7 @@
 	  document.getElementById("msg").innerHTML = message;
 	}
 </script>
-	
-<script>
-	function ValidateEmail(email) 
-	{
-	 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(requestcd2.email.value))
-	  {
-	    return (true)
-	  }
-	    alert("You have entered an invalid email address!")
-	    return (false)
-	}
-</script>
-	
-<style>
-	#msg
-	{
-	  margin-top:0.1rem;
-	  font-size:0.8rem;
-	}
-</style>
-	
+		
 <!-- <script>
 	function formatPhoneNumber(phoneNumberString) {
 	  var cleaned = ('' + phoneNumberString).replace(/\D/g, '');
