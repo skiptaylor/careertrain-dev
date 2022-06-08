@@ -20,7 +20,7 @@
 					<%= @recruiter.phone %>
 				</p>	
 				
-				<p><a href="/recruiters/<%= @recruiter.id %>/edit/" class="btn" >Edit recruiter</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/recruiters/signout" class="btn btn-secondary btn-sm"><i class="icon-signout"> </i> &nbsp;Sign out</a></p>
+				<p><a href="/recruiters/<%= @recruiter.id %>/edit/" class="btn" >Edit recruiter</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/recruiters/signout" class="btn btn-secondary btn-sm" style="background-color: #000000;"><i class="icon-signout"> </i> &nbsp;Sign out</a></p>
 				<span style="color: #919191;"><strong>PROTECT YOUR PRIVACY.</strong>
 				If you are using a public or shared device <strong>sign out</strong> when finished.</span> <br /><br />
 			</div>
@@ -87,13 +87,12 @@
 					<% if session[:recruiter] == school.recruiter_id %>
 					
 					<tr>
-						<!-- <th style="text-align: center; color: #af4532;"><%= school.recruiter_id %></th> -->
 						
-						<td><a href="/arng/schools/<%= school.id %>/edit" ><i class="icon-edit"></i></a> &nbsp;&nbsp;&nbsp;<%= school.school_name %></td>
+						<td><%= school.school_name %></td>
 						
 						<td><%= school.school_password %></td>
 						<!-- <td style="text-align: right;"><a href="/recruiter/school/<%= school.id %>/presentation/new" class="btn btn-small">Register Class</a></td> -->
-						<td style="text-align: right;"><a href="/arng/schools/<%= school.id %>/school_report" class="btn btn-small">Get Reports</a></td>
+						<td style="text-align: right;"><a href="/arng/schools/<%= school.id %>/edit" class="btn btn-mini">Edit</a> &nbsp; &nbsp; &nbsp; <a href="/arng/schools/<%= school.id %>/school_report" class="btn btn-mini btn-info">Get Reports</a></td>
 					</tr>
 					<% end %>
 					<% end %>

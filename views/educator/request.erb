@@ -44,7 +44,7 @@
   					</div>
 					<div class="form-group col-md-3">
 						<label for="inputZip">Zip</label>
-						<input onKeyUp="validateInput()" id="school_zip" name="school_zip" type="text" class="form-control" placeholder="Zip" required />
+						<input id="school_zip" name="school_zip" type="text" class="form-control" placeholder="Zip" minlength="5" maxlength="5" required />
 						<div id="msg"> </div>
 					</div>
 				</div>
@@ -141,18 +141,18 @@
   }
 </script> -->
 	
-<script>
-	function isUSAZipCode(str) 
+<!-- <script>
+	function isUSAZipCode(str)
 	{
 	  return /^\d{5}(-\d{4})?$/.test(str);
 	}
 
-	function validateInput() 
+	function validateInput()
 	{
 	  console.log("validateInput");
 	  let zipCode = document.getElementById("school_zip").value;
 	  let message = "";
-	  if (isUSAZipCode(zipCode)) 
+	  if (isUSAZipCode(zipCode))
 	  {
 	    message = "Valid Zip Code";
 	  } else {
@@ -160,7 +160,7 @@
 	  }
 	  document.getElementById("msg").innerHTML = message;
 	}
-</script>
+</script> -->
 		
 <!-- <script>
 	function formatPhoneNumber(phoneNumberString) {
