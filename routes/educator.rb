@@ -18,7 +18,7 @@ post '/educator/request/?' do
   body << "<p><b>Email:</b> #{params[:email]}</p>"
   body << "<p><b>Phone:</b> #{params[:phone]}</p>"
   body << "<p><b>Number of students:</b> #{params[:students]}</p>"
-  body << "<p><b>Have used Career Direction before:</b> #{params[:cd_used]}</p>"
+  body << "<p><b>#{params[:cd_used]}</b></p>"
 
   Pony.mail(
     headers: { 'Content-Type' => 'text/html' },
