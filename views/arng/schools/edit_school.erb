@@ -29,7 +29,7 @@
 					<div class="form-group col-md-10">
 						<label for="school_address1">School Address</label>
 						<input type="text" class="form-control" name="school_address1" id="school_address1" value="<%= @school.school_address1 %>" /> 
-						<input type="text" class="form-control" name="school_address2" id="school_address2" value="<%= @school.school_address2 %>" /> 
+						<input type="text" class="form-control" name="school_address2" id="school_address2" style="margin-top: -1px;" value="<%= @school.school_address2 %>" /> 
 					</div>
 				</div>
 				<div class="form-row">
@@ -63,27 +63,19 @@
 				<p style="font-size: 1.1em; margin: 1em 0 1.5em 0;"><strong>Educator’s Contact Information</strong></p>
 				
 				<div class="form-row">
-					<div class="form-group col-md-5">
+					<div class="form-group col-md-6">
 						<label for="first_name">Educator’s First name</label>
 						<input type="text" class="form-control" name="first_name" id="first_name" value="<%= @school.first_name %>" /> 
 					</div>
-					<div class="form-group col-md-2">
-						<label for="middle_initial">Initial</label>
-						<input type="text" class="form-control" name="middle_initial" id="middle_initial" value="<%= @school.middle_initial %>" /> 
-					</div>
-					<div class="form-group col-md-5">
+					<div class="form-group col-md-6">
 						<label for="last_name">Educator’s Last name</label>
 						<input type="text" class="form-control" name="last_name" id="last_name" value="<%= @school.last_name %>" /> 
 					</div>
 				</div>
 				<div class="form-row">
-					<div class="control-group col-md-9">
+					<div class="control-group col-md-10">
 						<label for="email">Counselor/teacher email</label>
 						<input type="email" class="form-control" name="email" id="email" value="<%= @school.email %>" /> 
-					</div>
-					<div class="control-group col-md-3">
-						<label for="number_seniors">Number students</label>
-						<input type="text" class="form-control" name="number_seniors" id="number_seniors" value="<%= @school.number_seniors %>" /> 
 					</div>
 				</div>
 				<br />
@@ -103,89 +95,7 @@
 			</div>
 			
 			<div class="col-md-4">
-				
-				
-				
-				<!-- <div class="control-group">
-					<label class="control-label" for="ng_rep">National Guard Rep</label>
-					<div class="controls">
-						<input type="text" class="textfield col-md-4" name="ng_rep" id="ng_rep" value="<%= @school.ng_rep %>" />
-					</div>
-				</div> -->
-				
-				
-				<!-- <div class="control-group">
-					<label class="control-label" for="mail_address1">Mailing address</label>
-					<div class="controls">
-						<input type="text" class="textfield col-md-4" name="mail_address1" id="mail_address1" value="<%= @school.mail_address1 %>" />
-					</div>
-				</div> -->
-				
-				<!-- <div class="control-group">
-					<label class="control-label" for="mail_address2"> </label>
-					<div class="controls">
-						<input type="text" class="textfield col-md-4" name="mail_address2" id="mail_address2" value="<%= @school.mail_address2 %>" />
-					</div>
-				</div> -->
-				
-				<!-- <div class="control-group">
-					<label class="control-label" for="mail_city">City</label>
-					<div class="controls">
-						<input type="text" class="textfield col-md-4" name="mail_city" id="mail_city" value="<%= @school.mail_city %>" />
-					</div>
-				</div> -->
-					
-				<!-- <div class="control-group">
-					<label class="control-label" for="arng_email">Email</label>
-					<div class="controls">
-						<input type="text" class="textfield col-md-4" name="arng_email" id="arng_email" value="<%= @school.arng_email %>" />
-					</div>
-				</div>
-
-				<div class="control-group">
-					<label class="control-label" for="mail_state">State</label>
-					<div class="controls">
-						<input type="text" class="textfield span1" name="mail_state" id="mail_state" value="<%= @school.mail_state %>" />
-					</div>
-				</div>
-
-				<div class="control-group">
-					<label class="control-label" for="mail_zip">Zip</label>
-					<div class="controls">
-						<input type="text" class="textfield span2" name="mail_zip" id="mail_zip" value="<%= @school.mail_zip %>" />
-					</div>
-				</div>
-
-				<div class="control-group">
-					<label class="control-label" for="phone">Phone</label>
-					<div class="controls">
-						<input type="text" class="textfield span3" name="phone" id="phone" value="<%= @school.phone %>" />
-					</div>
-				</div> -->
-				
-				<!-- <div class="control-group">
-					<label class="control-label" for="fax">Fax</label>
-					<div class="controls">
-						<input type="text" class="textfield span3" name="fax" id="fax" value="<%= @school.fax %>" />
-					</div>
-				</div> -->
 								
-				<!-- <div class="control-group">
-				    <div class="controls">
-				      <label class="checkbox">
-			    		  <input type="checkbox" name="cd_before" id="cd_before" <%= 'checked="checked"' if @school.cd_before  %> />
-			    		 Used Career Direction Before?
-			  	  		</label>
-					</div>
-				</div> -->
-				
-				<!-- <div class="form-row">
-					<div class="control-group">
-						<label for="school_password">School Password</label>
-						<input type="text" class="form-control" name="school_password" id="school_password" value="<%= @school.school_password %>" />
-					</div>
-				</div> -->
-				
 				<div class="form-row" style="display: none;">
 					<div class="control-group">	
 						
@@ -230,18 +140,10 @@
 
 <script  type="text/javascript">
 	var frmvalidator = new Validator("register-school");
-	frmvalidator.addValidation("first_name","req","Please enter your First Name");
-	frmvalidator.addValidation("last_name","req","Please enter your Last Name");
 	frmvalidator.addValidation("school_name","req","Please enter your School Name");
 	frmvalidator.addValidation("school_address1","req","Please enter your School Address");
 	frmvalidator.addValidation("school_city","req","Please enter your School City");
 	frmvalidator.addValidation("school_state","req","Please enter your School State");
 	frmvalidator.addValidation("school_zip","req","Please enter your School Zip");
 	frmvalidator.addValidation("ng_rep","req","Please enter your National Guard Rep");
-	frmvalidator.addValidation("mail_address1","req","Please enter your mailing address");
-	frmvalidator.addValidation("mail_city","req","Please enter your city");
-	frmvalidator.addValidation("mail_state","req","Please enter your state");
-	frmvalidator.addValidation("mail_zip","req","Please enter your zip");
-	frmvalidator.addValidation("phone","req","Please enter your phone");
-	frmvalidator.addValidation("active","req","Active must be checked");
 </script>

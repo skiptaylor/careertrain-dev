@@ -29,7 +29,7 @@
 					<div class="form-group col-md-10">
 						<label for="school_address1">School Address</label>
 						<input type="text" class="form-control" name="school_address1" id="school_address1" value="<%= @school.school_address1 %>" /> 
-						<input type="text" class="form-control" name="school_address2" id="school_address2" value="<%= @school.school_address2 %>" /> 
+						<input type="text" class="form-control" name="school_address2" id="school_address2" style="margin-top: -1px;" value="<%= @school.school_address2 %>" /> 
 					</div>
 				</div>
 				<div class="form-row">
@@ -63,27 +63,19 @@
 				<p style="font-size: 1.1em; margin: 1em 0 1.5em 0;"><strong>Educator’s Contact Information</strong></p>
 				
 				<div class="form-row">
-					<div class="form-group col-md-5">
+					<div class="form-group col-md-6">
 						<label for="first_name">Educator’s First name</label>
 						<input type="text" class="form-control" name="first_name" id="first_name" value="<%= @school.first_name %>" /> 
 					</div>
-					<div class="form-group col-md-2">
-						<label for="middle_initial">Initial</label>
-						<input type="text" class="form-control" name="middle_initial" id="middle_initial" value="<%= @school.middle_initial %>" /> 
-					</div>
-					<div class="form-group col-md-5">
+					<div class="form-group col-md-6">
 						<label for="last_name">Educator’s Last name</label>
 						<input type="text" class="form-control" name="last_name" id="last_name" value="<%= @school.last_name %>" /> 
 					</div>
 				</div>
 				<div class="form-row">
-					<div class="control-group col-md-9">
+					<div class="control-group col-md-10">
 						<label for="email">Counselor/teacher email</label>
 						<input type="email" class="form-control" name="email" id="email" value="<%= @school.email %>" /> 
-					</div>
-					<div class="control-group col-md-3">
-						<label for="number_seniors">Number students</label>
-						<input type="text" class="form-control" name="number_seniors" id="number_seniors" value="<%= @school.number_seniors %>" /> 
 					</div>
 				</div>
 				<div class="form-group col-md-4 invisible">
@@ -117,16 +109,17 @@
  					<div class="control-group">
  						<label for="recruiter_id">School Recruiter</label>
  						<select type="text" id="recruiter_id" name="recruiter_id" class="form-control" value="<%= @school.recruiter_id %>">
- 								<option>No recruiter selected</option>
+ 								
+								
 								
  							<% @recruiter.sort_by(&:state).each do |recruiter| %>
 							
 							<% if recruiter.id == @school.recruiter_id %>
- 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter.id %>><%= recruiter.id %> <%= recruiter.state %> - <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
+ 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter.id %>><%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
 							<% end %>
 							<% unless @school.recruiter_id == session[:recruiter] %>
 							<% if recruiter.id == session[:recruiter] %>
- 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter.id %>><%= recruiter.id %> <%= recruiter.state %> - <%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
+ 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter.id %>><%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
 							<% end %>
 							<% end %>	
 							<% end %>
@@ -140,7 +133,7 @@
 				
  				<div class="control-group">
  				    <div class="controls" style="text-align: left;">
- 						 <input class="btn btn-success" type="submit" value="Save" />&nbsp;&nbsp;&nbsp;<a onclick="goBack()" class="btn">Cancel</a>&nbsp;&nbsp;&nbsp;<a href="/arng/schools/<%= @school.id %>/delete" class="delete btn btn-warning"><i class="icon-trash"></i></a>
+ 						 <input class="btn btn-success" type="submit" value="Save" />&nbsp;&nbsp;&nbsp;<a onclick="goBack()" class="btn">Cancel</a><% if session[:admin] %>&nbsp;&nbsp;&nbsp;<a href="/arng/schools/<%= @school.id %>/delete" class="delete btn btn-warning"><i class="icon-trash"></i></a><% end %>
  					 </div>
  				 </div>
 			 	</form>
@@ -150,21 +143,13 @@
 		<!-- <%= session[:admin] %> / <%= session[:recruiter] %> // <%= @school.recruiter_id %> -->
 	</div> <!-- /container -->
 
-<!-- <script  type="text/javascript">
+<script  type="text/javascript">
 	var frmvalidator = new Validator("register-school");
-	frmvalidator.addValidation("first_name","req","Please enter your First Name");
-	frmvalidator.addValidation("last_name","req","Please enter your Last Name");
 	frmvalidator.addValidation("school_name","req","Please enter your School Name");
 	frmvalidator.addValidation("school_address1","req","Please enter your School Address");
 	frmvalidator.addValidation("school_city","req","Please enter your School City");
 	frmvalidator.addValidation("school_state","req","Please enter your School State");
 	frmvalidator.addValidation("school_zip","req","Please enter your School Zip");
-	frmvalidator.addValidation("ng_rep","req","Please enter your National Guard Rep");
-	frmvalidator.addValidation("mail_address1","req","Please enter your mailing address");
-	frmvalidator.addValidation("mail_city","req","Please enter your city");
-	frmvalidator.addValidation("mail_state","req","Please enter your state");
-	frmvalidator.addValidation("mail_zip","req","Please enter your zip");
-	frmvalidator.addValidation("phone","req","Please enter your phone");
-	rmvalidator.addValidation("phone","req","Please enter your phone");
-</script> -->
+	frmvalidator.addValidation("email","req","Please enter your Counselor/teacher email");
+</script>
 

