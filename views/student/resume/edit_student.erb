@@ -10,13 +10,13 @@
 			<div class="form-group col-md-6"> 
 				<label for="school_password">School's Password</label>
 				<input type="text" class="form-control" placeholder="" name="school_password" id="school_password" aria-describedby="schoolpasswordHelp" value="<%= @student.school_password %>" />
-					<small id="schoolpasswordHelp" class="form-text">If you do not know your school's password, please contact your school Counselor or teacher.</small>
+					<!-- <small id="schoolpasswordHelp" class="form-text">If you do not know your school's password, please contact your school Counselor or teacher.</small> -->
 			</div>
 		</div>
 		<div class="form-row">
 			<div class="form-group col-md-6">
 				<label for="email">Personal Email Address</label>
-				<input type="text" class="form-control" placeholder="" name="email" id="email" aria-describedby="emailHelp" value="<%= @student.email %>" />
+				<input type="email" class="form-control" placeholder="" name="email" id="email" aria-describedby="emailHelp" value="<%= @student.email %>" />
 					<small id="emailHelp" class="form-text">You will use your personal email to access your account.</small>
 			</div>
 			<div class="form-group col-md-6">
@@ -29,10 +29,6 @@
 			<div class="form-group col-md-4">
 				<label for="first_name">First Name</label>
 				<input type="text" name="first_name" id="first_name" class="form-control" placeholder="" value="<%= @student.first_name %>" />
-			</div>
-			<div class="form-group col-md-4">						
-				<label for="middle_name">Middle Name</label>
-				<input type="text" name="middle_name" id="middle_name" class="form-control" placeholder="" value="<%= @student.middle_name %>" />
 			</div>
 			<div class="form-group col-md-4">
 				<label for="last_name">Last Name</label>

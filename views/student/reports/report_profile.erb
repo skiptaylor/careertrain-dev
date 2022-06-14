@@ -1,8 +1,14 @@
+	
+
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
+				
+				
+				
 				<h1 class="page-header">Student Account</h1>
-			</div>
+				</div>
+			
 			
 			<div class="col-md-7">
 				<div>
@@ -12,16 +18,15 @@
 					
 					
 					
-					
 					<% if @student.exercises.count == 0 %>
 					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success">Take Exercise</a>					
 					</p>
 					<% elsif @student.exercises.count == 1 %>
-					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/report" class="btn btn-success">Exercise Results</a>
+					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/report" class="btn btn-info">Exercise Results</a>
 					
 					<a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success">Take Exercise Again</a></p>
 					<% else %>
-					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/report" class="btn btn-success">Exercise Results</a></p>
+					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/report" class="btn btn-sinfo">Exercise Results</a></p>
 					<% end %>
 									
 				</div>
@@ -49,7 +54,7 @@
 						<a href="/student/reports/<%= @student.id %>/edit" class="btn">&nbsp;&nbsp;Edit Profile&nbsp;&nbsp;</a><br />
 					</p>
 				</div><br />
-				<p style="line-height: 15px;"><a style="margin: 5px 24px 40px 24px;" class="btn btn-mini btn-secondary pull-left" href="/student/resume/sign-out">&nbsp;&nbsp;<i class="icon-signout"> </i> &nbsp;Sign out&nbsp;&nbsp;</a>
+				<p style="line-height: 15px;"><a style="margin: 2px 24px 40px 24px; background-color: #000000;" class="btn btn-small btn-secondary pull-left" href="/student/resume/sign-out">&nbsp;&nbsp;<i class="icon-signout"> </i> &nbsp;Sign out&nbsp;&nbsp;</a>
 				<strong>PROTECT YOUR PRIVACY.</strong>
 				<small>If you are using a public or shared device <strong>sign out</strong> when finished.</small></p>
 			</div>
