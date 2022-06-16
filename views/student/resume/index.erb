@@ -23,7 +23,7 @@
 					<% if @student.name == "" && @student.last_name == "" %>
                 <li>
                     <a href="/student/resume/edit">
-                        <span class="ra-icon"><i class="icon-plus"></i></span>
+                        <!-- <span class="ra-icon"><i class="icon-plus"></i></span> -->
                         <div class="rs-content">
                             <span class="right-info">Get started</span><h2 class="rs-main">Personal Information</h2>
                         </div>
@@ -32,7 +32,7 @@
 					 <% else %>
                 <li class="g">
                     <a href="/student/resume/edit">
-                        <span class="rs-icon"><i class="icon-ok"></i></span>
+                        <!-- <span class="rs-icon"><i class="icon-ok"></i></span> -->
                         <div class="rs-content">
                             <span class="right-info edit semi-bold" style="color: #038dc1;">Edit</span><h2 class="rs-main">Personal Information</h2><span class="right-info semi-bold">Edit</span>
                         </div>
@@ -40,25 +40,7 @@
                 </li>
 					 <% end %>
 					 
-					 <% if @student.letters.count == 0 %>
-                <li>
-                    <a href="/student/resume/letters/new">
-                        <span class="ra-icon"><i class="icon-plus"></i></span>
-                        <div class="rs-content">
-                            <span class="right-info">Get started</span><h2 class="rs-main">Cover, Thank You Letters</h2>
-                        </div>
-                    </a>
-                </li>
-					 <% else %>
-                <li>
-                    <a href="/student/resume/letters/letters">
-                        <span class="rs-icon"><i class="icon-ok"></i></span>
-                        <div class="rs-content">
-                            <span class="right-info edit semi-bold" style="color: #038dc1;">Edit</span><h2 class="rs-main">Cover, Thank You Letters</h2>
-                        </div>
-                    </a>
-                </li>
-					 <% end %>
+					 
 					 
 					 <% if @student.objectives.count == 0 %>
                 <li>
@@ -180,25 +162,7 @@
                 </li>
 					 <% end %>
 					 
-					 <% if @student.references.count == 0 %>
-                <li>
-                    <a href="/student/resume/references/new">
-                        <span class="ra-icon"><i class="icon-plus"></i></span>
-                        <div class="rs-content">
-                            <span class="right-info">Get started</span><h2 class="rs-main">References</h2>
-                        </div>
-                    </a>
-                </li>
-					 <% else %>
-                <li>
-                    <a href="/student/resume/references/references">
-                        <span class="rs-icon"><i class="icon-ok"></i></span>
-                        <div class="rs-content">
-                            <span class="right-info edit semi-bold" style="color: #038dc1;">Edit</span><h2 class="rs-main">References</h2>
-                        </div>
-                    </a>
-                </li>
-					 <% end %>
+					
 					 
 					 <% if @student.traits.count == 0 %>
                 <li>
@@ -239,6 +203,46 @@
                     </a>
                 </li>
 					 <% end %>
+					 
+	 					 <% if @student.letters.count == 0 %>
+	                 <li>
+	                     <a href="/student/resume/letters/new">
+	                         <span class="ra-icon"><i class="icon-plus"></i></span>
+	                         <div class="rs-content">
+	                             <span class="right-info">Get started</span><h2 class="rs-main">Cover, Thank You Letters</h2>
+	                         </div>
+	                     </a>
+	                 </li>
+	 					 <% else %>
+	                 <li>
+	                     <a href="/student/resume/letters/letters">
+	                         <span class="rs-icon"><i class="icon-ok"></i></span>
+	                         <div class="rs-content">
+	                             <span class="right-info edit semi-bold" style="color: #038dc1;">Edit</span><h2 class="rs-main">Cover, Thank You Letters</h2>
+	                         </div>
+	                     </a>
+	                 </li>
+	 					 <% end %>
+						 
+		 					 <% if @student.references.count == 0 %>
+		                 <li>
+		                     <a href="/student/resume/references/new">
+		                         <span class="ra-icon"><i class="icon-plus"></i></span>
+		                         <div class="rs-content">
+		                             <span class="right-info">Get started</span><h2 class="rs-main">References</h2>
+		                         </div>
+		                     </a>
+		                 </li>
+		 					 <% else %>
+		                 <li>
+		                     <a href="/student/resume/references/references">
+		                         <span class="rs-icon"><i class="icon-ok"></i></span>
+		                         <div class="rs-content">
+		                             <span class="right-info edit semi-bold" style="color: #038dc1;">Edit</span><h2 class="rs-main">References</h2>
+		                         </div>
+		                     </a>
+		                 </li>
+		 					 <% end %>
 
 				</ul>
 				<br />
