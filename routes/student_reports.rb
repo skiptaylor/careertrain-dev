@@ -123,12 +123,12 @@ post '/student/reports/create/?' do
       end
       
     else
-      flash[:alert] = 'That is not a valid school password.'
+      flash[:alert] = 'That is not a valid School ID.'
       erb :"student/reports/create"
     end 
     
   else
-    flash[:alert] = 'You must enter a valid school password.'
+    flash[:alert] = 'You must enter a valid School ID'
     erb :"student/reports/create"
   end
     
@@ -241,7 +241,7 @@ post '/student/reports/:id/edit/?' do
   
   else
     
-    flash[:alert] = 'You must enter a valid school password.'
+    flash[:alert] = 'You must enter a valid School ID.'
     redirect request.referrer
   
   end

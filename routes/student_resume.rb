@@ -72,12 +72,12 @@ post '/student/resume/create/?' do
       end 
       
     else
-      flash[:alert] = 'That is not a valid school password.'
+      flash[:alert] = 'That is not a valid School ID.'
       erb :"student/resume/create"
     end 
     
   else
-    flash[:alert] = 'You must enter a valid school password.'
+    flash[:alert] = 'You must enter a valid School ID.'
     erb :"student/resume/create"
   end
     
@@ -310,7 +310,7 @@ post '/student/resume/:id/edit/?' do
   redirect "/student/resume/index"
   
   else
-    flash[:alert] = 'You must enter a valid school password.'
+    flash[:alert] = 'You must enter a valid School ID.'
     redirect request.referrer
   end
   
@@ -358,7 +358,7 @@ post '/student/resume/edit/?' do
   redirect "/student/resume/index"
   
   else
-    flash[:alert] = 'You must enter a valid school password.'
+    flash[:alert] = 'You must enter a valid School ID.'
     redirect request.referrer
   
   end

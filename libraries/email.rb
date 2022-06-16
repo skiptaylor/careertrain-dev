@@ -52,15 +52,15 @@ class Email
   def self.welcome(id, email, first_name, last_name, high1_show, high2_show)
 
     body = ""
-    body << "<p style='font-size: 19px;'>Hello #{first_name} #{last_name}. Welcome to <b><i style='color: #55b99e;'>e</i>CareerDirection.</b></h3>"
+    body << "<p style='font-size: 17px;'>Hello #{first_name} #{last_name}. Welcome to <b><i style='color: #55b99e;'>e</i>CareerDirection.</b></h3>"
     body << "<p style='font-size: 17px;'>Your personalized interest report indicates your main interest is <b>#{high1_show}</b> and your next interest is <b>#{high2_show}.</b> You can return to your account any time to see your scores and watch videos or take the exercise a second time.<br /><br /></p>"
-    body << "<p>Thanks for your participation.<br />The <span style='font-weight: 900; letter-spacing: -1px;'><i>e</i>CareerDirection</span> Team<br /></p>"
-    body << "<a href='https://www.ecareerdirection.com/student/report'><b><i style='color: #55b99e;'>e</i>CareerDirecrion</b></a>"
+    body << "<p style='font-size: 17px;'>Thanks for your participation.<br />The <span style='font-weight: 900; letter-spacing: -1px;'><i>e</i>CareerDirection</span> Team<br /></p>"
+    body << "<p style='font-size: 17px;'><a href='https://www.ecareerdirection.com/student/report'><b><i style='color: #55b99e;'>e</i>CareerDirection</b></a></p>"
     
   Pony.mail(
     headers: { 'Content-Type' => 'text/html' },
     to: "#{email}",
-    from: 'no-rely@eCareerDirection.com',
+    from: 'no-reply@eCareerDirection.com',
     subject: 'Welcome to eCareerDirection',
     body: body
   )
