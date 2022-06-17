@@ -204,6 +204,26 @@
                 </li>
 					 <% end %>
 					 
+	 					 <% if @student.references.count == 0 %>
+	                 <li>
+	                     <a href="/student/resume/references/new">
+	                         <span class="ra-icon"><i class="icon-plus"></i></span>
+	                         <div class="rs-content">
+	                             <span class="right-info">Get started</span><h2 class="rs-main">References</h2>
+	                         </div>
+	                     </a>
+	                 </li>
+	 					 <% else %>
+	                 <li>
+	                     <a href="/student/resume/references/references">
+	                         <span class="rs-icon"><i class="icon-ok"></i></span>
+	                         <div class="rs-content">
+	                             <span class="right-info edit semi-bold" style="color: #038dc1;">Edit</span><h2 class="rs-main">References</h2>
+	                         </div>
+	                     </a>
+	                 </li>
+	 					 <% end %>
+					 
 	 					 <% if @student.letters.count == 0 %>
 	                 <li>
 	                     <a href="/student/resume/letters/new">
@@ -224,31 +244,13 @@
 	                 </li>
 	 					 <% end %>
 						 
-		 					 <% if @student.references.count == 0 %>
-		                 <li>
-		                     <a href="/student/resume/references/new">
-		                         <span class="ra-icon"><i class="icon-plus"></i></span>
-		                         <div class="rs-content">
-		                             <span class="right-info">Get started</span><h2 class="rs-main">References</h2>
-		                         </div>
-		                     </a>
-		                 </li>
-		 					 <% else %>
-		                 <li>
-		                     <a href="/student/resume/references/references">
-		                         <span class="rs-icon"><i class="icon-ok"></i></span>
-		                         <div class="rs-content">
-		                             <span class="right-info edit semi-bold" style="color: #038dc1;">Edit</span><h2 class="rs-main">References</h2>
-		                         </div>
-		                     </a>
-		                 </li>
-		 					 <% end %>
+		 					 
 
 				</ul>
 				<br />
 			</div>
 			<div class="col md-6">
-				<a href="/student/resume/<%= @student.id %>/edit" class="btn btn-mini btn-secondary pull-right">&nbsp;&nbsp;Edit Profile&nbsp;&nbsp;</a>
+				<!-- <a href="/student/resume/<%= @student.id %>/edit" class="btn btn-mini btn-secondary pull-right">&nbsp;&nbsp;Edit Profile&nbsp;&nbsp;</a> -->
 				<h6>Account Info</h6>
 				<p><%= @student.email %><br />
 
@@ -280,7 +282,7 @@
 				<p style="font-size: 1.1rem;">Get Your Practice Job Application&nbsp;&nbsp;<a class="btn btn-info btn-mini" href="/img/job-application.pdf">&nbsp;Download&nbsp;</a></p>
 				<div>
 					<hr />
-					<p style="line-height: 17px; margin-top: 14px;"><a style="margin: 5px 24px 24px 0;" class="btn btn-mini btn-secondary pull-left" href="/student/resume/sign-out">&nbsp;&nbsp;<i class="icon-signout"> </i> &nbsp;Sign out&nbsp;&nbsp;</a>
+					<p style="line-height: 17px; margin-top: 14px;"><a style="margin: 5px 24px 24px 0; background-color: #000000;" class="btn btn-mini btn-secondary pull-left" href="/student/resume/sign-out">&nbsp;&nbsp;<i class="icon-signout"> </i> &nbsp;Sign out&nbsp;&nbsp;</a>
 					<strong>PROTECT YOUR PRIVACY.</strong>
 					<small>If you are using a public or shared device <strong>sign out</strong> when finished.</small></p>
 					
