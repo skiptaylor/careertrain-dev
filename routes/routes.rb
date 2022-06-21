@@ -158,13 +158,13 @@ post '/admin/:id/edit/?' do
   redirect "/admin/admin"
 end
 
-get '/admin/:id/delete?'  do
-  auth_admin
-  admin = Admin.get(params[:id])
-  admin.destroy
-  
-  erb :"/admin/admin"
-end
+# get '/admin/:id/delete?'  do
+#   auth_admin
+#   admin = Admin.get(params[:id])
+#   admin.destroy
+#
+#   erb :"/admin/admin"
+# end
 
 get '/reset-password/:email/?' do
 	params[:email].strip!
