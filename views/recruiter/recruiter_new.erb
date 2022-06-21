@@ -109,7 +109,7 @@
 		<div class="form-row">
 			<div class="form-group col-md-6">
 				<label for="phone">Phone</label>
-				<input onkeydown="phoneNumberFormatter()" type="text" name="phone" id="phone" class="form-control" placeholder="" value="<%= @recruiter.phone %>" required />
+				<input type="text" name="phone" id="phone" class="form-control" placeholder="" value="<%= @recruiter.phone %>" required />
 				<div class="invalid-feedback">
 				   Please enter your phone number.
 				</div>
@@ -159,7 +159,7 @@
 	
 </script>
 	
-<script>
+<!-- <script>
   function formatPhoneNumber(value) {
     if (!value) return value;
     const phoneNumber = value.replace(/[^\d]/g, '');
@@ -179,20 +179,20 @@
     const formattedInputValue = formatPhoneNumber(inputField.value);
     inputField.value = formattedInputValue;
   }
-</script>
+</script> -->
 
-<script>
-	function isUSAZipCode(str) 
+<!-- <script>
+	function isUSAZipCode(str)
 	{
 	  return /^\d{5}(-\d{4})?$/.test(str);
 	}
 
-	function validateInput() 
+	function validateInput()
 	{
 	  console.log("validateInput");
 	  let zipCode = document.getElementById("school_zip").value;
 	  let message = "";
-	  if (isUSAZipCode(zipCode)) 
+	  if (isUSAZipCode(zipCode))
 	  {
 	    message = "Valid Zip Code";
 	  } else {
@@ -200,10 +200,10 @@
 	  }
 	  document.getElementById("msg").innerHTML = message;
 	}
-</script>
+</script> -->
 
-<script>
-	function ValidateEmail(@school.email) 
+<!-- <script>
+	function ValidateEmail(@school.email)
 	{
 	 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
 	  {
@@ -212,5 +212,5 @@
 	    alert("You have entered an invalid email address!")
 	    return (false)
 	}
-</script>
+</script> -->
 
