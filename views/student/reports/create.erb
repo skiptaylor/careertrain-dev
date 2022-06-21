@@ -39,15 +39,11 @@
 		<div class="form-row">
 			<div class="form-group col-md-5 offset-md-3">
 				<label for="first_name">First Name</label>
-				<input type="text" name="first_name" id="first_name" class="form-control" placeholder="" value="<%= @first_name %>" />
+				<input type="text" name="first_name" id="first_name" class="form-control" placeholder="" value="<%= params[:first_name] %>" />
 			</div>
-			<!-- <div class="form-group col-md-5 offset-md-3">
-				<label for="middle_name">Middle Name</label>
-				<input type="text" name="middle_name" id="middle_name" class="form-control" placeholder="" value="<%= @middle_name %>" />
-			</div> -->
 			<div class="form-group col-md-5 offset-md-3">
 				<label for="last_name">Last Name</label>
-				<input type="text" name="last_name" id="last_name" class="form-control" placeholder="" value="<%= @last_name %>" />
+				<input type="text" name="last_name" id="last_name" class="form-control" placeholder="" value="<%= params[:last_name] %>" />
 			</div>
 			
 			<div class="form-group col-md-3 offset-md-3">			
@@ -116,7 +112,7 @@
 	
 </div>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 function myFunction() {
   var x = document.getElementById("password");
   if (x.type === "password") {
@@ -125,7 +121,8 @@ function myFunction() {
     x.type = "password";
   }
 }
-</script>
+</script> -->
+
 <!-- <script type="text/javascript">
 function ourFunction() {
   var x = document.getElementById("sub_code2");
@@ -164,13 +161,9 @@ function ourFunction() {
 
 <script  type="text/javascript">
 	var frmvalidator = new Validator("student_report");
-	frmvalidator.addValidation("school_password","req","Please enter your School's Password");
-	/frmvalidator.addValidation("sub_code","req","Please enter your Student Access Code");
-	frmvalidator.addValidation("email","req","Please enter your Personal Email");
-	frmvalidator.addValidation("password","req","Please create a Personal Password");
 	frmvalidator.addValidation("first_name","req","Please enter your First Name");
 	frmvalidator.addValidation("last_name","req","Please enter your Last Name");
-	
+	frmvalidator.addValidation("grade","maxlen=7","Please select your grade");
 </script>
 
 

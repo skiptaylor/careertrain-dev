@@ -37,7 +37,15 @@
 					<img src="/img/eCDsmlogo.svg" style="width: 44px; float: left; margin: -2px 0 0 0;"><h6 style="margin-left: 54px;">Online Resume Tool</h6>
 					<p class="lead">Let's build a resume to help you land that interview.</p>
 					<p>Well organized step-by-step builder includes cover letter, thank you notes, and references.</p>
+					<% if @student.city == nil || @student.zip == nil || @student.address == nil || @student.state == nil || @student.phone == nil %>
+					
+					<p style="margin-top: 14px;"><a href="/student/resume/edit" class="btn btn-success">Resume Tool</a></p>
+					
+					<% else %>
+					
 					<p style="margin-top: 14px;"><a href="/student/resume/index" class="btn btn-success">Resume Tool</a></p>
+					
+					<% end %>
 					<br />
 				</div>
 			</div>

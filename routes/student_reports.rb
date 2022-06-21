@@ -37,6 +37,9 @@ post '/student/reports/create/?' do
   params[:school_password].strip!
   params[:school_password].downcase!
   params[:sub_code].strip!
+  params[:sub_code].upcase!
+  params[:sub_code2].strip!
+  params[:sub_code2].upcase!
 
   unless params[:school_password] == ''
     
@@ -108,7 +111,7 @@ post '/student/reports/create/?' do
           end
         
         else
-           flash[:alert] = 'This Student Access Codes must match. Try typing them again.'
+           flash[:alert] = 'The Student Access Codes must match. Try typing them again.'
            erb :"student/reports/create"
          end
 
