@@ -53,10 +53,10 @@ class Email
 
     body = ""
     body << "<p style='font-size: 17px;'>Hello #{first_name} #{last_name}. Welcome to <b><i style='color: #55b99e;'>e</i>CareerDirection.</b></h3>"
-    body << "<p style='font-size: 17px;'>Your personalized interest report indicates your main interest is <b>#{high1_show}</b> and your next interest is <b>#{high2_show}.</b> You can return to your account any time to see your scores and watch videos or take the exercise a second time.<br /><br /></p>"
+    body << "<p style='font-size: 17px;'>Your personalized interest report indicates your main interest is <b>#{high1_show}</b> and your next interest is <b>#{high2_show}.</b> You can return to your account any time to see your scores and watch videos or take the exercise a second time.<br /></p>"
     body << "<p style='font-size: 17px;'>To access you student account again: <a href='https://www.ecareerdirection.com/student/report'><b><i style='color: #55b99e;'>e</i>CareerDirection</b></a></p>"
     body << "<p style='font-size: 17px;'><b><i style='color: #55b99e;'>e</i>CareerDirection</b> is presented by the <a href='http://www.nationalguard.com'><b>Army National Guard</b></a></p>"
-    body << "<p style='font-size: 17px;'>Thanks for your participation.<br />The <span style='font-weight: 900; letter-spacing: -1px;'><i>e</i>CareerDirection</span> Team<br /></p>"
+    body << "<p style='font-size: 17px;'>Thanks for your participation.<br />The <span style='font-weight: 900; letter-spacing: -1px;'><i style='color: #55b99e;'>e</i>CareerDirection</span> Team<br /></p>"
     
   Pony.mail(
     headers: { 'Content-Type' => 'text/html' },
