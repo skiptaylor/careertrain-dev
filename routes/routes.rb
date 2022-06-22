@@ -111,7 +111,7 @@ end
 
 get '/admin/admin_edit/?' do
   
-  @admin = Admin.all
+  @admin = Admin.get(session[:admin])
   
 	erb :'/admin/admin_edit'
 end

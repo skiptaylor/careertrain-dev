@@ -3,7 +3,7 @@
 			<div class="col-md-12">
 				<a href="/student/resume/index" class="btn btn-small pull-right" style="margin-top: 12px;">Resume Tool</a>
 				<h1 class="page-header">Edit Account</h1>
-				<% if @student.city == nil || @student.zip == nil || @student.address == nil || @student.state == nil || @student.phone == nil %>
+				<% if @student.city == nil || @student.zip == nil || @student.address == nil || @student.state == '' || @student.phone == nil %>
 				<p class="lead" style="color: #c42925;"><strong>Please complete registrtation to continue</strong></p>
 				<% end %>
 			</div>
