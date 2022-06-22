@@ -23,6 +23,9 @@ class Recruiter
   property :recruiter_status, Boolean, :default => false
   property :active, Boolean, :default => true
   
+	property :pass_reset_key,	String
+	property :pass_reset_date, Date
+  
   has n, :schools
   has n, :presentations
   

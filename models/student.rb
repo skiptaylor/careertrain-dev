@@ -10,6 +10,9 @@ class Student
   property :last_activity, Date
   property :create_date, Date
   
+	property :pass_reset_key,	String
+	property :pass_reset_date, Date
+  
   property :agegate,  Boolean, :default => false
 
   property :name,  String
