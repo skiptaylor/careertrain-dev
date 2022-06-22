@@ -36,3 +36,11 @@ $(function() {
     });
   });
 }).call(this);
+
+$(function() {
+  $(window).load(function() {
+	  return $('a#reset-password').click(function() {
+      return $('a#reset-password').attr('href', "/reset-password/" + ($('input#email').val()));
+    });
+  });
+}).call(this);
