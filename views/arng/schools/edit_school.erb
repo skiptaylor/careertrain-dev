@@ -2,7 +2,7 @@
 		<div class="row">  
 			<div class="col-md-12">
 				<h1 class="page-header">School Registration</h1>
-				<h5>Register your school to get a password.</h5>
+				<h5>Register your school to get a School ID.</h5>
 			</div>
 		</div>
 		<div class="row">
@@ -88,7 +88,7 @@
 				</div>
 				<div class="form-row invisible">
 					<div class="control-group col-md-6">
-						<label for="school_password">School Password</label>
+						<label for="school_password">School ID</label>
 						<input type="text" class="form-control hidden" name="school_password" id="school_password" value="<%= @school.school_password %>" /> 
 					</div>
 				</div>
@@ -101,16 +101,16 @@
 						
 						<label for="active"></label>
 						<input type="checkbox" name="active" id="active" style="font-size: 2em;" <%= 'checked="checked"' if @school.active  %> /> <span style="font-size: 17px; padding: 0 0 0 5px;"><strong>Active</strong></span>
-						<br />(activates school and creates password)
+						<br />
 					</div>
 				</div>
 				
 				 <div class="well" style="text-align: center; border-top: 3px solid #1abd9c; border-bottom: 3px solid #1abd9c; display: none;">
 				<% if @school.active == true %> 
-					School Password
+					School ID
 					<h6 style="color: #b5011c;"><%= @school.school_password %></h6>
 				<% else %>
-					<h5 class="muted">SCHOOL NOT ACTIVATED</h5>
+					<h5 class="muted">SCHOOL</h5>
 				<% end %>
 				 </div>
 				 

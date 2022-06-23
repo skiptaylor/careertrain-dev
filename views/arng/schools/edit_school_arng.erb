@@ -79,7 +79,7 @@
 					</div>
 				</div>
 				<div class="form-group col-md-4 invisible">
-					<label for="school_password">School Password</label>
+					<label for="school_password">School ID</label>
 					<input type="text" class="form-control" name="school_password" id="school_password" value="<%= @school.school_password %>" />
 				</div>
 			</div>
@@ -91,13 +91,13 @@
 					<div class="control-group">		
 						<label for="active"></label>
 						<input type="checkbox" name="active" id="active" <%= 'checked="checked"' if @school.active  %> /> <span style="font-size: 17px; padding: 0 0 0 5px;"><strong>Active</strong></span>
-						<br /><small>(activates school and creates password)</small>
+						<br /><small></small>
 					</div>
 				</div>
 				
 				 <div class="well" style="text-align: center; border-top: 3px solid #1abd9c; border-bottom: 3px solid #1abd9c;">
 				
-					School Password
+					School ID
 					<h6 style="color: #b5011c;"><%= @school.school_password %></h6>
 	
 				 </div>
