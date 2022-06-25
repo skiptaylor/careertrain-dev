@@ -315,6 +315,13 @@ get '/student/resume/resume' do
         pdf.text "•  #{award.award}, #{award.award_date}",
           :inline_format => true, :indent_paragraphs => 8, :leading => 2
       end
+      pdf.move_down(12)
+  		pdf.text "<b><font size='10px'>Character Traits</font></b>",
+        :inline_format => true, :leading => 4
+  			@student.traits.each do |trait|
+          pdf.text "Because I am known to be #{trait.trait_1}, #{trait.trait_2}, and #{trait.trait_3}, I believe I would be an asset to your company.",  
+          :inline_format => true, :indent_paragraphs => 8, :leading => 2
+        end
     pdf.move_down(12)
 		pdf.text "<b><font size='10px'>Interests and Hobbies</font></b>",
       :inline_format => true, :leading => 4

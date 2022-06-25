@@ -127,6 +127,11 @@
 		</ul>
 		<% end %>
 		
+		<h2>Character Traits</h2>
+		<% @student.traits.each do |trait| %>
+		<p>Because I am known to be <%= trait.trait_1 %>, <%= trait.trait_2 %>, and <%= trait.trait_3 %>, I believe I would be an asset to your company.</p>
+		<% end %>
+		
 		
 		<h2>Interests and Hobbies</h2>
 			<% @student.interests.each do |interest| %>
