@@ -1,3 +1,10 @@
+<style>
+	abbr {
+		color: #7b1a18;
+		text-decoration: underline;
+	}
+</style>	
+
 	<div class="container">	
 		<div class="row">  
 			<div class="col-md-12">
@@ -11,6 +18,15 @@
 				<p><strong>Trait 3:</strong>&nbsp;&nbsp;<%= trait.trait_3 %></p>
 				
 				<a href="/student/resume/traits/<%= trait.id %>/edit" class="btn btn-small">Edit</a>
+				
+				<br /><br />
+				
+				<% if trait.trait_1 == '' %>
+				<p><strong>Usage example:</strong> Because I am known to be <abbr title="Trait 1">kind</abbr>, <abbr title="Trait 2">enthusiastic</abbr>, and <abbr title="Trait 3">hard-working</abbr>, I believe I would be an asset to your company.</p>
+				<% else %>
+				<p><strong>Usage:</strong> Because I am known to be<abbr title="Trait 1"> <%= trait.trait_1 %></abbr>, <abbr title="Trait 2"><%= trait.trait_2 %></abbr>, and <abbr title="Trait 3"><%= trait.trait_3 %></abbr>, I believe I would be an asset to your company.</p>
+				<% end %>
+				
 				<% end %>
 			</div>
 		</div> <!-- /row -->
