@@ -151,13 +151,13 @@ get "/student/reports/signin/?" do
     
 	session[:student] = nil
 	session.clear
-  @school = School.all
+  @school = School.all 
   @student = Student.all
   erb :"student/reports/signin"
   
   else
     
-    redirect("/student/reports/report/report_profile")
+  redirect("/student/reports/report/report_profile")
   
   end
 end

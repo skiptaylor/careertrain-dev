@@ -155,21 +155,21 @@ get "/student/resume/:id/student/?" do
   erb :"student/resume/student"
 end
 
-get "/student/resume/signin/?" do
-  
-  unless session[:student]
-    
-	session[:student] = nil
-	session.clear
-  @student = Student.all
-  erb :"student/resume/signin"
-  
-  else
-  
-  redirect "/student/resume/index"
-
-  end
-end
+# get "/student/resume/signin/?" do
+#
+#   unless session[:student]
+#
+#   session[:student] = nil
+#   session.clear
+#   @student = Student.all
+#   erb :"student/resume/signin"
+#
+#   else
+#
+#   redirect "/student/resume/index"
+#
+#   end
+# end
 
 # post '/student/resume/signin/?' do
 #
@@ -189,35 +189,35 @@ end
 #   end
 # end
 
-post '/student/resume/signin/?' do
-  
-  params[:email].strip!
-  params[:password].strip!
-  
-  unless params[:email] == ''
-
-    if student = Student.first(:email => params[:email])
-      if (student.password == params[:password])  || (params[:password] == 'coconutisland')
-        session[:student] = student.id
-        flash[:alert] = 'Welcome back! You are now signed in.'
-        redirect "/student/resume/index"
-      else
-        flash[:alert] = 'Your password is incorrect.'
-        erb :"student/resume/signin"
-      end
-    else
-      flash[:alert] = 'We can\'t find an account with that email address. Maybe you need to create one.'
-      erb :"student/resume/signin"
-    end
-    
-  else
-    flash[:alert] = 'You must enter a valid email.'
-    erb :"student/resume/signin"
-  end
-  
-  # Email.reset(student.email, student.password)
-  
-end
+# post '/student/resume/signin/?' do
+#
+#   params[:email].strip!
+#   params[:password].strip!
+#
+#   unless params[:email] == ''
+#
+#     if student = Student.first(:email => params[:email])
+#       if (student.password == params[:password])  || (params[:password] == 'coconutisland')
+#         session[:student] = student.id
+#         flash[:alert] = 'Welcome back! You are now signed in.'
+#         redirect "/student/resume/index"
+#       else
+#         flash[:alert] = 'Your password is incorrect.'
+#         erb :"student/resume/signin"
+#       end
+#     else
+#       flash[:alert] = 'We can\'t find an account with that email address. Maybe you need to create one.'
+#       erb :"student/resume/signin"
+#     end
+#
+#   else
+#     flash[:alert] = 'You must enter a valid email.'
+#     erb :"student/resume/signin"
+#   end
+#
+#   # Email.reset(student.email, student.password)
+#
+# end
 
 # get "/student/resume/reset_password/?" do
 #   @student = Student.all
@@ -226,35 +226,35 @@ end
 #   erb :"student/resume/signin"
 # end
 
-get "/student/resume/reset/?" do
-  session[:student] = nil
-  session.clear
-  @student = Student.all
-
-  erb :"student/resume/reset"
-end
-
-post "/student/resume/reset/?" do
-  params[:email].strip!
-
-  unless params[:email] == ''
-    if student = Student.first(:email => params[:email])
-      Email.reset(student.email, student.password)
-      redirect "/student/reports/signin"
-    else
-      flash[:alert] = 'We can\'t find an account with that email address. Maybe you need to create one or try again.'
-      erb :"student/resume/reset"
-    end
-  else
-    flash[:alert] = 'You must enter a valid email.'
-    erb :"student/resume/reset"
-  end
-
-end
-
-get "/student/resume/reset_password/?" do
-  erb :"student/resume/reset_password"
-end
+# get "/student/resume/reset/?" do
+#   session[:student] = nil
+#   session.clear
+#   @student = Student.all
+#
+#   erb :"student/resume/reset"
+# end
+#
+# post "/student/resume/reset/?" do
+#   params[:email].strip!
+#
+#   unless params[:email] == ''
+#     if student = Student.first(:email => params[:email])
+#       Email.reset(student.email, student.password)
+#       redirect "/student/reports/signin"
+#     else
+#       flash[:alert] = 'We can\'t find an account with that email address. Maybe you need to create one or try again.'
+#       erb :"student/resume/reset"
+#     end
+#   else
+#     flash[:alert] = 'You must enter a valid email.'
+#     erb :"student/resume/reset"
+#   end
+#
+# end
+#
+# get "/student/resume/reset_password/?" do
+#   erb :"student/resume/reset_password"
+# end
 
 get "/student/resume/sign-out/?" do
   session[:student] = nil
