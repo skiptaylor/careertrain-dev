@@ -361,7 +361,7 @@ get '/arng/leads/?' do
 end
 
 get '/arng/downloads/?' do
-  auth_recruiter
+  
   erb :"/arng/downloads"
 end
 

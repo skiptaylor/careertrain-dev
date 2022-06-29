@@ -8,7 +8,7 @@ helpers do
 
 
   def auth_recruiter
-    unless session[:recruiter] == true || session[:admin] == true
+    unless session[:recruiter] == true || session[:admin] == true || session[:recruiter] != ''
       flash[:alert] = 'You must sign in to see that page.'
       redirect '/arng/arng'
     end
