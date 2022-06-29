@@ -21,6 +21,11 @@
 					<li>Gain practical job-getting skills: how to write a resume and cover letter, how to interview successfully and follow-up effectively to &ldquo;get and keep a job!&rdquo;</li>
 					<li>Create your personal plan of action for career success!</li>
 				</ul>
+				<% unless session[:student] %>
+				<P><a href="/student/report" class="btn btn-primary">Student Account</a></P>
+				<% else %>
+				<P><a href="/student/reports/report/report_profile" class="btn btn-primary">Student Account</a></P>
+				<% end %>
 			</div>
 			<div class="col-md-4">
 				<p><img src="../img/eCDcover.jpg" class="pic-border" width="100%" /></p>
