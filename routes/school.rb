@@ -434,13 +434,14 @@ get '/arng/schools/:id/summary_report_csv/?' do
   attachment "summery_report.csv"
   csv_string = CSV.generate do |csv|
       csv << ["Summary Report"]
-      csv << ["School Name", "City", "State", "Class Date", "Recruiter"]
+      csv << ["School", "City", "State", "Class Date", "Recruiter"]
       csv << ["#{@school.school_name}", "#{@school.school_city}", "#{@school.school_state}", "#{@school.class_date}", "#{@school.recruiter.rank} #{@school.recruiter.first_name} #{@school.recruiter.last_name}"]
       csv << [""]
-      csv << ["Student", "Grade", "Email", "High Score", "Second High"]
+      
+      csv << ["Student", "Email", "Phone", "Grade", "High Score", "Second High", "Future Plans"]
 	  if @school.students.each do |student|
        if student.created_on == @school.class_date  
-        csv << ["#{student.first_name} #{student.last_name}", "#{student.grade}", "#{student.email}", "#{student.score1}", "#{student.score2}"]
+        csv << ["#{student.first_name} #{student.last_name}", "#{student.email}", "#{student.phone}", "#{student.grade}", "#{student.high1_show}", "#{student.high2_show}"]
       end
     end
   end
