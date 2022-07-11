@@ -441,7 +441,7 @@ get '/arng/schools/:id/summary_report_csv/?' do
       csv << ["Student", "Email", "Phone", "Grade", "High Score", "Second High", "Future Plans"]
 	  if @school.students.each do |student|
        if student.created_on == @school.class_date  
-        csv << ["#{student.first_name} #{student.last_name}", "#{student.email}", "#{student.phone}", "#{student.grade}", "#{student.high1_show}", "#{student.high2_show}"]
+        csv << ["#{student.first_name} #{student.last_name}", "#{student.email}", "#{student.phone}", "#{student.grade}", "#{student.high1_show}", "#{student.high2_show}", if student.future1 == "on" then "Enter technical college/trade school" else nil end, if student.future2 == "on" then "Work full-time" else nil end, if student.future3 == "on" then "Work part-time" else nil  end, if student.future4 == "on" then "Enter the military" else nil end, if student.future5 == "on" then "Go to college" else nil end, if student.future6 == "on" then "I have money to pay for education" else nil end, if student.future7 == "on" then "Counting on parents for money for education" else nil end, if student.future8 == "on" then "Considering sources of financial aid or scholarships" else nil end]
       end
     end
   end
