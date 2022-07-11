@@ -131,7 +131,7 @@
 				<div class="hidden-print" style="margin: 2em 0 2em 0;">
 					<form id="summary_report" method="post">
 				<button type="submit" class="hidden-print btn" style="float: right; margin-top: 6px; margin-left: 12px;">Create PDF</button></form>
-			<a href="/arng/schools/<%= @school.id %>/summary_report_csv" class="btn" style="float: right; margin-top: 6px; margin-left: 12px;">Export csv</a><button onclick="history.back()" class="hidden-print btn btn-secondary" style="color: white; float: right; margin-top: 6px;">Back</button><br />
+			<a href="/arng/schools/#{@school.id}/csv" class="btn" style="float: right; margin-top: 6px; margin-left: 12px;">Export csv</a><button onclick="history.back()" class="hidden-print btn btn-secondary" style="color: white; float: right; margin-top: 6px;">Back</button><br />
 				</div>
 				
 				<p class="header1">Summary Report</p>

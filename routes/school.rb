@@ -188,6 +188,40 @@ post '/arng/schools/:id/summary_report/?' do
   
 end
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 get '/arng/schools/:id/ind_report/?' do
   
   auth_recruiter
@@ -386,3 +420,30 @@ end
 #   erb :"/arng/show_schools"
 # end
 
+require 'json'
+require 'csv'
+
+get '/arng/schools/:id/summary_report_csv/?' do
+  auth_recruiter
+  @school = School.get(params[:id])
+  @recruiter = Recruiter.get(params[:recruiter_id])
+  @school.presentations = Presentation.all(:school_id => @school.id, :class_date => params[:presentation])
+  @school.students = Student.all(:school_password => @school.school_password, :school_password.not => '')
+  
+  content_type 'application/csv'
+  attachment "summery_report.csv"
+  csv_string = CSV.generate do |csv|
+      csv << ["Summary Report"]
+      csv << ["School Name", "City", "State", "Class Date", "Recruiter"]
+      csv << ["#{@school.school_name}", "#{@school.school_city}", "#{@school.school_state}", "#{@school.class_date}", "#{@school.recruiter.rank} #{@school.recruiter.first_name} #{@school.recruiter.last_name}"]
+      csv << [""]
+      csv << ["Student", "Grade", "Email", "High Score", "Second High"]
+	  if @school.students.each do |student|
+       if student.created_on == @school.class_date  
+        csv << ["#{student.first_name} #{student.last_name}", "#{student.grade}", "#{student.email}", "#{student.score1}", "#{student.score2}"]
+      end
+    end
+  end
+end
+
+end
