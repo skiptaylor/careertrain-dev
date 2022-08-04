@@ -155,23 +155,22 @@ cellspacing="0" width="100%">
 cellpadding="0" width="100%">
 				<tr valign="top" class="main">
 					<td width="33%">
-						<span
-class="header2">Teaching/Guidance</span><br /><br />
+						<span class="header2">Teaching/Guidance</span><br />
 
-	<em>Chaplain<br /><br />
+	<em>Chaplain<br />
 						College
-Professor<br /><br />
-						Librarian<br /><br />
+Professor<br />
+						Librarian<br />
 						Industrial Arts
-Teacher<br /><br />
-						Nurse<br /><br />
+Teacher<br />
+						Nurse<br />
 						Recruiting
-Specialist<br /><br />
+Specialist<br />
 						Religious Program
-Specialist<br /><br />
+Specialist<br />
 						Nursing
-Technician<br /><br />
-						Trainer<br /><br />
+Technician<br />
+						Trainer<br />
 						Instructor
 							<ul>
 
@@ -186,55 +185,55 @@ Technician<br /><br />
 					</td>
 					<td width="33%">
 						<span
-class="header2">Helping/Supportive</span><br /><br />
+class="header2">Helping/Supportive</span><br />
 
-	<em>Therapist<br /><br />
+	<em>Therapist<br />
 						Social
-Worker<br /><br />
+Worker<br />
 
-	Chiropractor<br /><br />
+	Chiropractor<br />
 						Food Service
-Director<br /><br />
+Director<br />
 						Housing Relocation
-Administration<br /><br />
+Administration<br />
 						Physical Therapist
-Assistant<br /><br />
+Assistant<br />
 						Special Service
-Coordinator<br /><br />
+Coordinator<br />
 
-	Interpreter/Translator<br /><br />
+	Interpreter/Translator<br />
 						Occupation Therapy
-Specialist<br /><br />
+Specialist<br />
 						Recreation
-Specialist<br /><br />
+Specialist<br />
 						Medical Service
-Technician<br /><br />
+Technician<br />
 						Cleaning Service
 Owner</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Supportive Operations</span><br /><br />
+class="header2">Supportive Operations</span><br />
 						<em>U.S.
-Marshal<br /><br />
+Marshal<br />
 						Customs
-Inspector<br /><br />
+Inspector<br />
 						Private
-Investigator<br /><br />
+Investigator<br />
 						Police
-Officer/Military Police<br /><br />
+Officer/Military Police<br />
 						City/State
-Employee<br /><br />
+Employee<br />
 						Correctional
-Officer<br /><br />
+Officer<br />
 						Compliance
-Officer<br /><br />
+Officer<br />
 						Volunteer
-Coordinator<br /><br />
+Coordinator<br />
 						City Transportation
-Operator<br /><br />
+Operator<br />
 						Security
-Guard<br /><br />
+Guard<br />
 						Life Guard</em>
 					</td>
 				</tr>

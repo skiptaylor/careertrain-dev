@@ -147,7 +147,7 @@ cellpadding="0" width="100%">
 					<td width="33%">
 
 						<span
-class="header2">Medical Sciences</span><br /><br />
+class="header2">Medical Sciences</span><br />
 
 
 						<em>Physicist
@@ -164,13 +164,13 @@ class="header2">Medical Sciences</span><br /><br />
 	<li>Nuclear</li>
 							</ul>
 						Physical
-Therapist<br /><br />
+Therapist<br />
 						Prosthetic
-Engineer<br /><br />
+Engineer<br />
 						Prosthetic
-Designer<br /><br />
+Designer<br />
 						Physical Therapist
-Assistant<br /><br />
+Assistant<br />
 						Technician
 							<ul>
 
@@ -187,15 +187,15 @@ Assistant<br /><br />
 					</td>
 					<td width="33%">
 						<span
-class="header2">Environmental Sciences</span><br /><br />
+class="header2">Environmental Sciences</span><br />
 						<em>City
-Planner<br /><br />
+Planner<br />
 						Marine
-Biologist<br /><br />
+Biologist<br />
 
-	Geographer<br /><br />
+	Geographer<br />
 						Industrial
-Hygienist<br /><br />
+Hygienist<br />
 						Engineer
 							<ul>
 
@@ -206,21 +206,21 @@ Hygienist<br /><br />
 	<li>Mechanical</li>
 							</ul>
 
-	Environmentalist<br /><br />
+	Environmentalist<br />
 
-	Meteorologist<br /><br />
+	Meteorologist<br />
 
-	Climatologist<br /><br />
+	Climatologist<br />
 						Air Pollution
-Control Technician<br /><br />
+Control Technician<br />
 						Land
-Surveyor<br /><br />
+Surveyor<br />
 						Energy Management
 Technician</em>
 					</td>
 					<td width="33%">
 						<span
-class="header2">Engineering Sciences</span><br /><br />
+class="header2">Engineering Sciences</span><br />
 						<em>Engineer
 							<ul>
 
@@ -231,16 +231,16 @@ class="header2">Engineering Sciences</span><br /><br />
 	<li>Mechanical</li>
 							</ul>
 
-	Cartographer<br /><br />
+	Cartographer<br />
 						Aircraft
-Pilot<br /><br />
+Pilot<br />
 						Aviation Safety
-Inspector<br /><br />
-						Inventor<br /><br />
+Inspector<br />
+						Inventor<br />
 
-	Researcher<br /><br />
+	Researcher<br />
 						Boat
-Captain<br /><br />
+Captain<br />
 						Technician
 							<ul>
 

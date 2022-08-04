@@ -206,12 +206,12 @@ get "/recruiters/:id/view/?" do
   erb :"/recruiter/recruiter"
 end
 
-get '/recruiters/:id/delete/?' do
-  auth_admin
-  recruiter = Recruiter.get(params[:id])
-  recruiter.destroy
-  redirect "/recruiters/recruiters"
-end
+# get '/recruiters/:id/delete/?' do
+#   auth_admin
+#   recruiter = Recruiter.get(params[:id])
+#   recruiter.destroy
+#   redirect "/recruiters/recruiters"
+# end
 
 get "/recruiters/signout/?" do
   session[:recruiter] = nil
