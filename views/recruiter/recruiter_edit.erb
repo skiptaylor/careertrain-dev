@@ -69,7 +69,7 @@
 				<div class="form-row">
 					<div class="form-group col-md-6">
 						<label for="phone">Phone</label>
-						<input onkeydown="phoneNumberFormatter()" type="text" name="phone" id="phone" class="form-control" value="<%= @recruiter.phone %>" />
+						<input type="text" name="phone" id="phone" class="form-control" value="<%= @recruiter.phone %>" />
 					</div>
 				</div>
 				
@@ -82,7 +82,7 @@
 						<input type="checkbox" name="active" id="active" <%= 'checked="checked"' if @recruiter.active  %> />&nbsp;&nbsp;&nbsp;<strong>Active Recruiter</strong>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						
-		 				<input type="checkbox" name="recruiter_status" id="recruiter_status" <%= 'checked="checked"' if @recruiter.recruiter_status  %> /><strong>&nbsp;&nbsp;&nbsp;RRC</strong><label class="checkbox">
+		 				<!-- <input type="checkbox" name="recruiter_status" id="recruiter_status" <%= 'checked="checked"' if @recruiter.recruiter_status  %> /><strong>&nbsp;&nbsp;&nbsp;RRC</strong><label class="checkbox"> -->
 						
 					</div>
 				</div>
@@ -100,7 +100,7 @@
 	</div> <!-- /container -->
 
 
-<script>
+<!-- <script>
   function formatPhoneNumber(value) {
     if (!value) return value;
     const phoneNumber = value.replace(/[^\d]/g, '');
@@ -120,7 +120,7 @@
     const formattedInputValue = formatPhoneNumber(inputField.value);
     inputField.value = formattedInputValue;
   }
-</script>
+</script> -->
 	
 <script>
 	function isUSAZipCode(str) 

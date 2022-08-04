@@ -20,7 +20,7 @@
 				<th>Recruiter</th>
 				<th>Email</th>
 				<th style="text-align: center;">State</th>
-				<th style="text-align: center;">RRC</th>
+				<!-- <th style="text-align: center;">RRC</th> -->
 				<th> </th>
 			</tr>
 			<% @recruiter.each do |recruiter| %>
@@ -29,8 +29,8 @@
 				<td><%= recruiter.first_name %> <%= recruiter.last_name %></td>
 				<td><%= recruiter.email %></td>
 				<td style="text-align: center;"><%= recruiter.state %></td>
-				<td style="text-align: center;"><% if recruiter.recruiter_status == true %>RRC<% end %></td>
-				<td style="text-align: right;"><a href="/recruiters/<%= recruiter.id %>/edit/" class="btn btn-small">Edit</a>&nbsp;&nbsp;<a href="/recruiters/<%= recruiter.id %>/view/" class="btn btn-small">View</a></td>
+				<!-- <td style="text-align: center;"><% if recruiter.recruiter_status == true %>RRC<% end %></td> -->
+				<td style="text-align: right;"><a href="/recruiters/<%= recruiter.id %>/edit/" class="btn btn-small">Edit</a></td>
 			</tr>
 			<% end %>
 			</table>
