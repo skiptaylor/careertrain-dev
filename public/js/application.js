@@ -37,7 +37,7 @@ $(function() {
   });
 }).call(this);
 
-(function() {
+$(function() {
 
   $(window).load(function() {
     $('a.btn-danger').click(function() {
