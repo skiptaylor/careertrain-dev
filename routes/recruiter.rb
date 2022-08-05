@@ -225,9 +225,9 @@ post "/recruiters/password-reset/?"  do
       Pony.mail(
         headers: { 'Content-Type' => 'text/html' },
         to: "#{params[:email]}",
-        from: "noreply@hear-survey.herokuapp.com",
-        subject: "Here is your HEAR Survey password rest code.",
-        body: "Here is your password rest code for your <b>HEAR Survey</b> account: <b>#{params[:pas_code]}</b>"
+        from: "noreply@eCareerDirection.com",
+        subject: "Here is your eCareerDirection password rest code.",
+        body: "Here is your password rest code for your <b>eCareerDirection</b> account: <b>#{params[:pas_code]}</b>"
       )
       flash[:alert] = 'Reset code was sent to your inbox.'
       redirect '/recruiters/reset'
