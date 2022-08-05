@@ -198,6 +198,93 @@ get '/recruiters/:id/profile/?' do
   erb :"/recruiter/recprofile"
 end
 
+
+
+
+
+get "/recruiters/password-reset/?"  do
+  
+  erb :'/recruiter/password-reset'
+end
+
+post "/recruiters/password-reset/?"  do
+ 
+  params[:email].strip!
+  
+  if recruiter = Recruiter.first(:email => params[:email])
+    
+    session[:recTemp] = recruiter.id
+
+    session[:rec_new] = params[:email]
+
+    params[:pas_code] = rand(1000..5000).to_s
+
+    session[:verifyPass] = params[:pas_code]
+  
+    if settings.production?
+      Pony.mail(
+        headers: { 'Content-Type' => 'text/html' },
+        to: "#{params[:email]}",
+        from: "noreply@hear-survey.herokuapp.com",
+        subject: "Here is your HEAR Survey password rest code.",
+        body: "Here is your password rest code for your <b>HEAR Survey</b> account: <b>#{params[:pas_code]}</b>"
+      )
+      flash[:alert] = 'Reset code was sent to your inbox.'
+      redirect '/recruiters/reset'
+    else
+      flash[:alert] = 'Reset code would have been sent in production mode.'
+      redirect '/recruiters/reset'
+    end
+
+  else
+    flash[:alert] = 'We can\'t find an account with this email,'
+    erb :"/recruiter/password-reset"
+  end
+
+end
+
+get "/recruiters/reset/?"  do
+  
+  erb :'/recruiter/reset'
+end
+
+post "/recruiters/reset/?"  do
+  
+  if
+    params[:pas_code] = session[:verifyPass]
+    
+    redirect "/recruiters/#{session[:recTemp]}/new-password"
+  else 
+    flash[:alert] = 'Code is not valid. Try again.'
+  end
+    
+  redirect '/recruiters/reset'
+end
+
+get "/recruiters/:id/new-password/?"  do
+  @recruiter = Recruiter.get(params[:id])
+  @recruiter.password = (@recruiter.password = nil)
+  @recruiter.save
+  erb :'/recruiter/new-password'
+end
+
+post "/recruiters/:id/new-password/?" do
+  recruiter = Recruiter.get(params[:id])
+  
+  recruiter.update(
+    :password         => params[:password]
+  )
+  session[:recruiter] = recruiter.id
+  redirect "/recruiters/#{recruiter.id}/profile"
+end
+
+
+
+
+
+
+
+
 get "/recruiters/:id/view/?" do
   auth_admin
   @school = School.all(order: [:updated_at.desc], limit:50)

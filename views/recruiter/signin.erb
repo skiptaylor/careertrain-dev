@@ -71,13 +71,11 @@
   <% if @errors.include?(:password_not_matched) && !@errors.include?(:email_not_found) %>
     <span class="help-inline">Wrong password.</span>
   <% end %>
-  <div class="checkbox mb-3">
-    <label>
-      <a href="/student/resume/reset">Forget your password?</a>
-    </label>
-  </div>
+
   <button class="btn btn-lg btn-primary pull-left" type="submit">Sign in</button>
   <button onclick="goBack()" class="btn btn-secondary pull-right">Cancel</button>
+  
+  <p style="Text-align: center; line-height: 0.2em; margin-top: 4em;"><small><strong>Forget your password?</strong> <br /><a href="/recruiters/password-reset" id="password-reset" onclick="instrFunction()" class="btn btn-mini" style="margin-top: 12px;">Reset my password</a></small></p>
 </form>
 </div>
 </div>

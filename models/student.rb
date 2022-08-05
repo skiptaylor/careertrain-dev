@@ -6,7 +6,7 @@ class Student
   property   :id,         Serial
 
   property :email,  String
-  property :password, String
+  property :password, BCryptHash
   property :last_activity, Date
   property :create_date, Date
   
