@@ -86,7 +86,7 @@
 						<th style="text-align: right;"></th>
 					</tr>
 
-					<% @school.sort_by(&:updated_at).each do |school| %>
+					<% @school.sort_by(&:created_at).reverse.each do |school| %>
 					<% unless school.school_password == '' || school.school_password == nil %>
 					<% if session[:recruiter] == school.recruiter_id %>
 					

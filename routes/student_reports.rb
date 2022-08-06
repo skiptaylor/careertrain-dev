@@ -193,6 +193,93 @@ post '/student/reports/signin/?' do
     
 end
 
+
+
+
+
+get "/student/reports/password-reset/?"  do
+  @student = Student.all
+    
+  erb :'/student/reports/password-reset'
+end
+
+post "/student/reports/password-reset/?"  do
+ 
+  params[:email].strip!
+  
+  if student = Student.first(:email => params[:email])
+    
+    session[:studTemp] = student.id
+
+    session[:stud_new] = params[:email]
+
+    params[:passcode] = rand(1000..5000).to_s
+
+    session[:verifyCode] = params[:passcode]
+  
+    if settings.production?
+      Pony.mail(
+        headers: { 'Content-Type' => 'text/html' },
+        to: "#{params[:email]}",
+        from: "noreply@eCareerDirection.com",
+        subject: "Here is your eCareerDirection Admin password rest code.",
+        body: "Here is your password rest code for your <b>eCareerDirection</b> Admin account: <b>#{params[:passcode]}</b>"
+      )
+      flash[:alert] = 'Reset code was sent to your inbox.'
+      redirect '/student/reports/reset'
+    else
+      flash[:alert] = 'Reset code would have been sent in production mode.'
+      redirect '/student/reports/reset'
+    end
+
+  else
+    flash[:alert] = 'We can\'t find an account with that email,'
+    erb :"/student/reports/password-reset"
+  end
+
+end
+
+get "/student/reports/reset/?"  do
+  
+  erb :'/student/reports/reset'
+end
+
+post "/student/reports/reset/?"  do
+  
+  if
+    params[:passcode] = session[:verifyCode]
+    
+    redirect "/student/reports/#{session[:studTemp]}/new-password"
+  else 
+    flash[:alert] = 'Code is not valid. Try again.'
+  end
+    
+  redirect '/student/reports/reset'
+end
+
+get "/student/reports/:id/new-password/?"  do
+  @student = Student.get(params[:id])
+  @student.password = (@student.password = nil)
+  @student.save
+  erb :'/student/reports/new-password'
+end
+
+post "/student/reports/:id/new-password/?" do
+  student = Student.get(params[:id])
+  
+  student.update(
+    :password         => params[:password]
+  )
+  session[:student] = student.id
+  student.save
+  redirect "/student/reports/#{params[:id]}/edit"
+end
+
+
+
+
+
+
 get '/student/reports/:id/edit/?' do
   @state = State.all
   @school = School.all
