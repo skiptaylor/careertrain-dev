@@ -60,7 +60,7 @@ post '/arng/schools/create/?' do
   params[:ff] 					    ? school.update(:ff => true)        : school.update(:ff => false)
   params[:cd_before] 				? school.update(:cd_before => true) : school.update(:cd_before => false)
   
-   
+  
   redirect "/arng/schools/#{school.id}/school"
 end
 

@@ -30,7 +30,7 @@ class School
   property :number_seniors,     Integer, default: 0
   property :class_date,         Date
   
-  property :active,             Boolean, :default => false
+  property :active,             Boolean, :default => true
   property :cd,                 Boolean, :default => false
   property :ff,                 Boolean, :default => false
   property :cd_before,          Boolean, :default => false
