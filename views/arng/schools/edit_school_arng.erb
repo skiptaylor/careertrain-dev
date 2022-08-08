@@ -120,11 +120,11 @@
  							<% @recruiter.sort_by(&:state).each do |recruiter| %>
 							
 							<% if recruiter.id == @school.recruiter_id %>
- 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter_id %>><%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
+ 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter.id %>><%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
 							<% end %>
 							<% unless @school.recruiter_id == session[:recruiter] %>
 							<% if recruiter.id == session[:recruiter] %>
- 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter_id %>><%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
+ 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter.id %>><%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
 							<% end %>
 							<% end %>	
 							<% end %>
