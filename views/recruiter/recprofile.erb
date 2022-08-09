@@ -11,8 +11,8 @@
 				</h3>
 				<p><span class="badge badge-info"><% if @recruiter.recruiter_status == true %>RRC<% end %></span></p>
 				<p>
-					<%= @recruiter.address1 %><br />
-					<% unless @recruiter.address2 = "" %><%= @recruiter.address2 %><br /><% end %>
+					<%= @recruiter.address1 %>
+					<% unless @recruiter.address2 == nil || @recruiter.address2 == "" %><br /><%= @recruiter.address2 %><% end %><br />
 					<%= @recruiter.city %> <%= @recruiter.state %> &nbsp;<%= @recruiter.zip %><br />
 				</p>
 				<p>

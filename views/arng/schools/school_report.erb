@@ -12,7 +12,8 @@
 			
 			<div class=" col-md-5">
 					<h5><%= @school.school_name %></h5>
-					<p><%= @school.school_address1 %> <%= @school.school_address2 %>
+					<p><%= @school.school_address1 %> 
+						<% unless @school.school_address2 = nil || @school.school_address2 = "" %><br /><%= @school.school_address2 %><% end %>
 						<br />
 						<%= @school.school_city %>, <%= @school.school_state %> &nbsp;<%= @school.school_zip %>
 						

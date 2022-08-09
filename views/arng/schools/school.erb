@@ -10,7 +10,8 @@
 					<h3 style="color: #1abd9c; font-weight: 700;">Registration Successful</h3>
 					
 					<h5><%= @school.school_name %></h5>
-					<p><%= @school.school_address1 %> <%= @school.school_address2 %><br />
+					<p><%= @school.school_address1 %>
+						<% unless @school.school_address2 == nil || @school.school_address2 == "" %><br /><%= @school.school_address2 %><% end %><br />
 						<%= @school.school_city %>, <%= @school.school_state %> &nbsp;<%= @school.school_zip %></p>
 					<p><strong>Educator:</strong> &nbsp; &nbsp; <%= @school.first_name %> <%= @school.middle_initial %> <%= @school.last_name %><br />
 					<strong>Counselor/teacher email:</strong> &nbsp; &nbsp; <%= @school.email %>
