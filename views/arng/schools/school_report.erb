@@ -83,7 +83,7 @@
 						<th>Class Date</th>
 					</tr>
 					
-					<% @school.students.each do |student| %>
+					<% @school.students.sort_by(&:last_name).each do |student| %>
 					
 					<tr>
 						<td>
