@@ -93,7 +93,7 @@ post '/student/reports/create/?' do
                     :class_date  => @student.created_on,
                     :school_password  => @student.school_password
                   )
-                  
+                  @presentation.save
               end
 
               @student.save
