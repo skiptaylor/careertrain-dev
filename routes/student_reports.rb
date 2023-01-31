@@ -77,12 +77,13 @@ post '/student/reports/create/?' do
               :future6          => params[:future6],
               :future7          => params[:future7],
               :future8          => params[:future8],
-              :presentation_id  => params[:presentation_id]
+              :class_date       => params[:class_date]
               )
             
               session[:student] = @student.id
               
               @student.school_id = school.id
+              @student.class_date = @student.created_on
               @student.save
             
               unless (@presentation = Presentation.first(:school_password => params[:school_password])) && (@presentation = Presentation.first(:class_date => Date.today.strftime("%Y-%m-%d")))
@@ -90,8 +91,7 @@ post '/student/reports/create/?' do
                   @presentation = Presentation.create(
                     :school_id  => @student.school_id,
                     :class_date  => @student.created_on,
-                    :school_password  => @student.school_password,
-                    :id => @student.presentation_id
+                    :school_password  => @student.school_password
                   )
                   
               end
