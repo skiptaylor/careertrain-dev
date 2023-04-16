@@ -150,7 +150,7 @@ get "/student/resume/students-school/?" do
 end
 
 get "/student/resume/:id/student/?" do
-  auth_student
+  auth_admin
   
   @school = School.all
   @student = Student.get(params[:id])
