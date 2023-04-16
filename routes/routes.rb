@@ -110,7 +110,7 @@ get '/admin/admin/?' do
 end
 
 get '/admin/admin_edit/?' do
-  
+  auth_admin
   @admin = Admin.get(session[:admin])
   
 	erb :'/admin/admin_edit'
@@ -167,13 +167,14 @@ end
 # end
 
 get "/admin/password-reset/?"  do
+  
   @admin = Admin.all
     
   erb :'/admin/password-reset'
 end
 
 post "/admin/password-reset/?"  do
- 
+   
   params[:email].strip!
   
   if admin = Admin.first(:email => params[:email])
@@ -227,6 +228,7 @@ post "/admin/reset/?"  do
 end
 
 get "/admin/:id/new-password/?"  do
+  auth_admin
   @admin = Admin.get(params[:id])
   @admin.password = (@admin.password = nil)
   @admin.save
@@ -234,6 +236,7 @@ get "/admin/:id/new-password/?"  do
 end
 
 post "/admin/:id/new-password/?" do
+  auth_admin
   admin = Admin.get(params[:id])
   
   admin.update(
