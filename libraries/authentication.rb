@@ -15,7 +15,7 @@ helpers do
   end
   
   def auth_admin
-    unless session[:admin] != ''
+    unless session[:admin] == true
       flash[:alert] = 'You must be an admin to see that page.'
       redirect '/index'
     end
