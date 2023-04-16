@@ -150,6 +150,8 @@ get "/student/resume/students-school/?" do
 end
 
 get "/student/resume/:id/student/?" do
+  auth_student
+  
   @school = School.all
   @student = Student.get(params[:id])
   erb :"student/resume/student"
