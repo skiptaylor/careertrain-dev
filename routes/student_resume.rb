@@ -84,6 +84,7 @@ post '/student/resume/create/?' do
 end
 
 get "/student/resume/students/?" do
+  auth_admin
   @student = Student.all(order: [:updated_at.asc], limit: 100)
    
 	if params[:search] && !params[:search].nil?
@@ -94,7 +95,7 @@ get "/student/resume/students/?" do
 end
 
 get "/student/resume/students-school/?" do
-  
+  auth_admin
   if params[:start_month] && params[:start_day] && params[:start_year]
     @start = Chronic.parse("#{params[:start_year]}-#{params[:start_month]}-#{params[:start_day]}")
   else
@@ -265,12 +266,13 @@ get "/student/resume/sign-out/?" do
 end
   
 get "/student/resume/index/?" do
-  
+  auth_student
   @student = Student.get(session[:student])
   erb :"student/resume/index"
 end
 
 get '/student/resume/:id/edit/?' do
+  auth_student
   @school = School.all
   @state = State.all
   @student = Student.get(params[:id])
@@ -278,7 +280,7 @@ get '/student/resume/:id/edit/?' do
 end
 
 post '/student/resume/:id/edit/?' do
-  
+  auth_student
   if school = School.first(:school_password => params[:school_password])
     
     @student = Student.get(params[:id]).update(
@@ -319,6 +321,7 @@ post '/student/resume/:id/edit/?' do
 end
 
 get '/student/resume/edit/?' do
+  auth_student
   @school = School.all
   @state = State.all
   @student = Student.get(session[:student])
@@ -326,7 +329,7 @@ get '/student/resume/edit/?' do
 end
 
 post '/student/resume/edit/?' do
-  
+  auth_student
   if school = School.first(:school_password => params[:school_password])
   
   @student = Student.get(session[:student]).update(
@@ -368,7 +371,7 @@ post '/student/resume/edit/?' do
 end
 
 get '/student/resume/:id/delete/?' do
-  
+  auth_student
   student = Student.get(params[:id])
   student.destroy
   redirect '/student/resume/students'

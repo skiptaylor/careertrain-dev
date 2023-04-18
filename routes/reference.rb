@@ -1,19 +1,19 @@
 get '/student/resume/references/?' do
-  
+  auth_student
   @student = Student.get(session[:student])
 	@reference = Reference.all
 	erb :'/student/resume/references'
 end
 
 get '/student/resume/references/new/?' do
-  
+  auth_student
   @student = Student.get(session[:student])
   @reference = Reference.new
   erb :'/student/resume/references/edit'
 end
 
 post '/student/resume/references/new/?' do
-  
+  auth_student
   reference = Reference.create(
     :student_id     => session[:student],
     :name           => params[:name],
@@ -29,7 +29,7 @@ post '/student/resume/references/new/?' do
 end
 
 get '/student/resume/references/references?' do
-  
+  auth_student
   @student = Student.get(session[:student])
   @reference = Reference.get(params[:id])
   erb :'/student/resume/references/references'
@@ -37,21 +37,21 @@ end
 
 
 get '/student/resume/references/:id/view?' do
-  
+  auth_student
   @student = Student.get(session[:student])
   @reference = Reference.get(params[:id])
   erb :'/student/resume/references/view'
 end
 
 get '/student/resume/references/:id/edit/?' do
-  
+  auth_student
   @student = Student.get(session[:student])
   @reference = Reference.get(params[:id])
   erb :'/student/resume/references/edit'
 end
 
 post '/student/resume/references/:id/edit/?' do
-  
+  auth_student
   @student = Student.get(session[:student])
   reference = Reference.get(params[:id])
   reference.update(
@@ -69,7 +69,7 @@ post '/student/resume/references/:id/edit/?' do
 end
 
 get '/student/resume/references/:id/delete/?' do
-  
+  auth_student
   @student = Student.get(session[:student])
   reference = Reference.get(params[:id])
   reference.destroy

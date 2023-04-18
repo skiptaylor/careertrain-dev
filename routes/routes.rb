@@ -55,6 +55,10 @@ end
 
 
 
+# ------------ Admin -------------
+
+
+
 get "/admin/signin/?" do
   
   unless session[:admin]
@@ -246,10 +250,6 @@ post "/admin/:id/new-password/?" do
   redirect "/admin/admin_edit"
 end
 
-
-
-
-
 get "/admin/signout/?"  do
   session[:admin] = nil
   session.clear
@@ -259,22 +259,25 @@ end
 
 
 
+# ------------ Student Resume ------------
+
+
 
 get '/student/resume/resume-view' do
-  
+  auth_student
   @student = Student.get(session[:student])
   @reference = Reference.all
   erb :'/student/resume/resume-view'
 end
 
 get '/student/resume/resume-print' do
-  
+  auth_student
   @student = Student.get(session[:student])
   erb :'/student/resume/resume-print', layout: false
 end
 
 get '/student/resume/resume' do
-  
+  auth_student
   @student = Student.get(session[:student])
   
   
@@ -411,25 +414,26 @@ get '/student/resume/resume' do
 end
 
 get '/download' do
+  auth_student
   send_file 'public/asset/resume.pdf', :type => :pdf
 end
 
 get '/student/resume/references/references-view' do
-  
+  auth_student
   @student = Student.get(session[:student])
   @reference = Reference.get(params[:id])
   erb :'/student/resume/references/references-view'
 end
 
 get '/student/resume/letters/letters-view/?' do
-  
+  auth_student
   @student = Student.get(session[:student])
   @letter = Letter.get(params[:id])
   erb :"/student/resume/letters/letters-view"
 end
 
 get '/student/resume/letters/:id/cover-letter' do
-  
+  auth_student
   @student = Student.get(session[:student])
   @letter = Letter.get(params[:id])
   @objective = Objective.get(params[:id])
@@ -437,7 +441,7 @@ get '/student/resume/letters/:id/cover-letter' do
 end
 
 get '/student/resume/letters/:id/thank-you-letter' do
-  
+  auth_student
   @student = Student.get(session[:student])
   @letter = Letter.get(params[:id])
   erb :'/student/resume/letters/thank-you-letter'

@@ -1,5 +1,6 @@
 
 get "/student/reports/:id/exercise/?"  do
+  auth_student
   @student = Student.get(params[:id])
   @ie = Ie.all
   @exercise = Exercise.new
@@ -7,6 +8,7 @@ get "/student/reports/:id/exercise/?"  do
 end
 
 post  "/student/reports/:id/exercise/?"  do
+  auth_student
   student = Student.get(params[:id])
   ie = Ie.all
      

@@ -1,7 +1,5 @@
-
-# -------------------- REPORT ---------------------
-
 get "/student/report/?" do
+  
   erb :'student/report'
 end
 
@@ -138,6 +136,7 @@ post '/student/reports/create/?' do
 end
 
 get '/student/reports/report/report_profile/?' do
+  auth_student
   @subscription = Subscription.all
   @state = State.all
   @school = School.all
@@ -258,6 +257,7 @@ post "/student/reports/reset/?"  do
 end
 
 get "/student/reports/:id/new-password/?"  do
+  auth_student
   @student = Student.get(params[:id])
   @student.password = (@student.password = nil)
   @student.save
@@ -265,6 +265,7 @@ get "/student/reports/:id/new-password/?"  do
 end
 
 post "/student/reports/:id/new-password/?" do
+  auth_student
   student = Student.get(params[:id])
   
   student.update(
@@ -281,6 +282,7 @@ end
 
 
 get '/student/reports/:id/edit/?' do
+  auth_student
   @state = State.all
   @school = School.all
   @student = Student.get(params[:id])
@@ -288,7 +290,7 @@ get '/student/reports/:id/edit/?' do
 end
 
 post '/student/reports/:id/edit/?' do
-  
+  auth_student
   params[:password].strip!
   params[:password].downcase!
   params[:school_password].strip!
@@ -384,6 +386,7 @@ end
 
 
 get "/student/reports/:id/report/?" do
+  auth_student
   @school = School.all
   @presentation = Presentation.all
   @student = Student.get(params[:id])
@@ -398,6 +401,7 @@ get "/student/reports/:id/report/?" do
 end
 
 post "/student/reports/:id/report/?" do
+  auth_student
   school = School.all
   presentation = Presentation.all
   student = Student.get(params[:id])
@@ -419,6 +423,7 @@ end
 
 
 get "/student/reports/:id/mail_wel2/?" do
+  auth_student
   @school = School.all
   @presentation = Presentation.all
   @student = Student.get(params[:id])
@@ -429,6 +434,7 @@ end
 
 
 get "/student/reports/:id/scores/?" do
+  auth_student
   @school = School.all
   @exercise = Exercise.get(params[:exercise_id])
   @student = Student.get(params[:id])
@@ -481,7 +487,8 @@ get "/student/reports/:id/scores/?" do
     @report3 = File.read("./views/reports/#{@student.score3}#{@student.score2}.inc")
   end
  
- # -------------------- show report ---------------------
+ # -------------------- show report --------------------
+ 
  if @student.score1 && @student.score2
    erb :'student/reports/scores'
  else
@@ -491,6 +498,7 @@ get "/student/reports/:id/scores/?" do
 end
 
 get "/student/reports/:id/ex_scores/?" do
+  auth_student
   @school = School.get(params[:school_id])
   @exercise = Exercise.get(params[:exercise_id])
   @student = Student.get(params[:id])
@@ -514,6 +522,7 @@ get "/student/reports/:id/ex_scores/?" do
   end
 
  # -------------------- show report ---------------------
+
  if @student.ex_score1 && @student.ex_score2
    erb :'student/reports/ex_scores'
  else
@@ -523,6 +532,7 @@ get "/student/reports/:id/ex_scores/?" do
 end
 
 get "/student/reports/:id/scores_full/?" do
+  auth_student
   @school = School.get(params[:school_id])
   @student = Student.get(params[:id])
     
@@ -551,8 +561,9 @@ get "/student/reports/:id/scores_full/?" do
   elsif @student.score1 && @student.score2 && File.exists?("./views/reports-long/#{@student.score2}#{@student.score1}.inc")
     @report1 = File.read("./views/reports-long/#{@student.score2}#{@student.score1}.inc")
   end
- 
+  
  # -------------------- show report ---------------------
+ 
  if @student.score1 && @student.score2
    erb :'student/reports/scores_full', layout: false
  else
@@ -562,6 +573,7 @@ get "/student/reports/:id/scores_full/?" do
 end
 
 post "/student/reports/:id/scores_full/?" do
+  auth_student
   school = School.get(params[:school_id])
   student = Student.get(params[:id])
   
@@ -589,10 +601,8 @@ post "/student/reports/:id/scores_full/?" do
 end
 
 
-
-
-
 get "/student/reports/:id/ex_scores_full/?" do
+  auth_student
   @school = School.all
   @exercise = Exercise.get(params[:exercise_id])
   @student = Student.get(params[:id])
