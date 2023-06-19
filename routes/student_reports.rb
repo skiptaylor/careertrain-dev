@@ -532,7 +532,7 @@ get "/student/reports/:id/ex_scores/?" do
 end
 
 get "/student/reports/:id/scores_full/?" do
-  auth_student
+  
   @school = School.get(params[:school_id])
   @student = Student.get(params[:id])
     

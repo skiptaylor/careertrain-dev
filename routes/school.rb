@@ -147,7 +147,7 @@ get '/arng/schools/:id/school_report/?' do
 end
 
 get '/arng/schools/:id/summary_report/?' do
-  auth_recruiter
+  
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
   @school.presentations = Presentation.all(:school_id => @school.id, :class_date => params[:presentation])
@@ -193,38 +193,9 @@ end
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 get '/arng/schools/:id/ind_report/?' do
   
-  auth_recruiter
+  
   @school = School.get(params[:id])
   @recruiter = Recruiter.get(params[:recruiter_id])
   @school.presentations = Presentation.all(:school_id => @school.id)
