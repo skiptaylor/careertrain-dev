@@ -29,6 +29,7 @@ end
 post '/contact_us/?' do
   params[:email_name].strip!
   params[:email_name].downcase!
+  if params[:email_name] == 'blue'
     
   Pony.mail(
    headers: { 'Content-Type' => 'text/html' },
@@ -38,6 +39,11 @@ post '/contact_us/?' do
    body: "#{markdown params[:msg]}<hr />#{params[:name]}<br />#{params[:email]}"
    )
   redirect '/thanks'
+  
+  else
+    flash[:alert] = 'Wrong answer. Try again.'
+    redirect request.referrer
+  end
 
 end
 
