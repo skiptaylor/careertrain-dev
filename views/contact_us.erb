@@ -1,12 +1,29 @@
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	var onloadCallback = function() {
 	  grecaptcha.render('fbisurvail', {
 	    'sitekey' : '6Lcd_uMZAAAAAIw_o2yUcw7TV3YM5KWhRgB9dbFC'
 	  });
 	};
-</script>
+</script> -->
 	
-		
+<style>
+	.sec-well {
+		margin: 9px 0;
+		padding: 2px 12px;
+		background-color: #fff;
+		border: 1px solid #3f8557;
+		border-left: 4px solid #3f8557;
+	   -webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	   border-radius: 5px;
+		-webkit-box-shadow:inset 0px 0px 9px rgba(0, 0, 0, 0);
+		-moz-box-shadow:inset 0px 0px 9px rgba(0, 0, 0, 0);
+		box-shadow:inset 0px 0px 9px rgba(0, 0, 0, 0);
+	}
+	
+</style>	
+
+	
 <div class="container">	
 	<div class="row">  
 		<div class="col-md-12">
@@ -17,26 +34,20 @@
 		</div>
 	</div>
 	
-	<form id="eform" method="post">
+	<form autocomplete="off" id="eform" method="post">
 			
 	<div class="form-row">
 		<div class="form-group col-md-6">
 			<label for="name" id="name-group">Name</label>
-			<input type="text" class="form-control" id="name" name="name" />
+			<input autocomplete="off" type="text" class="form-control" id="name" name="name" required />
 		</div>
 	</div>
 	
-	<div class="form-row">
-		<div class="control-group col-md-6" style="margin-left: -1717px;">
-			<label for="email_name" id="email_name">Email name</label>
-			<input type="text" class="input-xlarge" id="email_name" name="email_name" />
-		</div>
-	</div>
 	
 	<div class="form-row">
-		<div class="form-group col-md-6" style="margin-top: -36px;">
+		<div class="form-group col-md-6">
 			<label for="email" id="email-group">Email</label>
-			<input type="email" class="form-control" id="email" name="email" />
+			<input type="email" class="form-control" id="email" name="email" autocomplete="off" required />
 		</div>
 	</div>
 	
@@ -54,14 +65,19 @@
 	<div class="form-row">
 		<div class="form-group col-md-6">
 			<label for="msg" id="msg-group">Message</label>
-			<textarea name="msg" id="msg" class="form-control" rows="6"></textarea>
+			<textarea name="msg" id="msg" class="form-control" rows="6" required ></textarea>
 		</div>
 	</div>
 	<div class="form-group row">
-		<div class="col-sm-10">
-			<div class="g-recaptcha" data-sitekey="6Lcd_uMZAAAAAIw_o2yUcw7TV3YM5KWhRgB9dbFC" data-callback="enableBtn" data-tabindex="0"></div>
+		<div class="col-sm-6">
+						
+			<div class="sec-well"><h4 style="color: #3f8557;">Security Question</h4><p style="margin-top: 9px; line-height: 2.3em;">The US flag is red, white, and &nbsp;<input type="text" class="input-small" id="email_name" name="email_name" style="padding: 0 9px;" autocomplete="off" required />&nbsp;.</p>
+			</div>
+						
 			<br />
+			
 			<input type="submit" id="submit" class="btn btn-primary" value="Submit" />
+			
 		</div>
 	</div>
 				
@@ -69,12 +85,73 @@
 
 </div> <!------- container --------->
 
-
 <script>
+	window.onload = function() {
+		const name = document.getElementById('name');
+		name.onpaste = function(g) {
+			g.preventDefault();
+		}
+		const email = document.getElementById('email');
+		email.onpaste = function(e) {
+			e.preventDefault();
+		}
+	}
+</script>
+	
+<script>
+	      let tagArr = document.getElementsByTagName("input");
+	      for (let i = 0; i < tagArr.length; i++) {
+	        tagArr[i].autocomplete = 'off';
+	      }
+</script>
+	
+<script>	
+	document.oncontextmenu = function(e) {
+	  var el = window.event.srcElement || e.target;
+	  var tp = el.tagName || '';
+	  if ( tp.toLowerCase() == 'input' || tp.toLowerCase() == 'select' || tp.toLowerCase() == 'textarea' ){
+	    return false;
+	  }
+	};
+</script>	
+
+<!-- <script>
+
+	$('#email_name').oninput="blue" {
+
+			// $('#eform').submit();
+
+			alert("Wrong answer. Try again.");
+	});
+
+</script> -->
+
+
+
+<!-- <script>
 	document.getElementById("submit").disabled = true;
 	function enableBtn(){
 		document.getElementById("submit").disabled = false;
 	}
-</script>
+</script> -->
+
+
+<!-- <script>
+
+	$('#email_name').on('change', function() {
+
+			$('#eform').submit();
+
+			alert("Wrong answer. Try again.");
+	});
+
+</script> -->
 	
+	<!-- <script>
+		function goBack() {
+		window.history.back();
+	}
+	</script> -->
 	
+
+

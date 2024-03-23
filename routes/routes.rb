@@ -27,8 +27,9 @@ get '/contact_us/?' do
 end
 
 post '/contact_us/?' do
-  if params[:email_name] == ''
-  
+  params[:email_name].strip!
+  params[:email_name].downcase!
+    
   Pony.mail(
    headers: { 'Content-Type' => 'text/html' },
    to: 'info@careertrain.com, skip@recountant.com',
@@ -37,8 +38,7 @@ post '/contact_us/?' do
    body: "#{markdown params[:msg]}<hr />#{params[:name]}<br />#{params[:email]}"
    )
   redirect '/thanks'
-  
-  end
+
 end
 
 get '/thanks/?' do
