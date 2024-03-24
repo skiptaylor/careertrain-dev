@@ -27,6 +27,7 @@ get '/contact_us/?' do
 end
 
 post '/contact_us/?' do
+  sleep 1
   params[:email_name].strip!
   params[:email_name].downcase!
   if params[:email_name] == 'blue'
@@ -42,6 +43,7 @@ post '/contact_us/?' do
   
   else
     flash[:alert] = 'Wrong answer. Try again.'
+    sleep 2
     redirect request.referrer
   end
 
