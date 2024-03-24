@@ -71,7 +71,7 @@
 	<div class="form-group row">
 		<div class="col-sm-6">
 						
-			<div class="sec-well"><h4 style="color: #3f8557;">Security Question</h4><p style="margin-top: 9px; line-height: 2.3em;">The US flag is red, white, and &nbsp;<input pattern="[B-l-u-e]" type="text" class="input-small" id="email_name" name="email_name" style="padding: 0 9px;" autocomplete="off" required />&nbsp;.</p>
+			<div class="sec-well"><h4 style="color: #3f8557;">Security Question</h4><p style="margin-top: 9px; line-height: 2.3em;">The US flag is red, white, and &nbsp;<input type="text" class="input-small" id="email_name" name="email_name" style="padding: 0 9px;" autocomplete="off" required />&nbsp;.</p>
 			</div>
 						
 			<br />
@@ -98,19 +98,19 @@
 	}
 </script>
 	
-<script>
+<!-- <script>
 	      let tagArr = document.getElementsByTagName("input");
 	      for (let i = 0; i < tagArr.length; i++) {
 	        tagArr[i].autocomplete = 'off';
 	      }
-</script>
+</script> -->
 	
 <script>	
 	document.oncontextmenu = function(e) {
 	  var el = window.event.srcElement || e.target;
 	  var tp = el.tagName || '';
 	  if ( tp.toLowerCase() == 'input' || tp.toLowerCase() == 'select' || tp.toLowerCase() == 'textarea' ){
-	    return false;
+			return false;
 	  }
 	};
 </script>	
@@ -136,16 +136,17 @@
 </script> -->
 
 
-<!-- <script>
+<script>
 
 	$('#email_name').on('change', function() {
-
+		if params[:email_name] = 'blue'
 			$('#eform').submit();
-
+		else
 			alert("Wrong answer. Try again.");
+
 	});
 
-</script> -->
+</script>
 	
 	<!-- <script>
 		function goBack() {
