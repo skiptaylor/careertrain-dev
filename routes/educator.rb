@@ -10,6 +10,10 @@ end
 post '/educator/request/?' do
   state = State.all
   
+  params[:email_name].strip!
+  params[:email_name].downcase!
+  if params[:email_name] == 'blue'
+  
   body = ''
   body << "<h3>Educator Request for eCD Program</h3>"
   body << "<p><b>School:</b> #{params[:school_name]}</p>"
@@ -26,8 +30,23 @@ post '/educator/request/?' do
     from: 'no-reply@eCareerDirection.com',
     subject: 'Request eCD Program from Educator',
     body: body
-  )  
-  redirect "/educator/thanks"
+  ) 
+  
+  redirect "/educator/thanks" 
+  
+  else
+        
+    flash[:alert] = 'Wrong answer. Try again.'
+    sleep 1
+    redirect "/educator/back" 
+  end
+
+  
+end
+
+
+get '/educator/back' do
+  erb :"/educator/back"
 end
 
 get '/educator/resume/?' do

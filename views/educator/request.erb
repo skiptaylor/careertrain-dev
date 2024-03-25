@@ -1,3 +1,27 @@
+<style>
+	.sec-well {
+		margin: 9px 0;
+		padding: 2px 12px;
+		background-color: #fff;
+		border: 1px solid #3f8557;
+		border-left: 4px solid #3f8557;
+	   -webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	   border-radius: 5px;
+		-webkit-box-shadow:inset 0px 0px 9px rgba(0, 0, 0, 0);
+		-moz-box-shadow:inset 0px 0px 9px rgba(0, 0, 0, 0);
+		box-shadow:inset 0px 0px 9px rgba(0, 0, 0, 0);
+	}
+	
+</style>	
+
+<!-- <script type="text/javascript">
+	var onloadCallback = function() {
+	  grecaptcha.render('fbisurvail', {
+	    'sitekey' : '6Lcd_uMZAAAAAIw_o2yUcw7TV3YM5KWhRgB9dbFC'
+	  });
+	};
+</script> -->
 
 	<div class="container">	
 		<div class="row">  
@@ -87,13 +111,23 @@
 							</select>
 						</div>
 					</div>
-				    <div class="col-sm-1">
+				    <div class="col-sm-12">
+							
+							
+						
+							<div class="sec-well"><h4 style="color: #3f8557;">Security Question</h4><p style="margin-top: 9px; line-height: 2.3em;">The US flag is red, white, and &nbsp;<input type="text" class="input-small" id="email_name" name="email_name" style="padding: 0 9px;" autocomplete="off" required />&nbsp;.</p>
+							</div>
+							
+							
+							
 				    </div>
 				</div>	
 				<br />
 				<div class="form row">
 					<div class="form-group col-sm-5">
-						<input type="submit" id="submit" class="btn btn-primary" value="Submit" />
+						
+						<input type="submit" id="submit" class="btn btn-primary" value="Submit"  />
+						
 					</div>
 				</div>			  
 					  
@@ -107,7 +141,25 @@
 	</div> <!-- /container -->
 </div>
 
+<!--onClick="history_back()"-->
 
+<script>
+        function history_back() {
+            window.history.back();
+        } 
+    </script>
+
+<script>
+
+	 // $('#email_name').on('change', function() {
+	 // 	if params[:email_name] == 'blue'
+	 // 		$('#eform').submit();
+	 // 	else
+	 // 		alert("Wrong answer. Try again.");
+	 //       window.history.back();
+	 // });
+
+</script>
 
 <!-- <script>
 	document.getElementById("submit").disabled = true;
