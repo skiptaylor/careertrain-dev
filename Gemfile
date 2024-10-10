@@ -1,21 +1,25 @@
 source 'https://rubygems.org'
 
-ruby "2.7.6"
+ruby "3.1.4"
 
-gem 'chronic', '~> 0.9.1'
+gem 'chronic',            '~> 0.10', '>= 0.10.2'
 gem 'coffee-script', '>= 2.2.0'
 gem 'jsmin', '>= 1.0.1'
 gem 'kramdown', '>= 0.14.2'
 gem 'sass', '>= 3.2.9'
 # gem 'sinatra', '>= 1.4.6'
-gem 'sinatra', '~> 2.2'
-gem 'sinatra-chassis', '>= 1.1.1', require: 'sinatra/chassis'
-gem 'sinatra-contrib', '>= 1.4.4', require: 'sinatra/contrib'
+# gem 'sinatra', '~> 2.2'
+# gem 'sinatra-chassis', '>= 1.1.1', require: 'sinatra/chassis'
+# gem 'sinatra-contrib', '>= 1.4.4', require: 'sinatra/contrib'
+gem 'sinatra',            '~> 3.0', '>= 3.0.5', require: 'sinatra/base'
+gem 'sinatra-contrib',    '~> 3.0', '>= 3.0.5', require: 'sinatra/contrib'
+gem 'sinatra-chassis',    '>= 1.1.1', require: 'sinatra/chassis'
 
 gem 'chassis-datamapper', '~> 1.0.1'
 gem 'chassis-pony', '~> 1.0.0'
 
-gem 'rake', '~> 13.0', '>= 13.0.6'
+gem 'puma',               '~> 6.2', '>= 6.2.1'
+gem 'rake',               '~> 13.0', '>= 13.0.6'
 
 gem 'data_mapper', '~> 1.2.0'
 gem 'dm-sqlite-adapter', '~> 1.2.0', group: :development

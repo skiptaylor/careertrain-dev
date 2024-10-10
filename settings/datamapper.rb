@@ -3,7 +3,8 @@ configure :development do
 	# DataMapper.setup :default, 'sqlite::memory:'
 	# DataMapper.setup :default, "sqlite://#{Dir.pwd}/data/development.sqlite3"
 	# DataMapper.setup :default, 'mysql://username:password@host_url:3306/database_name'
-	DataMapper.setup :default, 'postgres://localhost:5432/ecareertrain-db'
+	# DataMapper.setup :default, 'postgres://localhost:5432/ecareertrain-db'
+  DataMapper.setup :default, 'postgres://localhost:5432/careertrain-dev-24-db'
 end
 
 configure :production do
