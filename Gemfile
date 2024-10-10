@@ -22,8 +22,9 @@ gem 'puma',               '~> 6.2', '>= 6.2.1'
 gem 'rake',               '~> 13.0', '>= 13.0.6'
 
 gem 'data_mapper', '~> 1.2.0'
-gem 'dm-sqlite-adapter', '~> 1.2.0', group: :development
-gem 'dm-postgres-adapter', '~> 1.2.0', group: :production
+gem 'do_postgres', '~> 0.10.17'
+# gem 'dm-sqlite-adapter', '~> 1.2.0', group: :development
+gem 'dm-postgres-adapter', '~> 1.2'
 
 gem 'pony', '~> 1.13', '>= 1.13.1'
 
