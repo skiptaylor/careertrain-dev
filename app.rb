@@ -15,7 +15,7 @@ require 'pdfkit'
 
 disable :protection
 enable :sessions
-set :session_secret, 'c73a5a9ce51f3a26388f70af6ffa040216136e45b48015e22a21ddf3513d25c2'
+set :session_secret, 'secret123'
 
 require_directory([
   'config',
