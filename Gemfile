@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.7.6"
+ruby "3.1.4"
 
 gem 'chronic', '~> 0.9.1'
 gem 'coffee-script', '>= 2.2.0'
@@ -16,6 +16,7 @@ gem 'chassis-datamapper', '~> 1.0.1'
 gem 'chassis-pony', '~> 1.0.0'
 
 gem 'rake', '~> 13.0', '>= 13.0.6'
+gem 'puma',               '~> 6.2', '>= 6.2.1'
 
 gem 'data_mapper', '~> 1.2.0'
 gem 'dm-sqlite-adapter', '~> 1.2.0', group: :development
