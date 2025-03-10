@@ -35,7 +35,7 @@
 					</tr>
 					<% end %>
 					<tr>
-						<th colspan="5"><small>Total number of schools:<% @school = School.all(:active => true) %> <strong><%= @school.count %></strong><br />
+						<th colspan="5"><small>Total number of schools:<% @school = School.where(:active => true) %> <strong><%= @school.count %></strong><br />
 						</th>
 
 					</tr>

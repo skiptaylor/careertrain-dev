@@ -25,21 +25,21 @@ end
 get '/rrcs/:id/?' do
   auth_admin
   @state= State.all
-  @rrc = Rrc.get(params[:id])
+  @rrc = Rrc[params[:id]]
   erb :rrc
 end
 
 get '/rrcs/:id/edit/?' do
   auth_admin
   @state= State.all
-  @rrc = Rrc.get(params[:id])
+  @rrc = Rrc[params[:id]]
   erb :edit_rrc
 end
 
 post '/rrcs/:id/edit/?' do
   auth_admin
   state= State.all
-  rrc = Rrc.get(params[:id])
+  rrc = Rrc[params[:id]]
   rrc.update(
     :email  => params[:email],
     :state  => params[:state]
@@ -49,7 +49,7 @@ end
 
 get '/rrcs/:id/delete/?' do
   auth_admin
-  rrc = Rrc.get(params[:id])
+  rrc = Rrc[params[:id]]
   rrc.destroy
   redirect '/rrcs'
 end

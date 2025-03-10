@@ -1,14 +1,5 @@
-class Award
-	include DataMapper::Resource
+class Award < Sequel::Model
+  plugin :timestamps
 
-	timestamps :at, :on
-	property   :deleted_at, ParanoidDateTime
-	property 	 :id, 				Serial
-
-  property :student_id,         Integer
-  property :award,              String
-  property :award_date,         String
-  
-  belongs_to :student, required: false
-  
+  many_to_one :student, required: false
 end

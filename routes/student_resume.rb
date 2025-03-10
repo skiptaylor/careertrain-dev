@@ -7,7 +7,7 @@ end
 get "/student/resume/create/?" do 
   @school = School.all
   @state = State.all
-  erb :'student/resume/create'
+  erb :'studens/resume/create'
 end
 
 post '/student/resume/create/?' do
@@ -25,7 +25,7 @@ post '/student/resume/create/?' do
 
         unless student = Student.first(:email => params[:email])
           unless params[:password] == ''
-            @student = Student.create(
+            @students = Student.create(
             :email        => params[:email],
             :password     => params[:password],
             :name         => params[:name],
@@ -85,10 +85,10 @@ end
 
 get "/student/resume/students/?" do
   auth_admin
-  @student = Student.all(order: [:updated_at.asc], limit: 100)
+  @student = Student.order(:created_at).limit(100)
    
 	if params[:search] && !params[:search].nil?
-		@student = Student.all(:email.like  =>  "%#{params[:search]}%", limit: 100)
+    @student = Student.where(Sequel.like(:email, "%#{params[:search]}%")).limit(100)
 	end
   
   erb :"student/resume/students"
@@ -96,6 +96,7 @@ end
 
 get "/student/resume/students-school/?" do
   auth_admin
+  
   if params[:start_month] && params[:start_day] && params[:start_year]
     @start = Chronic.parse("#{params[:start_year]}-#{params[:start_month]}-#{params[:start_day]}")
   else
@@ -107,23 +108,24 @@ get "/student/resume/students-school/?" do
   else
     @end = Time.now
   end
-     
-     
-   	if params[:search] && !params[:search].nil?
-   		@student = Student.all(:school_password.like  =>  "%#{params[:search]}%")
-   	end
     
-  
-  @student = Student.all(order: [:created_on.desc], :school_password.like  =>  "%#{params[:search]}%", :created_on.gte => @start, :created_on.lte => @end)
-  
-  
+  if params[:search] && !params[:search].nil?
+    @student = Student.where(Sequel.like(:school_password, "%#{params[:search]}%"))
+  end
+    
+  @student = Student.order(:created_on).where(Sequel.like(:school_password, "%#{params[:search]}%")).where(created_on: (@start)..(@end))   
+     
+     # @student = Student.order(:created_on).where(Sequel.like(:school_password, "%#{params[:search]}%")).where([':created_on'] >= [params['start_date']]).where([':created_on'] <= [params['endt_date']])
+
+# @student = Student.order(:created_on).where(Sequel.like(:school_password, "%#{params[:search]}%")).where('created_on >= ?' => @start).where('created_on <= ?' => @end)
+
   if params[:csv]
   	response.headers['Content-Type'] = 'text/csv; charset=utf-8' 
-  	response.headers['Content-Disposition'] = "attachment; filename=Careertrain_Students.csv"
+  	response.headers['Content-Disposition'] = "attachment; filename=eCD_Students.csv"
 		
 		file = ''
 		file = CSV.generate do |csv|
-			csv << ['Created on', 'School', 'First', 'Middle', 'Last', 'Email', 'Address', 'City', 'State', 'ZIP', 'Phone', 'Grade',]
+			csv << ['Created on', 'School', 'First', 'Last', 'Email', 'Address', 'City', 'State', 'ZIP', 'Phone', 'Grade',]
 			@student.each do |s|
         if s.school_id
 				csv << [
@@ -154,110 +156,10 @@ get "/student/resume/:id/student/?" do
   auth_admin
   
   @school = School.all
-  @student = Student.get(params[:id])
+  @student = Student[params[:id]]
   erb :"student/resume/student"
 end
 
-# get "/student/resume/signin/?" do
-#
-#   unless session[:student]
-#
-#   session[:student] = nil
-#   session.clear
-#   @student = Student.all
-#   erb :"student/resume/signin"
-#
-#   else
-#
-#   redirect "/student/resume/index"
-#
-#   end
-# end
-
-# post '/student/resume/signin/?' do
-#
-#   params[:email].strip!
-#   params[:password].strip!
-#
-#   @errors << :email_not_found unless @student = Student.first(email: params[:email])
-#   @errors << :password_not_matched unless @student && @student.password == params[:password]
-#
-#   if @errors.count == 0
-#     session[:student] = @student.id
-#     flash[:alert] = 'You are now signed in.'
-#     redirect "/student/resume/index"
-#   else
-#     flash[:alert] = 'There was an error signing in. Please try again.'
-#     erb :"student/resume/signin"
-#   end
-# end
-
-# post '/student/resume/signin/?' do
-#
-#   params[:email].strip!
-#   params[:password].strip!
-#
-#   unless params[:email] == ''
-#
-#     if student = Student.first(:email => params[:email])
-#       if (student.password == params[:password])  || (params[:password] == 'coconutisland')
-#         session[:student] = student.id
-#         flash[:alert] = 'Welcome back! You are now signed in.'
-#         redirect "/student/resume/index"
-#       else
-#         flash[:alert] = 'Your password is incorrect.'
-#         erb :"student/resume/signin"
-#       end
-#     else
-#       flash[:alert] = 'We can\'t find an account with that email address. Maybe you need to create one.'
-#       erb :"student/resume/signin"
-#     end
-#
-#   else
-#     flash[:alert] = 'You must enter a valid email.'
-#     erb :"student/resume/signin"
-#   end
-#
-#   # Email.reset(student.email, student.password)
-#
-# end
-
-# get "/student/resume/reset_password/?" do
-#   @student = Student.all
-#
-#
-#   erb :"student/resume/signin"
-# end
-
-# get "/student/resume/reset/?" do
-#   session[:student] = nil
-#   session.clear
-#   @student = Student.all
-#
-#   erb :"student/resume/reset"
-# end
-#
-# post "/student/resume/reset/?" do
-#   params[:email].strip!
-#
-#   unless params[:email] == ''
-#     if student = Student.first(:email => params[:email])
-#       Email.reset(student.email, student.password)
-#       redirect "/student/reports/signin"
-#     else
-#       flash[:alert] = 'We can\'t find an account with that email address. Maybe you need to create one or try again.'
-#       erb :"student/resume/reset"
-#     end
-#   else
-#     flash[:alert] = 'You must enter a valid email.'
-#     erb :"student/resume/reset"
-#   end
-#
-# end
-#
-# get "/student/resume/reset_password/?" do
-#   erb :"student/resume/reset_password"
-# end
 
 get "/student/resume/sign-out/?" do
   session[:student] = nil
@@ -267,7 +169,7 @@ end
   
 get "/student/resume/index/?" do
   auth_student
-  @student = Student.get(session[:student])
+  @student = Student[session[:student]]
   erb :"student/resume/index"
 end
 
@@ -275,21 +177,21 @@ get '/student/resume/:id/edit/?' do
   auth_student
   @school = School.all
   @state = State.all
-  @student = Student.get(params[:id])
-  erb :'/student/resume/edit_student'
+  @student = Student[params[:id]]
+  erb :'/students/resume/edit_student'
 end
 
 post '/student/resume/:id/edit/?' do
   auth_student
   if school = School.first(:school_password => params[:school_password])
     
-    @student = Student.get(params[:id]).update(
+    @student = Student[params[:id]].update(
       :school_id => school.id
     )
-  
-  @student = Student.get(params[:id]).update(
+  hashed_password = BCrypt::Password.create(params[:password])
+  @student = Student[params[:id]].update(
     :email            => params[:email],
-    :password         => params[:password],
+    :password         => hashed_password,
     :name             => params[:name],
     :first_name       => params[:first_name],
     :middle_name      => params[:middle_name],
@@ -324,7 +226,7 @@ get '/student/resume/edit/?' do
   auth_student
   @school = School.all
   @state = State.all
-  @student = Student.get(session[:student])
+  @student = Student[session[:student]]
   erb :'/student/resume/edit_student'
 end
 
@@ -332,13 +234,13 @@ post '/student/resume/edit/?' do
   auth_student
   if school = School.first(:school_password => params[:school_password])
   
-  @student = Student.get(session[:student]).update(
+  @student = Student[session[:student]].update(
     :school_id => school.id
   )
-  
-  @student = Student.get(session[:student]).update(
+  hashed_password = BCrypt::Password.create(params[:password])
+  @student = Student[session[:student]].update(
     :email            => params[:email],
-    :password         => params[:password],
+    :password         => hashed_password,
     :name             => params[:name],
     :first_name       => params[:first_name],
     :middle_name      => params[:middle_name],
@@ -372,7 +274,7 @@ end
 
 get '/student/resume/:id/delete/?' do
   auth_student
-  student = Student.get(params[:id])
+  student = Student[params[:id]]
   student.destroy
   redirect '/student/resume/students'
 end

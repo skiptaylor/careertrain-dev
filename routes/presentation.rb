@@ -1,15 +1,15 @@
 get '/recruiter/school/:id/presentation/new/?' do
   auth_recruiter
-  @recruiter = Recruiter.get(session[:recruiter])
-  @school = School.get(params[:id])
+  @recruiter = Recruiter[session[:recruiter]]
+  @school = School[params[:id]]
   @presentation = Presentation.new
   erb :'/recruiter/presentation_edit'
 end
 
 post '/recruiter/school/:id/presentation/new/?' do
   auth_recruiter
-  recruiter = Recruiter.get(session[:recruiter])
-  school = School.get(params[:id])
+  recruiter = Recruiter[session[:recruiter]]
+  school = School[params[:id]]
   presentation = Presentation.create(
     :recruiter_id         => session[:recruiter_id],
     :school_password      => params[:school_password],
@@ -20,24 +20,24 @@ end
 
 get '/recruiters/:id/school/presentation/?' do
   auth_recruiter
-  @recruiter = Recruiter.get(session[:recruiter])
-  @school = School.get(params[:school_id])
-  @presentation = Presentation.get(params[:id])
+  @recruiter = Recruiter[session[:recruiter]]
+  @school = School[params[:school_id]]
+  @presentation = Presentation[params[:id]]
   erb :'/student/resume/objectives/objectives'
 end
 
 get '/recruiters/school/presentations/:id/edit/?' do
   auth_recruiter
-  @recruiter = Recruiter.get(session[:recruiter])
-  @school = School.get(params[:school_id])
-  @presentation = Presentation.get(params[:id])
+  @recruiter = Recruiter[session[:recruiter]]
+  @school = School[params[:school_id]]
+  @presentation = Presentation[params[:id]]
   erb :'/recruiters/presentation_edit'
 end
 
 post '/recruiters/school/presentations/:id/edit/?' do
   auth_recruiter
-  recruiter = Recruiter.get(session[:recruiter])
-  school = School.get(params[:school_id])
+  recruiter = Recruiter[session[:recruiter]]
+  school = School[params[:school_id]]
   presentation.update(
   :recruiter_id         => session[:recruiter_id],
   :school_password      => params[:school_password],
@@ -48,9 +48,9 @@ end
 
 get '/recruiters/school/presentations/:id/delete/?' do
   auth_recruiter
-  recruiter = Recruiter.get(session[:recruiter])
-  @school = School.get(params[:school_id])
-  presentation = Presentation.get(params[:id])
+  recruiter = Recruiter[session[:recruiter]]
+  @school = School[params[:school_id]]
+  presentation = Presentation[params[:id]]
   presentation.destroy
   redirect '/student/resume/objectives/objectives'
 end

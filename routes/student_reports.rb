@@ -51,9 +51,10 @@ post '/student/reports/create/?' do
 
           unless student = Student.first(:email => params[:email])
             unless params[:password] == ''
+              hashed_password = BCrypt::Password.create(params[:password])
               @student = Student.create(
               :email            => params[:email],
-              :password         => params[:password],
+              :password         => hashed_password,
               :name             => params[:name],
               :first_name       => params[:first_name],
               :middle_name      => params[:middle_name],
@@ -77,18 +78,19 @@ post '/student/reports/create/?' do
               :future8          => params[:future8],
               :class_date       => params[:class_date]
               )
-            
+              
               session[:student] = @student.id
+              @student.created_on = @student.created_at
               
               @student.school_id = school.id
-              @student.class_date = @student.created_on
+              @student.class_date = @student.created_at           
               @student.save
             
               unless (@presentation = Presentation.first(:school_password => params[:school_password])) && (@presentation = Presentation.first(:class_date => Date.today.strftime("%Y-%m-%d")))
                 
                   @presentation = Presentation.create(
                     :school_id  => @student.school_id,
-                    :class_date  => @student.created_on,
+                    :class_date  => @student.created_at,           
                     :school_password  => @student.school_password
                   )
                   @presentation.save
@@ -140,7 +142,7 @@ get '/student/reports/report/report_profile/?' do
   @subscription = Subscription.all
   @state = State.all
   @school = School.all
-  @student = Student.get(session[:student])
+  @student = Student[session[:student]]
   erb :'/student/reports/report_profile'
 end
 
@@ -168,9 +170,9 @@ post '/student/reports/signin/?' do
   params[:password].downcase!
   
   unless params[:email] == ''
-
+    hashed_password = BCrypt::Password.create(params[:password])
     if student = Student.first(:email => params[:email])
-      if (student.password == params[:password]) || (params[:password] == "PurpleHippopotamus!") || (params[:password] == "studentpass")
+      if (student.password = hashed_password) || (params[:password] == "PurpleHippopotamus!") || (params[:password] == "studentpass")
         session[:student] = student.id
         
         flash[:alert] = 'Welcome back! You are now signed in.'
@@ -258,7 +260,7 @@ end
 
 get "/student/reports/:id/new-password/?"  do
   auth_student
-  @student = Student.get(params[:id])
+  @student = Student[params[:id]]
   @student.password = (@student.password = nil)
   @student.save
   erb :'/student/reports/new-password'
@@ -266,7 +268,7 @@ end
 
 post "/student/reports/:id/new-password/?" do
   auth_student
-  student = Student.get(params[:id])
+  student = Student[params[:id]]
   
   student.update(
     :password         => params[:password]
@@ -285,7 +287,7 @@ get '/student/reports/:id/edit/?' do
   auth_student
   @state = State.all
   @school = School.all
-  @student = Student.get(params[:id])
+  @student = Student[params[:id]]
   erb :'/student/reports/edit_student'
 end
 
@@ -298,13 +300,10 @@ post '/student/reports/:id/edit/?' do
   
   if school = School.first(:school_password => params[:school_password])
     
-  # student = Student.get(params[:id]).update(
-  #   :school_id => school.id
-  # )
-  
-  student = Student.get(params[:id]).update(
+  hashed_password = BCrypt::Password.create(params[:password])
+  student = Student[params[:id]].update(
   :email            => params[:email],
-  :password         => params[:password],
+  :password         => hashed_password,
   :name             => params[:name],
   :first_name       => params[:first_name],
   :middle_name      => params[:middle_name],
@@ -329,7 +328,7 @@ post '/student/reports/:id/edit/?' do
   :presentation_id  => params[:presentation_id]
   )
   
-  redirect("/student/reports/report/report_profile")
+  redirect "/student/reports/report/report_profile"
   
   else
     
@@ -341,46 +340,6 @@ end
 
 
 
-# get '/reset-password/:email/?' do
-#   params[:email].strip!
-#   params[:email].downcase!
-#   if user = User.first(email: params[:email])
-#     user.pass_reset_key = (0...8).map{65.+(rand(25)).chr}.join
-#     user.pass_reset_date = Chronic.parse 'now'
-#     user.save
-#     Pony.mail(
-#       to: user.email,
-#       from: 'no-reply@eCareerDirection.com',
-#       subject:'eCareerDirection password reset link',
-#       body: "This link takes you to a page where you can enter a temporary password. You should enter a permanent password on your profile page. Remember to Update Account to save. http://#{request.host}/new-password/#{user.pass_reset_key}. If you do not want to change your password or you received this email by mistake, just do nothing and your current password will remain active. NOTE: This password will expire in one day."
-#     )
-#     session[:alert] = { style: 'alert-info', message: 'Password reset instructions have been sent to your inbox.' }
-#   else
-#     session[:alert] = { style: 'alert-info', message: 'No account was found with that email address.' }
-#   end
-#   erb :'sign-in'
-# end
-#
-# get '/reset-password/?' do
-#   session[:alert] = { style: 'alert-info', message: 'No account was found with that email address.' }
-#   erb :'sign-in'
-# end
-#
-# get '/new-password/:key/?' do
-#   if user = User.first(pass_reset_key: params[:key], :pass_reset_date.gte => Chronic.parse('2 day ago'))
-#     erb :'new-password'
-#   else
-#     session[:alert] = { message: 'That password reset link has expired. Start over to get a new link.', style: 'alert-info' }
-#     erb :'/sign-in'
-#   end
-# end
-#
-# post '/new-password/:key/?' do
-#   user = User.first(pass_reset_key: params[:key])
-#   user.update(password: params[:password].downcase!)
-#   session[:alert] = { message: 'You should now enter a new password and Update Account. This reset link expires after 1 day!', style: 'alert-success' }
-#   sign_in user.id
-# end
 
 
 
@@ -389,7 +348,7 @@ get "/student/reports/:id/report/?" do
   auth_student
   @school = School.all
   @presentation = Presentation.all
-  @student = Student.get(params[:id])
+  @student = Student[params[:id]]
   
  if @student.class_date == nil
    @student.class_date = @student.created_on
@@ -404,7 +363,7 @@ post "/student/reports/:id/report/?" do
   auth_student
   school = School.all
   presentation = Presentation.all
-  student = Student.get(params[:id])
+  student = Student[params[:id]]
   
   unless params[:ex_score1] == params[:ex_score2]
     student.update(
@@ -412,7 +371,7 @@ post "/student/reports/:id/report/?" do
       :ex_score2      => params[:ex_score2]
       )
   else
-    flash[:alert] = '1st Highest and 2nd Highest Scores cannot be the same.'
+    # flash[:alert] = '1st Highest and 2nd Highest Scores cannot be the same.'
     redirect "/student/reports/#{params[:id]}/report"
   end
   
@@ -426,7 +385,7 @@ get "/student/reports/:id/mail_wel2/?" do
   auth_student
   @school = School.all
   @presentation = Presentation.all
-  @student = Student.get(params[:id])
+  @student = Student[params[:id]]
   
   erb :"/student/reports/mail_wel2"
 end
@@ -436,8 +395,8 @@ end
 get "/student/reports/:id/scores/?" do
   auth_student
   @school = School.all
-  @exercise = Exercise.get(params[:exercise_id])
-  @student = Student.get(params[:id])
+  @exercise = Exercise[params[:exercise_id]]
+  @student = Student[params[:id]]
     
   if @student.score1 && @student.score1 != ''
     
@@ -457,33 +416,33 @@ get "/student/reports/:id/scores/?" do
     @student.score3 = false
   end
   
-  if @student.score1 && File.exists?("./views/reports/#{@student.score1}.inc")
+  if @student.score1 && File.exist?("./views/reports/#{@student.score1}.inc")
     @cat1 = File.read("./views/reports/#{@student.score1}.inc")
   end
 
-  if @student.score2 && File.exists?("./views/reports/#{@student.score2}.inc")
+  if @student.score2 && File.exist?("./views/reports/#{@student.score2}.inc")
     @cat2 = File.read("./views/reports/#{@student.score2}.inc")
   end
 
-  if @student.score3 && File.exists?("./views/reports/#{@student.score3}.inc")
+  if @student.score3 && File.exist?("./views/reports/#{@student.score3}.inc")
     @cat3 = File.read("./views/reports/#{@student.score3}.inc")
   end
   
-  if @student.score1 && @student.score2 && File.exists?("./views/reports/#{@student.score1}#{@student.score2}.inc")
+  if @student.score1 && @student.score2 && File.exist?("./views/reports/#{@student.score1}#{@student.score2}.inc")
     @report1 = File.read("./views/reports/#{@student.score1}#{@student.score2}.inc")
-  elsif @student.score1 && @student.score2 && File.exists?("./views/reports/#{@student.score2}#{@student.score1}.inc")
+  elsif @student.score1 && @student.score2 && File.exist?("./views/reports/#{@student.score2}#{@student.score1}.inc")
     @report1 = File.read("./views/reports/#{@student.score2}#{@student.score1}.inc")
   end
 
-  if @student.score1 && @student.score3 && File.exists?("./views/reports/#{@student.score1}#{@student.score3}.inc")
+  if @student.score1 && @student.score3 && File.exist?("./views/reports/#{@student.score1}#{@student.score3}.inc")
     @report2 = File.read("./views/reports/#{@student.score1}#{@student.score3}.inc")
-  elsif @student.score1 && @student.score3 && File.exists?("./views/reports/#{@student.score3}#{@student.score1}.inc")
+  elsif @student.score1 && @student.score3 && File.exist?("./views/reports/#{@student.score3}#{@student.score1}.inc")
     @report2 = File.read("./views/reports/#{@student.score3}#{@student.score1}.inc")
   end
 
-  if @student.score2 && @student.score3 && File.exists?("./views/reports/#{@student.score2}#{@student.score3}.inc")
+  if @student.score2 && @student.score3 && File.exist?("./views/reports/#{@student.score2}#{@student.score3}.inc")
     @report3 = File.read("./views/reports/#{@student.score2}#{@student.score3}.inc")
-  elsif @student.score2 && @student.score3 && File.exists?("./views/reports/#{@student.score3}#{@student.score2}.inc")
+  elsif @student.score2 && @student.score3 && File.exist?("./views/reports/#{@student.score3}#{@student.score2}.inc")
     @report3 = File.read("./views/reports/#{@student.score3}#{@student.score2}.inc")
   end
  
@@ -499,9 +458,9 @@ end
 
 get "/student/reports/:id/ex_scores/?" do
   auth_student
-  @school = School.get(params[:school_id])
-  @exercise = Exercise.get(params[:exercise_id])
-  @student = Student.get(params[:id])
+  @school = School[params[:school_id]]
+  @exercise = Exercise[params[:exercise_id]]
+  @student = Student[params[:id]]
     
   if @student.ex_score1 && @student.ex_score1 != ''
     
@@ -515,9 +474,9 @@ get "/student/reports/:id/ex_scores/?" do
     @student.ex_score2 = false
   end
   
-  if @student.ex_score1 && @student.ex_score2 && File.exists?("./views/reports/#{@student.ex_score1}#{@student.ex_score2}.inc")
+  if @student.ex_score1 && @student.ex_score2 && File.exist?("./views/reports/#{@student.ex_score1}#{@student.ex_score2}.inc")
     @report1 = File.read("./views/reports/#{@student.ex_score1}#{@student.ex_score2}.inc")
-  elsif @student.ex_score1 && @student.ex_score2 && File.exists?("./views/reports/#{@student.ex_score2}#{@student.ex_score1}.inc")
+  elsif @student.ex_score1 && @student.ex_score2 && File.exist?("./views/reports/#{@student.ex_score2}#{@student.ex_score1}.inc")
     @report1 = File.read("./views/reports/#{@student.ex_score2}#{@student.ex_score1}.inc")
   end
 
@@ -533,8 +492,8 @@ end
 
 get "/student/reports/:id/scores_full/?" do
   
-  @school = School.get(params[:school_id])
-  @student = Student.get(params[:id])
+  @school = School[params[:school_id]]
+  @student = Student[params[:id]]
     
   if @student.score1 && @student.score1 != ''
     
@@ -548,17 +507,17 @@ get "/student/reports/:id/scores_full/?" do
     @student.score2 = false
   end
   
-  if @student.score1 && File.exists?("./views/reports-long/#{@student.score1}.inc")
+  if @student.score1 && File.exist?("./views/reports-long/#{@student.score1}.inc")
     @cat1 = File.read("./views/reports-long/#{@student.score1}.inc")
   end
 
-  if @student.score2 && File.exists?("./views/reports-long/#{@student.score2}.inc")
+  if @student.score2 && File.exist?("./views/reports-long/#{@student.score2}.inc")
     @cat2 = File.read("./views/reports-long/#{@student.score2}.inc")
   end
 
-  if @student.score1 && @student.score2 && File.exists?("./views/reports-long/#{@student.score1}#{@student.score2}.inc")
+  if @student.score1 && @student.score2 && File.exist?("./views/reports-long/#{@student.score1}#{@student.score2}.inc")
     @report1 = File.read("./views/reports-long/#{@student.score1}#{@student.score2}.inc")
-  elsif @student.score1 && @student.score2 && File.exists?("./views/reports-long/#{@student.score2}#{@student.score1}.inc")
+  elsif @student.score1 && @student.score2 && File.exist?("./views/reports-long/#{@student.score2}#{@student.score1}.inc")
     @report1 = File.read("./views/reports-long/#{@student.score2}#{@student.score1}.inc")
   end
   
@@ -574,8 +533,8 @@ end
 
 post "/student/reports/:id/scores_full/?" do
   auth_student
-  school = School.get(params[:school_id])
-  student = Student.get(params[:id])
+  school = School[params[:school_id]]
+  student = Student[params[:id]]
   
   PDFKit.configure do |config|
     config.default_options = {
@@ -591,7 +550,7 @@ post "/student/reports/:id/scores_full/?" do
   content_type 'application/pdf'
   
   if settings.development?
-    kit = PDFKit.new("http://localhost:4567/student/reports/#{student.id}/scores_full")
+    kit = PDFKit.new("http://localhost:9292/student/reports/#{student.id}/scores_full")
   elsif settings.production?
     kit = PDFKit.new("https://www.ecareerdirection.com/student/reports/#{student.id}/scores_full")
   end
@@ -604,8 +563,8 @@ end
 get "/student/reports/:id/ex_scores_full/?" do
   auth_student
   @school = School.all
-  @exercise = Exercise.get(params[:exercise_id])
-  @student = Student.get(params[:id])
+  @exercise = Exercise[params[:exercise_id]]
+  @student = Student[params[:id]]
 
   if @student.ex_score1 && @student.ex_score1 != ''
 
@@ -619,17 +578,17 @@ get "/student/reports/:id/ex_scores_full/?" do
     @student.ex_score2 = false
   end
 
-  if @student.ex_score1 && File.exists?("./views/reports-long/#{@student.ex_score1}.inc")
+  if @student.ex_score1 && File.exist?("./views/reports-long/#{@student.ex_score1}.inc")
     @cat1 = File.read("./views/reports-long/#{@student.ex_score1}.inc")
   end
 
-  if @student.ex_score2 && File.exists?("./views/reports-long/#{@student.ex_score2}.inc")
+  if @student.ex_score2 && File.exist?("./views/reports-long/#{@student.ex_score2}.inc")
     @cat2 = File.read("./views/reports-long/#{@student.ex_score2}.inc")
   end
 
-  if @student.ex_score1 && @student.ex_score2 && File.exists?("./views/reports-long/#{@student.ex_score1}#{@student.ex_score2}.inc")
+  if @student.ex_score1 && @student.ex_score2 && File.exist?("./views/reports-long/#{@student.ex_score1}#{@student.ex_score2}.inc")
     @report1 = File.read("./views/reports-long/#{@student.ex_score1}#{@student.ex_score2}.inc")
-  elsif @student.ex_score1 && @student.ex_score2 && File.exists?("./views/reports-long/#{@student.ex_score2}#{@student.ex_score1}.inc")
+  elsif @student.ex_score1 && @student.ex_score2 && File.exist?("./views/reports-long/#{@student.ex_score2}#{@student.ex_score1}.inc")
     @report1 = File.read("./views/reports-long/#{@student.ex_score2}#{@student.ex_score1}.inc")
   end
 

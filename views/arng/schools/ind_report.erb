@@ -144,12 +144,10 @@
 					<button onclick="history.back()" class="hidden-print btn btn-secondary pull-right">Back</button><br />
 				</div>
 				 
-				
-				
-				
 				<% @school.students.each do |student| %>
 				
-				<% if student.created_on == @school.class_date %>
+				<% if student.class_date == @school.class_date %>
+				
 				
 				<div style="page-break-after: always;"> </div> 
 				
@@ -198,9 +196,9 @@
 					
 					<p style="margin-top: 9px;">This report is based on the pairing of the two occupational categories in which you scored highest. Listed below is a general description of the personality type common to people who have your interests. It will help you better understand your unique personality. Next the report lists courses of study, extracurricular activities, and part-time jobs that may be right for you. This information should help you make appropriate decisions as you plan your future. Remember, you are just exploring your future right now and you can look at as many job possibilities as you want. If you want more information on jobs that interest you, ask your school Counselor for additional sources.</p>
 					
-			    <% if student.score1 && student.score2 && File.exists?("./views/reports-long/#{student.score1}#{student.score2}.inc") %>
+			    <% if student.score1 && student.score2 && File.exist?("./views/reports-long/#{student.score1}#{student.score2}.inc") %>
 			    	<%= @report1 = File.read("./views/reports-long/#{student.score1}#{student.score2}.inc") %>
-			    <% elsif student.score1 && student.score2 && File.exists?("./views/reports-long/#{student.score2}#{student.score1}.inc") %>
+			    <% elsif student.score1 && student.score2 && File.exist?("./views/reports-long/#{student.score2}#{student.score1}.inc") %>
 			    	<%= @report1 = File.read("./views/reports-long/#{student.score2}#{student.score1}.inc") %>
 			    <% end %>
 				<hr />
@@ -217,7 +215,6 @@
 				
 				<% end %>
 				
-
 						
 				
 			

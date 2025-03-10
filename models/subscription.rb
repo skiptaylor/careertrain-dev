@@ -1,12 +1,4 @@
-class Subscription
-	include DataMapper::Resource
+class Subscription < Sequel::Model
+  plugin :timestamps
 
-	timestamps :at, :on
-	property   :deleted_at, ParanoidDateTime
-	property 	 :id, 				Serial
-
-  property  :sub_code,              String
-  
-  property :used,         Boolean, :default => false
-        
 end 

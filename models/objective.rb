@@ -1,15 +1,6 @@
-class Objective
-	include DataMapper::Resource
+class Objective < Sequel::Model
+  plugin :timestamps
 
-	timestamps :at, :on
-	property   :deleted_at, ParanoidDateTime
-	property 	 :id, 				Serial
-
-  property :goal,       Text
-  property :learn,      Text
-  property :long_goal,  Text
-  property :student_id, Integer
-  
-  belongs_to :student, required: false
+  many_to_one  :student, required: false
   
 end

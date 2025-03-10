@@ -11,12 +11,12 @@
 
       
 
-  	# session[:alert] = {
-    # 	style: 'alert-error',
-    # 	heading: 'This an error',
-    # 	message: 'It should be red!'
-    # }
-    
+    # session[:alert] = {
+   #       style: 'alert-error',
+   #       heading: 'This an error',
+   #       message: 'It should be red!'
+   #     }
+
 
   # Redirects with javascript, useful for shadowboxes
 
@@ -165,6 +165,6 @@
 
   end
   
-  PDFKit.configure do |config|
-    config.wkhtmltopdf = '/usr/bin/wkhtmltopdf'
-  end
+  # PDFKit.configure do |config|
+#     config.wkhtmltopdf = '/usr/bin/wkhtmltopdf'
+#   end

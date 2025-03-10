@@ -1,7 +1,7 @@
 
 get "/student/reports/:id/exercise/?"  do
   auth_student
-  @student = Student.get(params[:id])
+  @student = Student[params[:id]]
   @ie = Ie.all
   @exercise = Exercise.new
   erb :"/student/reports/exercise", layout: false
@@ -9,7 +9,7 @@ end
 
 post  "/student/reports/:id/exercise/?"  do
   auth_student
-  student = Student.get(params[:id])
+  student = Student[params[:id]]
   ie = Ie.all
      
   exercise = Exercise.create(
@@ -85,10 +85,10 @@ post  "/student/reports/:id/exercise/?"  do
     a:exercise.score_a
   }
   
-  score = score.sort_by { |k,v| v }
+  score = score.sort_by {  |k,v| v  }
   
-  exercise.high1 = score.fetch(8)
-  exercise.high2 = score.fetch(7)
+  exercise.high1 = score.fetch(8).to_s
+  exercise.high2 = score.fetch(7).to_s
   
   exercise.save
   

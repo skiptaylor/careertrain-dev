@@ -40,7 +40,6 @@ post '/educator/request/?' do
     sleep 1
     redirect "/educator/back" 
   end
-
   
 end
 

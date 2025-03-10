@@ -89,7 +89,7 @@
 				
 				
 				
-				<div class="form-row" style="display: none;">
+				<div class="form-row" style="">
 					<div class="control-group">	
 						
 						<label for="active"></label>
@@ -98,12 +98,12 @@
 					</div>
 				</div>
 				
-				 <div class="well" style="text-align: center; border-top: 3px solid #1abd9c; border-bottom: 3px solid #1abd9c; display: none;">
+				 <div class="well" style="text-align: center; border-top: 3px solid #1abd9c; border-bottom: 3px solid #1abd9c;">
 				<% if @school.active == true %> 
 					School ID
 					<h6 style="color: #b5011c;"><%= @school.school_password %></h6>
 				<% else %>
-					<h5 class="muted">SCHOOL NOT</h5>
+					<h5 class="muted">SCHOOL NOT ACTIVE</h5>
 				<% end %>
 				 </div> 				
 				

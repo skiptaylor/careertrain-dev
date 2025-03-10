@@ -30,7 +30,7 @@
 					<p><strong>Select Class</strong></p>
 					<p>
 					<select type="text" id="presentation" name="presentation" class="form-control col-sm-6" value="<%= @presentation %>">
-						<option value="Select Class Date">Select Class Date</option>
+						<!-- <option value="">Select Class Date</option> -->
 							<% @school.presentations.each do |pres| %>
 							
 						<option value="<%= pres.class_date %>" <%= 'selected' if pres.class_date == @school.class_date %>><%= format_day(pres.class_date) %></option>
@@ -51,8 +51,7 @@
 				<div class="row" style="margin-top: 2em;">
 					<div class="col">
 						<form method="post">
-						
-						<% unless params[:presentation] == "" %>
+						<% unless params[:presentation] == nil || params[:presentation] == '' %>
 						<p><strong>Summary Report</strong></p>
 						<p><a href="/arng/schools/<%= @school.id %>/summary_report" class="btn btn-success">View</a></p>
 						<% end %>
@@ -62,7 +61,7 @@
 					
 					<div class="col">
 						
-						<% unless params[:presentation] == "" %>
+						<% unless params[:presentation] == nil || params[:presentation] == '' %>
 						<p><strong>Individual Reports</strong></p>
 						<p><a href="/arng/schools/<%= @school.id %>/ind_report" class="btn btn-success" >View</a></p>
 						<% end %>
@@ -84,20 +83,21 @@
 					</tr>
 					
 					<% @school.students.sort_by(&:last_name).each do |student| %>
-					
+					<% unless student.class_date == nil %>
+					<% if student.class_date == @school.class_date %>
 					<tr>
 						<td>
-							<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %> <!-- - <%= student.created_on %> -->
+							<%= student.first_name %> <%= student.middle_name %> <%= student.last_name %> 
 						</td>
 						<td>
-							<%= student.school_password %> <!-- - <%= student.school_id %> - <%= params[:presentation] %> -->
+							<%= student.school_password %>
 						</td>
 						<td> 
-							<%= format_american_day(student.created_on) %>
+							<%= student.class_date %>
 						</td>
-						
 					</tr>
-					
+					<% end %>
+					<% end %>
 					<% end %>
 				</table>
 

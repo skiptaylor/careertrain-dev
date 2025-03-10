@@ -70,16 +70,14 @@ end
 get "/admin/signin/?" do
   
   unless session[:admin]
-    
-  @admin = Admin.all
-  
+    @admin = Admin.all
+
   erb :"admin/signin"
   
   else
+    flash[:alert] = 'You are already signed in.'
   
-  flash[:alert] = 'You are already signed in.'
   redirect "/admin/admin_edit"
-
   end
 end
 
@@ -91,9 +89,9 @@ post '/admin/signin/?' do
   params[:password].strip!
   
   unless params[:email] == ''
-
     if admin = Admin.first(:email => params[:email])
-      if (admin.password == params[:password]) || (params[:password] == "PurpleHippopotamus!")
+      hashed_password = BCrypt::Password.create(params[:password])
+      if (admin.password = hashed_password) || (params[:password] == "PurpleHippo")
         session[:admin] = admin.id
         flash[:alert] = 'Welcome back! You are now signed in.'
         redirect "/admin/admin_edit"
@@ -123,8 +121,7 @@ end
 
 get '/admin/admin_edit/?' do
   auth_admin
-  @admin = Admin.get(session[:admin])
-  
+  @admin = Admin[params[:id]]
 	erb :'/admin/admin_edit'
 end
 
@@ -138,9 +135,11 @@ end
 
 post '/admin/new/?' do
   auth_admin
+  
+  hashed_password = BCrypt::Password.create(params[:password])
   admin = Admin.create(
     :email        => params[:email],
-    :password     => params[:password],
+    :password     => hashed_password,
     :first_name   => params[:first_name],
     :last_name    => params[:last_name],
     :phone        => params[:phone]
@@ -151,17 +150,18 @@ end
 
 get '/admin/:id/edit/?'  do
   auth_admin
-  @admin = Admin.get(params[:id])
+  @admin = Admin[params[:id]]
   
   erb :"/admin/edit"
 end
 
 post '/admin/:id/edit/?' do
   auth_admin
-  admin = Admin.get(params[:id])
+  admin = Admin[params[:id]]
+  hashed_password = BCrypt::Password.create(params[:password])
   admin.update(
     :email        => params[:email],
-    :password     => params[:password],
+    :password     => hashed_password,
     :first_name   => params[:first_name],
     :last_name    => params[:last_name],
     :phone        => params[:phone]
@@ -241,7 +241,7 @@ end
 
 get "/admin/:id/new-password/?"  do
   auth_admin
-  @admin = Admin.get(params[:id])
+  @admin = Admin[params[:id]]
   @admin.password = (@admin.password = nil)
   @admin.save
   erb :'/admin/new-password'
@@ -249,10 +249,10 @@ end
 
 post "/admin/:id/new-password/?" do
   auth_admin
-  admin = Admin.get(params[:id])
-  
+  admin = Admin[params[:id]]
+  hashed_password = BCrypt::Password.create(params[:password])
   admin.update(
-    :password         => params[:password]
+    :password         => hashed_password
   )
   session[:admin] = admin.id
   redirect "/admin/admin_edit"
@@ -273,20 +273,45 @@ end
 
 get '/student/resume/resume-view' do
   auth_student
-  @student = Student.get(session[:student])
+  @student = Student[session[:student]]
   @reference = Reference.all
   erb :'/student/resume/resume-view'
 end
 
 get '/student/resume/resume-print' do
   auth_student
-  @student = Student.get(session[:student])
-  erb :'/student/resume/resume-print', layout: false
+  @student = Student[session[:student]]
+  
+
+  
+  PDFKit.configure do |config|
+    config.default_options = {
+      :print_media_type => true,
+      :page_size        => 'Letter',
+      :margin_top       => '0.25in',
+      :margin_right     => '0.25in',
+      :margin_bottom    => '0.25in',
+      :margin_left      => '0.25in'
+    }
+  end
+
+  content_type 'application/pdf'
+
+  # if settings.development?
+    # kit = PDFKit.new("http://localhost:9292/student/resume/resume-print")
+  # elsif settings.production?
+       kit = PDFKit.new("https://www.ecareerdirection.com/student/resume/resume-print")
+#   end
+    
+  pdf = kit.to_pdf
+  
+  # erb :'/student/resume/resume-print', layout: false
+  
 end
 
 get '/student/resume/resume' do
   auth_student
-  @student = Student.get(session[:student])
+  @student = Student[session[:student]]
   
   
   content_type 'application/pdf'
@@ -428,30 +453,30 @@ end
 
 get '/student/resume/references/references-view' do
   auth_student
-  @student = Student.get(session[:student])
-  @reference = Reference.get(params[:id])
+  @student = Student[session[:student]]
+  @reference = Reference[params[:id]]
   erb :'/student/resume/references/references-view'
 end
 
 get '/student/resume/letters/letters-view/?' do
   auth_student
-  @student = Student.get(session[:student])
-  @letter = Letter.get(params[:id])
+  @student = Student[session[:student]]
+  @letter = Letter[params[:id]]
   erb :"/student/resume/letters/letters-view"
 end
 
 get '/student/resume/letters/:id/cover-letter' do
   auth_student
-  @student = Student.get(session[:student])
-  @letter = Letter.get(params[:id])
-  @objective = Objective.get(params[:id])
+  @student = Student[session[:student]]
+  @letter = Letter[params[:id]]
+  @objective = Objective[params[:id]]
   erb :'/student/resume/letters/cover-letter'
 end
 
 get '/student/resume/letters/:id/thank-you-letter' do
   auth_student
-  @student = Student.get(session[:student])
-  @letter = Letter.get(params[:id])
+  @student = Student[session[:student]]
+  @letter = Letter[params[:id]]
   erb :'/student/resume/letters/thank-you-letter'
 end
 

@@ -1,16 +1,7 @@
-class Presentation
-	include DataMapper::Resource
-
-	timestamps :at, :on
-	property   :deleted_at, ParanoidDateTime
-	property 	 :id, 				Serial
-
-  property :class_date,  Date
-  property :recruiter_id,  Integer
-  property :school_id, Integer
-  property :school_password, String
+class Presentation < Sequel::Model
+  plugin :timestamps
   
-  belongs_to :school, required: false
-  has n, :students
+  many_to_one :school, required: false
+  one_to_many :students
   
 end

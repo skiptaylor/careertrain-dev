@@ -137,13 +137,13 @@
 				<p class="header1">Summary Report</p>
 				<p style="text-align: center; font-size: 16px;"><strong><%= @school.school_name %></strong> &nbsp; <%= @school.school_city %> <%= @school.school_state %> &nbsp;&bull;&nbsp; <%= @school.recruiter.rank %> <%= @school.recruiter.first_name %> <%= @school.recruiter.middle_name %> <%= @school.recruiter.last_name %> &nbsp;&bull;&nbsp; <b>Class Date:</b> <%= @school.class_date %></p>
 				 
-				<% @school.students.sort_by(&:last_name).each do |student| %>
+				<% @school.students.each do |student| %>
 				
-				<% if student.created_on == @school.class_date %>
+				<% if student.class_date == @school.class_date %>
 				
 				<hr style="margin: 6px 0 6px 0;" />
 				
-				<p><strong>Student:</strong>&nbsp;<%= student.first_name %> <%= student.last_name %>&nbsp;&bull;&nbsp; <strong>Grade:</strong>&nbsp;<%= student.grade %>&nbsp;&bull;&nbsp;<strong>Email:</strong>&nbsp;<%= student.email %> <% if student.phone %>&nbsp;&bull;&nbsp;<strong>Phone:</strong>&nbsp; <%= student.phone %><% end %> <strong>Class Date:</strong></b>  <%= student.created_on %></p>
+				<p><strong>Student:</strong>&nbsp;<%= student.first_name %> <%= student.last_name %>&nbsp;&bull;&nbsp; <strong>Grade:</strong>&nbsp;<%= student.grade %>&nbsp;&bull;&nbsp;<strong>Email:</strong>&nbsp;<%= student.email %> <% if student.phone %>&nbsp;&bull;&nbsp;<strong>Phone:</strong>&nbsp; <%= student.phone %><% end %> <strong>Class Date:</strong></b>  <%= format_day(student.created_at) %></p>
 					
 					<p style="margin-top: 6px;">
 					<strong>High Scores:</strong>&nbsp;

@@ -1,13 +1,13 @@
 get '/student/resume/letters/?' do
   auth_student
-  @student = Student.get(session[:student])
+  @student = Student[session[:student]]
 	@letter = Letter.all
 	erb :'/student/resume/letters'
 end
 
 get '/student/resume/letters/new/?' do
   auth_student
-  @student = Student.get(session[:student])
+  @student = Student[session[:student]]
   @letter = Letter.new
   erb :'/student/resume/letters/edit'
 end
@@ -33,29 +33,29 @@ end
 
 get '/student/resume/letters/letters/?' do
   auth_student
-  @student = Student.get(session[:student])
-	@letter = Letter.get(params[:id])
+  @student = Student[session[:student]]
+	@letter = Letter[params[:id]]
 	erb :'/student/resume/letters/letters'
 end
 
 get "/student/resume/letters/:id/view/?" do
   auth_student
-  @student = Student.get(session[:student])
-  @letter = Letter.get(params[:id])
+  @student = Student[session[:student]]
+  @letter = Letter[params[:id]]
   erb :"/student/resume/letters/view"
 end
 
 get '/student/resume/letters/:id/edit/?' do
   auth_student
-  @student = Student.get(session[:student])
-  @letter = Letter.get(params[:id])
+  @student = Student[session[:student]]
+  @letter = Letter[params[:id]]
   erb :"/student/resume/letters/edit"
 end
 
 post '/student/resume/letters/:id/edit/?' do
   auth_student
-  @student = Student.get(session[:student])
-  letter = Letter.get(params[:id])
+  @student = Student[session[:student]]
+  letter = Letter[params[:id]]
   letter.update(
     :student_id   => session[:student],
     :title        => params[:title],
@@ -75,8 +75,8 @@ end
 
 get '/student/resume/letters/:id/delete/?' do
   auth_student
-  @student = Student.get(session[:student])
-  letter = Letter.get(params[:id])
+  @student = Student[session[:student]]
+  letter = Letter[params[:id]]
   letter.destroy
   redirect '/student/resume/letters/letters'
 end

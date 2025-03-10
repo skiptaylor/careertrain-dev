@@ -1,17 +1,6 @@
-class Skill
-	include DataMapper::Resource
+class Skill < Sequel::Model
+  plugin :timestamps
 
-	timestamps :at, :on
-	property   :deleted_at, ParanoidDateTime
-	property 	 :id, 				Serial
-
-  property :skill,     Text
-  property :applied_1, Text
-  property :applied_2, Text
-  property :applied_3, Text
-  property :applied_4, Text
-  property :student_id,   Integer
-  
-  belongs_to :student, required: false
+  many_to_one :student, required: false
   
 end

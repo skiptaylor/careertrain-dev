@@ -1,12 +1,6 @@
-class Interest
-	include DataMapper::Resource
+class Interest < Sequel::Model
+  plugin :timestamps
 
-	timestamps :at, :on
-	property   :deleted_at, ParanoidDateTime
-	property 	 :id, 				Serial
-
-  property :interest,    Text
-  
-  belongs_to :student, required: false
+  many_to_one :student, required: false
   
 end

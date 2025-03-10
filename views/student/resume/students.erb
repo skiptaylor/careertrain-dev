@@ -7,7 +7,7 @@
 		</div>
 		<div class="row"> 
 			<div class="col-md-12" style="margin-bottom: 1em;">
-				<p class="pull-right">Total number of students: <strong><%= @student.count %></strong></p>
+				<p class="pull-right">100 most recent students</strong></p>
 				<form class="form-search" method="get">
 				<div class="input-append">
 					<input type="text" class="textfield col-md-6 search-query" style="padding: 5px; margin-right: 12px;" name="search" placeholder="Search Email" value="<%= params[:search] %>" />
@@ -29,7 +29,7 @@
 						<th>School ID</th>
 						<th> </th>
 					</tr>
-					<% @student.sort_by(&:updated_at).reverse.each do |student| %>
+					<% @student.each do |student| %>
 					<tr>
 						<td><%= student.first_name %> <%= student.last_name %></td>
 						<td><%= student.email %></td>

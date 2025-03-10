@@ -1,13 +1,13 @@
 get '/student/resume/activities/?' do
   auth_student
-  @student = Student.get(session[:student])
+  @student = Student[session[:student]]
 	@activity = Activity.all
 	erb :'/student/resume/activities'
 end
 
 get '/student/resume/activities/new/?' do
   auth_student
-  @student = Student.get(session[:student])
+  @student = Student[session[:student]]
   @activity = Activity.new
   erb :'/student/resume/activities/edit'
 end
@@ -29,30 +29,30 @@ end
 
 get '/student/resume/activities/activities/?' do
   auth_student
-  @student = Student.get(session[:student])
-  @activity = Activity.get(params[:id])
+  @student = Student[session[:student]]
+  @activity = Activity[params[:id]]
   erb :'/student/resume/activities/activities'
 end
 
 
 get '/student/resume/activities/:id/view/?' do
   auth_student
-  @student = Student.get(session[:student])
-  @activity = Activity.get(params[:id])
+  @student = Student[session[:student]]
+  @activity = Activity[params[:id]]
   erb :'/student/resume/activities/view'
 end
 
 get '/student/resume/activities/:id/edit/?' do
   auth_student
-  @student = Student.get(session[:student])
-  @activity = Activity.get(params[:id])
+  @student = Student[session[:student]]
+  @activity = Activity[params[:id]]
   erb :'/student/resume/activities/edit'
 end
 
 post '/student/resume/activities/:id/edit/?' do
   auth_student
-  @student = Student.get(session[:student])
-  activity = Activity.get(params[:id])
+  @student = Student[session[:student]]
+  activity = Activity[params[:id]]
   params[:date_start] = nil if params[:date_start] == ''
   params[:date_end] = nil if params[:date_end] == ''
   activity.update(
@@ -68,8 +68,8 @@ end
 
 get '/student/resume/activities/:id/delete/?' do
   auth_student
-  @student = Student.get(session[:student])
-  activity = Activity.get(params[:id])
+  @student = Student[session[:student]]
+  activity = Activity[params[:id]]
   activity.destroy
   redirect '/student/resume/activities/activities'
 end

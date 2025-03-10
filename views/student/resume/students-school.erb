@@ -5,7 +5,9 @@
 			<h1 class="page-header">Student List by School</h1>
 		</div>
 	</div>
+
 	<form class="form-search" method="get">	
+	
 	<div class="row">  
 		<div class="col-md-4" style="text-align: center;">
 			<strong>School ID</strong>
@@ -14,18 +16,37 @@
 		<div class="col-md-5">
 			<span style="float: right;"><button type="submit" style="text-align: center;" class="btn btn-success">Find</button></span>
 			<div class="form-group">
-				<label style="float: left; margin-top: 8px;" for="state">Start &nbsp;&nbsp;</label>
-				<%= date_to_field('start', @start) %>
+				<label style="float: left; margin-top: 0px;" for="start">Start &nbsp;&nbsp;</label>
+				<%= @start.to_fields 'start' %>
 			</div>
-			
 			
 			<div class="form-group">
-				<label style="float: left; margin-top: 8px;" for="state">&nbsp;&nbsp;End &nbsp;&nbsp;</label>
-				<%= date_to_field('end', @end) %>
+				<label style="float: left; margin-top: 0px;" for="end">&nbsp;&nbsp;End &nbsp;&nbsp;</label>
+				<%= @end.to_fields 'end' %>
 			</div>
+			
 
 			
 		</div>
+		
+		
+		<!-- <div class="col-md-5">
+			<label for="start_date" class="span2 control-label">Start</label>
+			<div class="span3 input-append date">
+				<input type="text" class="form_date" name="start_date" id="start_date" data-date="" data-date-format="MM dd, yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd" value="<%= 'start_date' %>" />
+			</div>
+			<input type="hidden" id="dtp_input2" value="" /><br/>
+
+
+
+			<label for="end_date" class="span2 control-label">End</label>
+			<div class="form-group input-append date">
+			<div class="span3 input-append date">
+				<input type="text" class="form_date" name="end_date" id="end_date" data-date="" data-date-format="MM dd, yyyy" data-link-field="dtp_input3" data-link-format="yyyy-mm-dd" value="<%= 'end_date' %>" />
+			</div>
+			<input type="hidden" id="dtp_input3" value="" /><br/>
+		</div> -->
+		
 		<div class="col-md-2">	
 				<% if @student.count > 0 %>
 					<a href="<%= request.url %>&csv=true" class="btn btn-primary">Download CSV</a>
@@ -33,6 +54,7 @@
 					<br />
 					<p><small><strong><%= @student.count %></strong> students found</small></p>
 				<% end %>
+				
 		</div>
 	</div>
 	</form>
@@ -44,7 +66,7 @@
 					<th>School ID</th>
 					<th>Created On</th>
 				</tr>
-				<% @student.sort_by(&:created_on).reverse.each do |student| %>
+				<% @student.each do |student| %>
 				<% if student.school_id %>
 				<tr>
 					<td>

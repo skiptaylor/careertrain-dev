@@ -28,13 +28,13 @@ end
 
 get "/ie/:id/edit/?" do
   auth_admin
-  @ie = Ie.get(params[:id])
+  @ie = Ie[params[:id]]
   erb :"/ie/ie_edit"
 end
 
 post "/ie/:id/edit/?" do
   auth_admin
-  ie = Ie.get(params[:id])
+  iie = Ie[params[:id]]
   ie.update(
     :position_number  => params[:position_number],
     :item             => params[:item],
@@ -51,7 +51,7 @@ end
 
 get "/ie/:id/delete/?" do
   auth_admin
-  ie = Ie.get(params[:id])
+  ie = Ie[params[:id]]
   ie.destroy
   redirect "/ie/ies"
 end

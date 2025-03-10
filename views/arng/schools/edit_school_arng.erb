@@ -97,13 +97,13 @@
 			<div class="col-md-4">
 				
 				
-				<!-- <div class="form-row" style="display: none;">
+				<div class="form-row" style="">
 					<div class="control-group">
 						<label for="active"></label>
 						<input type="checkbox" name="active" id="active" <%= 'checked="checked"' if @school.active %> /> <span style="font-size: 17px; padding: 0 0 0 5px;"><strong>Active</strong></span>
 						<br />
 					</div>
-				</div> -->
+				</div>
 				
 				 <div class="well" style="text-align: center; border-top: 3px solid #1abd9c; border-bottom: 3px solid #1abd9c;">
 				
@@ -125,11 +125,11 @@
  							<% @recruiter.sort_by(&:state).each do |recruiter| %>
 							
 							<% if recruiter.id == @school.recruiter_id %>
- 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter.id %>><%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
+ 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter_id %>><%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
 							<% end %>
 							<% unless @school.recruiter_id == session[:recruiter] %>
 							<% if recruiter.id == session[:recruiter] %>
- 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter.id %>><%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
+ 								<option value="<%= recruiter.id %>" <%= 'selected' if recruiter.id == @school.recruiter_id %>><%= recruiter.rank %> <%= recruiter.first_name %> <%= recruiter.last_name %></option>
 							<% end %>
 							<% end %>	
 							<% end %>
@@ -137,7 +137,16 @@
  						</select>
  					</div>
  				</div>
- 				<br />
+				<br />
+				<% if session[:admin] %>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="school_password">Change School Password</label>
+						<input type="text" class="form-control" name="school_password" id="school_password" value="<%= @school.school_password %>" /> 
+					</div>
+				</div>
+				<% end %>
+ 				
 				<br />
 				
 				
