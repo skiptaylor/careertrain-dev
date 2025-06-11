@@ -31,7 +31,7 @@ post "/recruiters/noaccount/?"  do
 
     session[:verify] = params[:new_code]
   
-    if settings.production?
+    # if settings.production?
       Pony.mail(
         headers: { 'Content-Type' => 'text/html' },
         to: "#{params[:email]}",
@@ -40,10 +40,10 @@ post "/recruiters/noaccount/?"  do
         body: "Here is your verification code for <b><i>e</i>CareerDirection</b> registration: <b>#{params[:new_code]}</b>"
       )
       redirect '/recruiters/reg'
-    else
-      flash[:alert] = 'Email would have been sent in production mode.'
-      redirect '/recruiters/reg'
-    end
+    # else
+ #      flash[:alert] = 'Email would have been sent in production mode.'
+ #      redirect '/recruiters/reg'
+ #    end
 
   else
     flash[:alert] = 'This email already exists. Maybe you need to sign in.'
