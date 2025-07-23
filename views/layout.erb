@@ -178,6 +178,55 @@
 		</script>
 
   </body>
+	
+	<script>
+		document.getElementById("student_report").addEventListener("submit", function (e) {
+		    e.preventDefault(); // Stop the normal submit
+
+		    const form = e.target;
+
+		    // Collect checked future plans
+		    const futurePlans = [];
+		    for (let i = 1; i <= 8; i++) {
+		        const cb = form[`future${i}`];
+		        if (cb && cb.checked) {
+		            futurePlans.push(cb.nextElementSibling.innerText.trim());
+		        }
+		    }
+
+		    // Prepare data payload
+		    const jsonData = {
+		        email:      form.email.value,
+		        firstname:  form.first_name.value,
+		        lastname:   form.last_name.value,
+		        grade:      form.grade.value,
+		        sub_code:   form.sub_code.value,
+		        sub_code2:  form.sub_code2.value,
+		        future_plans: futurePlans
+		    };
+
+		    // Send to MindFire tracking endpoint
+		    fetch("https://tracking.mdl.io/MindFire/inboundcc.js?id=20315_17430_638882667095957002&aid=20315&oid=16811", {
+		        method:  "POST",
+		        headers: { "Content-Type": "application/json" },
+		        body:    JSON.stringify(jsonData)
+		    })
+		    .then(r => {
+		        if (!r.ok) throw new Error("Tracking POST failed");
+		        return r.text();
+		    })
+		    .then(() => {
+		        console.log("Tracking sent ✔");
+		        form.submit(); // Continue with the actual form submission
+		    })
+		    .catch(err => {
+		        console.error(err);
+		        alert("Could not send tracking data—please try again.");
+		    });
+		});
+	</script>
+		
+		
 </html>
 
 <script>
@@ -185,3 +234,5 @@
 	   window.history.back();
 	 }
 </script>
+	 
+
