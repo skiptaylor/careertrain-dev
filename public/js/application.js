@@ -1,4 +1,4 @@
-$(function() {
+(function() {
 
 	$('.link-row').click(function() {
 		window.location = $(this).attr('id');
@@ -17,29 +17,9 @@ $(function() {
 			
 });
 
-$(function() {
-  $(document).ready(function() {
-    $('a.delete').click(function() {
-      if (!confirm('This cannot be undone! Continue?')) {
-        return false;
-      }
-    });
-  });
-}).call(this);
+(function() {
 
-$(function() {
-  $(document).ready(function() {
-    $('button.delete').click(function() {
-      if (!confirm('This cannot be undone! Continue?')) {
-        return false;
-      }
-    });
-  });
-}).call(this);
-
-$(function() {
-
-  $(window).load(function() {
+  $(window).ready(function() {
     $('a.btn-danger').click(function() {
       if (!confirm('This cannot be undone! Continue?')) {
         return false;
