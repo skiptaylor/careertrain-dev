@@ -182,13 +182,13 @@ function ourFunction() {
 
 		    // Prepare data payload
 		    const jsonData = {
-		        email:      form.email.value,
-		        firstname:  form.first_name.value,
-		        lastname:   form.last_name.value,
-		        grade:      form.grade.value,
-		        sub_code:   form.sub_code.value,
-		        sub_code2:  form.sub_code2.value,
-		        future_plans: futurePlans
+		        email:      	form.email.value,
+		        firstname:  	form.first_name.value,
+		        lastname:   	form.last_name.value,
+		        grade:      	form.grade.value,
+		        sub_code:   	form.sub_code.value,
+		        sub_code2:  	form.sub_code2.value,
+		        future_plans: futurePlans.join(", ")
 		    };
 
 		    // Send to MindFire tracking endpoint
