@@ -196,7 +196,7 @@ end
 
 
 
-
+#----------  password reset  ----------
 
 get "/student/reports/password-reset/?"  do
   @student = Student.all
@@ -279,7 +279,7 @@ post "/student/reports/:id/new-password/?" do
 end
 
 
-
+#----------  end password reset  ----------
 
 
 
@@ -341,7 +341,7 @@ end
 
 
 
-
+#----------  student reports  ----------
 
 
 get "/student/reports/:id/report/?" do
@@ -353,7 +353,6 @@ get "/student/reports/:id/report/?" do
  if @student.class_date == nil
    @student.class_date = @student.created_on
    @student.save
-
  end
   
   erb :"/student/reports/report"
@@ -371,14 +370,12 @@ post "/student/reports/:id/report/?" do
       :ex_score2      => params[:ex_score2]
       )
   else
-    # flash[:alert] = '1st Highest and 2nd Highest Scores cannot be the same.'
-    redirect "/student/reports/#{params[:id]}/report"
+    redirect "/student/reports/#{params[:id]}/report?score1=#{student.score1}&score2=#{student.score2}&email=#{student.email}"
   end
   
    redirect "/student/reports/#{params[:id]}/ex_scores"
 
 end
-
 
 
 get "/student/reports/:id/mail_wel2/?" do
@@ -389,7 +386,6 @@ get "/student/reports/:id/mail_wel2/?" do
   
   erb :"/student/reports/mail_wel2"
 end
-
 
 
 get "/student/reports/:id/scores/?" do

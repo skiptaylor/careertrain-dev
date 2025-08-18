@@ -32,7 +32,7 @@
 	  
   <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #000000;">
 	  <div class="container">  
-	    <a class="navbar-brand mb-2" href="/index"><img src="/img/eCareerDirection-logo-white.svg" width="220px"></a>
+	    <a class="navbar-brand mb-2" href="/index"><img src="/img/eCD-logo-white.svg" width="220px"></a>
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
@@ -66,13 +66,13 @@
 	          </div>
 	        </li>
 	        <li class="nav-item dropdown px-1">
-				  <a class="nav-link dropdown-toggle <%= active 'arng/' %>" id="dropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ARNG Rep</a>
+				  <a class="nav-link dropdown-toggle <%= active 'arng/' %> || <%= active 'recruiters/' %>" id="dropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ARNG Rep</a>
 				  <div class="dropdown-menu pic-border" aria-labelledby="dropdown3">
 					  <a class="dropdown-item <%= active 'arng/arng' %>" href="/arng/arng"><em>e</em>CareerDirection</a>
 					  <% if session[:recruiter] %>
 					  <a class="dropdown-item <%= active 'arng/leads' %>" href="/arng/leads">Generate Leads</a>
 					  <a class="dropdown-item <%= active 'arng/register' %>" href="/arng/register">Register Your School</a>
-					  <a class="dropdown-item <%= active 'recruiters' %>" href="/recruiters/<%= session[:recruiter] %>/profile"><i class="icon-user"> </i> &nbsp;Recruiter Account</a>
+					  <a class="dropdown-item <%= active 'recruiters/' %>" href="/recruiters/<%= session[:recruiter] %>/profile"><i class="icon-user"> </i> &nbsp;Recruiter Account</a>
 					  <a class="dropdown-item <%= active 'arng/practices' %>" href="/arng/practices">Best Practices</a>
 					  <a class="dropdown-item <%= active 'arng/downloads' %>" href="/arng/downloads">Downloads</a>
 					  <a class="dropdown-item <%= active 'arng/faq' %>" href="/arng/faq">FAQ</a>
@@ -103,26 +103,26 @@
 	<footer>
 		<div class="container">
 			<div class="row d-block d-md-none">
-				<div class="col-12" style="line-height: 16px;">
-					<p>1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc.<br />All rights reserved. &nbsp; <span class="under-link"><a href="/admin/signin" >&nbsp;Admin&nbsp;</a></span> 
+				<div class="col-12" >
+					<p style="line-height: 16px; font-size: 14px; margin-top: -10px;">&copy; 1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc.<br />All rights reserved. Reproduction in whole or in part without permission is prohibited.<br /><a href="/admin/signin" class="btn btn-mini" style="margin-top: 1em; border-color: #9FAAB1">&nbsp;Admin&nbsp;</a>
 						<br >
-					<span style="color: #af4532;"><strong><%= session[:admin] %> / <%= session[:recruiter] %> / <%= session[:student] %></strong></span>
+					<!-- <span style="color: #af4532;"><strong><%= session[:admin] %> &nbsp;&nbsp; <%= session[:recruiter] %> &nbsp;&nbsp; <%= session[:student] %></strong></span> -->
 					</p>
 				</div>
 			</div>
 			
 			<div class="d-none d-sm-none d-md-block">
 			<div class="row">
-				<div class="col-3" style="text-align: left; margin-bottom: 14px;">
-					<a href="/about" class="btn">About CTC</a>
+				<div class="col-2" style="text-align: left; margin-bottom: 14px;">
+					<!-- <a href="/about" class="btn">About CTC</a> -->
 				</div>
-				<div class="col-6" style="line-height: 16px;">
-					<p>&copy; 1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc.<br />All rights reserved. &nbsp; <span class="under-link"><a href="/admin/signin" >&nbsp;Admin&nbsp;</a></span> 
-					<br /><br />
-					<span style="color: #6db55a; font-size: 0.8em;"><% if session[:admin] %>A<% end %> &nbsp; <% if session[:recruiter] %>R<% end %> &nbsp; <% if session[:student] %>S<% end %></span>
+				<div class="col-8" style="line-height: 16px; font-size: 16px;">
+					<p>&copy; 1996 - <%= Time.now.strftime("%Y") %> Career Training Concepts Inc.<br />All rights reserved. Reproduction in whole or in part without permission is prohibited.<br /><a href="/admin/signin" class="btn btn-mini" style="margin-top: 1em; border-color: #9FAAB1">&nbsp;Admin&nbsp;</a> 
+					<!-- <br />
+					<span style="color: #6db55a; font-size: 0.8em;"><% if session[:admin] %>A<% end %> &nbsp; <% if session[:recruiter] %>R<% end %> &nbsp; <% if session[:student] %>S<% end %></span> -->
 					</p>
 				</div>
-				<div class="col-3" style="text-align: right;">
+				<div class="col-2" style="text-align: right;">
 				 	<img src="/img/arng-no-ground.svg" width="60px" />
 				</div>
 			</div>

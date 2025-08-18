@@ -30,11 +30,11 @@
 				<h5>Find School for your account.</h5>
 				<p>
 					<form method="get" class="form-search form-inline">
-					  <input type="text" name="zip" class="form-control search-query" placeholder="School Zip"/>  &nbsp;  
-					  <button type="submit" class="btn btn-success">Search</button>
+					  <p><button type="submit" class="btn btn-success pull-right">Search</button>  
+						<input type="text" name="zip" class="form-control search-query" placeholder="School Zip"/></p>
 					</form>
 		  		</p>
-				<p style="color: #08297b; font-size: 1.15em; font-weight: bold;">Edit school to assign to recruiter account.</p>
+				<p style="color: #08297b; font-size: 1.15em;">Edit school to assign to recruiter account.</p>
 				<% if @results %>
 				<p>
 					<% @results.each do |c| %>
@@ -54,12 +54,12 @@
 				
 				<% end %>
 					<hr />
-					<p style="line-height: 1.3em;" class="semi-bold"><a href="/arng/schools/new" style="margin: 2px 0 12px 12px;" class="btn btn-success pull-right">Register</a>After submitting your school's zip, if your school is not listed above, you can register a new school now.
+					<p style="line-height: 1.3em;"><a href="/arng/schools/new" style="margin: 2px 0 12px 12px;" class="btn btn-success pull-right">Register</a>After submitting your school's zip, if your school is not listed above, you can register a new school now.</p>
 					<hr />
 					
 					
 				<!-- <p style="line-height: 1.3em;">If your school is listed as <strong>Not Activated</strong>, use the edit button next to school to finish registration. Call 888-326-9229 with problems.</p> -->
-				<p style="color: #08297b; font-size: 1.15em; font-weight: bold;">Schools that you are assigned to will be available in the School Accounts list below.</p>
+				<p style="color: #08297b; font-size: 1.15em;">Schools that you are assigned to will be available in the School Accounts list below.</p>
 			</div>
 		
 		

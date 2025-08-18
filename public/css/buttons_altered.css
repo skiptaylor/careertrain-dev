@@ -38,12 +38,12 @@ button.close {
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
-  color: #353535;
+  color: #9FAAB1;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  background-color: #efefef;
-  border: 1px solid #1abd9c;
+  background-color: transparent;
+  border: 1px solid #9FAAB1;
   -webkit-border-radius: 18px;
      -moz-border-radius: 18px;
           border-radius: 18px;
@@ -51,7 +51,7 @@ button.close {
 }
 
 button {
-	font-weight: 600;
+	font-weight: 400;
 	/*-webkit-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.6);
 		-moz-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.6);
 		 	  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.6);*/

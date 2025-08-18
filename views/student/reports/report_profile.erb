@@ -23,10 +23,12 @@
 					</p>
 					<% elsif @student.exercises.count == 1 %>
 					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/report" class="btn btn-info">Exercise Results</a>
+						<!-- <p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/report?score1=<%= @student.score1 %>&score2=<%= @student.score2 %>&email=<%= @student.email %>" class="btn btn-info">Exercise Results</a> -->
 					
 					<a href="/student/reports/<%= @student.id %>/exercise" class="btn btn-success">Take Exercise Again</a></p>
 					<% else %>
-					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/report" class="btn btn-sinfo">Exercise Results</a></p>
+					<p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/report" class="btn btn-info">Exercise Results</a></p>
+					<!-- <p style="margin-top: 14px;"><a href="/student/reports/<%= @student.id %>/report?score1=<%= @student.score1 %>&score2=<%= @student.score2 %>&email=<%= @student.email %>" class="btn btn-info">Exercise Results</a></p> -->
 					<% end %>
 									
 				</div>
@@ -69,3 +71,5 @@
 		</div>
 	</div>
 	
+
+

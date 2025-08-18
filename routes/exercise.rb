@@ -154,8 +154,12 @@ post  "/student/reports/:id/exercise/?"  do
     end
   end
     
-  redirect "/student/reports/#{params[:id]}/report"
+  redirect "/student/reports/#{params[:id]}/report?score1=#{student.score1}&score2=#{student.score2}&email=#{student.email}"
   
 end
   
   
+  
+  #  exercise.high1
+  
+  # score1=#{@exercise.high1}
