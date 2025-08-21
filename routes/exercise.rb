@@ -153,9 +153,7 @@ post  "/student/reports/:id/exercise/?"  do
       flash[:alert] = 'Email would have been sent in production mode.'
     end
   end
-    
   redirect "/student/reports/#{params[:id]}/report?score1=#{student.score1}&score2=#{student.score2}&email=#{student.email}"
-  
 end
   
   

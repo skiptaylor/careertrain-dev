@@ -7,7 +7,9 @@ Sequel.migration do
       DateTime :updated_at
       DateTime :deleted_at
 
-      Text :items
+      Text :name
+      Text :abbr
+      Text :name
     end
   end
 end

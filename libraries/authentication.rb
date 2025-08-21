@@ -22,11 +22,19 @@ helpers do
   end
   
   def auth_student
-    unless session[:student] || session[:admin] || session[:recruiter]
+    unless session[:student] || session[:admin] || session[:recruiter] || session[:nco]
       flash[:alert] = 'You must sign in to see that page.'
       redirect 'student/report'
     end
   end
+  
+  def auth_nco
+    unless session[:nco] || session[:admin]
+      flash[:alert] = 'You must sign in to see that page.'
+      redirect '/index'
+    end
+  end
+  
 
 end
 
