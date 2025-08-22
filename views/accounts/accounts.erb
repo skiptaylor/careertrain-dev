@@ -1,0 +1,28 @@
+	<div class="container">	
+		<div class="row">  
+			<div class="col-md-12">
+				<h1 class="page-header">State Accounts</h1>
+			</div>
+ 
+			<form method="post">
+			<div class="col-md-12">
+			<table class="table table-striped table-condensed">
+				<tr>
+				<!-- <th> </th> -->	
+				<th>Abbr</th>
+				<th>State</th>
+				<th><a href="/accounts/new" class="btn btn-mini btn-success pull-right"><i class="icon icon-plus"></i>  New</a></th>
+			</tr>
+			<% @account.each do |account| %>
+			<tr>
+				<!-- <td style="color: #b4c7ce;"><small><%= account.id %></small></td> -->
+				<td><strong><%= account.abbr %></strong></td>
+				<td><%= account.name %></td>
+				<td style="text-align: right;"><a href="/accounts/<%= account.id %>/edit" class="btn btn-small btn-secondary">Setup</a></td>
+			</tr>
+			<% end %>
+			</table>
+		</div>
+	</div>
+</div>
+</div>

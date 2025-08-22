@@ -370,8 +370,8 @@ post "/student/reports/:id/report/?" do
       :ex_score2      => params[:ex_score2]
       )
   else
-    # redirect "/student/reports/#{params[:id]}/report"
-    redirect "/student/reports/#{params[:id]}/report?score1=#{student.score1}&score2=#{student.score2}&email=#{student.email}"
+    redirect "/student/reports/#{params[:id]}/report"
+    # redirect "/student/reports/#{params[:id]}/report?score1=#{student.score1}&score2=#{student.score2}&email=#{student.email}"
   end
   
    redirect "/student/reports/#{params[:id]}/ex_scores"

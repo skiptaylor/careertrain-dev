@@ -7,7 +7,7 @@ get "/student/reports/:id/exercise/?"  do
   erb :"/student/reports/exercise", layout: false
 end
 
-post  "/student/reports/:id/exercise/?"  do
+post "/student/reports/:id/exercise/?"  do
   auth_student
   student = Student[params[:id]]
   ie = Ie.all
@@ -153,11 +153,7 @@ post  "/student/reports/:id/exercise/?"  do
       flash[:alert] = 'Email would have been sent in production mode.'
     end
   end
-  redirect "/student/reports/#{params[:id]}/report?score1=#{student.score1}&score2=#{student.score2}&email=#{student.email}"
+  redirect "/student/reports/#{params[:id]}/report"
+  # redirect "/student/reports/#{params[:id]}/report?score1=#{student.score1}&score2=#{student.score2}&email=#{student.email}"
 end
   
-  
-  
-  #  exercise.high1
-  
-  # score1=#{@exercise.high1}
