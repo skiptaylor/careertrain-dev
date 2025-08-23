@@ -10,6 +10,7 @@ post "/accounts/new/?" do
     :name         => params[:name],
     :abbr         => params[:abbr],
   )
+  params[:active] ? account.update(:active => true) : account.update(:active => false)
 
   redirect "/accounts/accounts"
 end
@@ -33,6 +34,7 @@ post "/accounts/:id/edit/?" do
     :name         => params[:name],
     :abbr         => params[:abbr],
   )
+  params[:active] ? account.update(:active => true) : account.update(:active => false)
 
   redirect "/accounts/accounts"
 end

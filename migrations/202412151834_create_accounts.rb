@@ -10,6 +10,8 @@ Sequel.migration do
       Text :name
       Text :abbr
       Text :name
+      
+      Boolean :active, :default => true
     end
   end
 end

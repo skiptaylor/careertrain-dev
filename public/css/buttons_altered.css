@@ -181,8 +181,8 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #ffffff;
   text-shadow: none;
-  background-color: #026afc;
-  border-color: #026afc;
+  background-color: #0054cd;
+  border-color: #0054cd;
 /*-webkit-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	-moz-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	 	  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);*/
@@ -196,8 +196,8 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #025bda;
-  border-color: #025bda;
+  background-color: #0044a7;
+  border-color: #0044a7;
 /*-webkit-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	-moz-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	 	  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);*/
@@ -207,7 +207,7 @@ input[type="button"].btn-block {
 
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #025bda \9;
+  background-color: #0044a7 \9;
 /*-webkit-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	-moz-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	 	  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);*/
@@ -294,8 +294,8 @@ input[type="button"].btn-block {
 .btn-secondary.disabled,
 .btn-secondary[disabled] {
   color: #ffffff;
-  background-color: #808c9a;
-  *background-color: #808c9a;
+  background-color: #4D5A61;
+  *background-color: #4D5A61;
 /*-webkit-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	-moz-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	 	  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);*/
@@ -305,7 +305,7 @@ input[type="button"].btn-block {
 .btn-secondary:active,
 .btn-secondary.active {
 	color: #ffffff;
-  background-color: #7b8693 \9;
+  background-color: #9FAAB1 \9;
 /*-webkit-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	-moz-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
 	 	  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);*/
